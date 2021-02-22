@@ -1,3 +1,4 @@
+![](https://travis-ci.com/btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute.svg?branch=main)
 # 比特币背后的观念
 
 （于 2021 年 2 月 20 日）
