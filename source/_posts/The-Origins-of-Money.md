@@ -1,5 +1,5 @@
 ---
-title: Shelling Out: The Origins of Money
+title: 'Shelling Out: The Origins of Money'
 tags:
 - Nick Szabo
 - 阿剑
