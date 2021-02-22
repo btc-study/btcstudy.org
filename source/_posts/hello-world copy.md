@@ -40,4 +40,5 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 
 
 ## image test
-![](./../images/gasnow.png)
+
+{% img /images/gasnow.png %}
