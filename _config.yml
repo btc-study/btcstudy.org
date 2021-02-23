@@ -5,16 +5,16 @@
 # Site
 title: BTC Study
 subtitle: ''
-description: ''
+description: '中本聪学院中文版'
 keywords:
-author: XXXX
+author: ethfans
 language: zh
 timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://btc-study.github.io/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute/
-root: /Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute/
+url: https://www.btcstudy.org
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
