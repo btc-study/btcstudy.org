@@ -37,4 +37,4 @@ comment_utteranc:
 appearance: auto # Default value is auto
 
 # Miscellaneous
-favicon: /images/favicon.png
+favicon: /favicon.ico

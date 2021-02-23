@@ -1,5 +1,6 @@
 ---
 title: 'Shelling Out: The Origins of Money'
+date: "2020/7/13 20:46:25"
 tags:
 - Nick Szabo
 - 阿剑
