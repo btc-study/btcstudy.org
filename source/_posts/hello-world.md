@@ -44,3 +44,5 @@ More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
 {% img /images/gasnow.png %}
 2
 {% asset_img /images/gasnow.png This is an example image %}
+3
+![](../images/gasnow.png)
