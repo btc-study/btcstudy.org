@@ -2,8 +2,8 @@
 menu:
   Home: /
   About: /about
-  Archive: /archives
-
+  EthFans: https://ethfans.org/
+  
 widgets:
   - tag
   - archive
@@ -12,15 +12,15 @@ widgets:
 
 # social config
 social:
-  zhihu:
-  twitter: /
-  facebook: /
-  linkedin:
-  instagram: /
-  github: /
+  github: btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute
+  # zhihu:
+  # twitter: /
+  # facebook: /
+  # linkedin:
+  # instagram: /
 
 user:
-  name: btc.study
+  name: BTC study
   avatar: /images/avatar.png
   location: In the dust
   description: May the Force be with you
@@ -36,7 +36,8 @@ comment_utteranc:
 # user-can-set
 appearance: auto # Default value is auto
 
-# Miscellaneous
-favicon: /favicon.ico
 highlight:
   enable: true
+
+# Miscellaneous
+favicon: /favicon.ico

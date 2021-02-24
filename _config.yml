@@ -8,7 +8,7 @@ subtitle: '比特币学院中文版'
 description: ''
 keywords:
 author: ethfans
-language: zh
+language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
@@ -48,12 +48,12 @@ marked:
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 prismjs:
   enable: false
   preprocess: true

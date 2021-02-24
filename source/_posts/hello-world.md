@@ -1,6 +1,7 @@
 ---
-title: Hello World
+title: 测试文章
 date: "2021/2/13 20:46:25"
+excerpt: "片段在测试，片段在测试，片段在测试，片段在测试，"
 tags:
 - a
 - b
@@ -11,15 +12,15 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ### Create a new post
 
-``` bash
-$ hexo new "My New Post"
+```bash
+$ hexo new "My New Post" 123
 ```
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
 ### Run server
 
-``` bash
+```bash
 $ hexo server
 ```
 
