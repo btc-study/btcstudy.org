@@ -106,6 +106,3 @@ theme: hexo-theme-Claudia-master
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  - type: git
-    repo: https://github.com/btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute.git
-    branch: main
