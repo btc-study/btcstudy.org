@@ -2,6 +2,7 @@
 title: '卡尔·门格尔：论货币的起源'
 author: 'Carl Menger'
 date: "2020/8/23 12:07:25"
+title_image: '..\images\on-the-origins-of-money-by-Carl-Menger'
 excerpt: "唯一能让我们充分了解货币起源的方式是，学会将社会过程的建立视为一种意料之外的自发性结果。"
 categories:
 - 货币理念
