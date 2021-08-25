@@ -1,13 +1,13 @@
 ---
 title: '理解闪电网络，Part-2：构建网络'
 author: 'Aaron Van Wirdum'
-date: '2020/8/24 10:36:25'
+date: '2020/08/24 10:36:25'
 title_image: ''
 excerpt: 'Alice 想要给一个第三方 Carol 支付 1 btc'
 categories:
 - 闪电网络
 tages:
-- [比特币, 闪电网络]
+- [闪电网络]
 ---
 
 *作者：Aaron Van Wirdum*
