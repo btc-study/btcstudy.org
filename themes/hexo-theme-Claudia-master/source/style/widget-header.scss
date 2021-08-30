@@ -7,20 +7,46 @@
   overflow: hidden;
 
   width: 100vw;
-  height: 42px;
+  height: 65px;
   padding: 0 15px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   background: var(--top-bar-bg-color);
 
+  .header-widget-container {
+    width: 1060px;
+    h1 {
+      margin-right: 54px;
+      img {
+        height: 24px;
+      }
+    }
+  }
+
   a {
     margin: 0 8px;
     font-weight: bold;
 
-    color: var(--primary-text-color);
+    color: var(--text-secondary-color)!important;
   }
 
   h3 {
+    position: relative;
     font-weight: bold;
+  }
+
+  .header-activity {
+    a {
+      color: var(--heading-color)!important;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background-color: var(--primary-color);
+    }
   }
 }

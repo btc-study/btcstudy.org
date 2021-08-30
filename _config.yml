@@ -102,6 +102,9 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: hexo-theme-Claudia-master
+#theme: hexo-theme-next
+
+logo: /images/logo-light.png
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

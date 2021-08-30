@@ -1,9 +1,13 @@
 # main menu navigation
 menu:
   Home: /
-  About: /about
-  EthFans: https://ethfans.org/
-  
+  Archive: /archives
+  Tag: /tags
+  # About: /about
+  # EthFans: https://ethfans.org/
+  Mempool: /mempool
+  123BTC: https://123btc.org/
+
 widgets:
   - tag
   - archive

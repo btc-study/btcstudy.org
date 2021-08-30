@@ -26,13 +26,12 @@ html(lang=config.language class= `appearance-${ appearance }`)
     include widget-header
     main
       block content
-    footer.is-flex.is-flex-direction-column.is-align-items-center.is-flex-shrink-0.is-family-serif
-      section.sns-container
-        include widget-sns
-      p
-        span Copyright ©
-        - var author = (theme.user && theme.user.name) || config.author || ''
-        span= ' ' + author + ' ' + new Date().getFullYear()
+    //- footer.is-flex.is-flex-direction-column.is-align-items-center.is-flex-shrink-0.is-family-serif
+    //-   section.sns-container
+    //-     include widget-sns
+    //-   p
+    //-     span Copyright ©
+    //-     - var author = (theme.user && theme.user.name) || config.author || ''
+    //-     span= ' ' + author + ' ' + new Date().getFullYear()
     script(async defer src="https://buttons.github.io/buttons.js")
     block script
-

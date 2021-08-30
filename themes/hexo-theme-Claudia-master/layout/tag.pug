@@ -3,11 +3,12 @@ extends widget/base
 block append head
   link(rel='stylesheet', href= url_for("/style/widget-post-list.css"))
 
-block topic
-  span= `${ _p('tag') } · ${ page.tag || __('all') }`
+//- block topic
+//-   span= `${ _p('tag') } · ${ page.tag || __('all') }`
 
 block content
-  include widget/widget-post-list
-    block sidebar
-      div(style="position: sticky; top: 50px;")
-        include widget/widget-tag
+  //- include widget/widget-post-list
+  include widget/widget-tag
+    //- block sidebar
+    //-   div(style="position: sticky; top: 50px;")
+    //-     include widget/widget-tag
