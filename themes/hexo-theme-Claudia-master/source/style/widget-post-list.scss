@@ -28,13 +28,16 @@ $coverBlurEffect: 20px;
   }
 
   .post-item-card {
-    margin-bottom: 30px;
-
     overflow: hidden;
-    box-shadow: $boxShadow;
-    border-radius: $borderRadius;
+    // box-shadow: $boxShadow;
+    border-radius: 16px;
     background: var(--second-bg-color);
     border: 1px solid var(--border-line-color-2);
+    transition: all .3s;
+    &:hover {
+      margin-top: -8px;
+      box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+    }
 
     // cover image
     > header {
@@ -74,8 +77,11 @@ $coverBlurEffect: 20px;
       }
 
       .post-cover-img {
-        max-height: $coverMaxHeight;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        transition: all .3s!important;
+        &:hover {
+          transform: scale(1.05, 1.05);
+        }
       }
     }
 
