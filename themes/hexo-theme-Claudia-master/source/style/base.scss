@@ -2,13 +2,14 @@
 
 @import "common/variable";
 @import "themes/theme";
+@import "common/core";
 
 :root {
 
   body {
     margin: 0;
     height: 100vh;
-    padding-top: 45px;
+    padding-top: 65px;
 
     a {
       color: inherit;

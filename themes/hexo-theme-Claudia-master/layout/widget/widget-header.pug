@@ -17,10 +17,10 @@ header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-ce
             if theme.menu
                 each url, label in theme.menu
                     if label == current
-                        h3.is-inline-block.header-activity
+                        h3.is-inline-block.header-activity.mr-4
                             a(href= url_for(url))= label && _p(label.toLowerCase())
                     else
-                        h3.is-inline-block
+                        h3.is-inline-block.mr-4
                             a(href= url_for(url))= label && _p(label.toLowerCase())
 header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-center.is-hidden-tablet
         if theme.menu

@@ -5,7 +5,7 @@ excerpt: "货币的前身，连同语言，帮助早期的现代人种解决了�
 author: "阿剑"
 avatar: "/images/avatar.png"
 category:
-- "LIGHTING NETWORK"
+- "ETH"
 tags:
 - Nick Szabo
 - 阿剑

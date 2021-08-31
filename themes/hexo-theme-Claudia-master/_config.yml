@@ -8,6 +8,10 @@ menu:
   Mempool: /mempool
   123BTC: https://123btc.org/
 
+# home page default categories
+home:
+  categories: ['BTC', 'ORGIN OF MONEY', 'ETH' ]
+
 widgets:
   - tag
   - archive

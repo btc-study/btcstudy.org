@@ -1,49 +1,111 @@
 include methods
 
-article.post-container.is-flex.is-justify-content-center.section.container.is-max-widescreen.pt-4.px-2
-        div.columns.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen.is-full-width
-            section.column
-                if page.posts.length > 0
-                    each post in page.posts.sort('date', -1).toArray()
-                        - var postURL = url_for(post.path)
-                        - var imgURL = getPostCoverImg(post)
-                        - var isExcerpt = post.excerpt && post.excerpt.length > 0
-                        - var postContent = isExcerpt ? post.excerpt : post.content
-                        article.post-item-card
-                            if imgURL
-                                header.is-relative.is-flex
-                                    div.post-cover-backdrop.is-hidden
-                                        img(src= imgURL alt="loading..")
-                                    a.post-cover-link.has-text-centered.skeleton(href= postURL)
-                                        img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
-                            section.content.post-card-content.p-4.pb-5
-                                if post.tags && post.tags.length > 0
-                                    header
-                                            each tag in post.tags.toArray()
-                                                a(href= url_for(`/tags/${tag.name}`))
-                                                    i.tag.post-item-tag= tag.name
-                                if post.title
-                                    h2.mt-4.mb-0.is-family-serif
-                                        a(href= postURL)= post.title
-                                if post.date
-                                    time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
-                                p.is-flex-grow-2.mt-2
-                                    = truncate( strip_html(postContent), {length: 360, omission: '..'} )
-                                a.button.is-default.mt-2.has-text-weight-semibold(href= postURL)= __('read_more')
+article.post-container.is-flex.is-flex-direction-column.is-justify-content-center.section.container.is-max-widescreen.p-0.pt-4
+        //- - console.log(page.posts);
+        - var categories = theme.home.categories || []
+        - var list = {};
+        each category in categories
+            - list[category] = [];
+        if page.posts.length > 0
+              each post in page.posts.sort('date', -1).toArray()
+                    each category in post.categories.toArray()
+                        - var index = categories.indexOf(category.name)
+                        - if (index > -1)
+                            - list[category.name].push(post);
+        each category in categories
+            div.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen
+                header.post-header.is-flex.is-flex-direction-row.is-justify-content-space-between.mb-2
+                    h2.category-title= category
+                    a= "ALL"
+                section.row.gutter-10
+                    if list[category].length > 0
+                        each post in list[category].slice(0, 3)
+                            - var postURL = url_for(post.path)
+                            - var imgURL = getPostCoverImg(post)
+                            - var isExcerpt = post.excerpt && post.excerpt.length > 0
+                            - var postContent = isExcerpt ? post.excerpt : post.content
+                            div.col.sm-12.md-8
+                                article.post-item-card
+                                    if imgURL
+                                        header.is-relative.is-flex
+                                            div.post-cover-backdrop.is-hidden
+                                                img(src= imgURL alt="loading..")
+                                            a.post-cover-link.has-text-centered.skeleton(href= postURL)
+                                                img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+                                    section.content.post-card-content.p-2.is-flex.is-flex-direction-column
+                                        if post.title
+                                            h2.is-family-serif.mt-0.mb-2
+                                                a(href= postURL)= post.title
+                                        p.is-flex-grow-2
+                                            = truncate( strip_html(postContent), {length: 90, omission: '..'} )
+                    
+                                        if post.date && post.author
+                                            div.is-flex.is-flex-direction-row.post-data
+                                                img.mr-1(src= post.avatar)
+                                                div.is-flex.is-flex-direction-column
+                                                    strong= post.author
+                                                    time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
+                        -
+                            var paginatorResult = paginator({
+                                escape: false,
+                                prev_text: `<i class="iconfont icon-prev has-text-grey"></i>`,
+                                next_text: `<i class="iconfont icon-next has-text-grey"></i>`,
+                            })
+                            var pageNumber = strip_html(paginatorResult)
+                            var showPageIndicator = pageNumber - 0 !== 1
+                        if showPageIndicator
+                            section.paginator.is-flex.is-justify-content-flex-end.is-flex-wrap-wrap!= paginatorResult
                 
-                    -
-                        // turnPage
-                        var paginatorResult = paginator({
-                            escape: false,
-                            prev_text: `<i class="iconfont icon-prev has-text-grey"></i>`,
-                            next_text: `<i class="iconfont icon-next has-text-grey"></i>`,
-                        })
-                        var pageNumber = strip_html(paginatorResult)
-                        var showPageIndicator = pageNumber - 0 !== 1
-                    if showPageIndicator
-                        section.paginator.is-flex.is-justify-content-flex-end.is-flex-wrap-wrap!= paginatorResult
-            //- aside.column.is-hidden-mobile.is-4-tablet.is-3-widescreen
-            //-     block sidebar
+        //- div.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen
+        //-     section.row.gutter-10
+        //-         if page.posts.length > 0
+        //-             each post in page.posts.sort('date', -1).slice(0, 3).toArray()
+        //-                 - var postURL = url_for(post.path)
+        //-                 - var imgURL = getPostCoverImg(post)
+        //-                 - var isExcerpt = post.excerpt && post.excerpt.length > 0
+        //-                 - var postContent = isExcerpt ? post.excerpt : post.content
+        //-                 div.col.sm-12.md-8
+        //-                     article.post-item-card
+        //-                         if imgURL
+        //-                             header.is-relative.is-flex
+        //-                                 div.post-cover-backdrop.is-hidden
+        //-                                     img(src= imgURL alt="loading..")
+        //-                                 a.post-cover-link.has-text-centered.skeleton(href= postURL)
+        //-                                     img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+        //-                         section.content.post-card-content.p-2.is-flex.is-flex-direction-column
+        //-                             //- if post.tags && post.tags.length > 0
+        //-                             //-     header
+        //-                             //-             each tag in post.tags.toArray()
+        //-                             //-                 a(href= url_for(`/tags/${tag.name}`))
+        //-                             //-                     i.tag.post-item-tag= tag.name
+        //-                             if post.title
+        //-                                 h2.is-family-serif.mt-0.mb-2
+        //-                                     a(href= postURL)= post.title
+        //-                             p.is-flex-grow-2
+        //-                                 = truncate( strip_html(postContent), {length: 90, omission: '..'} )
+        //- 
+        //-                             if post.date && post.author
+        //-                                 div.is-flex.is-flex-direction-row.post-data
+        //-                                     img.mr-1(src= post.avatar)
+        //-                                     div.is-flex.is-flex-direction-column
+        //-                                         strong= post.author
+        //-                                         time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
+        //- 
+        //-                             //- a.button.is-default.mt-2.has-text-weight-semibold(href= postURL)= __('read_more')
+        //- 
+        //-             -
+        //-                 // turnPage
+        //-                 var paginatorResult = paginator({
+        //-                     escape: false,
+        //-                     prev_text: `<i class="iconfont icon-prev has-text-grey"></i>`,
+        //-                     next_text: `<i class="iconfont icon-next has-text-grey"></i>`,
+        //-                 })
+        //-                 var pageNumber = strip_html(paginatorResult)
+        //-                 var showPageIndicator = pageNumber - 0 !== 1
+        //-             if showPageIndicator
+        //-                 section.paginator.is-flex.is-justify-content-flex-end.is-flex-wrap-wrap!= paginatorResult
+        //-     //- aside.column.is-hidden-mobile.is-4-tablet.is-3-widescreen
+        //-     //-     block sidebar
 block append script
     script.
         $claudia.fadeInImage(null, $claudia.blurBackdropImg)
