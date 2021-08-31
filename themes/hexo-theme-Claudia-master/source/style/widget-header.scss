@@ -1,3 +1,12 @@
+#header-menu {
+  height: 65px;
+  transition: all .3s;
+}
+
+.header-title {
+  height: 65px;
+}
+
 .header-widget {
   position: fixed;
   top: 0;
@@ -15,6 +24,7 @@
 
   .header-widget-container {
     width: 1060px;
+    height: inherit;
     h1 {
       margin-right: 54px;
       img {
@@ -48,5 +58,9 @@
       width: 100%;
       background-color: var(--primary-color);
     }
+  }
+
+  .hidden-menu {
+    transform: translateY(-200%);
   }
 }

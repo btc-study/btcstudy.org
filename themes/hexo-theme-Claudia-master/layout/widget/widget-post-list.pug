@@ -45,16 +45,16 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                                                 div.is-flex.is-flex-direction-column
                                                     strong= post.author
                                                     time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
-                        -
-                            var paginatorResult = paginator({
-                                escape: false,
-                                prev_text: `<i class="iconfont icon-prev has-text-grey"></i>`,
-                                next_text: `<i class="iconfont icon-next has-text-grey"></i>`,
-                            })
-                            var pageNumber = strip_html(paginatorResult)
-                            var showPageIndicator = pageNumber - 0 !== 1
-                        if showPageIndicator
-                            section.paginator.is-flex.is-justify-content-flex-end.is-flex-wrap-wrap!= paginatorResult
+                        //- -
+                        //-     var paginatorResult = paginator({
+                        //-         escape: false,
+                        //-         prev_text: `<i class="iconfont icon-prev has-text-grey"></i>`,
+                        //-         next_text: `<i class="iconfont icon-next has-text-grey"></i>`,
+                        //-     })
+                        //-     var pageNumber = strip_html(paginatorResult)
+                        //-     var showPageIndicator = pageNumber - 0 !== 1
+                        //- if showPageIndicator
+                        //-     section.paginator.is-flex.is-justify-content-flex-end.is-flex-wrap-wrap!= paginatorResult
                 
         //- div.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen
         //-     section.row.gutter-10
