@@ -1,3 +1,25 @@
+
+block append head
+    link(rel='stylesheet', href= url_for("/style/widget-archives.css"))
+    
 main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-page')
-    h3= _p('archive')
-    section!= list_archives(site.archives)
+    header.mb-2
+        h1= _p('archive')
+        - console.log(site.posts);
+        p
+            span= site.posts.length
+            span= ' articles in total'
+    section.post-list
+        ul
+            each post in site.posts.sort('date', -1).toArray()
+                li.is-flex.is-flex-direction-row.is-align-items-center.px-3
+                    a(href= url_for(post.path))
+                        strong= post.title
+                    img.mr-1(src= post.avatar)
+                    span= post.author
+                    time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
+                    a(href= url_for(post.path))
+                        i.iconfont.icon-icon_into
+                    
+
+                
