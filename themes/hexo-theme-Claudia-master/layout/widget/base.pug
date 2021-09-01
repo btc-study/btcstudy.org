@@ -14,6 +14,7 @@ html(lang=config.language class= `appearance-${ appearance }`)
     title= pageTitle
     meta(name="description" content= config.description || theme.user && theme.user.description)
     meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, initial-scale=1")
+    script(src= url_for("/js/theme.js"))
 
     link(rel="icon" href= url_for(theme.favicon))
     link(rel="stylesheet" href= url_for('/style/common/bulma.css'))
@@ -23,7 +24,7 @@ html(lang=config.language class= `appearance-${ appearance }`)
     script(src= url_for("/js/common.js"))
     block head
 
-  body.is-flex.is-flex-direction-column
+  body.is-flex.is-flex-direction-column(onload="initialTheme()")
     include widget-header
     main
       block content
@@ -34,5 +35,5 @@ html(lang=config.language class= `appearance-${ appearance }`)
     //-     span Copyright ©
     //-     - var author = (theme.user && theme.user.name) || config.author || ''
     //-     span= ' ' + author + ' ' + new Date().getFullYear()
-    script(async defer src="https://buttons.github.io/buttons.js")
+    script(async defer src= url_for("/js/buttons.js"))
     block script

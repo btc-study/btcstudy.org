@@ -191,7 +191,7 @@ body > main {
   font-size: 24px;
   font-weight: 800;
   line-height: 32px;
-  color: var(--heading-color);
+  color: var(--heading-color)!important;
 }
 
 .page-data {
@@ -224,7 +224,7 @@ body > main {
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
-    color: var(--heading-color);
+    color: var(--heading-color)!important;
   }
 
   h3 {
@@ -233,7 +233,7 @@ body > main {
     font-size: 16px;
     font-weight: 600;
     line-height: 26px;
-    color: var(--heading-color);
+    color: var(--heading-color)!important;
   }
 
   p {

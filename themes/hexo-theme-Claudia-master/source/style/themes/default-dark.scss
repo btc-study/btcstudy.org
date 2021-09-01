@@ -3,7 +3,7 @@
   --second-bg-color: #212121;
   --third-bg-color: #ffffff14;
 
-  --primary-text-color: var(255, 255, 255, .85);
+  --primary-text-color: rgba(255, 255, 255, .9);
   --second-text-color: #aaa;
 
   --border-line-color: rgba(255, 255, 255, 0.05);
@@ -27,11 +27,11 @@
 
   --border-color: rgba(255, 255, 255, .1);
   /* 标题色 */
-  --heading-color: rgba(255, 255, 255, .85);
+  --heading-color: rgba(255, 255, 255, .9);
   /* 正文色 */
-  --text-color: rgba(255, 255, 255, .65);
+  --text-color: rgba(255, 255, 255, .8);
   /* 提示文案 */
-  --text-secondary-color: rgba(255, 255, 255, .45);
+  --text-secondary-color: rgba(255, 255, 255, .6);
   /* 禁用色 */
-  --disabled-color: rgba(255, 255, 255, .25);
+  --disabled-color: rgba(255, 255, 255, .45);
 }

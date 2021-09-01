@@ -20,7 +20,7 @@
   padding: 0 15px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: var(--top-bar-bg-color);
+  background: var(--background-color-2);
 
   .header-widget-container {
     width: 1060px;
@@ -62,5 +62,33 @@
 
   .hidden-menu {
     transform: translateY(-200%);
+  }
+}
+
+.right-content {
+  flex: 1;
+  justify-content: flex-end;
+  > .iconfont {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .search-wrap {
+    position: relative;
+    input {
+      height: 40px;
+      width: 280px;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      outline: none;
+      background-color: var(--background-color-2);
+    }
+    > i {
+      position: absolute;
+      right: 24px;
+      top: 2px;
+      color: var(--primary-color);
+      font-size: 24px;
+      cursor: pointer;
+    }
   }
 }
