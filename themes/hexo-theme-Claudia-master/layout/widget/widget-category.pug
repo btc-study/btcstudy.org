@@ -1,22 +1,21 @@
 include methods
 
 block append head
-    link(rel='stylesheet', href= url_for("/style/widget-tag.css"))
+  link(rel='stylesheet', href= url_for("/style/widget-category.css"))
 
-main.tag-container
+main.category-container
     - var list = [];
     each post in site.posts.toArray()
-        each tag in post.tags.toArray()
-            if tag.name == page.tag
+        each category in post.categories.toArray()
+            if category.name == page.category
                 - list.push(post);
-    
     header.mb-2
-        a(href= url_for('/tags'))= '/TAG'
-        h1= page.tag.replace(/-/g, ' ')
+        a(href= url_for('/'))= '/' + _p('category')
+        h1= page.category.replace(/-/g, ' ')
         p
             span= list.length
             span= ' articles in total'
-            
+    
     section.row.gutter-10
         if list.length > 0
             each post in list

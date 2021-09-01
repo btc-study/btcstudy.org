@@ -1,0 +1,27 @@
+block append head
+    link(rel='stylesheet', href= url_for("/style/widget-tags.css"))
+
+main.tags-container
+    ul.is-flex.is-flex-direction-row.is-flex-wrap-wrap
+        - var list = {};
+        each tag in site.tags.toArray()
+            - list[tag.name] = [];
+            each post in site.posts.toArray()
+                each postTag in post.tags.toArray()
+                    if postTag.name == tag.name
+                        - list[postTag.name].push(post);
+            li
+                header.is-flex.is-flex-direction-row.is-align-items-center.mb-2
+                    h2= tag.name.replace(/-/g, ' ')
+                    p
+                        span= list[tag.name].length
+                        span= ' articles in total'
+                    a(href= url_for('/tags/' + tag.name))= "ALL"
+                section
+                    ul.post-list
+                        each tagPost in list[tag.name]
+                            li.is-flex.is-flex-direction-row.is-justify-content-space-between.is-align-items-center.px-3
+                                a(href= url_for(tagPost.path))
+                                    strong= tagPost.title
+                                a(href= url_for(tagPost.path))
+                                    i.iconfont.icon-icon_into

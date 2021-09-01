@@ -15,8 +15,9 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
         each category in categories
             div.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen.mb-4
                 header.post-header.is-flex.is-flex-direction-row.is-justify-content-space-between.mb-2
-                    h2.category-title= category
-                    a= "ALL"
+                    //- - var categoryStr = formatStr(category)
+                    h2.category-title= category.replace(/-/g, ' ')
+                    a(href= url_for('/categories/' + category))= "ALL"
                 section.row.gutter-10
                     if list[category].length > 0
                         each post in list[category].slice(0, 3)

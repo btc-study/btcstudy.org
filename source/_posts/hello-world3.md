@@ -5,7 +5,7 @@ excerpt: "片段在测试，片段在测试，片段在测试，片段在测试�
 author: "阿剑"
 avatar: "/images/avatar.png"
 categories:
-- ORGIN-OF-MONEY
+- LIGHTING-NETWORK
 tags:
 - a
 - b

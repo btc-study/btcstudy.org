@@ -4,10 +4,10 @@ date: "2020/7/13 20:46:25"
 excerpt: "货币的前身，连同语言，帮助早期的现代人种解决了其它动物所不能解决的协作问题，其中就包括如何实现互惠互利、亲属利他以及减少攻击性的问题。这些货币先祖与非法定货币同样具有非常具体的特征 —— 绝不仅仅是象征性物品或装饰品。"
 author: "阿剑"
 avatar: "/images/avatar.png"
-category:
-- "ETH"
+categories:
+- ETH
 tags:
-- Nick Szabo
+- Nick-Szabo
 - 阿剑
 ---
 

@@ -16,7 +16,7 @@ author: "阿剑"
 avatar: "/images/avatar.png"
 categories:
 - "BTC"
-- "ORGIN OF MONEY"
+- "ORGIN-OF-MONEY"
 tags:
 - a
 - b

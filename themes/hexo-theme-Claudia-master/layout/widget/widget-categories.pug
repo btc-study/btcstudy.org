@@ -1,3 +1,11 @@
-main.aside-card-container.categories-widget(class= is_category && "category-page")
-    h3= _p('category')
-    section!= list_categories(site.categories, { depth: 1 })
+//- main.aside-card-container.categories-widget(class= is_category && "category-page")
+//-     h3= _p('category')
+//-     ul
+//-         each category in site.categories.toArray()
+//-             li
+//-                 a(href= url_for('/categories/' + category.name))= category.name
+    //- section!= list_categories(site.categories, { depth: 1 })
+
+block append script
+    script.
+        window.location.href = '/'

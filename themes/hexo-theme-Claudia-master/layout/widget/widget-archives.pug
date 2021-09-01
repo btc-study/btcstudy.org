@@ -5,7 +5,6 @@ block append head
 main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-page')
     header.mb-2
         h1= _p('archive')
-        - console.log(site.posts);
         p
             span= site.posts.length
             span= ' articles in total'
