@@ -25,10 +25,16 @@
   .header-widget-container {
     width: 1060px;
     height: inherit;
+    max-width: 1060px;
+    .header-menu-wrap {
+      flex: 1;
+    }
     h1 {
       margin-right: 54px;
+      a { margin: 0!important; }
       img {
         height: 24px;
+        width: 130px;
       }
     }
   }
@@ -71,6 +77,9 @@
   > .iconfont {
     font-size: 24px;
     cursor: pointer;
+  }
+  .icon-icon_light {
+    color: #fff;
   }
   .search-wrap {
     position: relative;

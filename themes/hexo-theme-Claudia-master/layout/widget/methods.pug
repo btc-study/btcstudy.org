@@ -1,10 +1,11 @@
 -
     function getPostCoverImg(post) {
+        
         const $coverImgElRegx = /<img.*?alt="\$cover".*?>/
         const firstImgElRegx = /<img[^>]+src="?([^"\s]+)".*?>/
         const coverImgElement = post.content.match(firstImgElRegx)
 
-        if (!coverImgElement) return false
+        if (post.cover) return post.cover
 
         // post.content = post.content.replace(firstImgElRegx, `<img id="__hexo_theme_cover__" src="${coverImgElement[1]}" alt=".." style="display: none;">`)
 

@@ -4,6 +4,7 @@ date: "2021/2/13 20:46:25"
 excerpt: "片段在测试，片段在测试，片段在测试，片段在测试，"
 author: "阿剑"
 avatar: "/images/avatar.png"
+cover: "/images/no-data.png"
 categories:
 - ORGIN-OF-MONEY
 tags:

@@ -11,7 +11,7 @@ main.category-container
                 - list.push(post);
     header.mb-2
         a(href= url_for('/'))= '/' + _p('category')
-        h1= page.category.replace(/-/g, ' ')
+        h1= (page.category || '').replace(/-/g, ' ')
         p
             span= list.length
             span= ' articles in total'

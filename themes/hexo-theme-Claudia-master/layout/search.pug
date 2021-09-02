@@ -1,0 +1,14 @@
+extends widget/base
+
+block append head
+  link(rel='stylesheet', href= url_for('/style/search.css'))
+
+block content
+    main.result-container
+        header
+            h1#key
+            p#result-length
+        section#result-list
+        div#no-data
+block append script
+    script(src= url_for('/js/results.js'))

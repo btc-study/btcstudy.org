@@ -11,7 +11,7 @@ header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-ce
                 a(href= url_for("/"))
                     img#logo-img(src= url_for(theme.logo || config.logo))
                 //- a(href= url_for("/"))= (theme.user && theme.user.name || config.author)
-        div.is-flex.is-flex-direction-column
+        div.is-flex.is-flex-direction-column.header-menu-wrap
             aside.is-flex-shrink-0.is-flex.is-flex-direction-row.is-align-items-center#header-menu
                 if theme.menu
                     each url, label in theme.menu
@@ -21,13 +21,14 @@ header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-ce
                         else
                             h3.is-inline-block.mr-4
                                 a(href= url_for(url))= label && _p(label.toLowerCase())
+                div.right-content.is-flex.is-flex-direction-row.is-align-items-center
+                    i.iconfont.icon-icon_dark.mr-1#theme-btn
+                    div.search-wrap
+                        input.pl-3#search-input(placeholder= 'Search')
+                        i.iconfont.icon-icon_search#search-input-btn
             h3.header-title.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
                 block topic
-        div.right-content.is-flex.is-flex-direction-row.is-align-items-center
-            i.iconfont.icon-icon_dark.mr-1#theme-btn
-            div.search-wrap
-                input.pl-3#search-input(placeholder= 'Search')
-                i.iconfont.icon-icon_search
+                
 header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-center.is-hidden-tablet
         if theme.menu
             each url, label in theme.menu

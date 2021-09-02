@@ -108,4 +108,20 @@ logo: /images/logo-light.png
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-deploy:
+#deploy:
+
+search:
+  noDataImg: /images/no-data.png
+
+jsonContent:
+  file: content.json
+  dateFormat: 'YYYY-MM-DD'
+  posts:
+    title: true
+    text: true
+    author: true
+    avatar: true
+    date: true
+    content: true
+    cover: true
+    path: true

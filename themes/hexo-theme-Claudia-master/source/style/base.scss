@@ -41,10 +41,16 @@
       background: var(--third-bg-color);
     }
 
-    > main {
-      flex-grow: 2;
-      flex-basis: 0;
-      background-color: var(--background-color);
+    .body-container {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      > main {
+        flex: 1;
+        flex-grow: 2;
+        flex-basis: 0;
+        background-color: var(--background-color);
+      }
     }
 
     > footer {

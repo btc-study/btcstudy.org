@@ -6,7 +6,8 @@ $lineColor: var(--border-line-color);
   display: none;
 }
 
-body > main {
+body > .body-container > main,
+.clip > .body-container > main {
   background-color: var(--background-color-2)!important;
 }
 
