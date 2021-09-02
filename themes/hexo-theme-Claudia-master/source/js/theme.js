@@ -19,6 +19,7 @@ function initialTheme() {
   setTheme(window.localStorage.getItem('theme') || 'auto');
 
   let buttonenabled = true;
+
   $(document).on("click", "#theme-btn", function() {
 
     var localTheme = window.localStorage.getItem('theme') || 'auto';
