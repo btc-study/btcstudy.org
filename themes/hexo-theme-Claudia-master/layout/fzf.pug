@@ -5,7 +5,8 @@ block append head
 
 block content
     main.container-404
-        img(src= url_for(page.image || theme.errorPage.image))
+        img.nodata-light(src= url_for(page.images.light || theme.errorPage.image))
+        img.nodata-dark(src= url_for(page.images.dark || theme.errorPage.image))
         h1= 'NOT found!'
         p= 'Sorry, the page you are looking for does not exist'
         a(href= url_for('/'))= 'INDEX'
