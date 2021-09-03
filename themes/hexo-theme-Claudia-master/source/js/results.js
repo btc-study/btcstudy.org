@@ -78,8 +78,8 @@
         results.push(post)
       }
     });
-    console.log(searchKey);
-    console.log(data, results);
+    // console.log(searchKey);
+    // console.log(data, results);
 
     if (results.length) {
       var titleEl = document.getElementById('key');

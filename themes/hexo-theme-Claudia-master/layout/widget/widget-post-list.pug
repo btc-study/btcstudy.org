@@ -18,7 +18,7 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                     //- - var categoryStr = formatStr(category)
                     h2.category-title= category.replace(/-/g, ' ')
                     a(href= url_for('/categories/' + category))= "ALL"
-                section.row.gutter-10
+                section.post-content.row.gutter-10
                     if list[category].length > 0
                         each post in list[category].slice(0, 3)
                             - var postURL = url_for(post.path)
