@@ -69,7 +69,7 @@
       titleEl.innerText = "“" + searchKey + "”";
 
       var subtitleEl = document.getElementById('result-length');
-      subtitleEl.innerText = results.length + ' articles in total';
+      subtitleEl.innerText = results.length + ' 篇文章';
 
       var containerEl = document.getElementById('result-list');
       containerEl.innerHTML = '<ul>'+ renderItem(results) +'</ul>';

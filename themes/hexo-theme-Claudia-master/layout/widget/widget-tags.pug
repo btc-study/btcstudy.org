@@ -15,7 +15,7 @@ main.tags-container
                     h2= tag.name.replace(/-/g, ' ')
                     p
                         span= list[tag.name].length
-                        span= ' articles in total'
+                        span= ' 篇文章'
                     a(href= url_for('/tags/' + tag.name))= "ALL"
                 section
                     ul.post-list

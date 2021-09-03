@@ -7,7 +7,7 @@ main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-
         h1= _p('archive')
         p
             span= site.posts.length
-            span= ' articles in total'
+            span= ' 篇文章'
     section.post-list
         ul
             each post in site.posts.sort('date', -1).toArray()
