@@ -9,7 +9,7 @@ header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-ce
         section.is-hidden-mobile.is-flex-shrink-0
             h1
                 a(href= url_for("/"))
-                    img#logo-img(src= url_for(theme.logo || config.logo))
+                    img#logo-img(src= url_for(config.logo || theme.logo))
                 //- a(href= url_for("/"))= (theme.user && theme.user.name || config.author)
         div.is-flex.is-flex-direction-column.header-menu-wrap
             aside.is-flex-shrink-0.is-flex.is-flex-direction-row.is-align-items-center#header-menu

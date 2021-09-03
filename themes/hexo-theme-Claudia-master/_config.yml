@@ -12,6 +12,14 @@ menu:
 home:
   categories: ['BTC', 'ORGIN-OF-MONEY', 'ETH' ]
 
+# default logo image
+logo: /images/light/logo.png
+
+# search results page config
+# image: noData file name (path: /images/light/no-data.png or /images/dark/no-data.png)
+search:
+  image: no-data.png
+
 widgets:
   - tag
   - archive

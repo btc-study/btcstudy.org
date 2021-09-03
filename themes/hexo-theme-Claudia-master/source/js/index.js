@@ -1,4 +1,5 @@
 function bindSearch() {
+
   var searchInputBtn = document.getElementById('search-input-btn');
   searchInputBtn.onclick = function() {
     var searchInput = document.getElementById('search-input');
@@ -28,17 +29,16 @@ function initialTheme() {
     $("body > .body-container").removeClass('appearance-light')
     $("body > .body-container").addClass('appearance-' + theme);
 
-    $('#logo-img').attr('src', '/images/logo-' + theme + '.png');
+    $('#logo-img').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
 
     window.localStorage.setItem('theme', theme);
 
     bindSearch();
   }
 
-  setTheme(window.localStorage.getItem('theme') || 'auto');
+  setTheme((['auto', 'light'].includes(window.localStorage.getItem('theme') || 'auto') ? 'light' : 'dark'));
 
   let buttonenabled = true;
-
   $(document).on("click", "#theme-btn", function() {
 
     var localTheme = window.localStorage.getItem('theme') || 'auto';
@@ -65,7 +65,7 @@ function initialTheme() {
   		$(".clip").html("").removeClass("anim");
       setTheme(theme);
       buttonenabled = true;
-  	}, 1500);
+  	}, 1000);
 
   });
 
