@@ -27,6 +27,7 @@
           overflow: hidden;
           .cover {
             width: 340px;
+            min-width: 340px;
             img {
               width: 100%;
             }
@@ -34,6 +35,7 @@
           .post-data {
             display: flex;
             flex-direction: column;
+            flex: 1;
             padding: 24px 24px 16px 24px;
             h3 {
               margin-bottom: 8px;
