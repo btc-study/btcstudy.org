@@ -100,3 +100,16 @@
     }
   }
 }
+
+.nodata-dark { display: none; }
+
+.appearance-light,
+.appearance-auto {
+  .nodata-dark { display: none; }
+  .nodata-light { display: initial; }
+}
+
+.appearance-dark {
+  .nodata-light { display: none; }
+  .nodata-dark { display: initial; }
+}

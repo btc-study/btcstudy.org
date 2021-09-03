@@ -9,6 +9,10 @@ block content
             h1#key
             p#result-length
         section#result-list
-        div#no-data
+        div#no-data.hidden
+            img.nodata-light(src= url_for(page.images.light))
+            img.nodata-dark(src= url_for(page.images.dark))
+            h1= 'No result!'
+            p= 'Please search by another keywords'
 block append script
     script(src= url_for('/js/results.js'))
