@@ -65,7 +65,7 @@ function initialTheme() {
   		$(".clip").html("").removeClass("anim");
       setTheme(theme);
       buttonenabled = true;
-  	}, 1000);
+  	}, 500);
 
   });
 

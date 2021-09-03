@@ -7,7 +7,7 @@
   z-index: -1;
 	&.anim {
     z-index: 101;
-		animation: open 1s ease-in;
+		animation: open .5s ease-in;
 	}
 	@keyframes open {
 		0% {
