@@ -14,7 +14,7 @@ main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-
                 li.is-flex.is-flex-direction-row.is-align-items-center.px-3
                     a(href= url_for(post.path))
                         strong= post.title
-                    img.mr-1(src= post.avatar)
+                    img.mr-1(src= post.avatar || url_for("/images/default_avatar.png"))
                     span= post.author
                     time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
                     a(href= url_for(post.path))

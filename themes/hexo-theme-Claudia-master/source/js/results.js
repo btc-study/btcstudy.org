@@ -16,7 +16,9 @@
 
   var getCoverImg = function(post) {
     if (post.cover) return post.cover;
-    return post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/)[1];
+    var coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/);
+    if (!coverImgElement) return "/images/default_cover.png";
+    return coverImgElement[1];
   }
 
   var renderItem = function(results) {
@@ -36,7 +38,7 @@
             '</div>'+
             '<div class="post-data">'+
               '<h3>' + formatStr(post.title) +'</h3>'+
-              '<p>' + formatStr(post.text.substr(0, 120)) + '...</p>'+
+              '<p>' + formatStr(post.text.substr(0, 90)) + '...</p>'+
               '<div class="post-author-data">'+
                 '<img src="' + post.avatar + '" alt="avatar" />'+
                 '<span>' + post.author + '</span>'+
@@ -62,7 +64,7 @@
       }
     });
     // console.log(searchKey);
-    // console.log(data, results);
+    console.log(data);
 
     if (results.length) {
       var titleEl = document.getElementById('key');
