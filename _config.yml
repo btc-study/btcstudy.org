@@ -104,14 +104,15 @@ ignore:
 theme: hexo-theme-Claudia-master
 #theme: hexo-theme-next
 
-logo: /images/logo-light.png
-
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 #deploy:
 
-search:
-  noDataImg: /images/no-data.png
+home:
+  categories: ["BTC", "'ORGIN-OF-MONEY'", "LIGHTING-NETWORK"]
+
+# default logo image
+logo: /images/light/logo.png
 
 jsonContent:
   file: content.json
