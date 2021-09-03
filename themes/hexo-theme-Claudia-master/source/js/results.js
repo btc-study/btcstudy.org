@@ -10,22 +10,13 @@
   }
 
   var searchKey = getQueryParams('w');
+  if (!searchKey) {
+    return window.location.href = '/';
+  }
 
-  fetch('/content.json')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      getResult(myJson);
-    });
-
-  var getCoverImg = function(content) {
-    var firstImgElRegx = /<img[^>]+src="?([^"\s]+)".*?>/
-    var coverImgElement = content.match(firstImgElRegx);
-
-    if (!coverImgElement) return false;
-
-    return coverImgElement[1];
+  var getCoverImg = function(post) {
+    if (post.cover) return post.cover;
+    return post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/)[1];
   }
 
   var renderItem = function(results) {
@@ -41,7 +32,7 @@
         '<li>'+
           '<a href="/'+ post.path +'">'+
             '<div class="cover">'+
-              '<img src="' + getCoverImg(post.content) + '" alt="" />'+
+              '<img src="' + getCoverImg(post) + '" alt="" />'+
             '</div>'+
             '<div class="post-data">'+
               '<h3>' + formatStr(post.title) +'</h3>'+
@@ -57,14 +48,6 @@
       )
     });
     return dom;
-  }
-
-  var renderNoData = function() {
-    return (
-      '<img src="/images/no-data.png" alt="" />' +
-      '<h1>No result!</h1>'+
-      '<p>Please search by another keywords</p>'
-    )
   }
 
   var getResult = function(data) {
@@ -86,14 +69,22 @@
       titleEl.innerText = "“" + searchKey + "”";
 
       var subtitleEl = document.getElementById('result-length');
-      subtitleEl.innerText = results.length + ' articles in total';
+      subtitleEl.innerText = results.length + ' 篇文章';
 
       var containerEl = document.getElementById('result-list');
       containerEl.innerHTML = '<ul>'+ renderItem(results) +'</ul>';
+      $('#no-data').addClass('hidden');
     } else {
-      var noDataEl = document.getElementById('no-data');
-      noDataEl.innerHTML = '<div>'+ renderNoData() +'</div>';
+      $('#no-data').removeClass('hidden');
     }
   }
+
+  fetch('/content.json')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      getResult(myJson);
+    });
 
 })();

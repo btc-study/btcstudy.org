@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  margin-top: 180px;
   img {
     margin-bottom: 80px;
-    width: 490px;
+    height: 176px;
   }
   h1 {
     margin-bottom: 8px;
@@ -34,4 +34,17 @@
       background-color: var(--primary-color);
     }
   }
+}
+
+.nodata-dark { display: none; }
+
+.appearance-light,
+.appearance-auto {
+  .nodata-dark { display: none; }
+  .nodata-light { display: initial; }
+}
+
+.appearance-dark {
+  .nodata-light { display: none; }
+  .nodata-dark { display: initial; }
 }
