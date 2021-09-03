@@ -33,7 +33,7 @@ block content
                             if page.tags && page.tags.length > 0
                                 each tag in page.tags.toArray()
                                     a(href= url_for(`/tags/${tag.name}`))
-                                        i.page-tag.mr-1.px-1= tag.name
+                                        i.page-tag.mr-1.px-1= tag.name.replace(/-/g, ' ')
                 //- if page.date
                 //-     time.has-text-grey(datetime=page.date.toJSON())= date(page.date, date_format)
                 article.mt-4.post-content!= page.content
