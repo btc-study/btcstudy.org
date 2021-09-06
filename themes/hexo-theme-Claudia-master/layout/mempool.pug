@@ -1,0 +1,26 @@
+extends widget/base
+
+block append head
+    link(rel='stylesheet', href= url_for("/style/mempool.css"))
+    
+block content
+    main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-page')
+        header.mb-2
+            h1= 'MEMPOOL'
+            p
+                span= site.posts.length
+                span= ' 篇文章'
+        section.post-list
+            ul
+                each post in site.posts.sort('date', -1).toArray()
+                    li.is-flex.is-flex-direction-row.is-align-items-center.px-3
+                        a(href= url_for(post.path))
+                            strong= post.title
+                        img.mr-1(src= post.avatar || url_for("/images/default_avatar.png"))
+                        span= post.author
+                        time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
+                        a(href= url_for(post.path))
+                            i.iconfont.icon-icon_into
+
+block script
+    script(src= url_for("/js/mempool.js"))

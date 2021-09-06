@@ -102,3 +102,28 @@
     }
   }
 }
+
+.mobile-header-menu {
+  margin-right: 16px;
+  font-size: 24px!important;
+  color: var(--primary-color);
+}
+
+.mobile-header-logo {
+  margin-top: 5px;
+  height: 20px;
+}
+
+.mobile-header-searchIcon {
+  font-size: 24px!important;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  :root body {
+    padding-top: 44px;
+  }
+  .header-widget {
+    height: 44px;
+  }
+}
