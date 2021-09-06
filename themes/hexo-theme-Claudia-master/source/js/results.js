@@ -40,7 +40,7 @@
               '<h3>' + formatStr(post.title) +'</h3>'+
               '<p>' + formatStr(post.text.substr(0, 90)) + '...</p>'+
               '<div class="post-author-data">'+
-                '<img src="' + post.avatar + '" alt="avatar" />'+
+                '<img src="' + (post.avatar || "/images/default_avatar.png") + '" alt="avatar" />'+
                 '<span>' + post.author + '</span>'+
                 '<time>' + post.date + '</time>'+
               '</div>'+
