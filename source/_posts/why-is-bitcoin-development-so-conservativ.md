@@ -2,7 +2,7 @@
 title: '为什么比特币的开发如此保守？'
 author: 'Vlad Costea'
 date: '2020/09/01 17:30:25'
-title_image: '..\images\why-is-bitcoin-development-so-conservativ\8197d19c7bd24c74a3bd8c748d17f10f.jpg'
+title_image: '../images/why-is-bitcoin-development-so-conservativ/8197d19c7bd24c74a3bd8c748d17f10f.jpg'
 excerpt: '我们从小就听说龟兔赛跑的故事：笑到最后的是那只慢而坚定的乌龟，不是兔子'
 categories:
 - 比特币主网
@@ -17,7 +17,7 @@ tages:
 *译者：阿剑*
 
 
-![1](..\images\why-is-bitcoin-development-so-conservativ\8197d19c7bd24c74a3bd8c748d17f10f.jpg)
+![1](../images/why-is-bitcoin-development-so-conservativ/8197d19c7bd24c74a3bd8c748d17f10f.jpg)
 
 当今世界，软件每周升级已是常规，甚至可以随时发布补丁，而比特币的软件开发似乎陷入了某种保守主义。基础层不断固化，软件的运行方式日益严格（死板），而开发者还在开发不会破坏节点间共识的可选性优化。
 

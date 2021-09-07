@@ -2,7 +2,7 @@
 title: '比特币的 UTXO 模型'
 author: 'River Financial'
 date: '2020/08/25 09:42:25'
-title_image: '..\images\bitcoins-utxo-model-by-river-finance\24f26a7d50374147a301fa131f2686e8.png'
+title_image: '../images/bitcoins-utxo-model-by-river-finance/24f26a7d50374147a301fa131f2686e8.png'
 excerpt: 'UTXO 模型使得比特币在可审计性、透明性和效率上更优于传统金融系统'
 categories:
 - 比特币主网
@@ -68,7 +68,7 @@ UTXO 模型可以让所有比特币节点在任意时刻就比特币的存在情
 
 例如，Alice 持有两个 UTXO，分别价值 0.5 BTC 和 0.7 BTC。当她向 Bob 支付 1 BTC 时，可以使用这两个 UTXO 作为输入，然后将 1 BTC 的输入发送给 Bob。
 
-![1](..\images\bitcoins-utxo-model-by-river-finance\24f26a7d50374147a301fa131f2686e8.png)
+![1](../images/bitcoins-utxo-model-by-river-finance/24f26a7d50374147a301fa131f2686e8.png)
 
 Alice 还另外创建了一个 0.199 BTC 的输出作为找零发送给自己。由于需要支付交易费，她无法给自己发送 0.2 BTC。
 

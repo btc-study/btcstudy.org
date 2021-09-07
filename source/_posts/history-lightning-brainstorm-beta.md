@@ -3,7 +3,7 @@
 title: '闪电网络的历史：从头脑风暴，到测试版本'
 author: 'Aaron Van Wirdum'
 date: '2020/08/23 11:07:25'
-title_image: '..\images\history-lightning-brainstorm-beta\6bd872cabbf04326a17708a93fb0a6da.png'
+title_image: '../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708a93fb0a6da.png'
 excerpt: '闪电网络在观念上的起源'
 categories:
 - 闪电网络
@@ -17,7 +17,7 @@ tages:
 
 *译者：阿剑（hongji@ethfans.org）*
 
-![](..\images\history-lightning-brainstorm-beta\6bd872cabbf04326a17708a93fb0a6da.png)
+![](../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708a93fb0a6da.png)
 
 （编者注：原文发表于 2018 年 4 月。）
 
@@ -35,7 +35,7 @@ tages:
 
 这个观念，整体上可以说跟中本聪在 2009 年放出的比特币软件一样早。Bitcoin 0.1 就包含了一个[代码草稿](https://github.com/trottier/original-bitcoin/blob/master/src/main.cpp#L434)，是允许用户在交易被网络确认之前更新这笔交易的：
 
-![](..\images\history-lightning-brainstorm-beta\10a40f47444a44c5adba36b399fcb3a7.png)
+![](../images/history-lightning-brainstorm-beta/10a40f47444a44c5adba36b399fcb3a7.png)
 
 <center>- Bitcoin 0.1 包含的支付通道草稿。来源：GitHub -</center>
 
@@ -43,7 +43,7 @@ tages:
 
 几年以后（2013 年），Hearn 在[比特币开发邮件组](https://lists.linuxfoundation.org/mailman/listinfo/bitcoin-dev)中[公开了](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002417.html)中本聪对支付通道的解释：
 
-![](..\images\history-lightning-brainstorm-beta\c6e753afc18c4549aa7aef53d5df85ef.png)
+![](../images/history-lightning-brainstorm-beta/c6e753afc18c4549aa7aef53d5df85ef.png)
 
 <center>- 中本聪对支付通道原理的解释，曝光自 Mike Hearn。来源：Bitcoin-dev mailing list -</center>
 
@@ -63,7 +63,7 @@ tages:
 
 Corné Plooy（现在是一个闪电网络的开发者，在荷兰的比特币交易所 [BL3P](https://bl3p.eu/)）也一直在研究比特币的支付层，根源于他在 [2011 年](https://bitcointalk.org/index.php?topic=28565.0)提出的一个初步想法。
 
-![](..\images\history-lightning-brainstorm-beta\8b6b6ccfdafe493f82934bd996d7dbf9.png)
+![](../images/history-lightning-brainstorm-beta/8b6b6ccfdafe493f82934bd996d7dbf9.png)
 
 <center>- Plooy 的支付层层的一个早期图示，后来成了闪电网络的前身 Amiko Pay。来源：Corné Plooy -</center>
 
@@ -73,7 +73,7 @@ Corné Plooy（现在是一个闪电网络的开发者，在荷兰的比特币�
 
 这种解决方案在过去几年中出现了很多次。例如，Bitcoin Core 的贡献者 Peter Todd 就曾在 2014 年在比特币开发者邮件组中[提出](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-December/006988.html)过这种概念。与此同时，支付处理商 [BitPay](https://bitpay.com/) 也在 2015 年初公开了一份有关类似的通道内支付方案（“Impulse”）的[白皮书](http://impulse.is/impulse.pdf)。而一个[相似的解决方案](https://www.strawpay.com/docs/stroem-payment-system.pdf)也由瑞典的创业公司 [Strawpay](https://web.archive.org/web/20140908213132/http://www.strawpay.com:80/) 实现了出来，叫做 [Stroem](https://github.com/strawpay/stroem-consumerj)（或者 Ström），就在几乎同一时间 —— 但这些进展都没有造成很大影响。
 
-![](..\images\history-lightning-brainstorm-beta\56248199786e431fb65275b1aabdf1f2.png)
+![](../images/history-lightning-brainstorm-beta/56248199786e431fb65275b1aabdf1f2.png)
 
 <center>- 现已倒闭的 Strawpay 小额支付公司的 Logo。来源：The Internet Archive  -</center>
 
@@ -120,7 +120,7 @@ https://bitcoinmagazine.com/technical/history-lightning-brainstorm-beta
 
 在 Russell 开始开发 c-lightning 不久之后，Blocksteam 就不是唯一一个入局实现闪电网络的公司了。在 2015 年夏天，[ACINQ](https://acinq.co/) 这家更小的比特币科技公司（一开始计划开发基于智能卡的硬件钱包）决定也尝试一下这项富有前景的技术。这家位于巴黎的创业公司后来宣布他们开发者用 Scala 编程语言[开发出了](https://medium.com/@ACINQ/eclair-0-2-alpha1-is-out-3caaff242567)自己的闪电网络协议，叫做 eclair。
 
-![](..\images\history-lightning-brainstorm-beta\644f8933e2d04ec38325cbefc758a1b5.png)
+![](../images/history-lightning-brainstorm-beta/644f8933e2d04ec38325cbefc758a1b5.png)
 
 <center>- 来自 ACINQ 的 eclair 发行公告。来源：medium.com -</center>
 
@@ -158,7 +158,7 @@ https://bitcoinmagazine.com/technical/history-lightning-brainstorm-beta
 
 SegNet 4 测试网部署不到半年，在 2016 年 10 月，Blockstream 开发团队就已经把他们的 c-lightning 原型提高到可用的程度。后来这被称为 “[闪电网络第一击](http://blockstream.com/2016/10/05/blockstream-lightning-first-strike)”：Decker 通过闪电网络的一个早期版本，从 Russell 手上 “买” 了一只猫，用的是测试网的比特币（没有价值的）。
 
-![](..\images\history-lightning-brainstorm-beta\26c8cad11c424c488ccb7c5599820f07.png)
+![](../images/history-lightning-brainstorm-beta/26c8cad11c424c488ccb7c5599820f07.png)
 
 <center>- Christian Decker 从 Rusty Russell 处 “买” 的一张猫图片。 来源：Blockstream.com-</center>
 
@@ -172,7 +172,7 @@ SegNet 4 测试网部署不到半年，在 2016 年 10 月，Blockstream 开发�
 
 又过了一个月，Blockstream [开设](http://blockstream.com/2018/01/16/lightning-charge)了一个[网上商店](https://store.blockstream.com/)，让人可以用比特币来购买实体商品 —— 虽然 c-lightning 实现还只是 beta 版本，网站上有清晰的风险提醒。2018 年 2 月，在闪电网络仍处在 alpha 阶段时，比特币世界的传奇人物、以“[比特币买披萨](https://bitcointalk.org/index.php?topic=137.0)” 趣事闻名世界的 [Lazlo Hanyecz](https://en.bitcoin.it/wiki/Laszlo_Hanyecz) [宣布](https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/001044.html)自己使用闪电网络买了 —— 当然，又是 —— 披萨！
 
-![](..\images\history-lightning-brainstorm-beta\5ac496994ef54f7780d4cf6b6637f4c2.png)
+![](../images/history-lightning-brainstorm-beta/5ac496994ef54f7780d4cf6b6637f4c2.png)
 
 <center>- Lazlo Hanyecz 享用披萨。来源： -</center>
 
@@ -188,7 +188,7 @@ Blockstream 的 c-lightning 实现尚未发布 beta 版，虽然他们的开发�
 
 虽然在 alpha 时代，人们就已经在使用闪电网络软件了，beta 版本进一步刺激了[增长趋势](https://1ml.com/statistics)。在本文发表之时，已经有超过 1000 个闪电网络节点和 5000 个闪电网络通道，留存有超过 10 btc（在本文撰写之时总价值约 7 万美元）。（编者注：截至 2021 年 8 月 8 日，全世界已经有 12044 个闪电网络节点和 58717 个通道，留存超过 1500 btc，价值 6000 万美元。）每天都有数百个新节点加入，甚至莱特币专用的闪电网络也发展了，未来还可以与比特币的闪电网络[交互](https://bitcoinmagazine.com/articles/atomic-swaps-how-the-lightning-network-extends-to-altcoins-1484157052)。
 
-![](..\images\history-lightning-brainstorm-beta\b8d650bada2a4509806d18cffca0d4d4.png)
+![](../images/history-lightning-brainstorm-beta/b8d650bada2a4509806d18cffca0d4d4.png)
 
 <center>- 在本文撰写之时，闪电网络的图示。来源：http://lnmainnet.gaben.win/ -</center>
 

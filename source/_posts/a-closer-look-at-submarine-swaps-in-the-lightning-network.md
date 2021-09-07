@@ -2,7 +2,7 @@
 title: '闪电网络中的 Submarine Swap'
 author: 'Florencia Ravenna'
 date: '2020/09/01 16:50:25'
-title_image: '..\images\a-closer-look-at-submarine-swaps-in-the-lightning-network\1_62MUjQ0RdBm34X-Bl15VKw.png'
+title_image: '../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_62MUjQ0RdBm34X-Bl15VKw.png'
 excerpt: '把资金从链上支付到链下，反之亦可'
 categories:
 - 闪电网络
@@ -16,7 +16,7 @@ tages:
 
 *译者：阿剑（hongji@ethfans.org）*
 
-![1_62MUjQ0RdBm34X-Bl15VKw](..\images\a-closer-look-at-submarine-swaps-in-the-lightning-network\1_62MUjQ0RdBm34X-Bl15VKw.png)
+![1_62MUjQ0RdBm34X-Bl15VKw](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_62MUjQ0RdBm34X-Bl15VKw.png)
 
 
 有关 submarine swap（“潜水艇互换”）的讨论已经持续好一段时间了，而且已经出现了有意思的产品和服务。那么，Submarine Swap 到底是什么，又是怎么工作的呢？本篇文章就要讲解这个问题。
@@ -45,11 +45,11 @@ tages:
 
 如果没有哈希时间锁，事情可能在两个环节失控，就取决于谁先支付了”
 
-![1_aeN3Bj9g1lM4lld8W-8ezA](..\images\a-closer-look-at-submarine-swaps-in-the-lightning-network\1_aeN3Bj9g1lM4lld8W-8ezA.gif)
+![1_aeN3Bj9g1lM4lld8W-8ezA](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_aeN3Bj9g1lM4lld8W-8ezA.gif)
 
 <center>- 如果你先给 Thomas 支付，Thomas 可以拿着这份资金跑路。 -</center>
 
-![1_IQFNh3iYvYG689Pfu9752A](..\images\a-closer-look-at-submarine-swaps-in-the-lightning-network\1_IQFNh3iYvYG689Pfu9752A.gif)
+![1_IQFNh3iYvYG689Pfu9752A](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_IQFNh3iYvYG689Pfu9752A.gif)
 
 <center>- 如果 Thomas 先给 Sandra 支付，相信你会信守诺言把钱给回他，那么你可以翻脸不认人，拒绝偿还（而 Thomas 给出去的钱是收不回来了） -</center>
 
@@ -57,7 +57,7 @@ tages:
 
 现在 Thomas 可以给 Sandra 发送 1 btc，但是附上了一摸一样的条款：Sandra 必须在给定时间内揭示这个秘密数据。Sandra 自己知道这个数据，因此当然可以取走这个钱。然而，在她申领资金的那一刻，这个秘密也随之暴露，Thomas 也就知道了这个数值，因此可以申领你给他的资金了。
 
-![0_beAxVQ2D_CkcSQqj](..\images\a-closer-look-at-submarine-swaps-in-the-lightning-network\0_beAxVQ2D_CkcSQqj.gif)
+![0_beAxVQ2D_CkcSQqj](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/0_beAxVQ2D_CkcSQqj.gif)
 
 结果就是，你成功通过 Thomas 支付给了 Sandra，无需信任他们，也没有人会面临风险。现在你和 Thomas 都知道了 Sandra 所生成的秘密值，你也可以用它作为一种 *支付证明*，因为 Sandra 揭示它就获得了支付给她的资金。注意，这里的的超时机制是很重要的，它充当了应对 Sandra 拒绝或不能揭示这个秘密值时候的 “退款” 措施。
 
@@ -73,7 +73,7 @@ tages:
 
 收款方知道这个秘密数值，但要领走这笔资金就只能暴露这个秘密，这时候，服务商也就知道了这个秘密，可以申领你支付给他的资金了。服务商和收款方皆大欢喜，区别只在于服务商要在链上申领资金，而收款方在链下申领。
 
-![0_-CyP0o-pNqVaAXFE](..\images\a-closer-look-at-submarine-swaps-in-the-lightning-network\0_-CyP0o-pNqVaAXFE.gif)
+![0_-CyP0o-pNqVaAXFE](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/0_-CyP0o-pNqVaAXFE.gif)
 
 ## 潜水艇互换有什么用？
 

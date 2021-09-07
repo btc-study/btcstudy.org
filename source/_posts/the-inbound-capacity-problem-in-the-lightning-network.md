@@ -2,7 +2,7 @@
 title: '闪电网络的入账容量问题'
 author: 'Florencia Ravenna'
 date: '2020/09/01 12:00:25'
-title_image: '..\images\the-inbound-capacity-problem-in-the-lightning-network\90eec6fad7594ec7a230dbecdfad93d0.png'
+title_image: '../images/the-inbound-capacity-problem-in-the-lightning-network/90eec6fad7594ec7a230dbecdfad93d0.png'
 excerpt: '入账容量问题可能是闪电网络在启动阶段会遇到的问题'
 categories:
 - 闪电网络
@@ -17,7 +17,7 @@ tages:
 *译者：阿剑（hongji@ethfans.org）*
 
 
-![1](..\images\the-inbound-capacity-problem-in-the-lightning-network\90eec6fad7594ec7a230dbecdfad93d0.png)
+![1](../images/the-inbound-capacity-problem-in-the-lightning-network/90eec6fad7594ec7a230dbecdfad93d0.png)
 
 几个星期以来，比特币社区的很多人一直在讨论闪电网络（Lightning Network）的 inbound capacity 问题。[越来越难以收到闪电火炬](https://www.coindesk.com/its-getting-harder-to-send-bitcoins-lightning-torch-heres-why)，加上 [Bitrefill 启动了 Thor](https://www.bitrefill.com/thor-lightning-network-channels)，还有 [LND 放出了 Lightning Loop](https://blog.lightning.engineering/posts/2019/03/20/loop.html)，都让人们更加关注这个问题。在本文中，我会解释这个问题的形式及其根源。我们也会分享一些很容易被忽略的洞见。
 
@@ -29,17 +29,17 @@ tages:
 
 一个支付通道开通后，它就锁住了恒定数量的一些 btc，这个数量叫做 “ *通道容量* ”。参与支付通道的双方各自拥有这个容量的一部分。在你自己这边的余额，我们叫 “ *本地余额* ”，而在你的交易对手那边的余额，叫 “*远端余额* ”。你的本地余额和远端余额在关闭通道之前可以更新任意次，但通道容量，如果你不关闭通道或者拼接通道，是无法改变的。
 
-![2](..\images\the-inbound-capacity-problem-in-the-lightning-network\4caca3411e594bf3944d175a2b79838d.png)
+![2](../images/the-inbound-capacity-problem-in-the-lightning-network/4caca3411e594bf3944d175a2b79838d.png)
 
 <center>- 支付通道就像沙漏：虽然沙子的总量是恒定的，你可以任意把沙子移动到其中一端。但如果你想改变里面沙子的数量，那就非打破这个沙漏不可 -</center>
 
-![3](..\images\the-inbound-capacity-problem-in-the-lightning-network\fa7f82e49ef9425e99ce094c8880e1b7.png)
+![3](../images/the-inbound-capacity-problem-in-the-lightning-network/fa7f82e49ef9425e99ce094c8880e1b7.png)
 
 <center>- 你跟 Robert 的通道里面有 8 btc，你的本地余额是 5 btc，你的远端余额是 3 btc -</center>
 
 每次支付，都是把你的本地余额转一些给你的交易对手，也就是减少本地余额，增加远端余额。类似地，当你收到一笔支付时，你的本地余额增加，数额恰好等于你的远端余额减少的数额。
 
-![4](..\images\the-inbound-capacity-problem-in-the-lightning-network\4552e4a6a4d34261ae3d664e026e5b8e.png)
+![4](../images/the-inbound-capacity-problem-in-the-lightning-network/4552e4a6a4d34261ae3d664e026e5b8e.png)
 
 <center>- 当你给 Robert 支付 1 btc 之后，你的远端余额增加了 1 btc -</center>
 
@@ -51,7 +51,7 @@ tages:
 
 假设你想通过闪电网络来卖贴纸。那么，你需要与至少一个闪电网络节点建立连接。你仔细挑选了一个节点，保证这个节点可能跟你的潜在客户 Sophie 和 Angela 相连。我们把这个节点叫做 “lnTop”。
 
-![5](..\images\the-inbound-capacity-problem-in-the-lightning-network\e5aecd93b2434ef69c40d60b8635797b.png)
+![5](../images/the-inbound-capacity-problem-in-the-lightning-network/e5aecd93b2434ef69c40d60b8635797b.png)
 
 <center>- 你跟 InTop 开启了一个通道，锁入了 2 btc。你的本地余额是 2 btc，远端余额是 0 btc -</center>
 
@@ -69,19 +69,19 @@ tages:
 
 嗯 …… 也不是。即使你知道了自己如何能提高远端余额，可能也没法解决入账容量问题。关键在于：**并非所有通道的入账容量都相同**。要理解这一点，你要先理解，在支付路由的过程中，闪电网络的其它部分，发生了什么事情。我们把上图所示网络的通道容量都划出来，这样更好理解了。
 
-![6](..\images\the-inbound-capacity-problem-in-the-lightning-network\330af2ffe073476bb805db05a366383c.png)
+![6](../images/the-inbound-capacity-problem-in-the-lightning-network/330af2ffe073476bb805db05a366383c.png)
 
 <center>- 这是 lnTop 往通道里充值了 3 btc 之后的情形。在网络中，所有节点都跟自己相连的节点有专门的本地和远端余额 -</center>
 
 你从 lnTop 那里获得一些入账容量之后，Angela 最多也只能给你发 2 btc，因为你在 lnTop 那里的入账容量超过了 2 btc，但 lnTop 在 Angela 处的入账容量只有 2 btc。
 
-![Gif_1-2](..\images\the-inbound-capacity-problem-in-the-lightning-network\Gif_1-2.gif)
+![Gif_1-2](../images/the-inbound-capacity-problem-in-the-lightning-network/Gif_1-2.gif)
 
 <center>- Angela 给你发送了 1 btc，路径上所有节点的余额更新。她还能再给你发 1 btc -</center>
 
 但是，在这个网络里，Sophie 就没法给你发送 1 btc。你可以看看 Sophie 给你支付的路径上的通道容量状态，你的确有 3 btc 的入账容量，但 lnTop 没有 lnFirst 的入账容量。
 
-![Gif_2-1](..\images\the-inbound-capacity-problem-in-the-lightning-network\Gif_2-1.gif)
+![Gif_2-1](../images/the-inbound-capacity-problem-in-the-lightning-network/Gif_2-1.gif)
 
 <center>- lnFirst 没法路由 1 btc 的支付给你。所以 Sophie 没法给你支付 -</center>
 

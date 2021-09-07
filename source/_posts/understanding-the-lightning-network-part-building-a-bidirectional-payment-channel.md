@@ -16,7 +16,7 @@ tags:
 
 *译者：阿剑（hongji@ethfans.org）*
 
-![](..\images\understanding-the-lightning-network-part-building-a-bidirectional-payment-channel\0d0a5ec17c984db18b6e59b5980be229.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/0d0a5ec17c984db18b6e59b5980be229.png)
 
 闪电网络（Lightning Network）可能是比特币区块链上最受期待的创新（编者注：原文撰写于 2016 年）。这种支付方案最早由 Joseph Poon 和 Tadge Dryja 在一年多以前提出，号称能支持用户之间在链下发送无限次的交易，而且成本极低 —— 还能借用比特币网络提供的安全性。
 
@@ -36,7 +36,7 @@ tags:
 
 闪电网络的一个关键特性是，它是由或多或少的常规比特币事务组成的。只是，这些事务一般不会在比特币网络里传播。相反，这些事务都是用户保存在节点本地的 —— 只不过，它们随时可以放到比特币网络中传播。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/c7c81a1510c74dea8946c002f6e0cec4.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/c7c81a1510c74dea8946c002f6e0cec4.png)
 
 <center>- （译者注：如图所示，比特币就像支票一样可以拆分，且其流转会形成清晰的链条。） -</center>
 
@@ -46,7 +46,7 @@ tags:
 
 谨记：即使尚未确认的事务之间发生了冲突，最终也只有一笔会得到确认。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/ac139e9674514ed0a74a5b7a071e8c5b.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/ac139e9674514ed0a74a5b7a071e8c5b.png)
 
 ## 模块 #3：多签名（Multisig）
 
@@ -56,7 +56,7 @@ tags:
 
 闪电网络一般使用 2-2 的多签名要求。要从这样的地址中转出比特币需要提供跟这两把私钥相关的两个签名，少一个都不行。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/be6718365d194dee9198b0628abc1e64.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/be6718365d194dee9198b0628abc1e64.png)
 
 ## 模块 #4：时间锁（Time-Locks）
 
@@ -64,7 +64,7 @@ tags:
 
 有两种类型的时间锁：1）绝对时间锁，叫做 CheckLockTimeVerify（CLTV）；2）相对时间锁，CheckSequenceVerify（CSV）。CLTV 会锁定比特币直至未来某个（可以说是）具体的具体：一个具体时间和日期，或者一个具体的区块高度；而 CSV 只会使用相对时间。当一个 CVS 输出上链之后，就要等待一定数量的区块后，这笔输出才能花用。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/753afb6b70024f648e78ffd9d4ff89b9.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/753afb6b70024f648e78ffd9d4ff89b9.png)
 
 ## 模块 #5：哈希值和秘密值
 
@@ -74,7 +74,7 @@ tags:
 
 在比特币区块链上，这个机关又可以用在 “锁定比特币” 上（实际上，锁定比特币就是比特币协议运行的方式）。举个例子，你可以在一个输出中包含一个哈希值，要求后序的事务只有包含该哈希值对应的秘密值才能花费这笔输出。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/472e616c4a4540cd81d9460763661eb0.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/472e616c4a4540cd81d9460763661eb0.png)
 
 ## 第一个挑战：双向的支付通道
 
@@ -104,7 +104,7 @@ Bob 签名了这笔事务，然后发给了 Alice。
 
 开启通道之后，Alice 和 Bob 都可以签名和广播他们从对方那里得到的、部分有效的承诺事务。如果 Alice 广播了（Bob 发给她的承诺事务），则 Bob 会立即得到 6 btc。如果 Bod 广播了，则 Alice 会立即拿到 4 btc。但签名和广播事务的那个，必须等待 1000 个区块才能解锁那个后序的多签名地址，把剩余的比特币拿走。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/57618253c1b94dc8b5ad3b7ce5065414.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/57618253c1b94dc8b5ad3b7ce5065414.png)
 
 不过，这就是支付通道的关键技巧：不去签名和广播他们得到的承诺交易。
 
@@ -130,7 +130,7 @@ Bob 签名了这笔事务，然后发给了 Alice。
 
 这就意味着 Alice 和 Bob 都要重组的激励不去耍小手段，只广播最近的状态。
 
-![](https://upyun-assets.ethfans.org/uploads/photo/image/9e4478b639e1450388ca43420296ccd3.png)
+![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/9e4478b639e1450388ca43420296ccd3.png)
 
 好了，有了双向的支付通道之后，我们要把它拓展成一个支付网络。这就是我们第二篇的主题。
 

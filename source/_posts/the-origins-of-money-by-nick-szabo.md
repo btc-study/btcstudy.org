@@ -2,7 +2,7 @@
 title: '尼克·萨博：货币的起源'
 author: 'Nick Szabo'
 date: "2020/8/23 11:43:25"
-title_image: '..\images\the-origins-of-money-by-nick-szabo\89905b40db11411d8f417cf6f516a23a.jpg'
+title_image: '../images/the-origins-of-money-by-nick-szabo/89905b40db11411d8f417cf6f516a23a.jpg'
 excerpt: "货币的前身，连同语言，帮助早期的现代人种解决了其它动物所不能解决的协作问题，其中就包括如何实现互惠互利、亲属利他以及减少攻击性的问题。这些货币先祖与非法定货币同样具有非常具体的特征 —— 绝不仅仅是象征性物品或装饰品。"
 categories:
 - 货币理念
@@ -52,13 +52,13 @@ tags:
 
 美洲土著并不是第一群做出好看而无用的燧石器件的人，也不是第一群发明了贝壳货币的人；有必要加一句，欧洲人也不是，虽然他们以往也曾大量使用贝壳和牙齿作为货币 —— 更不用说牛、金子、银、武器和其它东西了。亚洲人用过所有这些东西，还有政府发行的假斧头（译者注：应指 “刀币”），但他们也引进过这种工具（贝壳）。考古学家已经发现了可追溯到旧石器时代（Paleolithic）早期的贝壳项链 —— 简直可以轻易替代美洲原住民所用的货币。
 
-![](..\images\the-origins-of-money-by-nick-szabo\ee1638aa39444540877d603c83c29963.gif)
+![](../images/the-origins-of-money-by-nick-szabo/ee1638aa39444540877d603c83c29963.gif)
 
 <center>- 用海螺 Nassarius kraussianus 的贝壳制作的豌豆大小的串珠。这些海螺生活在入海口。发现自 Blombos 洞穴，南非。年代距今 75, 000 年前。<a href="BO4"><sup>[B04]</sup></a> -</center>
 
 在 1990 年代晚期，考古学家 Stanley Ambrose 发现，在肯尼亚大裂谷的一座石头掩体中，藏着一些用鸵鸟蛋壳和贝壳碎片制成的项链。他们用（40Ar/42Ar）的氩测年法，将项链的年代确定为至少 4 万年前 [<sup>[A98]</sup>](#A98)。在西班牙发现的动物牙齿串珠也可以被追溯到这个年代 [<sup>[W95]</sup>](#W95)。在黎巴嫩（Lebanon）也发现了位于旧石器时代早期的穿孔贝壳 [<sup>[G95]</sup>](#G95)。最近，（预备作为串珠）的完整贝壳，在南非的 Blombos 洞穴被发现，可以推前到距今 7 万 5 千年前！[<sup>[B04]</sup>](#B04)
 
-![](..\images\the-origins-of-money-by-nick-szabo\bb446c5104874099a006a30231891ac8.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/bb446c5104874099a006a30231891ac8.jpg)
 
 <center>- 鸵鸟蛋壳串珠，发现于肯尼亚的东非大裂谷。距今 4 万年前。（感谢 Stanley Ambrose）-</center>
 
@@ -66,7 +66,7 @@ tags:
 
 基本上，所有人类文化，甚至那些没有参与大规模贸易或使用形式上更为现代的货币的文化，都制作、欣赏珠宝以及那些艺术或传承价值远胜于实用性的东西。我们人类收集贝壳项链和其它形式的珠宝 —— 只是为了愉悦。对于演化心理学家来说，所谓 “人类做某事只是为了愉悦” 根本就不是一个解释，而只是提出了一个问题。为什么那么多人会觉得收藏品和珠宝的光泽令人愉悦？更直白一点，问题是 —— 这种愉悦给了人类怎样的演化优势？
 
-![](..\images\the-origins-of-money-by-nick-szabo\89905b40db11411d8f417cf6f516a23a.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/89905b40db11411d8f417cf6f516a23a.jpg)
 
 <center>- 俄罗斯 Sungir 的一处墓穴里发现的项链，距今 28,000 年。是内部互锁并且可互换的串珠。每一颗猛犸象牙串珠可能都要一两个小时的劳动来制造 <a href="#W97"><sup>[W97]</sup></a>。-</center>
 
@@ -150,16 +150,16 @@ Smith 的理论的关键在于：这些策略游戏，虽然看起来是在体�
 
 ## 库拉圈
 
-![](..\images\the-origins-of-money-by-nick-szabo\f7c5c795baa0429fbf4f4537506ed1d1.gif)
+![](../images/the-origins-of-money-by-nick-szabo/f7c5c795baa0429fbf4f4537506ed1d1.gif)
 
 <center>- 前殖民时代，美拉尼西亚群岛上的 Kula（库拉）贸易网络。Kula 既是 “非常强大” 的货币，又是故事和传说的纪念物。可以相互贸易的商品（大多数都是农产品）分布在不同季节，因此物物交换是行不通的。库拉收藏品具有无可伪造的贵重价值，而且可以穿戴、可以流转；作为一种货币，它解决了需求的双重巧合问题。因为能解决这个问题，一枚手镯或一串项链，可以在几次贸易之后就获得比其制造成本更高的价值，而且能持续流转数十年。关于收藏品上一个主人的传说和故事，进一步提供了上游信贷和流动性的信息。在新石器时代的文化中，流通用收藏品（通常是贝壳）的形态往往更不规则，但目的和属性都是类似的。<a href="L94"><sup>[L94]</sup></a>  -</center>
 
-![](..\images\the-origins-of-money-by-nick-szabo\1630ac4255bd47769d8cd4ea308ccc9a.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/1630ac4255bd47769d8cd4ea308ccc9a.jpg)
 
 <center>- 库拉手环（mwali） -</center>
 
 
-![](..\images\the-origins-of-money-by-nick-szabo\db5595f295284cdcb07f37b698eadec4.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/db5595f295284cdcb07f37b698eadec4.jpg)
 
 <center>- 库拉项链（bagi） -</center>
 
@@ -209,11 +209,11 @@ Bruce Winterhalder [<sup>[W98]</sup>](#W98) 观察到了动物之间偶尔出现
 
 与大多数 狩猎-采集 文化相似，!Kung 人在一年中的大部分时候的小而分散的团体，只有几周时间才会与几个别的团体汇集在一起。集会就像带有额外功能的市集 —— 实现贸易、巩固联盟、强化伙伴关系、买卖姻亲。集会的准备工作就是制造可交易的物品，一部分是实用的东西，但大部分都是收藏品性质的东西。这个交易系统，叫做 !Kung *hxaro*，涉及大量挂饰珠宝的贸易，包括鸵鸟蛋壳项链；而这些收藏品都非常类似于非洲四万年前的东西。
 
-![](..\images\the-origins-of-money-by-nick-szabo\31d18d2956e84ac48259e8037a665b66.gif)
+![](../images/the-origins-of-money-by-nick-szabo/31d18d2956e84ac48259e8037a665b66.gif)
 
 <center>-  !Kung 人的邻居部落间的 <a href="http://www.mpi-fg-koeln.mpg.de/~lk/netvis/kunggenetic.html">hxaro 交易系统的模式和亲属关系</a> -</center>
 
-![](..\images\the-origins-of-money-by-nick-szabo\a624d6dc36ce45d384ea1bf319bd444e.gif)
+![](../images/the-origins-of-money-by-nick-szabo/a624d6dc36ce45d384ea1bf319bd444e.gif)
 
 <center>- 用于 haxro 交易的项链 -</center>
 
@@ -329,7 +329,7 @@ Bruce Winterhalder [<sup>[W98]</sup>](#W98) 观察到了动物之间偶尔出现
 燧石也非常像第一类收藏品，即前述的专用型收藏品，就像珠宝一样。**实际上，最早的燧石可能是因其切割用途而被制造出来的；用作财富转移媒介、促成那些上文所提到的制度，这些附加价值都是意料之外的后果**。而这些制度，反过来推动了专用型收藏品的制造，先是没有实际用途的燧石，然后是智人发展出来的各式各样的珠宝。
 
 
-![](..\images\the-origins-of-money-by-nick-szabo\ae83b73dfc08449794916b1b54695e27.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/ae83b73dfc08449794916b1b54695e27.jpg)
 
 <center>- 来自苏美尔（Sumer）地区，公元前 3000 年的贝壳货币 -</center>
 
@@ -337,7 +337,7 @@ Bruce Winterhalder [<sup>[W98]</sup>](#W98) 观察到了动物之间偶尔出现
 
 收藏品与贵金属货币、大多数实物支撑型货币的储备商品具有同样的属性，这绝非巧合。只不过，比起在人类史前时代大部分时候所用的收藏品，货币以更纯粹的形式实现了这些属性。
 
-![](..\images\the-origins-of-money-by-nick-szabo\7c8d00ee95e7461281d154e7125863d9.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/7c8d00ee95e7461281d154e7125863d9.jpg)
 
 <center>- 公元前 2500 年苏美尔人使用的银环和线圈货币。注意其截面大小也是标准的。而且大部分此类物件的重量都是标准的，从 1/12 shekel 到 60 shekel。要测验一个银环或者线圈的价值，可借助称重以及随机选定位置切开的办法。（芝加哥大学，Courtesy Oriental Institute）-</center>
 
@@ -351,7 +351,7 @@ Bruce Winterhalder [<sup>[W98]</sup>](#W98) 观察到了动物之间偶尔出现
 
 **收藏品放大了我们的头脑和语言作为囚徒困境解决方案的能力，使我们不至于像所有其它动物一样，无法通过事后报恩与非亲属合作**。声誉机制可能遭遇两个主要的问题 —— 可能记错了谁干了什么，可能错误估计了行为所创造的价值大小或侵害程度。在宗族（即小型且比邻而居的亲属团体，或者说扩大化的家庭，是部落的子集）内部，我们的大脑可以最小化这些错误，所以公开的声誉和强制性的制裁可以提供强大的动力，变成事后报答模式的主要推动力，使人们不必因交易对手的合作能力和背叛能力而疑神疑鬼、止步不前。尼安德特人和智人的大脑大小相当，（在这一点上可能是类似的，）很有可能每个当地的氏族成员都关注着其他所有人的人情网络。在小规模的亲属团体中，将收藏品用于贸易的情形可能是很少的。在一个部落的不同宗族间，收藏品交易和人情往来都有可能。但是在部落之间，收藏品就完全取代了声誉，成为了互惠主义的动力，虽然暴力仍然在强制施行权利方面扮演着重要作用，并且成为了大部分交易的主要障碍。
 
-![](..\images\the-origins-of-money-by-nick-szabo\8b4d701c3f904bf69005f38d097a9f62.jpg)
+![](../images/the-origins-of-money-by-nick-szabo/8b4d701c3f904bf69005f38d097a9f62.jpg)
 
 <center>- <strong>当物品中凝结着无可伪造的昂贵消耗</strong>——用于贸易的玻璃串珠，16 或 17 世纪威尼斯制造，出土于非洲 Mali。这样的珠子在欧洲殖民者遇到新石器文化或者说 狩猎-采集 文化的地方都非常流行。-</center>
 

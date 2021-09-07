@@ -2,7 +2,7 @@
 title: '比特币与密码朋克的延续'
 author: 'Jameson Lopp'
 date: '2020/09/01 17:22:25'
-title_image: '..\images\bitcoin-and-the-rise-of-the-cypherpunks\91545f955a264321aee18927a7683c16.jpg'
+title_image: '../images/bitcoin-and-the-rise-of-the-cypherpunks/91545f955a264321aee18927a7683c16.jpg'
 excerpt: '密码朋克相信，隐私性是基本人权'
 tages:
 - [比特币, 密码朋克]
@@ -15,7 +15,7 @@ tages:
 *译者：闵敏 & 阿剑*
 
 
-![1](..\images\bitcoin-and-the-rise-of-the-cypherpunks\91545f955a264321aee18927a7683c16.jpg)
+![1](../images/bitcoin-and-the-rise-of-the-cypherpunks/91545f955a264321aee18927a7683c16.jpg)
 
 从比特币到区块链再到分布式账本，密码学货币领域日新月异，以至于我们很难看清它的发展方向。
 
@@ -66,7 +66,7 @@ tages:
 
 由于公民自由主义者和隐私倡导者对美国政府侵犯公民隐私的控诉、加密软件在美国境外的普及和 Matt Blaze 成功黑入美国政府提出的带后门的[ Clipper 芯片](https://en.wikipedia.org/wiki/Clipper_chip)，美国政府最终放弃了对密码学技术的垄断。
 
-![2](..\images\bitcoin-and-the-rise-of-the-cypherpunks\854b706858304be08198f971d8da2c48.gif)
+![2](../images/bitcoin-and-the-rise-of-the-cypherpunks/854b706858304be08198f971d8da2c48.gif)
 
 1997 年，Adam Back 博士[发明了 Hashcash](http://www.hashcash.org/papers/announce.txt)。Hashcash 是一个抗垃圾邮件机制，通过有效提高发送邮件的（时间和计算）成本，让垃圾邮件发送者血本无归。
 
@@ -92,7 +92,7 @@ Nick Szabo 在 2005 年[提出了 “bit gold”](http://unenumerated.blogspot.c
 
 
 
-![3](..\images\bitcoin-and-the-rise-of-the-cypherpunks\50ae4488c1744bdfa412289715ddaea6.png)
+![3](../images/bitcoin-and-the-rise-of-the-cypherpunks/50ae4488c1744bdfa412289715ddaea6.png)
 
 <center>- 比特币的隐私模型（来源：比特币白皮书） -</center>
 
@@ -141,13 +141,13 @@ ECDHM 地址方案的例子包括 Peter Todd 提出的 [Stealth Addresses](https
 
 用户还可以使用比特币混币器来增强隐私性，但是这种方法需要消耗较多人力资源。将网络参与者的代币混合这一概念类似 Chaum 博士提出的 “混合网络（mix network）”。
 
-![4](..\images\bitcoin-and-the-rise-of-the-cypherpunks\0cf7e0ccde4e4b8faacf961f97aff895.png)
+![4](../images/bitcoin-and-the-rise-of-the-cypherpunks/0cf7e0ccde4e4b8faacf961f97aff895.png)
 
 现有的几种混币算法包括：
 
 * [CoinJoin](https://bitcointalk.org/index.php?topic=279249.0) —— 第一个混币算法是 Blockstream 的联合创始人 Gregory Maxwell 提出的 CoinJoin。它可以让用户使用来自多方的输入创建交易，然后将比特币发送至多个输出（即，同一批人），由于每笔资金都被混合在了一起，输入和输出之间的关联很难被找到。
 
-![5](..\images\bitcoin-and-the-rise-of-the-cypherpunks\ce3e30c8ec1146c0919642e1bf17fcbc.png)
+![5](../images/bitcoin-and-the-rise-of-the-cypherpunks/ce3e30c8ec1146c0919642e1bf17fcbc.png)
 
 <center>- 简单的 CoinJoin 交易示意图 -</center>
 
@@ -159,7 +159,7 @@ ECDHM 地址方案的例子包括 Peter Todd 提出的 [Stealth Addresses](https
 
 2014 年，Kristov Atlas（Open Bitcoin Privacy Project 的创始人）在[一篇文章](https://www.coindesk.com/blockchains-sharedcoin-users-can-identified-says-security-expert/)中阐述了 CoinJoin 客户端实现不当会产生的弱点。
 
-![6](..\images\bitcoin-and-the-rise-of-the-cypherpunks\579b1f2857e94b23862df52e0bc65ca3.jpg)
+![6](../images/bitcoin-and-the-rise-of-the-cypherpunks/579b1f2857e94b23862df52e0bc65ca3.jpg)
 
 <center>- CoinJoin 的输入和输出分组 -</center>
 
@@ -173,7 +173,7 @@ Dash 的混币方案使用 0.1 DASH、1 DASH、10 DASH 和 100 DASH 等常见金
 
 为使混币的隐私性最大化，让时序攻击难以成功，Darksend 会自动以特定的时间间隔运行。
 
-![7](..\images\bitcoin-and-the-rise-of-the-cypherpunks\da51adbc9efc4d6aa03248673fdb5a59.png)
+![7](../images/bitcoin-and-the-rise-of-the-cypherpunks/da51adbc9efc4d6aa03248673fdb5a59.png)
 
 <center>- DASH 混币（来源：DASH 白皮书） -</center>
 
@@ -181,7 +181,7 @@ Dash 的混币方案使用 0.1 DASH、1 DASH、10 DASH 和 100 DASH 等常见金
 
 常见的数字签名（比如比特币签名）都是由一对密钥（公钥和私钥）创建的。因此，只要有人能使用私钥签署一笔交易，即可证明该私钥对应的公开地址为 ta 所有。
 
-![8](..\images\bitcoin-and-the-rise-of-the-cypherpunks\cce0d8cd91bd48e29fc1d9abf32bb207.png)
+![8](../images/bitcoin-and-the-rise-of-the-cypherpunks/cce0d8cd91bd48e29fc1d9abf32bb207.png)
 
 [环签名由（ring signature）Adi Shamir 博士等人在 2001 年首次提出](http://download.springer.com/static/pdf/432/chp%253A10.1007%252F3-540-45682-1_32.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F3-540-45682-1_32&token2=exp=1458913055~acl=%2Fstatic%2Fpdf%2F432%2Fchp%25253A10.1007%25252F3-540-45682-1_32.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Fchapter%252F10.1007%252F3-540-45682-1_32*~hmac=9ced274de2c18a3f6ef7ca4a1147092b366f1b5f0167b6e45835a24f2c9ec5da)，基于 Chaum 博士和 Eugene van Heyst[ 在 1991 年提出](http://download.springer.com/static/pdf/412/chp%253A10.1007%252F3-540-46416-6_22.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F3-540-46416-6_22&token2=exp=1458913679~acl=%2Fstatic%2Fpdf%2F412%2Fchp%25253A10.1007%25252F3-540-46416-6_22.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Fchapter%252F10.1007%252F3-540-46416-6_22*~hmac=9007c9e97a349ddd8789d9a97e26f496a6ff6b761af18c704ba28ff1e2c744ac)的群签名（group signature）构建。环签名需要一群参与方，各参与方持有自己的密钥对。
 
@@ -191,7 +191,7 @@ Dash 的混币方案使用 0.1 DASH、1 DASH、10 DASH 和 100 DASH 等常见金
 
 有趣的是，环签名是针对告密场景提出的，可以在不泄漏告密者身份的同时证明其消息来源的可信度（可知告密者是某个知名团体的成员）。
 
-![9](..\images\bitcoin-and-the-rise-of-the-cypherpunks\904f30c669864b3d869288b4899f83be.png)
+![9](../images/bitcoin-and-the-rise-of-the-cypherpunks/904f30c669864b3d869288b4899f83be.png)
 
 <center>- 环签名（来源：https://cryptonote.org/inside/） -</center>
 
@@ -203,7 +203,7 @@ CryptoNote 旨在降低密钥重用和利用输入追踪输出所产生的风险
 
 根据环签名所涉及的参与者人数，每笔交易的混淆性从 “1/2” 到 “1/100” 不等。每新增一笔交易都会增加熵值，并提高区块链观察者的追踪难度。
 
-![10](..\images\bitcoin-and-the-rise-of-the-cypherpunks\9dc762a2ed4f478ca3a0ae24cc3f0812.gif)
+![10](../images/bitcoin-and-the-rise-of-the-cypherpunks/9dc762a2ed4f478ca3a0ae24cc3f0812.gif)
 
 <center>- 抗区块链分析（来源：https://cryptonote.org/inside/） -</center>
 
@@ -237,7 +237,7 @@ Zcash 采用了一种叫作 zk-SNARK 的零知识证明结构。zk-SNARK 由一�
 
 两个人可以在不知道对方真实姓名和身份的情况下交换信息、开展业务并缔结电子合约。当然了，政府会以该技术有可能威胁国家安全、助长犯罪和导致社会分裂为由，来阻碍或遏制它的传播。
 
-![11](..\images\bitcoin-and-the-rise-of-the-cypherpunks\742d93f651b744bf8c7b83645f412b7c.png)
+![11](../images/bitcoin-and-the-rise-of-the-cypherpunks/742d93f651b744bf8c7b83645f412b7c.png)
 
 密码朋克深知，要想获得隐私，我们必须捍卫它。几个世纪以来，为了捍卫隐私，人们使出了百般手段：窃窃私语、暗处密会、密封信函、紧闭门扉、秘密握手和专人传信。
 
@@ -247,7 +247,7 @@ Zcash 采用了一种叫作 zk-SNARK 的零知识证明结构。zk-SNARK 由一�
 
 虽然密码朋克赢得了第一场密码学战争，但是我们千万不能得意忘形。Zooko 有过密码朋克项目的失败经历，他[告诫](https://epicenterbitcoin.com/podcast/122/)我们要做好迎接失败的心理准备。
 
-![12](..\images\bitcoin-and-the-rise-of-the-cypherpunks\555233a1111d4154a735d99e1c0ebe8f.png)
+![12](../images/bitcoin-and-the-rise-of-the-cypherpunks/555233a1111d4154a735d99e1c0ebe8f.png)
 
 密码朋克相信，隐私性是基本人权，包括政府保障的隐私性。他们明白，无论系统的安全性因何种原因（包括 “可信当局” 的介入）被削弱，都会威胁到系统用户的安全。
 

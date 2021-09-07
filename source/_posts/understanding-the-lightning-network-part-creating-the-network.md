@@ -17,7 +17,7 @@ tages:
 *译者：闵敏 & 阿剑（hongji@ethfans.org）*
 
 
-![](..\images\understanding-the-lightning-network-part-creating-the-network\9dce5612c6aa4440a3905ded0d6b89c5.png)
+![](../images/understanding-the-lightning-network-part-creating-the-network/9dce5612c6aa4440a3905ded0d6b89c5.png)
 
 ## 网络
 

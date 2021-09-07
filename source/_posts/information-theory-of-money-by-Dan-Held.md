@@ -18,7 +18,7 @@ tags:
 
 
 
-![f0a8ea8206554968ac879eb684c828b8](..\images\information-theory-of-money-by-Dan-Held\f0a8ea8206554968ac879eb684c828b8.png)
+![f0a8ea8206554968ac879eb684c828b8](../images/information-theory-of-money-by-Dan-Held/f0a8ea8206554968ac879eb684c828b8.png)
 
 <center>- 建议边听 Isan 的歌《<a href="https://open.spotify.com/track/4BqtTu3jBjQKD9c4irWhKz?si=CDA3B5IySvyxYxuG8975NQ">Strix Aluco</a>》边看这篇文章 -</center>
 
@@ -46,7 +46,7 @@ tags:
 
 资本主义的本质是在给定的资源及时间约束下，完成资本的高效利用。公司就是实验如何最 “好” 地分配资本的场所，而货币就是衡量 “好” 的标准。赚钱就意味着资本的有效率安排，而亏钱就是资本无效利用的体现。而竞争即是无数独立公司、个人以分立的决策来回应市场需求。
 
-![](..\images\information-theory-of-money-by-Dan-Held\f8f5dd9bffe749809711971bc395ee13.png)
+![](../images/information-theory-of-money-by-Dan-Held/f8f5dd9bffe749809711971bc395ee13.png)
 
 <center>- 资本主义很像化学，都是做实验 : )  -</center>
 
@@ -70,7 +70,7 @@ tags:
 
 所以没有中央计划局能成事。这一切全靠价格系统的魔法才能运转。“
 
-![](..\images\information-theory-of-money-by-Dan-Held\ffaed760a16740f2bba03bda5c70dfaa.png)
+![](../images/information-theory-of-money-by-Dan-Held/ffaed760a16740f2bba03bda5c70dfaa.png)
 
 <center>- Praxeology（“人类行为学”）研究人类行为（译者注：Praxeology 最早在 1890 年由 Alfred Espinas 提出，但广泛为人所知则因为经济学家米塞斯使用这个术语。)-</center>
 
@@ -132,7 +132,7 @@ TA 还说：
 
 比特币纪元到来之后，比特币会变成价值储存工具、交换媒介以及记账单位，比特币将以前所未有的精确度反映出 “无风险” 收益率，市场参与者据此能够更高效地分配资源。每一个市场参与者（无论是个人投资者还是公司）的 风险承担/风险退出 操作，都会在比特币的价格中显现出来。
 
-![](..\images\information-theory-of-money-by-Dan-Held\b085025912364fd2a7fb2f01572b13bd.png)
+![](../images/information-theory-of-money-by-Dan-Held/b085025912364fd2a7fb2f01572b13bd.png)
 
 最后，当比特币成为计价单位并用在日常交易中，市场参与者可以观察到他们的供应商和客户的实时资金流动（通过他们公开的比特币地址）。这种透明性会让市场超级高效，因为处理信息的办法非常高效。
 

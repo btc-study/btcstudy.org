@@ -2,7 +2,7 @@
 title: 'eltoo：闪电网络和链下合约的简化更新机制'
 author: 'Christian Decker'
 date: '2020/09/01 16:58:25'
-title_image: '..\images\en-eltoo-next-lightning\7999f22b5f47474aae9984371ed0146f.jpg'
+title_image: '../images/en-eltoo-next-lightning/7999f22b5f47474aae9984371ed0146f.jpg'
 excerpt: 'eltoo 的目标不是替代整个闪电网络技术栈，而是对原始的更新机制的嵌入式替代'
 categories:
 - 闪电网络
@@ -27,7 +27,7 @@ tages:
 
 我们可以把链下协商理解成在一定数量的参与方之间达成合约，而结算则是将这份合约提交给法庭、由法庭来决定参与方的最终得益 —— 在我们的案例中，区块链就扮演着法庭的角色。因为所有的更新都在链下发生，我们需要一种办法来让链上的法庭在做出最终决断前听取各方的主张。在某个参与方启动合约结算程序之时，我们需要一种延迟结算时间的机制，以允许对手方可提出一个更新的状态（抗辩）。法庭必须时刻等待着新状态，直至最终时限到来，以自己所获得的最新状态完成结算。而令人惊讶的是，比特币区块链已经满足为实现这种区块链特制的 layer 2 协议所需的大多数要求了。
 
-![1](..\images\en-eltoo-next-lightning\7999f22b5f47474aae9984371ed0146f.jpg)
+![1](../images/en-eltoo-next-lightning/7999f22b5f47474aae9984371ed0146f.jpg)
 
 <center>- 图 1. eltoo 协议运行的一个例子，展示了可以通过把更新交易重新绑定到更早的一笔交易或直接就是启动交易，来跳过中间的状态。只有最后的一笔结算交易能够上链。 -</center>
 
@@ -45,7 +45,7 @@ tages:
 
 闪电网络最早论文的主要贡献就是这样一种更新机制，所以我们是想用 eltoo 来替代闪电网络吗？绝对不是！
 
-![2](..\images\en-eltoo-next-lightning\66c5fb0d38ea4642bb2a5ac9e28b28f9.png)
+![2](../images/en-eltoo-next-lightning/66c5fb0d38ea4642bb2a5ac9e28b28f9.png)
 
 <center>- 图 2. 闪电网络子协议示意图 -</center>
 

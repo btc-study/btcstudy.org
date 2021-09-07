@@ -2,7 +2,7 @@
 title: '勿畏魅影：比特币不需要持续增发'
 author: 'Nic Carter'
 date: '2020/09/04 16:52:25'
-title_image: '..\images\dont-fear-the-reaper\e38c1d5a633e4dcfaa12dd0ef97d18c8.png'
+title_image: '../images/dont-fear-the-reaper/e38c1d5a633e4dcfaa12dd0ef97d18c8.png'
 excerpt: '没有所谓最佳的非零货币增发率。增发率/稀释率 是一个政治问题，而非工程问题'
 categories:
 - 货币理念
@@ -17,7 +17,7 @@ tages:
 *译者：闵敏 & 阿剑*
 
 
-![1](..\images\dont-fear-the-reaper\e38c1d5a633e4dcfaa12dd0ef97d18c8.png)
+![1](../images/dont-fear-the-reaper/e38c1d5a633e4dcfaa12dd0ef97d18c8.png)
 
 在密码学货币行业除比特币粉丝之外的群体中，有一个很流行的印象是，“天真” 的比特币支持者总是拒绝探讨比特币是不是需要长期增发这一话题。简言之，比特币怀疑论者之所以喜欢这么说，是因为他们认为从长期来看，比特币会因为无法向矿工支付足够的报酬，最后被迫以超过中本聪预先设定的速度增发。按照这种说法，比特币无从被标榜为固定供应量的货币。但其实，无论比特币怀疑论者承认与否，这个观点通常是为了替其它密码学货币在货币政策方面的自由裁量权辩护。换言之，这些人认为，从长期来看，密码学货币的增发率不应为零。
 

@@ -2,7 +2,7 @@
 title: '何为点对点网络？'
 author: 'Haseeb Qureshi'
 date: '2020/08/24 09:58:25'
-title_image: '..\images\what-is-p2p-networking-by-Haseeb-Qureshi\47cdfdbbfd5c48f3b901aaf3537dc3d6.png'
+title_image: '../images/what-is-p2p-networking-by-Haseeb-Qureshi/47cdfdbbfd5c48f3b901aaf3537dc3d6.png'
 excerpt: '我们将在本文探讨比特币的网络模型，以及它是如何实现它的两大主要目标的：去中心化和抗审查'
 tages:
 - [比特币, 点对点网络]
@@ -24,13 +24,13 @@ tages:
 
 传统的网络服务都是以 客户端-服务器 的中心化模式为架构的。中央服务器提供服务，各个客户端则向服务器请求数据或工作。几乎所有网络应用都是这个结构：脸书、谷歌、Wordpress 等等。现在的 “中央服务器” 通常是一个[负载均衡器](https://www.nginx.com/resources/glossary/load-balancing/)背后的服务器集群，但从抽象一些来看，它们的架构是完全一样的。
 
-![1](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\0860d40f25224c209051f0eaf34f22b2.png)
+![1](../images/what-is-p2p-networking-by-Haseeb-Qureshi/0860d40f25224c209051f0eaf34f22b2.png)
 
 客户端-服务器 架构是一个中心化网络架构，完全取决于单一的参与方，一旦中心服务器宕机了，服务就中止了（就像 DigiCash 那样）。
 
 而点对点网络则是一种分布式网络架构，不存在中央服务器。每个节点都承担一部分该网络的负载。这就意味着每个节点都可以对网络发起请求但也必须响应其他节点的请求。我们可以把点对点网络看成一个融合了客户端和服务器两个角色的 “蜂群”。
 
-![2](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\47cdfdbbfd5c48f3b901aaf3537dc3d6.png)
+![2](../images/what-is-p2p-networking-by-Haseeb-Qureshi/47cdfdbbfd5c48f3b901aaf3537dc3d6.png)
 
 点对点网络之所以受人关注，是因为它能让我们实现**去中心化**。去中心化网络不依赖于任何单一节点，也因此对于任何单点宕机或者离线有高容忍度。
 
@@ -38,7 +38,7 @@ tages:
 
 去中心化可以给我们带来两个我们想要的特性：第一，**宕机容错**，意味着系统可以承受单个节点错误或故障，即使一个节点死亡，整个系统可以照常运行。这对于可拓展性至关重要，因为[大型网络中的节点故障不可根除](https://www.datacenterknowledge.com/archives/2008/05/30/failure-rates-in-google-data-centers)。
 
-![3](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\dedf1e6619404b7c84616e497a7b4075.png)
+![3](../images/what-is-p2p-networking-by-Haseeb-Qureshi/dedf1e6619404b7c84616e497a7b4075.png)
 
 <center>- 来源：维基百科 -</center>
 
@@ -56,7 +56,7 @@ Napster 并不是第一个点对点协议，但它是第一个进入主流的点
 
 Napster 是在 1999 年由两位大学生 Sean Parker 和 Shawn Fanning 创建的。它提出了一个简单的价值主张：你可以从 Napster 网络中的任何客户端上下载 MP3 文件。
 
-![4](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\c68e8c16121d4cfb8f82f5aa8fe2dc14.png)
+![4](../images/what-is-p2p-networking-by-Haseeb-Qureshi/c68e8c16121d4cfb8f82f5aa8fe2dc14.png)
 
 <center>- Napster 客户界面，完全是九十年代的复古风格。来源：Andrew Orlowski -</center>
 
@@ -66,7 +66,7 @@ Napster 的架构非常简单，有一个 Napster 中央服务器，可以看作
 
 用户需要查找一个文件时，服务器就会查询索引表，再把相关结果展示给用户。由于查询出来的结果都是其他节点的文件，用户需要 ping 相关用户的 IP 地址来查看他们的下载延迟与网速。
 
-![5](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\52e4fe528ab442ffb583015b04ce6bb7.gif)
+![5](../images/what-is-p2p-networking-by-Haseeb-Qureshi/52e4fe528ab442ffb583015b04ce6bb7.gif)
 
 用户选出自己想要下载的文件之后，TA 所用的协议客户端软件就会直接向该文件指向的 IP 地址提取文件。所有文件都在两个节点之间直接传输，Napster 服务器这时已经完全不参与了。
 
@@ -74,7 +74,7 @@ Napster 的架构非常简单，有一个 Napster 中央服务器，可以看作
 
 Napster 发布不久后就火了，在鼎盛时期拥有超过八千万用户。2001 年，它时常让大学宿舍的高速网络超载，很快就被许多大学禁了。
 
-![6](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\21f8c289f8c84944aa183600e77e7165.png)
+![6](../images/what-is-p2p-networking-by-Haseeb-Qureshi/21f8c289f8c84944aa183600e77e7165.png)
 
 <center>- 2000 年 10 月《时代杂志》封面上的 Shawn Fanning -</center>
 
@@ -104,7 +104,7 @@ Napster 对于网络安全方面的考量也不足，所有的消息和请求都
 
 即使你想找茬儿，你也找不到一个中心化的 BT 服务。只有一个由私人运行的种子追踪器组成的联盟网络。所以尽管其他点对点网络不断被执法者关停，但对 BT 而言，执法者只能查到单个的种子跟踪器。多亏了 [BT 的 DHT 模型](https://en.wikipedia.org/wiki/Mainline_DHT)，很多种子甚至在跟踪器被取缔之后还能在网络中幸存，因此，针对 BT 的审查也就演变成了一场 “打鼹鼠” 的游戏。
 
-![7](..\images\what-is-p2p-networking-by-Haseeb-Qureshi\15eaa69504354d5485eb5f21fc590dea.png)
+![7](../images/what-is-p2p-networking-by-Haseeb-Qureshi/15eaa69504354d5485eb5f21fc590dea.png)
 
 <center>- 海盗湾在其原始域名被查封后，于 2015 年再次出现 -</center>
 
@@ -137,5 +137,4 @@ Napster 对于网络安全方面的考量也不足，所有的消息和请求都
 对点对点协议历史的概述到此为止。在下一节中，我们将深入探讨一个著名但简单的点对点协议 —— Gnutella。它将为我们带来 Gossip 协议的蓝图，该协议最终会帮助我们理解比特币自身的网络模型。
 
 （完）
-
 

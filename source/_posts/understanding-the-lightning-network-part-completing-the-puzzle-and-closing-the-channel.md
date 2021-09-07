@@ -16,7 +16,7 @@ tages:
 
 *译者：闵敏 & 阿剑（hongji@ethfans.org）*
 
-![1](..\images\understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel\9dce5612c6aa4440a3905ded0d6b89c5.png)
+![1](../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/9dce5612c6aa4440a3905ded0d6b89c5.png)
 
 ## 闪电网络
 
@@ -46,7 +46,7 @@ Alice 和 Bob 各自持有部分有效的承诺事务。如果 Alice 将自己�
 
 当然了，如果 Alice 或 Bob 在将来任何时候试图作恶，签署并广播过期的通道状态，另一方都可以阻止作恶方，并偷走通道内的所有 btc。
 
-![2](..\images\understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel\a2d64725aaac48d889fe63394f697266.jpg)
+![2](../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/a2d64725aaac48d889fe63394f697266.jpg)
 
 ## 结算状态
 
@@ -58,7 +58,7 @@ Alice 知道这一点。她没有办法骗走 Bob 的 btc，即使她通过其�
 
 假设 Alice 和 Bob 都想让通道保持开启，这也很正常：比起在链上终止通道省事多了。
 
-![3](..\images\understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel\1eaeabe41624473184bef264dddc8607.png)
+![3](../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/1eaeabe41624473184bef264dddc8607.png)
 
 ## 关闭通道
 
@@ -72,7 +72,7 @@ Alice 知道这一点。她没有办法骗走 Bob 的 btc，即使她通过其�
 
 最后，只会有两笔事务被广播到比特币网络并打包进区块：开启通道事务和关闭通道事务。哪怕 Alice 和 Bob 之间发生了 100 万笔交易也是这个结果，因此极大地减轻了区块链的负担。
 
-![4](..\images\understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel\f6ea85e6d6094449b7bd74e2469cae95.png)
+![4](../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/f6ea85e6d6094449b7bd74e2469cae95.png)
 
 格外感谢 Rusty Russell 和 JosephPoon 的信息和额外的反馈。
 
