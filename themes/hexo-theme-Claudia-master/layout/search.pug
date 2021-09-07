@@ -12,7 +12,7 @@ block content
         div#no-data.hidden
             img.nodata-light(src= url_for(page.images.light))
             img.nodata-dark(src= url_for(page.images.dark))
-            h1= 'No result!'
-            p= 'Please search by another keywords'
+            h1= '没有找到'
+            p= '请尝试搜索其他关键字'
 block append script
     script(src= url_for('/js/results.js'))

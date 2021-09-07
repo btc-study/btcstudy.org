@@ -7,6 +7,6 @@ block content
     main.container-404
         img.nodata-light(src= url_for(page.images.light || theme.errorPage.image))
         img.nodata-dark(src= url_for(page.images.dark || theme.errorPage.image))
-        h1= 'NOT found!'
-        p= 'Sorry, the page you are looking for does not exist'
+        h1= '页面丢了'
+        p= '抱歉! 请尝试访问其他页面'
         a(href= url_for('/'))= _p('home')
