@@ -1,11 +1,13 @@
 (function(){
 
   var renderPostList = function(data) {
-    // console.log(data);
+    var sortByDate = function(a, b) {
+      return b.dateSource - a.dateSource;
+    }
     $('.mempool-length').text(data.length + ' 篇文章');
     var dom = '';
     dom += '<ul>';
-    data.forEach(function(item) {
+    data.sort(sortByDate).forEach(function(item) {
       var avatar = item.avatar || "url_for()"
       dom += (
         '<li>'+
@@ -38,7 +40,10 @@
         return data[6];
       }
       var getPostData = function(data) {
-        var date = new Date(Math.round((data[2][1] - 25569) * 86400 * 1000));
+        return data[2][1];
+      }
+      var formatPostData = function(data) {
+        var date = new Date(Math.round((data - 25569) * 86400 * 1000));
         return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDate() + 1);
       }
       var listObj = (data.clientVars.collab_client_vars.initialAttributedText.text[0][2][0].c[1] || []);
@@ -48,7 +53,6 @@
       for (var i = 0; i < listArr.length; i += 5) {
         sources.push(listArr.slice(i, i + 5))
       }
-      // console.log(53, data);
       sources.forEach(function(item, index) {
         rows[index] = {};
         item.forEach(function(key, index2) {
@@ -67,7 +71,9 @@
               rows[index].avatar = getAvatar(listObj[key]);
               break;
             case 0:
-              rows[index].date = getPostData(listObj[key]);
+              var dateSource = getPostData(listObj[key])
+              rows[index].dateSource = dateSource;
+              rows[index].date = formatPostData(dateSource);
               break;
             default:
               console.log(listObj[key]);
