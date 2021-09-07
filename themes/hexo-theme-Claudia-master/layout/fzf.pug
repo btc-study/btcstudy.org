@@ -9,4 +9,4 @@ block content
         img.nodata-dark(src= url_for(page.images.dark || theme.errorPage.image))
         h1= 'NOT found!'
         p= 'Sorry, the page you are looking for does not exist'
-        a(href= url_for('/'))= 'INDEX'
+        a(href= url_for('/'))= _p('home')
