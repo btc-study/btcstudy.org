@@ -6,7 +6,7 @@ main.tags-container
         - var list = {};
         each tag in site.tags.toArray()
             - list[tag.name] = [];
-            each post in site.posts.toArray()
+            each post in site.posts.sort('date', -1).toArray()
                 each postTag in post.tags.toArray()
                     if postTag.name == tag.name
                         - list[postTag.name].push(post);

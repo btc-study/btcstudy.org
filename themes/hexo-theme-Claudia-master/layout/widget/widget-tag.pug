@@ -5,7 +5,7 @@ block append head
 
 main.tag-container
     - var list = [];
-    each post in site.posts.toArray()
+    each post in site.posts.sort('date', -1).toArray()
         each tag in post.tags.toArray()
             if tag.name == page.tag
                 - list.push(post);

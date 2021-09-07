@@ -5,7 +5,7 @@ block append head
 
 main.category-container
     - var list = [];
-    each post in site.posts.toArray()
+    each post in site.posts.sort('date', -1).toArray()
         each category in post.categories.toArray()
             if category.name == page.category
                 - list.push(post);
