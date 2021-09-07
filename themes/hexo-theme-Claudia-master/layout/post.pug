@@ -25,7 +25,7 @@ block content
                 if page.date && page.author
                     div.is-flex.is-flex-direction-row
                         div.is-flex.is-flex-direction-row.page-data.mr-6
-                            img.mr-1(src= page.avatar || url_for("/images/default_avatar.png"))
+                            img.mr-1(src= page.avatar || url_for("/images/default_avatar.png") alt= page.author)
                             div.is-flex.is-flex-direction-column
                                 strong= page.author
                                 time.has-text-grey(datetime=page.date.toJSON())= date(page.date, date_format)

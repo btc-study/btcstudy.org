@@ -43,7 +43,7 @@
     margin: 0 8px;
     font-weight: bold;
 
-    color: var(--text-secondary-color)!important;
+    color: var(--text-color)!important;
   }
 
   h3 {
@@ -52,9 +52,8 @@
   }
 
   .header-activity {
-    a {
-      color: var(--heading-color)!important;
-    }
+    position: relative;
+    color: var(--heading-color)!important;
     &::after {
       content: '';
       position: absolute;
