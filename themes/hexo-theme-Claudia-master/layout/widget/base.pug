@@ -27,7 +27,7 @@ html(lang=config.language)
 
   body.is-flex.is-flex-direction-column(onload="initialTheme()")
     div.clip
-    div.body-container.appearance-auto
+    div(class= `body-container appearance-${ appearance }`)
       include widget-header
       main
         block content
