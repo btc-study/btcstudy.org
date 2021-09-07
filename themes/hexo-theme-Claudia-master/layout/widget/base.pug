@@ -22,6 +22,7 @@ html(lang=config.language)
     link(rel="stylesheet" href= url_for('/style/common/helper.css'))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css'))
     link(rel='stylesheet', href= url_for("//at.alicdn.com/t/font_2777699_pazsvlbsgdo.css"))
+    script(src= url_for("/js/jquery.min.js"))
     script(src= url_for("/js/common.js"))
     block head
 
@@ -40,7 +41,6 @@ html(lang=config.language)
     //-     span= ' ' + author + ' ' + new Date().getFullYear()
     //- script(src= url_for("/js/search.js"))
     script(async defer src= url_for("/js/buttons.js"))
-    script(src= url_for("/js/jquery.min.js"))
     script(src= url_for("/js/index.js"))
     
     block script

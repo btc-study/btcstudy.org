@@ -38,6 +38,7 @@ $coverBlurEffect: 20px;
     background: var(--background-color-2);
     // border: 1px solid var(--border-line-color-2);
     transition: all .3s;
+    cursor: pointer;
     &:hover {
       margin-top: -8px;
       box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
