@@ -2,7 +2,7 @@ include methods
 
 article.post-container.is-flex.is-flex-direction-column.is-justify-content-center.section.container.is-max-widescreen.p-0.pt-4
         //- - console.log(page.posts);
-        - var categories = theme.home.categories || []
+        - var categories = config.home.categories || theme.home.categories
         - var list = {};
         each category in categories
             - list[category] = [];

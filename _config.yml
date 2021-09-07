@@ -110,7 +110,7 @@ theme: hexo-theme-Claudia-master
 
 # set categories visible on home page
 home:
-  categories: ["BTC", "'ORGIN-OF-MONEY'", "LIGHTING-NETWORK"]
+  categories: ["BTC", "ORGIN-OF-MONEY", "ETH"]
 
 # default logo image
 logo: /images/light/logo.png
