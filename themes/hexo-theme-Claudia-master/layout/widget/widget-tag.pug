@@ -11,7 +11,7 @@ main.tag-container
                 - list.push(post);
     
     header.mb-2
-        a(href= url_for('/tags'))= '/TAG'
+        a(href= url_for('/tags'))= '/' + _p('tag')
         h1= (page.tag || '').replace(/-/g, ' ')
         p
             span= list.length
