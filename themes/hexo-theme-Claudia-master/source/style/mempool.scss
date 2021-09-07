@@ -26,6 +26,9 @@
         border-bottom: 1px solid var(--border-color);
         background-color: var(--background-color-2);
         user-select: none;
+        a {
+          height: inherit;
+        }
         strong {
           position: relative;
           margin-right: 24px;

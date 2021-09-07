@@ -17,7 +17,8 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                 header.post-header.is-flex.is-flex-direction-row.is-justify-content-space-between.mb-2
                     //- - var categoryStr = formatStr(category)
                     h2.category-title= category.replace(/-/g, ' ')
-                    a(href= url_for('/categories/' + category))= "全部"
+                    if list[category].length > 3
+                        a(href= url_for('/categories/' + category))= "全部"
                 section.post-content.row.gutter-10
                     if list[category].length > 0
                         each post in list[category].slice(0, 3)
