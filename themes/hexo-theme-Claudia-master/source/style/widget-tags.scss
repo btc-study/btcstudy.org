@@ -54,6 +54,7 @@
           > li {
             height: 56px;
             border-bottom: 1px solid var(--border-color);
+            a { height: inherit }
             strong {
               max-width: 400px;
               text-overflow: ellipsis;

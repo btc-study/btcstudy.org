@@ -21,8 +21,7 @@ main.tags-container
                 section
                     ul.post-list
                         each tagPost in list[tag.name].slice(0, 5)
-                            li.is-flex.is-flex-direction-row.is-justify-content-space-between.is-align-items-center.px-3
-                                a(href= url_for(tagPost.path))
+                            li
+                                a.is-flex.is-flex-direction-row.is-justify-content-space-between.is-align-items-center.px-3(href= url_for(tagPost.path))
                                     strong= tagPost.title
-                                a(href= url_for(tagPost.path))
                                     i.iconfont.icon-icon_into

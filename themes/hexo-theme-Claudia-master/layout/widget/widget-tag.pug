@@ -25,7 +25,7 @@ main.tag-container
                 - var isExcerpt = post.excerpt && post.excerpt.length > 0
                 - var postContent = isExcerpt ? post.excerpt : post.content
                 div.col.sm-12.md-8.mb-2
-                    article.post-item-card
+                    article.post-item-card(post-path= url_for(post.path))
                         if imgURL
                             header.is-relative.is-flex
                                 div.post-cover-backdrop.is-hidden
@@ -55,3 +55,6 @@ block append script
 
             images.forEach($claudia.blurBackdropImg)
         }, 150))
+
+block script
+    script(src= url_for("/js/post-card.js"))  
