@@ -2,12 +2,13 @@
 title: '为什么比特币的开发如此保守？'
 author: 'Vlad Costea'
 date: '2020/09/01 17:30:25'
-title_image: '../images/why-is-bitcoin-development-so-conservativ/8197d19c7bd24c74a3bd8c748d17f10f.jpg'
+cover: '../images/why-is-bitcoin-development-so-conservativ/8197d19c7bd24c74a3bd8c748d17f10f.jpg'
 excerpt: '我们从小就听说龟兔赛跑的故事：笑到最后的是那只慢而坚定的乌龟，不是兔子'
 categories:
 - 比特币主网
-tages:
-- [比特币, 升级]
+tags:
+- 比特币
+- 升级
 ---
 
 *作者：Vlad Costea*

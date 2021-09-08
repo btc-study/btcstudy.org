@@ -2,12 +2,13 @@
 title: '理解闪电网络，Part-1：构建比特币的双向支付通道'
 author: 'Aaron Van Wirdum'
 date: "2020/08/23 22:52:25"
-title_image: ''
+cover: ''
 excerpt: "列举必要的模块并展示这些模块如何能组合起来创建 “智能合约”"
 categories:
 - 闪电网络
 tags:
-- [比特币, 闪电网络]
+- 比特币
+- 闪电网络
 ---
 
 *作者：Aaron Van Wirdum*

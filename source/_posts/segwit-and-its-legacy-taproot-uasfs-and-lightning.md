@@ -2,12 +2,12 @@
 title: 'SegWit 及其后继者：Taproot、UASF 和闪电网络'
 author: 'SatoshiLabs'
 date: '2020/09/07 15:59:25'
-title_image: '../images/segwit-and-its-legacy-taproot-uasfs-and-lightning/29ce3aaaafb64ff783d31fe7d3265cc2.png'
+cover: '../images/segwit-and-its-legacy-taproot-uasfs-and-lightning/29ce3aaaafb64ff783d31fe7d3265cc2.png'
 excerpt: '作为一次学习的经历，SegWit 告诉了我们很多关于比特币的事情，不论是实践意义上，还是哲学意义上'
 categories:
 - 比特币主网
-tages:
-- [比特币, 隔离见证]
+tags:
+- 比特币, 隔离见证
 ---
 
 *作者：SatoshiLabs*

@@ -2,12 +2,12 @@
 title: '比特币的 UTXO 模型'
 author: 'River Financial'
 date: '2020/08/25 09:42:25'
-title_image: '../images/bitcoins-utxo-model-by-river-finance/24f26a7d50374147a301fa131f2686e8.png'
+cover: '../images/bitcoins-utxo-model-by-river-finance/24f26a7d50374147a301fa131f2686e8.png'
 excerpt: 'UTXO 模型使得比特币在可审计性、透明性和效率上更优于传统金融系统'
 categories:
 - 比特币主网
-tages:
-- [比特币]
+tags:
+- 比特币
 ---
 
 *作者：River Financial*

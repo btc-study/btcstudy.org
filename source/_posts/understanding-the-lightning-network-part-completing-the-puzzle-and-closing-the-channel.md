@@ -2,12 +2,13 @@
 title: '理解闪电网络，Part-3：结算并关闭支付通道'
 author: 'Aaron Van Wirdum'
 date: '2020/8/24 11:13:25'
-title_image: ''
+cover: '../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/9dce5612c6aa4440a3905ded0d6b89c5.png'
 excerpt: '几乎所有操作都在链下完成，这才是闪电网络真正强大的地方'
 categories:
 - 闪电网络
-tages:
-- [比特币, 闪电网络]
+tags:
+- 比特币
+- 闪电网络
 ---
 
 *作者：Aaron Van Wirdum*

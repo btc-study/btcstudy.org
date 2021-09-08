@@ -2,12 +2,12 @@
 title: '比特币地址的类型和钱包的用法'
 author: 'SatoshiLabs'
 date: '2021/09/07 16:19:58'
-title_image: '../images/bitcoin-addresses-and-how-to-use-them/8f773aee0fc5447a9b00eb71c895bf56.png'
+cover: '../images/bitcoin-addresses-and-how-to-use-them/8f773aee0fc5447a9b00eb71c895bf56.png'
 excerpt: '如何生成一个有效的地址？如何收发交易？'
 categories:
 - 比特币主网
-tages:
-- [比特币, 钱包]
+tags:
+- 比特币, 钱包
 ---
 
 *作者：SatoshiLabs*

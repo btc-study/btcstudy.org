@@ -2,12 +2,13 @@
 title: 'eltoo：闪电网络和链下合约的简化更新机制'
 author: 'Christian Decker'
 date: '2020/09/01 16:58:25'
-title_image: '../images/en-eltoo-next-lightning/7999f22b5f47474aae9984371ed0146f.jpg'
+cvoer: '../images/en-eltoo-next-lightning/7999f22b5f47474aae9984371ed0146f.jpg'
 excerpt: 'eltoo 的目标不是替代整个闪电网络技术栈，而是对原始的更新机制的嵌入式替代'
 categories:
 - 闪电网络
-tages:
-- [闪电网络, Layer2]
+tags:
+- 闪电网络
+- Layer2
 ---
 
 *作者：Christian Decker*
