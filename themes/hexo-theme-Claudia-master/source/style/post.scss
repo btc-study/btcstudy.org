@@ -9,6 +9,9 @@ $lineColor: var(--border-line-color);
 body > .body-container > main,
 .clip > .body-container > main {
   background-color: var(--background-color-2)!important;
+  > .container {
+    max-width: 1184px;
+  }
 }
 
 #postTopic {
@@ -16,7 +19,7 @@ body > .body-container > main,
   will-change: transform;
   transform: translateY(100%);
   transition: all .3s;
-  padding-left: 72px;
+  padding-left: 110px;
 
   p {
     font-size: 18px;
@@ -62,6 +65,15 @@ body > .body-container > main,
 }
 
 .post-page {
+
+  .column {
+    padding: 0;
+  }
+
+  .silde-bar {
+    margin-right: 11%;
+  }
+
   .post-content {
 
     code {
@@ -122,7 +134,7 @@ body > .body-container > main,
     margin-right: 0;
     padding-left: 0;
     padding-top: 56px;
-    padding-right: 20px;
+    padding-right: 40px;
     height: calc(100vh - 100px);
 
     text-align: right;
@@ -168,9 +180,9 @@ body > .body-container > main,
         content: '';
         background: var(--primary-color);
         position: absolute;
-        right: -20px;
+        right: -40px;
         font-size: 32px;
-        width: 9px;
+        width: 20px;
         height: 4px;
         top: 50%;
         margin-top: -2px;

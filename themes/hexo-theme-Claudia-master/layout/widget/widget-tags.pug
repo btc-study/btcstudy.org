@@ -4,7 +4,6 @@ block append head
 main.tags-container
     ul.is-flex.is-flex-direction-row.is-flex-wrap-wrap
         - var list = {};
-        - console.log(site.tags);
         each tag in site.tags.toArray()
             - list[tag.name] = [];
             each post in site.posts.sort('date', -1).toArray()
