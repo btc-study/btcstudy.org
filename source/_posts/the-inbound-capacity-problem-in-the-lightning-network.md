@@ -31,17 +31,17 @@ tags:
 
 ![2](../images/the-inbound-capacity-problem-in-the-lightning-network/4caca3411e594bf3944d175a2b79838d.png)
 
-<center>- 支付通道就像沙漏：虽然沙子的总量是恒定的，你可以任意把沙子移动到其中一端。但如果你想改变里面沙子的数量，那就非打破这个沙漏不可 -</center>
+<p style="text-align:center">- 支付通道就像沙漏：虽然沙子的总量是恒定的，你可以任意把沙子移动到其中一端。但如果你想改变里面沙子的数量，那就非打破这个沙漏不可 -</p>
 
 ![3](../images/the-inbound-capacity-problem-in-the-lightning-network/fa7f82e49ef9425e99ce094c8880e1b7.png)
 
-<center>- 你跟 Robert 的通道里面有 8 btc，你的本地余额是 5 btc，你的远端余额是 3 btc -</center>
+<p style="text-align:center">- 你跟 Robert 的通道里面有 8 btc，你的本地余额是 5 btc，你的远端余额是 3 btc -</p>
 
 每次支付，都是把你的本地余额转一些给你的交易对手，也就是减少本地余额，增加远端余额。类似地，当你收到一笔支付时，你的本地余额增加，数额恰好等于你的远端余额减少的数额。
 
 ![4](../images/the-inbound-capacity-problem-in-the-lightning-network/4552e4a6a4d34261ae3d664e026e5b8e.png)
 
-<center>- 当你给 Robert 支付 1 btc 之后，你的远端余额增加了 1 btc -</center>
+<p style="text-align:center">- 当你给 Robert 支付 1 btc 之后，你的远端余额增加了 1 btc -</p>
 
 ## 入账和出账的容量
 
@@ -53,7 +53,7 @@ tags:
 
 ![5](../images/the-inbound-capacity-problem-in-the-lightning-network/e5aecd93b2434ef69c40d60b8635797b.png)
 
-<center>- 你跟 InTop 开启了一个通道，锁入了 2 btc。你的本地余额是 2 btc，远端余额是 0 btc -</center>
+<p style="text-align:center">- 你跟 InTop 开启了一个通道，锁入了 2 btc。你的本地余额是 2 btc，远端余额是 0 btc -</p>
 
 现在，Angela 想要买一些你的贴纸，并通过 lnTop 来支付。但是，你跟 lnTop 的通道中，你的远端余额是 0 呀，lnTop 并不能给你支付。因此，lnTop 无法路由这笔交易。
 
@@ -71,19 +71,19 @@ tags:
 
 ![6](../images/the-inbound-capacity-problem-in-the-lightning-network/330af2ffe073476bb805db05a366383c.png)
 
-<center>- 这是 lnTop 往通道里充值了 3 btc 之后的情形。在网络中，所有节点都跟自己相连的节点有专门的本地和远端余额 -</center>
+<p style="text-align:center">- 这是 lnTop 往通道里充值了 3 btc 之后的情形。在网络中，所有节点都跟自己相连的节点有专门的本地和远端余额 -</p>
 
 你从 lnTop 那里获得一些入账容量之后，Angela 最多也只能给你发 2 btc，因为你在 lnTop 那里的入账容量超过了 2 btc，但 lnTop 在 Angela 处的入账容量只有 2 btc。
 
 ![Gif_1-2](../images/the-inbound-capacity-problem-in-the-lightning-network/Gif_1-2.gif)
 
-<center>- Angela 给你发送了 1 btc，路径上所有节点的余额更新。她还能再给你发 1 btc -</center>
+<p style="text-align:center">- Angela 给你发送了 1 btc，路径上所有节点的余额更新。她还能再给你发 1 btc -</p>
 
 但是，在这个网络里，Sophie 就没法给你发送 1 btc。你可以看看 Sophie 给你支付的路径上的通道容量状态，你的确有 3 btc 的入账容量，但 lnTop 没有 lnFirst 的入账容量。
 
 ![Gif_2-1](../images/the-inbound-capacity-problem-in-the-lightning-network/Gif_2-1.gif)
 
-<center>- lnFirst 没法路由 1 btc 的支付给你。所以 Sophie 没法给你支付 -</center>
+<p style="text-align:center">- lnFirst 没法路由 1 btc 的支付给你。所以 Sophie 没法给你支付 -</p>
 
 对于支付，每个参与路由的节点和你（接收方）都必须跟上一个节点有足够的入账容量。所以，虽然你能解决跟相邻节点 lnTop 的入账容量问题，但 lnTop 可能跟相邻的节点没有足够的入账容量。Lightning Labs 的闪电网络基础设施总监 Alex Bosworth 几周以前指出了这个问题。
 

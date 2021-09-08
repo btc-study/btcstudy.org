@@ -21,7 +21,7 @@ tags:
 
 ![f0a8ea8206554968ac879eb684c828b8](../images/information-theory-of-money-by-Dan-Held/f0a8ea8206554968ac879eb684c828b8.png)
 
-<center>- 建议边听 Isan 的歌《<a href="https://open.spotify.com/track/4BqtTu3jBjQKD9c4irWhKz?si=CDA3B5IySvyxYxuG8975NQ">Strix Aluco</a>》边看这篇文章 -</center>
+<p style="text-align:center">- 建议边听 Isan 的歌《<a href="https://open.spotify.com/track/4BqtTu3jBjQKD9c4irWhKz?si=CDA3B5IySvyxYxuG8975NQ">Strix Aluco</a>》边看这篇文章 -</p>
 
 
 
@@ -49,7 +49,7 @@ tags:
 
 ![](../images/information-theory-of-money-by-Dan-Held/f8f5dd9bffe749809711971bc395ee13.png)
 
-<center>- 资本主义很像化学，都是做实验 : )  -</center>
+<p style="text-align:center">- 资本主义很像化学，都是做实验 : )  -</p>
 
 ## 信息是去中心化的
 
@@ -73,7 +73,7 @@ tags:
 
 ![](../images/information-theory-of-money-by-Dan-Held/ffaed760a16740f2bba03bda5c70dfaa.png)
 
-<center>- Praxeology（“人类行为学”）研究人类行为（译者注：Praxeology 最早在 1890 年由 Alfred Espinas 提出，但广泛为人所知则因为经济学家米塞斯使用这个术语。)-</center>
+<p style="text-align:center">- Praxeology（“人类行为学”）研究人类行为（译者注：Praxeology 最早在 1890 年由 Alfred Espinas 提出，但广泛为人所知则因为经济学家米塞斯使用这个术语。)-</p>
 
 ## 中央银行与他们悬而未决的数据问题
 

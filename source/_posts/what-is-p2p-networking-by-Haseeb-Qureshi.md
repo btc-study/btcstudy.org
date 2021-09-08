@@ -41,7 +41,7 @@ tags:
 
 ![3](../images/what-is-p2p-networking-by-Haseeb-Qureshi/dedf1e6619404b7c84616e497a7b4075.png)
 
-<center>- 来源：维基百科 -</center>
+<p style="text-align:center">- 来源：维基百科 -</p>
 
 去中心化给我们带来的第二个特性是抗审查性。如果某一个节点遭受审查，但网络整体上是去中心化的，那就无关紧要，系统剩下的节点会继续运行。要做到审查去中心化网络，所有节点都必须串谋配合来执行审查，这在大型网络中很难实现。如果我要在一个去中心化网络中搜索一份文件，只要一个节点愿意响应我的请求，我就能成功找到。
 
@@ -59,7 +59,7 @@ Napster 是在 1999 年由两位大学生 Sean Parker 和 Shawn Fanning 创建�
 
 ![4](../images/what-is-p2p-networking-by-Haseeb-Qureshi/c68e8c16121d4cfb8f82f5aa8fe2dc14.png)
 
-<center>- Napster 客户界面，完全是九十年代的复古风格。来源：Andrew Orlowski -</center>
+<p style="text-align:center">- Napster 客户界面，完全是九十年代的复古风格。来源：Andrew Orlowski -</p>
 
 Napster 的架构非常简单，有一个 Napster 中央服务器，可以看作是一个大型检索索引表，了解所有节点与他们分享的内容。它把内容元数据保存为元组：`(filename, ip_address, port_number)`。
 
@@ -77,7 +77,7 @@ Napster 发布不久后就火了，在鼎盛时期拥有超过八千万用户。
 
 ![6](../images/what-is-p2p-networking-by-Haseeb-Qureshi/21f8c289f8c84944aa183600e77e7165.png)
 
-<center>- 2000 年 10 月《时代杂志》封面上的 Shawn Fanning -</center>
+<p style="text-align:center">- 2000 年 10 月《时代杂志》封面上的 Shawn Fanning -</p>
 
 2000 年，Napster 被 Metallica、Dr. Dre 与 A&M 起诉侵犯版权，这些诉讼为 Napster 带来了更多新闻报道与宣传。但当法官宣判了让 Napster 停止版权音乐交易的禁制令后，事情终于告一段落。
 
@@ -107,7 +107,7 @@ Napster 对于网络安全方面的考量也不足，所有的消息和请求都
 
 ![7](../images/what-is-p2p-networking-by-Haseeb-Qureshi/15eaa69504354d5485eb5f21fc590dea.png)
 
-<center>- 海盗湾在其原始域名被查封后，于 2015 年再次出现 -</center>
+<p style="text-align:center">- 海盗湾在其原始域名被查封后，于 2015 年再次出现 -</p>
 
 文件共享革命对于我们与技术和媒体的关系产生了深远的社会影响。但它的冲击远不止于此，它还复兴了工程师对点对点协议兴趣，引导了许多学术项目的发展，比如 [Folding @home](https://en.wikipedia.org/wiki/Folding@home) 和 [SETI @home](https://en.wikipedia.org/wiki/SETI@home)，使个人可以将自己的算力借给世界级的点对点科学计算项目。一些成功的创业公司，比如 Skype，在成立之初都是建立在点对点架构上的。
 

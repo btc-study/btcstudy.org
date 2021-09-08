@@ -47,11 +47,11 @@ tags:
 
 ![1_aeN3Bj9g1lM4lld8W-8ezA](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_aeN3Bj9g1lM4lld8W-8ezA.gif)
 
-<center>- 如果你先给 Thomas 支付，Thomas 可以拿着这份资金跑路。 -</center>
+<p style="text-align:center">- 如果你先给 Thomas 支付，Thomas 可以拿着这份资金跑路。 -</p>
 
 ![1_IQFNh3iYvYG689Pfu9752A](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_IQFNh3iYvYG689Pfu9752A.gif)
 
-<center>- 如果 Thomas 先给 Sandra 支付，相信你会信守诺言把钱给回他，那么你可以翻脸不认人，拒绝偿还（而 Thomas 给出去的钱是收不回来了） -</center>
+<p style="text-align:center">- 如果 Thomas 先给 Sandra 支付，相信你会信守诺言把钱给回他，那么你可以翻脸不认人，拒绝偿还（而 Thomas 给出去的钱是收不回来了） -</p>
 
 但如果有了哈希时间锁，Sandra 可以生成一个只有自己知道秘密数据，然后告诉你可以放心地转账给 Thomas，只是这笔资金有一个附加条款，Thomas 必须能在给定时间公开这个秘密数值，否则这笔钱会重新回到你手上。Sandra 可以在闪电网络收款请求中使用二维码给你这个指示。她完全无需把秘密数值透露给你，因为，**即使你对这个数值一无所知，也可以知道 Thomas 公开了 Sandra 的数值**（钱会被取走）。
 
