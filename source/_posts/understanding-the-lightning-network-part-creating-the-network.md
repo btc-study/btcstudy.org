@@ -2,12 +2,12 @@
 title: '理解闪电网络，Part-2：构建网络'
 author: 'Aaron Van Wirdum'
 date: '2020/08/24 10:36:25'
-title_image: ''
+cover: '../images/understanding-the-lightning-network-part-creating-the-network/9dce5612c6aa4440a3905ded0d6b89c5.png'
 excerpt: 'Alice 想要给一个第三方 Carol 支付 1 btc'
 categories:
 - 闪电网络
 tags:
-- [闪电网络]
+- 闪电网络
 ---
 
 *作者：Aaron Van Wirdum*

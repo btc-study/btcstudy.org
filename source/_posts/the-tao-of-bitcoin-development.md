@@ -2,12 +2,13 @@
 title: '比特币开发之道'
 author: 'Alex B.'
 date: '2021/09/07 16:19:58'
-title_image: '../images/the-tao-of-bitcoin-development/c60b282deb994081bd56353ee37ff367.png'
+cover: '../images/the-tao-of-bitcoin-development/c60b282deb994081bd56353ee37ff367.png'
 excerpt: '“我们不要国王、总统和投票。我们相信的是大致共识和运行代码。”'
 categories:
 - 比特币主网
 tags:
-- [比特币, 升级]
+- 比特币
+- 升级
 ---
 
 *作者：Alex B.*

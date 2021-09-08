@@ -2,12 +2,13 @@
 title: '货币的信息理论'
 author: 'Dan Held'
 date: "2020/08/23 12:10:25"
-title_image: ''
+cover: '../images/information-theory-of-money-by-Dan-Held/f0a8ea8206554968ac879eb684c828b8.png'
 excerpt: "度量不出来，你就管理不了。"
 categories:
 - 货币理念
 tags:
-- [Dan Held, 货币]
+- Dan Held
+- 货币
 ---
 
 *作者：Dan Held*

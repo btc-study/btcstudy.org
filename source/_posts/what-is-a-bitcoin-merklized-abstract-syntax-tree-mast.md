@@ -2,12 +2,12 @@
 title: '什么是比特币默克尔化抽象语法树？'
 author: 'David A. Harding'
 date: '2021/09/07 16:19:58'
-title_image: '../images/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/ab201c6b56be4598abd6ee119b360f6f.png'
+cover: '../images/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/ab201c6b56be4598abd6ee119b360f6f.png'
 excerpt: '默克尔化抽象语法树是一项为比特币提议的升级，可以实现更小的交易体积、更好的隐私性，以及更大的智能合约'
 categories:
 - 比特币主网
 tags:
-- [比特币]
+- 比特币
 ---
 
 *作者：David A. Harding*

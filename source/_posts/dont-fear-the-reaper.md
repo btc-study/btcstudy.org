@@ -2,12 +2,13 @@
 title: '勿畏魅影：比特币不需要持续增发'
 author: 'Nic Carter'
 date: '2020/09/04 16:52:25'
-title_image: '../images/dont-fear-the-reaper/e38c1d5a633e4dcfaa12dd0ef97d18c8.png'
+cover: '../images/dont-fear-the-reaper/e38c1d5a633e4dcfaa12dd0ef97d18c8.png'
 excerpt: '没有所谓最佳的非零货币增发率。增发率/稀释率 是一个政治问题，而非工程问题'
 categories:
 - 货币理念
 tags:
-- [比特币, 货币]
+- 比特币
+- 货币
 ---
 
 *作者：Nic Carter*

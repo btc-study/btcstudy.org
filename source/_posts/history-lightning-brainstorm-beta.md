@@ -3,12 +3,12 @@
 title: '闪电网络的历史：从头脑风暴，到测试版本'
 author: 'Aaron Van Wirdum'
 date: '2020/08/23 11:07:25'
-title_image: '../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708a93fb0a6da.png'
+cover: '../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708a93fb0a6da.png'
 excerpt: '闪电网络在观念上的起源'
 categories:
 - 闪电网络
 tags:
-- [闪电网络]
+- 闪电网络
 ---
 
 *作者：Aaron Van Wirdum*

@@ -2,12 +2,13 @@
 title: '详尽解释隔离见证'
 author: 'Magomed Aliev'
 date: '2020/08/27 10:46:25'
-title_image: '../images/segregated-witness-for-dummies/90b39a13541c400b928b677a9009ceb1.jpeg'
+cover: '../images/segregated-witness-for-dummies/90b39a13541c400b928b677a9009ceb1.jpeg'
 excerpt: '解隔离见证的优势及其工作原理（以及它如何实现向后兼容）'
 categories:
 - 比特币主网
 tags:
-- [比特币, 隔离见证]
+- 比特币
+- 隔离见证
 ---
 
 *作者：Magomed Aliev*

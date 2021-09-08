@@ -2,12 +2,13 @@
 title: '比特币的私钥：转码与使用'
 author: 'Arman The Parman'
 date: '2020/09/04 16:52:25'
-title_image: '../images/understand-bitcoin-public-and-private-keys-encode-and-extend/53c6f2c726ec43d6bf8aecdf96232cd5.png'
+cover: '../images/understand-bitcoin-public-and-private-keys-encode-and-extend/53c6f2c726ec43d6bf8aecdf96232cd5.png'
 excerpt: '这篇文章能帮助你理解比特币的公钥和私钥'
 categories:
 - 比特币主网
 tags:
-- [比特币, 钱包]
+- 比特币
+- 钱包
 ---
 
 *作者：Arman The Parman*

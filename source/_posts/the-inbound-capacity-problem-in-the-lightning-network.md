@@ -2,12 +2,12 @@
 title: '闪电网络的入账容量问题'
 author: 'Florencia Ravenna'
 date: '2020/09/01 12:00:25'
-title_image: '../images/the-inbound-capacity-problem-in-the-lightning-network/90eec6fad7594ec7a230dbecdfad93d0.png'
+cover: '../images/the-inbound-capacity-problem-in-the-lightning-network/90eec6fad7594ec7a230dbecdfad93d0.png'
 excerpt: '入账容量问题可能是闪电网络在启动阶段会遇到的问题'
 categories:
 - 闪电网络
 tags:
-- [闪电网络]
+- 闪电网络
 ---
 
 *作者：Florencia Ravenna*

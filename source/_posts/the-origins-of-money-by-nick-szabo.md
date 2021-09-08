@@ -2,12 +2,13 @@
 title: '尼克·萨博：货币的起源'
 author: 'Nick Szabo'
 date: "2020/8/23 11:43:25"
-title_image: '../images/the-origins-of-money-by-nick-szabo/89905b40db11411d8f417cf6f516a23a.jpg'
+cover: '../images/the-origins-of-money-by-nick-szabo/89905b40db11411d8f417cf6f516a23a.jpg'
 excerpt: "货币的前身，连同语言，帮助早期的现代人种解决了其它动物所不能解决的协作问题，其中就包括如何实现互惠互利、亲属利他以及减少攻击性的问题。这些货币先祖与非法定货币同样具有非常具体的特征 —— 绝不仅仅是象征性物品或装饰品。"
 categories:
 - 货币理念
 tags:
-- [Nick-Szabo, 货币]
+- Nick Szabo
+- 货币
 ---
 
 *作者：Nick Szabo*

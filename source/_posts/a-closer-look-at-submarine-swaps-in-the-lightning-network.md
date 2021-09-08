@@ -2,12 +2,12 @@
 title: '闪电网络中的 Submarine Swap'
 author: 'Florencia Ravenna'
 date: '2020/09/01 16:50:25'
-title_image: '../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_62MUjQ0RdBm34X-Bl15VKw.png'
+cover: '../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_62MUjQ0RdBm34X-Bl15VKw.png'
 excerpt: '把资金从链上支付到链下，反之亦可'
 categories:
 - 闪电网络
 tags:
-- [闪电网络]
+- 闪电网络
 ---
 
 *作者：Florencia Ravenna*
