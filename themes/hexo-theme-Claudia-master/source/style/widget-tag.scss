@@ -1,0 +1,124 @@
+@import "common/variable";
+$avatarSize: 180px;
+$coverMaxHeight: 360px;
+$coverBlurEffect: 20px;
+
+.tag-container {
+  max-width: 1060px;
+  margin: 32px auto 0;
+  header {
+    > a {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 22px;
+      color: var(--primary-color)!important;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 32px;
+      color: var(--heading-color);
+    }
+  }
+
+  .post-item-card {
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--background-color-2);
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+      margin-top: -8px;
+      box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    // cover image
+    > header {
+
+      height: 160px;
+
+      overflow: hidden;
+
+      // fix composite layer border on safari browser
+      z-index: 1;
+      border-top-left-radius: $borderRadius;
+      border-top-right-radius: $borderRadius;
+
+      .post-cover-backdrop {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: $coverMaxHeight;
+
+          object-fit: cover;
+          transform: scale(1.2);
+          filter: blur($coverBlurEffect) ;
+        }
+      }
+
+      .post-cover-link {
+        position: relative;
+        z-index: 2;
+
+        width: 100%;
+
+        // fix white spacer
+        font-size: 0;
+      }
+
+      .post-cover-img {
+        width: 100%;
+        transition: all .3s!important;
+        &:hover {
+          transform: scale(1.05, 1.05);
+        }
+      }
+    }
+
+    .post-card-content {
+      word-break: break-word;
+      height: 238px;
+
+      > h2 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        color: var(--heading-color)!important;
+      }
+
+      > p {
+        flex: 1;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: var(--text-color);
+      }
+
+      .post-data {
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 24px;
+        }
+
+        strong {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 22px;
+          color: var(--heading-color);
+        }
+
+        time {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 12px;
+          color: var(--text-secondary-color);
+        }
+      }
+
+    }
+  }
+}

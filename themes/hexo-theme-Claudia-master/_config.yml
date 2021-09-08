@@ -1,9 +1,20 @@
 # main menu navigation
 menu:
   Home: /
-  About: /about
-  EthFans: https://ethfans.org/
-  
+  Archive: /archives
+  Tag: /tags
+  # About: /about
+  # EthFans: https://ethfans.org/
+  Mempool: /mempool
+  123BTC: https://123btc.org/
+
+# home page default categories
+home:
+  categories: ['BTC', 'ORGIN-OF-MONEY', 'ETH' ]
+
+# default logo image
+logo: /images/light/logo.png
+
 widgets:
   - tag
   - archive

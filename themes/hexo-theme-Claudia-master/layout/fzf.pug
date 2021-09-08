@@ -1,0 +1,12 @@
+extends widget/base
+
+block append head
+  link(rel='stylesheet', href= url_for('/style/404.css'))
+
+block content
+    main.container-404
+        img.nodata-light(src= url_for(page.images.light || theme.errorPage.image))
+        img.nodata-dark(src= url_for(page.images.dark || theme.errorPage.image))
+        h1= '页面丢了'
+        p= '抱歉! 请尝试访问其他页面'
+        a(href= url_for('/'))= _p('home')

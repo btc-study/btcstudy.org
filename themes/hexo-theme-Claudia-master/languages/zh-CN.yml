@@ -1,6 +1,6 @@
 archive:
-  one: '归档'
-  other: '归档'
+  one: '全站目录'
+  other: '全站目录'
 
 category:
   one: '分类'
@@ -25,4 +25,3 @@ recent: '最近'
 read_more: '更多'
 user_name: '名字'
 click_back_to_the_top: '点击返回顶部'
-

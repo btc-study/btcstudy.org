@@ -2,20 +2,23 @@
 
 @import "common/variable";
 @import "themes/theme";
+@import "common/core";
+
+.hidden { display: none; }
 
 :root {
 
   body {
     margin: 0;
     height: 100vh;
-    padding-top: 45px;
+    padding-top: 65px;
 
     a {
       color: inherit;
 
       &:hover, &:hover .iconfont {
         text-decoration: none;
-        color: $activeColor!important;
+        color: $activeColor;
       }
     }
 
@@ -40,9 +43,16 @@
       background: var(--third-bg-color);
     }
 
-    > main {
-      flex-grow: 2;
-      flex-basis: 0;
+    .body-container {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      > main {
+        flex: 1;
+        flex-grow: 2;
+        flex-basis: 0;
+        background-color: var(--background-color);
+      }
     }
 
     > footer {

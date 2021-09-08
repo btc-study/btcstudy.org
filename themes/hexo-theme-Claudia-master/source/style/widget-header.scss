@@ -1,3 +1,12 @@
+#header-menu {
+  height: 65px;
+  transition: all .3s;
+}
+
+.header-title {
+  height: 65px;
+}
+
 .header-widget {
   position: fixed;
   top: 0;
@@ -7,20 +16,113 @@
   overflow: hidden;
 
   width: 100vw;
-  height: 42px;
+  height: 65px;
   padding: 0 15px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  background: var(--top-bar-bg-color);
+  background: var(--background-color-2);
+
+  .header-widget-container {
+    width: 1060px;
+    height: inherit;
+    max-width: 1060px;
+    .header-menu-wrap {
+      flex: 1;
+    }
+    h1 {
+      margin-right: 54px;
+      a { margin: 0!important; }
+      img {
+        height: 24px;
+        width: 130px;
+      }
+    }
+  }
 
   a {
     margin: 0 8px;
     font-weight: bold;
 
-    color: var(--primary-text-color);
+    color: var(--text-color)!important;
   }
 
   h3 {
+    position: relative;
     font-weight: bold;
+  }
+
+  .header-activity {
+    position: relative;
+    color: var(--heading-color)!important;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      height: 4px;
+      width: 100%;
+      background-color: var(--primary-color);
+    }
+  }
+
+  .hidden-menu {
+    transform: translateY(-200%);
+  }
+}
+
+.right-content {
+  flex: 1;
+  justify-content: flex-end;
+  > .iconfont {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .icon-icon_light {
+    color: #fff;
+  }
+  .search-wrap {
+    position: relative;
+    input {
+      height: 40px;
+      width: 280px;
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      outline: none;
+      color: var(--text-color);
+      background-color: var(--background-color-2);
+    }
+    > i {
+      position: absolute;
+      right: 24px;
+      top: 2px;
+      color: var(--primary-color);
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.mobile-header-menu {
+  margin-right: 16px;
+  font-size: 24px!important;
+  color: var(--primary-color);
+}
+
+.mobile-header-logo {
+  margin-top: 5px;
+  height: 20px;
+}
+
+.mobile-header-searchIcon {
+  font-size: 24px!important;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  :root body {
+    padding-top: 44px;
+  }
+  .header-widget {
+    height: 44px;
   }
 }

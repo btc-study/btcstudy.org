@@ -1,6 +1,60 @@
-main.aside-card-container.tag-widget(class= is_tag() && 'is-in-tag-page')
-    h3= _p('tag')
-    section
-        each tag in site.tags.toArray()
-            a(href= url_for(`/tags/${tag.name}`))
-                span.tag.post-item-tag(style="margin-bottom: 5px;")= tag.name
+include methods
+
+block append head
+    link(rel='stylesheet', href= url_for("/style/widget-tag.css"))
+
+main.tag-container
+    - var list = [];
+    each post in site.posts.sort('date', -1).toArray()
+        each tag in post.tags.toArray()
+            if tag.name == page.tag
+                - list.push(post);
+    
+    header.mb-2
+        a(href= url_for('/tags'))= '/' + _p('tag')
+        h1= (page.tag || '').replace(/-/g, ' ')
+        p
+            span= list.length
+            span= ' 篇文章'
+            
+    section.row.gutter-10
+        if list.length > 0
+            each post in list
+                - var postURL = url_for(post.path)
+                - var imgURL = getPostCoverImg(post)
+                - var isExcerpt = post.excerpt && post.excerpt.length > 0
+                - var postContent = isExcerpt ? post.excerpt : post.content
+                div.col.sm-12.md-8.mb-2
+                    article.post-item-card(post-path= url_for(post.path))
+                        if imgURL
+                            header.is-relative.is-flex
+                                div.post-cover-backdrop.is-hidden
+                                    img(src= imgURL alt="loading..")
+                                a.post-cover-link.has-text-centered.skeleton(href= postURL)
+                                    img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+                        section.content.post-card-content.p-2.is-flex.is-flex-direction-column
+                            if post.title
+                                h2.is-family-serif.mt-0.mb-2
+                                    a(href= postURL)= post.title
+                            p.is-flex-grow-2
+                                = truncate( strip_html(postContent), {length: 90, omission: '..'} )
+                
+                            if post.date && post.author
+                                div.is-flex.is-flex-direction-row.post-data
+                                    img.mr-1(src= post.avatar || url_for("/images/default_avatar.png"))
+                                    div.is-flex.is-flex-direction-column
+                                        strong= post.author
+                                        time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
+
+block append script
+    script.
+        $claudia.fadeInImage(null, $claudia.blurBackdropImg)
+
+        window.addEventListener('resize', $claudia.throttle(function () {
+            var images = document.querySelectorAll('.js-img-fadeIn')
+
+            images.forEach($claudia.blurBackdropImg)
+        }, 150))
+
+block script
+    script(src= url_for("/js/post-card.js"))  

@@ -1,17 +1,11 @@
 -
     function getPostCoverImg(post) {
+        
         const $coverImgElRegx = /<img.*?alt="\$cover".*?>/
-        const firstImgElRegx = /<img[^>]+src="?([^"\s]+)".*?>/
-        const coverImgElement = post.content.match(firstImgElRegx)
+        const coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/)
 
-        if (!coverImgElement) return false
-
-        // post.content = post.content.replace(firstImgElRegx, `<img id="__hexo_theme_cover__" src="${coverImgElement[1]}" alt=".." style="display: none;">`)
+        if (post.cover) return post.cover
+        if (!coverImgElement) return "/images/default_cover.png"
 
         return coverImgElement[1]
-        // const coverImg = coverImgElement[0]
-        // const matchImg = coverImg.match()
-        // if (matchImg) {
-        //     return matchImg[1]
-        // }
     }

@@ -1,3 +1,23 @@
+
+block append head
+    link(rel='stylesheet', href= url_for("/style/widget-archives.css"))
+    
 main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-page')
-    h3= _p('archive')
-    section!= list_archives(site.archives)
+    header.mb-2
+        h1= _p('archive')
+        p
+            span= site.posts.length
+            span= ' 篇文章'
+    section.post-list
+        ul
+            each post in site.posts.sort('date', -1).toArray()
+                li
+                    a.is-flex.is-flex-direction-row.is-align-items-center.px-3(href= url_for(post.path))
+                        strong= post.title
+                        img.mr-1(src= post.avatar || url_for("/images/default_avatar.png") alt= post.author)
+                        span= post.author
+                        time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
+                        i.iconfont.icon-icon_into
+                    
+
+                

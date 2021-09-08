@@ -1,0 +1,11 @@
+extends widget/base
+
+//- block topic
+//-   span= `${ _p('category') } · ${ page.category || __('all') }`
+
+block content
+  //- - console.log(page.category);
+  include widget/widget-categories
+    //- block sidebar
+    //-   div(style="position: sticky; top: 50px;")
+    //-     include widget/widget-categories

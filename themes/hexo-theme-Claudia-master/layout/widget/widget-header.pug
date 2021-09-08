@@ -1,17 +1,39 @@
-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-space-between.is-hidden-mobile
-    section.is-hidden-mobile.is-flex-shrink-0
-        h1
-            a(href= url_for("/"))= (theme.user && theme.user.name || config.author)
-    h3.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
-        block topic
-    aside.is-flex-shrink-0
-        if theme.menu
-            each url, label in theme.menu
-                h3.is-inline-block
-                    a(href= url_for(url))= label && _p(label.toLowerCase())
-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-center.is-hidden-tablet
-        if theme.menu
-            each url, label in theme.menu
-                h3.is-inline-block
-                    a(href= url_for(url))= label && _p(label.toLowerCase())
+- var current = 'Home';
+- if (is_home()) { current = 'Home' }
+- if (is_archive()) { current = 'Archive' }
+- if (is_current('/tags')) { current = 'Tag' }
+- if (is_current('/mempool')) { current = "Mempool" }
 
+header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-center.is-justify-content-center
+    div.is-flex.header-widget-container.is-flex-shrink-0.is-align-items-center
+        section.is-hidden-mobile.is-flex-shrink-0
+            h1
+                a(href= url_for("/"))
+                    img#logo-img(src= url_for(config.logo || theme.logo) alt="logo")
+                //- a(href= url_for("/"))= (theme.user && theme.user.name || config.author)
+        div.is-flex.is-flex-direction-column.header-menu-wrap
+            aside.is-flex-shrink-0.is-flex.is-flex-direction-row.is-align-items-center#header-menu
+                if theme.menu
+                    each url, label in theme.menu
+                        if label == current
+                            a.is-inline-block.header-activity.mr-4(href= url_for(url))= label && _p(label.toLowerCase())
+                        else
+                            a.is-inline-block.mr-4(href= url_for(url))= label && _p(label.toLowerCase())
+                div.right-content.is-flex.is-flex-direction-row.is-align-items-center
+                    i.iconfont.icon-icon_dark.mr-1#theme-btn
+                    div.search-wrap
+                        input.pl-3#search-input(placeholder= '请输入搜索关键词')
+                        i.iconfont.icon-icon_search#search-input-btn
+            div.header-title.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
+                block topic
+                
+header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-space-between.is-hidden-tablet
+    div.is-flex.is-flex-direction-row.is-align-items-center
+        i.iconfont.icon-icon_bar.mobile-header-menu
+        img.mobile-header-logo(src= url_for(config.logo || theme.logo))
+    i.iconfont.icon-icon_search.mobile-header-searchIcon
+    div.menu-wrap
+        //- if theme.menu
+        //-     each url, label in theme.menu
+        //-         h3.is-inline-block
+        //-             a(href= url_for(url))= label && _p(label.toLowerCase())

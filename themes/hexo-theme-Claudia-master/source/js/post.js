@@ -31,6 +31,7 @@ var $posts = {
     showTopic: function (evt) {
         var topicEl = document.getElementById('postTopic')
         var postTitle = document.getElementById('postTitle')
+        var menuEl = document.getElementById('header-menu')
 
         var postTitleCoordinate = postTitle.getBoundingClientRect()
         var threshold = postTitle.offsetTop + postTitleCoordinate.height
@@ -41,6 +42,9 @@ var $posts = {
             var isScrollToTop = beforeOffsetY - window.pageYOffset > 0
 
             topicEl.classList.remove('is-hidden-topic-bar')
+            topicEl.classList.remove('hidden')
+
+            menuEl.classList.add('hidden-menu')
 
             if (beforeOffsetY - window.pageYOffset === 0) {
                 topicEl.classList.remove('is-switch-post-title')
@@ -65,25 +69,26 @@ var $posts = {
                     topicEl.classList.remove('is-flash-scrollToTop-tips')
 
                     topicEl.classList.add('is-show-scrollToTop-tips')
+                    topicEl.classList.add('immediately-show')
                 }
                 // show post title
-                else {
-                    topicEl.classList.remove('immediately-show')
-                    topicEl.classList.remove('is-show-post-title')
-                    topicEl.classList.remove('is-show-scrollToTop-tips')
-                    topicEl.classList.remove('is-flash-scrollToTop-tips')
-
-                    topicEl.classList.add('is-switch-post-title')
-                }
+                // else {
+                //     topicEl.classList.remove('immediately-show')
+                //     topicEl.classList.remove('is-show-post-title')
+                //     topicEl.classList.remove('is-show-scrollToTop-tips')
+                //     topicEl.classList.remove('is-flash-scrollToTop-tips')
+                //
+                //     topicEl.classList.add('is-switch-post-title')
+                // }
             }
             // scroll to down👇
-            else if (beforeOffsetY - window.pageYOffset !== 0) {
-                topicEl.classList.remove('immediately-show')
-                topicEl.classList.remove('is-switch-post-title')
-                topicEl.classList.remove('is-show-scrollToTop-tips')
-                topicEl.classList.remove('is-flash-scrollToTop-tips')
-                topicEl.classList.add('is-show-post-title')
-            }
+            // else if (beforeOffsetY - window.pageYOffset !== 0) {
+            //     topicEl.classList.remove('immediately-show')
+            //     topicEl.classList.remove('is-switch-post-title')
+            //     topicEl.classList.remove('is-show-scrollToTop-tips')
+            //     topicEl.classList.remove('is-flash-scrollToTop-tips')
+            //     topicEl.classList.add('is-show-post-title')
+            // }
         }
         else{
             // hidden all
@@ -94,6 +99,10 @@ var $posts = {
             topicEl.classList.remove('immediately-show')
 
             topicEl.classList.add('is-hidden-topic-bar')
+            topicEl.classList.add('hidden')
+
+            menuEl.classList.remove('hidden-menu');
+
         }
     },
     catalogueHighlight: function () {
