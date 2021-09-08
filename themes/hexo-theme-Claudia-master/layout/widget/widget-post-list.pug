@@ -6,8 +6,8 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
         - var list = {};
         each category in categories
             - list[category] = [];
-        if page.posts.length > 0
-              each post in page.posts.sort('date', -1).toArray()
+        if site.posts.length > 0
+              each post in site.posts.sort('date', -1).toArray()
                     each category in post.categories.toArray()
                         - var index = categories.indexOf(category.name)
                         - if (index > -1)
