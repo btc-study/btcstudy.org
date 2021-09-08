@@ -6,7 +6,7 @@ title_image: '../images/a-closer-look-at-submarine-swaps-in-the-lightning-networ
 excerpt: '把资金从链上支付到链下，反之亦可'
 categories:
 - 闪电网络
-tages:
+tags:
 - [闪电网络]
 ---
 

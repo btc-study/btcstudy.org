@@ -7,7 +7,7 @@ title_image: '../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708
 excerpt: '闪电网络在观念上的起源'
 categories:
 - 闪电网络
-tages:
+tags:
 - [闪电网络]
 ---
 

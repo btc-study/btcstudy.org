@@ -4,7 +4,7 @@ author: 'Jameson Lopp'
 date: '2020/09/01 17:22:25'
 title_image: '../images/bitcoin-and-the-rise-of-the-cypherpunks/91545f955a264321aee18927a7683c16.jpg'
 excerpt: '密码朋克相信，隐私性是基本人权'
-tages:
+tags:
 - [比特币, 密码朋克]
 ---
 

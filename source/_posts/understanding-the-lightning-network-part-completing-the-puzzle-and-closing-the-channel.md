@@ -6,7 +6,7 @@ title_image: ''
 excerpt: '几乎所有操作都在链下完成，这才是闪电网络真正强大的地方'
 categories:
 - 闪电网络
-tages:
+tags:
 - [比特币, 闪电网络]
 ---
 

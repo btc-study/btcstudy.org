@@ -6,7 +6,7 @@ title_image: '../images/dont-fear-the-reaper/e38c1d5a633e4dcfaa12dd0ef97d18c8.pn
 excerpt: '没有所谓最佳的非零货币增发率。增发率/稀释率 是一个政治问题，而非工程问题'
 categories:
 - 货币理念
-tages:
+tags:
 - [比特币, 货币]
 ---
 

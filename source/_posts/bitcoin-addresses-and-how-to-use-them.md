@@ -6,8 +6,9 @@ title_image: '../images/bitcoin-addresses-and-how-to-use-them/8f773aee0fc5447a9b
 excerpt: '如何生成一个有效的地址？如何收发交易？'
 categories:
 - 比特币主网
-tages:
-- [比特币, 钱包]
+tags:
+- 比特币
+- 钱包
 ---
 
 *作者：SatoshiLabs*

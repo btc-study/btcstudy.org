@@ -6,7 +6,7 @@ title_image: ''
 excerpt: 'Alice 想要给一个第三方 Carol 支付 1 btc'
 categories:
 - 闪电网络
-tages:
+tags:
 - [闪电网络]
 ---
 

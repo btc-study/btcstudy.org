@@ -6,7 +6,7 @@ title_image: '../images/bitcoins-utxo-model-by-river-finance/24f26a7d50374147a30
 excerpt: 'UTXO 模型使得比特币在可审计性、透明性和效率上更优于传统金融系统'
 categories:
 - 比特币主网
-tages:
+tags:
 - [比特币]
 ---
 

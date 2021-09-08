@@ -6,7 +6,7 @@ title_image: '../images/the-tao-of-bitcoin-development/c60b282deb994081bd56353ee
 excerpt: '“我们不要国王、总统和投票。我们相信的是大致共识和运行代码。”'
 categories:
 - 比特币主网
-tages:
+tags:
 - [比特币, 升级]
 ---
 

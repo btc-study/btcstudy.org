@@ -6,7 +6,7 @@ title_image: '../images/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/ab
 excerpt: '默克尔化抽象语法树是一项为比特币提议的升级，可以实现更小的交易体积、更好的隐私性，以及更大的智能合约'
 categories:
 - 比特币主网
-tages:
+tags:
 - [比特币]
 ---
 

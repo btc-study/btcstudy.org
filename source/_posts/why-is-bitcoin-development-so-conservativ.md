@@ -6,7 +6,7 @@ title_image: '../images/why-is-bitcoin-development-so-conservativ/8197d19c7bd24c
 excerpt: '我们从小就听说龟兔赛跑的故事：笑到最后的是那只慢而坚定的乌龟，不是兔子'
 categories:
 - 比特币主网
-tages:
+tags:
 - [比特币, 升级]
 ---
 

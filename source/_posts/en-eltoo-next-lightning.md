@@ -6,7 +6,7 @@ title_image: '../images/en-eltoo-next-lightning/7999f22b5f47474aae9984371ed0146f
 excerpt: 'eltoo 的目标不是替代整个闪电网络技术栈，而是对原始的更新机制的嵌入式替代'
 categories:
 - 闪电网络
-tages:
+tags:
 - [闪电网络, Layer2]
 ---
 

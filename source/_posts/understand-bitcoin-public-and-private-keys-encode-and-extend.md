@@ -6,7 +6,7 @@ title_image: '../images/understand-bitcoin-public-and-private-keys-encode-and-ex
 excerpt: '这篇文章能帮助你理解比特币的公钥和私钥'
 categories:
 - 比特币主网
-tages:
+tags:
 - [比特币, 钱包]
 ---
 
