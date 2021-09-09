@@ -1,11 +1,10 @@
-
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
+- var appearance = theme.appearance ? theme.appearance : 'auto'
+- var pageTitle = page.title || theme.user && theme.user.name
+- if (is_archive()) pageTitle = _p('archive')
+- if (is_tag()) pageTitle = _p('tag') + ': ' + page.tag
+- if (is_category()) pageTitle = _p('category') + ': ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- var pageTitle = page.title || theme.user && theme.user.name
-- var appearance = theme.appearance ? theme.appearance : 'auto'
 
 doctype html
 //- html(lang=config.language class= `appearance-${ appearance }`)
