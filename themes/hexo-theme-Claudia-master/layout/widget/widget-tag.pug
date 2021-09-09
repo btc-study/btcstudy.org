@@ -24,7 +24,6 @@ main.tag-container
                 - var imgURL = getPostCoverImg(post)
                 - var isExcerpt = post.excerpt && post.excerpt.length > 0
                 - var postContent = isExcerpt ? post.excerpt : post.content
-                - if (!/^\//.test(imgURL)) imgURL = '/' + imgURL
                 div.col.sm-12.md-8.mb-2
                     article.post-item-card(post-path= url_for(post.path))
                         if imgURL
