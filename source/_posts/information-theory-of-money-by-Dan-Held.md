@@ -7,7 +7,7 @@ excerpt: "度量不出来，你就管理不了。"
 categories:
 - 货币理念
 tags:
-- Dan Held
+- Dan-Held
 - 货币
 ---
 

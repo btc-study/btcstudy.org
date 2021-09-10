@@ -7,7 +7,7 @@ excerpt: "货币的前身，连同语言，帮助早期的现代人种解决了�
 categories:
 - 货币理念
 tags:
-- Nick Szabo
+- Nick-Szabo
 - 货币
 ---
 
