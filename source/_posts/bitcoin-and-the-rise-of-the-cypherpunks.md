@@ -95,7 +95,7 @@ Nick Szabo 在 2005 年[提出了 “bit gold”](http://unenumerated.blogspot.c
 
 ![3](../images/bitcoin-and-the-rise-of-the-cypherpunks/50ae4488c1744bdfa412289715ddaea6.png)
 
-<center>- 比特币的隐私模型（来源：比特币白皮书） -</center>
+<p style="text-align:center">- 比特币的隐私模型（来源：比特币白皮书） -</p>
 
 中本聪创建了一个可供人们使用、扩展和分叉的系统，极大地推动了密码学技术的发展。
 
@@ -150,7 +150,7 @@ ECDHM 地址方案的例子包括 Peter Todd 提出的 [Stealth Addresses](https
 
 ![5](../images/bitcoin-and-the-rise-of-the-cypherpunks/ce3e30c8ec1146c0919642e1bf17fcbc.png)
 
-<center>- 简单的 CoinJoin 交易示意图 -</center>
+<p style="text-align:center">- 简单的 CoinJoin 交易示意图 -</p>
 
 * [JoinMarket](https://github.com/JoinMarket-Org/joinmarket/wiki) —— 开发者 Chris Belcher 提出的 JoinMarket 可以让比特币持有者通过提供比特币来参与 CoinJoin 混合来赚取手续费。JoinMarket 使用了某种智能合约来避免用户的私钥离开本地，从而降低私钥丢失的风险。简而言之，JoinMarket 可以让你以低成本且去中心化的方式来提高比特币交易的隐私性。
 * [CoinShuffle](http://crypsys.mmci.uni-saarland.de/projects/CoinShuffle/coinshuffle.pdf) —— 一群德国萨尔大学的研究者开发了去中心化混币协议 CoinShuffle。CoinShuffle 是 CoinJoin 的改良版，不需要可信第三方来创建混币交易，因此不会收取额外的混币费。
@@ -162,7 +162,7 @@ ECDHM 地址方案的例子包括 Peter Todd 提出的 [Stealth Addresses](https
 
 ![6](../images/bitcoin-and-the-rise-of-the-cypherpunks/579b1f2857e94b23862df52e0bc65ca3.jpg)
 
-<center>- CoinJoin 的输入和输出分组 -</center>
+<p style="text-align:center">- CoinJoin 的输入和输出分组 -</p>
 
 Atlas 指出即使使用比较粗糙的分析工具，他也能找出一笔 CoinJoin 交易内 69% 的输入和 53% 的输出。
 
@@ -176,7 +176,7 @@ Dash 的混币方案使用 0.1 DASH、1 DASH、10 DASH 和 100 DASH 等常见金
 
 ![7](../images/bitcoin-and-the-rise-of-the-cypherpunks/da51adbc9efc4d6aa03248673fdb5a59.png)
 
-<center>- DASH 混币（来源：DASH 白皮书） -</center>
+<p style="text-align:center">- DASH 混币（来源：DASH 白皮书） -</p>
 
 还有一类隐私币甚至没有在比特币的基础上构建。2014 年，Nicolas van Saberhagen 发布了 [CryptoNote](https://cryptonote.org/inside/) 的白皮书。一些密码学货币就是根据 [CryptoNote](https://cryptonote.org/inside/) 概念实现的，例如门罗。主要的创新是密码学环形签名和一次性密钥。
 
@@ -194,7 +194,7 @@ Dash 的混币方案使用 0.1 DASH、1 DASH、10 DASH 和 100 DASH 等常见金
 
 ![9](../images/bitcoin-and-the-rise-of-the-cypherpunks/904f30c669864b3d869288b4899f83be.png)
 
-<center>- 环签名（来源：https://cryptonote.org/inside/） -</center>
+<p style="text-align:center">- 环签名（来源：https://cryptonote.org/inside/） -</p>
 
 CryptoNote 旨在降低密钥重用和利用输入追踪输出所产生的风险。付款地址是利用付款方和收款方的数据生成的一次性密钥。只要你在输入中使用环签名，它到底花了哪笔交易的输出会变得更加难于确定。
 
@@ -206,7 +206,7 @@ CryptoNote 旨在降低密钥重用和利用输入追踪输出所产生的风险
 
 ![10](../images/bitcoin-and-the-rise-of-the-cypherpunks/9dc762a2ed4f478ca3a0ae24cc3f0812.gif)
 
-<center>- 抗区块链分析（来源：https://cryptonote.org/inside/） -</center>
+<p style="text-align:center">- 抗区块链分析（来源：https://cryptonote.org/inside/） -</p>
 
 ## 酝酿中的密码朋克创新
 

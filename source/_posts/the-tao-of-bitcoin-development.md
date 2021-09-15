@@ -22,7 +22,7 @@ tags:
 
 ![](../images/the-tao-of-bitcoin-development/c60b282deb994081bd56353ee37ff367.png)
 
-<center>- 八卦通常是道家及其思想的象征 -</center>
+<p style="text-align:center">- 八卦通常是道家及其思想的象征 -</p>
 
 过去几年来，比特币扩容问题引发热议，史无前例地将大众的目光聚焦在了比特币协议演进背后的开发流程上。虽然开源软件项目历来都要承受来自利益竞争的重压，并应对不同开发团队所推崇的不同愿景，但是，在比特币这个项目上，这个系统关系到的利益的范围和种类，以及人们对开发流程发表意见的动机，凝结成了一种完全独一无二的情形。
 
@@ -147,7 +147,7 @@ BIP2 的 “[BIP 工作流程](https://github.com/bitcoin/bips/blob/master/bip-0
 
 ![](https://upyun-assets.ethfans.org/uploads/photo/image/63f3dd35ffd04025b4839c9115a741a8.png)
 
-<center>- <a href="https://groups.csail.mit.edu/ana/People/DDC/future_ietf_92.pdf">MIT 的 David Clark 在 1992 年的 IETF 会议上的重要演讲节选</a> -</center>
+<p style="text-align:center">- <a href="https://groups.csail.mit.edu/ana/People/DDC/future_ietf_92.pdf">MIT 的 David Clark 在 1992 年的 IETF 会议上的重要演讲节选</a> -</p>
 
 翻译：随着互联网及其社区发展，我们如何管理变革和发展流程？
 

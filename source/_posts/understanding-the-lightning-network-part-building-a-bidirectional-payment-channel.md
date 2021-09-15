@@ -39,7 +39,7 @@ tags:
 
 ![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/c7c81a1510c74dea8946c002f6e0cec4.png)
 
-<center>- （译者注：如图所示，比特币就像支票一样可以拆分，且其流转会形成清晰的链条。） -</center>
+<p style="text-align:center">- （译者注：如图所示，比特币就像支票一样可以拆分，且其流转会形成清晰的链条。） -</p>
 
 ## 模块 #2：杜绝多重支付（Double-Spend Protection）
 

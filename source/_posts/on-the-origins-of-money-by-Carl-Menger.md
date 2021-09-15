@@ -7,7 +7,6 @@ excerpt: "唯一能让我们充分了解货币起源的方式是，学会将社�
 categories:
 - 货币理念
 tags:
-- Carl Menger
 - 货币
 ---
 

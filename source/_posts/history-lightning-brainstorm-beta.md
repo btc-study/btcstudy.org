@@ -1,8 +1,7 @@
 ---
-
 title: '闪电网络的历史：从头脑风暴，到测试版本'
 author: 'Aaron Van Wirdum'
-date: '2020/08/23 11:07:25'
+date: '2020/09/03 11:07:25'
 cover: '../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708a93fb0a6da.png'
 excerpt: '闪电网络在观念上的起源'
 categories:
@@ -37,7 +36,7 @@ tags:
 
 ![](../images/history-lightning-brainstorm-beta/10a40f47444a44c5adba36b399fcb3a7.png)
 
-<center>- Bitcoin 0.1 包含的支付通道草稿。来源：GitHub -</center>
+<p style="text-align:center">- Bitcoin 0.1 包含的支付通道草稿。来源：GitHub -</p>
 
 虽然这份代码很粗糙，中本聪后来在跟 [bitcoinj](https://bitcoinj.github.io/) 开发者私聊时 Mike Hearn 讲了更多支付通道如何工作的细节。
 
@@ -45,7 +44,7 @@ tags:
 
 ![](../images/history-lightning-brainstorm-beta/c6e753afc18c4549aa7aef53d5df85ef.png)
 
-<center>- 中本聪对支付通道原理的解释，曝光自 Mike Hearn。来源：Bitcoin-dev mailing list -</center>
+<p style="text-align:center">- 中本聪对支付通道原理的解释，曝光自 Mike Hearn。来源：Bitcoin-dev mailing list -</p>
 
 ## 第一个支付通道
 
@@ -65,7 +64,7 @@ Corné Plooy（现在是一个闪电网络的开发者，在荷兰的比特币�
 
 ![](../images/history-lightning-brainstorm-beta/8b6b6ccfdafe493f82934bd996d7dbf9.png)
 
-<center>- Plooy 的支付层层的一个早期图示，后来成了闪电网络的前身 Amiko Pay。来源：Corné Plooy -</center>
+<p style="text-align:center">- Plooy 的支付层层的一个早期图示，后来成了闪电网络的前身 Amiko Pay。来源：Corné Plooy -</p>
 
 在 Bitcoin Core 的开发者和未来 Blockstream 公司的 CTO [Gregory Maxwell](https://bitcointalk.org/index.php?topic=28565.0)，以及 Ripple 创始人 [Ryan Fugger](https://bitcointalk.org/index.php?topic=28565.msg362638#msg362638)（和其他人）的建议之下，这个想法 [经过](https://bitcointalk.org/index.php?topic=94674.0) [了](https://bitcointalk.org/index.php?topic=94674.msg1460940#msg1460940) [多年](https://bitcointalk.org/index.php?topic=819901) 的发展，变成了比特币和原初的 Ripple 基础的集合体，并产生出了一个  Plooy 叫做 “[Amiko Pay](https://bitcoinmagazine.com/articles/lightning-network-implementation-amiko-pay-currently-in-development-1449073678)” 的[系统](http://www.ultimatestunts.nl/bitcoin/ripple_bitcoin_draft_1.pdf)。Amiko Pay 更早的草稿没有用到支付通道的，因此需要为这个系统注入信任：如果某个用户拒绝与另一个用户结算余额，后者没有任何办法。
 
@@ -75,7 +74,7 @@ Corné Plooy（现在是一个闪电网络的开发者，在荷兰的比特币�
 
 ![](../images/history-lightning-brainstorm-beta/56248199786e431fb65275b1aabdf1f2.png)
 
-<center>- 现已倒闭的 Strawpay 小额支付公司的 Logo。来源：The Internet Archive  -</center>
+<p style="text-align:center">- 现已倒闭的 Strawpay 小额支付公司的 Logo。来源：The Internet Archive  -</p>
 
 一个更早的、建立免信任的支付通道网络的尝试，来自 Alex Akselrod。他在 2013 年提出了一个[草案](https://en.bitcoin.it/wiki/User:Aakselrod/Draft)，在 2014 年这份草案转化为一份[概念验证代码](https://github.com/aakselrod/libtxchain-java)。Akselrod 的解决方案花了很大力气，在理论上解决了这个问题。但在实践中，问题依旧。比如说，如果一笔支付在路由过程中失败了，用户没有任何追索权，只有等支付通道的时间锁解除后资金释放，而这可能要经历几个月的时间。
 
@@ -122,7 +121,7 @@ https://bitcoinmagazine.com/technical/history-lightning-brainstorm-beta
 
 ![](../images/history-lightning-brainstorm-beta/644f8933e2d04ec38325cbefc758a1b5.png)
 
-<center>- 来自 ACINQ 的 eclair 发行公告。来源：medium.com -</center>
+<p style="text-align:center">- 来自 ACINQ 的 eclair 发行公告。来源：medium.com -</p>
 
 又过了几个月，第三个实现开始起步。在 2016 年 1 月，闪电网络白皮书的作者 Poon 和 Dryja，也跟 Elizabeth Stark 和 Olaoluwa “Laolu” Osuntokun 一道，成立了一个全新的公司来开发闪电网络：[Lightning Labs](https://lightning.engineering/)。Lightning Labs 带头在 [lnd](https://github.com/LightningNetwork/lnd) 上开闸，这是一个用谷歌公司推出的 Go 编程语言（也叫 “golang”）实现的闪电网络 —— 他们在公司成立之前就开始开发了。
 
@@ -160,7 +159,7 @@ SegNet 4 测试网部署不到半年，在 2016 年 10 月，Blockstream 开发�
 
 ![](../images/history-lightning-brainstorm-beta/26c8cad11c424c488ccb7c5599820f07.png)
 
-<center>- Christian Decker 从 Rusty Russell 处 “买” 的一张猫图片。 来源：Blockstream.com-</center>
+<p style="text-align:center">- Christian Decker 从 Rusty Russell 处 “买” 的一张猫图片。 来源：Blockstream.com-</p>
 
 到 2017 年 1 月，第一个闪电网络实现 —— lnd —— [推出](https://bitcoinmagazine.com/articles/lightning-network-one-step-closer-to-reality-as-lightning-labs-announces-alpha-release-1484333955) [Alpha](http://lightning.community/release/software/lnd/lightning/2017/01/10/lightning-network-daemon-alpha-release/) 版本。有了这个实现，闪电网络就 “正式” 地迈入了 “Alpha 阶段”：全世界的开发者，第一次收到邀请，去实验这种新技术。而 Lightning Labs 还在继续测试和提升代码。
 
@@ -174,7 +173,7 @@ SegNet 4 测试网部署不到半年，在 2016 年 10 月，Blockstream 开发�
 
 ![](../images/history-lightning-brainstorm-beta/5ac496994ef54f7780d4cf6b6637f4c2.png)
 
-<center>- Lazlo Hanyecz 享用披萨。来源： -</center>
+<p style="text-align:center">- Lazlo Hanyecz 享用披萨。来源： -</p>
 
 ## Beta 版
 
@@ -190,7 +189,7 @@ Blockstream 的 c-lightning 实现尚未发布 beta 版，虽然他们的开发�
 
 ![](../images/history-lightning-brainstorm-beta/b8d650bada2a4509806d18cffca0d4d4.png)
 
-<center>- 在本文撰写之时，闪电网络的图示。来源：http://lnmainnet.gaben.win/ -</center>
+<p style="text-align:center">- 在本文撰写之时，闪电网络的图示。来源：http://lnmainnet.gaben.win/ -</p>
 
 即使我们已经有了这些进展，闪电网络也还是处在非常出街的阶段。大部分用户都非常了解技术（通常就是开发者），使用场景也都是实验性的。虽然 beta 版软件发布是一个很大的里程碑，网络的开发和提升仍要继续，还有许多事情等我们去做，[路由](https://bitcoinmagazine.com/articles/exploring-the-centralization-risks-of-bitcoin-s-lightning-network-1462460852)、[隐私](https://www.coindesk.com/will-lightning-help-hurt-bitcoin-privacy) 和[其他风险](https://thenextweb.com/hardfork/2018/02/27/bitcoin-lightning-network-todd-flawed/)领域，还有许多开放问题。
 
