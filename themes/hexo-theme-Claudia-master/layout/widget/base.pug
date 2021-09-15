@@ -42,4 +42,12 @@ html(lang=config.language)
     script(async defer src= url_for("/js/buttons.js"))
     script(src= url_for("/js/index.js"))
     
-    block script
+    block append script
+      script.
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?c92c073c85be5be8d9b1b76f62a7e306";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
