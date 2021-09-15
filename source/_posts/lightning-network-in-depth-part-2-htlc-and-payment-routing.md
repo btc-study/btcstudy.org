@@ -1,11 +1,13 @@
 ---
 title: '闪电网络深入解读（下）：HTLC 与支付路由'
-author: ''
+author: 'Magomed Aliev'
 date: '2021/09/15 19:59:13'
-cover: ''
-excerpt: ''
+cover: '../images/lightning-network-in-depth-part-2-htlc-and-payment-routing/40e6f854a08f44b4b08211fa99711d87.png'
+excerpt: '连锁支付在闪电网络中是如何实现的？'
 categories:
+- 闪电网络
 tags:
+- 闪电网络
 ---
 
 *作者：Magomed Aliev*
