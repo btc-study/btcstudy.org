@@ -33,7 +33,7 @@ main.category-container
                                     img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
                         section.content.post-card-content.p-2.is-flex.is-flex-direction-column
                             if post.title
-                                h2.is-family-serif.mt-0.mb-2
+                                h2.mt-0.mb-2
                                     a(href= postURL)= post.title
                             p.is-flex-grow-2
                                 = truncate( strip_html(postContent), {length: 90, omission: '..'} )

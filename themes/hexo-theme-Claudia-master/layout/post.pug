@@ -21,7 +21,7 @@ block content
                 //-         each tag in page.tags.toArray()
                 //-             a(href= url_for(`/tags/${tag.name}`))
                 //-                 i.tag.post-item-tag= tag.name
-                h1.mt-0.mb-2.is-family-serif#postTitle= page.title
+                h1.mt-0.mb-2#postTitle= page.title
                 if page.date && page.author
                     div.is-flex.is-flex-direction-row
                         div.is-flex.is-flex-direction-row.page-data.mr-6
