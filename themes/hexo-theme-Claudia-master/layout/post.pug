@@ -23,10 +23,10 @@ block content
                 //-                 i.tag.post-item-tag= tag.name
                 h1.mt-0.mb-2#postTitle= page.title
                 if page.date && page.author
-                    div.is-flex.is-flex-direction-row
+                    div.page-author
                         div.is-flex.is-flex-direction-row.page-data.mr-6
                             img.mr-1(src= page.avatar || url_for("/images/default_avatar.png") alt= page.author)
-                            div.is-flex.is-flex-direction-column
+                            div.page-author-info
                                 strong= page.author
                                 time.has-text-grey(datetime=page.date.toJSON())= date(page.date, date_format)
                         div.is-flex
@@ -61,5 +61,9 @@ block content
                 //-             issue-term= theme.comment_utteranc.issue_term || "pathname"
                 //-             theme= theme.comment_utteranc.theme || "preferred-color-scheme"
                 //-         )
-block script
     script(src= url_for("/js/post.js"))
+    script(src= url_for("/js/highlight.min.js"))
+
+block append script
+  script.
+    hljs.initHighlightingOnLoad();

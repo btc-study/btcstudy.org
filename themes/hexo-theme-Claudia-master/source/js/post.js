@@ -168,7 +168,7 @@ var $posts = {
         }
     },
     mounted: function () {
-        hljs && hljs.initHighlighting()
+        // hljs && hljs.initHighlighting()
 
         var Scroller = this.scroller()
         var scrollerInstance = new Scroller()

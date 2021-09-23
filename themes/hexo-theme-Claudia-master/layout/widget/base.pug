@@ -41,12 +41,7 @@ html(lang=config.language)
     //- script(src= url_for("/js/search.js"))
     script(async defer src= url_for("/js/buttons.js"))
     script(src= url_for("/js/index.js"))
-    script(src= url_for("/js/highlight.min.js"))
     
-    block append script
-      script.
-        hljs.initHighlightingOnLoad();
-
     block append script
       script.
         var _hmt = _hmt || [];

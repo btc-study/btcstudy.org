@@ -9,6 +9,7 @@
     return name === 'currency' ? 'ETH' : '';
   }
 
+  if (window.location.pathname !== '/search/') { return }
   var searchKey = getQueryParams('w');
   if (!searchKey) {
     return window.location.href = '/';
@@ -65,8 +66,6 @@
       }
     });
     // console.log(searchKey);
-    console.log(data);
-
     if (results.length) {
       var titleEl = document.getElementById('key');
       titleEl.innerText = "“" + searchKey + "”";

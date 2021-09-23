@@ -207,7 +207,19 @@ body > .body-container > main,
   color: var(--heading-color)!important;
 }
 
+.page-author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-author-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-data {
+  align-items: center;
   img {
     width: 24px;
     height: 24px;
@@ -269,4 +281,50 @@ body > .body-container > main,
   border-radius: 20px;
   line-height: 22px;
   font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  body > .body-container > main,
+  .clip > .body-container > main {
+    background-color: var(--background-color)!important;
+  }
+  #postTitle {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .page-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+    .page-data {
+      align-items: center;
+      margin-right: 0;
+      margin-bottom: 8px;
+      width: 100%;
+      .page-author-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        strong {
+          flex: 1;
+        }
+      }
+    }
+    i {
+      font-size: 12px;
+    }
+  }
+  .post-content {
+    margin-top: 16px;
+    h2 {
+      font-size: 18px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
 }
