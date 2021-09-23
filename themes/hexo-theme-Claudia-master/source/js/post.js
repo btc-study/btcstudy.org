@@ -29,9 +29,11 @@ var $posts = {
         return Scroller
     },
     showTopic: function (evt) {
-        var topicEl = document.getElementById('postTopic')
+        var topicEl = document.body.clientWidth <= 768 ? document.getElementById('postTopicMobile') : document.getElementById('postTopic')
         var postTitle = document.getElementById('postTitle')
+        var headerLogo = document.getElementById('header-logo');
         var menuEl = document.getElementById('header-menu')
+        var header = document.getElementById('mobile-header');
 
         var postTitleCoordinate = postTitle.getBoundingClientRect()
         var threshold = postTitle.offsetTop + postTitleCoordinate.height
@@ -45,6 +47,8 @@ var $posts = {
             topicEl.classList.remove('hidden')
 
             menuEl.classList.add('hidden-menu')
+            headerLogo.classList.add('hidden-menu');
+            header.classList.add('header-shadow');
 
             if (beforeOffsetY - window.pageYOffset === 0) {
                 topicEl.classList.remove('is-switch-post-title')
@@ -90,7 +94,7 @@ var $posts = {
             //     topicEl.classList.add('is-show-post-title')
             // }
         }
-        else{
+        else {
             // hidden all
             topicEl.classList.remove('is-flash-scrollToTop-tips')
             topicEl.classList.remove('is-show-scrollToTop-tips')
@@ -102,7 +106,8 @@ var $posts = {
             topicEl.classList.add('hidden')
 
             menuEl.classList.remove('hidden-menu');
-
+            headerLogo.classList.remove('hidden-menu');
+            header.classList.remove('header-shadow');
         }
     },
     catalogueHighlight: function () {
@@ -183,6 +188,7 @@ var $posts = {
         $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
 
         document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
+        document.getElementById('postTopicMobile').addEventListener('click', this.smoothScrollToTop)
     }
 }
 

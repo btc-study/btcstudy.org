@@ -125,4 +125,12 @@
   .header-widget {
     height: 44px;
   }
+  .mobile-header-title {
+    position: absolute;
+    left: 56px;
+    font-weight: 600;
+  }
+  .header-shadow {
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+  }
 }

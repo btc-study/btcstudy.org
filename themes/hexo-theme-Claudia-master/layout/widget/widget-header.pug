@@ -27,10 +27,12 @@ header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-ce
             div.header-title.is-hidden-mobile.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
                 block topic
                 
-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-space-between.is-hidden-tablet
+header#mobile-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-space-between.is-hidden-tablet
     div.is-flex.is-flex-direction-row.is-align-items-center
         i.iconfont.icon-icon_bar.mobile-header-menu
-        img.mobile-header-logo(src= url_for(config.logo || theme.logo))
+        img#header-logo.mobile-header-logo(src= url_for(config.logo || theme.logo))
+        div.mobile-header-title.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
+            block topicMobile
     i.iconfont.icon-icon_search.mobile-header-searchIcon
     //- div.menu-wrap
         //- if theme.menu
