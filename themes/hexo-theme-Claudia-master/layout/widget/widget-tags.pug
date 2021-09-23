@@ -2,7 +2,7 @@ block append head
     link(rel='stylesheet', href= url_for("/style/widget-tags.css"))
 
 main.tags-container
-    ul.is-flex.is-flex-direction-row.is-flex-wrap-wrap
+    ul
         - var list = {};
         each tag in site.tags.toArray()
             - list[tag.name] = [];
@@ -12,10 +12,11 @@ main.tags-container
                         - list[postTag.name].push(post);
             li
                 header.is-flex.is-flex-direction-row.is-align-items-center.mb-2
-                    h2= tag.name.replace(/-/g, ' ')
-                    p
-                        span= list[tag.name].length
-                        span= ' 篇文章'
+                    div
+                        h2= tag.name.replace(/-/g, ' ')
+                        p
+                            span= list[tag.name].length
+                            span= ' 篇文章'
                     if list[tag.name].length > 5
                         a(href= url_for('/tags/' + tag.name))= "全部"
                 section
