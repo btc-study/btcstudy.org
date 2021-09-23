@@ -1,6 +1,6 @@
 include methods
 
-article.post-container.is-flex.is-flex-direction-column.is-justify-content-center.section.container.is-max-widescreen.p-0.pt-4
+article.post-container.is-flex.is-flex-direction-column.is-justify-content-center.section.container.is-max-widescreen.p-2
         //- - console.log(page.posts);
         - var categories = config.home.categories || theme.home.categories
         - var list = {};
@@ -14,7 +14,7 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                             - list[category.name].push(post);
         each category in categories
             div.is-variable.is-1-tablet.is-3-desktop-only.is-2-widescreen.mb-4
-                header.post-header.is-flex.is-flex-direction-row.is-justify-content-space-between.mb-2
+                header.post-header.is-flex.is-flex-direction-row.is-justify-content-space-between.is-align-items-center.mb-2
                     //- - var categoryStr = formatStr(category)
                     h2.category-title= category.replace(/-/g, ' ')
                     if list[category].length > 3
@@ -39,7 +39,7 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                                         p.is-flex-grow-2
                                             = truncate( strip_html(postContent), {length: 90, omission: '..'} )
                                         if post.date && post.author
-                                            div.is-flex.is-flex-direction-row.post-data
+                                            div.is-flex.is-flex-direction-row.is-align-items-center.post-data
                                                 img.mr-1(src= post.avatar || url_for("/images/default_avatar.png") alt= post.author)
                                                 div.is-flex.is-flex-direction-column
                                                     strong= post.author
