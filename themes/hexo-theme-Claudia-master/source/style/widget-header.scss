@@ -118,6 +118,8 @@
   color: var(--primary-color);
 }
 
+.mobile-slide-menu { display: none; }
+
 @media screen and (max-width: 768px) {
   :root body {
     padding-top: 52px;
@@ -184,7 +186,50 @@
     top: 52px;
     width: 100vw;
     height: 100vh;
-    background-color: var(--text-secondary-color);
+    background-color: rgba(0, 0, 0, .5);
     z-index: 1001;
+  }
+  .mobile-slide-menu {
+    display: block;
+    position: fixed;
+    top: 52px;
+    left: -50%;
+    width: 50%;
+    height: 100vh;
+    z-index: 1002;
+    padding-top: 32px;
+    background-color: var(--background-color-2);
+    transition: left .3s;
+    a {
+      display: block;
+      height: 54px;
+      line-height: 54px;
+      padding-left: 15px;
+      font-weight: 600;
+      color: var(--text-secondary-color)!important;
+    }
+    .header-activity {
+      color: var(--heading-color)!important;
+      border-right: 4px solid var(--primary-color);
+    }
+    > div {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 54px;
+        font-size: 14px;
+        padding: 0 15px;
+        font-weight: 600;
+        color: var(--text-secondary-color)!important;
+        i {
+          color: var(--primary-color);
+        }
+      }
+    }
   }
 }
