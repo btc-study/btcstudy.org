@@ -122,3 +122,71 @@ $coverBlurEffect: 20px;
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .category-container {
+    margin-top: 0;
+    padding: 16px;
+    header {
+      margin-bottom: 8px;
+      & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          font-size: 16px;
+          font-weight: 800;
+          line-height: 24px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .col {
+      margin-bottom: 8px;
+    }
+    .post-item-card {
+      .post-card-content {
+        position: relative;
+        height: auto;
+        padding: 8px 16px 16px;
+        h2 {
+          position: absolute;
+          bottom: 100%;
+          left: 0;
+          z-index: 1;
+          margin-bottom: 0;
+          padding: 8px 16px;
+          width: 100%;
+          font-size: 14px;
+          line-height: 22px;
+          background: linear-gradient(180deg, rgba(60, 60, 60, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+          a {
+            color: #fff;
+          }
+        }
+        p {
+          margin-bottom: 8px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+        }
+        .post-data {
+          .post-data-author {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            strong {
+              font-size: 12px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -41,7 +41,7 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                                         if post.date && post.author
                                             div.is-flex.is-flex-direction-row.is-align-items-center.post-data
                                                 img.mr-1(src= post.avatar || url_for("/images/default_avatar.png") alt= post.author)
-                                                div.is-flex.is-flex-direction-column
+                                                div.post-data-author
                                                     strong= post.author
                                                     time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
                         //- -

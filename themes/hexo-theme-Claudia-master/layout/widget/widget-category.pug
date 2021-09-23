@@ -11,10 +11,11 @@ main.category-container
                 - list.push(post);
     header.mb-2
         a(href= url_for('/'))= '/' + _p('category')
-        h1= (page.category || '').replace(/-/g, ' ')
-        p
-            span= list.length
-            span= ' 篇文章'
+        div
+            h1= (page.category || '').replace(/-/g, ' ')
+            p
+                span= list.length
+                span= ' 篇文章'
     
     section.row.gutter-10
         if list.length > 0
@@ -41,7 +42,7 @@ main.category-container
                             if post.date && post.author
                                 div.is-flex.is-flex-direction-row.post-data
                                     img.mr-1(src= post.avatar || url_for("/images/default_avatar.png"))
-                                    div.is-flex.is-flex-direction-column
+                                    div.post-data-author
                                         strong= post.author
                                         time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
 

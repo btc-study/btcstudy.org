@@ -15,7 +15,7 @@ $coverBlurEffect: 20px;
     a {
       width: 100px;
       height: 32px;
-      line-height: 32px;
+      line-height: 31px;
       text-align: center;
       color: var(--primary-color);
       border: 1px solid var(--primary-color);
@@ -115,19 +115,22 @@ $coverBlurEffect: 20px;
           height: 24px;
           border-radius: 24px;
         }
+        .post-data-author {
+          display: flex;
+          flex-direction: column;
+          strong {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 22px;
+            color: var(--heading-color);
+          }
 
-        strong {
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 22px;
-          color: var(--heading-color);
-        }
-
-        time {
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 12px;
-          color: var(--text-secondary-color);
+          time {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 12px;
+            color: var(--text-secondary-color);
+          }
         }
       }
 
@@ -347,7 +350,7 @@ $coverBlurEffect: 20px;
       a {
         width: 100px;
         height: 32px;
-        line-height: 32px;
+        line-height: 31px;
         text-align: center;
         border: 1px solid var(--primary-color);
         border-radius: 20px;
@@ -387,9 +390,16 @@ $coverBlurEffect: 20px;
               line-height: 20px;
             }
             .post-data {
-              strong {
-                font-size: 12px;
-                line-height: 20px;
+              .post-data-author {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex: 1;
+                strong {
+                  font-size: 12px;
+                  line-height: 20px;
+                }
               }
             }
           }
