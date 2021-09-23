@@ -1,22 +1,53 @@
-function bindSearch() {
-
-  var searchInputBtn = document.getElementById('search-input-btn');
-  searchInputBtn.onclick = function() {
-    var searchInput = document.getElementById('search-input');
-    if (searchInput.value) {
-      window.location.href = '/search/?w=' + searchInput.value.trim()
-    }
-  }
-
-  var searchInput = document.getElementById('search-input');
-  searchInput.onkeypress = function(e) {
-    if (e.key === 'Enter') {
-      window.location.href = '/search/?w=' + searchInput.value.trim()
-    }
-  }
-}
-
 function initialTheme() {
+
+  var bindSearch = function() {
+    var searchInputBtn = document.getElementById('search-input-btn');
+    searchInputBtn.onclick = function() {
+      var searchInput = document.getElementById('search-input');
+      if (searchInput.value) {
+        window.location.href = '/search/?w=' + searchInput.value.trim()
+      }
+    }
+
+    var searchInput = document.getElementById('search-input');
+    searchInput.onkeypress = function(e) {
+      if (e.key === 'Enter') {
+        window.location.href = '/search/?w=' + searchInput.value.trim()
+      }
+    }
+
+
+    $('.mobile-header-searchIcon').click(function() {
+      $('.mobile-search-wrap').css('top', 0);
+      $('body').css('overflow-y', 'hidden');
+      $('.search-mask').removeClass('hidden');
+    });
+
+    $('.mobile-search-input-btn').click(function() {
+      var value = $('#mobile-search-input').val();
+      if (value) {
+        window.location.href = '/search/?w=' + value.trim()
+      }
+    });
+
+    $('#mobile-search-input').keypress(function(e) {
+      if (e.key === 'Enter') {
+        var value = $('#mobile-search-input').val();
+        if (value) {
+          window.location.href = '/search/?w=' + value.trim()
+        }
+      }
+    });
+
+    $('.search-mask').click(function() {
+      $('.mobile-search-wrap').css('top', -52);
+      $('body').css('overflow-y', 'auto');
+      $('.search-mask').addClass('hidden');
+      setTimeout(function() {
+        $('#mobile-search-input').val('');
+      }, 300);
+    });
+  }
 
   var setTheme = function(theme) {
 

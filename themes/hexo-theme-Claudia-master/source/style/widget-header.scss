@@ -120,10 +120,10 @@
 
 @media screen and (max-width: 768px) {
   :root body {
-    padding-top: 44px;
+    padding-top: 52px;
   }
   .header-widget {
-    height: 44px;
+    height: 52px;
   }
   .mobile-header-title {
     position: absolute;
@@ -132,5 +132,59 @@
   }
   .header-shadow {
     box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  .mobile-search-wrap {
+    position: fixed;
+    top: -52px;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    padding: 8px 16px;
+    background-color: var(--background-color-2);
+    transition: top .3s;
+    .search-input {
+      position: relative;
+      input {
+        padding-left: 47px;
+        height: 36px;
+        width: 100%;
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        outline: none;
+        color: var(--text-color);
+        background-color: var(--background-color-2);
+      }
+      > i {
+        position: absolute;
+        left: 15px;
+        top: 0px;
+        color: var(--disabled-color);
+        font-size: 24px;
+        cursor: pointer;
+      }
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 36px;
+        width: 82px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: #fff;
+        background-color: var(--primary-color);
+        border-width: 0;
+        outline: none;
+        z-index: 100;
+      }
+    }
+  }
+  .search-mask {
+    position: fixed;
+    left: 0;
+    top: 52px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--text-secondary-color);
+    z-index: 1001;
   }
 }

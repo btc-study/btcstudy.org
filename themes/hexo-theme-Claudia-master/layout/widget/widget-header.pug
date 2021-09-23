@@ -34,6 +34,14 @@ header#mobile-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-cente
         div.mobile-header-title.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
             block topicMobile
     i.iconfont.icon-icon_search.mobile-header-searchIcon
+    div.mobile-search-wrap
+        div.search-input
+            input.pl-3#mobile-search-input(placeholder= '请输入搜索关键词')
+            i.iconfont.icon-icon_search.mobile-search-input-btn
+            button.mobile-search-input-btn= '搜 索'
+
+div.search-mask.hidden
+
     //- div.menu-wrap
         //- if theme.menu
         //-     each url, label in theme.menu
