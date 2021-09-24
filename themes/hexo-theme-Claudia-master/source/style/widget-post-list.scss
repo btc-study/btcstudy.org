@@ -364,6 +364,9 @@ $coverBlurEffect: 20px;
       .col {
         margin-bottom: 8px;
         .post-item-card {
+          &:hover {
+            margin-top: 0px;
+          }
           .post-card-content {
             position: relative;
             height: auto;
