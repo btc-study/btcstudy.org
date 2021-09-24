@@ -283,6 +283,11 @@ body > .body-container > main,
   font-style: normal;
 }
 
+.post-content .has-jax {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 @media screen and (max-width: 768px) {
   body > .body-container > main,
   .clip > .body-container > main {
