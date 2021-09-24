@@ -15,20 +15,28 @@ html(lang=config.language)
     title= pageTitle
     meta(name="description" content= config.description || theme.user && theme.user.description)
     meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1")
-
+    
     link(rel="icon" href= url_for(theme.favicon))
     link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
     link(rel='stylesheet', href= url_for("//at.alicdn.com/t/font_2777699_cweokhe39xh.css"))
+    script.
+      function ready() {
+        var bodyEl = document.querySelector('.body-container');
+        var localTheme = localStorage.getItem('theme') || 'light';
+        bodyEl.classList.remove('appearance-auto');
+        bodyEl.classList.add('appearance-' + localTheme);
+      }
+      document.addEventListener("DOMContentLoaded", ready);
     script(src= url_for("/js/jquery.min.js?v=" + v))
     script(src= url_for("/js/common.js?v=" + v))
     block head
 
   body.is-flex.is-flex-direction-column(onload="initialTheme()")
     div.clip
-    div(class= `body-container appearance-${ appearance }`)
+    div(class= 'body-container appearance-auto')
       include widget-header
       main
           block content
