@@ -1,5 +1,6 @@
+- var v = new Date().getTime()
 block append head
-    link(rel='stylesheet', href= url_for("/style/widget-tags.css"))
+    link(rel='stylesheet', href= url_for("/style/widget-tags.css?v=" + v))
 
 main.tags-container
     ul

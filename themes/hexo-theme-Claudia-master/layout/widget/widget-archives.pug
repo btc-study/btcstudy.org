@@ -1,6 +1,7 @@
+- var v = new Date().getTime()
 
 block append head
-    link(rel='stylesheet', href= url_for("/style/widget-archives.css"))
+    link(rel='stylesheet', href= url_for("/style/widget-archives.css?v=" + v))
     
 main.aside-card-container.archives-widget(class= is_archive() && 'is-in-archive-page')
     header.mb-2

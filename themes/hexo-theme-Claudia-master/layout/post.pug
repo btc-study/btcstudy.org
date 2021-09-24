@@ -1,7 +1,8 @@
 extends widget/base
 block append head
-  link(rel='stylesheet', href= url_for('/style/post.css'))
-  link(rel='stylesheet', href= url_for('/style/themes/highlight.css'))
+    - var v = new Date().getTime()
+    link(rel='stylesheet', href= url_for('/style/post.css?v=' + v))
+    link(rel='stylesheet', href= url_for('/style/themes/highlight.css?v=' + v))
 
 block topic
     div#postTopic.is-full-height.hidden
@@ -67,8 +68,8 @@ block content
                 //-             issue-term= theme.comment_utteranc.issue_term || "pathname"
                 //-             theme= theme.comment_utteranc.theme || "preferred-color-scheme"
                 //-         )
-    script(src= url_for("/js/post.js"))
-    script(src= url_for("/js/highlight.min.js"))
+    script(src= url_for("/js/post.js?v=" + v))
+    script(src= url_for("/js/highlight.min.js?v=" + v))
 
 block append script
   script.
