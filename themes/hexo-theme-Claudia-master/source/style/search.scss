@@ -139,6 +139,14 @@
             display: flex;
             flex-direction: column;
             height: auto;
+            .cover {
+              height: 160px;
+              width: auto;
+              overflow: hidden;
+              img {
+                width: 100%;
+              }
+            }
             .post-data {
               position: relative;
               padding: 8px 16px 16px;
