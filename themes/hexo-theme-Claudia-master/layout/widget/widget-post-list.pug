@@ -38,7 +38,7 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                                         h2.mt-0.mb-2
                                             a(href= postURL)= post.title
                                         p.is-flex-grow-2
-                                            = truncate( strip_html(postContent), {length: 90, omission: '..'} )
+                                            = truncate( strip_html(postContent), {length: 43, omission: '...'} )
                                         if post.date && post.author
                                             div.is-flex.is-flex-direction-row.is-align-items-center.post-data
                                                 img.mr-1(src= post.avatar || url_for("/images/default_avatar.png") alt= post.author)

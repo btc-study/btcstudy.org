@@ -27,9 +27,9 @@ $coverBlurEffect: 20px;
     }
   }
 
-  .post-content {
-    height: 400px;
-  }
+  // .post-content {
+  //   height: 400px;
+  // }
 
   .post-item-card {
     overflow: hidden;
@@ -92,16 +92,24 @@ $coverBlurEffect: 20px;
 
     .post-card-content {
       word-break: break-word;
-      height: 238px;
+      height: 148px;
 
       > h2 {
+        margin-bottom: 4px;
         font-size: 18px;
         font-weight: 600;
         line-height: 26px;
         color: var(--heading-color)!important;
+        a {
+          display: block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
       }
 
       > p {
+        margin-bottom: 8px;
         flex: 1;
         font-size: 14px;
         font-weight: 400;
