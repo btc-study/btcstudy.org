@@ -52,13 +52,13 @@ tags:
 
 我们感兴趣的部分是输出，尤其是其 “scriptPubKey” 字段（锁定脚本字段）。我们先考虑一种标准的锁定脚本：
 
-```
+```plain
 OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 ```
 
 而隔离见证之后的锁定脚本如下所示：
 
-```
+```plain
 0 <PubKeyHash>
 ```
 
@@ -66,7 +66,7 @@ OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 
 再来看看这个输出被花费时的情形。传统交易的输出在花费时的数据结构如下：
 
-```
+```json
 [...]
 "Vin" : [
  {
@@ -80,7 +80,7 @@ OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 
 但是，在花费一个隔离见证输出的时候，交易的 scriptSig 将为空，而所有的签名都会放到一个专门的地方：
 
-```
+```json
 [...]
 "Vin" : [
  {
@@ -106,13 +106,13 @@ OP_DUP OP_HASH160 <PubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
 
 假设现在有一个需要提供 5 个私钥中的 2 个的签名才能使用的多签名钱包。如果你使用传统的交易，P2SH 交易输出的锁定脚本将如下：
 
-```
+```plain
 HASH160 54c557e07dde5bb6cb791c7a540e0a4796f5e97e EQUAL
 ```
 
 要花它的时候，花费的人（也是上一笔交易的接收方）需要提供一个赎回脚本，这个脚本定义了花费条件（多签名，2-5），还有两个签名。所有这些都要放在交易的输入中：
 
-```
+```json
 [...]
 "Vin" : [
 "txid": "abcdef12345...",
@@ -123,7 +123,7 @@ HASH160 54c557e07dde5bb6cb791c7a540e0a4796f5e97e EQUAL
 
 再来看看使用隔离见证后的发送者和接收者。输出的锁定脚本如下：
 
-```
+```plain
 0 9592d601848d04b172905e0ddb0adde59f1590f1e553ffc81ddc4b0ed927dd73
 ```
 
@@ -131,7 +131,7 @@ HASH160 54c557e07dde5bb6cb791c7a540e0a4796f5e97e EQUAL
 
 使用这一输出的交易如下所示：
 
-```
+```json
 [...]
 "Vin" : [
 "txid": "abcdef12345...",
@@ -157,7 +157,7 @@ Alice 希望给 Bob 转账一些 btc，Bob 有支持隔离见证的钱包软件�
 
 想在 P2SH 交易中实现一笔 P2WPKH 交易，Bob 需要使用其公钥创建一个见证程序。然后把结果哈希、转码成一个地址：
 
-```
+```plain
 0 ab68025513c3dbd2f7b92a94e0581f5d50f654e7
 ```
 
@@ -165,25 +165,25 @@ Alice 希望给 Bob 转账一些 btc，Bob 有支持隔离见证的钱包软件�
 
 这个 P2WPKH 见证程序的 HASH160 结果：
 
-```
+```plain
 3e0547268b3b19288b3adef9719ec8659f4b2b0b
 ```
 
 转化成一个地址：
 
-```
+```plain
 37Lx99uaGn5avKBxiW26HjedQE3LrDCZru
 ```
 
 发送给这个地址的输出的锁定脚本，看起来也就跟一个普通的 P2SH 地址的脚本没啥区别：
 
-```
+```plain
 HASH160 3e0547268b3b19288b3adef9719ec8659f4b2b0b EQUAL
 ```
 
 那么 Bob 花费输出的时候，交易的结构会像这样：
 
-```
+```json
 [...]
 "Vin" : [
  {
@@ -205,7 +205,7 @@ P2WSH 脚本也可以用 P2SH 来实现。我们考虑上面所说的 2-5 多签
 
 首先，创建一个见证程序：
 
-```
+```plain
 0 9592d601848d04b172905e0ddb0adde59f1590f1e553ffc81ddc4b0ed927dd73
 ```
 

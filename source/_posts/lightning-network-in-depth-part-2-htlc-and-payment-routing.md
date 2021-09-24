@@ -10,15 +10,13 @@ tags:
 - 闪电网络
 ---
 
-*作者：Magomed Aliev*
+> *作者：Magomed Aliev*
+> 
+> *来源：<https://medium.com/softblocks/lightning-network-in-depth-part-2-htlc-and-payment-routing-db46aea445a8>*
+> 
+> *译者：阿剑*
 
-*来源：<https://medium.com/softblocks/lightning-network-in-depth-part-2-htlc-and-payment-routing-db46aea445a8>*
 
-*译者：阿剑*
-
-------
-
-[闪电网络深入解读（上）：支付通道](./lightning-network-in-depth-part-1-payment-channels)
 
 ![0](../images/lightning-network-in-depth-part-2-htlc-and-payment-routing/40e6f854a08f44b4b08211fa99711d87.png)
 
@@ -30,7 +28,7 @@ HTLC 的结构并不复杂，但非常高效。它使我们可以创建具有明
 
 我们先从哈希值（hash）开始。要创建一笔带有 HTLC 的支付事务，你先要生成一个 *秘密数值* R，然后计算出其哈希值。任何词语、任何数字都可以充当这个秘密值，因为，对哈希函数来说，它们都是一堆数据的组合，没有什么分别。
 
-```
+```plain
 H = Hash(R)
 ```
 
@@ -40,7 +38,7 @@ HTLC 的第二部分是过期时间的验证。如果秘密值没有及时地公
 
 我们来考虑一个发给某人的 HLTC 支付事务：
 
-```
+```json
 # 检查所提供的 R 是否为 H 的原像
 HASH160 <H> EQUAL
 IF
@@ -56,13 +54,13 @@ ENDIF
 
 在正确的 R（哈希值 H 的原像）公开之后，我们进入 IF 流程，进一步验证提供 R 的是不是这笔支付事务一开始的支付对象。在花费这个输出时，接收方只需提供一个非常简单的解锁脚本：
 
-```
+```plain
 <sig> <secret R>
 ```
 
 如果解锁脚本所提供的 R 是错的，我们跳转入 ELSE 流程，首先验证时间锁解锁了没有。如果时间锁已然解锁，发送者就可以收回所有的资金。收回资金这个操作的解锁脚本也差不多，唯一的区别在于，为了进入 ELSE 流程，需要提供一个错误的秘密值：
 
-```
+```plain
 <sig> <wrong secret>
 ```
 

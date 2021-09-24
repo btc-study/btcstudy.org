@@ -4,7 +4,7 @@ author: 'Hugo Nguyen'
 date: '2020/09/04 16:40:25'
 cover: ''
 excerpt: '这个渺小的哈希值，计算它只花费了非常少的能量，却是为了产生它而要求付出的大量能量的直接表现'
-tages:
+tags:
 - PoW
 ---
 
