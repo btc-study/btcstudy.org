@@ -103,32 +103,32 @@ Emma 和 Fabian 使用一个特殊的程序来同步播放视频和运行支付�
 
 Hitesh 拿到的由 Irene 签名的事务有两个输出，第一个输出不带时间锁，立即给 Irene 支付 5 btc，而第二个输出带有时间锁，支付 5 btc 给 Hitesh，但要等（这笔事务上链后的） 1000 个区块之后，这个输出才能花用。详情如下：
 
-```
+```javascript
 Input: 2-of-2 funding output, signed by Irene
 ​
 Output 0 <5 bitcoin>:
- <Irene’s Public Key> CHECKSIG
+    <Irene’s Public Key> CHECKSIG
 ​
 Output 1:
- <1000 blocks>
- CHECKSEQUENCEVERIFY
- DROP
- <Hitesh’s Public Key> CHECKSIG
+    <1000 blocks>
+    CHECKSEQUENCEVERIFY
+    DROP
+    <Hitesh’s Public Key> CHECKSIG
 ```
 
 与此同时，Irene 也可拿到由  Hitesh 签名的一个承诺事务，有两个输出：一个立即给 Hitesh 支付 5 btc，另一个输出则给 Irene 支付 5 btc，但要等 1000 个区块之后才能花。
 
-```
+```bash
 Input: 2-of-2 funding output, signed by Hitesh
 ​
 Output 0 <5 bitcoin>:
- <Hitesh’s Public Key> CHECKSIG
+    <Hitesh’s Public Key> CHECKSIG
 ​
 Output 1:
- <1000 blocks>
- CHECKSEQUENCEVERIFY
- DROP
- <Irene’s Public Key> CHECKSIG
+    <1000 blocks>
+    CHECKSEQUENCEVERIFY
+    DROP
+     <Irene’s Public Key> CHECKSIG
 ```
 
 因此，双方都拿到了一笔由对方签名的承诺事务。Hitesh 和 Irene 都可以随时把手上的承诺事务签名后广播出去，但是，一旦这么做了，另一方都会立即拿到钱，而自己只能等到 1000 个区块之后才能拿到，这可是大大的不利。不过，这还不足以让双方都诚实守信。
@@ -141,23 +141,23 @@ Output 1:
 
 Hitesh 会秘密地保管这个密钥，仅当他决定使用新的一笔承诺事务来更新通道内状态时才会发给 Irene。事务的详情如下：
 
-```
+```json
 Input: 2-of-2 funding output, signed by Irene
 ​
 Output 0 <5 bitcoin>:
- <Irene’s Public Key> CHECKSIG
+    <Irene’s Public Key> CHECKSIG
 ​
 Output 1 <5 bitcoin>:
-IF
- # Revocation penalty output
- <Revocation Public Key>
-ELSE
- <1000 blocks>
- CHECKSEQUENCEVERIFY
- DROP
- <Hitesh’s Public Key>
-ENDIF
-CHECKSIG
+    IF
+         # Revocation penalty output
+         <Revocation Public Key>
+    ELSE
+         <1000 blocks>
+         CHECKSEQUENCEVERIFY
+         DROP
+        <Hitesh’s Public Key>
+    ENDIF
+    CHECKSIG
 ```
 
 （译者注：看代码会更清晰一些：第一个输出是给立即 Irene 支付 5 btc；第二个输出则是带条件的，既可以使用撤销密钥，立即获得 5 btc，也可在 1000 个区块后，使用 Hitesh 的私钥来使用这个输出。注意这里的 “IF…ELSE…” 式条件，它跟我们在其它的计算机编程中的含义是一样的。）
