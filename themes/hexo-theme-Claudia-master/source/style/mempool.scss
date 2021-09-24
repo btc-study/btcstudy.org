@@ -27,7 +27,17 @@
         background-color: var(--background-color-2);
         user-select: none;
         a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0 24px;
           height: inherit;
+          > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+          }
         }
         strong {
           position: relative;
