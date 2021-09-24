@@ -12,7 +12,7 @@ block topic
 block topicMobile
     div#postTopicMobile.is-full-height.hidden
         - var title = truncate( page.title, {length: 65, omission: '..'} ) || ''
-        p.is-full-height.is-flex-shrink-0.is-flex.is-align-items-center.is-justify-content-center= title
+        p.is-full-height= title
           //- p.is-full-height.is-flex-shrink-0.is-flex.is-align-items-center.is-justify-content-center= __('click_back_to_the_top')
 
 block content

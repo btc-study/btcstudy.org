@@ -31,7 +31,7 @@ var $posts = {
     showTopic: function (evt) {
         var topicEl = document.body.clientWidth <= 768 ? document.getElementById('postTopicMobile') : document.getElementById('postTopic')
         var postTitle = document.getElementById('postTitle')
-        var headerLogo = document.getElementById('header-logo');
+        var headerLogo = document.getElementById('mobile-header-logo');
         var menuEl = document.getElementById('header-menu')
         var header = document.getElementById('mobile-header');
 
