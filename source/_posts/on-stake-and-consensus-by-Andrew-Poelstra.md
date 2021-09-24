@@ -8,11 +8,11 @@ tags:
 - PoW
 ---
 
-*作者：Andrew Poelstra*
-
-*来源：<https://download.wpsoftware.net/bitcoin/pos.pdf>*
-
-*译者：闵敏 & 阿剑*
+> *作者：Andrew Poelstra*
+>
+> *来源：<https://download.wpsoftware.net/bitcoin/pos.pdf>*
+>
+> *译者：闵敏 & 阿剑*
 
 
 

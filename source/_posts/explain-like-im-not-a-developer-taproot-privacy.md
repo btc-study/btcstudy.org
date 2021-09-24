@@ -11,11 +11,11 @@ tags:
 - 比特币
 ---
 
-*作者：Braiins*
-
-*来源：<https://braiins.com/blog/explain-like-im-not-a-developer-taproot-privacy>*
-
-*译者：闵敏 & 阿剑*
+> *作者：Braiins*
+>
+> *来源：<https://braiins.com/blog/explain-like-im-not-a-developer-taproot-privacy>*
+>
+> *译者：闵敏 & 阿剑*
 
 
 
