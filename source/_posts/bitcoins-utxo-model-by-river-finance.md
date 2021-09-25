@@ -10,11 +10,9 @@ tags:
 - 比特币
 ---
 
-*作者：River Financial*
-
-*来源：<https://river.com/learn/bitcoins-utxo-model/>*
-
-*译者：闵敏 & 阿剑（hongji@ethfans.org）*
+> *作者：River Financial*
+>
+> *来源：<https://river.com/learn/bitcoins-utxo-model/>*
 
 
 

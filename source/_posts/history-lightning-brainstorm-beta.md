@@ -10,11 +10,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Aaron Van Wirdum*
+> *作者：Aaron Van Wirdum*
+>
+> *来源：<https://bitcoinmagazine.com/technical/history-lightning-brainstorm-beta>*
 
-*来源：<https://bitcoinmagazine.com/technical/history-lightning-brainstorm-beta>*
-
-*译者：阿剑（hongji@ethfans.org）*
 
 ![](../images/history-lightning-brainstorm-beta/6bd872cabbf04326a17708a93fb0a6da.png)
 

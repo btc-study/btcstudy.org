@@ -10,11 +10,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Magomed Aliev*
+> *作者：Magomed Aliev*
+>
+> *来源：<https://medium.com/softblocks/lightning-network-in-depth-part-1-payment-channels-b943607950dd>*
 
-*来源：<https://medium.com/softblocks/lightning-network-in-depth-part-1-payment-channels-b943607950dd>*
-
-*译者：阿剑*
 
 
 ![1](../images/lightning-network-in-depth-part-1-payment-channels/40e6f854a08f44b4b08211fa99711d87.png)

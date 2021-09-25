@@ -11,11 +11,9 @@ tags:
 mathjax: true
 ---
 
-*作者：Stepan*
-
-*来源：<https://medium.com/cryptoadvance/how-schnorr-signatures-may-improve-bitcoin-91655bcb4744>*
-
-*译者：阿剑*
+> *作者：Stepan*
+>
+> *来源：<https://medium.com/cryptoadvance/how-schnorr-signatures-may-improve-bitcoin-91655bcb4744>*
 
 
 在阅读 Blockstream 撰写的 [MuSig](https://eprint.iacr.org/2018/068.pdf) 论文时，我一直在想象，这对于我一个比特币用户来说，到底意味着什么。我发现 Schnorr 签名的一些特性实在是非常棒而且便利，但某一些特性则非常烦人。在这篇文章里，我希望能跟各位分享我的想法。不过，我们先快速回顾一下。

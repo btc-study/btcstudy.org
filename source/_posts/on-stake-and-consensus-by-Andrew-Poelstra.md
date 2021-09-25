@@ -11,8 +11,7 @@ tags:
 > *作者：Andrew Poelstra*
 >
 > *来源：<https://download.wpsoftware.net/bitcoin/pos.pdf>*
->
-> *译者：闵敏 & 阿剑*
+
 
 
 
@@ -227,19 +226,3 @@ tags:
 我们还分析了 DMMS 的一种替代品，权益证明。我们证明了，仅靠系统内的资源，权益证明是无法形成分布式共识的，因为它要依靠自己尝试形成的历史来执行惩罚。
 
 （完）
-
-------
-
-**原文链接:** https://download.wpsoftware.net/bitcoin/pos.pdf
-**作者:** Andrew Poelstra
-**翻译&校对:** 闵敏 & 阿剑
-
-------
-
-你可能还会喜欢：
-
-[分布式共识的工作原理，Part-1](https://ethfans.org/posts/lets-take-a-crack-at-understanding-distributed-consensus-part-1)
-
-[为什么我不喜欢权益证明（ PoS ）](https://ethfans.org/posts/why-i-dislike-proof-of-stake)
-
-[区块链与机械时钟的演化](https://ethfans.org/posts/blockchains-and-the-evolution-of-mechanical-time-new-editon-oct-30-2020)

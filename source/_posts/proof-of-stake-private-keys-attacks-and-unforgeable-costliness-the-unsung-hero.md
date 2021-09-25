@@ -8,12 +8,9 @@ tags:
 - PoW
 ---
 
-*作者：Hugo Nguyen*
-
-*来源：<https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2>*
-
-*译者：Elisa & 阿剑*
-
+> *作者：Hugo Nguyen*
+>
+> *来源：<https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2>*
 
 
 

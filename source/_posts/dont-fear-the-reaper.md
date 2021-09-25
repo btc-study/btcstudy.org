@@ -11,11 +11,10 @@ tags:
 - 货币
 ---
 
-*作者：Nic Carter*
+> *作者：Nic Carter*
+>
+> *来源：<https://medium.com/@nic__carter/dont-fear-the-reaper-8bbb42358efb>*
 
-*来源：<https://medium.com/@nic__carter/dont-fear-the-reaper-8bbb42358efb>*
-
-*译者：闵敏 & 阿剑*
 
 
 ![1](../images/dont-fear-the-reaper/e38c1d5a633e4dcfaa12dd0ef97d18c8.png)

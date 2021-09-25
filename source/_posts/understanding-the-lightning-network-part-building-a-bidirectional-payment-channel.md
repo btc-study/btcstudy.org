@@ -11,11 +11,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Aaron Van Wirdum*
+> *作者：Aaron Van Wirdum*
+> 
+> *来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel-1464710791>*
 
-*来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel-1464710791>*
-
-*译者：阿剑（hongji@ethfans.org）*
 
 ![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/0d0a5ec17c984db18b6e59b5980be229.png)
 

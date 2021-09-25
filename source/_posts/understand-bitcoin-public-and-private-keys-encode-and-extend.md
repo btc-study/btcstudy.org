@@ -11,11 +11,9 @@ tags:
 - 钱包
 ---
 
-*作者：Arman The Parman*
-
-*来源：<https://armantheparman.com/public-and-private-keys/>*
-
-*译者：闵敏 & 阿剑*
+> *作者：Arman The Parman*
+> 
+> *来源：<https://armantheparman.com/public-and-private-keys/>*
 
 
 

@@ -9,11 +9,9 @@ tags:
 - 密码朋克
 ---
 
-*作者：Jameson Lopp*
-
-*来源：<https://blog.lopp.net/bitcoin-and-the-rise-of-the-cypherpunks/>*
-
-*译者：闵敏 & 阿剑*
+> *作者：Jameson Lopp*
+>
+> *来源：<https://blog.lopp.net/bitcoin-and-the-rise-of-the-cypherpunks/>*
 
 
 ![1](../images/bitcoin-and-the-rise-of-the-cypherpunks/91545f955a264321aee18927a7683c16.jpg)

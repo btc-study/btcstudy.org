@@ -9,11 +9,10 @@ tags:
 - Nick-Szabo
 ---
 
-*作者：Nick Szabo*
+> *作者：Nick Szabo*
+> 
+> *来源：<https://nakamotoinstitute.org/trusted-third-parties/>*
 
-*来源：<https://nakamotoinstitute.org/trusted-third-parties/>*
-
-*译者：ViolaH & 阿剑*
 
 
 

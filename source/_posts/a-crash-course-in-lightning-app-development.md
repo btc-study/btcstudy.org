@@ -10,11 +10,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Michael Rhee*
+> *作者：Michael Rhee*
+>
+> *来源：<https://medium.com/@rheedio/a-crash-course-in-lightning-app-development-5be5b8d2d558>*
 
-*来源：<https://medium.com/@rheedio/a-crash-course-in-lightning-app-development-5be5b8d2d558>*
-
-*译者：闵敏 & 阿剑*
 
 
 如果你想要入门闪电网络编程，又不在乎所谓正确、最佳的做法，这篇文很适合你。换言之，这篇指南具有很强的 *主观性*。如果你偏好 O'Reilly 式的权威文本，这篇文章可能不对你的胃口。但是，如果你想要了解闪电网络的最小开发环境及其基本内容，不妨读一读。我写本文的目的是提炼出创建闪电网络应用的基础知识点，让新手能够快速构建和实验。
@@ -132,9 +131,11 @@ Polar 也支持 lnd、c-lighting 和 eclair 节点。这就意味着你可以�
 ```bash
 lncli --help
 ```
+
 我们可以运行下方命令在 Alice 和 Bob 之间开启一条余额为 10 万 satoshi 的通道：
 
-```
+
+```bash
 lncli openchannel --node_key <bob's public node key> --local_amt 100000
 ```
 
@@ -174,7 +175,7 @@ lncli addinvoice --amt 100
 
 如果我们切回 Alice 的节点终端，就可以得到付款请求并将它作为参数传递给下方命令：
 
-```plain
+```bash
 lncli sendpayment --pay_req <payment_request>
 ```
 结果得到：
