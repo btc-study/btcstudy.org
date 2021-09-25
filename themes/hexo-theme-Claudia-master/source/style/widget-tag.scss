@@ -135,7 +135,7 @@ $coverBlurEffect: 20px;
 @media screen and (max-width: 768px) {
   .tag-container {
     margin-top: 16px;
-    padding: 0 16px;
+    padding: 0 16px 32px;
     header {
       margin-bottom: 8px;
       & > div {
@@ -153,6 +153,7 @@ $coverBlurEffect: 20px;
         }
       }
     }
+    .col { margin-bottom: 8px }
     .post-item-card {
       .post-card-content {
         position: relative;

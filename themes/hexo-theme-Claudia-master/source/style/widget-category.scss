@@ -139,7 +139,7 @@ $coverBlurEffect: 20px;
 @media screen and (max-width: 768px) {
   .category-container {
     margin-top: 0;
-    padding: 16px;
+    padding: 16px 16px 32px;
     header {
       margin-bottom: 8px;
       & > div {
