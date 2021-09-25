@@ -8,12 +8,9 @@ tags:
 - 密码学
 ---
 
-*作者：Hugo Nguyen*
-
-*来源：<https://medium.com/@hugonguyen/how-cryptography-redefines-private-property-34cd93d86036>*
-
-*译者：李丽 & 阿剑*
-
+> *作者：Hugo Nguyen*
+> 
+> *来源：<https://medium.com/@hugonguyen/how-cryptography-redefines-private-property-34cd93d86036>*
 
 
 

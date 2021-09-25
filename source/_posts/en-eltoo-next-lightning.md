@@ -11,11 +11,9 @@ tags:
 - Layer2
 ---
 
-*作者：Christian Decker*
-
-*来源：<https://blockstream.com/2018/04/30/en-eltoo-next-lightning/>*
-
-*译者：阿剑（hongji@ethfans.org）*
+> *作者：Christian Decker*
+> 
+> *来源：<https://blockstream.com/2018/04/30/en-eltoo-next-lightning/>*
 
 
 （编者注：原文发布于 2018 年。）

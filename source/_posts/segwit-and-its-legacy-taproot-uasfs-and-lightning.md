@@ -11,11 +11,11 @@ tags:
 - 隔离见证
 ---
 
-*作者：SatoshiLabs*
+> *作者：SatoshiLabs*
+> 
+> *来源：<https://blog.trezor.io/segwit-and-its-legacy-taproot-uasfs-and-lightning-82ce40e94fe2>*
 
-*来源：<https://blog.trezor.io/segwit-and-its-legacy-taproot-uasfs-and-lightning-82ce40e94fe2>*
 
-*译者：阿剑 & 闵敏*
 
 
 ![1](../images/segwit-and-its-legacy-taproot-uasfs-and-lightning/29ce3aaaafb64ff783d31fe7d3265cc2.png)

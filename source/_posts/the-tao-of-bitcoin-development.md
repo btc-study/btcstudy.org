@@ -11,11 +11,11 @@ tags:
 - 升级
 ---
 
-*作者：Alex B.*
+> *作者：Alex B.*
+> 
+> *来源：<https://medium.com/@bergealex4/the-tao-of-bitcoin-development-ff093c6155cd>*
 
-*来源：<https://medium.com/@bergealex4/the-tao-of-bitcoin-development-ff093c6155cd>*
 
-*译者：闵敏 & 阿剑*
 
 
 

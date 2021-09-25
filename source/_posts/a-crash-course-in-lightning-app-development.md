@@ -10,11 +10,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Michael Rhee*
+> *作者：Michael Rhee*
+>
+> *来源：<https://medium.com/@rheedio/a-crash-course-in-lightning-app-development-5be5b8d2d558>*
 
-*来源：<https://medium.com/@rheedio/a-crash-course-in-lightning-app-development-5be5b8d2d558>*
-
-*译者：闵敏 & 阿剑*
 
 
 如果你想要入门闪电网络编程，又不在乎所谓正确、最佳的做法，这篇文很适合你。换言之，这篇指南具有很强的 *主观性*。如果你偏好 O'Reilly 式的权威文本，这篇文章可能不对你的胃口。但是，如果你想要了解闪电网络的最小开发环境及其基本内容，不妨读一读。我写本文的目的是提炼出创建闪电网络应用的基础知识点，让新手能够快速构建和实验。
@@ -129,17 +128,20 @@ Polar 也支持 lnd、c-lighting 和 eclair 节点。这就意味着你可以�
 
 现在，我们可以使用该 Ind 节点的 lncli 工具开启通道、创建发票和付款了。首先，运行下方命令来了解大致情况：
 
-```plain
+```bash
 lncli --help
 ```
+
 我们可以运行下方命令在 Alice 和 Bob 之间开启一条余额为 10 万 satoshi 的通道：
-```plain
+
+```bash
 lncli openchannel --node_key <bob's public node key> --local_amt 100000
 ```
+
 你会看到一个带有 “funding_txid” 的响应，对应的是 Alice 和 Bob 广播到我们的模拟比特币区块链上的充值交易。
 运行下方命令查看我们新创建的通道：
 
-```plain
+```bash
 lncli listchannels
 ```
 
@@ -153,13 +155,13 @@ lncli listchannels
 
 继续设置我们的 Polar，我们先创建一个发票，但是这回要用 Bob 的节点。因此，我们要启动 Bob 的终端并运行以下命令：
 
-```plain
+```bash
 lncli addinvoice --amt 100
 ```
 
 以上命令创建了一个价值 100 satoshi 的发票（实际上，我在执行这些步骤时遇到了连接错误。如果你也遇到同样的问题，请停止并重启 Bob 的节点）。我们可以通过返回的响应看到这个发票的信息：
 
-```plain
+```json
 {
     "r_hash": "7d91cafaba85b6086924142dfd890f350eb53b17b80e2993d0a2ce5ccc7252f1",
     "payment_request": "lnbcrt1u1ps3lu04pp50kgu4746skmqs6fyzsklmzg0x58t2wchhq8zny7s5t89enrj2tcsdqqcqzpgsp55rtlzlf5rt0z5zg34nc2rlcm9mw6nd77x45r85z6zp07qumphr7q9qyyssqzrvxdlsluaeu7esscvv8skcmaly4794j7pg9ytapmn50uukezf4xpqma9758s39wpn4pwk475dztezg4tff8xpylksl4mww57q8hj7cq7s7222",
@@ -172,7 +174,7 @@ lncli addinvoice --amt 100
 
 如果我们切回 Alice 的节点终端，就可以得到付款请求并将它作为参数传递给下方命令：
 
-```plain
+```bash
 lncli sendpayment --pay_req <payment_request>
 ```
 结果得到：

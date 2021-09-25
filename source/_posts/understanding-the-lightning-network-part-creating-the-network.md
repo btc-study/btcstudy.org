@@ -10,11 +10,11 @@ tags:
 - 闪电网络
 ---
 
-*作者：Aaron Van Wirdum*
+> *作者：Aaron Van Wirdum*
+> 
+> *来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-creating-the-network-1465326903>*
 
-*来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-creating-the-network-1465326903>*
-
-*译者：闵敏 & 阿剑（hongji@ethfans.org）*
+  
 
 
 ![](../images/understanding-the-lightning-network-part-creating-the-network/9dce5612c6aa4440a3905ded0d6b89c5.png)

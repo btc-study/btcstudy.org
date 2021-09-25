@@ -8,11 +8,10 @@ tags:
 - PoW
 ---
 
-*作者：Hugo Nguyen*
+> *作者：Hugo Nguyen*
+> 
+> *来源：<https://bitcointechtalk.com/the-anatomy-of-proof-of-work-98c85b6f6667>*
 
-*来源：<https://bitcointechtalk.com/the-anatomy-of-proof-of-work-98c85b6f6667>*
-
-*译者：阿剑*
 
 
 工作量证明（Proof-of-Work，PoW）一开始发明的时候是用来[防止垃圾邮件](https://en.m.wikipedia.org/wiki/Proof-of-work_system)的。不一会之后，它就被用在电子现金系统中 [[作者注1](#zhu1)]。
@@ -59,6 +58,6 @@ SHA256 是比特币工作量证明挖矿使用的哈希方程。SHA256 保护这
 
 <p id="zhu2">作者注2：不可更改性是一个相对的概念。我们说”不可更改性“时，通常的意思是，它在实践是哦那个是不可更改的，而不是绝对不可更改的（译者注：即在技术上不可更改）。即便黄金，加入足够多的能量也会熔化。</p>
 
-<p id="zhu3">作者注3：其中一种办法是权益证明（Proof-of-Stake，PoS）。请看<a href="https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2">我评论权益证明的文章</a>，理解其中的陷阱以及为什么它可能不如工作量证明。（编者注：中译本见文末超链接《<a href="https://ethfans.org/posts/proof-of-stake-the-wrong-engineering-mindset">权益证明与错误的工程思维</a>》）</p>
+<p id="zhu3">作者注3：其中一种办法是权益证明（Proof-of-Stake，PoS）。请看<a href="https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2">我评论权益证明的文章</a>，理解其中的陷阱以及为什么它可能不如工作量证明。</p>
 
 （完）

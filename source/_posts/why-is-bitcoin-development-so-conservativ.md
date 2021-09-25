@@ -11,11 +11,9 @@ tags:
 - 升级
 ---
 
-*作者：Vlad Costea*
-
-*来源：<https://blog.trezor.io/why-is-bitcoin-development-so-conservative-a22d37765c5b>*
-
-*译者：阿剑*
+> *作者：Vlad Costea*
+> 
+> *来源：<https://blog.trezor.io/why-is-bitcoin-development-so-conservative-a22d37765c5b>*
 
 
 ![1](../images/why-is-bitcoin-development-so-conservativ/8197d19c7bd24c74a3bd8c748d17f10f.jpg)

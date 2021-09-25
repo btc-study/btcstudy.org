@@ -10,11 +10,10 @@ tags:
 - 比特币
 ---
 
-*作者：David A. Harding*
+> *作者：David A. Harding*
+> 
+> *来源：<https://bitcointechtalk.com/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast-33fdf2da5e2f>*
 
-*来源：<https://bitcointechtalk.com/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast-33fdf2da5e2f>*
-
-*译者：阿剑*
 
 
 

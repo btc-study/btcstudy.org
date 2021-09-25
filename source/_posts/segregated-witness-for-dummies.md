@@ -11,11 +11,9 @@ tags:
 - 隔离见证
 ---
 
-*作者：Magomed Aliev*
-
-*来源：<https://medium.com/softblocks/segregated-witness-for-dummies-d00606e8de63>*
-
-*译者：阿剑（hongji@ethfans.org）*
+> *作者：Magomed Aliev*
+> 
+> *来源：<https://medium.com/softblocks/segregated-witness-for-dummies-d00606e8de63>*
 
 
 ![1](../images/segregated-witness-for-dummies/90b39a13541c400b928b677a9009ceb1.jpeg)
@@ -157,7 +155,7 @@ Alice 希望给 Bob 转账一些 btc，Bob 有支持隔离见证的钱包软件�
 
 想在 P2SH 交易中实现一笔 P2WPKH 交易，Bob 需要使用其公钥创建一个见证程序。然后把结果哈希、转码成一个地址：
 
-```plain
+```bash
 0 ab68025513c3dbd2f7b92a94e0581f5d50f654e7
 ```
 
@@ -165,19 +163,19 @@ Alice 希望给 Bob 转账一些 btc，Bob 有支持隔离见证的钱包软件�
 
 这个 P2WPKH 见证程序的 HASH160 结果：
 
-```plain
+```bash
 3e0547268b3b19288b3adef9719ec8659f4b2b0b
 ```
 
 转化成一个地址：
 
-```plain
+```bash
 37Lx99uaGn5avKBxiW26HjedQE3LrDCZru
 ```
 
 发送给这个地址的输出的锁定脚本，看起来也就跟一个普通的 P2SH 地址的脚本没啥区别：
 
-```plain
+```bash
 HASH160 3e0547268b3b19288b3adef9719ec8659f4b2b0b EQUAL
 ```
 
@@ -205,7 +203,7 @@ P2WSH 脚本也可以用 P2SH 来实现。我们考虑上面所说的 2-5 多签
 
 首先，创建一个见证程序：
 
-```plain
+```bash
 0 9592d601848d04b172905e0ddb0adde59f1590f1e553ffc81ddc4b0ed927dd73
 ```
 
