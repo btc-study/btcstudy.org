@@ -1,10 +1,10 @@
+- var v = new Date().getTime()
 block append head
-    link(rel='stylesheet', href= url_for("/style/widget-tags.css"))
+    link(rel='stylesheet', href= url_for("/style/widget-tags.css?v=" + v))
 
 main.tags-container
-    ul.is-flex.is-flex-direction-row.is-flex-wrap-wrap
+    ul
         - var list = {};
-        - console.log(site.tags);
         each tag in site.tags.toArray()
             - list[tag.name] = [];
             each post in site.posts.sort('date', -1).toArray()
@@ -13,10 +13,11 @@ main.tags-container
                         - list[postTag.name].push(post);
             li
                 header.is-flex.is-flex-direction-row.is-align-items-center.mb-2
-                    h2= tag.name.replace(/-/g, ' ')
-                    p
-                        span= list[tag.name].length
-                        span= ' 篇文章'
+                    div
+                        h2= tag.name.replace(/-/g, ' ')
+                        p
+                            span= list[tag.name].length
+                            span= ' 篇文章'
                     if list[tag.name].length > 5
                         a(href= url_for('/tags/' + tag.name))= "全部"
                 section

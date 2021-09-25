@@ -9,16 +9,18 @@
     return name === 'currency' ? 'ETH' : '';
   }
 
+  if (window.location.pathname !== '/search/') { return }
   var searchKey = getQueryParams('w');
   if (!searchKey) {
     return window.location.href = '/';
   }
 
   var getCoverImg = function(post) {
-    if (post.cover) return post.cover;
     var coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/);
-    if (!coverImgElement) return "/images/default_cover.png";
-    return coverImgElement[1];
+    let imgUrl = coverImgElement ? coverImgElement[1] : "/images/default_cover.png";
+    if (post.cover) imgUrl = post.cover;
+    if (!/^\//.test(imgUrl)) imgUrl = '/' + imgUrl;
+    return imgUrl;
   }
 
   var renderItem = function(results) {
@@ -64,8 +66,6 @@
       }
     });
     // console.log(searchKey);
-    console.log(data);
-
     if (results.length) {
       var titleEl = document.getElementById('key');
       titleEl.innerText = "“" + searchKey + "”";

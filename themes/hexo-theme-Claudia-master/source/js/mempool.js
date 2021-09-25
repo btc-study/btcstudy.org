@@ -11,11 +11,13 @@
       var avatar = item.avatar || "url_for()"
       dom += (
         '<li>'+
-            '<a class="is-flex is-flex-direction-row is-align-items-center px-3" href="'+ item.url +'" target="_blank">'+
+            '<a href="'+ item.url +'" target="_blank">'+
               '<strong>'+ item.title +'</strong>'+
-              '<img class="mr-1" src="' + (item.avatar || "/images/default_avatar.png") + '" alt='+ item.author +' />'+
-              '<span>'+ item.author +'</span>'+
-              '<time class="has-text-grey" datetime="'+ item.date+'">'+ (item.date || '') +'</time>'+
+              '<div>'+
+                '<img class="mr-1" src="' + (item.avatar || "/images/default_avatar.png") + '" alt='+ item.author +' />'+
+                '<span>'+ item.author +'</span>'+
+                '<time class="has-text-grey" datetime="'+ item.date+'">'+ (item.date || '') +'</time>'+
+              '</div>'+
               '<i class="iconfont icon-icon_into"></i>'+
             '</a>'+
         '</li>')

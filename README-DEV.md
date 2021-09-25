@@ -20,6 +20,7 @@ categories:
 tags:
 - a
 - b-c
+mathjax: true
 ---
 
 ```
@@ -31,3 +32,4 @@ categories: 文章分类
   空格用中划线('-')代替
 tags: 文章标签
   空格用中划线('-')代替
+mathjax: 是否开启 LaTeX 格式

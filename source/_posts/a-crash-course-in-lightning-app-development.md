@@ -134,6 +134,7 @@ lncli --help
 
 我们可以运行下方命令在 Alice 和 Bob 之间开启一条余额为 10 万 satoshi 的通道：
 
+
 ```bash
 lncli openchannel --node_key <bob's public node key> --local_amt 100000
 ```
@@ -209,4 +210,3 @@ lncli sendpayment --pay_req <payment_request>
 5. 关于发票中其它字段的详细解释，可以查看这篇[总结](https://wiki.ion.radar.tech/tech/lightning/invoice)。如需了解更多关于底层合约的信息，请阅读[这篇文章](https://medium.com/softblocks/lightning-network-in-depth-part-2-htlc-and-payment-routing-db46aea445a8)。
 
 （完）
-

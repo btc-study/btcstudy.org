@@ -1,21 +1,3 @@
-function bindSearch() {
-
-  var searchInputBtn = document.getElementById('search-input-btn');
-  searchInputBtn.onclick = function() {
-    var searchInput = document.getElementById('search-input');
-    if (searchInput.value) {
-      window.location.href = '/search/?w=' + searchInput.value.trim()
-    }
-  }
-
-  var searchInput = document.getElementById('search-input');
-  searchInput.onkeypress = function(e) {
-    if (e.key === 'Enter') {
-      window.location.href = '/search/?w=' + searchInput.value.trim()
-    }
-  }
-}
-
 function initialTheme() {
 
   var setTheme = function(theme) {
@@ -29,11 +11,12 @@ function initialTheme() {
     $("body > .body-container").removeClass('appearance-light')
     $("body > .body-container").addClass('appearance-' + theme);
 
+    $('.slide-theme-' + theme).removeClass('hidden');
+
     $('#logo-img').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
+    $('.mobile-header-logo').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
 
     window.localStorage.setItem('theme', theme);
-
-    bindSearch();
   }
 
   setTheme((['auto', 'light'].includes(window.localStorage.getItem('theme') || 'auto') ? 'light' : 'dark'));

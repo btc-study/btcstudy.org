@@ -1,7 +1,8 @@
 extends widget/base
 
 block append head
-    link(rel='stylesheet', href= url_for("/style/widget-post-list.css"))
+    - var v = new Date().getTime()
+    link(rel='stylesheet', href= url_for("/style/widget-post-list.css?v=" + v))
 
 block content
     include widget/widget-post-list

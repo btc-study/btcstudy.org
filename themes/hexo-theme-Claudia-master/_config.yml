@@ -52,3 +52,8 @@ highlight:
 
 # Miscellaneous
 favicon: /favicon.ico
+
+# MathJax Support
+mathjax:
+  enable: true
+  cdn: https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML

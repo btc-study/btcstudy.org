@@ -1,7 +1,9 @@
 include methods
 
+- var v = new Date().getTime()
+
 block append head
-  link(rel='stylesheet', href= url_for("/style/widget-category.css"))
+  link(rel='stylesheet', href= url_for("/style/widget-category.css?v=" + v))
 
 main.category-container
     - var list = [];
@@ -11,10 +13,11 @@ main.category-container
                 - list.push(post);
     header.mb-2
         a(href= url_for('/'))= '/' + _p('category')
-        h1= (page.category || '').replace(/-/g, ' ')
-        p
-            span= list.length
-            span= ' 篇文章'
+        div
+            h1= (page.category || '').replace(/-/g, ' ')
+            p
+                span= list.length
+                span= ' 篇文章'
     
     section.row.gutter-10
         if list.length > 0
@@ -33,15 +36,15 @@ main.category-container
                                     img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
                         section.content.post-card-content.p-2.is-flex.is-flex-direction-column
                             if post.title
-                                h2.is-family-serif.mt-0.mb-2
+                                h2.mt-0.mb-2
                                     a(href= postURL)= post.title
                             p.is-flex-grow-2
-                                = truncate( strip_html(postContent), {length: 90, omission: '..'} )
+                                = truncate( strip_html(postContent), {length: 43, omission: '...'} )
                 
                             if post.date && post.author
                                 div.is-flex.is-flex-direction-row.post-data
                                     img.mr-1(src= post.avatar || url_for("/images/default_avatar.png"))
-                                    div.is-flex.is-flex-direction-column
+                                    div.post-data-author
                                         strong= post.author
                                         time.has-text-grey(datetime=post.date.toJSON())= date(post.date, date_format)
 
@@ -56,4 +59,4 @@ block append script
         }, 150))
 
 block script
-    script(src= url_for("/js/post-card.js")) 
+    script(src= url_for("/js/post-card.js?v=" + v)) 
