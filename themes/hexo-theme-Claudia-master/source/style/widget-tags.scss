@@ -70,6 +70,7 @@
               overflow: hidden;
               display: block;
               white-space: nowrap;
+              color: var(--heading-color);
             }
             &:last-child {
               border-bottom-width: 0;
