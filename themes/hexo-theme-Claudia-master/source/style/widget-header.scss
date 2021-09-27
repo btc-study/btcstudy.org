@@ -136,6 +136,11 @@
   .header-shadow {
     box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
   }
+  #mobile-header-logo {
+    svg {
+      margin-top: 10px;
+    }
+  }
   #postTopicMobile {
     overflow: hidden;
     p {

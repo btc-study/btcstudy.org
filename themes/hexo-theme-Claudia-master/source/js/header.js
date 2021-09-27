@@ -46,12 +46,15 @@ $(function() {
     $('.slide-theme-light').addClass('hidden');
     $('.slide-theme-' + theme).removeClass('hidden');
 
-    $('#logo-img').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
+    $('.logo-light').addClass('hidden');
+    $('.logo-dark').addClass('hidden');
+    $('.logo-' + theme).removeClass('hidden');
+    // $('#logo-img').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
     // $('.mobile-header-logo').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
 
-    $('.mobile-header-logo-light').addClass('hidden');
-    $('.mobile-header-logo-dark').addClass('hidden');
-    $('.mobile-header-logo-' + theme).removeClass('hidden');
+    // $('.mobile-header-logo-light').addClass('hidden');
+    // $('.mobile-header-logo-dark').addClass('hidden');
+    // $('.mobile-header-logo-' + theme).removeClass('hidden');
 
     window.localStorage.setItem('theme', theme);
 
