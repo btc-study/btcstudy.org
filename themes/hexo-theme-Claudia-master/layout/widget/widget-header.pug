@@ -3,6 +3,7 @@
 - if (is_archive()) { current = 'Archive' }
 - if (is_current('/tags')) { current = 'Tag' }
 - if (is_current('/mempool')) { current = "Mempool" }
+- var v = new Date().getTime()
 
 header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-center.is-justify-content-center
     div.is-flex.header-widget-container.is-flex-shrink-0.is-align-items-center
@@ -24,15 +25,42 @@ header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-ce
                     div.search-wrap
                         input.pl-3#search-input(placeholder= '请输入搜索关键词')
                         i.iconfont.icon-icon_search#search-input-btn
-            div.header-title.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
+            div.header-title.is-hidden-mobile.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
                 block topic
                 
-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-space-between.is-hidden-tablet
+header#mobile-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-space-between.is-hidden-tablet
     div.is-flex.is-flex-direction-row.is-align-items-center
         i.iconfont.icon-icon_bar.mobile-header-menu
-        img.mobile-header-logo(src= url_for(config.logo || theme.logo))
+        img#mobile-header-logo.mobile-header-logo(src= url_for(config.logo || theme.logo))
+        div.mobile-header-title.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
+            block topicMobile
     i.iconfont.icon-icon_search.mobile-header-searchIcon
-    div.menu-wrap
+    div.mobile-search-wrap
+        div.search-input
+            input.pl-3#mobile-search-input(placeholder= '请输入搜索关键词')
+            i.iconfont.icon-icon_search.mobile-search-input-btn
+            button.mobile-search-input-btn= '搜 索'
+
+div.mobile-slide-menu
+    if theme.menu
+        each url, label in theme.menu
+            if label == current
+                a.header-activity(href= url_for(url))= label && _p(label.toLowerCase())
+            else
+                a(href= url_for(url))= label && _p(label.toLowerCase())
+    div
+        p.slide-menu-dark
+          span= '深色模式'
+          i.iconfont.icon-icon_selected.slide-theme-dark.hidden
+        p.slide-menu-light
+          span= '亮色模式'
+          i.iconfont.icon-icon_selected.slide-theme-light.hidden
+
+div.search-mask.hidden
+
+    script(src= url_for("/js/header.js?v=" + v))  
+
+    //- div.menu-wrap
         //- if theme.menu
         //-     each url, label in theme.menu
         //-         h3.is-inline-block

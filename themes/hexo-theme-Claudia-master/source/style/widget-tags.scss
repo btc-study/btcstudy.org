@@ -1,7 +1,10 @@
 .tags-container {
   max-width: 1060px;
-  margin: 32px auto 0;
+  margin: 32px auto 32px;
   > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     > li {
       width: 50%;
       margin-bottom: 32px;
@@ -12,26 +15,32 @@
         padding-left: 30px;
       }
       header {
-        h2 {
-          position: relative;
-          font-size: 24px;
-          font-weight: 800;
-          line-height: 32px;
-          padding-right: 24px;
-          color: var(--heading-color);
-          &::after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            right: 0;
-            width: 1px;
-            height: 12px;
-            background-color: var(--border-color);
-          }
-        }
-        > p {
+        > div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           flex: 1;
-          margin-left: 24px;
+          h2 {
+            position: relative;
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 32px;
+            padding-right: 24px;
+            color: var(--heading-color);
+            &::after {
+              content: '';
+              position: absolute;
+              top: 10px;
+              right: 0;
+              width: 1px;
+              height: 12px;
+              background-color: var(--border-color);
+            }
+          }
+          > p {
+            flex: 1;
+            margin-left: 24px;
+          }
         }
         > a {
           width: 100px;
@@ -71,6 +80,55 @@
                 color: var(--primary-color);
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .tags-container {
+    margin-top: 16px;
+    padding: 0 16px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        width: 100%;
+        &:nth-child(2n) {
+          padding-left: 0;
+        }
+        &:nth-child(2n-1) {
+          padding-right: 0;
+        }
+        header {
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2 {
+              font-size: 16px;
+              line-height: 24px;
+              &::after {
+                display: none;
+              }
+            }
+            p {
+              margin-left: 0;
+              font-size: 14px;
+            }
+          }
+          > a {
+            width: 100px;
+            height: 32px;
+            line-height: 31px;
+            text-align: center;
+            color: #fff!important;
+            border: 1px solid var(--primary-color);
+            border-radius: 20px;
+            background-color: var(--primary-color);
           }
         }
       }

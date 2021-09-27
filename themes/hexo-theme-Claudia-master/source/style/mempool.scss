@@ -1,6 +1,6 @@
 .aside-card-container {
   max-width: 1060px;
-  margin: 32px auto 0;
+  margin: 32px auto 64px;
   header {
     h1 {
       margin-bottom: 4px;
@@ -27,7 +27,17 @@
         background-color: var(--background-color-2);
         user-select: none;
         a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 0 24px;
           height: inherit;
+          > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex: 1;
+          }
         }
         strong {
           position: relative;
@@ -75,6 +85,70 @@
           background-color: var(--background-color-4);
           strong, i {
             color: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aside-card-container {
+    margin-top: 16px;
+    padding: 0 16px;
+    header {
+      h1 {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 24px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .post-list {
+      ul {
+        li {
+          a {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 8px 16px;
+            strong {
+              margin-right: 0;
+              max-width: 75%;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              font-size: 14px;
+              &::after {
+                display: none;
+              }
+            }
+            & > div {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              width: 100%;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+              span {
+                font-size: 12px;
+                flex: 1;
+              }
+              time {
+                margin-right: 0;
+                font-size: 12px;
+              }
+            }
+            i {
+              position: absolute;
+              top: 8px;
+              right: 16px;
+            }
           }
         }
       }

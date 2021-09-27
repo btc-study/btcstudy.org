@@ -21,10 +21,10 @@
 .appearance-auto,
 .appearance-light {
 
-  background: var(--primary-bg-color);
+  // background: var(--primary-bg-color);
 
   h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-text-color)!important;
+    color: var(--primary-text-color);
   }
 
   hr {

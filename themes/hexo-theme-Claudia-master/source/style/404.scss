@@ -48,3 +48,12 @@
   .nodata-light { display: none; }
   .nodata-dark { display: initial; }
 }
+
+@media screen and (max-width: 768px) {
+  .container-404 {
+    img {
+      height: auto;
+      width: 80%;
+    }
+  }
+}
