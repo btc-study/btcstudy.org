@@ -14,7 +14,11 @@ function initialTheme() {
     $('.slide-theme-' + theme).removeClass('hidden');
 
     $('#logo-img').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
-    $('.mobile-header-logo').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
+    // $('.mobile-header-logo').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
+
+    $('.mobile-header-logo-light').addClass('hidden');
+    $('.mobile-header-logo-dark').addClass('hidden');
+    $('.mobile-header-logo-' + theme).removeClass('hidden');
 
     window.localStorage.setItem('theme', theme);
   }

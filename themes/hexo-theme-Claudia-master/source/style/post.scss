@@ -85,6 +85,10 @@ body > .body-container > main,
       color: var(--text-color);
     }
 
+    blockquote {
+      word-break: break-all;
+    }
+
     strong {
       color: var(--heading-color);
     }
