@@ -9,11 +9,9 @@ tags:
 - 点对点网络
 ---
 
-*作者：Haseeb Qureshi*
-
-*来源：<https://nakamoto.com/p2p-networking/>*
-
-*译者：Elisa & 阿剑（hongji@ethfans.org）*
+> *作者：Haseeb Qureshi*
+> 
+> *来源：<https://nakamoto.com/p2p-networking/>*
 
 
 

@@ -10,11 +10,10 @@ tags:
 - 货币
 ---
 
-*作者：Carl Menger*
+> *作者：Carl Menger*
+> 
+> *来源：<https://mises.org/library/origins-money-0>*
 
-*来源：<https://mises.org/library/origins-money-0>*
-
-*译者：闵敏 & 阿剑（hongji@ethfans.org）*
 
 
 > 编者注：本文为奥地利学派祖师卡尔·门格尔于 1892 年出版的论文 “On the Origins of Money” 的中译本，经[米塞斯学院（Mises Institute）](https://mises.org/library/origins-money-0)的版本译出。在这篇文章中，门格尔不仅用物物交换的不便解释了经济主体对强适销性商品的需要，还指出这样的交换媒介是可以自发地产生出来的。

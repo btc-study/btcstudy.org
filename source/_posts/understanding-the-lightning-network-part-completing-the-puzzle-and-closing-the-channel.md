@@ -11,11 +11,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Aaron Van Wirdum*
+> *作者：Aaron Van Wirdum*
+> 
+> *来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel-1466178980>*
 
-*来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel-1466178980>*
-
-*译者：闵敏 & 阿剑（hongji@ethfans.org）*
 
 ![1](../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/9dce5612c6aa4440a3905ded0d6b89c5.png)
 

@@ -10,11 +10,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Florencia Ravenna*
+> *作者：Florencia Ravenna*
+> 
+> *来源：<https://medium.com/muunwallet/a-closer-look-at-submarine-swaps-in-the-lightning-network-4417a2e8f93c>*
 
-*来源：<https://medium.com/muunwallet/a-closer-look-at-submarine-swaps-in-the-lightning-network-4417a2e8f93c>*
-
-*译者：阿剑（hongji@ethfans.org）*
 
 ![1_62MUjQ0RdBm34X-Bl15VKw](../images/a-closer-look-at-submarine-swaps-in-the-lightning-network/1_62MUjQ0RdBm34X-Bl15VKw.png)
 

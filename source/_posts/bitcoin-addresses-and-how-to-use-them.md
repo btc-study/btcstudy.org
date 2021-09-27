@@ -11,12 +11,9 @@ tags:
 - 钱包
 ---
 
-*作者：SatoshiLabs*
-
-*来源：<https://blog.trezor.io/bitcoin-addresses-and-how-to-use-them-35e7312098ff>*
-
-*译者：阿剑*
-
+> *作者：SatoshiLabs*
+>
+> *来源：<https://blog.trezor.io/bitcoin-addresses-and-how-to-use-them-35e7312098ff>*
 
 
 

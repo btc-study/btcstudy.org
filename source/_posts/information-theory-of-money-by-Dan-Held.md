@@ -11,11 +11,9 @@ tags:
 - 货币
 ---
 
-*作者：Dan Held*
-
-*来源：<https://medium.com/the-bitcoin-times/information-theory-of-money-36247aebdfe1>*
-
-*译者：阿剑（hongji@ethfans.org）*
+> *作者：Dan Held*
+> 
+> *来源：<https://medium.com/the-bitcoin-times/information-theory-of-money-36247aebdfe1>*
 
 
 

@@ -11,11 +11,10 @@ tags:
 - 货币
 ---
 
-*作者：Nick Szabo*
+> *作者：Nick Szabo*
+> 
+> *来源：<https://nakamotoinstitute.org/shelling-out/>*
 
-*来源：<https://nakamotoinstitute.org/shelling-out/>*
-
-*译者：阿剑（hongji@ethfans.org）*
 
 
 

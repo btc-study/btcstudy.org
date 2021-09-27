@@ -10,11 +10,10 @@ tags:
 - 闪电网络
 ---
 
-*作者：Florencia Ravenna*
+> *作者：Florencia Ravenna*
+> 
+> *来源：<https://blog.muun.com/the-inbound-capacity-problem-in-the-lightning-network/>*
 
-*来源：<https://blog.muun.com/the-inbound-capacity-problem-in-the-lightning-network/>*
-
-*译者：阿剑（hongji@ethfans.org）*
 
 
 ![1](../images/the-inbound-capacity-problem-in-the-lightning-network/90eec6fad7594ec7a230dbecdfad93d0.png)
