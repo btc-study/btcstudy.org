@@ -148,9 +148,3 @@ Taproot 引入了一种新的地址类型 P2TR（Pay-to-Taproot），可以轻�
 为了让比特币有可能成为实现金融自由的最佳工具，我们必须贡献出自己的一份力量。幸运的是，所有比特币持有者都可以使用自己的币来表示支持，这会是最强大的支持。
 
 （完）
-
----
-
-**原文链接:** https://braiins.com/blog/explain-like-im-not-a-developer-taproot-privacy
-**作者:** Braiins
-**翻译&校对:** 闵敏 & 阿剑
