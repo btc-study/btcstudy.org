@@ -4,11 +4,11 @@
     var sortByDate = function(a, b) {
       return b.dateSource - a.dateSource;
     }
-    $('.mempool-length').text(data.length + ' 篇文章');
+    var postList = data.filter(function(item) { return item.title });
+    $('.mempool-length').text(postList.length + ' 篇文章');
     var dom = '';
     dom += '<ul>';
-    data
-      .filter(function(item){ return item.title })
+    postList
       .sort(sortByDate)
       .forEach(function(item) {
         var avatar = item.avatar || "url_for()"
@@ -33,11 +33,9 @@
   var getPostData = function(data) {
     try {
       var getPostTitle = function(data) {
-        console.log(34, data);
         return data[2][1];
       }
       var getPostUrl = function(data) {
-        console.log(37, data);
         return data[6];
       }
       // var getAuthor = function(data) {
