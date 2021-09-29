@@ -46,12 +46,12 @@
           font-weight: 600;
           line-height: 24px;
           color: var(--heading-color);
-          &::after {
-            content: '';
-            margin-left: 24px;
-            height: 16px;
-            border-right: 1px solid var(--border-color);
-          }
+          // &::after {
+          //   content: '';
+          //   margin-left: 24px;
+          //   height: 16px;
+          //   border-right: 1px solid var(--border-color);
+          // }
         }
         span {
           font-size: 14px;
