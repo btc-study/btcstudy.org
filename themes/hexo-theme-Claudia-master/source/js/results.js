@@ -17,7 +17,7 @@
 
   var getCoverImg = function(post) {
     var coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/);
-    let imgUrl = coverImgElement ? coverImgElement[1] : "/images/default_cover.png";
+    let imgUrl = coverImgElement ? coverImgElement[1] : "/images/BITCOIN.png";
     if (post.cover) imgUrl = post.cover;
     if (!/^\//.test(imgUrl)) imgUrl = '/' + imgUrl;
     return imgUrl;
@@ -35,8 +35,8 @@
       dom += (
         '<li>'+
           '<a href="/'+ post.path +'">'+
-            '<div class="cover">'+
-              '<img src="' + getCoverImg(post) + '" alt="" />'+
+            '<div class="cover" style="background-image: url('+ getCoverImg(post) +')">'+
+              // '<img src="' + getCoverImg(post) + '" alt="" />'+
             '</div>'+
             '<div class="post-data">'+
               '<h3>' + formatStr(post.title) +'</h3>'+

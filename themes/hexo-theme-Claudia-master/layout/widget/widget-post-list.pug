@@ -30,10 +30,11 @@ article.post-container.is-flex.is-flex-direction-column.is-justify-content-cente
                             div.col.sm-12.md-8
                                 article.post-item-card(post-path= url_for(post.path))
                                     header.is-relative.is-flex
-                                        div.post-cover-backdrop.is-hidden
-                                            img(src= imgURL alt="loading..")
+                                        //- div.post-cover-backdrop.is-hidden
+                                        //-     img(src= imgURL alt="loading..")
                                         a.post-cover-link.has-text-centered.skeleton(href= postURL)
-                                            img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+                                            //- img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+                                            span(style="background-image: url(" + url_for(imgURL) + ")")
                                     section.content.post-card-content.p-2.is-flex.is-flex-direction-column
                                         h2.mt-0.mb-2
                                             a(href= postURL)= post.title

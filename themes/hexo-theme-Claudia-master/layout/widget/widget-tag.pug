@@ -33,7 +33,8 @@ main.tag-container
                                 div.post-cover-backdrop.is-hidden
                                     img(src= imgURL alt="loading..")
                                 a.post-cover-link.has-text-centered.skeleton(href= postURL)
-                                    img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+                                    //- img.post-cover-img.js-img-fadeIn(src= imgURL alt="loading..", data-backdrop="true")
+                                    span(style="background-image: url(" + url_for(imgURL) + ")")
                         section.content.post-card-content.p-2.is-flex.is-flex-direction-column
                             if post.title
                                 h2.mt-0.mb-2

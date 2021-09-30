@@ -28,9 +28,9 @@
           .cover {
             width: 340px;
             min-width: 340px;
-            img {
-              width: 100%;
-            }
+
+            background-position: center center;
+            background-size: cover;
           }
           .post-data {
             display: flex;

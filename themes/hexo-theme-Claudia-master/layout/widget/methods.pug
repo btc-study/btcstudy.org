@@ -4,7 +4,8 @@
         const $coverImgElRegx = /<img.*?alt="\$cover".*?>/
         const coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/)
         
-        let imgUrl = coverImgElement ? coverImgElement[1] : "/images/default_cover.png"
+        //- let imgUrl = coverImgElement ? coverImgElement[1] : "/images/default_cover.png"
+        let imgUrl = coverImgElement ? coverImgElement[1] : "/images/BITCOIN.png"
 
         if (post.cover) imgUrl = post.cover
         if (!/^\//.test(imgUrl)) imgUrl = `/${imgUrl}`;
