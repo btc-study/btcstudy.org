@@ -8,6 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 比特币
+- Taproot
 ---
 
 
@@ -141,7 +142,7 @@ MAST 是 **Merklized Abstract Syntax Tree（默克尔抽象语法树）**的缩�
 * 使用 MAST，比特币可用默克尔树抽象语法树来锁定。（与默克尔根对应的）默克尔树决定了可以解锁未花费 BTC 的所有复杂条件。默克尔抽象语法树（Merklized Abstract Syntax Trees，MAST）被提议引入比特币区块链，以减少 BTC 交易的体积，使得接收方无需在交易中附加冗长的脚本。仅使用默克尔根即可验证接收方生成的脚本是否属于原始条件集合。
 * Schnorr 签名可以将多个签名合并成单个签名。
 
-
+（完）
 
 
 
