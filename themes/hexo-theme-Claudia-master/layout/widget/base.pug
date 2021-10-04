@@ -15,19 +15,46 @@ html(lang=config.language)
     title= pageTitle
     meta(name="description" content= config.description || theme.user && theme.user.description)
     meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1")
-    
+      
     link(rel="icon" href= url_for(theme.favicon))
     link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
     link(rel='stylesheet', href= url_for("//at.alicdn.com/t/font_2777699_cweokhe39xh.css"))
+    
     script.
       function ready() {
         var bodyEl = document.querySelector('.body-container');
-        var localTheme = localStorage.getItem('theme') || 'light';
+        var theme = localStorage.getItem('theme') || 'light';
         bodyEl.classList.remove('appearance-auto');
-        bodyEl.classList.add('appearance-' + localTheme);
+        bodyEl.classList.add('appearance-' + theme);
+        quickInitialTheme();
+      }
+      function quickInitialTheme() {
+        var theme = localStorage.getItem('theme') || 'light';
+        var logoLightEl = document.querySelector('.logo-light');
+        var logoDarkEl = document.querySelector('.logo-dark');
+        
+        var mLogoLightEl = document.querySelector('#mobile-header-logo > .logo-light');
+        var mLogoDarkEl = document.querySelector('#mobile-header-logo > .logo-dark');
+        var themeBtnEl = document.getElementById('theme-btn');
+        
+        var slideThemeLightEl = document.querySelector('.slide-theme-light');
+        var slideThemeDarkEl = document.querySelector('.slide-theme-dark');
+        if (theme === 'dark') {
+          logoLightEl.classList.add('hidden');
+          logoDarkEl.classList.remove('hidden');
+          
+          mLogoLightEl.classList.add('hidden');
+          mLogoDarkEl.classList.remove('hidden');
+          
+          themeBtnEl.classList.remove('icon-icon_dark');
+          themeBtnEl.classList.add('icon-icon_light');
+          
+          slideThemeLightEl.classList.add('hidden');
+          slideThemeDarkEl.classList.remove('hidden');
+        }
       }
       document.addEventListener("DOMContentLoaded", ready);
     script(src= url_for("/js/jquery.min.js?v=" + v))

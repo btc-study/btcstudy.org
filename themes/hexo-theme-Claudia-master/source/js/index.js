@@ -13,13 +13,13 @@ function initialTheme() {
 
     $('.slide-theme-' + theme).removeClass('hidden');
 
-    $('#logo-img').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
-    $('.mobile-header-logo').attr('src', '/images/' + (['auto', 'light'].includes(theme) ? 'light' : 'dark') + '/logo.png');
+    $('.logo-light').addClass('hidden');
+    $('.logo-dark').addClass('hidden');
+    $('.logo-' + theme).removeClass('hidden');
 
     window.localStorage.setItem('theme', theme);
   }
 
-  setTheme((['auto', 'light'].includes(window.localStorage.getItem('theme') || 'auto') ? 'light' : 'dark'));
 
   let buttonenabled = true;
   $(document).on("click", "#theme-btn", function() {

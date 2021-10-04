@@ -112,9 +112,6 @@ theme: hexo-theme-Claudia-master
 home:
   categories: ["比特币主网", "货币理念", "闪电网络"]
 
-# default logo image
-logo: /images/light/logo.png
-
 jsonContent:
   file: content.json
   dateFormat: 'YYYY-MM-DD'

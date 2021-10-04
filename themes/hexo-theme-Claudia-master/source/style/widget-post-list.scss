@@ -79,6 +79,16 @@ $coverBlurEffect: 20px;
 
         // fix white spacer
         font-size: 0;
+
+        span {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-position: center center;
+          background-size: cover;
+          z-index: 102;
+        }
       }
 
       .post-cover-img {
@@ -371,6 +381,7 @@ $coverBlurEffect: 20px;
       margin-top: -8px;
       .col {
         margin-bottom: 8px;
+        width: 100%;
         .post-item-card {
           &:hover {
             margin-top: 0px;

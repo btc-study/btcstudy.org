@@ -81,6 +81,18 @@ body > .body-container > main,
       background: var(--third-bg-color);
     }
 
+    li, p {
+      color: var(--text-color);
+    }
+
+    blockquote {
+      word-break: break-all;
+    }
+
+    strong {
+      color: var(--heading-color);
+    }
+
     pre {
       padding: 0;
       background: transparent;
