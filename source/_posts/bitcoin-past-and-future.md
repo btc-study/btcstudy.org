@@ -11,8 +11,10 @@ tags:
 
 
 > *作者：Murad Mahmudov*
-> 
+>
 > *来源：<https://medium.com/@muradmahmudov/bitcoin-past-and-future-45d92b3180f1>*
+>
+> *原文发表于 2018 年 5 月。*
 
 
 
