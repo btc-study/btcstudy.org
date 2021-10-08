@@ -8,6 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 比特币
+- Taproot
 ---
 
 > *作者：David A. Harding*
