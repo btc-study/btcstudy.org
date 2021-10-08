@@ -4,7 +4,7 @@ include methods
 block append head
     link(rel='stylesheet', href= url_for("/style/widget-tag.css?v=" + v))
 
-main.tag-container
+main.tag-container.p-2
     - var list = [];
     each post in site.posts.sort('date', -1).toArray()
         each tag in post.tags.toArray()
@@ -40,7 +40,7 @@ main.tag-container
                                 h2.mt-0.mb-2
                                     a(href= postURL)= post.title
                             p.is-flex-grow-2
-                                = truncate( strip_html(postContent), {length: 43, omission: '...'} )
+                                = truncate( strip_html(postContent), {length: 31, omission: '...'} )
                 
                             if post.date && post.author
                                 div.is-flex.is-flex-direction-row.post-data

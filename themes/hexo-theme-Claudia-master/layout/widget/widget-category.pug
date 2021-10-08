@@ -5,7 +5,7 @@ include methods
 block append head
   link(rel='stylesheet', href= url_for("/style/widget-category.css?v=" + v))
 
-main.category-container
+main.category-container.p-2
     - var list = [];
     each post in site.posts.sort('date', -1).toArray()
         each category in post.categories.toArray()
@@ -40,7 +40,7 @@ main.category-container
                                 h2.mt-0.mb-2
                                     a(href= postURL)= post.title
                             p.is-flex-grow-2
-                                = truncate( strip_html(postContent), {length: 43, omission: '...'} )
+                                = truncate( strip_html(postContent), {length: 32, omission: '...'} )
                 
                             if post.date && post.author
                                 div.is-flex.is-flex-direction-row.post-data

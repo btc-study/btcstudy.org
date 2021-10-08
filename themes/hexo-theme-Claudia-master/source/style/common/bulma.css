@@ -10191,6 +10191,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   }
 }
 
+@media screen and (min-width: 834px) and (max-width: 834px) {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+  #mobile-header {
+    display: flex !important;
+  }
+}
+
 @media screen and (min-width: 769px), print {
   .is-hidden-tablet {
     display: none !important;
