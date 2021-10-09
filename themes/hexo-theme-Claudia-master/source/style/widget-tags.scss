@@ -1,6 +1,6 @@
 .tags-container {
   max-width: 1060px;
-  margin: 32px auto 32px;
+  margin: 0 auto 32px;
   > ul {
     display: flex;
     flex-direction: row;
@@ -9,10 +9,10 @@
       width: 50%;
       margin-bottom: 32px;
       &:nth-child(2n-1) {
-        padding-right: 30px;
+        padding-right: 8px;
       }
       &:nth-child(2n) {
-        padding-left: 30px;
+        padding-left: 8px;
       }
       header {
         > div {

@@ -2,7 +2,7 @@
 block append head
     link(rel='stylesheet', href= url_for("/style/widget-tags.css?v=" + v))
 
-main.tags-container
+main.tags-container.p-2
     ul
         - var list = {};
         each tag in site.tags.toArray()
