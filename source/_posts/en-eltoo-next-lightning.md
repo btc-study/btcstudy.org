@@ -9,6 +9,7 @@ categories:
 tags:
 - 闪电网络
 - Layer2
+- Eltoo
 ---
 
 > *作者：Christian Decker*

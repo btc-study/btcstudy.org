@@ -8,6 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 比特币
+- 入门系列
 ---
 
 > *作者：River Financial*
@@ -117,6 +118,3 @@ UTXO 集是某一时间点存在的所有 UTXO 的集合。所有 UTXO 的总量
 货币稀缺性指的是货币很难被找到或创造出来。虽然货币普及很重要，但是一旦货币可以被轻而易举地创造出来，会对经济产生负面影响。[点击此处，了解更多。](https://river.com/learn/terms/d/double-spend/)
 
 （完）
-
-
-
