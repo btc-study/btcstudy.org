@@ -9,6 +9,7 @@ categories:
 tags:
 - 比特币
 - 钱包
+- 入门系列
 ---
 
 > *作者：SatoshiLabs*
