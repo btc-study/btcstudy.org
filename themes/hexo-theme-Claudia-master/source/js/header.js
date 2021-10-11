@@ -42,6 +42,10 @@ $(function() {
     $("body > .body-container").removeClass('appearance-light')
     $("body > .body-container").addClass('appearance-' + theme);
 
+    $("body").removeClass('light');
+    $("body").removeClass('dark');
+    $("body").addClass(theme);
+
     $('.slide-theme-dark').addClass('hidden');
     $('.slide-theme-light').addClass('hidden');
     $('.slide-theme-' + theme).removeClass('hidden');

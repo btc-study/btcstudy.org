@@ -25,7 +25,9 @@ widgets:
 
 # social config
 social:
-  github: btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute
+  # github: btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute
+  # rss:
+  telegram: btcstudyorg
   # zhihu:
   # twitter: /
   # facebook: /

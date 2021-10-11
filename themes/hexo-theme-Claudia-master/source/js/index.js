@@ -11,6 +11,10 @@ function initialTheme() {
     $("body > .body-container").removeClass('appearance-light')
     $("body > .body-container").addClass('appearance-' + theme);
 
+    $("body").removeClass('light');
+    $("body").removeClass('dark');
+    $("body").addClass(theme);
+
     $('.slide-theme-' + theme).removeClass('hidden');
 
     $('.logo-light').addClass('hidden');
