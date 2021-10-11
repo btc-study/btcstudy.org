@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://test.btcstudy.org
+url: https://www.btcstudy.org
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
