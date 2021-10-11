@@ -112,6 +112,12 @@ theme: hexo-theme-Claudia-master
 home:
   categories: ["比特币主网", "货币理念", "闪电网络"]
 
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+
 jsonContent:
   file: content.json
   dateFormat: 'YYYY-MM-DD'
