@@ -42,6 +42,8 @@ html(lang=config.language)
         
         var slideThemeLightEl = document.querySelector('.slide-theme-light');
         var slideThemeDarkEl = document.querySelector('.slide-theme-dark');
+        
+        document.body.classList.add(theme);
         if (theme === 'dark') {
           logoLightEl.classList.add('hidden');
           logoDarkEl.classList.remove('hidden');
@@ -67,13 +69,13 @@ html(lang=config.language)
       include widget-header
       main
           block content
-    //- footer.is-flex.is-flex-direction-column.is-align-items-center.is-flex-shrink-0
-    //-   section.sns-container
-    //-     include widget-sns
-    //-   p
-    //-     span Copyright ©
-    //-     - var author = (theme.user && theme.user.name) || config.author || ''
-    //-     span= ' ' + author + ' ' + new Date().getFullYear()
+    footer.is-flex.is-flex-direction-column.is-align-items-center.is-flex-shrink-0
+      section.sns-container
+        include widget-sns
+      //- p
+      //-   span Copyright ©
+      //-   - var author = (theme.user && theme.user.name) || config.author || ''
+      //-   span= ' ' + author + ' ' + new Date().getFullYear()
     //- script(src= url_for("/js/search.js"))
     script(async defer src= url_for("/js/buttons.js?v=" + v))
     script(src= url_for("/js/index.js?v=" + v))

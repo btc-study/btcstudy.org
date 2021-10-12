@@ -13,7 +13,8 @@ if (debugSNS || theme.social.instagram)
 // RSS
 if (debugSNS || config.feed && config.feed.enable)
     a(title="rss" target="_blank" rel="noopener nofollow" href= url_for(config.feed.path))
-        i.iconfont.icon-rss
+        //- i.iconfont.icon-rss
+        = 'rss'
 // 知乎
 if (debugSNS || theme.social.zhihu)
     a(title="zhihu" target="_blank" rel="noopener nofollow" href=`//zhihu.com/${theme.social.zhihu}`)
@@ -26,3 +27,9 @@ if (debugSNS || theme.social.linkedin)
 if (debugSNS || theme.social.facebook)
     a(title="facebook" target="_blank" rel="noopener nofollow" href=`//www.facebook.com/${theme.social.facebook}`)
         i.iconfont.icon-tian7_facebook
+
+// Telegram
+if (debugSNS || theme.social.telegram)
+    a(title="telegram" target="_blank" rel="noopener nofollow" href=`//t.me/${theme.social.telegram}`)
+        //- i.iconfont.icon-tian7_telegram
+        = 'Telegram'
