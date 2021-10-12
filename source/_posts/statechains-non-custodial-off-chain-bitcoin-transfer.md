@@ -2,10 +2,11 @@
 title: 'Statechain：非托管的链下比特币转账'
 author: 'Ruben Somsen'
 date: '2021/10/12 17:37:21'
-cover: ''
+cover: '../images/statechains-non-custodial-off-chain-bitcoin-transfer/8XqCIrQ.png'
 excerpt: '历数 Statechain 的强项和弱点，探究它如何与闪电网络结合，并讨论它与盲签名结合对隐私性的影响'
-categories:
 tags:
+- Layer-2
+- Statechain
 ---
 
 

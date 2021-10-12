@@ -6,6 +6,7 @@ cover: '../images/genesis-files-how-david-chaums-ecash-spawned-cypherpunk-dream/
 excerpt: '比特币和其它密码学货币，都可以溯源到这种为互联网设计的、隐私导向的支付系统。'
 tags:
 - 比特币前传
+- 密码朋克
 ---
 
 

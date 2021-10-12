@@ -6,6 +6,7 @@ cover: '../images/the-genesis-files-how-hal-finneys-quest-for-digital-cash-led-t
 excerpt: '哈尔·芬尼看到了人们对于无法追踪的数字现金的需求，他是推动比特币诞生的功臣'
 tags:
 - 比特币前传
+- 密码朋克
 ---
 
 

@@ -6,6 +6,7 @@ cover: '../images/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-
 excerpt: '“高效的协作需要交换媒介（货币）以及强制执行合约的办法”，Dai 在 1998 年 11 月介绍 b-money 的文字中如是说。'
 tags:
 - 比特币前传
+- 密码朋克
 ---
 
 

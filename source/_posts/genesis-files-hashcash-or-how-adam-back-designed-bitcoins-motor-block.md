@@ -6,6 +6,7 @@ cover: '../images/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-moto
 excerpt: '看看 Hashcash 背后的技术如何影响了自其创生以来十多年的数字货币研究。'
 tags:
 - 比特币前传
+- 密码朋克
 ---
 
 
