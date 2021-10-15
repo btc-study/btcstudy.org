@@ -18,7 +18,7 @@ tags:
 
 **本文介绍了一种新的比特币 Layer 2 扩展协议，叫做 “statechain”。我们会历数其强项和弱点，探究它如何与闪电网络结合，并讨论它与盲签名结合对隐私性的影响。**
 
-我第一次公开 Statechain 的概念是在 [Scaling Bitcoin in Tokyo 会议](http://youtu.be/FI9cwksTrQs?t=47m36s)上。因为这是一个技术会议，我的演讲不是为普通听众准备的。结果，它就没有引起什么主意。这是一个遗憾，因为 Statechain 是一种独特的二层协议，它的特性可以增强比特币的生态。希望这篇文章能让你相信它的有点。需要指出的是，这篇文章是概述性的，不会披露所有的技术细节。如果你想了解更多，请参看[这个演讲](http://youtu.be/FI9cwksTrQs?t=47m36s)、[这篇论文](https://github.com/RubenSomsen/rubensomsen.github.io/blob/master/img/statechains.pdf)以及[这个邮件组的讨论](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-June/017005.html)。
+我第一次公开 Statechain 的概念是在 [Scaling Bitcoin in Tokyo 会议](http://youtu.be/FI9cwksTrQs?t=47m36s)上。因为这是一个技术会议，我准备了一个不适合普通听众的演讲。结果，它就没有引起什么注意。这是一个遗憾，因为 Statechain 是一种独特的二层协议，它的特性可以增强比特币的生态。希望这篇文章能让你相信它的有点。需要指出的是，这篇文章是概述性的，不会披露所有的技术细节。如果你想了解更多，请参看[这个演讲](http://youtu.be/FI9cwksTrQs?t=47m36s)、[这篇论文](https://github.com/RubenSomsen/rubensomsen.github.io/blob/master/img/statechains.pdf)以及[这个邮件组的讨论](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-June/017005.html)。
 
 Statechain 是一种二层协议，意味着它可以在不用到比特币区块链的前提下转移价值。它可以帮助提高比特币的吞吐量并节约手续费。不像闪电网络，Statechain 无法做到免信任，但它维持了高水平的抗审查性（比联盟侧链要强很多），因为它能免信任地在链上发起取款。
 
@@ -40,11 +40,11 @@ Statechain 的基本思路是：用户把资金锁入与 **Statechain 主体**�
 
 那 Statechain 可以跟临时私钥的某一个前任知情者勾结，欺骗临时私钥的最后一个接收者吗？可以，但这种欺诈发生的概率是可以靠下列方法来降低的：
 
-- 我们可以通过保证 Statechain 公开了 TA 签过的所有签名来确保 TA 遵守了协议（一种办法是使用 [Adaptor Signatures](http://diyhpl.us/wiki/transcripts/layer2-summit/2018/scriptless-scripts/)）。任何 Statechain 主体发起的欺诈都会立即曝光。
+- 我们可以通过保证 Statechain 主体公开了 TA 签过的所有签名来确保 TA 遵守了协议（一种办法是使用 [Adaptor Signatures](http://diyhpl.us/wiki/transcripts/layer2-summit/2018/scriptless-scripts/)）。任何 Statechain 主体发起的欺诈都会立即曝光。
 - Statechain 主体并非只能有一个，可以是一个联盟 —— 只有一群人中的多数都同意，才能执行欺诈（比如通过 8-12 的多签名合约）。这个安全模型与[联盟侧链](https://blockstream.com/sidechains.pdf)（比如 [Liquid](https://www.blockstream.com/liquid/)）相似，但额外的好处是用户取款是 *无需许可的*。
 - 每个 UTXO 的临时私钥和前任知情者组合都不同。若想偷走所有资金， Statechain 主体（或者黑客）必须为每个 UTXO 找到一个愿意跟他们勾结的前任知情者。所以全部资金被盗是不太可能的，只有一部分资金可能被盗。
 
-那么 Statechain 是托管型的方案吗？*并不是*。非托管是 Statechain 的关键特性质疑。即使一个法院下令某个 Statechain 实体去剥夺某个人的币，这个实体也做不到，因为他们只有两个密钥之一。而且他们也无法冻结用户的资产，因为所有者总是可以自己在链上拿回资金，无需 Statechain 主体的协助。也没有部分储备金（无法兑付）、强制硬分叉等等其它与托管型方案常见的风险。
+那么 Statechain 是托管型的方案吗？*并不是*。非托管是 Statechain 的关键特性之一。即使一个法院下令某个 Statechain 实体去剥夺某个人的币，这个实体也做不到，因为他们只有两个密钥之一。而且他们也无法冻结用户的资产，因为所有者总是可以自己在链上拿回资金，无需 Statechain 主体的协助。也没有部分储备金（无法兑付）、强制硬分叉等等其它托管型方案常见的风险。
 
 Statechain 的一个独特的属性是，它是完全在 UTXO 层面实现的。所以有一些有趣的结果：
 
@@ -55,7 +55,7 @@ Statechain 的一个独特的属性是，它是完全在 UTXO 层面实现的。
 - 比特币区块链上的非同质染色币可以通过 Statechain 实现链下转移（例如 [RGB](https://github.com/rgb-org/spec)）
 - 用户的支付验证可扩展性比侧链强，因为币的转账历史是线性的，所以你只需要验证你感兴趣的那些币的历史就行
 
-这里的洞见是，任何需要创建一个或多个新的比特币 UTXO 的事，都可以在链下通过 Statechain 来实现。同样值得指出的是，Statechain 是对链无感的，所以同一个 Statechain 的主体可以管理来自不同区块链的 UTXO 并允许用户相互交换（与去中心化交易所没差别）。
+这里的洞见是，任何需要创建一个或多个新的比特币 UTXO 的事，都可以在链下通过 Statechain 来实现。同样值得指出的是，Statechain 是对链无感的，所以同一个 Statechain 的主体可以管理来自不同区块链的 UTXO 并允许用户相互交换（与去中心化交易所极其近似）。
 
 ![img](../images/statechains-non-custodial-off-chain-bitcoin-transfer/qSf_b0Q.png)
 
@@ -75,7 +75,7 @@ Statechain 的一个独特的属性是，它是完全在 UTXO 层面实现的。
 
 注 * ：有争议。有人会说，如果一个方案做不到免信任，就无法实现真正的抗审查性，因为资金仍有可能被偷，即使概率很小。
 
-简而言之，Statechain 的创新之处在于，它让你可以在链下变更 UTXO 的所有权，同时保持高度的抗审查性，因为你可以在链上取款。它是非托管的，所以它自然降低了风险并使得 Statechain 更容易符合监管。最终来看，它是一种独特的二层协议，有自己的缺点，也有自己独特的优点。
+简而言之，Statechain 的创新之处在于，它让你可以在链下变更 UTXO 的所有权，同时保持高度的抗审查性，因为你可以在链上取款。它是非托管的，所以它自然降低了风险并使得 Statechain 主体更容易符合监管。最终来看，它是一种独特的二层协议，有自己的缺点，也有自己独特的优点。
 
 ## Statechain 与闪电网络
 
