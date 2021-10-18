@@ -35,6 +35,7 @@ var $posts = {
         var menuEl = document.getElementById('header-menu');
         var headerEl = document.getElementById('header');
         var mobileHeaderEl = document.getElementById('mobile-header');
+        var postTopicMobileEl = document.getElementById('postTopicMobile');
 
         var postTitleCoordinate = postTitle.getBoundingClientRect()
         var threshold = postTitle.offsetTop + postTitleCoordinate.height
@@ -63,6 +64,7 @@ var $posts = {
                 }
                 else {
                     topicEl.classList.add('immediately-show')
+                    postTopicMobileEl.classList.remove('hidden');
                 }
             }
             // scroll to up👆
@@ -76,6 +78,8 @@ var $posts = {
 
                     topicEl.classList.add('is-show-scrollToTop-tips')
                     topicEl.classList.add('immediately-show')
+
+                    postTopicMobileEl.classList.remove('hidden');
                 }
                 // show post title
                 // else {
@@ -111,6 +115,8 @@ var $posts = {
             headerLogo.classList.remove('hidden-menu');
             mobileHeaderEl.classList.remove('header-shadow');
             headerEl.classList.remove('header-shadow');
+
+            postTopicMobileEl.classList.add('hidden')
         }
     },
     catalogueHighlight: function () {
@@ -129,7 +135,7 @@ var $posts = {
                 var id = decodeURI(link.href).split('#')[1]
                 contentTocList.push(document.getElementById(id))
             })
-            var spacing = 60
+            var spacing = 10
             var activeTopicEl = null
             var scrollTop = window.pageYOffset
             for (var i = 0; i < contentTocList.length; i++) {
@@ -190,7 +196,7 @@ var $posts = {
 
         $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
 
-        document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
+        // document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
         document.getElementById('postTopicMobile').addEventListener('click', this.smoothScrollToTop)
     }
 }

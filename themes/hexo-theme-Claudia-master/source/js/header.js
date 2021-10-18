@@ -130,7 +130,7 @@ $(function() {
 
   $('.icon-bianzu').on('click', function() {
     const size = +(localStorage.getItem('post-font-size') || 16) + 2;
-    if (size <= 60) {
+    if (size <= 32) {
       $('.post-container').css('font-size', size + 'px');
       localStorage.setItem('post-font-size', size);
     }

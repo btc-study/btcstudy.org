@@ -28,7 +28,7 @@ header#header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-i
                             i.iconfont.icon-a-bianzu5#change-size-btn
                             div.size-input-wrap
                                 div.input-wrap
-                                    input#size-change-input(type= 'range' min= '12' max= '60' step= '2')
+                                    input#size-change-input(type= 'range' min= '12' max= '32' step= '2')
                     i.iconfont.icon-icon_dark.mr-1#theme-btn
                     div.search-wrap
                         input.pl-3#search-input(placeholder= '请输入搜索关键词')
@@ -66,11 +66,12 @@ div.mobile-slide-menu
           span
               i.iconfont.icon-icon_light.slide-theme-light.hidden
               i.iconfont.icon-icon_dark.slide-theme-dark.hidden
-        p.slide-menu-fontsize
-          span= '字体设置'
-          span
-              i.iconfont.icon-bianzu
-              i.iconfont.icon-bianzubeifen
+        if is_post()
+            p.slide-menu-fontsize
+              span= '字体设置'
+              span
+                  i.iconfont.icon-bianzubeifen
+                  i.iconfont.icon-bianzu
 
 div.search-mask.hidden
 
