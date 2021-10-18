@@ -38,7 +38,7 @@ var $posts = {
         var postTopicMobileEl = document.getElementById('postTopicMobile');
 
         var postTitleCoordinate = postTitle.getBoundingClientRect()
-        var threshold = postTitle.offsetTop + postTitleCoordinate.height
+        var threshold = postTitle.offsetTop + postTitleCoordinate.height;
 
         // show title
         if (window.pageYOffset > threshold) {
@@ -52,18 +52,19 @@ var $posts = {
             headerLogo.classList.add('hidden-menu');
             mobileHeaderEl.classList.add('header-shadow');
             headerEl.classList.add('header-shadow');
+            topicEl.classList.add('immediately-show');
 
             if (beforeOffsetY - window.pageYOffset === 0) {
                 topicEl.classList.remove('is-switch-post-title')
                 topicEl.classList.remove('is-show-post-title')
-                topicEl.classList.remove('immediately-show')
+                // topicEl.classList.remove('immediately-show')
 
                 if (topicEl.classList.contains('is-show-scrollToTop-tips')) {
                     topicEl.classList.remove('is-show-scrollToTop-tips')
                     topicEl.classList.add('is-flash-scrollToTop-tips')
                 }
                 else {
-                    topicEl.classList.add('immediately-show')
+                    // topicEl.classList.add('immediately-show')
                     postTopicMobileEl.classList.remove('hidden');
                 }
             }
