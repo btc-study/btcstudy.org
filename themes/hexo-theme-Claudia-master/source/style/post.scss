@@ -26,7 +26,7 @@ body > .body-container > main,
   will-change: transform;
   transform: translateY(100%);
   transition: all .3s;
-  padding-left: 110px;
+  padding-left: 15px;
 
   p {
     font-size: 18px;
@@ -78,7 +78,11 @@ body > .body-container > main,
   }
 
   .silde-bar {
-    margin-right: 11%;
+    margin-right: 40px;
+  }
+
+  .post-container {
+    margin-right: 10%;
   }
 
   .post-content {

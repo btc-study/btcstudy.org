@@ -32,8 +32,9 @@ var $posts = {
         var topicEl = document.body.clientWidth <= 768 ? document.getElementById('postTopicMobile') : document.getElementById('postTopic')
         var postTitle = document.getElementById('postTitle')
         var headerLogo = document.getElementById('mobile-header-logo');
-        var menuEl = document.getElementById('header-menu')
-        var header = document.getElementById('mobile-header');
+        var menuEl = document.getElementById('header-menu');
+        var headerEl = document.getElementById('header');
+        var mobileHeaderEl = document.getElementById('mobile-header');
 
         var postTitleCoordinate = postTitle.getBoundingClientRect()
         var threshold = postTitle.offsetTop + postTitleCoordinate.height
@@ -48,7 +49,8 @@ var $posts = {
 
             menuEl.classList.add('hidden-menu')
             headerLogo.classList.add('hidden-menu');
-            header.classList.add('header-shadow');
+            mobileHeaderEl.classList.add('header-shadow');
+            headerEl.classList.add('header-shadow');
 
             if (beforeOffsetY - window.pageYOffset === 0) {
                 topicEl.classList.remove('is-switch-post-title')
@@ -107,7 +109,8 @@ var $posts = {
 
             menuEl.classList.remove('hidden-menu');
             headerLogo.classList.remove('hidden-menu');
-            header.classList.remove('header-shadow');
+            mobileHeaderEl.classList.remove('header-shadow');
+            headerEl.classList.remove('header-shadow');
         }
     },
     catalogueHighlight: function () {

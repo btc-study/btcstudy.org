@@ -31,7 +31,11 @@
     }
     h1 {
       margin-right: 54px;
-      a { margin: 0!important; }
+      a {
+        display: block;
+        margin: 0!important;
+        padding-top: 7px;
+      }
       img {
         height: 24px;
         width: 130px;
@@ -102,6 +106,10 @@
   }
 }
 
+.header-shadow {
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
 .mobile-header-menu {
   margin-right: 16px;
   font-size: 24px!important;
@@ -120,6 +128,10 @@
 
 .mobile-slide-menu { display: none; }
 
+.header-shadow {
+  box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (max-width: 834px) {
   :root body {
     padding-top: 52px;
@@ -133,9 +145,7 @@
     font-weight: 600;
     max-width: 70%;
   }
-  .header-shadow {
-    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.1);
-  }
+
   #mobile-header-logo {
     svg {
       margin-top: 10px;

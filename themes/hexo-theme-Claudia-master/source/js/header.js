@@ -84,7 +84,7 @@ $(function() {
 
   $('#search-input').keypress(function(e) {
     if (e.key === 'Enter') {
-      var value = $('search-input').val();
+      var value = $('#search-input').val();
       if (value) {
         window.location.href = '/search/?w=' + value.trim()
       }

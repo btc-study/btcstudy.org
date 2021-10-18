@@ -21,7 +21,7 @@ block content
     main.container.is-max-widescreen.content.section.post-page.pt-4
         .columns.is-flex-desktop.is-justify-content-center
             .column.is-3.silde-bar.is-hidden-mobile(class= tocContent.length < 1 && 'is-hidden')!= tocContent
-            .column.is-9
+            .column.is-9.post-container
                 h1.mt-0.mb-2#postTitle= page.title
                 if page.date && page.author
                     div.page-author
