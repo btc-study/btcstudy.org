@@ -26,13 +26,65 @@ body > .body-container > main,
   will-change: transform;
   transform: translateY(100%);
   transition: all .3s;
-  padding-left: 110px;
+  padding-left: 15px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   p {
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
     color: var(--heading-color);
+    text-align: left;
+  }
+
+  .size-wrap {
+    position: relative;
+    i {
+      font-size: 24px;
+      color: var(--heading-color);
+    }
+    .size-input-wrap {
+      display: none;
+      position: absolute;
+      top: 24px;
+      left: -275%;
+      padding-top: 16px;
+      .input-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8px 16px;
+        height: 36px;
+        border-radius: 8px;
+        background-color: var(--background-color-2);
+        box-shadow: 0px 4px 16px 0px var(--border-color);
+        input[type='range'] {
+          -webkit-appearance: none;
+          height: 2px;
+          background-color: var(--border-color);
+          border-radius: 2px;
+          cursor: pointer;
+        }
+        input[type='range']::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 10px;
+          height: 10px;
+          border: 5px solid var(--background-color-5);
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    &:hover {
+      .size-input-wrap {
+        display: block;
+      }
+    }
   }
 
   &.is-show-scrollToTop-tips {
@@ -69,6 +121,10 @@ body > .body-container > main,
     transform: translateY(-32px);
     //background: #545454;
   }
+
+  &.hidden {
+    display: none;
+  }
 }
 
 .post-page {
@@ -78,7 +134,11 @@ body > .body-container > main,
   }
 
   .silde-bar {
-    margin-right: 11%;
+    margin-right: 40px;
+  }
+
+  .post-container {
+    font-size: 16px;
   }
 
   .post-content {
@@ -121,7 +181,7 @@ body > .body-container > main,
       max-height: 500px;
 
       border-radius: $borderRadius;
-      box-shadow: 0 0 15px rgba(0, 0, 0, .05);
+      // box-shadow: 0 0 15px rgba(0, 0, 0, .05);
 
       // opacity: 0;
       // will-change: opacity;
@@ -220,9 +280,9 @@ body > .body-container > main,
 
 #postTitle {
   margin-bottom: 16px;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: 800;
-  line-height: 36px;
+  line-height: 1.25;
   color: var(--heading-color)!important;
 }
 
@@ -240,22 +300,22 @@ body > .body-container > main,
 .page-data {
   align-items: center;
   img {
-    width: 24px;
-    height: 24px;
-    border-radius: 24px;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 100%;
   }
 
   strong {
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 1.5;
     color: var(--heading-color);
   }
 
   time {
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 400;
-    line-height: 12px;
+    line-height: 1;
     color: var(--text-secondary-color);
   }
 }
@@ -265,30 +325,33 @@ body > .body-container > main,
   h2 {
     margin-top: 32px!important;
     margin-bottom: 16px;
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.25;
     color: var(--heading-color)!important;
   }
 
   h3 {
     margin-top: 16px!important;
     margin-bottom: 16px;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 1.25;
     color: var(--heading-color)!important;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: normal;
     color: var(--heading-color)!important;
-    line-height: 24px;
+    line-height: 1.5;
   }
 
   a {
-    text-decoration: underline;
+    &:hover {
+      color: var(--primary-color-hover);
+      // text-decoration: underline;
+    }
   }
 }
 
@@ -298,13 +361,19 @@ body > .body-container > main,
   background-color: var(--background-color-3);
   text-transform: uppercase;
   border-radius: 20px;
-  line-height: 22px;
+  line-height: 1.5;
   font-style: normal;
 }
 
 .post-content .has-jax {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+@media screen and (min-width: 835px) {
+  .post-container {
+    margin-right: 10%;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -8,6 +8,11 @@ block topic
     div#postTopic.is-full-height.hidden
         - var title = truncate( page.title, {length: 65, omission: '..'} ) || ''
         p.is-full-height.is-flex-shrink-0.is-flex.is-align-items-center.is-justify-content-center= title
+        div.size-wrap.mr-1
+            i.iconfont.icon-a-bianzu5#change-size-btn
+            div.size-input-wrap
+                div.input-wrap
+                    input.size-change-input(type= 'range' min= '12' max= '32' step= '2')
         //- p.is-full-height.is-flex-shrink-0.is-flex.is-align-items-center.is-justify-content-center= __('click_back_to_the_top')
 
 block topicMobile
@@ -21,7 +26,7 @@ block content
     main.container.is-max-widescreen.content.section.post-page.pt-4
         .columns.is-flex-desktop.is-justify-content-center
             .column.is-3.silde-bar.is-hidden-mobile(class= tocContent.length < 1 && 'is-hidden')!= tocContent
-            .column.is-9
+            .column.is-9.post-container
                 h1.mt-0.mb-2#postTitle= page.title
                 if page.date && page.author
                     div.page-author
@@ -41,5 +46,18 @@ block content
         include widget/mathjax.pug
     script(src= url_for("/js/post.js?v=" + v))
     script(src= url_for("/js/highlight.min.js?v=" + v))
+    script.
+        var postFontSize = localStorage.getItem('post-font-size') || '16';
+        var containerEl = document.querySelector('.post-container');
+        var inputEl = document.querySelector('#size-change-input');
+        inputEl.value = postFontSize;
+        containerEl.style.fontSize = postFontSize + 'px';
+        $(function(){
+          $('.size-change-input').on('input propertychange', function(e) {
+            const size = e.target.value;
+            $('.post-container').css('font-size', size + 'px');
+            localStorage.setItem('post-font-size', size);
+          });
+        })
     script.
         hljs.initHighlightingOnLoad();

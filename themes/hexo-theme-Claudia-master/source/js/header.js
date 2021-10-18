@@ -5,6 +5,7 @@ $(function() {
   var showMenu = function () {
     $('.mobile-slide-menu').css('left', 0);
     $('.search-mask').removeClass('hidden');
+    slideMenuVisible = true;
   }
 
   var hideMenu = function() {
@@ -20,7 +21,6 @@ $(function() {
     } else {
       showMenu()
     }
-    slideMenuVisible = !slideMenuVisible;
   });
   $('#mobile-header-logo').click(function() {
     if (slideMenuVisible) {
@@ -28,7 +28,6 @@ $(function() {
     } else {
       showMenu()
     }
-    slideMenuVisible = !slideMenuVisible;
   });
 
   var setTheme = function(theme) {
@@ -48,7 +47,7 @@ $(function() {
 
     $('.slide-theme-dark').addClass('hidden');
     $('.slide-theme-light').addClass('hidden');
-    $('.slide-theme-' + theme).removeClass('hidden');
+    $('.slide-theme-' + (['auto', 'light'].includes(theme) ? 'dark' : 'light')).removeClass('hidden');
 
     $('.logo-light').addClass('hidden');
     $('.logo-dark').addClass('hidden');
@@ -65,11 +64,11 @@ $(function() {
     hideMenu()
   }
 
-  $('.slide-menu-light').click(function() {
+  $('.slide-theme-light').click(function() {
     setTheme('light');
   });
 
-  $('.slide-menu-dark').click(function() {
+  $('.slide-theme-dark').click(function() {
     setTheme('dark');
   });
 
@@ -84,7 +83,7 @@ $(function() {
 
   $('#search-input').keypress(function(e) {
     if (e.key === 'Enter') {
-      var value = $('search-input').val();
+      var value = $('#search-input').val();
       if (value) {
         window.location.href = '/search/?w=' + value.trim()
       }
@@ -123,4 +122,25 @@ $(function() {
     }, 300);
   });
 
-})
+  $('#size-change-input').on('input propertychange', function(e) {
+    const size = e.target.value;
+    $('.post-container').css('font-size', size + 'px');
+    localStorage.setItem('post-font-size', size);
+  });
+
+  $('.icon-bianzu').on('click', function() {
+    const size = +(localStorage.getItem('post-font-size') || 16) + 2;
+    if (size <= 32) {
+      $('.post-container').css('font-size', size + 'px');
+      localStorage.setItem('post-font-size', size);
+    }
+  });
+  $('.icon-bianzubeifen').on('click', function() {
+    const size = +(localStorage.getItem('post-font-size') || 16) - 2;
+    if (size >= 12) {
+      $('.post-container').css('font-size', size + 'px');
+      localStorage.setItem('post-font-size', size);
+    }
+  });
+
+});
