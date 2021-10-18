@@ -6,6 +6,7 @@ cover: '../images/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin
 excerpt: '如果有一个协议可以在几乎不依赖于可信第三方的情况下在网络上创建出伪造成本极高的比特，而且可以以信任最小化的方式安全地存储、转移并鉴定这些比特，那就太好了'
 tags:
 - 比特币前传
+- 密码朋克
 ---
 
 
