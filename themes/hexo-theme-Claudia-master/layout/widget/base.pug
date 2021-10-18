@@ -21,12 +21,16 @@ html(lang=config.language)
     link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
-    link(rel='stylesheet', href= url_for("//at.alicdn.com/t/font_2777699_cweokhe39xh.css"))
+    link(rel='stylesheet', href= url_for("//at.alicdn.com/t/font_2777699_n75nliybpqd.css"))
     
     script.
       function ready() {
         var bodyEl = document.querySelector('.body-container');
         var theme = localStorage.getItem('theme') || 'light';
+        if (!['light', 'dark'].includes(theme)) {
+          theme = 'light';
+          localStorage.setItem('theme', 'light');
+        }
         bodyEl.classList.remove('appearance-auto');
         bodyEl.classList.add('appearance-' + theme);
         quickInitialTheme();
@@ -54,7 +58,8 @@ html(lang=config.language)
           themeBtnEl.classList.remove('icon-icon_dark');
           themeBtnEl.classList.add('icon-icon_light');
           
-          slideThemeLightEl.classList.add('hidden');
+          slideThemeLightEl.classList.remove('hidden');
+        } else {
           slideThemeDarkEl.classList.remove('hidden');
         }
       }

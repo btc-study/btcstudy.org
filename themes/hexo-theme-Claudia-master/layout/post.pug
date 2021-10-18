@@ -42,4 +42,10 @@ block content
     script(src= url_for("/js/post.js?v=" + v))
     script(src= url_for("/js/highlight.min.js?v=" + v))
     script.
+        var postFontSize = localStorage.getItem('post-font-size') || '16';
+        var containerEl = document.querySelector('.post-container');
+        var inputEl = document.querySelector('#size-change-input');
+        inputEl.value = postFontSize;
+        containerEl.style.fontSize = postFontSize + 'px';
+    script.
         hljs.initHighlightingOnLoad();

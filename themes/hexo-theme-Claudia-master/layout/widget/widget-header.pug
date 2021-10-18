@@ -23,6 +23,12 @@ header#header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-i
                         else
                             a.is-inline-block.mr-4(href= url_for(url))= label && _p(label.toLowerCase())
                 div.right-content.is-flex.is-flex-direction-row.is-align-items-center
+                    if is_post()
+                        div.size-wrap.mr-1
+                            i.iconfont.icon-a-bianzu5#change-size-btn
+                            div.size-input-wrap
+                                div.input-wrap
+                                    input#size-change-input(type= 'range' min= '12' max= '60' step= '2')
                     i.iconfont.icon-icon_dark.mr-1#theme-btn
                     div.search-wrap
                         input.pl-3#search-input(placeholder= '请输入搜索关键词')
@@ -55,12 +61,16 @@ div.mobile-slide-menu
             else
                 a(href= url_for(url))= label && _p(label.toLowerCase())
     div
-        p.slide-menu-dark
-          span= '深色模式'
-          i.iconfont.icon-icon_selected.slide-theme-dark.hidden
-        p.slide-menu-light
-          span= '亮色模式'
-          i.iconfont.icon-icon_selected.slide-theme-light.hidden
+        p.slide-menu-theme.is-flex.is-flex-direction-row.is-justify-content-space-between.is-align-items-center
+          span= '主题设置'
+          span
+              i.iconfont.icon-icon_light.slide-theme-light.hidden
+              i.iconfont.icon-icon_dark.slide-theme-dark.hidden
+        p.slide-menu-fontsize
+          span= '字体设置'
+          span
+              i.iconfont.icon-bianzu
+              i.iconfont.icon-bianzubeifen
 
 div.search-mask.hidden
 

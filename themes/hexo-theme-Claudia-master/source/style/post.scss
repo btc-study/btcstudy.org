@@ -82,7 +82,7 @@ body > .body-container > main,
   }
 
   .post-container {
-    margin-right: 10%;
+    font-size: 16px;
   }
 
   .post-content {
@@ -224,9 +224,9 @@ body > .body-container > main,
 
 #postTitle {
   margin-bottom: 16px;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: 800;
-  line-height: 36px;
+  line-height: 1.25;
   color: var(--heading-color)!important;
 }
 
@@ -244,22 +244,22 @@ body > .body-container > main,
 .page-data {
   align-items: center;
   img {
-    width: 24px;
-    height: 24px;
-    border-radius: 24px;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 100%;
   }
 
   strong {
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 1.5;
     color: var(--heading-color);
   }
 
   time {
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 400;
-    line-height: 12px;
+    line-height: 1;
     color: var(--text-secondary-color);
   }
 }
@@ -269,26 +269,26 @@ body > .body-container > main,
   h2 {
     margin-top: 32px!important;
     margin-bottom: 16px;
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.25;
     color: var(--heading-color)!important;
   }
 
   h3 {
     margin-top: 16px!important;
     margin-bottom: 16px;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 600;
-    line-height: 28px;
+    line-height: 1.25;
     color: var(--heading-color)!important;
   }
 
   p {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: normal;
     color: var(--heading-color)!important;
-    line-height: 24px;
+    line-height: 1.5;
   }
 
   a {
@@ -302,13 +302,19 @@ body > .body-container > main,
   background-color: var(--background-color-3);
   text-transform: uppercase;
   border-radius: 20px;
-  line-height: 22px;
+  line-height: 1.5;
   font-style: normal;
 }
 
 .post-content .has-jax {
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+@media screen and (min-width: 835px) {
+  .post-container {
+    margin-right: 10%;
+  }
 }
 
 @media screen and (max-width: 768px) {
