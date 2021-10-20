@@ -6,9 +6,11 @@
         
         //- let imgUrl = coverImgElement ? coverImgElement[1] : "/images/default_cover.png"
         let imgUrl = coverImgElement ? coverImgElement[1] : "/images/BITCOIN.png"
-
+        
         if (post.cover) imgUrl = post.cover
-        if (!/^\//.test(imgUrl)) imgUrl = `/${imgUrl}`;
+        if (!/^\//.test(imgUrl)) imgUrl = `${imgUrl}`;
+        
+        imgUrl = imgUrl.replace(/^(\/)?\.\./, '');
         
         return imgUrl
     }

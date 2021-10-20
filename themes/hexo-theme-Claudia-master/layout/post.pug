@@ -40,7 +40,8 @@ block content
                                 each tag in page.tags.toArray()
                                     a(href= url_for(`/tags/${tag.name}`))
                                         i.page-tag.mr-1.px-1= tag.name.replace(/-/g, ' ')
-                article.mt-4.post-content!= page.content
+                                                        // 订正图片路径
+                article.mt-4.post-content!= page.content.replace('/../images', '/images')
     
     if page.mathjax
         include widget/mathjax.pug

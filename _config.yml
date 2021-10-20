@@ -130,3 +130,32 @@ jsonContent:
     content: true
     cover: true
     path: true
+
+sitemap:
+  path: sitemap.xml
+  # template: /sitemap_template.xml
+  rel: false
+  tags: true
+  categories: true
+
+# imagemin:
+#   enable     : true
+#   interlaced : false
+#   multipass  : false
+#   optimizationLevel: 2
+#   pngquant   : false
+#   progressive: false
+
+# lazyload:
+#   enable: false
+#   onlypost: false
+#   cdn:
+#     enabled: false
+#     url: //res.btcstudy.org/btcstudy/
+
+cdn:
+  enable: true
+  base: //res.btcstudy.org/btcstudy/
+  excludeTags:
+    - 'link'
+    - 'script'

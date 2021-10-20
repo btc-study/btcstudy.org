@@ -20,6 +20,7 @@
     let imgUrl = coverImgElement ? coverImgElement[1] : "/images/BITCOIN.png";
     if (post.cover) imgUrl = post.cover;
     if (!/^\//.test(imgUrl)) imgUrl = '/' + imgUrl;
+    imgUrl = imgUrl.replace(/^(\/)?\.\./, '')
     return imgUrl;
   }
 
@@ -31,11 +32,13 @@
       return str.replace(reg, '<span class="keywords">' + searchKey + '</span>');
     }
 
+    var cdn = '//res.btcstudy.org/btcstudy';
+
     results.forEach(function(post) {
       dom += (
         '<li>'+
           '<a href="/'+ post.path +'">'+
-            '<div class="cover" style="background-image: url('+ getCoverImg(post) +')">'+
+            '<div class="cover" style="background-image: url(' + cdn + getCoverImg(post) +')">'+
               // '<img src="' + getCoverImg(post) + '" alt="" />'+
             '</div>'+
             '<div class="post-data">'+
