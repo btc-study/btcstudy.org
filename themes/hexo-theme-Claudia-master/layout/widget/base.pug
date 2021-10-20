@@ -19,7 +19,7 @@ html(lang=config.language)
     link(rel="icon" href= url_for(theme.favicon))
     //- link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
     link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/bulma.css?v=' + v))
-    link(rel='stylesheet' href= url_for("/style/common/iconfont.css?v=" + v))
+    link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/iconfont.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
@@ -65,8 +65,8 @@ html(lang=config.language)
         }
       }
       document.addEventListener("DOMContentLoaded", ready);
-    script(src= url_for("/js/jquery.min.js"))
     script(src= url_for("/js/common.js?v=" + v))
+    script(src= url_for("/js/libs/zepto.min.js"))
     block head
 
   body.is-flex.is-flex-direction-column(onload="initialTheme()")
@@ -85,7 +85,7 @@ html(lang=config.language)
     //- script(src= url_for("/js/search.js"))
     script(async defer src= url_for("/js/buttons.js?v=" + v))
     script(async defer src= url_for("/js/index.js?v=" + v))
-    script(src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
+    script(async defer src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
