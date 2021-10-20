@@ -84,14 +84,19 @@ html(lang=config.language)
     //- script(src= url_for("/js/search.js"))
     script(async defer src= url_for("/js/buttons.js?v=" + v))
     script(src= url_for("/js/index.js?v=" + v))
-    
-    block append script
-      script.
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?c92c073c85be5be8d9b1b76f62a7e306";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-        })();
+    script(src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JVCJ9XXG1Z');
+    script.
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c92c073c85be5be8d9b1b76f62a7e306";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
         
