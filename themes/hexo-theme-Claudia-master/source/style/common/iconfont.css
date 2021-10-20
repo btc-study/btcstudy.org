@@ -3,6 +3,7 @@
   src: url('//at.alicdn.com/t/font_2777699_n75nliybpqd.woff2?t=1634542775448') format('woff2'),
        url('//at.alicdn.com/t/font_2777699_n75nliybpqd.woff?t=1634542775448') format('woff'),
        url('//at.alicdn.com/t/font_2777699_n75nliybpqd.ttf?t=1634542775448') format('truetype');
+  font-display: swap;
 }
 
 .iconfont {

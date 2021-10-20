@@ -159,3 +159,8 @@ cdn:
   excludeTags:
     - 'link'
     - 'script'
+
+minify:
+  js: true
+  css: true
+  html: true
