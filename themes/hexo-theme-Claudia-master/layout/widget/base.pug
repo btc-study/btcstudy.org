@@ -18,10 +18,10 @@ html(lang=config.language)
       
     link(rel="icon" href= url_for(theme.favicon))
     link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
+    link(rel='stylesheet', href= url_for("/style/common/iconfont.css?v=" + v))
     link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
-    link(rel='stylesheet', href= url_for("//at.alicdn.com/t/font_2777699_n75nliybpqd.css"))
     
     script.
       function ready() {

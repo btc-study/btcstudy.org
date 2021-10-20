@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2777699 */
+  src: url('//at.alicdn.com/t/font_2777699_n75nliybpqd.woff2?t=1634542775448') format('woff2'),
+       url('//at.alicdn.com/t/font_2777699_n75nliybpqd.woff?t=1634542775448') format('woff'),
+       url('//at.alicdn.com/t/font_2777699_n75nliybpqd.ttf?t=1634542775448') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bianzu:before {
+  content: "\e652";
+}
+
+.icon-bianzubeifen:before {
+  content: "\e653";
+}
+
+.icon-a-bianzu5:before {
+  content: "\e651";
+}
+
+.icon-icon_selected:before {
+  content: "\e650";
+}
+
+.icon-icon_light:before {
+  content: "\e64f";
+}
+
+.icon-icon_bar:before {
+  content: "\e64e";
+}
+
+.icon-icon_dark:before {
+  content: "\e64c";
+}
+
+.icon-icon_search:before {
+  content: "\e64a";
+}
+
+.icon-icon_into:before {
+  content: "\e64b";
+}
+
+.icon-icon_Link:before {
+  content: "\e648";
+}
+
+.icon-icon_article:before {
+  content: "\e649";
+}
