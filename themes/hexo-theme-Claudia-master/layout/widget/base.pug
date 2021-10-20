@@ -17,8 +17,9 @@ html(lang=config.language)
     meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1")
       
     link(rel="icon" href= url_for(theme.favicon))
-    link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
-    link(rel='stylesheet', href= url_for("/style/common/iconfont.css?v=" + v))
+    //- link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
+    link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/bulma.css?v=' + v))
+    link(rel='stylesheet' href= url_for("/style/common/iconfont.css?v=" + v))
     link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
     link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
@@ -83,7 +84,7 @@ html(lang=config.language)
       //-   span= ' ' + author + ' ' + new Date().getFullYear()
     //- script(src= url_for("/js/search.js"))
     script(async defer src= url_for("/js/buttons.js?v=" + v))
-    script(src= url_for("/js/index.js?v=" + v))
+    script(async defer src= url_for("/js/index.js?v=" + v))
     script(src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
     script.
       window.dataLayer = window.dataLayer || [];
@@ -96,6 +97,8 @@ html(lang=config.language)
       (function() {
         var hm = document.createElement("script");
         hm.src = "https://hm.baidu.com/hm.js?c92c073c85be5be8d9b1b76f62a7e306";
+        hm.async = true;
+        hm.defer = true;
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();
