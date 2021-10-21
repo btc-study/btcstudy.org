@@ -153,12 +153,12 @@ sitemap:
 #     enabled: false
 #     url: //res.btcstudy.org/btcstudy/
 
-cdn:
-  enable: true
-  base: //res.btcstudy.org/btcstudy/
-  excludeTags:
-    - 'link'
-    - 'script'
+# cdn:
+#   enable: true
+#   base: //res.btcstudy.org/btcstudy/
+#   excludeTags:
+#     - 'link'
+#     - 'script'
 
 minify:
   js: true
