@@ -10,7 +10,7 @@
         if (post.cover) imgUrl = post.cover
         if (!/^\//.test(imgUrl)) imgUrl = `${imgUrl}`;
         
-        imgUrl = imgUrl.replace(/^(\/)?\.\./, '');
+        imgUrl = imgUrl.replace(/^(\/)?\.\./g, '');
         
         return imgUrl
     }

@@ -138,24 +138,16 @@ sitemap:
   tags: true
   categories: true
 
-# imagemin:
-#   enable     : true
-#   interlaced : false
-#   multipass  : false
-#   optimizationLevel: 2
-#   pngquant   : false
-#   progressive: false
-
-# lazyload:
-#   enable: false
-#   onlypost: false
-#   cdn:
-#     enabled: false
-#     url: //res.btcstudy.org/btcstudy/
-
 cdn:
   enable: true
   base: //res.btcstudy.org/btcstudy/
+  tags:
+    'img[src]':
+      attribute: src
+      callback: >
+        function(imgSrc) {
+          return imgSrc.replace('//res.btcstudy.org/images', '//res.btcstudy.org/btcstudy/images')
+        }
   excludeTags:
     - 'link'
     - 'script'
