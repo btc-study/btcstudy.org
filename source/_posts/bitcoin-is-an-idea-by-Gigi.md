@@ -338,7 +338,7 @@ RPOW 是 hashcash 之后真正成功实现的系统之一。不过，可能是�
 
 让世界接受这个最强大的想法还需要一些时间。但有趣的是，时间也是比特币在根本上有意义的原因之一，因为中本聪的主要洞见就是：如何以一种去中心化的方式维护[一个时间机器](https://dergigi.com/2021/01/14/bitcoin-is-time/)（[中文译本](https://www.btcstudy.org/2021/09/29/bitcoin-is-time/)）。许多人认为这个问题是无解的。事实证明，前人只是没有找对方法。
 
-<h3 id="note">脚注
+<h3 id="note">脚注</h3>
 
 
 1. “密码朋克（cypherpunk）” 是一个有趣的合成词，结合了 “cipher（加密和/或解密消息的算法）” 和 “cyberpunk（赛博朋克，由 Philip K. Dick、William Gibson、Ridley Scott 等人的文学作品衍生出的一个科幻小说子类别）”。[↩](#fly-1)
