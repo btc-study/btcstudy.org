@@ -136,7 +136,7 @@ Taproot 可能是比特币历史上最重要的一次升级，将造就有史以
 
 感谢 @hou123，@曾汨 对本文的富有教益的反馈。
 
-<h3 id="note">脚注：
+<h3 id="note">脚注</h3>
 
 1. 比特币升级提案 Taproot 技术解读，<https://www.btcstudy.org/2021/09/29/bitcoin-taproot-a-technical-explanation/>
 2. Bitcoin Wiki·智能合约，<https://en.wikipedia.org/wiki/Smart_contract>
