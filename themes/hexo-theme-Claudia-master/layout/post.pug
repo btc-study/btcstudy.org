@@ -48,17 +48,17 @@ block content
     script(src= url_for("/js/post.js?v=" + v))
     script(src= url_for("/js/highlight.min.js?v=" + v))
     script.
-        var postFontSize = localStorage.getItem('post-font-size') || '16';
         var containerEl = document.querySelector('.post-container');
+        var postFontSize = localStorage.getItem('post-font-size') || '16';
         var inputEl = document.querySelector('#size-change-input');
         inputEl.value = postFontSize;
         containerEl.style.fontSize = postFontSize + 'px';
         $(function(){
-          $('.size-change-input').on('input propertychange', function(e) {
+          $('#size-change-input').on('input propertychange', function(e) {
             const size = e.target.value;
             $('.post-container').css('font-size', size + 'px');
             localStorage.setItem('post-font-size', size);
           });
-        })
+        });
     script.
         hljs.initHighlightingOnLoad();
