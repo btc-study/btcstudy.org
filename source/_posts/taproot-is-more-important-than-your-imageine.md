@@ -86,7 +86,7 @@ MAST 在 P2SH 的基础上迈出了一大步，其提升效果首先体现在隐
 
 Taproot 升级之后，比特币将不仅支持基于椭圆曲线的密码学签名，还支持 Schnorr 数字签名方案 [<sup>6</sup>](#note)。
 
-Schnorr 签名的构造方法在此不提，我们仅介绍其重要属性：签名/密钥 聚合 —— 多个私钥的签名，可以聚合成一个签名，看起来仿佛是一把私钥签出的。签名时，仍然是各私钥持有者各自签名的；验签时，却仿佛这些签名是一把对应于已知公钥（当然就是这些参与者的公钥聚合而成的公钥）的私钥签出的。 
+Schnorr 签名的构造方法在此不提，我们仅介绍其重要属性：签名/密钥 聚合 —— 多个私钥的签名，可以聚合成一个签名，看起来仿佛是一把私钥签出的。签名时，仍然是各私钥持有者各自签名的；验签时，却仿佛这些签名是一把对应于已知公钥（当然就是这些参与者的公钥聚合而成的公钥）的私钥签出的。
 
 也就是说，有了 Schnorr 签名，其他人就无法分辨一个签名到底是单人签出的，还是多人共同签出的了；多签名的解锁条件，可以用一个聚合公钥来替代。所有 n-n 的多签名合约，都可以享受到 Schnorr 签名提供的隐私保护。其最显然的应用就是闪电网络通道，因为闪电网络通道是一个 2-2 的多签名合约；此后，其他人就无法凭借签名的数量来分辨支付通道和个人用户了。
 
@@ -136,7 +136,7 @@ Taproot 可能是比特币历史上最重要的一次升级，将造就有史以
 
 感谢 @hou123，@曾汨 对本文的富有教益的反馈。
 
-<h3 id="note">脚注</h3>
+脚注：
 
 1. 比特币升级提案 Taproot 技术解读，<https://www.btcstudy.org/2021/09/29/bitcoin-taproot-a-technical-explanation/>
 2. Bitcoin Wiki·智能合约，<https://en.wikipedia.org/wiki/Smart_contract>
@@ -146,4 +146,3 @@ Taproot 可能是比特币历史上最重要的一次升级，将造就有史以
 6. Schnorr 签名如何提升比特币，<https://www.btcstudy.org/2021/09/09/how-schnorr-signatures-may-improve-bitcoin/>
 7. Taproot: Privacy preserving switchable scripting，<https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-January/015614.html>
 8. 用大白话解释 Taproot 对隐私性的影响，<https://www.btcstudy.org/2021/09/23/explain-like-im-not-a-developer-taproot-privacy/>
-

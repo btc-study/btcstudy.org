@@ -84,9 +84,9 @@ html(lang=config.language)
       //-   - var author = (theme.user && theme.user.name) || config.author || ''
       //-   span= ' ' + author + ' ' + new Date().getFullYear()
     //- script(src= url_for("/js/search.js"))
-    script(async defer src= url_for("/js/buttons.js?v=" + v))
-    script(async defer src= url_for("/js/index.js?v=" + v))
-    script(async defer src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
+    script(async src= url_for("/js/buttons.js?v=" + v))
+    script(async src= url_for("/js/index.js?v=" + v))
+    script(async src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
