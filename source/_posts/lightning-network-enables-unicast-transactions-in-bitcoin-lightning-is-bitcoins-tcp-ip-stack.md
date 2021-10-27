@@ -2,7 +2,7 @@
 title: '闪电网络是比特币的 TCP/IP 协议栈'
 author: 'Melik Manukyan'
 date: '2021/10/15 12:23:29'
-cover: ''
+cover: '../images/lightning-network-enables-unicast-transactions-in-bitcoin-lightning-is-bitcoins-tcp-ip-stack/for-title.jpg'
 excerpt: '比特币网络中的闪电网络节点等同于 IP 主机，可以让我们将交易一对一（点对点）路由至正确的接收方'
 categories:
 - 闪电网络

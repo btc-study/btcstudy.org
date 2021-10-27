@@ -2,7 +2,7 @@
 title: '点时间锁合约简介，Part-1：取代 HTLC'
 author: 'Nadav Kohen '
 date: '2021/10/27 00:54:05'
-cover: '../images/payment-points-part-1-replacing-HTLC/300x117.png'
+cover: '../images/payment-points-part-1-replacing-HTLC/for-title.jpg'
 excerpt: '使用点和标量，我们可以隐去支付交易间的关联，同时保证路由支付的原子性'
 categories:
 - 闪电网络
