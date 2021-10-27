@@ -1,11 +1,12 @@
 ---
 title: '别看 TPS，看交易结算的保证'
-author: '../images/its-the-settlement-assurances-stupid/0827dbb1d00147879823c7cdac493c06.jpg'
+author: 'Nic Carter'
 date: '2021/10/27 16:24:25'
-cover: 'Nic Carter'
+cover: '../images/its-the-settlement-assurances-stupid/0827dbb1d00147879823c7cdac493c06.jpg'
 excerpt: '千万不要将一笔交易在工作量证明机制中的结算过程简单看作是交易确认数量的函数'
 tags:
 - PoW
+- Nic Carter
 ---
 
 
