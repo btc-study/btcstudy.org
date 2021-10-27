@@ -20,7 +20,7 @@ tags:
 
 *文章题目来自 Bitcoiner 熊越。*
 
-*标题图片来自 [SatoshiLabs](https://blog.trezor.io/how-taproot-will-benefit-hardware-wallets-fa43c0b6123e)*。
+*标题图片来自 [SatoshiLabs](https://blog.trezor.io/how-taproot-will-benefit-hardware-wallets-fa43c0b6123e)。*
 
 比特币的 Taproot 软分叉升级将于比特币区块高度 709632 处（预计是 2021 年 11 月 15 日）激活。此次升级包含了许多重要而精彩的内容，然而，在中文世界里却缺乏足够的重视。本文将从技术角度简要介绍 Taproot 的升级内容，并以此体现比特币的发展方向。
 
