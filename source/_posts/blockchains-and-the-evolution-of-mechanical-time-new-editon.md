@@ -46,3 +46,10 @@ tags:
 如果你有任何想法，欢迎与我分享。
 
 非常感谢 Will 和 Conrad 对这篇文章的贡献。
+
+（完）
+
+> 编者注：附：
+>
+> - [比特币就是时钟](https://www.btcstudy.org/2021/09/29/bitcoin-is-time/)
+> - [工作量证明本质上是一个去中心化时钟](https://www.btcstudy.org/20a1/10/16/explaining-proof-of-work-as-a-decentralized-clock-echo-version/)
