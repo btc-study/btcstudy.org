@@ -20,7 +20,7 @@ tags:
 
 > 编者注：本文为 Yorick de Mombynes 从《The Bitcoin Standard》中节选出来的片段。他在 Twitter 上公开时，也受到了原书作者 Saifedean Ammous 的赞赏。我们提供译文，方便大家一窥《The Bitcoin Standard》的堂奥。
 >
-> 附：[豆瓣读书-《The Bitcoin Standard》](https://book.douban.com/subject/27591965/)
+> 附：[豆瓣读书-《货币未来：从金本位到区块链》](https://book.douban.com/subject/35178904/)
 
 ![](../images/my-favorite-quotes-from-the-bitcoin-standard/kAA0HEK.jpg)
 
