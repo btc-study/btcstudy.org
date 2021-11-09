@@ -115,7 +115,7 @@ tags:
 >
 > - 确保你的 windows 电脑和树莓派处在同一个网络中（比如连接同一个 wifi），在 windows 电脑的网络浏览器中输入你的路由器地址并登录（路由器地址常常是 `192.168.1.1` 或 `192.168.0.1`，具体你可以在 “命令提示符（CMD）” 中输入 `ipconfig` （注意是 ip 不是 if），“默认网关” 的值一般就是你的路由器地址）。在路由器的后台中查找 “用户侧信息” 或者 “lan 口信息”，它会显示该路由器的所有用户及其内网 IP 地址，也包括你的树莓派的。树莓派的设备名很显眼，就是 “raspberrypi”。
 >
-> 拿到这个 IP 地址是远程控制的第一步。第二步是选择一种控制方法，第一种方法只能输入命令行，第二张办法可以用图形界面操作树莓派。
+> 拿到这个 IP 地址是远程控制的第一步。第二步是选择一种控制方法，第一种方法只能输入命令行，第二种办法可以用图形界面操作树莓派。
 >
 > - **SSH 方法**。此方法是命令行方法。需要两方面的操作，一是在树莓派上打开 SSH 服务；二是在 Windows 电脑上使用 Putty 软件使用 SSH 服务。
 >
@@ -431,7 +431,7 @@ alias lnlic='lncli --macaroonpath <datadir 参数>/chain/bitcoin/mainnet/admin.m
 
 此后，你就可以在命令行里直接运行 lnd 和 lncli 了，程序将读取你在配置文件中的设置。
 
-###**LND 的使用**
+### **LND 的使用**
 
 初次运行 `lnd` 时，它会提醒你，需要使用 lncli 来创建一个钱包：
 
@@ -602,7 +602,7 @@ wget https://bitcoin.org/laanwj-releases.asc
 
 再来校验我们下载的软件的哈希值，以及开发者的签名：
 
-```
+```bash
 sha256sum bitcoin-0.21.1-arm-linux-gnueabihf.tar.gz
 gpg --import laanwj-releases.asc
 gpg --verify SHA256SUMS.asc
