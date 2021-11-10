@@ -9,10 +9,10 @@ block topic
         - var title = truncate( page.title, {length: 65, omission: '..'} ) || ''
         p.is-full-height.is-flex-shrink-0.is-flex.is-align-items-center.is-justify-content-center= title
         div.size-wrap.mr-1
-            i.iconfont.icon-a-bianzu5#change-size-btn
+            i.iconfont.icon-a-bianzu5#change-size-btn2
             div.size-input-wrap
                 div.input-wrap
-                    input.size-change-input(type= 'range' min= '12' max= '32' step= '2')
+                    input#size-change-input2(type= 'range' min= '12' max= '32' step= '2')
         //- p.is-full-height.is-flex-shrink-0.is-flex.is-align-items-center.is-justify-content-center= __('click_back_to_the_top')
 
 block topicMobile
@@ -51,14 +51,26 @@ block content
         var containerEl = document.querySelector('.post-container');
         var postFontSize = localStorage.getItem('post-font-size') || '16';
         var inputEl = document.querySelector('#size-change-input');
+        var inputEl2 = document.querySelector('#size-change-input2');
         inputEl.value = postFontSize;
+        inputEl2.value = postFontSize;
         containerEl.style.fontSize = postFontSize + 'px';
         $(function(){
-          $('#size-change-input').on('input propertychange', function(e) {
-            const size = e.target.value;
+          function setSizeChangeInputValue(size) {
             $('.post-container').css('font-size', size + 'px');
             localStorage.setItem('post-font-size', size);
+            $('#size-change-input').val(size);
+            $('#size-change-input2').val(size);
+          }
+          $('#size-change-input').on('input propertychange', function(e) {
+            const size = e.target.value;
+            setSizeChangeInputValue(size);
+          });
+          $('#size-change-input2').on('input propertychange', function(e) {
+            const size = e.target.value;
+            setSizeChangeInputValue(size);
           });
         });
+        
     script.
         hljs.initHighlightingOnLoad();
