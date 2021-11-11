@@ -122,11 +122,11 @@ $(function() {
     }, 300);
   });
 
-  $('#size-change-input').on('input propertychange', function(e) {
-    const size = e.target.value;
-    $('.post-container').css('font-size', size + 'px');
-    localStorage.setItem('post-font-size', size);
-  });
+  // $('#size-change-input').on('input propertychange', function(e) {
+  //   const size = e.target.value;
+  //   $('.post-container').css('font-size', size + 'px');
+  //   localStorage.setItem('post-font-size', size);
+  // });
 
   $('.icon-bianzu').on('click', function() {
     const size = +(localStorage.getItem('post-font-size') || 16) + 2;
