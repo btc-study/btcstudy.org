@@ -1,5 +1,5 @@
 ---
-title: 'Softchain：永续单向锚定的侧链'
+title: 'Spacechain：永续单向锚定的侧链'
 author: 'Ruben Somsen'
 date: '2021/11/10 12:44:08'
 cover: '../images/21-million-bitcoins-to-rule-all-sidechains-the-perpetual-one-way-peg/JcZ1A8QYsoL'
