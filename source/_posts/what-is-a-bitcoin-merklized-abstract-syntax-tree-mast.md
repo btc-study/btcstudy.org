@@ -122,7 +122,7 @@ MAST 不能完全解决这个问题，因为 Alice（或者 Bob 和 Charlie）�
 
 ![013.png](../images/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/411e3203be5146d584970fca5ee19247.png)
 
-MAST 的这一好处还很有可能与其他提高比特币隐私性和同质性的提议结合在一起。有些提议是让某些复杂的财产条件可以用单签名来使用，比如 Pieter Wuille 和 Gregory Maxwell 的 “[通用门限树](https://blockstream.com/2015/08/24/treesignatures.html#h.mxbj7rz0xoe5)”、Andrew Poelstra 的 [“无脚本式脚本”](https://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2017/mimblewimble-and-scriptless-scripts/)，还用 Thaddeus Dryja 的 [“离散对数合约”](https://adiabat.github.io/dlc.pdf)；MAST 就可以和这些方案相结合。
+MAST 的这一好处还很有可能与其他提高比特币隐私性和同质性的提议结合在一起。有些提议是让某些复杂的财产条件可以用单签名来使用，比如 Pieter Wuille 和 Gregory Maxwell 的 “[通用门限树](https://blockstream.com/2015/08/24/treesignatures.html#h.mxbj7rz0xoe5)”、Andrew Poelstra 的 [“无脚本式脚本”](https://diyhpl.us/wiki/transcripts/mit-bitcoin-expo-2017/mimblewimble-and-scriptless-scripts/)，还用 Thaddeus Dryja 的 [“Discreet Log Contracts”](https://adiabat.github.io/dlc.pdf)；MAST 就可以和这些方案相结合。
 
 但即使这些方案都不能在比特币上实现，MAST 自身也能为复杂财产条件的用户提供更多的隐私性和可互换性，不论是与当前相比，还是与支持用户自定义智能合约的山寨币相比。
 
