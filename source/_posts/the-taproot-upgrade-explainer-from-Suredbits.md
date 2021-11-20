@@ -21,7 +21,7 @@ mathjax: true
 
 ![img](../images/the-taproot-upgrade-explainer-from-Suredbits/es_logo.png)
 
-迄今为止，在本系列中我们一直在讲解 Schinorr 数字签名，其安全性、多样的变种和优点。你可能也知道了，Schnorr 签名将通过代号为 “Taproot” 的软分叉引入比特币区块链。在[之前的一篇文章](https://suredbits.com/activating-taproot/)中，Ben 提到了 Taproot 激活的几种可能办法。这里我准备讲讲 Taproot 软分叉，除了会加入 Schnorr 签名以外还会加入什么功能！
+迄今为止，在本系列中我们一直在讲解 Schinorr 数字签名，其安全性、多样的变种和优点。你可能也知道了，Schnorr 签名将通过代号为 “Taproot” 的软分叉引入比特币区块链。在[之前的一篇文章](https://suredbits.com/activating-taproot/)中，Ben 提到了 Taproot 激活的几种可能办法。这里我准备讲讲 Taproot 软分叉，除了 Schnorr 签名以外还会加入什么功能！
 
 Schnorr 签名系列：
 

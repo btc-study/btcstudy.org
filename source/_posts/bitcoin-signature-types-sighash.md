@@ -25,7 +25,7 @@ tags:
 
 我们以一笔单个输入、单个输入的 P2PKH（给公钥哈希值支付）为例子，是从本文撰写之时最近的一个区块选出来的：[e251decc598148363669ae64cf0ec56f6049a0adc1eb42ac850f949aff0e6e55](https://blockchain.info/tx/e251decc598148363669ae64cf0ec56f6049a0adc1eb42ac850f949aff0e6e55) 。
 
-这笔交易的签名数据总计 106 字节（包括 PUSH 操作码）。你可以通过 bitcoind 软件的 `decoderawtransaction` 方法把签名信息拉取下来，就在 `vin>scriptSig` 密钥下。
+这笔交易的签名数据总计 106 字节（包括 PUSH 操作码）。你可以通过 bitcoind 软件的 `decoderawtransaction` 方法把签名信息拉取下来，就在 `vin>scriptSig` 键值对中。
 
 ```bash
 PUSH(0x47) # 71 bytes
