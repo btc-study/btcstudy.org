@@ -1,5 +1,5 @@
 ---
-title: 'Schnorr 签名简介'
+title: 'Schnorr 签名系列：简介'
 author: 'Nadav Kohen'
 date: '2021/11/20 23:45:29'
 cover: '../images/the-taproot-upgrade-explainer-from-Suredbits/es_logo.png'
