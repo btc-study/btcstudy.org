@@ -7,7 +7,7 @@ excerpt: '一个制度能在多大程度上克服人类思维的缺陷、避免�
 categories:
 - 货币理念
 tags:
-- Nick Szabo
+- Nick-Szabo
 - 比特币
 - 货币
 ---

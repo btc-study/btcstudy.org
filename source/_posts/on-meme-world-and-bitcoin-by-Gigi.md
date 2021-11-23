@@ -2,10 +2,10 @@
 title: 'Meme 世界里的比特币'
 author: 'Gigi'
 date: '2021/11/23 10:56:58'
-cover: ''
+cover: '../images/on-meme-world-and-bitcoin-by-Gigi/E8dQzOfWUAYPtUh.jpg'
 excerpt: '所有参与者都自愿 “生产” 比特币，共享现实得以形成'
-categories:
 tags:
+- 比特币
 ---
 
 
@@ -23,25 +23,25 @@ tags:
 
 这里，我要讨论的主题并非 meme，因为 Bitstein 已经剖析得很透彻了，我无论如何都无法超越他。我要探讨的是 “meme” 与 “世界” 之间的差异。
 
-﻿﻿![](../images/on-meme-world-and-bitcoin-by-Gigi/E8dRiBVX0AUDDfM.jpg)
+![](../images/on-meme-world-and-bitcoin-by-Gigi/E8dRiBVX0AUDDfM.jpg)
 
 meme 是思想、观点和信息。
 
 “meme 是文化实践和想法等文化信息的单位，通过口述或重复行为从一个人的脑中传递给另一人。”
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dRlK4XMAITgW7.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dRlK4XMAITgW7.jpg)
 
 我们的世界是由物体而非 meme 组成的。所谓的物体，就是遵守物理学定律的有形物质。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dRp2rXEAQ_qe.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dRp2rXEAQ_qe.jpg)
 
 信息体和物体之间存在很大差别。它们的行为方式是不同的。我们可以将二者之间的差异转化为我们的优势。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dR9gPXEAoNZAc.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dR9gPXEAoNZAc.jpg)
 
 有句英语名言一语中的： “The map is not the territory（地图不等同于版图）”。地图可以说谎，现实却不会。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSLQPXsAMm_V7.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSLQPXsAMm_V7.jpg)
 
 地图所绘可能与实际版图相似，但总是不完美的，因为地图和版图之间永远不存在一比一映射。现在如此，将来依旧如此。不可能就是不可能。
 
@@ -49,7 +49,7 @@ meme 是思想、观点和信息。
 
 艺术家知道这点，哲学家知道这点。整个社会都知道这点。地图不等同于版图。下面这幅图也不是真的烟斗。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSXCMXEAo6r6j.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSXCMXEAo6r6j.jpg)
 
 说句题外话，这也是法币的问题所在。法币就是没有现实基础的 “地图”。这个 “地图” 早就脱离了黄金和白银，成了无源之水、无本之木。
 
@@ -57,7 +57,7 @@ meme 是思想、观点和信息。
 
 回到正题：信息是可以自由分享的。它不像物体具有稀缺性。你分享了自己的观点之后并不会失去它。将信息从一个媒介 “转移” 到另一个媒介的唯一方法就是复制它。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSimzWYAMItAN.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSimzWYAMItAN.jpg)
 
 理解这点很重要，因为你会发现货币就是信息。
 
@@ -69,13 +69,13 @@ meme 是思想、观点和信息。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dSvuPWUAINQMq.jpg)
 
-﻿另外，物理代币通常造价高，无需许可即可使用，而且验证难度低。但是，物理代币也有问题：它们可以被暴力夺取和伪造。
+另外，物理代币通常造价高，无需许可即可使用，而且验证难度低。但是，物理代币也有问题：它们可以被暴力夺取和伪造。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dTFkFXEAEnKbZ.jpg)
 
-﻿根本问题是：当你试图将现实映射到信息领域时，就是对当前世界状态拍摄了 “快照”。地图永远与现实世界脱离。说好听点是快照，说难听点就是谎言。
+根本问题是：当你试图将现实映射到信息领域时，就是对当前世界状态拍摄了 “快照”。地图永远与现实世界脱离。说好听点是快照，说难听点就是谎言。
 
-﻿﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dTO98WQAIJSiH.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dTO98WQAIJSiH.jpg)
 
 每当你将某个现实世界的物体表示为信息时，都会遇到信息断言问题（oracle problem）：你必须相信某人提供的信息准确反映现实。另外，你还需要依赖一个第三方在现实世界发生变化时更新信息。
 
@@ -85,31 +85,31 @@ meme 是思想、观点和信息。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dTYftXsAI1jsX.jpg)
 
-﻿这就是为什么 “区块链上的香蕉” 和 “黄金背书的密码学货币” 行不通的原因。没有物体可以在不依赖可信第三方的情况下 “放到区块链上”。
+这就是为什么 “区块链上的香蕉” 和 “黄金背书的密码学货币” 行不通的原因。没有物体可以在不依赖可信第三方的情况下 “放到区块链上”。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dTr1wXoAMTlsd.jpg)
 
-﻿同理，数字香蕉和数字香蕉哈希值也一样。物体的哈希值好比是指纹，与物体本身不存在永恒的关系。二者本质上是割裂的。
+同理，数字香蕉和数字香蕉哈希值也一样。物体的哈希值好比是指纹，与物体本身不存在永恒的关系。二者本质上是割裂的。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dTxKgX0AAw1qy.jpg)
 
-﻿NFT 没有改变这一点。你 “拥有” 的图片可能会丢失、损坏、被复制或重新经过哈希计算再卖给另一个傻瓜。你拥有的是某个非稀缺物的哈希值，你无法单靠它来重塑这个物体。你拥有的只是被歪曲的地图，而非版图。
+NFT 没有改变这一点。你 “拥有” 的图片可能会丢失、损坏、被复制或重新经过哈希计算再卖给另一个傻瓜。你拥有的是某个非稀缺物的哈希值，你无法单靠它来重塑这个物体。你拥有的只是被歪曲的地图，而非版图。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUCi7WQAcF7cl.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUCi7WQAcF7cl.jpg)
 
 比特币则反其道而行之，解决了这个问题。比特币以信息为起点，通过持续操作来创建自己的现实。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUGOdXsAUaHk.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUGOdXsAUaHk.jpg)
 
 比特币不仅定义了地图，而且暗示了版图。所有参与者都自愿 “生产” 比特币，共享现实得以形成。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUNNFWYAE3pOh.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUNNFWYAE3pOh.jpg)
 
 为了运行比特币这一信息体，我们需要消耗实实在在的电能。不付出现实世界中的真实成本，你就没法遵守比特币协议定义的规则。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUTmbXIAo8wj0.jpg)
 
-﻿﻿当然了，比特币并不能创造出苹果。它只能创建区块，即，符合特定模式的信息体。遵守该模式需要计算。计算则需要消耗时间和能源。
+当然了，比特币并不能创造出苹果。它只能创建区块，即，符合特定模式的信息体。遵守该模式需要计算。计算则需要消耗时间和能源。
 
 ![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dUaBzWYAAY7bl.jpg)
 
@@ -123,7 +123,7 @@ meme 是思想、观点和信息。
 
 这一切之所以有效，是因为工作量证明需要消耗能源。在这上面，你无法弄虚作假、讨价还价，更别想做无本买卖。你必须消耗实实在在的电能来创建有效的比特币区块。
 
-﻿![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dWPwqXsAQ.jpg)
+![图像](../images/on-meme-world-and-bitcoin-by-Gigi/E8dWPwqXsAQ.jpg)
 
 虽说其中的关系只有一定概率为真，但这没什么大不了。我们只看信息（不看其它）就可以对现实世界发生的事情做出足够准确的陈述。现实在一定概率上是直接包含在信息中的。
 
