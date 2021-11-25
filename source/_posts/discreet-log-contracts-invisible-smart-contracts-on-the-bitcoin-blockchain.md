@@ -1,5 +1,5 @@
 ---
-title: '谨慎日志合约：比特币区块链上的隐形智能合约'
+title: '谨慎日志合约（DLC）：比特币区块链上的隐形智能合约'
 author: 'Gert-Jaap Glasbergen'
 date: '2021/11/25 15:11:26'
 cover: '../images/discreet-log-contracts-invisible-smart-contracts-on-the-bitcoin-blockchain/sXoGgLg.png'
