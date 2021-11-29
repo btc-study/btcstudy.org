@@ -12,8 +12,10 @@ mathjax: true
 
 
 > *作者：Nadav Kohen*
-> 
+>
 > *来源：<https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/>*
+>
+> *[前篇中文译本](https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/)*
 
 
 
@@ -111,3 +113,4 @@ $$R = s * G – e * X$$
 
 （完）
 
+> *[后篇中文译本](https://www.btcstudy.org/2021/11/24/schnorr-security-part-2-from-id-to-signature/)*

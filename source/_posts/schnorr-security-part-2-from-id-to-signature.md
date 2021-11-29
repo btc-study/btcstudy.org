@@ -10,8 +10,10 @@ tags:
 
 
 > *作者：Nadav Kohen*
-> 
+>
 > *来源：<https://suredbits.com/schnorr-security-part-2-from-id-to-signature/>*
+>
+> *[前篇中文译本](https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/)*
 
 
 
@@ -23,7 +25,18 @@ tags:
 
 完成论证之后，Schnorr 签名系列的剩余部分，我们会探究 Schnorr 签名的多种调整方案，它们能用来为比特币开发许多很酷的协议和应用场景！
 
-Schnorr 签名系列
+<details><summary><strong>Schnorr 签名系列</strong></summary>
+<a hef="https://suredbits.com/introduction-to-schnorr-signatures/">What are Schnorr Signatures – Introduction</a><br>
+<a href="https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/">Schnorr Signature Security: Part 1 – Schnorr ID Protocol</a><br>
+<a href="https://suredbits.com/schnorr-security-part-2-from-id-to-signature/">Schnorr Signature Security: Part 2 – From IDs to Signatures</a><br>
+<a href="https://suredbits.com/schnorr-applications-musig/">Schnorr Multi-Signatures – MuSig</a><br>
+<a href="https://suredbits.com/schnorr-applications-scriptless-scripts/">Scriptless Scripts – Adaptor Signatures</a><br>
+<a href="https://suredbits.com/schnorr-applications-batch-verification/">Batch Verification</a><br>
+<a href="https://suredbits.com/schnorr-applications-threshold-signatures/">Schnorr Threshold Sigantures</a><br>
+<a href="https://suredbits.com/schnorr-applications-frost/">Flexible Round-Optimized Schnorr Threshold – FROST</a><br>
+<a href="https://suredbits.com/schnorr-applications-blind-signatures/">Schnorr Blind Signatures</a><br>
+<a href="https://suredbits.com/the-taproot-upgrade/">Taproot Upgrade – Activating Schnorr</a>
+</details>
 
 ## 从 Schnorr 身份证明到 Schnorr 签名
 
@@ -95,6 +108,3 @@ Schnorr 签名系列
 现在我们已经非常熟悉 “盗版” Schnorr 签名了，这个系列博客剩余的部分会回过头来，更随意第看看 Schnorr 签名协议的无数变种，以及它们能如何为整合了 Schnorr 签名的比特币打开许多酷炫的应用！
 
 （完）
-
-
-

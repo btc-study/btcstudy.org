@@ -33,7 +33,7 @@ mathjax: true
 虽然本系列博客的主旨是一般化地讲解 Schnorr 签名，但本系列的主要动机是 Schnorr 签名即将引入比特币区块链；比特币区块链当前使用着一种名为 ECDSA 的签名算法，我们会经常比较这两者。
 
 <details><summary><strong>Schnorr 签名系列</strong></summary>
-<a href="https://suredbits.com/introduction-to-schnorr-signatures/">What are Schnorr Signatures – Introduction</a><br>
+<a hef="https://suredbits.com/introduction-to-schnorr-signatures/">What are Schnorr Signatures – Introduction</a><br>
 <a href="https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/">Schnorr Signature Security: Part 1 – Schnorr ID Protocol</a><br>
 <a href="https://suredbits.com/schnorr-security-part-2-from-id-to-signature/">Schnorr Signature Security: Part 2 – From IDs to Signatures</a><br>
 <a href="https://suredbits.com/schnorr-applications-musig/">Schnorr Multi-Signatures – MuSig</a><br>
@@ -44,7 +44,6 @@ mathjax: true
 <a href="https://suredbits.com/schnorr-applications-blind-signatures/">Schnorr Blind Signatures</a><br>
 <a href="https://suredbits.com/the-taproot-upgrade/">Taproot Upgrade – Activating Schnorr</a>
 </details>
-
 ## 直观来说，Schnorr 签名是如何工作的？
 
 免责声明：本章节不是安全性证明或相关的具有严格含义的内容，只是尝试讲解有关 Schnorr 签名工作方式的一些直觉。
@@ -102,14 +101,14 @@ $$s*G =? R + H(R, m)*X$$
 **Nonce 绝对不可以重复使用**！我把密钥对 (k, R) 称为一次性密钥是有理由的：如果你在签名两条不同的消息时用上了同一个 (k, R) 密钥对，你就会完全泄露你的私钥。我们来看看你要是犯了这个错误，攻击者可以如何获得你的私钥：攻击者一开始获得了 X（你的公钥），R（被重用的 nonce 值），m<sub>1</sub> （第一条消息），s<sub>1</sub>（第一个签名），m<sub>2</sub> （第二条消息），s<sub>1</sub>（第二个签名）；回想一下，s 值是对某条消息和私钥 x 的承诺，但经过了随机数 k 的调整。因此，如果攻击者把两个 s 值相减，那用来隐藏私钥 x 的随机数调整，就完全没有效果了（因为 nonce 重用意味着两个调整的效果是相同的）！攻击者可以依次计算：
 
 ```python
-s1 – s2 = (k + H(R, m1)*x) – (k + H(R, m2)*x) （根据定义）
-		= H(R, m1)*x – H(R, m2)*x             （因为 k - k）
-		= (H(R, m1) – H(R, m2))*x             （有相同乘数）
+s_1 – s_2 = (k + H(R, m_1)*x) – (k + H(R, m_2)*x) （根据定义）
+		= H(R, m_1)*x – H(R, m_2)*x             （因为 k - k）
+		= (H(R, m_1) – H(R, m_2))*x             （有相同乘数）
 ```
 
 让我所说，k 的调整（隐藏）效果没有了之后，两个签名的差值就只剩下了 `H(...)*x`，也就是两个哈希值的差值乘以 x。最后，因为这两个哈希值都是已知的（它们是公开信息的哈希值），所以我们可以利用这个等式：
 
-$$s1 – s2 = (H(R, m1) – H(R, m2))*x$$
+$$s_1 – s_2 = (H(R, m_1) – H(R, m_2))*x$$
 
 这个式子中只有 x 是不公开的了。攻击者可以根据下面的式子解出 x：
 
@@ -123,15 +122,15 @@ $$x = \frac{(s1 – s2)}{H(R, m1) – H(R, m2)}$$
 
 **Schnorr 签名是线性的**。这是 Schnorr 与众不同的关键之处，使之能支持我们将在这系列博客中介绍的大部分方案。线性是签名函数的属性（签名函数以密钥和一条消息作为输入，输出签名），也就是说：
 
-$$Sign(x1, k1, m) + Sign(x2, k2, m) = Sign(x1 + x2, k1 + k2, m)$$
+$$Sign(x_1, k_1, m) + Sign(x_2, k_2, m) = Sign(x_1 + x_2, k_1 + k_2, m)$$
 
 这个等式的意思是，如果有两方签名同一条消息，并将他们的签名加起来，就可以得到他们的聚合密钥的一条有效签名！使之成真需要一个略微改动过的 Schnorr 签名版本：令总 nonce 值 R = R<sub>1</sub> + R<sub>2</sub> （也就是每一个 nonce 值的和），并在生成消息哈希值时使用 R（而非参与方各自的 nonce 值），由此可得：
 
 ```python
-	SchnorrSign(x1, k1, m) + SchnorrSign(x2, k2, m)
-= (k1 + H(R, m)*x1) + (k2 + H(R, m)*x2)
-= (k1 + k2) + H(R, m)*(x1 + x2)
-= SchnorrSign(x1 + x2, k1 + k2, m)
+	SchnorrSign(x_1, k_1, m) + SchnorrSign(x_2, k_2, m)
+= (k_1 + H(R, m)*x_1) + (k_2 + H(R, m)*x_2)
+= (k_1 + k_2) + H(R, m)*(x_1 + x_2)
+= SchnorrSign(x_1 + x_2, k_1 + k_2, m)
 ```
 
 换句话说，因为我们把签名方案修改成使用同一条哈希值，加总两个签名的结果相当于把两个随机数相加以及把两个私钥相加，这就给了我们一个很棒的线性签名函数。
@@ -145,3 +144,5 @@ $$Sign(x1, k1, m) + Sign(x2, k2, m) = Sign(x1 + x2, k1 + k2, m)$$
 本文中我们定义了 Schnorr 签名，讨论了它的一些属性，拿它跟 ECDSA 作了比较，甚至还搞出了一段我们凭直觉为自己发明了（大部分）Schnorr 签名的 “假历史”。此外，我还偷偷塞进了我们将用来证明 Schnorr 是一种安全签名方案的许多线索：nonce 重用会泄露私钥、我们的幼稚方案 `k + H(m)*x` 无法抵御伪造攻击。我们会使用这些事实和其它的一些事实来证明 Schnorr 是安全的，就在下一篇文章；然后我们会讨论如何利用 Schnorr 和它的线性属性做出许多很酷的事情，敬请期待！
 
 （完）
+
+> *[续篇中文译本](https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/)*

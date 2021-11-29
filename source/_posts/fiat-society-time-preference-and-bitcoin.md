@@ -127,11 +127,11 @@ tags:
 
 在对抗央行主导的通货膨胀主义的过程中，比特币是我们最有力的武器。比特币约束了政府的征税手段，无论是直接对收入征税，还是通过通货膨胀这种间接的方式。未来，我们需要信任最小化和抗审查性。
 
-首要任务是修正货币乱象 **别被市场上那些高时间偏好的山寨币迷了眼。即使这些山寨币不是纯粹的骗局，廉价的牺牲也会让你在未来付出惨痛的代价**。
+首要任务是修正货币乱象。**别被市场上那些高时间偏好的山寨币迷了眼。即使这些山寨币不是纯粹的骗局，廉价的牺牲也会让你在未来付出惨痛的代价**。
 
 感谢 [Daniel Bar](http://twitter.com/danieltbar)、[Ivan Sucharski](https://twitter.com/ivan_thinking) 和 [Edwin Kinoti](https://twitter.com/kinotimanoti) 的耐心编辑。
 
 （完）
 
-<p id="note">* <a href="https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/">《货币的起源》中译本</a></p>
-
+> <p id="note"><strong>相关译本</strong></p>
+> <p> * <a href="https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/">《货币的起源》中译本</a></p>
