@@ -40,12 +40,9 @@ tags:
 迄今为止，对比特币最恰当的描述是具有货币属性的数字商品。根据比特币至上主义者对货币史的[解释](https://twitter.com/NickSzabo4/status/954225789129469952)，很有可能会出现一种新型稀缺货币形式大致沿着以下方向发展：
 
 1. 具有收藏价值
-
-1. \+ 价值贮藏物
-
-1. \+ 交换媒介
-
-1. \+ 记账单位
+2. \+ 价值贮藏物
+3. \+ 交换媒介
+4. \+ 记账单位
 
 “比特币是数字现金” 论的支持者认为，效用在初期应比价值贮藏物更重要，应该尽可能降低支付的成本来，以优先实现交换媒介而非价值贮藏职能。
 
@@ -81,7 +78,7 @@ tags:
 
 **信条**：健全货币；不可更改的货币政策；低廉的全节点运行成本；主权级抗审查性；最高程度的去中心化和安全性。
 
-﻿﻿![img](../images/the-many-faces-of-bitcoin/ifFQWqg.png)
+![img](../images/the-many-faces-of-bitcoin/ifFQWqg.png)
 
 “比特币是健全货币” 思想阵营的人通常将比特币视为唯一合法的密码学资产，其它代币要么一无是处，要么就是纯粹的骗局。这类人通常被称为比特币至上主义者，他们眼中的 “健全货币” 必须符合奥地利经济学派的定义，即，能够抵抗通货膨胀和强制没收。没收的情形并非杞人忧天，例如，美国总统富兰克林·D·罗斯福（Franklin D. Roosevelt）于 1933 年签发了[第 6102 号行政令](https://en.wikipedia.org/wiki/Executive_Order_6102)，禁止在美国境内囤积黄金的行为。
 
@@ -93,13 +90,13 @@ tags:
 
 [皮埃尔·罗查德（Pierre Rochard）](http://nakamotoinstitute.org/mempool/the-bitcoin-central-banks-perfect-monetary-policy/)的图解很好地诠释了上述逻辑：囤币可能会创造一个正反馈循环，来促使比特币的价格上涨，从而提高挖矿的收益率、算力、用户采用率等。
 
-﻿![img](../images/the-many-faces-of-bitcoin/OV4M18PWw7.)
+![img](../images/the-many-faces-of-bitcoin/OV4M18PWw7.)
 
 <p style="text-align:center">- 比特币市场构成 -</p>
 
 比特币至上主义者认为，比特币的核心要素在于其货币性，而非技术性。他们援引比特币的 “完美货币政策（如下图所示）” 以及其先发优势带来的[林迪效应](https://en.wikipedia.org/wiki/Lindy_effect)，解释为什么比特币会成为主导货币。关键是：比特币必须保持本色，必须是一个点对点的、去中心化的系统，其新区块会随机挖出，只不过大概每 10 分钟出现一个。比特币至上主义者相信，只要做到这一点，[超比特币化](http://nakamotoinstitute.org/mempool/hyperbitcoinization/)终将出现，使比特币成为有史以来最具主导地位的货币。
 
-﻿![img](../images/the-many-faces-of-bitcoin/OXZFh4-six.)
+[img](../images/the-many-faces-of-bitcoin/OXZFh4-six.)
 
 在货币政策方面，比特币至上主义者认为没有哪个资产的货币政策优于比特币的超通缩发行机制，而部分准备金银行制度已经病入膏肓。他们将储蓄和资本积累的优先级置于浅层消费之上。和奥地利派经济学家一样，他们相信政府干预（尤其是对货币供应量的干预）会导致不当投资、人为压低利率，以及贫富差距拉大。
 
@@ -117,7 +114,7 @@ Bitcoin Core 是使用比特币协议的主流开源项目。目前负责 Bitcoi
 
 **信条**：点对点；抗审查、无国界、无中间人的低成本价值转移方式；链上吞吐量和链上效用；不可更改的货币政策。
 
-﻿![img](../images/the-many-faces-of-bitcoin/0Viv-zA.png)
+![img](../images/the-many-faces-of-bitcoin/0Viv-zA.png)
 
 BCH 社区的成员认为特币不应该对区块体积设限，以便实现无国界的点对点支付。他们相信中本聪的初衷是创造一个点对点电子货币，而非数字黄金。他们通常会引用比特币[白皮书](https://bitcoin.org/bitcoin.pdf)的标题和摘要以及中本聪关于如何[逐步](https://bitcointalk.org/index.php?topic=1347.msg15366#msg15366)[提高](https://bitcointalk.org/index.php?topic=1347.msg15366#msg15366)[区块体积](https://bitcointalk.org/index.php?topic=1347.msg15366#msg15366)上限的论述和其它文章来证明自己是对的。这些支持者普遍相信，比特币系统不应该只作为那些负担得起日益增长的交易费的交易者（例如，银行和其它富有的实体）的结算层。出于技术和意识形态的原因，他们强烈反对这种路线，希望看到大多数活动都发生在链上。
 
@@ -153,7 +150,7 @@ BCH 选择不将 “[隔离见证](https://bitcoincore.org/en/2016/01/26/segwit-
 
 ![img](../images/the-many-faces-of-bitcoin/VhJqry71Or.)
 
-﻿<p style="text-align:center">- 《比特币银行》（哈尔·芬尼） -</p>
+<p style="text-align:center">- 《比特币银行》（哈尔·芬尼） -</p>
 
 诺贝尔经济学奖得主约翰·纳什在博弈论研究方面做出了重大贡献，例如，[纳什均衡](https://en.wikipedia.org/wiki/Nash_equilibrium)（[Nash Equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium)）和[议价问题](http://www.eecs.harvard.edu/cs286r/courses/spring02/papers/nash50a.pdf)（[Bargaining Problem](http://www.eecs.harvard.edu/cs286r/courses/spring02/papers/nash50a.pdf)）。纳什认为，凯恩斯主义经济政策虽然在理论上有着崇高的目标，只服务于大众利益，但实际上只能让政府增印货币，通过增加货币供应量来征收铸币税。纳什常将凯恩斯主义者比作布尔什维克党，因为他发现这两个群体都接受中心化管理系统的概念，而且缺乏决策透明性，尤其是在主权国家货币发行方面。
 
@@ -179,17 +176,17 @@ BCH 选择不将 “[隔离见证](https://bitcoincore.org/en/2016/01/26/segwit-
 
 ![img](../images/the-many-faces-of-bitcoin/Lcto-TA.gif)
 
-﻿﻿<p style="text-align:center">- 比特币分叉 -</p>
+<p style="text-align:center">- 比特币分叉 -</p>
 
 一小部分人主要基于克劳德·香农的信息论对比特币进行了探讨，其中最知名的有乔治·吉尔德（[George Gilder](https://en.wikipedia.org/wiki/George_Gilder)）（著有很多关于货币体系和资本主义的书）、安德鲁·德桑蒂斯（[Andrew DeSantis](http://www.twitter.com/desantis)）（比特币创业公司 [21.co](https://techcrunch.com/2015/05/18/what-is-21-co-really-doing-an-excerpt-from-digital-gold/) 的前工程师，现就职于 earn.com）和马克·威尔科克斯（[Mark Wilcox](http://www.twitter.com/mwilcox)）（[Nyriad](http://nyriad.com/) 的首席战略官）。简而言之，在信息论中，信息被定义为惊奇（surprise）。
 
 ![img](../images/the-many-faces-of-bitcoin/azyhoeb4v6.)
 
-﻿<p style="text-align:center">- 信息论创始人克劳德·香农（Claude Shannon） -</p>
+<p style="text-align:center">- 信息论创始人克劳德·香农（Claude Shannon） -</p>
 
 这些人认为比特币为信息论带来了突破性进展，因为它让所有人都能在不依赖第三方的情况下进行可验证的、带有时间戳的、防篡改的、透明的交易。信息论认为创造力需要一个稳定的媒介才能实现分形增长。在他们眼中，比特币就是这样一个极度稳定的媒介。在《知识和权力》一书中，吉尔德指出：“（充满惊奇的）高熵信息需由（无惊奇的）低熵载体来承载。” 这部分人还认同比特币的通缩政策，因为他们认为资本主义和技术进步本质上会造成通缩。
 
-![image-20211130161528144](../images/the-many-faces-of-bitcoin/image-20211130161528144.png)﻿
+![image-20211130161528144](../images/the-many-faces-of-bitcoin/image-20211130161528144.png)
 
 ![img](../images/the-many-faces-of-bitcoin/0q256vV1Cb.)
 
@@ -199,11 +196,11 @@ BCH 选择不将 “[隔离见证](https://bitcoincore.org/en/2016/01/26/segwit-
 
 ![image_20211130161614](../images/the-many-faces-of-bitcoin/image_20211130161614.png)
 
-﻿![image-20211130161906173](../images/the-many-faces-of-bitcoin/image-20211130161906173.png)
+![image-20211130161906173](../images/the-many-faces-of-bitcoin/image-20211130161906173.png)
 
 这些人将比特币视作重新构建计算机软件和网络的平台。例如，他们对泰德·尼尔森（[Ted Nelson](http://ted.hyperland.com/)）的超文本项目 “世外桃源计划（Project [Xanadu](http://xanadu.com/)）” 与比特币之间的相似性感兴趣。世外桃源计划的设想是，通过超文本创造出一个高度互联的平行文档宇宙，以供阅读、写作和学习。超文本就是 “非相续性著述 —— 分叉的、允许读者做出选择、最好在交互式屏幕上阅读的文本”，通过遍布全世界的分布式服务器运行，协助达成全网微交易。
 
-﻿![image-20211130162057291](../images/the-many-faces-of-bitcoin/image-20211130162057291.png)
+![image-20211130162057291](../images/the-many-faces-of-bitcoin/image-20211130162057291.png)
 
 正如[《区块链控制流》](http://markwilcox.com/articles/01/)中讨论的那样，以太坊的设计选择是让网络控制合约执行以及用户资金。威尔科特斯写道：“一个点对点网络若要实现政治上的去中心化，必须实现去中心化控制。为此，我们应该将控制权完全保留在个人手中。” 他还写道，维塔利克·布特林（Vitalik Buterin）在以太坊白皮书中指出的所谓比特币的 “局限性” 其实是比特币的护城河。
 
@@ -225,7 +222,7 @@ Nyriad（威尔科克斯是联合创始人之一）为全球最大的射电望�
 
 威尔科克斯和德桑蒂斯通常反对以传统的供需观来看待区块链的经济市场。威尔科克斯在其博客中讨论了工作量证明对交易处理和可扩展性的影响，例如，[《基本的错误概念》](http://markwilcox.com/articles/03/)。如果基于比特币的计算市场能够证明自己在计算成本和效率上优于行业巨头，它们极有可能实现扩张。
 
-﻿![img](../images/the-many-faces-of-bitcoin/-HwM2DKKHU.)
+![img](../images/the-many-faces-of-bitcoin/-HwM2DKKHU.)
 
 <p style="text-align:center">- 来源：<a href="https://twitter.com/mwilcox/status/915781401487671296">Twitter</a> -</p>
 
@@ -236,6 +233,6 @@ Nyriad（威尔科克斯是联合创始人之一）为全球最大的射电望�
 
 同样地，理论二 “BCH 是点对点数字现金” 和理论四 “比特币是推动信息论发展的要素” 背后有很多相同的观点和论据支持。主要区别在于，后者对分叉没有偏见，认为分叉是有可能且必将发生的，彼此之间存在竞争关系。
 
-*感谢* [*armor123123*](https://twitter.com/armor123123) *等人对本文初稿的反馈。*
+*感谢 [armor123123](https://twitter.com/armor123123) 等人对本文初稿的反馈。*
 
-> [续篇中文译本](https://www.btcstudy.org/2021/10/04/bitcoin-past-and-future/)
+> *[续篇中文译本](https://www.btcstudy.org/2021/10/04/bitcoin-past-and-future/)*

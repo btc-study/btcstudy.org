@@ -15,6 +15,8 @@ tags:
 > *来源：<https://medium.com/@muradmahmudov/bitcoin-past-and-future-45d92b3180f1>*
 >
 > *原文发表于 2018 年 5 月。*
+>
+> *[前篇中文译本](https://www.btcstudy.org/2021/11/30/the-many-faces-of-bitcoin/)*
 
 
 
