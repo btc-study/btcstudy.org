@@ -96,7 +96,7 @@ tags:
 
 比特币至上主义者认为，比特币的核心要素在于其货币性，而非技术性。他们援引比特币的 “完美货币政策（如下图所示）” 以及其先发优势带来的[林迪效应](https://en.wikipedia.org/wiki/Lindy_effect)，解释为什么比特币会成为主导货币。关键是：比特币必须保持本色，必须是一个点对点的、去中心化的系统，其新区块会随机挖出，只不过大概每 10 分钟出现一个。比特币至上主义者相信，只要做到这一点，[超比特币化](http://nakamotoinstitute.org/mempool/hyperbitcoinization/)终将出现，使比特币成为有史以来最具主导地位的货币。
 
-[img](../images/the-many-faces-of-bitcoin/OXZFh4-six.)
+![img](../images/the-many-faces-of-bitcoin/OXZFh4-six)
 
 在货币政策方面，比特币至上主义者认为没有哪个资产的货币政策优于比特币的超通缩发行机制，而部分准备金银行制度已经病入膏肓。他们将储蓄和资本积累的优先级置于浅层消费之上。和奥地利派经济学家一样，他们相信政府干预（尤其是对货币供应量的干预）会导致不当投资、人为压低利率，以及贫富差距拉大。
 
@@ -222,7 +222,7 @@ Nyriad（威尔科克斯是联合创始人之一）为全球最大的射电望�
 
 威尔科克斯和德桑蒂斯通常反对以传统的供需观来看待区块链的经济市场。威尔科克斯在其博客中讨论了工作量证明对交易处理和可扩展性的影响，例如，[《基本的错误概念》](http://markwilcox.com/articles/03/)。如果基于比特币的计算市场能够证明自己在计算成本和效率上优于行业巨头，它们极有可能实现扩张。
 
-![img](../images/the-many-faces-of-bitcoin/-HwM2DKKHU.)
+![img](../images/the-many-faces-of-bitcoin/-HwM2DKKHU)
 
 <p style="text-align:center">- 来源：<a href="https://twitter.com/mwilcox/status/915781401487671296">Twitter</a> -</p>
 
