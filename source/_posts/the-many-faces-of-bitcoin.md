@@ -90,7 +90,7 @@ tags:
 
 [皮埃尔·罗查德（Pierre Rochard）](http://nakamotoinstitute.org/mempool/the-bitcoin-central-banks-perfect-monetary-policy/)的图解很好地诠释了上述逻辑：囤币可能会创造一个正反馈循环，来促使比特币的价格上涨，从而提高挖矿的收益率、算力、用户采用率等。
 
-![img](../images/the-many-faces-of-bitcoin/OV4M18PWw7.)
+![img](../images/the-many-faces-of-bitcoin/OV4M18PWw7)
 
 <p style="text-align:center">- 比特币市场构成 -</p>
 
@@ -102,7 +102,7 @@ tags:
 
 比特币至上主义者认为，要想让比特币成为健全货币，必须实现系统中的集体和个体安全性最大化。单从算力来看，比特币是迄今为止最难篡改的密码学货币。据估计，截止 2018 年 4 月，比特币交易经过了算力达 29 exahash/s 的网络的确认。这个速度是基于挖矿难度估算的，过去 6 个月来增长了大约两倍，自 2009 年比特币诞生以来每年都在增长。
 
-![img](../images/the-many-faces-of-bitcoin/MVFgN6QgxB.)
+![img](../images/the-many-faces-of-bitcoin/MVFgN6QgxB)
 
 <p style="text-align:center">- 比特币算力（截至 2018 年 4 月） -</p>
 
@@ -142,13 +142,13 @@ BCH 选择不将 “[隔离见证](https://bitcoincore.org/en/2016/01/26/segwit-
 
 **信条**：无关政治的价值贮藏物；将挖矿难度作为约翰·纳什理论上的工业消费者价格指数（Industrial Consumer Price Index）；作为发行了本国货币的央行之间的理想化结算层。
 
-![img](../images/the-many-faces-of-bitcoin/omrRd7pqfQ.)
+![img](../images/the-many-faces-of-bitcoin/omrRd7pqfQ)
 
 一小部分人（包括两位知名意见领袖 Juice（[Medium](https://medium.com/@rextar4444)）和 SoakerPatoshi（[Twitter](https://twitter.com/soakerpatoshi)））大致认同比特币至上主义者的观点：比特币很有可能成为新时代的 “金本位”，成为价值万亿美元的全球资产。但是，对于比特币的结局，他们持不同的看法。他们认为，即使比特币在市值上压过黄金，由主权国家背书的法币也不会消亡。比特币不会摧毁法币，反而会迫使央行以更负责的方式管理法币。
 
 这一可能性最早由哈尔·芬尼（[Hal Finney](https://en.wikipedia.org/wiki/Hal_Finney_(computer_scientist))）提出。芬尼是早期比特币开发者，首个与中本聪进行比特币交易的人，以及安全通信法优良保密协议（Pretty Good Privacy，PGP）的开发者。2010 年，他在比特币论坛上发表了关于比特币银行的设想。
 
-![img](../images/the-many-faces-of-bitcoin/VhJqry71Or.)
+![img](../images/the-many-faces-of-bitcoin/VhJqry71Or)
 
 <p style="text-align:center">- 《比特币银行》（哈尔·芬尼） -</p>
 
@@ -180,7 +180,7 @@ BCH 选择不将 “[隔离见证](https://bitcoincore.org/en/2016/01/26/segwit-
 
 一小部分人主要基于克劳德·香农的信息论对比特币进行了探讨，其中最知名的有乔治·吉尔德（[George Gilder](https://en.wikipedia.org/wiki/George_Gilder)）（著有很多关于货币体系和资本主义的书）、安德鲁·德桑蒂斯（[Andrew DeSantis](http://www.twitter.com/desantis)）（比特币创业公司 [21.co](https://techcrunch.com/2015/05/18/what-is-21-co-really-doing-an-excerpt-from-digital-gold/) 的前工程师，现就职于 earn.com）和马克·威尔科克斯（[Mark Wilcox](http://www.twitter.com/mwilcox)）（[Nyriad](http://nyriad.com/) 的首席战略官）。简而言之，在信息论中，信息被定义为惊奇（surprise）。
 
-![img](../images/the-many-faces-of-bitcoin/azyhoeb4v6.)
+![img](../images/the-many-faces-of-bitcoin/azyhoeb4v6)
 
 <p style="text-align:center">- 信息论创始人克劳德·香农（Claude Shannon） -</p>
 
@@ -188,7 +188,7 @@ BCH 选择不将 “[隔离见证](https://bitcoincore.org/en/2016/01/26/segwit-
 
 ![image-20211130161528144](../images/the-many-faces-of-bitcoin/image-20211130161528144.png)
 
-![img](../images/the-many-faces-of-bitcoin/0q256vV1Cb.)
+![img](../images/the-many-faces-of-bitcoin/0q256vV1Cb)
 
 ![img](../images/the-many-faces-of-bitcoin/4kBd27w.png)
 
