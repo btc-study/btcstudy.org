@@ -88,7 +88,7 @@ $$s = s’ + t = (k’ + t) + H(X, R’ + T, m)*x = k + H(X, R, m)*x$$
 
 更进一步地，因为 [MuSig](https://suredbits.com/schnorr-applications-musig/) 运用过程中的碎片签名（partial signature）也相似于普通的 Schnorr 签名，适配器签名方案也可以跟碎片签名结合起来。以我们在上一篇博客中提到的 CoinSwap 应用为例，它本质上就是两个独立但使用同一个秘密值的 HTLC。我们现在可以使用用一个标量（scalar）和 PTLC（点时间锁合约）来替代 HTLC：假设参与的两个公钥 X 和 Y 有 MuSig 聚合密钥 `a_x * X + a_y * Y` ；假设 X 希望把资金发送给 Y，条件是他们公开一个可以生成椭圆曲线点 T 的标量（在这个案例中，这个标量即是用来解锁资金的秘密值）。我们可以将 MuSig 签名方案与适配器签名方案结合起来：令 X 的碎片签名为：
 
-$$s_x’ = k_x + H(a_x*X + a_y*Y, R_x + T, m)*x$$
+$$s_x’ = k_x + H(a_x * X + a_y * Y, R_x + T, m) * x$$
 
 （注意，被哈希的 Nonce 值加上了 T。）在收到并验证了 Y 的碎片签名 s<sub>y</sub> 之后，X 交出自己的适配器签名 s<sub>x</sub>' ，使用该值，Y 可以计算 s<sub>x</sub> = s<sub>x</sub>' + t；最后，s = s<sub>x</sub> + s<sub>y</sub> 就是对链上聚合公钥有效的签名。而只要 X 看到了这条签名，Ta 就可以计算 s - s<sub>x</sub> - s<sub>y</sub> = t。
 
