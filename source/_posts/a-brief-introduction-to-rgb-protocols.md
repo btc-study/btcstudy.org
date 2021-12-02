@@ -1,5 +1,5 @@
 ---
-title: 'RGB协议简介'
+title: 'RGB 协议简介'
 author: 'FRANCISCO CALDERÓN'
 date: '2021/12/01 15:28:49'
 cover: '../images/a-brief-introduction-to-rgb-protocols/image1.png'
@@ -59,7 +59,7 @@ RGB 中的同质化资产遵循 [LNPBP RGB-20 规范](https://github.com/LNP-BP/
 
 ## 非同质化资产
 
-RGB 上的非同质化资产遵循 [LNPBP RGB-21 规范](https://github.com/LNP-BP/LNPBPs/blob/master/lnpbp-0021.md)，在使用 NFT 时，我们也有一个主方案和一个子方案。这些方案有一个雕刻程序（engraving procedure），该程序允许附加自定义的数据揍我代币所有权的一部分，今天我们在 NFT 上最常看到的例子就是和代币相关联的数字艺术。代币发行者可以使用 RGB-21 的子方案来禁止数据雕刻。不同于其它 NFT 区块链系统，**RGB 可以利用被称为 Bitfrost 的闪电 P2P 网络的扩展、以完全去中心化和抗审查的方式分发大体积的媒体代币数据。**该扩展也被用于构建许多其它形式的 RGB 特定的智能合约功能。
+RGB 上的非同质化资产遵循 [LNPBP RGB-21 规范](https://github.com/LNP-BP/LNPBPs/blob/master/lnpbp-0021.md)，在使用 NFT 时，我们也有一个主方案和一个子方案。这些方案有一个雕刻程序（engraving procedure），该程序允许附加自定义的数据作为代币所有权的一部分，今天我们在 NFT 上最常看到的例子就是和代币相关联的数字艺术。代币发行者可以使用 RGB-21 的子方案来禁止数据雕刻。不同于其它 NFT 区块链系统，**RGB 可以利用被称为 Bitfrost 的闪电 P2P 网络的扩展、以完全去中心化和抗审查的方式分发大体积的媒体代币数据。**该扩展也被用于构建许多其它形式的 RGB 特定的智能合约功能。
 
 除了同质化资产和 NFT，RGB 和 Bitfrost 还可被用于生产其它形式的智能合约，包括去中心化交易所、流动性池、算法稳定币等，我们将在未来的文章中介绍。
 
