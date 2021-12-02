@@ -20,7 +20,7 @@ mathjax: true
 
 ![](../images/schnorr-applications-musig/security_flat_logo_orange.png)
 
-欢迎来到本周的 Schnorr 签名系列博客！迄今为止，我们已经（非常深入地）介绍了 Schnorr 签名是什么以及为什么它是安全的。不过，就算你没有关注我们或还未读过[前两篇文章](https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/) [<sup>*</sup>](#note)（详细解释了 Schnorr 签名的安全性），也不影响你阅读这篇文章（以及本系列博客后续的部分），只要你熟悉本系列的[第一篇博客](https://suredbits.com/introduction-to-schnorr-signatures/) [<sup>**</sup>](#note) 或者知道 Schnorr 签名的工作模式就好。在本文中，我们会开始介绍 Schnorr 签名的变种，以及它们如何开启数不尽数的应用场景，就从 MuSig 开始。
+欢迎来到本周的 Schnorr 签名系列博客！迄今为止，我们已经（非常深入地）介绍了 Schnorr 签名是什么以及为什么它是安全的。不过，就算你没有关注我们或还未读过[前两篇文章](https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/)（[中文译本](https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/)）（详细解释了 Schnorr 签名的安全性），也不影响你阅读这篇文章（以及本系列博客后续的部分），只要你熟悉本系列的[第一篇博客](https://suredbits.com/introduction-to-schnorr-signatures/)（[中文译本](https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/)） 或者知道 Schnorr 签名的工作模式就好。在本文中，我们会开始介绍 Schnorr 签名的变种，以及它们如何开启数不尽数的应用场景，就从 MuSig 开始。
 
 <details><summary><strong>Schnorr 签名系列</strong></summary>
 <a href="https://suredbits.com/introduction-to-schnorr-signatures/">What are Schnorr Signatures – Introduction</a><br>
@@ -67,7 +67,7 @@ MuSig 尝试实现一种 Schnorr 多签名方案来解决所有这些问题：�
 
 ## MuSig 工作原理
 
-Schnorr 签名得以支持 MuSig 的关键属性是 “线性”，我们在[本系列第一篇](https://suredbits.com/introduction-to-schnorr-signatures/) [<sup>**</sup>](#note) 里介绍过。
+Schnorr 签名得以支持 MuSig 的关键属性是 “线性”，我们在[本系列第一篇](https://suredbits.com/introduction-to-schnorr-signatures/)（[中文译本](https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/)）里介绍过。
 
 我们想要的属性是：在 n 方参与、每一方都有自己的公钥的情形中，将他们的公钥聚合成一把公钥，并使该公钥可用于 n 方一致参与的情形中的签名验证（即功能上就像 n-n 的 OP_CMS）。
 
@@ -125,12 +125,8 @@ MuSig 协议的安全性证明在[这里](https://eprint.iacr.org/2018/068.pdf)�
 
 免责声明：本文中没有任何观念是我原创的。
 
-在本文中，我们介绍了多签名和一种叫做 “MuSig” 的 Schnorr 多签名方案（还暗示了其它的变体）。我们也了解了以下 MuSig 在比特币中的应用，以及它对比特币的资金及合约的隐私性提升和扩容效果。敬请期待下周的博客，我会带大家研究我个人最喜欢的 Schnorr 签名变种，叫做 “Adaptor Signature（适配器签名）”！
+在本文中，我们介绍了多签名和一种叫做 “MuSig” 的 Schnorr 多签名方案（还暗示了其它的变体）。我们也了解了以下 MuSig 在比特币中的应用，以及它对比特币的资金及合约的隐私性提升和扩容效果。敬请期待下周的博客，我会带大家研究我个人最喜欢的 Schnorr 签名变种，叫做 “Adaptor Signature（适配器签名）” ！
 
 （完）
-
-> <p id="note"><strong>相关译本</strong></p>
-> <p>* <a href="https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/">Schnorr 签名系列安全部分·中译本</a></p>
-> <p>** <a href="https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/">Schnorr 签名系列第一篇·中译本</a>  </p>
 
 

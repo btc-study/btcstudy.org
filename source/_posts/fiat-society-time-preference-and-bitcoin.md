@@ -21,7 +21,7 @@ tags:
 
 奥地利学派有个 “时间偏好” 的概念，简单来讲就是 “个体眼中未来价值和现在价值之间的比率。”《比特币本位》的作者 [@saifedean](https://twitter.com/saifedean) 一针见血地指出，它源于个体对（当下）消费和储蓄（即推迟消费）的权衡。对个人而言，货币是一种可以存储其劳动果实的流动仓库，有望将其购买力保留到想要消费时再使用。这反映了货币的两个功能：交换媒介（用于支付）和价值贮藏。如果一种货币被广泛接受（在所有商品中流动性最强）且易于交换，那它就是很好的交换媒介。如果某种商品的所有者合理预期其他人会支付与买入价相当乃至更高的价格来购买该商品，该商品就是很好（“坚挺的”）的价值贮藏物。价值和价格之间的关系不在本文的讨论范围内。简而言之，价值总是主观的。相比其它商品，某种商品可能会因一些特性而能够更好地担任价值贮藏物的角色。
 
-随着时间的推移，如果某个价值贮藏物能够保值且成为未来价值计算的基础，将被其所有者用作价值尺度，因而成为记账单位（UoA）。这是货币的第三个功能。如果你想跟深入了解该功能，我建议阅读尼克·萨博的[《货币的起源》](https://nakamotoinstitute.org/shelling-out/) [<sup>*</sup>](#note)。时间偏好指的是，人们在花钱时有意识地决定现在消费，从而减少储蓄。
+随着时间的推移，如果某个价值贮藏物能够保值且成为未来价值计算的基础，将被其所有者用作价值尺度，因而成为记账单位（UoA）。这是货币的第三个功能。如果你想跟深入了解该功能，我建议阅读尼克·萨博的[《货币的起源》](https://nakamotoinstitute.org/shelling-out/)（<a href="https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/">中文译本</a>）。时间偏好指的是，人们在花钱时有意识地决定现在消费，从而减少储蓄。
 
 ## 人生的动态时间偏好
 
@@ -132,6 +132,3 @@ tags:
 感谢 [Daniel Bar](http://twitter.com/danieltbar)、[Ivan Sucharski](https://twitter.com/ivan_thinking) 和 [Edwin Kinoti](https://twitter.com/kinotimanoti) 的耐心编辑。
 
 （完）
-
-> <p id="note"><strong>相关译本</strong></p>
-> <p> * <a href="https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/">《货币的起源》中译本</a></p>

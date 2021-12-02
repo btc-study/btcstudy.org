@@ -11,6 +11,8 @@ tags:
 > *作者：Hugo Nguyen*
 >
 > *来源：<https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2>*
+>
+> *[前篇中文译本](https://www.btcstudy.org/2021/12/07/proof-of-stake-the-wrong-engineering-mindset/)*
 
 
 
@@ -130,5 +132,5 @@ DFINITY 建立了一个模仿 PoW 链中的“区块重量”特征的机制（�
 
 <p id="note1">注 1：这个1/3的比例取自已经有成熟研究的传统<a href="https://en.wikipedia.org/wiki/Byzantine_fault_tolerance">拜占庭容错</a>系统，而PoS本身就是其中的一部分。传统拜占庭容错系统在大于等于1/3的节点是恶意节点时会失效。而"拜占庭容错"的概念则来自拜占庭将军问题，由 Lamport、Pease 与 Shostak 在1982年提出。</p>
 
-<p id="note2">注2：请阅读 Nick Szabo <a href="http://nakamotoinstitute.org/shelling-out/">关于货币起源的论文</a>，以便更好地理解第二点的重要性。</p>
+<p id="note2">注2：请阅读 Nick Szabo <a href="http://nakamotoinstitute.org/shelling-out/">关于货币起源的论文</a>（<a href="https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/">中文译本</a>），以便更好地理解第二点的重要性。</p>
 
