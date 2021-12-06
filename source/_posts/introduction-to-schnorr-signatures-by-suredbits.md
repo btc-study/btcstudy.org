@@ -5,6 +5,7 @@ date: '2021/11/20 23:45:29'
 cover: '../images/the-taproot-upgrade-explainer-from-Suredbits/es_logo.png'
 excerpt: 'Schnorr 签名背后的直觉'
 categories:
+- 比特币主网
 tags:
 - 密码学
 - Taproot
