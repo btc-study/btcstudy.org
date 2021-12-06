@@ -33,7 +33,8 @@ mathjax: true
 <a href="https://suredbits.com/schnorr-applications-frost/">Flexible Round-Optimized Schnorr Threshold – FROST</a><br>
 <a href="https://suredbits.com/schnorr-applications-blind-signatures/">Schnorr Blind Signatures</a><br>
 <a href="https://suredbits.com/the-taproot-upgrade/">Taproot Upgrade – Activating Schnorr</a>
-</details>
+</details><br>
+
 
 Andrew Poelstra 提出[隐形脚本](https://download.wpsoftware.net/bitcoin/wizardry/mw-slides/2018-05-18-l2/slides.pdf)的概念很大程度上是受到了 MimbleWimble 协议开发工作的启发：在后者的语境中，只允许使用签名，而不包含任何大部分其他区块链协议（比如比特币）具有的脚本执行措施。顾名思义，隐形脚本是一种合约（这个词在常见的区块链语境下意味着编程好的支付条件）、但由实际上并不包含任何代码的区块链协议来执行，因此，它意味着只用签名方案来执行合约。
 

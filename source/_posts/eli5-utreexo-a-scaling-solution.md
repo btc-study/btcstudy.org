@@ -15,7 +15,7 @@ tags:
 
 
 
-关于我：过去 7 个月里，我一直宅在 Utreexo 实现贡献代码；同时我还是 [首尔 Bitcoin Meetup](http://meetup.com/seoulbitcoin) 的联合创始人，专门研究比特币和相关可急两年了。
+关于我：过去 7 个月里，我一直在给 Utreexo 实现贡献代码；同时我还是 [首尔 Bitcoin Meetup](http://meetup.com/seoulbitcoin) 的联合创始人，专门研究比特币和相关科技两年了。
 
 Utreexo 是一种为比特币设计的[哈希累加器](https://en.wikipedia.org/wiki/Accumulator_(cryptography))，由 Tadge Dryja 提出（他也是 [闪电网络白皮书](https://lightning.network/lightning-network-paper.pdf)的联合作者）。这种技术有以下的优缺点。
 
@@ -83,7 +83,7 @@ Utreexo 是一种为比特币设计的[哈希累加器](https://en.wikipedia.org
 
 <p style="text-align:center">- UTXO 数量统计。已排除使用 OP_RETURN 的 UTXO  -</p>
 
-因此，剪枝节点的存储要求**会**逐渐提高，导致比特币全节点的最低存储要求不断提高。Utreexo 可以让用户修剪不术语自己的 UTXO，从而缓解这个问题。
+因此，剪枝节点的存储要求**会**逐渐提高，导致比特币全节点的最低存储要求不断提高。Utreexo 可以让用户修剪不属于自己的 UTXO，从而缓解这个问题。
 
 **初始区块下载在机械硬盘上可以跟固态硬盘上一样快**
 
@@ -91,7 +91,7 @@ Utreexo 是一种为比特币设计的[哈希累加器](https://en.wikipedia.org
 
 ### **2. 允许初次下载区块时并行化下载**
 
-UTXO 快照是保存某个区块高度时候的所有 UTXO。一个可能的用途是 [assumeUTXO](https://github.com/bitcoin/bitcoin/issues/15605) 项目，允许用户从被快照的高度开始同步区块链。快照的主要麻烦在于其体积，如果给当前的区块高度做快照，快照的大小是 5 GB 左右，是非常大的。而且快照的嗲小也会不断增长，就像优势 1 里说的那样。但有了 Utreexo，**在最差的情况下也不到 1 KB 就可以完成** <sup>1</sup>（最好的情况下大约100 字节）。有了 Utreexo，UTXO 快照就会变得非常简单；而且 [ZkVM](https://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae) 项目已经[实现了](https://github.com/stellar/slingshot/blob/c0d0cdc927fa0f3a5a9b175a844a6f87bf3a1609/zkvm/docs/zkvm-blockchain.md) Utreexo，并通过在区块头中包含 Utreexo 树根来保存区块链状态。
+UTXO 快照是保存某个区块高度时候的所有 UTXO。一个可能的用途是 [assumeUTXO](https://github.com/bitcoin/bitcoin/issues/15605) 项目，允许用户从被快照的高度开始同步区块链。快照的主要麻烦在于其体积，如果给当前的区块高度做快照，快照的大小是 5 GB 左右，是非常大的。而且快照的大小也会不断增长，就像优势 1 里说的那样。但有了 Utreexo，**在最差的情况下也不到 1 KB 就可以完成** <sup>1</sup>（最好的情况下大约100 字节）。有了 Utreexo，UTXO 快照就会变得非常简单；而且 [ZkVM](https://medium.com/stellar-developers-blog/zkvm-a-new-design-for-fast-confidential-smart-contracts-d1122890d9ae) 项目已经[实现了](https://github.com/stellar/slingshot/blob/c0d0cdc927fa0f3a5a9b175a844a6f87bf3a1609/zkvm/docs/zkvm-blockchain.md) Utreexo，并通过在区块头中包含 Utreexo 树根来保存区块链状态。
 
 当快照变得如此便宜，就有可能**每个区块高度**都快照一次。有了这种技术，未来就可以实现并行化的区块链同步方法，意味着一台电脑（CPU 核心）可以同步从 0 到 300000 的区块，而另一个可以同步从 300001 到 600000 高度的区块。然后，同步方法的优化就将围绕[时钟速度](https://software.intel.com/en-us/blogs/2014/02/19/why-has-cpu-frequency-ceased-to-grow)转向围绕[数量](https://www.tomshardware.com/news/amd-cto-mark-papermaster-more-cores-coming-in-the-era-of-a-slowed-moores-law)、[GPGPU](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units) 也可以运用起来，这些异步的区块同步方法可以进一步降低启动一个比特币全节点所需的时间。
 
@@ -112,7 +112,7 @@ UTXO 快照是保存某个区块高度时候的所有 UTXO。一个可能的用�
 
 ### **4. 无需硬分叉**
 
-Boneh 等人提出的 [RSA 累加器](https://eprint.iacr.org/2018/1188.pdf)，在体积上比 Utreexo 更加高效。但是，实现 RSA 累加器需要一次软分叉。比特币是一个比较保守的系统，即使软分叉也会伴随极端的谨慎，所以这些累加器是很难在比特币中实现的。 **Utreexo 不许要任何分叉**。用户只需自己选择是否运行 Utreexo 节点。
+Boneh 等人提出的 [RSA 累加器](https://eprint.iacr.org/2018/1188.pdf)，在体积上比 Utreexo 更加高效。但是，实现 RSA 累加器需要一次软分叉。比特币是一个比较保守的系统，即使软分叉也会伴随极端的谨慎，所以这些累加器是很难在比特币中实现的。 **Utreexo 不需要任何分叉**。用户只需自己选择是否运行 Utreexo 节点。
 
 ## 缺点
 
@@ -131,7 +131,7 @@ Utreexo 存档节点等于是当前的比特币存档节点加上上述 Utreexo 
 1. 自创世区块以来的所有区块
 2. 自创世区块以来的所有证明
 
-因为 #2，存档节点需要提供额外的存储空间。如果一个 Utreexo 存档节点腰围每个区块存储所有的证明，大概需要多存储 100% 的数据。
+因为 #2，存档节点需要提供额外的存储空间。如果一个 Utreexo 存档节点要为每个区块存储所有的证明，大概需要多存储 100% 的数据。
 
 但是，取消逐块存储所有证明就可以优化这个问题。你可以只存储奇数块的证明，当另一个节点为一个偶数块存储证明时再 “重新同步”。举个例子，如果有人请求 566 块的证明，Utreexo 存档节点可以：
 
@@ -142,7 +142,7 @@ Utreexo 存档节点等于是当前的比特币存档节点加上上述 Utreexo 
 
 甚至于，我们还可以每 10 个区块存储一次证明，进一步降低存储负担。
 
-最终来说，用户可以根据自己对 CPU 使用率和存储空间的需求来选择一种存储负担。如果用户能买单便宜的硬盘，他可以逐块存储所有的正面看。如果用户的存储空间有限，但 CPU 性能有富余，他可以存储更少数据、计算更多。
+最终来说，用户可以根据自己对 CPU 使用率和存储空间的需求来选择一种存储负担。如果用户能买到便宜的硬盘，他可以逐块存储所有的证明。如果用户的存储空间有限，但 CPU 性能有富余，他可以存储更少数据、计算更多。
 
 ## 结论
 
