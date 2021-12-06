@@ -115,3 +115,4 @@ Alyssa Hertig 撰文发表于 2020 年 7 月 28 日，在 coindesk.com。
 - [MIT Bitcoin 大会 2020 - 节点模式：比特币网络节点的税收及其它](https://dci.mit.edu/video-gallery/2020/4/15/hg2n6d8rl01i5hhjumebo4puu5wvda)
 - [Tadge Dryja 在 Scaling Bitcoin 大会上讲解 Utreexo](https://dci.mit.edu/video-gallery/2020/1/3/kf7s9uzw7knetidlc0dum2lzde9kxs)
 
+（完）

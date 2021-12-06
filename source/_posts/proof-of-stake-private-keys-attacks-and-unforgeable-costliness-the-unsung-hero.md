@@ -12,7 +12,7 @@ tags:
 >
 > *来源：<https://medium.com/@hugonguyen/proof-of-stake-the-wrong-engineering-mindset-15e641ab65a2>*
 >
-> *[前篇中文译本](https://www.btcstudy.org/2021/12/07/proof-of-stake-the-wrong-engineering-mindset/)*
+> *[前篇中文译本](https://www.btcstudy.org/2021/12/02/proof-of-stake-the-wrong-engineering-mindset/)*
 
 
 
