@@ -15,18 +15,16 @@ tags:
 > *作者：Fulgur Ventures*
 > 
 > *来源：<https://medium.com/@fulgur.ventures/an-overview-of-lightning-network-implementations-d670255a6cfa>*
-> 注：本文首发于 2021 年 3 月 15 日
+> 
+> *本文首发于 2021 年 3 月 15 日*。
 
 **本文是我们关于闪电网络生态系统系列的第二弹。虽然在[上一篇文章](https://medium.com/@fulgur.ventures/building-an-overview-of-the-lightning-network-ecosystem-a93be2343f61)中，我们已经就如何理解 “生态环境” 打下了基础，本文旨在从关键特征、使用情况、开发活动统计和功能等方面，为读者更详尽地展示栖息在这个生态内的一部分 “物种” —— 各种不同的闪电网络实现。如果你是计划在比特币闪电网络上进行构建的开发者、产品经理或创业公司创始人（或者说你只是闪电网络爱好者），我们希望这篇文章能够帮助你从产品开发的角度了解并评估可获得的客户端和库。**
 
 ## **太长不看**
 
 - 闪电网络实现的生态正在稳步发展中，不仅扩大了应用场景的覆盖面，而且更好地满足了不同技能客户的需求。
-
 - 随着主要开发组织开始形成各自的优势和价值主张，产品化路径变得更加明显。
-
 - 由于早期采用者的参与度较强，每个闪电网络实现周围都形成了用户社区。
-
 - 预计到 2021 年，更多机构采用（例如，交易所）将推动生态环境的发展。
 
 为了尽可能增强这篇概述的准确性并增添更多技术细节，我们已经向开发者收集了不同闪电网络实现的具体信息。然而，考虑到整个生态的飞速发展，文中提到部分信息可能很快就会过时。如果你发现我们有任何遗漏之处或任何信息过时失效，请告诉我们，我们会更新本文。
@@ -45,7 +43,7 @@ tags:
 
 闪电网络应用的典型架构如下所示：
 
-﻿![img](../images/an-overview-of-lightning-network-implementations/iCCQqW38kSo)
+![img](../images/an-overview-of-lightning-network-implementations/iCCQqW38kSo)
 
 闪电网络节点有多种实现，所以开发者可以根据自己心仪的功能和编程语言来选择。
 
@@ -89,7 +87,7 @@ tags:
 
 虽然闪电网络的交易量可能是判断其使用活动的最佳指标，但是由于网络的隐私性，我们很难获得可靠的信息。为了大致估计各个实现的相对分布情况，我们先来看看公开节点的数量及其活动情况。
 
-﻿ ![img](../images/an-overview-of-lightning-network-implementations/aYPhwHJdD2N)
+![img](../images/an-overview-of-lightning-network-implementations/aYPhwHJdD2N)
 
 <p style="text-align:center">- 2020 年 9 月公开节点数量的分布情况 -</p>
 
@@ -99,7 +97,7 @@ tags:
 
 ![img](../images/an-overview-of-lightning-network-implementations/D1hy4mT4jNA)
 
-﻿﻿<p style="text-align:center">- 2021 年 1 月向 Bitrefill 发送交易最多的节点 -</p>
+<p style="text-align:center">- 2021 年 1 月向 Bitrefill 发送交易最多的节点 -</p>
 
 总的来说，上图所示的统计数据体现了相似的分布情况。然而，在这幅反映了连接到 Bitrefill 的最活跃节点的分布情况的图中，Eclair 的占比变大了一些。这意味着，运行 Eclair 的节点贡献了 Bitrefill 过去 30 天内收到的所有付款的 14%。请注意，上图不一定会表明付款来源，因为连接到 Bitrefill 的节点可能是中间路由节点，。
 
@@ -109,11 +107,11 @@ tags:
 
 ![img](../images/an-overview-of-lightning-network-implementations/W8xYljq.png)
 
-﻿<p style="text-align:center">- 总体开发活动情况 -</p>
+<p style="text-align:center">- 总体开发活动情况 -</p>
 
 ![img](../images/an-overview-of-lightning-network-implementations/Lnn4n6z.png)
 
-﻿<p style="text-align:center">- 月均开发活动情况 -</p>
+<p style="text-align:center">- 月均开发活动情况 -</p>
 
 考虑到每个实现并非同期上线，我们计算了各个实现在 GitHub 上首次进行开发活动以来的 “月均提交数量” 和 “月均已处理问题数量”。<sup>1</sup>
 
@@ -212,9 +210,7 @@ c-lightning 的默认后端是 sqlite3，一个可移植的独立数据库。在
 **c-lightning 的 2021 年开发路线图**：
 
 - 进一步完善规范，增加关于洋葱消息传递、双重资金充值和报价的提案
-
 - 扩展功能集、优化现有功能。例如，多方支付实现包含的一些参数可用来优化付款的确认时间及成功概率。目前已经有计划要开展一系列实验来探索折中方案，找到最佳参数。
-
 - 进一步扩展接口，向开发者开放更多内部部件以便其进行构建和提供支持。
 
 ### Eclair
@@ -226,9 +222,7 @@ c-lightning 的默认后端是 sqlite3，一个可移植的独立数据库。在
 **Eclair 的 2021 年开发路线图**：
 
 - 新功能：anchor 输出和 trampoline 支付
-
 - 通过 [Eclair K](https://github.com/acinq/eclair-kmp)MP 实现了对 iOS 和 Android 钱包的原生支持
-
 - 可扩展的企业部署：集群化、DoS 保护、密钥保护
 
 ### Ind
@@ -278,9 +272,7 @@ Electrum 开发者并未打算实现一个带有支付转发功能的闪电网�
 **Electrum 的 2021 年开发路线图**：
 
 - 部署多部分付款和 trampoline 付款（计划在下一个版本 v4.1 实现）
-
 - 将暸望塔与 Electrum 服务器整合（计划在 Electrum 客户端的 v4.2 版本实现）
-
 - 利用助记词找回通道
 
 ### LNP Node
