@@ -8,7 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 比特币
-- 升级
+- 文化
 ---
 
 > *作者：Vlad Costea*

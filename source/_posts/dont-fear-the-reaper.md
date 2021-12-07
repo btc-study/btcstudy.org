@@ -10,6 +10,7 @@ tags:
 - 比特币
 - 货币
 - Nic Carter
+- 文化
 ---
 
 > *作者：Nic Carter*

@@ -7,6 +7,7 @@ excerpt: '在设计安全协议时，引入第三方控制的 “受信任第三
 tags:
 - 密码学
 - Nick-Szabo
+- 文化
 ---
 
 > *作者：Nick Szabo*
