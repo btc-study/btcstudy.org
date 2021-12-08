@@ -34,8 +34,6 @@ mathjax: true
 <a href="https://suredbits.com/schnorr-applications-blind-signatures/">Schnorr Blind Signatures</a><br>
 <a href="https://suredbits.com/the-taproot-upgrade/">Taproot Upgrade – Activating Schnorr</a>
 </details><br>
-
-
 Andrew Poelstra 提出[隐形脚本](https://download.wpsoftware.net/bitcoin/wizardry/mw-slides/2018-05-18-l2/slides.pdf)的概念很大程度上是受到了 MimbleWimble 协议开发工作的启发：在后者的语境中，只允许使用签名，而不包含任何大部分其他区块链协议（比如比特币）具有的脚本执行措施。顾名思义，隐形脚本是一种合约（这个词在常见的区块链语境下意味着编程好的支付条件）、但由实际上并不包含任何代码的区块链协议来执行，因此，它意味着只用签名方案来执行合约。
 
 在我们的 Schnorr 签名解释系列中，迄今为止，签名方案都几乎只用于相对简单的验证。由普通的 Schnorr 签名推动执行的 “合约” ，就是只有私钥所有者一个人能解锁的支付条件；至于 MuSig，你可以认为是稍微复杂一些的 “合约”，其中 n 个参与者必须团结一致来解锁资金。这无疑是朝着只使用普通的 Schnorr 签名验证、不使用别的模块来执行比特币智能合约的目标迈出了一步，因为它已经能替代 OP_CHECKMULTISIG 在许多场景下的作用。
@@ -127,3 +125,5 @@ $$ s_m*G = R + H(X, R, m)*x$$
 关于适配器签名的讨论，到这里就结束了。不过，如果你发现这些应用都很有趣，我强烈建议你阅读我撰写的关于 PTLC 和适配器签名的进阶用法的博客。本系列剩余的部分，我们会研究批量验证、门限签名、盲签名和 Taproot。
 
 （完）
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/06/schnorr-applications-batch-verification/)*

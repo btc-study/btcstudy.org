@@ -8,18 +8,23 @@ categories:
 - 比特币主网
 tags:
 - 密码学
+mathjax: true
 ---
 
 
+
+
 > *作者：Nadav Kohen*
-> 
+>
 > *来源：<https://suredbits.com/schnorr-applications-batch-verification/>*
+>
+> *[前篇中文译本](https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/)*
 
 
 
 ![img](../images/schnorr-applications-batch-verification/g_logo2.png)
 
-迄今为止，我们已经讨论了[什么是 Schnorr 签名](https://suredbits.com/introduction-to-schnorr-signatures/)（[中文译本](https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/)），[为什么它们是安全的](https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/)（[中文译本](https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/)），以及 Schnorr 签名的变种如何实现[隐私和可扩展的多签名方案](https://suredbits.com/schnorr-applications-musig/)（[中文译本](https://www.btcstudy.org/2021/11/29/schnorr-applications-musig/)）、[适配器签名和隐形脚本](https://suredbits.com/schnorr-applications-scriptless-scripts/)（[中文译本](https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/)）。今天我们要来看另一个 Schnorr 签名可以个比特币生态系统带来的重大提升：批量验证！
+迄今为止，我们已经讨论了[什么是 Schnorr 签名](https://suredbits.com/introduction-to-schnorr-signatures/)（[中文译本](https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/)），[为什么它们是安全的](https://suredbits.com/schnorr-security-part-1-schnorr-id-protocol/)（[中文译本](https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/)），以及 Schnorr 签名的变种如何实现[隐私和可扩展的多签名方案](https://suredbits.com/schnorr-applications-musig/)（[中文译本](https://www.btcstudy.org/2021/11/29/schnorr-applications-musig/)）、[适配器签名和隐形脚本](https://suredbits.com/schnorr-applications-scriptless-scripts/)（[中文译本](https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/)）。今天我们要来看另一个 Schnorr 签名可以给比特币生态系统带来的重大提升：批量验证！
 
 <details><summary><strong>Schnorr 签名系列</strong></summary>
 <a hef="https://suredbits.com/introduction-to-schnorr-signatures/">What are Schnorr Signatures – Introduction</a><br>
@@ -81,3 +86,5 @@ $$ 0 ?= a_1 * R_1 + … + a_n * R_n + (a_1e_1) * P_1 + … + (a_ne_n) * P_n – 
 除了解释 Schnorr 签名是什么以及它何以是安全的，现在我们已经看过了 Schnorr 签名是如何实现多签名和适配器签名、让比特币的合约能更加隐私、更可扩展的。现在我们又看到了批量验证如何节约验证时间。但我们还有许多可谈的！敬请期待下周的 Schnorr 门限签名介绍！
 
 （完）
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/08/schnorr-applications-threshold-signatures/)*

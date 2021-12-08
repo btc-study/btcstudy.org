@@ -129,4 +129,4 @@ MuSig 协议的安全性证明在[这里](https://eprint.iacr.org/2018/068.pdf)�
 
 （完）
 
-
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/)*
