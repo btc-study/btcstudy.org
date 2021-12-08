@@ -32,7 +32,7 @@ tags:
 <a href="https://suredbits.com/the-taproot-upgrade/">Taproot Upgrade – Activating Schnorr</a>
 </details><br>
 
-门限签名是这样一类签名方案：n 个参与者共有一把密钥（就像 [MuSig](https://suredbits.com/schnorr-applications-musig/) 多签名方案），但只需其中任意 t 个参与者合作，即可为这个共有密钥生成有效的签名。我们把这样的方案就做 t-n 签名方案（在比特币的世界里面大家也经常使用 m-n 的表述）。大多数比特币爱好者都知道这个概念和属于，因为比特币有一个内置的门限签名方案，就是脚本编程语言中的 OP_CHECKMULTISIGNATURE 操作码。
+门限签名是这样一类签名方案：n 个参与者共有一把密钥（就像 [MuSig](https://suredbits.com/schnorr-applications-musig/) 多签名方案），但只需其中任意 t 个参与者合作，即可为这个共有密钥生成有效的签名。我们把这样的方案叫做 t-n 签名方案（在比特币的世界里面大家也经常使用 m-n 的表述）。大多数比特币爱好者都知道这个概念和属于，因为比特币有一个内置的门限签名方案，就是脚本编程语言中的 OP_CHECKMULTISIGNATURE 操作码。
 
 但是，这个操作码会把所有参与者的公钥和阈值要求都在链上公开，那么，像往常一样，我们希望把我们合约的所有细节都隐藏起来，在链上只公开一个公钥和签名。并且，结果跟普通的单公钥支付越像越好。
 
