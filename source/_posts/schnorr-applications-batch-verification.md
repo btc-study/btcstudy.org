@@ -52,7 +52,7 @@ mathjax: true
 
 给定有 n 个公钥、消息和签名元组 (P<sub>i</sub> , m<sub>i</sub> , (R<sub>i</sub> , s<sub>i</sub>))，验证者生成 n 个随机数 a<sub>1</sub>, ... , a<sub>n</sub> ，来计算 n 个挑战哈希值 e<sub>i</sub> = H(P<sub>i</sub> , R<sub>i</sub> , m<sub>i</sub>) ，然后检查：
 
-$$(a_1s_1 + a_2s_2 + … + a_ns_n) * G ?=  a_1* R_1 + a_2 * R_2 + … + a_n * R_n + (a_1e_1) * P_1 + (a_2e_2) * P2 + … + (a_ne_n)* P_n$$
+$$(a_1s_1 + a_2s_2 + … + a_ns_n) * G ?=  a_1* R_1 + a_2 * R_2 + … + a_n * R_n + (a_1e_1) * P_1 + (a_2e_2) * P_2 + … + (a_ne_n)* P_n$$
 
 注意，这就是把所有的验证等式（$s_i * G ?= R_i + e_i * P_i$ ）在等号两端乘以相应的 a<sub>i</sub> ，再加总起来。因此，如果所有的签名都是有效的，那上面这个等式也避开成立。不过，注意，如果我们不生成随机数  a<sub>1</sub>, ... , a<sub>n</sub> ，直接把所有的验证等式都加起来，那是有可能包含了许多无效的签名，但批量验证检查不出来的。
 
