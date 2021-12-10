@@ -1,5 +1,5 @@
 ---
-title: '点时间锁合约简介，Part-1：取代 HTLC'
+title: '点支付合约简介，Part-1：取代 HTLC'
 author: 'Nadav Kohen '
 date: '2021/10/27 00:54:05'
 cover: '../images/payment-points-part-1-replacing-HTLC/for-title.jpg'
@@ -65,3 +65,7 @@ HTLC 能够工作，也成功让闪电网络的路由支付变成原子化的（
 1. [Anonymous Multi-Hop Locks](https://eprint.iacr.org/2018/472.pdf)
 2. [Adaptor and Partial Signatures](https://github.com/ElementsProject/scriptless-scripts/blob/master/md/multi-hop-locks.md#notation)
 3. [Payment Points with Schnorr](https://lists.launchpad.net/mimblewimble/msg00086.html)
+
+
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/10/payment-points-part-2-stuckless-payments/)*
