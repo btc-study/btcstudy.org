@@ -15,7 +15,12 @@ tags:
 > 
 > *来源：<https://suredbits.com/payment-points-part-1/>*
 
-
+<details><summary><strong>点时间锁合约系列</strong></summary>
+<a href="https://suredbits.com/payment-points-part-1/">Payment Points Part 1: Replacing HTLCs</a><br>
+<a href="https://suredbits.com/payment-points-part-2-stuckless-payments/">Payment Points Part 2: “Stuckless” Payments</a><br>
+<a href="https://suredbits.com/payment-points-part-3-escrow-contracts/">Payment Points Part 3: Escrow Contracts</a><br>
+<a href="https://suredbits.com/payment-points-part-4-selling-signatures/">Payment Points Part 4: Selling Signatures</a>
+</details><br>
 
 在闪电网络 v1.0 中，路由交易是由哈希时间锁合约（Hashed Timelock Contracts，HTLC）来实现的。这种合约的含义是有条件支付：如果 Bob 能揭示某个哈希值的原像，Alice 就会给他支付一笔比特币。否则，Alice 会在一段时间后拿回自己的比特币。
 
