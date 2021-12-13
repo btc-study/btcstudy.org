@@ -2,10 +2,11 @@
 title: 'Schnorr 签名系列：Schnorr 盲签名'
 author: 'Nadav Kohen'
 date: '2021/12/13 14:10:13'
-cover: ''
+cover: '../images/schnorr-applications-blind-signatures/bitsmap.png'
 excerpt: '除了必要的信息、对其它信息一无所知的服务器'
-categories:
 tags:
+- 密码学
+mathjax: true
 ---
 
 
