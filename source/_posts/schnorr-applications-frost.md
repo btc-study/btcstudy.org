@@ -110,3 +110,5 @@ $$z = z_1 + ... + z_t$$
 好了，我们对 Schnorr 门限签名的讨论就结束了。敬请期待未来关于 Schnorr 盲签名和 Taproot 的篇章。
 
 （完）
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/13/schnorr-applications-blind-signatures/)*

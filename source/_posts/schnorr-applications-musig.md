@@ -33,7 +33,8 @@ mathjax: true
 <a href="https://suredbits.com/schnorr-applications-frost/">Flexible Round-Optimized Schnorr Threshold – FROST</a><br>
 <a href="https://suredbits.com/schnorr-applications-blind-signatures/">Schnorr Blind Signatures</a><br>
 <a href="https://suredbits.com/the-taproot-upgrade/">Taproot Upgrade – Activating Schnorr</a>
-</details>
+</details><br>
+
 
 ## 什么是多签名（Multi-Signature）？
 
