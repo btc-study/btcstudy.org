@@ -1,5 +1,5 @@
 ---
-title: '理解比特币的隐私性，Part-1'
+title: ''OXT 研究：理解比特币的隐私性，Part-1'
 author: 'Samourai Wallet'
 date: '2021/11/13 16:49:38'
 cover: '../images/understanding-bitcoin-privacy-with-oxt-part-1/nJBCr9Q.png'
@@ -280,3 +280,5 @@ tags:
 3. 现有的隐私技术如何缓解本系列教程介绍的隐私问题
 
 （完）
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/15/understanding-bitcoin-privacy-with-oxt-part-2/)*
