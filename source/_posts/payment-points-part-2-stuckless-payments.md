@@ -19,7 +19,7 @@ tags:
 
 在我们的[上一篇文章](https://suredbits.com/payment-points-part-1/)中，我们讲到了，使用原像和哈希值来做闪电网络的原子化支付，可能导致路由支付的关联曝光以及遭遇虫洞攻击。我们也讨论了，使用标量和点来替代原像和哈希值，可以隐去支付之间的关联，并解决哈希支付面临的问题。在本文中，我们将讨论基于点支付，闪电网络上可以出现的一些新功能！
 
-<details><summary><strong>点时间锁合约系列</strong></summary>
+<details><summary><strong>点支付合约系列</strong></summary>
 <a href="https://suredbits.com/payment-points-part-1/">Payment Points Part 1: Replacing HTLCs</a><br>
 <a href="https://suredbits.com/payment-points-part-2-stuckless-payments/">Payment Points Part 2: “Stuckless” Payments</a><br>
 <a href="https://suredbits.com/payment-points-part-3-escrow-contracts/">Payment Points Part 3: Escrow Contracts</a><br>
@@ -47,3 +47,6 @@ Alice 不仅可以重新尝试以新路径给 Carol 支付，她甚至可以并�
 
 这种 “无滞” 支付提议是许多依赖于点支付方案的闪电网络提议之一。在我的下一篇文章中，我们会继续这个系统，讲解另一个应用：闪电网络上的托管合约！
 
+（完）
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/16/payment-points-part-3-escrow-contracts/)*

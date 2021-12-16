@@ -15,7 +15,7 @@ tags:
 > 
 > *来源：<https://suredbits.com/payment-points-part-1/>*
 
-<details><summary><strong>点时间锁合约系列</strong></summary>
+<details><summary><strong>点支付合约系列</strong></summary>
 <a href="https://suredbits.com/payment-points-part-1/">Payment Points Part 1: Replacing HTLCs</a><br>
 <a href="https://suredbits.com/payment-points-part-2-stuckless-payments/">Payment Points Part 2: “Stuckless” Payments</a><br>
 <a href="https://suredbits.com/payment-points-part-3-escrow-contracts/">Payment Points Part 3: Escrow Contracts</a><br>
