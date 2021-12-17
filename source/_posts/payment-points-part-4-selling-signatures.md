@@ -29,6 +29,7 @@ tags:
 <a href="https://suredbits.com/payment-points-part-3-escrow-contracts/">Payment Points Part 3: Escrow Contracts</a><br>
 <a href="https://suredbits.com/payment-points-part-4-selling-signatures/">Payment Points Part 4: Selling Signatures</a>
 </details><br>
+
 我们[之前](https://suredbits.com/paid-apis/)已经提到，在闪电网络上，只需对卖方最基本的信任即可购买数据，即保证数据送达和支付是同步完成的。但不管怎么说，它还是需要信任卖方，因为虽然用户需要且只需要 支付就可以收到数据，但没法提前验证自己收到的就是自己想要的数据。这对于许多应用（比如给信息断言机（oracle）支付）是可以接受的。但如何能在更有敌意的环境下购买数据呢？
 
 这就是支付点合约发挥用处的地方了。因为椭圆曲线上的一个点揭示了其标量的一些信息，我们就能够作一些验证。这在哈希函数上是不可能的 —— 它只会摧毁所有信息。
@@ -43,6 +44,6 @@ Jonas Nick [深入讨论](https://youtu.be/XORDEX-RrAI?t=26552)了这种签名�
 
 如果闪电网络可以迁移到支付点模式，Alice 就可以跟 Bob 缔结 DLOC，然后她可以通过购买 Bob 的签名来执行花费充值交易的交易。如此一来，只有她能执行这些交易（因为 Bob 无法生成 Alice 的签名），或者她可以选择不执行，这样超时之后，Alice 和 Bob 就能拿回自己的资金（除了 Alice 支付给 Bob 的期权费）。因此，使用支付点合约的闪电网络将支持点对点的期权合约。
 
-我们的支付点合约系列到这里的结束了。我们讲解了闪电网络如何因为使用[哈希支付合约](https://suredbits.com/payment-points-part-1/)而受困于支付关联暴露和虫洞攻击。我们展示了支付点合约如何解决这些问题，还展示了基于支付点合约的闪电网络如何支持 “[无滞支付](https://suredbits.com/payment-points-part-2-stuckless-payments/)”、[托管合约](https://suredbits.com/payment-points-part-3-escrow-contracts/)和签名销售。虽然支付点合约在当前的 Lightning v1.1 上还未实现，我有信息，我们会在 taproot 相关的 BIP 在 bitcoin-core 软件中实现以后，迁移到这张客观上更优的路由解决方案上。
+我们的支付点合约系列到这里的结束了。我们讲解了闪电网络如何因为使用[哈希支付合约](https://suredbits.com/payment-points-part-1/)而受困于支付关联暴露和虫洞攻击。我们展示了支付点合约如何解决这些问题，还展示了基于支付点合约的闪电网络如何支持 “[无滞支付](https://suredbits.com/payment-points-part-2-stuckless-payments/)”、[托管合约](https://suredbits.com/payment-points-part-3-escrow-contracts/)和签名销售。虽然支付点合约在当前的 Lightning v1.1 上还未实现，我有信心，我们会在 taproot 相关的 BIP 在 bitcoin-core 软件中实现以后，迁移到这种客观上更优的路由解决方案上。
 
 （完）

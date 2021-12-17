@@ -40,7 +40,7 @@ tags:
 
 Alice 和 Bob 各自生成密钥对 (a，A = a * G) 和 (b, B = b * G)，而 Erin 的公钥 E = e * G。Alice 可以计算出一个[秘密值](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)，这个秘密值只有她知道，但如果 Erin 知道 A 的值，也可以揭开。我们把这个秘密值记为 ae = hash(a * E) = hash(e * A)。而 AE = ae * G 就是这个 Alice 和 Erin 共享秘密值相关的椭圆曲线点；令 B' = B + AE，即 Alice 给 Bob 的合约的支付点，所以支付证明就是 b+ae。
 
-如果 Alice 对 Bob 提供的服务满意，她可以直接告诉他 ae 的值；有了这个值，Bob 就可以让 Alice 的支付生效。如果情形相反，Bob 没有履行服务，支付就会超时，他就得不到支付。  23
+如果 Alice 对 Bob 提供的服务满意，她可以直接告诉他 ae 的值；有了这个值，Bob 就可以让 Alice 的支付生效。如果情形相反，Bob 没有履行服务，支付就会超时，他就得不到支付。  
 
 现在考虑其中一方作恶的情形。假设 Alice 享受了服务却不愿意支付，那 Bob 就可以拿着 A 去找 Erin，Erin 可以计算出 ae。如果 Erin 判定  Bob 履行了服务，她可以跟 Bob 分享 ae，从而 Bob 就可以完成支付。如果情形反过来了，是 Bob 没有提供服务却想拿走 Alice 的钱，那 Erin 就不会给 Bob 秘密值，Bob 也是自讨没趣。
 
