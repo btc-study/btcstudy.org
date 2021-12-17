@@ -51,3 +51,5 @@ Alice 和 Bob 各自生成密钥对 (a，A = a * G) 和 (b, B = b * G)，而 Eri
 下一篇文章我们会继续深入点支付合约的世界，看看签名如何能在闪电网络中免信任地销售。
 
 （完）
+
+> *[后篇中文译本](https://www.btcstudy.org/2021/12/17/payment-points-part-4-selling-signatures/)*
