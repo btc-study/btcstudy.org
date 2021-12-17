@@ -2,7 +2,7 @@
 title: '点支付合约简介，Part-4：签名销售'
 author: 'Nadav Kohen'
 date: '2021/12/17 15:09:48'
-cover: ''
+cover: '../images/payment-points-part-4-selling-signatures/200X675.jpg'
 excerpt: '免信任的签名销售'
 categories:
 - 闪电网络
