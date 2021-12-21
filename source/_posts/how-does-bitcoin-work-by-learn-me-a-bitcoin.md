@@ -20,7 +20,7 @@ tags:
 
 比特币是一个**创始于 2009 年的电子支付系统**。使用它，你可以跟任何人互相支付，而且不需要任何权威机构给你们登记账户，也不需要权威机构来处理你们的支付。
 
-创造它的初衷是解决现代金融体系种的问题：少数几个大银行控制着账户登记和支付处理。这种模式 *将货币的控制集权化*，并强迫用户信任银行来安排自己的生活。
+创造它的初衷是解决现代金融体系的问题：少数几个大银行控制着账户登记和支付处理。这种模式 *将货币的控制集权化*，并强迫用户信任银行来安排自己的生活。
 
 > 我们必须信任银行会好好保管我们的钱并协助转账，但事实是他们只保管了一部分准备金就大肆放贷、掀起信贷泡沫。
 >
@@ -66,13 +66,13 @@ tags:
 
 谁来 *决定* 哪笔交易 “在先发生” 并且只有它应该写入文件呢？
 
-比特币解决这个问题靠的是强迫所有节点把自己收到的所有交易都保存在 *[内存](https://learnmeabitcoin.com/technical/memory-pool)* 中，而不是立即写入文件。10 分钟的间隔过后，网络中 *一个随机的节点* 会把内存中的交易加入文件
+比特币解决这个问题靠的是强迫所有节点把自己收到的所有交易都保存在 *[内存](https://learnmeabitcoin.com/technical/memory-pool)* 中，而不是立即写入文件。10 分钟的间隔过后，网络中 *一个随机的节点* 会把内存中的交易加入文件。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_mining.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/mining.png)
 
 然后，这个更新后的文件就会在网络中分享，所有节点都会把这个更新中的交易当成 “有效的”，在本地的内存中一处任何与之冲突的交易。因此，相互冲突（多重支付）的交易不可能写入文件中，而所有节点也在更新文件上与其它节点达成了一致。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_solved.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/solved.png)
 
 这个（由某个节点）给共享文件添加交易的过程叫做 “[挖矿](https://learnmeabitcoin.com/mining)”，它是在整个网络范围内进行的 *竞争*，所以也无法被单个节点控制。
 
@@ -104,7 +104,7 @@ tags:
 
 为了激励人们使用计算力来为区块链添加新的区块，每个新区块都会产生一定数量的新比特币（没错，就是无中生有）。因此，如果你成功挖出了一个区块，你就可以给自己 “发送” 一些新的比特币作为奖励。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_reward.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/reward.png)
 
 这些增发的比特币叫做 “**区块奖励**”，这也是为什么这个过程叫做 “挖矿”。
 
@@ -138,7 +138,7 @@ tags:
 
 举个例子，我想给你发一些比特币，我会从区块链里挑出一些我可以解锁的输出（保险箱）、使用它们创建一个 *只有你* 可以解锁的输出。同样地，如果我不想把解锁的所有比特币都发给你，我可以创建一个额外的输出作为 “找零”、加上我自己的锁。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_change.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/change.png)
 
 日后，如果你想把比特币发给其他人，你就重复上面这个过程：选出（你可以解锁）的输出、以此创建新的输出。因此，比特币的交易会形成一张图（如下图），各交易的前身后世联系起来就是比特币的流转情形。
 
@@ -154,7 +154,7 @@ tags:
 
 举个例子，如果我想给你发送一些比特币，你需要先给我你的**公钥**。我创建交易时，我会把你的公钥放到输出（保险箱）的锁上。当你想使用这些比特币时，你就使用自己的**私钥**来解锁这个输出。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_1_keys.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/keys.png)
 
 那我怎么获得一个公钥和私钥呢？嗯，你可以借助**密码学**，自己生成一个，不必假手他人。
 
@@ -184,7 +184,7 @@ tags:
 
 最后，挖矿区块的矿工可以在区块中安排一笔[特殊的交易](https://learnmeabitcoin.com/technical/coinbase-transaction)，增发一定数量的比特币给自己作为奖励。这种**区块奖励**正是节点持续构建区块链的激励机制，同时也是向比特币网络分发新币的机制。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_system.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/system.png)
 
 ## 结论
 
@@ -192,7 +192,7 @@ tags:
 
 自 2009 年 1 月启动一来，比特币（几乎）不间断地在运行。在 2019 年，比特币网络处理了超过 **1.12 亿笔交易**，转移了总计 **15,577,763,114,629.34**（15.58 万亿）美元的价值 <sup>2</sup>。
 
-比特币程序也一直在活跃开发，自其第一版发布一来，超过 **600** 个人为之贡献过代码。这是因为这种软件是 “开源” 的，也就是任何人都能审核其代码并为止贡献。
+比特币程序也一直在活跃开发，自其第一版发布一来，超过 **600** 个人为之贡献过代码。这是因为这种软件是 “开源” 的，也就是任何人都能审核其代码并为之贡献。
 
 https://bitcoin.org/bitcoin.pdf（比特币白皮书）
 
@@ -232,7 +232,7 @@ https://github.com/bitcoin/bitcoin/（Bitcoin Core 源代码）
 
 因为我希望更多人也像我一样理解比特币是怎么运行的。
 
-比特币让你可以向任何人转移价值，我认为它由重要意义。如果你知道了比特币的原理，你可以创建自己的软件，让世界有所不同。
+比特币让你可以向任何人转移价值，我认为它有重要意义。如果你知道了比特币的原理，你可以创建自己的软件，让世界有所不同。
 
 ### 脚注
 
