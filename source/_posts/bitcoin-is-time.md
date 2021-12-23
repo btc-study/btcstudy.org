@@ -13,8 +13,12 @@ tags:
 
 
 > *作者：Gigi*
-> 
+>
 > *来源：<https://www.swanbitcoin.com/bitcoin-is-time/>*
+>
+> *原文使用 [CC BY-SA 4.0 许可](https://creativecommons.org/licenses/by-sa/4.0/)，只要保持原作者署名并以同样的许可发布成品，即可自由分享和改编。本译本也采用同样的许可。*
+>
+> *This work is published with [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/).*
 
 ---
 
