@@ -6,7 +6,7 @@ cover: '../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/bitcoin.png'
 excerpt: '使用它，你可以跟任何人互相支付，而且不需要任何权威机构给你们登记账户，也不需要权威机构来处理你们的支付'
 tags:
 - 比特币
-- 入门
+- 入门系列
 ---
 
 

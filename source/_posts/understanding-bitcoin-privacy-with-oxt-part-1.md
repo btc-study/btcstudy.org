@@ -1,5 +1,5 @@
 ---
-title: ''OXT 研究：理解比特币的隐私性，Part-1'
+title: 'OXT 研究：理解比特币的隐私性，Part-1'
 author: 'Samourai Wallet'
 date: '2021/11/13 16:49:38'
 cover: '../images/understanding-bitcoin-privacy-with-oxt-part-1/nJBCr9Q.png'
