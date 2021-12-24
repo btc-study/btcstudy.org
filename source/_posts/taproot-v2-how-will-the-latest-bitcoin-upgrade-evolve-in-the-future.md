@@ -23,7 +23,7 @@ Taproot 升级已经于 11 月 14 日（[区块号 709632](https://btc1.trezor.i
 
 ## SegWit 的版本
 
-SegWit（隔离见证）于 2017 年在比特币上实现时，它也带来了一个版本系统：第一版的隔离见证版本号被安排成 v0，后续的版本则使用递推的版本后。引入版本系统的理由是它在未来可以更平滑地引入新的操作码，并与现有的验证规则保持平行。
+SegWit（隔离见证）于 2017 年在比特币上实现时，它也带来了一个版本系统：第一版的隔离见证版本号被安排成 v0，后续的版本则使用递推的版本号。引入版本系统的理由是它在未来可以更平滑地引入新的操作码，并与现有的验证规则保持平行。
 
 实际上，[Taproot 的正式提案](https://github.com/bitcoin/bips/blob/master/bip-0341.mediawiki)叫做 *SegWit version 1 花费规则*，因为这就是它的实质：原始的 SegWit 的进一步延伸。以这种方式实现比特币协议的升级，保证了**最低的故障率**，因为比特币节点已经熟悉了 SegWit 类型交易的特性。Taproot 升级以这种方式平滑发布的经历，证明了比特币可以用这种方式升级而不陷入任何的争用和崩溃，对未来的升级有非常好的示范作用。
 
@@ -39,7 +39,7 @@ SegWit（隔离见证）于 2017 年在比特币上实现时，它也带来了�
 - 多签名交易、闪电网络的开启和关闭交易，可以变得跟普通的支付无法区分；
 - 在硬件钱包交易的签名和广播速度上的提升，让 CoinJoin 功能在硬件钱包中的实现也变得可行；
 - 消除了潜在的[手续费利用漏洞](https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-1-and-trezor-model-t-version-2-3-1-1eba8f60f2dd)；
-- 有了 Tapscript，为比特币引入新的操作码会别的更加直接。
+- 有了 Tapscript，为比特币引入新的操作码会变的更加直接。
 
 ## CISA：所有比特币，一律平等
 
@@ -83,13 +83,13 @@ Graftroot 的想法已经被推广成了 [广义 Taproot](https://lists.linuxfou
 
 ## SIGHASH_ANYPREVOUT：提升闪电网络
 
-每一笔比特币都有一个签名哈希值标签（SIGHASH），定义了一个签名签的是交易的哪个部分，那一部分因此也就变成了不能改动的（因为改动该部分会导致此前形成的签名失效）。默认的标签是 SIGHASH_ALL，表示签名的是**整个交易的所有部分**，因此没有意思的调整空间。但在有些应用场景下，**如果能改动交易的特定元素而不使签名失效，那是非常有用的**。
+每一笔比特币都有一个签名哈希值标签（SIGHASH），定义了一个签名签的是交易的哪个部分，那一部分因此也就变成了不能改动的（因为改动该部分会导致此前形成的签名失效）。默认的标签是 SIGHASH_ALL，表示签名的是**整个交易的所有部分**，因此没有一丝的调整空间。但在有些应用场景下，**如果能改动交易的特定元素而不使签名失效，那是非常有用的**。
 
 其中一个应用场景就是 Eltoo，是一个闪电网络通道状态更新机制的提案。Eltoo [在 2018 年提出](https://blog.blockstream.com/en-eltoo-next-lightning/)，优化了当前基于惩罚的通道状态更新机制。基于惩罚的更新机制的问题在于，失手将旧的通道状态广播出去（例如在宕机重启之后）也会导致资金完全损失，即使一开始并没有恶意。它会给用户带来许多挫折，以及造成广泛采用的障碍。
 
 Eltoo **免去了对惩罚措施的需要，同时仍能保护用户**免受恶意行为的攻击。但 Eltoo 需要实现一种新的 sighash 叫做 “**SIGHASH_ANYPREVOUT**” 作为垫脚石，因为它允许用户签名交易时无需承诺具体的交易输入（想了解更详细的解释，请听最近的一期 [Bitcoin Explained](https://bitcoinmagazine.com/technical/how-sighash-anyprevout-and-eltoo-could-improve-the-lightning-network) 播客）。
 
-SIGHASH_ANYPREVOUT 的实现已经在 2017 年以 [BIP118](https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki) 的形式正式提出，而且非常有可能作为 Taproot 的寻常比迭代而被激活。
+SIGHASH_ANYPREVOUT 的实现已经在 2017 年以 [BIP118](https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki) 的形式正式提出，而且非常有可能作为 Taproot 的下一次迭代而被激活。
 
 ## 总结
 
@@ -97,6 +97,6 @@ SIGHASH_ANYPREVOUT 的实现已经在 2017 年以 [BIP118](https://github.com/bi
 
 最近我们在一个 Twitter 空间里面跟来自 Braiins 和 Slush Pool 的专家们深入讨论了 Taproot —— 快来收听[完整版](https://youtu.be/h4892g7jpz8)！
 
-现在还没法断定上面提到的哪些提议会进入比特币协议、什么时候会激活，但有一件事情是确定的：**只有能够大幅提成网络的提议** —— 而且不牺牲去中心化和用户主权的关键属性 —— 才能经过严格额同行评议过程。而且，虽然比特币生态里面的某些公司接受起这些升级会比较慢，[Trezor](https://trezor.io/?utm_source=Medium.com&utm_medium=referral&utm_campaign=2021-12_Taproot%20v2&utm_content=link) 在 Taproot 的实现上一直走在前沿。都是为了用户。
+现在还没法断定上面提到的哪些提议会进入比特币协议、什么时候会激活，但有一件事情是确定的：**只有能够大幅提升网络的提议** —— 而且不牺牲去中心化和用户主权的关键属性 —— 才能经过严格额同行评议过程。而且，虽然比特币生态里面的某些公司接受起这些升级会比较慢，[Trezor](https://trezor.io/?utm_source=Medium.com&utm_medium=referral&utm_campaign=2021-12_Taproot%20v2&utm_content=link) 在 Taproot 的实现上一直走在前沿。都是为了用户。
 
 （完）
