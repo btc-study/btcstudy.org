@@ -19,7 +19,7 @@ tags:
 >
 > *This work is published with [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/).*
 
-
+---
 
 
 > “不必担心人们剽窃你的点子。如果你的想法是全新的，迟早你要强迫他们接受。” —— Hoard H. Aiken
