@@ -1,6 +1,6 @@
 ---
 title: '比特币的学术谱系'
-author: 'Arvind Narayanan & Jeremy Clark'
+author: 'Arvind Narayanan'
 date: '2021/12/16 16:57:19'
 cover: '../images/bitcoins-academic-pedigree-modified-edition/2d2979e.png'
 excerpt: '通过对比特币概念的溯源，我们可以专注于中本聪在洞察力上的真正飞跃'
@@ -19,7 +19,7 @@ tags:
 
 为反对上述观点，本文特别列出了图 1，显示比特币用到的所有技术几乎都源自 20 世纪 80 和 90 年代。笔者并非有意贬低中本聪的贡献，而是要指出他也站在巨人的肩膀上。通过对比特币概念的溯源，我们可以专注于中本聪在洞察力上的真正飞跃 —— 他是如何通过某种准确且复杂的方式将这些技术结合起来的。这有助于解释为什么比特币这么晚才诞生。已经熟悉了比特币运作原理的读者或许能从这些历史回顾中获得更深刻的理解。（请参见 Arvind Narayanan 等人所著的 *Bitcoin and Cryptocurrency Technologies* 作为入门读物<sup>36</sup>。）比特币的学术史作为一项案例，也展示了学术界人士、外部研究人员和相关从业人士之间的关系、教育了我们三方可以如何互相受益。
 
-![](../images/bitcoins-academic-pedigree-modified-edition/2d2979e.png)     
+![](../images/bitcoins-academic-pedigree-modified-edition/2d2979e.png) 
 
 ## 账本
 
@@ -41,13 +41,13 @@ tags:
 
 比特币本质上使用的是 Haber 和 Stornetta 于 1991 和 1997 的论文中撰写的数据结构，其简化形式如图 2 所示 （中本聪当时可能不知道 Benaloh 和 de Mare 的研究成果）。当然，比特币把文件换成了事务（transaction，在比特币语境中也即 “交易”，译者注）。在每个区块（实质即上文所说的数据块）的默克尔树中，叶节点都是交易，且每个内部节点都包含两个指针。这种数据结构有两大重要属性。第一，最新区块的哈希值可充当摘要。对任意交易（叶节点）的改变都必然将变化传导至交易所在区块的根节点，以及后续区块的根节点。因此，如果你知道了最新区块的哈希值，就可以从你并不信任的数据源下载剩余账本，并验证它是否有过变化。一个相似的论证确立了数据结构的另一大重要属性 —— 任何人都可以高效地向你证明某个交易是否包含在账本中。这个用户只需向你发送关于这个交易所在区块的默克尔树的少量节点（这就是默克尔树的意义），以及后续每个区块所需的少量信息。性能和可扩展性的提高非常需要高效证明交易是否包含在区块内的能力。
 
-![](../images/bitcoins-academic-pedigree-modified-edition/20a9fab.png)      
+![](../images/bitcoins-academic-pedigree-modified-edition/20a9fab.png) 
 
 顺便一提，默克尔树是以非对称密码学先锋 Ralph Merkle 命名的，他在 1980 年的论文中提出了这一想法 <sup>33</sup>。 他当初预期的应用是为公开的数字证书目录生成一个摘要。 例如，如果一个网站向你出示证书，它还会出示一个简短的证明，证明这个证书确实存在于全球目录。只要你知道目录中证书的默克尔树的根哈希值，你就可以高效地验证这个证明。按照密码学领域的标准来看，这个想法已经算不上新颖了，不过它的力量直至最近才得到重视。它处于近期实现的证书透明化（Certificate Transparency）系统的核心 <sup>30</sup>。 一篇 2015 年的论文提出了 CONIKS ，将公钥目录的想法应用于端到端的加密邮件 <sup>32</sup>。 新型密码货币以太坊提供的主要账本功能之一就是高效地验证部分全球状态。
 
 比特币可能是 Haber 和 Stornetta 提出的数据结构在现实世界中最著名的实例，不过不是第一例。至少有两家公司提供文件时间戳服务 —— Surety 始于 20 世纪 90 年代中期，而 Guardtime 始于 2007 年。这两种服务发生了有趣的转变，因为 Bayer、Haber 和 Stornetta <sup>5</sup> 提出了一个想法，即腾出报纸上的一个广告位定期发布默克尔根。图 3 显示了 Guardtime 在报纸上发布的默克尔根。
 
-![](../images/bitcoins-academic-pedigree-modified-edition/6aa3f93.png)    
+![](../images/bitcoins-academic-pedigree-modified-edition/6aa3f93.png) 
 
 ## 拜占庭容错
 

@@ -36,8 +36,6 @@ DLC 让两方可以使用比特币区块链和信息断言机（oracle）来建�
 
 ![img](../images/scaling-dlc-discreet-log-contracts-channels-and-integration-in-the-lightning-network/OyKSlg.png)
 
-
-
 <p style="text-align:center">- 图 2. 连续的 DLC 合约 -</p>
 
 所以，如果有一种办法能让双方拥有一个通道，只要通道内的余额还允许，双方就可以保持已建立的合约，那可谓皆大欢喜。如图 3 所示：
