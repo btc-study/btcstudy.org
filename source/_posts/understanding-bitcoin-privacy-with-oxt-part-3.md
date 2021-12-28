@@ -96,7 +96,7 @@ OXT 的交易图使用不同的线宽来表现 UTXO 和交易量的相对大小�
 
 有多个输入和输出的交易本身就可以创建一个复杂的交易图。如果不借助特殊的工具或经过特别的考量，这类交易解释起来绝非易事。
 
-﻿![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/XS0KvPw.png)
+![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/XS0KvPw.png)
 
 <p style="text-align:center">- 图 3.5 拥有多个输入和输出的交易示例（<a href="https://oxt.me/transaction/c7d1e40ae001a7fe4c860f9b7ddddcf9b5a3dad461466744e9b5e28c4b47e6b7">TxID</a>） -</p>
 
@@ -118,7 +118,7 @@ CoinJoin 数独所涉及的数学概念不在本文的讨论范围内。此处�
 
 你也可以在 OXT 交易图（见图 3.3）中选择输入和输出来查看被选中的 UTXO 的 LPM。根据 Boltzmann 算法计算出的完整 LPM 可以在 [kycp.org](http://kycp.org/) 上查看。
 
-![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/_MlQOZA.png)
+![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/MlQOZA.png)
 
 <p style="text-align:center">- 图 3.7 KYCP UTXO 流和 LPM（<a href="https://kycp.org/#/aed291496b2e3fed785881a8600a0fa58dfbc706e3f9ac1f9052839b596c175a">TxID</a>） -</p>
 
@@ -130,7 +130,7 @@ CoinJoin 数独所涉及的数学概念不在本文的讨论范围内。此处�
 
 为避免出现这种情况，分析师可以对有可能是 CoinJoin 交易的交易采用等输出额启发法。但是，并非所有等输出额的交易都是 CoinJoin 交易。如果一个拥有多个等额输出的交易构造过于简单，其内部输入和**等额输出**之间可能依然存在确定性关系，从而证明这个交易**不是** CoinJoin 交易。
 
-﻿![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/qqZW_Sw.png)
+![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/qqZW_Sw.png)
 
 <p style="text-align:center">- 图 3.8 存在确定性关联的等输出额交易（<a href="https://kycp.org/#/a9b5563592099bf6ed68e7696eeac05c8cb514e21490643e0b7a9b72dac90b07">TxID</a>） -</p>
 有了 Boltzmann，分析师可以真正评估交易的 CoinJoin 属性，而非错误地对交易进行聚类分析或简单地将等输出额的交易排除在外。
@@ -143,9 +143,10 @@ Boltzmann 本质上是利用子集总和分析来追问这样一个问题：*交
 
 带有熵的交易不仅具备 CoinJoin 属性，而且丧失了确定性关联。CoinJoin 属性可证明一个交易的输入来自多名用户。谨慎起见，带有熵的交易的输入不应该通过 CIOH 进行聚合分析。 
 
-﻿![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/UWrQrgA.png)
+![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/UWrQrgA.png)
 
 <p style="text-align:center">- 图 3.9 KYCP 对一个来自 DarkWallet 的 CoinJoin 交易的评估（<a href="https://kycp.org/#/8e56317360a548e8ef28ec475878ef70d1371bee3526c017ac22ad61ae5740b8">TxID</a>） -</p>
+
 ### KYCP 交易解释
 
 KYCP 包含大量交易信息，包括跨交易的地址重用、确定性和概率性关联以及输入和输出合并。上图的示例交易是一个来自 DarkWallet 的 CoinJoin 交易。等额输出之间的确定性关联已经被打破，但是输入和 “找零输出” 之间的确定性关联依然存在。还要注意的是，上图中的输出 1 和 3 被发送（合并）到了同一个未来交易内。这说明相同的 用户/钱包 被混合到了一起。
@@ -157,13 +158,14 @@ KYCP 包含大量交易信息，包括跨交易的地址重用、确定性和概
 ![img](../images/understanding-bitcoin-privacy-with-oxt-part-3/XPYU4sg.png)
 
 <p style="text-align:center">- 图 3.10 Whirlpool 的 CoinJoin 交易图（<a href="https://kycp.org/#/323df21f0b0756f98336437aa3d2fb87e02b59f1946b714a7b09df04d429dec2">TxID</a>） -</p>
+
 碰到等输出额的 CoinJoin 交易时，分析师知道该交易使用了隐私技术，但是无法可靠地解释该交易。如此看来，等输出额的 CoinJoin 交易就类似于**加密**。这就好比说加密消息的观察者明知一个消息存在（可以观察 CoinJoin 交易），但是无法破译该消息（可靠解释该交易的 UTXO 流）。
 
 另一类 CoinJoin 交易被称为 PayJoin、pay-to-end-point（P2EP）或（在 Samourai Wallet 中叫作）Stowaway。PayJoin 交易由付款用户和收款用户之间的合作交易组成。在区块链上，许多 PayJoin 交易并没有可识别的模式或适用的启发法。
 
 实际上，PayJoin 与用户花费多个 UTXO 的普通交易之间无法辨别。由于二者无法通过任何链上交易足迹进行区分，分析师可能会错误地将 CIOH 应用于 PayJoin 交易，并错误地假设每个输入都由同一个用户控制。
 
-如此看来，PayJoin 交易是一种**隐写术**。隐写术就是将秘密消息（﻿发生了 CoinJoin 交易）隐藏在看似正常的数据（花费多个输入的正常交易）内。由于 PayJoin 交易不会留下任何可分辨的链上足迹，分析师使用 CIOH 分析时通常会得出错误的钱包集群。
+如此看来，PayJoin 交易是一种**隐写术**。隐写术就是将秘密消息（发生了 CoinJoin 交易）隐藏在看似正常的数据（花费多个输入的正常交易）内。由于 PayJoin 交易不会留下任何可分辨的链上足迹，分析师使用 CIOH 分析时通常会得出错误的钱包集群。
 
 ## 其它技术方案 —— “破坏” 交易图 
 
@@ -186,9 +188,7 @@ PayJoin 交易也属于合作交易，涉及到创建交易的付款方和收款
 Part 4 讨论了：
 
 1. 需要 “起点” 的分析
-
-1. 发送和接收付款对隐私性产生的影响
-
-1. 现有的隐私性技术如何缓解本指南中讨论的很多问题
+2. 发送和接收付款对隐私性产生的影响
+3. 现有的隐私性技术如何缓解本指南中讨论的很多问题
 
 （完）
