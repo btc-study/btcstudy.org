@@ -9,6 +9,7 @@ categories:
 tags:
 - 比特币
 - PoW
+- Gigi
 ---
 
 

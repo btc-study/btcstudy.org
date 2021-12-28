@@ -6,6 +6,7 @@ cover: '../images/how-cryptography-redefines-private-property/7e040125799d4cf798
 excerpt: '私钥及其控制的比特币是事实上的私有财产，而非法律上的。'
 tags:
 - 密码学
+- Hugo-Nguyen
 ---
 
 > *作者：Hugo Nguyen*

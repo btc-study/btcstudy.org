@@ -6,6 +6,7 @@ cover: '../images/BITCOIN.png'
 excerpt: '这个“无法伪造的奢侈消耗”很可能就是支撑起比特币最最最重要的组成部分'
 tags:
 - PoW
+- Hugo-Nguyen
 ---
 
 > *作者：Hugo Nguyen*

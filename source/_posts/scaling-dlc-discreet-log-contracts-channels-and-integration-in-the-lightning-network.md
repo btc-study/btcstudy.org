@@ -7,7 +7,7 @@ excerpt: '在链下更新 DLC 的机制（我们称为 DLC 通道）以及将它
 categories:
 - 闪电网络
 tags:
-- Discreet Log Contract
+- Discreet-Log-Contract
 - 开发
 ---
 
