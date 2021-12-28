@@ -143,7 +143,7 @@ Bit Gold 和比特币论文之间的主题差异，是 Szabo 相对关注于无�
 
 2. 向创建了非常有用的 [Crypto Archives](https://github.com/multicoincapital/crypto-archives) 档案的 Multicoin Capital 和其他贡献者致敬。<a href="#jump-2">↩</a>
 
-3. 这是在我在白皮书只读了几十遍的时候从未注意道德。中本聪对隐私性有如下意见：“传统的银行模式是通过限制对信息的访问权限来实现一定程度的隐私性的。”<a href="#jump-3">↩</a>
+3. 这是在我在白皮书只读了几十遍的时候从未注意到的。中本聪对隐私性有如下意见：“传统的银行模式是通过限制对信息的访问权限来实现一定程度的隐私性的。”<a href="#jump-3">↩</a>
 
 4. 但是阅读 Szabo 令人愉悦，他的历史成果也值得一读，尤其是他自己推荐的三篇文章，分别论述了[对第三方的信任](https://nakamotoinstitute.org/trusted-third-parties/)（[中文译本](https://www.btcstudy.org/2021/09/10/trusted-third-parties/)）、[私人银行发行货币的历史](http://unenumerated.blogspot.com/2005/11/flying-money-brief-overview.html)、[贵金属和收藏品](https://nakamotoinstitute.org/shelling-out/)（[中文译本](https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/)）。<a href="#jump-4">↩</a>
 
