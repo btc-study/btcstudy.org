@@ -2,7 +2,8 @@
 menu:
   Home: /
   Archive: /archives
-  Tag: /tags
+  Maps: /maps
+  # Tag: /tags
   # About: /about
   # EthFans: https://ethfans.org/
   Mempool: /mempool
@@ -61,3 +62,5 @@ favicon: /favicon.ico
 mathjax:
   enable: true
   cdn: https://cdn.jsdelivr.net/npm/mathjax@2.7.8/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# processon: https://www.processon.com/embed/61cac8cc1e08534776ea0505
