@@ -14,6 +14,9 @@ post:
 page:
   one: 'Page'
   other: 'Pages'
+maps:
+  one: 'Tag'
+  other: 'Tags'
 prev: 'Previous'
 next: 'Next'
 
@@ -25,4 +28,3 @@ recent: 'Recent'
 read_more: 'Read more'
 user_name: 'User name'
 click_back_to_the_top: 'Click back to the top'
-
