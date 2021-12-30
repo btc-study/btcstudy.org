@@ -2,8 +2,8 @@
 menu:
   Home: /
   Archive: /archives
+  Tag: /tags
   Maps: /maps
-  # Tag: /tags
   # About: /about
   # EthFans: https://ethfans.org/
   Mempool: /mempool

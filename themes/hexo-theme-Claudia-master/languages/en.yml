@@ -15,8 +15,8 @@ page:
   one: 'Page'
   other: 'Pages'
 maps:
-  one: 'Tag'
-  other: 'Tags'
+  one: 'Map'
+  other: 'Map'
 prev: 'Previous'
 next: 'Next'
 
