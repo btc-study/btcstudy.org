@@ -15,8 +15,8 @@ page:
   one: '页面'
   other: '页面'
 maps:
-  one: '标签'
-  other: '标签'
+  one: '地图'
+  other: '地图'
 prev: '上一页'
 next: '下一页'
 
