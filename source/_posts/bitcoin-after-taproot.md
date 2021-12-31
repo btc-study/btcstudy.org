@@ -16,11 +16,11 @@ tags:
 >
 > *来源：<https://raymonddurk.medium.com/bitcoin-after-taproot-86c93fe5cc0c>*
 >
-> *原文撰写于 2021 年 12 月 15 日。*
+> *原文撰写于 2021 年 11 月 15 日。*
 
 
 
-Taproot 是比特币自 2017 年的 “隔离见证（SegWit）” 升级以来的最大升级，已经于昨天晚上激活。虽然从提出到激活花去了许多实践，但这次升级也为其它许多一直在并行开发的创新打开了空间。
+Taproot 是比特币自 2017 年的 “隔离见证（SegWit）” 升级以来的最大升级，已经于昨天晚上激活。虽然从提出到激活花去了许多时间，但这次升级也为其它许多一直在并行开发的创新打开了空间。
 
 ## Taproot
 
@@ -104,7 +104,7 @@ MuSig 是基于 Schnorr 签名的多签名协议族。我说这是一个家族�
 
 ### DLC
 
-有了 Taproot，谨慎日志合约（Discrete Log Contracts，DLC）可以更高效地实现。DLC 的大致含义是参与合约的双方对事件的结果打赌；可以用来对体育赛事打赌、创建奖金，等等。断言机发布对结果的签名。而双方可以用这个签名来执行合约并分割资金。现在 Suredbits 已经推出了[Krystal Bull](https://github.com/bitcoin-s/krystal-bull/releases) 帮你生成 DLC，可以在桌面点或者 Umbrel 节点中使用（演示视频见[此处](https://www.youtube.com/watch?v=Gac_swBvl3A)）。
+有了 Taproot，谨慎日志合约（Discrete Log Contracts，DLC）可以更高效地实现。DLC 的大致含义是参与合约的双方对事件的结果打赌；可以用来对体育赛事打赌、创建奖金，等等。断言机发布对结果的签名。而双方可以用这个签名来执行合约并分割资金。现在 Suredbits 已经推出了[Krystal Bull](https://github.com/bitcoin-s/krystal-bull/releases) 帮你生成 DLC，可以在桌面端或者 Umbrel 节点中使用（演示视频见[此处](https://www.youtube.com/watch?v=Gac_swBvl3A)）。
 
 ### BIP118: AnyPrevOut
 
@@ -126,7 +126,7 @@ OP_CHECKTEMPLATEVERIFY 是一个还在 BIP 阶段的提议，它提出了一个�
 
 ### TLUV 限制条款提议
 
-不过，AJ Towns 最近提出了一个与 BIP 119 [类似的想法](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-September/019420.html)，叫做  “OP_Tapleaf_Update_Verify”。它依赖于 Taproot 升级以及一种叫做 “[joinpool](https://gist.github.com/harding/a30864d0315a0cebd7de3732f5bd88f0)” 的应用场景。JoinPool 是许多人共享一个 UTXO，它造成了独特的隐私效果，并打破了更多链上监控的假设。它对比 OP_CTV 的主要优势在于，用户可以自己推出，无需来自池中其它每个人的签名，这使得这种池子更容易运行，并在签名交易时节约手续费。
+不过，AJ Towns 最近提出了一个与 BIP 119 [类似的想法](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2021-September/019420.html)，叫做  “OP_Tapleaf_Update_Verify”。它依赖于 Taproot 升级以及一种叫做 “[joinpool](https://gist.github.com/harding/a30864d0315a0cebd7de3732f5bd88f0)” 的应用场景。JoinPool 是许多人共享一个 UTXO，它造成了独特的隐私效果，并打破了更多链上监控的假设。它对比 OP_CTV 的主要优势在于，用户可以自己退出，无需来自池中其它每个人的签名，这使得这种池子更容易运行，并在签名交易时节约手续费。
 
 ## Taproot 之外的其它可能升级
 
