@@ -186,7 +186,7 @@ LND 在四月加入了对原子化多路径支付（ Atomic Multipath Payments�
 
 一种此前从未纳入 LN 协议的常用创建 LN 通道的方式在 7 月被[指定][0conf channels]为 LN 协议。零确认通道创建，也被称为*涡轮通道*，是一种新的单一资金通道，出资人将其部分或全部初始资金给接受者。这些资金在创建通道的事务收到足够数量的确认之前是不安全的，所以接受者运用标准的 LN 协议将这些资金中的一部分向出资人支付是没有任何风险的。例如，Alice 在 Bob 的托管交易所的一个账户里有几个 BTC。Alice 要求 Bob 创建一个新的通道，支付给她 1.0 BTC。因为 Bob 相信自己不会对他刚刚创建的通道进行双花，所以他可以允许 Alice 通过他的节点向第三方 Carol 发送 0.1 BTC，这甚至可以在创建通道的事务收到一次确认之前发生。指定行为应有助于提高 LN 节点和提供这种服务的商家之间的互操作性。
 
-![Zero-conf channel illustration](../images/bitcoin-optech-2021-year-in-reviewt/2021-07-zeroconf-channels-1641273122904.png)
+![Zero-conf channel illustration](../images/bitcoin-optech-2021-year-in-review/2021-07-zeroconf-channels.png)
 
 <p id="anyprevout"></p>
 
