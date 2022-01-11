@@ -136,7 +136,7 @@ TumbleBit 的想法跟 CoinJoin 完全不同。在传统的 Tumbler 模式中，
 
 *坦白说，我写下这些东西之后，我变得非常失望。*
 
-# CoinJoin vs TumbleBit
+## CoinJoin vs TumbleBit
 
 比较两者是很难的，因为 CoinJoin 中的协作问题是很棘手的。同时，为了防止女巫攻击，又会有一系列全新的问题产生出来。因此，我把 NTumbleBit 的传统 Tumbler 模式与理想中的 CoinJoin 和 JoinMarket 相比较，后者是今天唯一可用的 CoinJoin 实现。不幸的是，我无法加入理想的 TumbleBit 作为比较项，因为我的想象已经实现了，而我看不到如何进一步克服它的局限性。
 
