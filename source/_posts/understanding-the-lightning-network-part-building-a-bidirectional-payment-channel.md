@@ -128,7 +128,7 @@ Bob 签名了这笔事务，然后发给了 Alice。
 
 而且，因为 Bob 也有了 Alice 的秘密值，所以对 Bob 来说同样如此！要是 Alice 想签名和广播旧的承诺事务，Bob 就可以偷走她放在通道里所有的 btc 了！
 
-这就意味着 Alice 和 Bob 都要重组的激励不去耍小手段，只广播最近的状态。
+这就意味着 Alice 和 Bob 都有充足的激励不去耍小手段，只广播最近的状态。
 
 ![](../images/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/9e4478b639e1450388ca43420296ccd3.png)
 
