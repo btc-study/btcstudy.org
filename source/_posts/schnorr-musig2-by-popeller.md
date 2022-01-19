@@ -63,7 +63,7 @@ Alice 生成了自己的公钥 $P_1$ 和两个 nonce 承诺值 $R_1'$ 和 $R_1''
 $$
 \begin{align}
 L &= H(P_1||P_2) \\\\
-a_i &= H(L||P_i),	i= 1, 2 \\\\
+a_i &= H(L||P_i),\qquad i= 1, 2 \\\\
 P &= a_1P_1 + a_2P_2
 \end{align}
 $$
