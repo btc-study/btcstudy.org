@@ -24,6 +24,13 @@ function initialTheme() {
     window.localStorage.setItem('theme', theme);
   }
 
+  var setSizeChangeInputValue = function(size) {
+    $('.post-container').css('font-size', size + 'px');
+    localStorage.setItem('post-font-size', size);
+    $('#size-change-input').val(size);
+    $('#size-change-input2').val(size);
+  }
+
 
   let buttonenabled = true;
   $(document).on("click", "#theme-btn", function() {
@@ -53,17 +60,17 @@ function initialTheme() {
       setTheme(theme);
       buttonenabled = true;
 
-      // init font size change range
-      // var postFontSize = localStorage.getItem('post-font-size') || '16';
-      // var inputEl = document.querySelector('#size-change-input');
-      // inputEl.value = postFontSize;
-      //
-      // $('#size-change-input').on('input propertychange', function(e) {
-      //   const size = e.target.value;
-      //   $('.post-container').css('font-size', size + 'px');
-      //   localStorage.setItem('post-font-size', size);
-      // });
+      $('#size-change-input').on('input propertychange', function(e) {
+        const size = e.target.value;
+        setSizeChangeInputValue(size);
+      });
+      $('#size-change-input2').on('input propertychange', function(e) {
+        const size = e.target.value;
+        setSizeChangeInputValue(size);
+      });
 
+      var postFontSize = localStorage.getItem('post-font-size') || '16';
+      setSizeChangeInputValue(postFontSize);
   	}, 500);
 
   });
