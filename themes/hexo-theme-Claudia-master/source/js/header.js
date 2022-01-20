@@ -73,14 +73,12 @@ $(function() {
   });
 
   // 搜索
-
   $('#search-input-btn').click(function() {
     var value = $('#search-input').val();
     if (value) {
       window.location.href = '/search/?w=' + value.trim()
     }
   });
-
   $('#search-input').keypress(function(e) {
     if (e.key === 'Enter') {
       var value = $('#search-input').val();
