@@ -29,7 +29,7 @@ tags:
 
 这种事务的特殊之处在于：
 
-- 它是可以可以撤销的，如果双方都同意的画
+- 它是可以撤销的，如果双方都同意的话
 - 总是花费充值交易的那个 2-2 多签名输出
 
 承诺事务的初衷是放在支付通道里使用，而不是放到主链上，不过，它们是完全有效的比特币交易，任何一方，只要想的话，都可以将它广播到主链上。
@@ -138,7 +138,7 @@ Alice 会给 “先给对方支付” 交易签名的**唯一可能性**，就�
 <p style="text-align:center">- Bob 构建和签名 “先给自己支付” 交易 -</p>
 
 
-11.  ` BuildPayMeFirstTx(bob) ` —— Bbo **不会签名** ` payAliceFirstTx ` 交易并发送给 Alice，这笔交易对他是**不利的**，因为他必须遵守 [RSM 合约](https://motorina0.medium.com/rsm-contracts-f690cfdf04e8)但 Alice 可以立即把属于自己的钱拿走。更重要的是，如果签名了这笔交易，他就**没有了惩罚 Alice 的能力**，即使 Alice 在未来趁着 `payAliceFirstTx` 对自己有利（余额更多）的时候把它广播出去，Bob 也无能为力。因此，Bob 构建了一笔**不设任何限制**给自己支付，但使用 [RSM 合约](https://motorina0.medium.com/rsm-contracts-f690cfdf04e8)来给 Alice 支付的交易。这笔交易我们叫 `payBobFirstTx` 交易。
+11.  ` BuildPayMeFirstTx(bob) ` —— Bob **不会签名** ` payAliceFirstTx ` 交易并发送给 Alice，这笔交易对他是**不利的**，因为他必须遵守 [RSM 合约](https://motorina0.medium.com/rsm-contracts-f690cfdf04e8)但 Alice 可以立即把属于自己的钱拿走。更重要的是，如果签名了这笔交易，他就**没有了惩罚 Alice 的能力**，即使 Alice 在未来趁着 `payAliceFirstTx` 对自己有利（余额更多）的时候把它广播出去，Bob 也无能为力。因此，Bob 构建了一笔**不设任何限制**给自己支付，但使用 [RSM 合约](https://motorina0.medium.com/rsm-contracts-f690cfdf04e8)来给 Alice 支付的交易。这笔交易我们叫 `payBobFirstTx` 交易。
 12.  ` Sign(payBobFirstTx)  ` —— Bob 创建 `payBobFirstTx` 交易的签名，即 `payBobFirstSignature` 。
 13.  `Send(payBobFirstSignature)` —— Bob 把 `payBobFirstSignature`消息发送给 Alice。
 
