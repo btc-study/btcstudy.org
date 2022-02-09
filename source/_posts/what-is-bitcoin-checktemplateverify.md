@@ -59,9 +59,9 @@ BIP119 谋求通过重新定义 OP_NOP4 来安排 OP_CHECKTEMPLEVERIFY 形式的
 
 CHECKTEMPLATEVERIFY 通过限制大部分会决定所有可能的交易 ID 的数据，预先承诺了一笔交易。这就意味着，给定一个 UTXO 和一个合约，一般来说你都可以预先计算出所有的 TXID。虽然有局限性，这里的假设是因为我们提前知道交易 ID，所以限制条款也会更容易执行，因为需要检查的交易的范围是有限的。
 
-操作码 DefaultCheckTemplateVerifyHash 所分析的具体哈希函数会哈希序列化形式交易的一部分（从版本号和 locktime 开始）。然后，这个函数会哈希 scriptSig 哈希值，如果交易不是一笔隔离见证交易的化。然后，它会哈希输入的数量、sequence 的哈希值和输出的数量。最后，这个函数会哈希输出的哈希值和输入的索引。
+操作码 DefaultCheckTemplateVerifyHash 所分析的具体哈希函数会哈希序列化形式交易的一部分（从版本号和 locktime 开始）。然后，这个函数会哈希 scriptSig 哈希值，如果交易不是一笔隔离见证交易的话。然后，它会哈希输入的数量、sequence 的哈希值和输出的数量。最后，这个函数会哈希输出的哈希值和输入的索引。
 
-通过预先承诺（或者说决定）大部分这些 数据，我们不仅可以提前确定交易 ID，它也是的只有少部分数据可以后来再核定（或者说改变），并让验证更有效率，因为许多字段都已经被哈希了。（译者注：此处的逻辑反过来更容易理解：一笔交易的一部分数据会决定这笔交易的 ID，因此，当脚本已经指定了怎样交易 ID 的交易可以花费这个 UTXO 之后，交易的大部分内容也就有了限定。）
+通过预先承诺（或者说决定）大部分这些 数据，我们不仅可以提前确定交易 ID，它也使得只有少部分数据可以后来再设定（或者说改变），并让验证更有效率，因为许多字段都已经被哈希了。（译者注：此处的逻辑反过来更容易理解：一笔交易的一部分数据会决定这笔交易的 ID，因此，当脚本已经指定了怎样交易 ID 的交易可以花费这个 UTXO 之后，交易的大部分内容也就有了限定。）
 
 “以特定的方式排序这些字段的理由是，如果未来我们会在比特币中实现像 OP_CAT 这样的东西，你可能会在栈中操作这些字段”，BIP 119 的作者 Jeremy Rubin 告诉 *Bitcoin Magazine*，“让它们按次序排列的好处会跟你有多大可能以程序来改变它们有关”。
 
@@ -89,15 +89,15 @@ CTV，在撰文之时，将为比特币加入有限的可能性，因为它谋�
 
 Rubin 也说，他感觉开发者社区在审核他的提议时 “有那么一点儿双重标准”。
 
-“CTV 承受着比以前我们实现的所有东西都要更高的标准”，他告诉 *Bitcoin Magazine*，“虽然我们应该不懈第提高标准，但是”，Rubin 澄清道，“我们不能否认，CTV 已经达到乃至超越了以前的分叉的测试和应用水平”。
+“CTV 承受着比以前我们实现的所有东西都要更高的标准”，他告诉 *Bitcoin Magazine*，“虽然我们应该不懈地提高标准，但是”，Rubin 澄清道，“我们不能否认，CTV 已经达到乃至超越了以前的分叉的测试和应用水平”。
 
 本月早些时候，来自 Spiral 的比特币和闪电网络的开发者 Matthew Corallo [发推特](https://twitter.com/TheBlueMatt/status/1477818234153930752?s=20)表示，“在比特币的历史 上，从没有过不考虑替代方案，就通过提案、改变共识层的事”。Corallo [声称](https://twitter.com/TheBlueMatt/status/1477818020110090244?s=20) Rubin 和其他正在开发和支持 CTV 的人，在过去的几年中都没法提出 “一种更正式的方法来比较 CTV 和替代方案”。
 
 “对 CTV 的推动 …… 感觉在所有地方都是错的”，Corallo [补充道](https://twitter.com/TheBlueMatt/status/1477818570394329090?s=20)。“感觉他们不是在协作工程，而是在说，‘你看，我开发好了，所以你们通过吧’，并无视所有的反馈”。
 
-Blockstream 的研究总监 Andrew Poelstra 也表示希望看到京一部的解释和分析。在 *Bitcoin Magazine* 询问 CTV 是不是比特币在当前延伸功能性来支持限制条款的最佳方法时，他说，“应该不是”，并补充道：“CTV 并不是唯一一个在比特币上实现限制条款的提案 —— 而它在安全性和通用性上做出了权衡，并在两个方向上都留下了空间。”
+Blockstream 的研究总监 Andrew Poelstra 也表示希望看到进一步的解释和分析。在 *Bitcoin Magazine* 询问 CTV 是不是比特币在当前延伸功能性来支持限制条款的最佳方法时，他说，“应该不是”，并补充道：“CTV 并不是唯一一个在比特币上实现限制条款的提案 —— 而它在安全性和通用性上做出了权衡，并在两个方向上都留下了空间。”
 
-“它能够工作的一个原因时， CTV 可能是实现 ‘减法限制条款（subtractive convenants）’ 的最高效的方法，即用户限制住了交易数据的绝大部分，只留下一部分允许自由改动”，Poelstra 说，“同时，其它像 [introspection opcodes](https://github.com/ElementsProject/elements/blob/master/doc/tapscript_opcodes.md) 这样的方案，可能是实现 ‘加法限制条款（additive covenants）’ 的最好方法，就是交易数据的绝大部分都可以自由改变，只有一小部分数据收到限制。如果我所言为真，那么社区需要更多的时间来研究它们，我们可能需要 APO *以及* CTV *以及*  通用的限制条款”。
+“它能够工作的一个原因是， CTV 可能是实现 ‘减法限制条款（subtractive convenants）’ 的最高效的方法，即用户限制住了交易数据的绝大部分，只留下一部分允许自由改动”，Poelstra 说，“同时，其它像 [introspection opcodes](https://github.com/ElementsProject/elements/blob/master/doc/tapscript_opcodes.md) 这样的方案，可能是实现 ‘加法限制条款（additive covenants）’ 的最好方法，就是交易数据的绝大部分都可以自由改变，只有一小部分数据收到限制。如果我所言为真，那么社区需要更多的时间来研究它们，我们可能需要 APO *以及* CTV *以及*  通用的限制条款”。
 
 APO，也即 [SIGHASH_ANYPREVOUT](https://anyprevout.xyz/)，是另一个为比特币添加新功能的提议，其详述是 [BIP118](https://github.com/bitcoin/bips/blob/master/bip-0118.mediawiki)。BIP118 的作者 Christian Decker 是 Blockstream 的一个研究员，专注于比特币的扩繁方案；他告诉 *Bitcoin Magazine* 他也认为 APO 和 CTV “是互补关系，而非竞争关系”。
 
