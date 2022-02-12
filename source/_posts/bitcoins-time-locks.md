@@ -77,7 +77,7 @@ tags:
 
 **nLocktime 是交易层面的绝对时间锁**。它也是中本聪初版软件（Satoshi’s Original Vision）所用的唯一一种时间锁。
 
-交易的数据结构很简单，包含了版本、输入、输出和其它的一些字段。nLocktime 有自己的专属字段 `lock_time`。它指定了一个区块号或者时间戳。在到达这个指定时间之前，这笔交易都是无效的。Bitcoin Core 软件构造的交易默认将 `lock_time` 字段设为当前的区块号，[以避免有人靠重组区块来获得更多手续费](https://www.reddit.com/r/Bitcoin/comments/47upgx/nsequence_and_optin_replacebyfee_difference/d0g612x/?context=5)。时间被表示为一个未签名的 32 位整数（32 bit integer）。如果 `lock_time` 的值是 0，则这个字段会被忽略掉；如果它的值大于等于 5 0000 0000（5 亿），则会被当成一个 unix 时间戳。所以 nLocktime 可以使用区块号把一笔交易锁定 9500 年之久；用时间戳，也可以锁定到 [2106 年](https://en.wikipedia.org/wiki/Time_formatting_and_storage_bugs#Year_2106)。
+交易的数据结构很简单，包含了版本、输入、输出和其它的一些字段。nLocktime 有自己的专属字段 `lock_time`。它指定了一个区块号或者时间戳。在到达这个指定时间之前，这笔交易都是无效的。Bitcoin Core 软件构造的交易默认将 `lock_time` 字段设为当前的区块号，[以避免有人靠重组区块来获得更多手续费](https://www.reddit.com/r/Bitcoin/comments/47upgx/nsequence_and_optin_replacebyfee_difference/d0g612x/?context=5)。时间被表示为一个 32 位的非负整数（32 bit integer）。如果 `lock_time` 的值是 0，则这个字段会被忽略掉；如果它的值大于等于 5 0000 0000（5 亿），则会被当成一个 unix 时间戳。所以 nLocktime 可以使用区块号把一笔交易锁定 9500 年之久；用时间戳，也可以锁定到 [2106 年](https://en.wikipedia.org/wiki/Time_formatting_and_storage_bugs#Year_2106)。
 
 奇异的是，如果所有的输入的序列号都是 `0xFFFFFFFF`（32 位整数的最大值），`lock_time` 字段会被完全忽略掉。[BIP 125](https://github.com/bitcoin/bips/blob/master/bip-0125.mediawiki) 所描述的可选的 replace-By-Fee（RBF，用增加手续费来 替换/加速 未上链交易的办法）也类似。使用 `sequence_no` 来发送信号是中本聪不成熟时代的时间锁实现的产物。要想改变，只能动用硬分叉。nLocktime 和交易输入的序列号一开始提出是为了构建一个简单的交易更新机制：你可以构建一个带有时间锁的交易，然后通过发送带有至少一个更高序列号的版本来替换原交易。
 
