@@ -1,6 +1,6 @@
 ---
 title: '聚合签名、门限签名、Multisigs 和多签名'
-author: 'Ramsès Fernàndez-València'
+author: 'Ramsès'
 date: '2022/02/14 20:38:36'
 cover: '../images/aggregate-threshold-multisig-and-multisignatures/esVmJg.jpeg'
 excerpt: '我们研究的不同技术各有优缺点'
