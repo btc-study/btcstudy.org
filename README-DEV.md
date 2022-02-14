@@ -22,14 +22,13 @@ tags:
 - b-c
 mathjax: true
 ---
-
 ```
 
-author: 作者
-avatar: 作者头像
-cover: 文章封面
-categories: 文章分类
+- author: 作者
+- avatar: 作者头像
+- cover: 文章封面
+- categories: 文章分类
   空格用中划线('-')代替
-tags: 文章标签
+- tags: 文章标签
   空格用中划线('-')代替
-mathjax: 是否开启 LaTeX 格式
+- mathjax: 是否开启 LaTeX 格式
