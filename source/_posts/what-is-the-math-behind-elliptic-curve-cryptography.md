@@ -6,7 +6,7 @@ cover: '../images/what-is-the-math-behind-elliptic-curve-cryptography/w=3840&q=7
 excerpt: '公钥、私钥和数字签名，都是来自公钥密码学的基本概念'
 tags:
 - 密码学
-mathjax:true
+mathjax: true
 ---
 
 
