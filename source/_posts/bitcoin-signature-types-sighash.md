@@ -8,6 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 比特币
+- SIGHASH
 ---
 
 
@@ -88,3 +89,4 @@ enum
 比特币上的签名类型，我们已经简要介绍完了。最后一点提醒。很有趣的是，`SIGHASH_SINGLE` 的实现中有一个 bug，[首次披露是在 2012 年](https://www.mail-archive.com/bitcoin-development@lists.sourceforge.net/msg01408.html)。如果被签名的输入的索引号超过了输出的数量，所生成的签名会是有效的，但不绑定任何输入。所以，最终的签名将不仅可以用于花费你正在签名的输出，还能用来花费这个地址上的任何资金！几天前，有人开启了一个代码更新（[bitcoin#13360](https://github.com/bitcoin/bitcoin/pull/13360)）来让这样的交易变成非标准化的，也正是这个 PR 促使我研究比特币的签名类型是如何工作的。
 
 （完）
+

@@ -7,6 +7,7 @@ excerpt: '密码朋克相信，隐私性是基本人权'
 tags:
 - 比特币
 - 密码朋克
+- Jameson-Lopp
 ---
 
 > *作者：Jameson Lopp*

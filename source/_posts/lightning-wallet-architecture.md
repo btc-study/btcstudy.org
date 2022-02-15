@@ -133,7 +133,7 @@ Veriphi 建议使用的闪电网络钱包：
 
 如果你想通过浏览器来使用闪电网络，你要么使用完全托管的方案，要么就得使用远程控制节点钱包，这种钱包只是一个节点的前端管理界面。你甚至可以通过一个手机 app 来远程控制你自己的节点。
 
-闪电网络全节点钱包是非常有用的，但因为它们是作为整体构建的，用户体验就只能那样。**许多高级用户都喜欢在专用服务器或者迷你电脑上 7 * 24 小时运行自己的闪电网络全节点**。实际上这是很容易的事，由即插即用的解决方案，比如 [MyNode](https://www.veriphi.io/lightning-wallet-architecture/mynodebtc.com) 和 [Nodl](https://www.veriphi.io/lightning-wallet-architecture/nodl.it)。
+闪电网络全节点钱包是非常有用的，但因为它们是作为整体构建的，用户体验就只能那样。<strong>许多高级用户都喜欢在专用服务器或者迷你电脑上 7 * 24 小时运行自己的闪电网络全节点</strong>。实际上这是很容易的事，有即插即用的解决方案，比如 [MyNode](https://www.veriphi.io/lightning-wallet-architecture/mynodebtc.com) 和 [Nodl](https://www.veriphi.io/lightning-wallet-architecture/nodl.it)。
 
 案例：
 

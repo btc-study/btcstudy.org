@@ -43,7 +43,7 @@ tags:
 
 ## “先给自己支付”
 
-在 “先给自己支付” 交易中，Alice 可以理解花用自己的输出，而 Bob 必须遵守 [**RSM 合约**](https://motorina0.medium.com/rsm-contracts-f690cfdf04e8)。RSM 合约（Revocable Sequence Maturity Contract，可撤销的相对时间锁合约）对输出的花费作了以下限制：
+在 “先给自己支付” 交易中，Alice 可以立即花用自己的输出，而 Bob 必须遵守 [**RSM 合约**](https://motorina0.medium.com/rsm-contracts-f690cfdf04e8)。RSM 合约（Revocable Sequence Maturity Contract，可撤销的相对时间锁合约）对输出的花费作了以下限制：
 
 - 资金的受益者只能在一段时间的 “成熟期” 之后花费这些资金（不能立即花费）
 - 合约可以（被受益者）撤销
@@ -102,7 +102,7 @@ Alice 会给 “先给对方支付” 交易签名的**唯一可能性**，就�
 
 3. ` Send(payAliceFirstSignature) `  —— Alice 发送 ` payAliceFirstSignature ` 给 Bob。发送这个签名不会带来任何风险。最坏的情形也只是  Bob 会广播 `  payAliceFirstTx`并关闭这个通道，这对 Alice 来说也没啥问题，因为她立即就能花费自己的输出，而 Bob 还必须等待。
 
-   在广播 ` payAliceFirstTx ` 的同时，Bob 也暴露了他从 Alice 处收到了 0.02 BTC 的事实。如果 Bob 并不把 ` payAliceFirstTx ` 广播支出，只是没有响应，那么 Alice 可以安全地把前一笔承诺事务广播（表示**状态 01**）（译者注：即通道原来的余额状态）出去，在那个状态中她拥有更多的余额，而且因为她还没有撤销那笔承诺交易，也没有被惩罚的风险。（译者注：如此操作即是不给 Bob 支付，以当前的状态退出合约）
+   在广播 ` payAliceFirstTx ` 的同时，Bob 也暴露了他从 Alice 处收到了 0.02 BTC 的事实。如果 Bob 并不把 ` payAliceFirstTx ` 广播出去，只是没有响应，那么 Alice 可以安全地把前一笔承诺事务广播（表示**状态 01**）（译者注：即通道原来的余额状态）出去，在那个状态中她拥有更多的余额，而且因为她还没有撤销那笔承诺交易，也没有被惩罚的风险。（译者注：如此操作即是不给 Bob 支付，以当前的状态退出合约）
 
 ### Bob 检查和撤销
 
