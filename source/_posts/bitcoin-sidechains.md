@@ -19,7 +19,7 @@ tags:
 
 本文将讨论何为比特币的侧链，以及何以侧链在密码货币的生态系统中具有关键角色。我们先从简要回顾侧链的历史开始。
 
-首个建立侧链的尝试可以追溯到 2012 年，比人们认为的要早得多。第一篇完整描述了一个比特币侧链方案的技术[论文](https://blockstream.com/sidechains.pdf)是由 Blockstream 的研究员撰写的，出版于 2014 年。不过，这篇文章里的想法已经被抛弃了。在 2015 年 10 月，[RSK](https://www.rsk.co/) 发布了其[白皮书](https://www.rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf)，并立即基于一种混合得 SPV 联盟锚（hybrid SPV-federated peg）开发侧链代码，而且她具有扩展成一条 drivechain 的潜力（drivechain 的讲解见此 [BIP](https://github.com/rsksmart/bips/blob/master/BIP-R11.md)）。在 2016 年 11 月，RSK [启动了](https://twitter.com/rsksmart/status/794962183293648896)其第一个测试网络（连接到比特币测试网），并开始使用测试网比特币测试其智能合约应用。与此同时，Blockstream 也开始开发一种联盟锚，并在 2017 年发布了他们的[设计](https://blockstream.com/strong-federations.pdf)。到 2017 年，RSK 已经执行了多次发布和测试网重置。在 2018 年 1 月，RSK 最终启动了完整功能的主网。RSK 的原生代币是 BITCOIN，而且 RSK 的代码库除了 BITCOIN 以外不曾提到任何别的代币。随着 RSK 生态系统的发展，社区发行了许多种 ERC-20 代币，赋能了一些最新颖的 DeFi 应用。在 2018 年 9 月，Blockstream 启动了 [Liquid Network](https://blockstream.com/liquid/) 侧链。自那时候开始，再没有别的比特币侧链在生产环境中启动，虽然 drivechain 的构想有一些进展，而且有一个 drivechain 的测试网启动了。也有一些别的类似于侧链的方案出现，比如 [statechain](https://www.coindesk.com/statechains-scaling-solution-new-potential-bitcoin-privacy)，但尚未有可用的测试网。
+首个建立侧链的尝试可以追溯到 2012 年，比人们认为的要早得多。第一篇完整描述了一个比特币侧链方案的技术[论文](https://blockstream.com/sidechains.pdf)是由 Blockstream 的研究员撰写的，出版于 2014 年。不过，这篇文章里的想法已经被抛弃了。在 2015 年 10 月，[RSK](https://www.rsk.co/) 发布了其[白皮书](https://www.rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf)，并立即基于一种混合的 SPV 联盟锚（hybrid SPV-federated peg）开发侧链代码，而且她具有扩展成一条 drivechain 的潜力（drivechain 的讲解见此 [BIP](https://github.com/rsksmart/bips/blob/master/BIP-R11.md)）。在 2016 年 11 月，RSK [启动了](https://twitter.com/rsksmart/status/794962183293648896)其第一个测试网络（连接到比特币测试网），并开始使用测试网比特币测试其智能合约应用。与此同时，Blockstream 也开始开发一种联盟锚，并在 2017 年发布了他们的[设计](https://blockstream.com/strong-federations.pdf)。到 2017 年，RSK 已经执行了多次发布和测试网重置。在 2018 年 1 月，RSK 最终启动了完整功能的主网。RSK 的原生代币是 BITCOIN，而且 RSK 的代码库除了 BITCOIN 以外不曾提到任何别的代币。随着 RSK 生态系统的发展，社区发行了许多种 ERC-20 代币，赋能了一些最新颖的 DeFi 应用。在 2018 年 9 月，Blockstream 启动了 [Liquid Network](https://blockstream.com/liquid/) 侧链。自那时候开始，再没有别的比特币侧链在生产环境中启动，虽然 drivechain 的构想有一些进展，而且有一个 drivechain 的测试网启动了。也有一些别的类似于侧链的方案出现，比如 [statechain](https://www.coindesk.com/statechains-scaling-solution-new-potential-bitcoin-privacy)，但尚未有可用的测试网。
 
 ## 区块链桥
 
@@ -29,7 +29,7 @@ tags:
 
 在 [Powpeg](https://medium.com/iovlabs-innovation-stories/building-the-most-secure-permissionless-and-uncensorable-bitcoin-peg-b5dc7020e5ec) 中，联盟被一组 “锚定公证员（pegnatories）” 取代了，每个锚定公证员都运行一个特殊的硬件安全模块（Hardware Security Module，HSM）来保护一把可以参与多签名的私钥。每个 HSM 都跟随区块链的 PoW 共识来接收 “脱锚指令（peg-out commands）”（译者注：指让资产离开侧链、回到母链的指令），从而防止了锚定公证员直接掌握锚定的资金。RSK 的锚就是由一个 Powpeg 来保护的。
 
-在担保桥（collateralized bridge）中，参与者（称为 “金库管理员”）可以完全访问控制着比特币的私钥，但他们需要存入一笔担保，以至于如果他们偷盗了桥中的比特币，他们会被罚没担保品。担保品的假币必须大于锚定资产的价值（超额担保），以防止偷盗。如果担保品的价格因为相关资产价格的剧烈波动而低于锚定资产的价值，一个自动化的清算程序会启动。这样做的结果就是，担保品的价值必须远远大于由锚定资产所媒介的整个经济的价值。所以它的资本效率是非常低的。担保桥的一个例子是 [PolkaBTC](https://polkabtc.io/)，它把比特币和 Polkadot 连接起来。
+在担保桥（collateralized bridge）中，参与者（称为 “金库管理员”）可以完全访问控制着比特币的私钥，但他们需要存入一笔担保，以至于如果他们偷盗了桥中的比特币，他们会被罚没担保品。担保品的价值必须大于锚定资产的价值（超额担保），以防止偷盗。如果担保品的价格因为相关资产价格的剧烈波动而低于锚定资产的价值，一个自动化的清算程序会启动。这样做的结果就是，担保品的价值必须远远大于由锚定资产所媒介的整个经济的价值。所以它的资本效率是非常低的。担保桥的一个例子是 [PolkaBTC](https://polkabtc.io/)，它把比特币和 Polkadot 连接起来。
 
 ## “比特币侧链” 是什么意思
 
@@ -103,14 +103,14 @@ tags:
 
 ## 侧链 vs. Rmorachain
 
-有一些区块链重用了比特币网络的某些部分（通常是为了达成共识），但它们引入了一种新的代币：我们管这种区块链叫 “䲟鱼链（remora chain）”。[䲟鱼](https://en.wikipedia.org/wiki/Remora)是一种吸附在其它大鱼上以求生存的鱼，但既不会给宿主带来什么好处，也不会有什么害处。虽然这些区块链可能有一些技术两点，但因为它们粗在一个独立的、通常是竞争性的比特币货币经济，所以它们不算侧链，比特币人应该留意。
+有一些区块链重用了比特币网络的某些部分（通常是为了达成共识），但它们引入了一种新的代币：我们管这种区块链叫 “䲟鱼链（remora chain）”。[䲟鱼](https://en.wikipedia.org/wiki/Remora)是一种吸附在其它大鱼上以求生存的鱼，但既不会给宿主带来什么好处，也不会有什么害处。虽然这些区块链可能有一些技术亮点，但因为它们存在一个独立的、通常是竞争性的比特币货币经济，所以它们不算侧链，比特币人应该留意。
 
 ![img](../images/bitcoin-sidechains/d0VS5Uk1KoD)
 
-<p style="text-align:center">- 媳妇在比特币区块链上的 Veriblock -</p>
+<p style="text-align:center">- 吸附在比特币区块链上的 Veriblock -</p>
 
 
-现有的两条䲟鱼链是 [Veriblock](https://www.veriblock.org/) 和 [ Stacks](https://www.stacks.co/)。Veriblock 已经死掉了，但 Stacks 在 2020 年重新启动，并且支持一种新的智能合约语言。两者都有自己的原生 token。我觉得䲟鱼这个名字也不完全准确，因为任何发行了货币代币的新区块链都会在价值存储的市场中占据一席之地，因此会跟比特币竞争。只要它在竞争，它就会增加价值存储币的供应量，并削弱这些币的质量。因此，任何要求资产担保的䲟鱼链，实际上在某种程度上都会伤寒比特币（不过我不会管它们叫 “寄生虫链”，因为它们可能为生态贡献了别的价值）。
+现有的两条䲟鱼链是 [Veriblock](https://www.veriblock.org/) 和 [ Stacks](https://www.stacks.co/)。Veriblock 已经死掉了，但 Stacks 在 2020 年重新启动，并且支持一种新的智能合约语言。两者都有自己的原生 token。我觉得䲟鱼这个名字也不完全准确，因为任何发行了货币代币的新区块链都会在价值存储的市场中占据一席之地，因此会跟比特币竞争。只要它在竞争，它就会增加价值存储币的供应量，并削弱这些币的质量。因此，任何要求资产担保的䲟鱼链，实际上在某种程度上都伤害比特币（不过我不会管它们叫 “寄生虫链”，因为它们可能为生态贡献了别的价值）。
 
 要为䲟鱼链下一个清晰的定义，我们必须排除任何使用了比特币、但没有自己的区块链的系统，因为它们不是 “区块链”，而只是区块的链条。一个 [Rollup](https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/optimistic_rollups/) 也许由一串区块组成，但它并不是 “一个区块链”。一套比特币覆盖层协议，与一条独立的区块链小臂，在复杂性和维护成本上存在巨大的差异，覆盖层协议不需要一套独立的共识算法来决定区块的排序，也不需要一个独立的点对点网络，但对独立的区块链而言，这两者都需要。创造独立区块链的主要动力有两个：更快的区块和更大的区块链（等价于更便宜的交易成本），因为母链的链上空间稀缺而昂贵。覆盖层协议的常见例子有：Counterparty、Omni，以及染色币的其它变种。我觉得它们都不是䲟鱼链。
 
@@ -133,7 +133,7 @@ tags:
 
 ## 总结
 
-巩固比特币的价值储存地位，暗示着侧链需是比特币金融栈的自然延伸，就像 [Paul Sztorc](https://bitcoinmagazine.com/articles/bloq-s-paul-sztorc-on-the-main-benefits-of-sidechains-1463417446) 自始至终不断强调的那样。侧链是跟比特币社区高度激励兼容的独立区块链。RSK 是最老的，也是唯一一个图灵完备的比特币侧链，并且已经有了一个丰富的 DeFi 生态系统。比特币人将比特币侧链理解为对比特币生态系统有所贡献的独立区块链，不管为侧链下什么样的定义，都应该保留这种共同的信念。比特币的侧链是去中心化的金融生态系统终将出现的部分。RSK 生态的不断诚征，证明了比特币侧链的未来是光明的。
+巩固比特币的价值储存地位，暗示着侧链需是比特币金融栈的自然延伸，就像 [Paul Sztorc](https://bitcoinmagazine.com/articles/bloq-s-paul-sztorc-on-the-main-benefits-of-sidechains-1463417446) 自始至终不断强调的那样。侧链是跟比特币社区高度激励兼容的独立区块链。RSK 是最老的，也是唯一一个图灵完备的比特币侧链，并且已经有了一个丰富的 DeFi 生态系统。比特币人将比特币侧链理解为对比特币生态系统有所贡献的独立区块链，不管为侧链下什么样的定义，都应该保留这种共同的信念。比特币的侧链是去中心化的金融生态系统终将出现的部分。RSK 生态的不断成长，证明了比特币侧链的未来是光明的。
 
 （完）
 
