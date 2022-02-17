@@ -146,12 +146,12 @@ MuSig2 比传统的、使用 OP_CHECKMULTISIG[VERIFY] 实现的多签名方案�
 <p style="text-align:center">- - -</p>
 
 
-1. OP_CHECKMULTISIG[VERIFY]  在 taproot 地址中已经不可用了（见 [BIP342](https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki#design)），但有了一个新的操作码 OP_CHECKSIGADD，可以用来实现同样的目标，并且效率更高。注意，MuSig2 和 FROST 都不使用这个新的操作码。感谢 Samuel Dobson [指出这一点](https://twitter.com/meshcollider/status/1482089242415472640?s=20)。<a href="#jump-1">↩</a>
+<a id="note1">1</a>. OP_CHECKMULTISIG[VERIFY]  在 taproot 地址中已经不可用了（见 [BIP342](https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki#design)），但有了一个新的操作码 OP_CHECKSIGADD，可以用来实现同样的目标，并且效率更高。注意，MuSig2 和 FROST 都不使用这个新的操作码。感谢 Samuel Dobson [指出这一点](https://twitter.com/meshcollider/status/1482089242415472640?s=20)。<a href="#jump-1">↩</a>
 
-2. 一个稍有改动的变种叫做 “MuSig2*”，将其中一个系数设为 1，以使公钥生成函数稍微更有效率一些。这是在[一份 MuSig2 的规范草案](https://github.com/ElementsProject/secp256k1-zkp/blob/master/src/modules/musig/musig-spec.mediawiki#key-aggregation)中描述的，也在 MuSig2 论文的末尾。<a href="#jump-2">↩</a>
+<a id="note2">2</a>. 一个稍有改动的变种叫做 “MuSig2*”，将其中一个系数设为 1，以使公钥生成函数稍微更有效率一些。这是在[一份 MuSig2 的规范草案](https://github.com/ElementsProject/secp256k1-zkp/blob/master/src/modules/musig/musig-spec.mediawiki#key-aggregation)中描述的，也在 MuSig2 论文的末尾。<a href="#jump-2">↩</a>
 
-3. (感谢 [Samuel Dobson 和 Jonas Nick](https://twitter.com/n1ckler/status/1482287770320228352?s=20)) 生成 nonce 并交换 nonce 承诺值的操作可以推迟到签名的时候再做，一定程度上可以降低 [nonce 重用](https://popeller.io/schnorr-basics#nonce-reuse)的风险，但会引入额外的一轮通信，可能会让协议变得更复杂。<a href="#jump-3">↩</a>
+<a id="note3">3</a>. (感谢 [Samuel Dobson 和 Jonas Nick](https://twitter.com/n1ckler/status/1482287770320228352?s=20)) 生成 nonce 并交换 nonce 承诺值的操作可以推迟到签名的时候再做，一定程度上可以降低 [nonce 重用](https://popeller.io/schnorr-basics#nonce-reuse)的风险，但会引入额外的一轮通信，可能会让协议变得更复杂。<a href="#jump-3">↩</a>
 
-4. 在一个合适的 taproot 地址中，公钥 $P$ 是一个 *内部公钥*，它会用其它花费条件的哈希值 t 来调整，因此 $P_{external} = P + tG$。用来生成地址的实际上是 $P_{external}$，但我们暂时忽略这一点，让案例更简介。我们假设 t = 0 。<a href="#jump-4">↩</a>
+<a id="note4">4</a>. 在一个合适的 taproot 地址中，公钥 $P$ 是一个 *内部公钥*，它会用其它花费条件的哈希值 t 来调整，因此 $P_{external} = P + tG$。用来生成地址的实际上是 $P_{external}$，但我们暂时忽略这一点，让案例更简介。我们假设 t = 0 。<a href="#jump-4">↩</a>
 
 （完）

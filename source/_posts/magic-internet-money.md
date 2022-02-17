@@ -220,13 +220,13 @@ Ross 因创立 “丝绸之路” 网站而被判处双重无期徒刑再加 40 
 
 ### 脚注
 
-1. 迄今为止，还没有任何一名女性大胆愚蠢到做出这样的声明。<a href="#jump-1">↩</a>
-2. 在这之后还有一条消息是在 2014 年 3 月 7 日公布的。中本聪仅仅表明：“[Dorian Nakamoto 不是我](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source?commentId=2003008%3AComment%3A52186)。” 人们相信这条消息来自中本聪本人，尽管无法通过密码学证明彻底证实。<a href="#jump-2">↩</a>
-3. 如果你想要详细了解比特币的这段历史，我建议你阅读 Eileen Ormsby 的 《丝绸之路（Silk Road）》和 Nick Bilton 的《美国大人物（American Kingpin ）》。这两本书都写得很棒。<a href="#jump-3">↩</a>
-4. 《释放 Ross》是一封请愿书，表示对量刑过重的抗议并争取对 Ross Ulbricht 宽大处理。<a href="#jump-4">↩</a>
-5. 请注意，就纯粹的信息而言，使用 “原件” 和 “副本” 来表述有点困难，因为信息可以完美复制，物理位置不一定有意义。<a href="#jump-5">↩</a>
-6. irc://irc.freenode.net/bitcoin-wizards<a href="#jump-6">↩</a>
-7. 例如，我的朋友 [Rajarshi Maitra](https://www.citadel21.com/from-hello-world-to-bitcoin-core)。<a href="#jump-7">↩</a>
-8. 当然了，在比特币世界里，得吃橙色药丸（译者注：因为比特币被公认的 logo 是橙色的）。<a href="#jump-8">↩</a>
+<a id="note1">1</a>. 迄今为止，还没有任何一名女性大胆愚蠢到做出这样的声明。<a href="#jump-1">↩</a>
+<a id="note2">2</a>. 在这之后还有一条消息是在 2014 年 3 月 7 日公布的。中本聪仅仅表明：“[Dorian Nakamoto 不是我](http://p2pfoundation.ning.com/forum/topics/bitcoin-open-source?commentId=2003008%3AComment%3A52186)。” 人们相信这条消息来自中本聪本人，尽管无法通过密码学证明彻底证实。<a href="#jump-2">↩</a>
+<a id="note3">3</a>. 如果你想要详细了解比特币的这段历史，我建议你阅读 Eileen Ormsby 的 《丝绸之路（Silk Road）》和 Nick Bilton 的《美国大人物（American Kingpin ）》。这两本书都写得很棒。<a href="#jump-3">↩</a>
+<a id="note4">4</a>. 《释放 Ross》是一封请愿书，表示对量刑过重的抗议并争取对 Ross Ulbricht 宽大处理。<a href="#jump-4">↩</a>
+<a id="note5">5</a>. 请注意，就纯粹的信息而言，使用 “原件” 和 “副本” 来表述有点困难，因为信息可以完美复制，物理位置不一定有意义。<a href="#jump-5">↩</a>
+<a id="note6">6</a>. irc://irc.freenode.net/bitcoin-wizards<a href="#jump-6">↩</a>
+<a id="note7">7</a>. 例如，我的朋友 [Rajarshi Maitra](https://www.citadel21.com/from-hello-world-to-bitcoin-core)。<a href="#jump-7">↩</a>
+<a id="note8">8</a>. 当然了，在比特币世界里，得吃橙色药丸（译者注：因为比特币被公认的 logo 是橙色的）。<a href="#jump-8">↩</a>
 
 （完）
