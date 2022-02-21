@@ -5,7 +5,7 @@ date: '2022/02/14 20:38:36'
 cover: '../images/aggregate-threshold-multisig-and-multisignatures/esVmJg.jpeg'
 excerpt: '我们研究的不同技术各有优缺点'
 tags:
-- 密码选
+- 密码学
 ---
 
 
