@@ -1,9 +1,9 @@
 ---
-title: '闪电网络如何能提升加密通信'
+title: '闪电网络如何能提升加密通讯'
 author: 'COLIN HARPER'
 date: '2022/03/04 23:11:02'
 cover: '../images/how-the-lighting-network-could-improve-encrypted-messaging/privacy.jpg'
-excerpt: '闪电网络原生的消息传输协议可以提供更私密、更安全的加密通信。但用户会切换过来吗？'
+excerpt: '闪电网络原生的即时通讯协议可以提供更私密、更安全的加密通讯。但用户会切换过来吗？'
 tags:
 - 闪电网络
 ---
@@ -27,7 +27,7 @@ tags:
 
 Jager 和 Itoi 都提出了有趣的基于闪电网络的消息传输方法，但从技术上来说，他们用的是不同的传输机制。他们也在用不同的方法来传播自己的解决方案：Itoi 和他的团队推出了 [Sphinx Chat](https://sphinx.chat/) 应用，而 Jager 直接公开了自己的 [Whatsat](https://github.com/joostjager/whatsat) 源代码。
 
-我们在 2019 年末介绍了[这些消息传输应用是如何工作的](https://bitcoinmagazine.com/articles/on-lightning-messaging-apps-emerge-as-growing-use-case)。简而言之：闪电网络近期的一次更新使得闪电网络交易中可以加入额外的任意数据。对于聊天这种应用来说，这些数据就是消息，在直接相连的对等节点之间可以免费发送，如需在网络中路由，也只需支付很小的一部分手续费，就像普通的闪电交易一样。
+我们在 2019 年末介绍了[这些消息传输应用是如何工作的](https://bitcoinmagazine.com/articles/on-lightning-messaging-apps-emerge-as-growing-use-case)（[中文译本](https://www.btcstudy.org/2022/03/09/on-lightning-messaging-apps-emerge-as-growing-use-case/)）。简而言之：闪电网络近期的一次更新使得闪电网络交易中可以加入额外的任意数据。对于聊天这种应用来说，这些数据就是消息，在直接相连的对等节点之间可以免费发送，如需在网络中路由，也只需支付很小的一部分手续费，就像普通的闪电交易一样。
 
 但，为什么你会默认选择这些协议而不是其它的加密通信软件呢？
 
