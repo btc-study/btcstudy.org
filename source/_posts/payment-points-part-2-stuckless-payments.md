@@ -25,13 +25,13 @@ tags:
 <a href="https://suredbits.com/payment-points-part-3-escrow-contracts/">Payment Points Part 3: Escrow Contracts</a><br>
 <a href="https://suredbits.com/payment-points-part-4-selling-signatures/">Payment Points Part 4: Selling Signatures</a>
 </details><br>
-在当前的闪电网络中，即使已经过了启动阶段，支付也是可以 “卡住” 的。所以资金可能会锁在哈希时间锁合约（HTLC）中，等时间锁过期后才能解锁（可能要等待很成一段时间）。支付卡住可能因为很多原因。应当注意的是，一个恶意节点也可以扣住你的支付，而不必付出任何个人代价（只不过得不到 TA 本可以获得的手续费）。即使有办法可以在启动期间解除支付，结算也有可能卡住（较不严重）。在这种情况下，接收方可以收到资金，但支付方得不到支付凭证（Proof of Payment，PoP）。
+在当前的闪电网络中，即使已经过了启动阶段，支付也是可以 “卡住” 的。所以资金可能会锁在哈希时间锁合约（HTLC）中，等时间锁过期后才能解锁（可能要等待很长一段时间）。支付卡住可能因为很多原因。应当注意的是，一个恶意节点也可以扣住你的支付，而不必付出任何个人代价（只不过得不到 TA 本可以获得的手续费）。即使有办法可以在启动期间解除支付，结算也有可能卡住（较不严重）。在这种情况下，接收方可以收到资金，但支付方得不到支付凭证（Proof of Payment，PoP）。
 
 几个月前，Hiroki Gondo 曾经在 lightning-dev 邮件组中提出过一个无滞支付的[提议](https://lists.linuxfoundation.org/pipermail/lightning-dev/2019-June/002029.html)，通过在启动阶段和结算阶段之间增加一轮叫做 “更新” 的通信，来解决这两个问题。
 
-（译者注：下面这一段需参考前一篇文章，才了解其区别。）
+（译者注：下面这一段需参考前一篇文章，才能了解其区别。）
 
-假设 Alice 要给 Carol 支付，如图所示。在 “启动” 阶段，在 Alice 把随机数的和通过洋葱网络发给 Carol 之前（注意，这个和是要用在这次路由支付的 “结算” 阶段的），Carol 在自己收到哈希时间锁合约（表明支付在 “启动” 阶段并没有卡住）后，先发送一个 ACK 给 Alice。收到 ACK 之后，启动阶段才算完成；这时候 “更新” 阶段开始，Alice 把随机数的和发给 Carol，然后 Carol 回复以支付凭证（因为从功能上来说，支付已经完成了）。最后，“结算” 阶段如往常一样进行。
+假设 Alice 要给 Carol 支付，如图所示。在 “启动” 阶段，在 Alice 把随机数的和通过洋葱网络发给 Carol 之前（注意，这个和是要用在这次路由支付的 “结算” 阶段的），Carol 在自己收到点时间锁合约（表明支付在 “启动” 阶段并没有卡住）后，先发送一个 ACK 给 Alice。收到 ACK 之后，启动阶段才算完成；这时候 “更新” 阶段开始，Alice 把随机数的和发给 Carol，然后 Carol 回复以支付凭证（因为从功能上来说，支付已经完成了）。最后，“结算” 阶段如往常一样进行。
 
 ![Stuckless Payments](../images/payment-points-part-2-stuckless-payments/ntPoint.png)
 

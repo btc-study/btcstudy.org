@@ -234,7 +234,7 @@ Ind 背后的开发团队 Lightning Labs 可以说是全球最大的全职开发
 - Loop Out：例如，客户端通过链下通道将资金发送给链上地址，以获取入账流动性。交易费由 Lightning Labs 服务器在链上支付。
 - Loop In：客户端利用来自外部的链上资金给资金枯竭的通道充值。交易费由 Lightning Labs 服务器在链下支付。
 
-Loop 后台进程公开了一个 [gRPC API](https://lightning.engineering/loopapi/#lightning-loop-grpc-api-reference) 和一个 [REST API](https://lightning.engineering/loopapi/index.html#loop-rest-api-reference)。为了实现认证和 DoS 保护，Loop 采用了 [Aperture](https://github.com/lightninglabs/aperture)，一个使用 [LSAT 协议标准](https://lsat.tech/)支持代理请求的 HTTP 402<sup>13</sup>反向代理 <sup>14<sup>。LSAT 是 Lightning Service Authentication Token（闪电网络服务认证通行证）的缩写，由 HTTP 402 [macaroon](https://github.com/lightningnetwork/lnd/issues/20) 和闪电网络结合而成。作为认证和付款机制，LSAT 可以将认证和付款逻辑与应用逻辑解绑。业务可以使用[基于 YAML 的配置](https://github.com/lightninglabs/aperture/blob/master/sample-conf.yaml)将已有 web 服务升级成可感知 LSAT 的，并通过微付款出售产品或服务，无需用户注册、发邮件或输入密码。
+Loop 后台进程公开了一个 [gRPC API](https://lightning.engineering/loopapi/#lightning-loop-grpc-api-reference) 和一个 [REST API](https://lightning.engineering/loopapi/index.html#loop-rest-api-reference)。为了实现认证和 DoS 保护，Loop 采用了 [Aperture](https://github.com/lightninglabs/aperture)，一个使用 [LSAT 协议标准](https://lsat.tech/)支持代理请求的 HTTP 402<sup>13</sup>反向代理 <sup>14</sup>。LSAT 是 Lightning Service Authentication Token（闪电网络服务认证通行证）的缩写，由 HTTP 402 [macaroon](https://github.com/lightningnetwork/lnd/issues/20) 和闪电网络结合而成。作为认证和付款机制，LSAT 可以将认证和付款逻辑与应用逻辑解绑。业务可以使用[基于 YAML 的配置](https://github.com/lightninglabs/aperture/blob/master/sample-conf.yaml)将已有 web 服务升级成可感知 LSAT 的，并通过微付款出售产品或服务，无需用户注册、发邮件或输入密码。
 
 [Lightning Pool](https://github.com/lightninglabs/pool/releases) 是非托管式点对点市场，可以让需要流动性的节点运营者付钱给拥有可用资金的节点运营者为其开通通道，同时保留对资金的控制权。Lightning Pool 的首个产品是 Lightning Channel Lease（闪电网络通道租赁）—— 有预定期限的流入通道。
 
@@ -277,7 +277,7 @@ Electrum 开发者并未打算实现一个带有支付转发功能的闪电网�
 
 ### LNP Node
 
-LNP Node 是 LNP/BP 标准协会领导下的开源项目，最值得一提的是它的设计目标 —— “广义闪电网络（[Generalized Lightning Network](https://github.com/LNP-BP/lnp-node#lnp-node-lightning-network-protocol-node)）”。该项目试图以一种更加模块化且可延展的方式来设计支付通道，让用户不仅能将新的交易输出添加到承诺交易上、从 HTLC 付款转变为 PTLC 付款、还能使用 [eltoo](https://blockstream.com/2018/04/30/en-eltoo-next-lightning/)、无需创造新的消息和标准即可进行实验。这个新的闪电网络实现计划引入很多功能和升级，例如，双向通道、[通道工厂/多对等节点通道](https://tik-old.ee.ethz.ch/file//a20a865ce40d40c8f942cf206a7cba96/Scalable_Funding_Of_Blockchain_Micropayment_Networks (1).pdf)、[Discreet Log Contract](https://hackmd.io/@lpQxZaCeTG6OJZI3awxQPQ/LN-DLC)（谨慎日志合约）、RGB 智能合约、椭圆曲线点锁定合约（PTLC，Pay-to-elliptic Curve Point Lock Contract）等等。LNP Node 处于早期开发阶段，目前仍在功能上追赶其它实现。
+LNP Node 是 LNP/BP 标准协会领导下的开源项目，最值得一提的是它的设计目标 —— “广义闪电网络（[Generalized Lightning Network](https://github.com/LNP-BP/lnp-node#lnp-node-lightning-network-protocol-node)）”。该项目试图以一种更加模块化且可延展的方式来设计支付通道，让用户不仅能将新的交易输出添加到承诺交易上、从 HTLC 付款转变为 PTLC 付款、还能使用 [eltoo](https://blockstream.com/2018/04/30/en-eltoo-next-lightning/)、无需创造新的消息和标准即可进行实验。这个新的闪电网络实现计划引入很多功能和升级，例如，双向通道、<a href="https://tik-old.ee.ethz.ch/file//a20a865ce40d40c8f942cf206a7cba96/Scalable_Funding_Of_Blockchain_Micropayment_Networks (1).pdf">通道工厂/多对等节点通道</a>、[Discreet Log Contract](https://hackmd.io/@lpQxZaCeTG6OJZI3awxQPQ/LN-DLC)（谨慎日志合约）、RGB 智能合约、椭圆曲线点锁定合约（PTLC，Pay-to-elliptic Curve Point Lock Contract）等等。LNP Node 处于早期开发阶段，目前仍在功能上追赶其它实现。
 
 LNP/BP 的目的不是提供消费品，而是为开发者提供一个 API。LNP Node 的主要应用场景是为开发者提供节点，用来进行实验、构建移动钱包或在闪电网络上使用智能合约系统 [RGB](https://rgb-org.github.io/)。在 LNP Node 的第一个版本中，开发者应该可以在闪电网络通道上发行和转移 RGB 资产，并与其他 LNP 节点运营者进行交易。
 

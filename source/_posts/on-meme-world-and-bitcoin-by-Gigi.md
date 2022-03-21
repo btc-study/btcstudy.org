@@ -6,6 +6,7 @@ cover: '../images/on-meme-world-and-bitcoin-by-Gigi/E8dQzOfWUAYPtUh.jpg'
 excerpt: '所有参与者都自愿 “生产” 比特币，共享现实得以形成'
 tags:
 - 比特币
+- Gigi
 ---
 
 

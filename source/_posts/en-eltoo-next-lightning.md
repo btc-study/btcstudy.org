@@ -65,7 +65,7 @@ tags:
 
 作为一个通用的 Layer 2 更新机制，eltoo 也可以用在闪电网络以外任意数量的系统中。举个例子，它支持创建高达 7 方参与的链下多方合约，结合 Schnorr 签名方案，甚至支持无数个参与方。
 
-这样的链下多方合约的例子之一是 [Burchert 等人](https://www.tik.ee.ethz.ch/file/a20a865ce40d40c8f942cf206a7cba96/Scalable_Funding_Of_Blockchain_Micropayment_Networks (1).pdf)提出的通道工厂，这是一种扩展方案，支持使用一笔链上交易为任意数量的支付通道充入资金，而且可以动态地再平衡和协商而无需动用区块链。
+这样的链下多方合约的例子之一是 <a href="https://www.tik.ee.ethz.ch/file/a20a865ce40d40c8f942cf206a7cba96/Scalable_Funding_Of_Blockchain_Micropayment_Networks (1).pdf">Burchert 等人</a>提出的 “通道工厂”，这是一种扩展方案，支持使用一笔链上交易为任意数量的支付通道充入资金，而且可以动态地再平衡和协商而无需动用区块链。
 
 ## 实现 eltoo 的道路
 

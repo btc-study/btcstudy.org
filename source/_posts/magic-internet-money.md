@@ -6,6 +6,7 @@ cover: '../images/magic-internet-money/d-rusty.jpg'
 excerpt: '无论是现在还是将来，它永远都是蕴含魔法的互联网货币'
 tags:
 - 比特币
+- Gigi
 ---
 
 
