@@ -314,9 +314,9 @@ Alice 通过 Bob 给 Carol 支付。那么，Bob 就知道了 Alice 给 Carol �
 
 “[原子化多路径支付](https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/000993.html)（AMP）” 是对基本 MPP 的优化，使得每一个分割开来的支付都使用不同的支付哈希值。因此，这些支付无法被关联起来。
 
-### Rendezvous（约会）
+### Rendezvous（会合）
 
-[“约会（Rendezvous）”](https://bitcointechweekly.com/front/proposal-for-rendez-vous-routing/) 路由是对接收者隐私的极大提升。接收者可以通过创建一个填充着洋葱加密信息的发票来隐藏自己的公钥和私有通道。他们可以知道一个随机节点，让发送者将资金发给该节点，然后再由该随机节点完成剩下的路由。发送者甚至不知道谁是最终的目的节点，路径上的其它节点也不知道。
+[“会合（Rendezvous）”](https://bitcointechweekly.com/front/proposal-for-rendez-vous-routing/) 路由是对接收者隐私的极大提升。接收者可以通过创建一个填充着洋葱加密信息的发票来隐藏自己的公钥和私有通道。他们可以知道一个随机节点，让发送者将资金发给该节点，然后再由该随机节点完成剩下的路由。发送者甚至不知道谁是最终的目的节点，路径上的其它节点也不知道。
 
 ### Route blinding（路径盲化）
 
