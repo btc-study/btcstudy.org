@@ -50,7 +50,7 @@ tags:
 
 “抽象层级（abstraction layer）” 的概念显然比比特币要古老。一般来说，你可以把 “层级” 理解成一种心智模型，用来给所有能够有意义地切分成有顺序的子系统系列的复杂系统打标签；有顺序意味着，每一个层级都严格依赖于前一个层级。这就是为什么我们要使用垂直并置的东西来做类比：在垂直并置的大戏中，“上面” 的东西都站在 “下面” 的东西之上，而下面的东西通常来说都更难以安全地触及、移动和变更（就像[叠叠乐](https://en.wikipedia.org/wiki/Jenga)的高低楼层一样）。
 
-![img](../images/LNP-BP-a-gentle-introduction/-layers.jpg)
+![img](../images/LNP-BP-a-gentle-introduction/lnp-bp-layers.jpg)
 
 <p style="text-align:center">- 层层向下（就像乌龟） -</p>
 
@@ -67,7 +67,6 @@ tags:
 ![img](../images/LNP-BP-a-gentle-introduction/mputers.jpg)
 
 <p style="text-align:center">- 随手选出的计算机科学层次三角形 -</p>
-
 
 4 层的 TCP/IP 模型，以及它的 “学术型/官僚型” 竞争对手，7 层的 [OSI 模型](https://en.wikipedia.org/wiki/OSI_model)，可能是分层架构最著名的例子。在 OSI 模型中，“layer 1” 是 “物理层”，传输实际的原始比特流；“layer 2” 是 “数据连接层（datalnke）”，定义数据的序列化格式；“layer 3” 是 “网络层”，决定数据要选择的路由路径；“layer 4” 是 “传输层”，管理传输协议；“layer 5” 是 “会话层”，维护连接并控制端口和会话；“layer 6” 是 “表现层” ，管理数据的格式和加密；“layer 7” 是 “应用层”，管理最终的人机交互。 
 
@@ -123,7 +122,7 @@ Mastercoin 是一种协议，让一些（有效）的比特币交易可以经过
 
 ![img](../images/LNP-BP-a-gentle-introduction/mechain.jpg)
 
-<p style="text-align:center">- 我在 “*Discovering Bitcoin*” 系列中回收了这个标表情包。但你必须承认，它真的太形象了，一定要重复使用（译者注：图中文字意为 “你的时间链很棒，就除了那些完全无法接受的缺陷：隐私性和可扩容性”） -</p>
+<p style="text-align:center">- 我在 “*Discovering Bitcoin*” 系列中回收了这个表情包。但你必须承认，它真的太形象了，一定要重复使用（译者注：图中文字意为 “你的时间链很棒，就除了那些完全无法接受的缺陷：隐私性和可扩容性”） -</p>
 
 
 不存在简单的解决方案：如果你严格限制了[时间链](https://cryptoinsider.media/timechain-satoshis-original-vision-blockchain-bitcoin/)的区块大小和频率，那么所有节点的验证负担将维持在可控状态，但是，“区块空间” 的供给将无法匹配需求，使无法满足的交易手续费和等待事件都大大提高。而反过来，如果你允许大小和频率提高，那么 “区块空间” 的价格将下降，而运行节点的成本将不断提高，并使整个系统的拓扑图趋于中心化。
@@ -165,7 +164,7 @@ Mastercoin 是一种协议，让一些（有效）的比特币交易可以经过
 <p style="text-align:center">- 纸做的黄金凭证 …… 如果你没有别的选择，这也不算坏 -</p>
 
 
-讽刺的是，虽然基础性的 “layer 1” 从现代的法币系统中消失了（央行给你的凭证没法换回任何东西），在塔的顶上，新的 “层级” 激增。举个例子，今天的终端用户在使用一些 “FinTech（金融科技）” 应用比如 Paypal、Venmo、GPay、支付宝和 ApplePay 时，从技术上来说，他们是在使用 “layer 6”，主要依赖于背后的传统银行关系；而传统银行关系代表着 “layer 5”，基于国际代理银行网络；国际代理银行网络（“layer 4”）又基于各国的中央银行在本国司法辖区内的行政垄断，也就是 “layer 3”；layer 3 又基于更根本的 “layer 2”，美联储。（再说一遍：“layer 1” 已经小时了：你再也不能拿回实体黄金了）。
+讽刺的是，虽然基础性的 “layer 1” 从现代的法币系统中消失了（央行给你的凭证没法换回任何东西），在塔的顶上，新的 “层级” 激增。举个例子，今天的终端用户在使用一些 “FinTech（金融科技）” 应用比如 Paypal、Venmo、GPay、支付宝和 ApplePay 时，从技术上来说，他们是在使用 “layer 6”，主要依赖于背后的传统银行关系；而传统银行关系代表着 “layer 5”，基于国际代理银行网络；国际代理银行网络（“layer 4”）又基于各国的中央银行在本国司法辖区内的行政垄断，也就是 “layer 3”；layer 3 又基于更根本的 “layer 2”，美联储。（再说一遍：“layer 1” 已经消失了：你再也不能拿回实体黄金了）。
 
 ![img](../images/LNP-BP-a-gentle-introduction/024x538.jpg)
 
@@ -179,7 +178,7 @@ Mastercoin 是一种协议，让一些（有效）的比特币交易可以经过
 <p style="text-align:center">- 闪电网络里的比特币不是一种以比特币计价的信用，它们就是比特币 -</p>
 
 
-这种信任最小化的第二层可以存在，事比特币的前辈们连想都没想过的事！一个典型例子是比特币的传奇人物 [Hal Finney](https://twitter.com/halfin/status/1110302988)，他在比特币诞生两年后想想比特币未来如何扩容时，想的是一种混合方案：一个免信任但不可扩展的 layer 1，搭配一个可扩展但基于信任的竞争性 “[比特币银行](https://bitcointalk.org/index.php?topic=2500.msg34211#msg34211)” 的网络。当[中本聪自己](https://github.com/trottier/original-bitcoin/blob/master/src/main.cpp#L434)提出现在所谓的 “链下支付通道” 最初想法时，意料之外的东西到来了：第二层可以不基于受信任的第三方，而基于可以自我执行的机制。中本聪[最初设计的结构有缺陷](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002417.html)，所以包括 [Jeremy Spillman](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002433.html)、[Christian Decker](https://link.springer.com/chapter/10.1007/978-3-319-21741-3_1)、[Joseph Poon](https://lists.linuxfoundation.org/pipermail/lightning-dev/2015-July/000018.html) 在内的开发者花了好几年时间来修正这个概念，然后将它与 “原子化信用路由” 的互补概念结合起来（后者在比特币前就已经存在了，见最初的 Ripple 项目）创造现在的闪电网络。而这个革命性的历程还没有到达终点：[Eltoo 提议](https://blockstream.com/2018/04/30/en-eltoo-next-lightning/)就是一个例子。
+这种信任最小化的第二层可以存在，是比特币的前辈们连想都没想过的事！一个典型例子是比特币的传奇人物 [Hal Finney](https://twitter.com/halfin/status/1110302988)，他在比特币诞生两年后想想比特币未来如何扩容时，想的是一种混合方案：一个免信任但不可扩展的 layer 1，搭配一个可扩展但基于信任的竞争性 “[比特币银行](https://bitcointalk.org/index.php?topic=2500.msg34211#msg34211)” 的网络。当[中本聪自己](https://github.com/trottier/original-bitcoin/blob/master/src/main.cpp#L434)提出现在所谓的 “链下支付通道” 最初想法时，意料之外的东西到来了：第二层可以不基于受信任的第三方，而基于可以自我执行的机制。中本聪[最初设计的结构有缺陷](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002417.html)，所以包括 [Jeremy Spillman](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2013-April/002433.html)、[Christian Decker](https://link.springer.com/chapter/10.1007/978-3-319-21741-3_1)、[Joseph Poon](https://lists.linuxfoundation.org/pipermail/lightning-dev/2015-July/000018.html) 在内的开发者花了好几年时间来修正这个概念，然后将它与 “原子化信用路由” 的互补概念结合起来（后者在比特币前就已经存在了，见最初的 Ripple 项目）创造现在的闪电网络。而这个革命性的历程还没有到达终点：[Eltoo 提议](https://blockstream.com/2018/04/30/en-eltoo-next-lightning/)就是一个例子。
 
 ![img](../images/LNP-BP-a-gentle-introduction/024x229.jpg)
 
