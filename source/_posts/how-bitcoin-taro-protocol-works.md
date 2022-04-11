@@ -2,7 +2,7 @@
 title: 'Taro 协议：依靠 Taproot 和闪电网络为比特币带来多样资产'
 author: 'Namcios'
 date: '2022/04/08 19:57:37'
-cover: '../images/how-bitcoin-taro-protocol- works/isual-3.png'
+cover: '../images/how-bitcoin-taro-protocol-works/isual-3.png'
 excerpt: '它使得一个 Tarpoot UTXO 就能发行几乎无限多种的资产'
 categories:
 - 比特币主网
@@ -57,7 +57,7 @@ Taro 利用了一种叫做 “Merkle-Sum 稀疏默克尔树（MS-SMT）” 的�
 
 默克尔树是靠成对哈希一系列的对象、直至最终获得一条哈希值（叫做 “根哈希值”）建构出来的。举个例子，在一个有四个对象的列表中，我们先为每一个对象生成哈希值；然后，将第一个对象和第二个对象的哈希值前后拼接，作为原像再生成一个哈希值，对第三个对象和第四个对象也做同样的操作；最后，把这剩下的两条哈希值前后拼接，生成根哈希值。
 
-![Merkle Tree Visual Specification](../images/how-bitcoin-taro-protocol- works/isual-3.png)
+![Merkle Tree Visual Specification](../images/how-bitcoin-taro-protocol-works/isual-3.png)
 
 <p style="text-align:center">- <a href="https://blog.iden3.io/img/merkle-tree-specification-visual-3.png">图片来源</a> -</p>
 
