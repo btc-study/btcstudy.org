@@ -38,9 +38,9 @@ Simplicity 被设计成与 Blockstream 的 [Elements 平台](https://blockstream
 - 所有用户都必须能够防范拒绝服务式攻击（此类攻击会消耗过量的内存和计算时间）
 - 一个智能合约的每一个参与者都要理解他们的程序在所有可能的输入下的执行成本
 
-现有的专为区块链设计的编程语言，比如以太坊的 EVM，也依然面临这些挑战。近期，[一个 EVM 升级在测试期间出错](https://www.coindesk.com/ethereums-next-blockchain-upgrade-faces-delay-after-testing-failure)，因为不同的实现无法就计算的结果达成共识。因为智能合约的逻辑错误和程序的资源消除超过限制，资金被[盗走](https://en.wikipedia.org/wiki/The_DAO_(organization))或者[再也取不出来](https://www.coindesk.com/30-million-ether-reported-stolen-parity-wallet-breach)的事情所在多有。
+现有的专为区块链设计的编程语言，比如以太坊的 EVM，也依然面临这些挑战。近期，[一个 EVM 升级在测试期间出错](https://www.coindesk.com/ethereums-next-blockchain-upgrade-faces-delay-after-testing-failure)，因为不同的实现无法就计算的结果达成共识。因为智能合约的逻辑错误和程序的资源消除超过限制，资金被[盗走](https://en.wikipedia.org/wiki/The_DAO_(organization))或者[再也取不出来](https://www.coindesk.com/30-million-ether-reported-stolen-parity-wallet-breach)的事情多了去了。
 
-另一方面，比特币的 Script 语言的功能通常来说限制在数字签名检查、[时间锁](https://en.bitcoin.it/wiki/Timelock)和[哈希锁](https://en.bitcoin.it/wiki/Hashlock)的组合。虽然这些元件也组合出了神奇的协议O（比如[闪电网络](https://lightning.network/)），比特币的 Script 语言缺乏表达更富在的智能合约的能力。
+另一方面，比特币的 Script 语言的功能通常来说限制在数字签名检查、[时间锁](https://en.bitcoin.it/wiki/Timelock)和[哈希锁](https://en.bitcoin.it/wiki/Hashlock)的组合。虽然这些元件也组合出了神奇的协议（比如[闪电网络](https://lightning.network/)），比特币的 Script 语言缺乏表达更富在的智能合约的能力。
 
 Simplicity 致力于提供足以实现任何计算的灵活性和表达能力，同时允许你验证你的智能合约的安全性、可靠性和成本。
 
@@ -48,7 +48,7 @@ Simplicity 致力于提供足以实现任何计算的灵活性和表达能力，
 
 Simplicity 是一种底层的编程语言和机器模型，用于基于区块链的智能合约编程。自始至终，它的设计目标就是拥有简单的语义，使得它能用形式化的方法来静态分析和推理。Simplicity 语言由其在 [Coq 证明助手](https://coq.inria.fr/)下的实现来定义。
 
-虽然其核心语言是非常简单的，简单到[一件 T-恤上就能印得下](https://blockstream.com/2017/10/30/simplicity/)，但语言得简洁性不一定能转化成开发的简洁性。原因如下：
+虽然其核心语言是非常简单的，简单到[一件 T-恤上就能印得下](https://blockstream.com/2017/10/30/simplicity/)，但语言的简洁性不一定能转化成开发的简洁性。原因如下：
 
 - 区块链使用的编程模型与常规编程完全不同。区块链的工作是 *验证计算*，而非做计算。这是一个微妙但[影响极为深远](https://cyber.stanford.edu/sites/default/files/russelloconnor.pdf)的区别，因为，我们有可能不需要图灵完备性就能验证任意的代码执行。
 - 一旦部署，一个智能合约就是不可更改的了，这使得我们没有修正错误的空间。Simplicity 通过帮助用户为自己的智能合约创建形式化证明来解决这个问题。
@@ -58,7 +58,7 @@ Simplicity 是一种底层的编程语言和机器模型，用于基于区块链
 
 自我们[上一次在博客发布关于 Simplicity 的消](https://blockstream.com/2018/02/08/simplicity-a-new-language-for-blockchains-bpase/)息以来，我们一致在努力将实验性质的语言研究转化为更正式的语言详述。
 
-我们已经用 [Coq 证明助手](https://coq.inria.fr/)宠幸实现了 Simplicity 语言：
+我们已经用 [Coq 证明助手](https://coq.inria.fr/)实现了 Simplicity 语言：
 
 - 我们已经有了完整 Simplicity 语言的指称语义，包括支持见证数据、断言和委托的语言插件。
 - 基于自由分类的抽象机器 “the Bit Machine” 的一个形式化详述，为核心 Simplicity 语言提供了操作性语义。
