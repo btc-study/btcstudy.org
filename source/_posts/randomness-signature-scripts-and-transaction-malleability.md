@@ -7,6 +7,7 @@ excerpt: '隔离见证与交易不定形的修复'
 tags:
 - 隔离见证
 - 密码学
+mathjax: true
 ---
 
 
