@@ -57,7 +57,7 @@ $$vP(x, y) = (k - u)G(x, y)$$
 
 已知 *eG = P*，则可以转化为：
 
-$$veG(x, y) = (k - u)G(x, y)\\e = (k - u)/v$$
+$$veG(x, y) = (k - u)G(x, y)\\\\e = (k - u)/v$$
 
 <p style="text-align:center">- 等式 4. 签名的目标 -</p>
 
