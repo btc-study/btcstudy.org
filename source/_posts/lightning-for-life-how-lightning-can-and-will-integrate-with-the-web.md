@@ -49,13 +49,13 @@ LNURL 是一套非常简单的规范，可以弥合仍存有的一些用户体�
 
 - [**LNURL-Withdraw**](https://github.com/fiatjaf/lnurl-rfc/blob/luds/03.md)：如果你想要给跟你的网站交互的用户支付，又想让他们省去生成发票的麻烦 ，那就看看 LNURL-Withdraw（直译为 “LNRUL-取款”）。它让用户可以通过扫描一个二维码或者点击一个链接来调用他们的钱包、生成合适的发票并发送给你的节点。
 - [**LNURL-Pay**](https://github.com/fiatjaf/lnurl-rfc/blob/luds/06.md)：它的适用场景恰好相反：假设你在运营一个关于比特币的博客，你想要获得打赏，但又不想为没一次打赏生成和呈现一个发票，也不想为了每一次打赏而跟每一位读者交互。LNRUL-Pay 让你可以生成一个二维码，接收一定限额内的打赏（比如 2500 到 10000 聪）。用户可以直接扫描这个码，它会让用户输入具体的数额，然后展开支付。用户不会知道什么原像啦发票啦，就是扫一个码然后响应弹出的钱包操作而已。
-- [**LNURL-Auth**](https://github.com/fiatjaf/lnurl-rfc/blob/luds/04.md)：是另一个很酷的 LNRUL 工具。它会基于用户钱包里的助记词生成一组公私钥，让用户以匿名的方式登录网站。它就像助记词一样隐私，而且比  *password123* 这样的口令和[刻意安排的口令](https://xkcd.com/936/)更容易抵抗暴力破解。而且它是呀了已经存储在用户的钱包内的数据，只需少许输入就能使用。
+- [**LNURL-Auth**](https://github.com/fiatjaf/lnurl-rfc/blob/luds/04.md)：是另一个很酷的 LNRUL 工具。它会基于用户钱包里的助记词生成一组公私钥，让用户以匿名的方式登录网站。它就像助记词一样隐私，而且比  *password123* 这样的口令和[刻意安排的口令](https://xkcd.com/936/)更容易抵抗暴力破解。而且它使用的是已经存储在用户的钱包内的数据，只需少许输入就能使用。
 
-## 闪电网络地址
+## 闪电网络地址（Lightning Addresses）
 
 电子邮件可能大家都知道，因此对它的优点习以为常。电子邮件的地址是严格唯一的（不像[指纹](https://mathblog.com/are-fingerprints-unique/)），而电子邮件让信息转递给正确的人变得极其简单。[闪电网络地址](https://lightningaddress.com/)也跟电子邮件一样拥有相同的形式（xxx@yyy.zzz ），但它们让用户可以直接转移资金，不必处理二维码。
 
-当前，LNURL-Pay 是最流行的实现闪电网络地址的方法，但是经典网络地址协议是开放的。举个例子，闪电网络地址拓展到使用静态发票或者 BOLT 12，只要这些技术得到接受了就可以。
+当前，LNURL-Pay 是最流行的实现闪电网络地址的方法，但是闪电网络地址协议是开放的。举个例子，闪电网络地址拓展到使用静态发票或者 BOLT 12，只要这些技术得到接受了就可以。
 
 哪怕是在当前的基于 LNURL 的格式中，闪电网络地址也非常流行而且易于集成。实际上，许多 app 都原生包含闪电网络地址，但是，对那些运行自己的节点、不介意作一些配置和[指令](https://github.com/andrerfneves/lightning-address/blob/master/DIY.md)、想用自己的域名来实现完全的自主托管服务的人来说，也有一些非托管的桥服务器可用。
 
@@ -83,14 +83,14 @@ WebLN 还提供了一些好处。首先，JavaScript 语言非常流行，而且
 
 谈到要无缝地整合 web 服务和闪电网络服务，很难不提到专门设计来实现这一点的 API。API 集成给了开发者对用户体验和接口的最全面的控制。
 
-虽然听起来不错，但 API 也有自己的牺牲。首先是，选择一个 API 是一个非常严肃的事情。现在还没有统一的集成标准，所以每个闪电网络服务商都按自己的需要定义自己的 API，而 web 服务业不得不未然这个 API 来开发用户体验。切换到另一个 API 的代价可能非常大，可能导致整体架构和用户体验的重大变化。
+虽然听起来不错，但 API 也有自己的牺牲。首先是，选择一个 API 是一个非常严肃的事情。现在还没有统一的集成标准，所以每个闪电网络服务商都按自己的需要定义自己的 API，而 web 服务业不得不围绕这个 API 来开发用户体验。切换到另一个 API 的代价可能非常大，可能导致整体架构和用户体验的重大变化。
 
 在选择要为哪种 web/移动端应用使用哪种闪电网络服务和 API 时，你主要需要考虑的是，是否要选择一种自主托管的解决方案，比如 [BTCPay Server](https://docs.btcpayserver.org/CustomIntegration/)、[LNPay](https://lnpay.co/wallet-api) 或是 [LNbits](https://github.com/lnbits/lnbits-legend#lnbits)，还是选择托管型方案，比如 [Zebedee](https://zebedee.io/) 或者 [Strike](https://developer.strike.me/en/)。当然，它们都各有所长。
 
 - 自主托管的解决方案给了你对资金的完整控制权，但它需要运维，比如你要管理通道、余额、连接性、合规、服务器运行，等等。
 - 托管方案免去了大部分运维的需要，但你将不得不信任保管你的资金的托管商（而且，如果你真的乐于这么做，那从一开始就不必要考虑闪电网络了）。而且，托管服务只在他们自己合规的部分司法辖区可用，这些地理上的限制自然会影响使用他们的下游厂商（包括你）。
 
-但无论它们在中本聪主义哲学上的品德如何，这些办法都是能用的。[Fountain](https://explore.fountain.fm/_blog) 让我们可以一边听自己喜欢的博客一边给播主打钱，他们是用 LNPay 来搭建自己的节点的。同样地，[推特的打赏功能](https://blog.twitter.com/en_us/topics/product/2021/bringing-tips-to-everyone)的闪电网络是运行在 Stirke 的 API 上的，所以我猜，大型的著名公司（还是说这是 Elon Mask 的意思？）会喜欢用自己的托管服务。
+但无论它们在中本聪主义哲学上的品德如何，这些办法都是能用的。[Fountain](https://explore.fountain.fm/_blog) 让我们可以一边听自己喜欢的播客一边给播主打钱，他们是用 LNPay 来搭建自己的节点的。同样地，[推特的打赏功能](https://blog.twitter.com/en_us/topics/product/2021/bringing-tips-to-everyone)的闪电网络是运行在 Stirke 的 API 上的，所以我猜，大型的著名公司（还是说这是 Elon Mask 的意思？）会喜欢用自己的托管服务。
 
 按自己的需要来选择就好。
 
@@ -115,7 +115,7 @@ LNC 让用户可以访问节点的 grpc 接口，所以运营者可以打开、�
 
 显然，[LSAT 协议](https://lsat.tech/introduction)利用了 HTTP 的 402 代码，这是一种客户端报错码，意思是 “[请求支付](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)” 或者 “[保留以备日后使用](https://lsat.tech/protocol-specification)”，这就看你问的是谁了（Lightning Labs LSAT 规范很棒，但矛盾的是，它也说 “这份文件假设未来已来”）。这个 402 代码被用来调用一个 “票据” —— 一个同时确定了用户身份以及定义用户可以如何与服务交互的 macaroon 文件。
 
-LSAT 带来的第一大好处是，身份验证和支付许可都是在一步中完成的。服务将知道用户是谁、支付聪哪儿来、用户出现的时候已经准备好了。不需要用户名、不需要口令，也不需要在每次访问时设置数额。[有时候熟悉就是好事，对吧](https://youtu.be/7KtAgAMzaeg)。
+LSAT 带来的第一大好处是，身份验证和支付许可都是在一步中完成的。服务将知道用户是谁、支付从哪儿来、用户出现的时候已经准备好了。不需要用户名、不需要口令，也不需要在每次访问时设置数额。[有时候熟悉就是好事，对吧](https://youtu.be/7KtAgAMzaeg)。
 
 ![img](../images/lightning-for-life-how-lightning-can-and-will-integrate-with-the-web/-hk40JHKuJK)
 
