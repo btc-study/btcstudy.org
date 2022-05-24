@@ -1,5 +1,5 @@
 ---
-title: 'BIP 119 及其给比特币带来的变化'
+title: 'BIP 119 以及如何变更比特币的共识规则'
 author: 'Keags'
 date: '2022/05/23 14:10:20'
 cover: ''
