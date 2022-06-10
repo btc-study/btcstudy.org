@@ -11,12 +11,10 @@ tags:
 
 
 > *作者：Aaron van Wirdum*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/culture/building-on-taproot-payment-pools-could-be-bitcoins-next-layer-two-protocol>*
-
-
-
-原文出版于 2020 年。
+>
+> *原文出版于 2020 年。*
 
 ![Payment pools, a potential Layer Two solution made possible through Taproot, could let groups of bitcoin users share UTXOs and enjoy more privacy.](../images/building-on-taproot-payment-pools-could-be-bitcoins-next-layer-two-protocol/rotocol.png)
 
@@ -35,7 +33,7 @@ tags:
 
 首先，要创建一个支付池，用户需要将他们的资金汇入一个共享的 Taproot 地址。那么，我们假设 Alice 持有 3 个币，Bob 持有 2 个币，Carol 持有 1 个币，总共是 6 个币。他们一起创建一笔交易，将这些币汇入他们共享的 Taproot 地址，让这个支付池得到了 6 个币。
 
-在区块链上，支付池的地址跟一个普通的比特币地址没有区别，现在有了 6 个币。但表象之下，Alice、Bob 和 Carol 聪明地使用 Taproot 来保证，他们都各自掌控着支付池中自己的那部分。Alice 在任何适合都能取出地址中的 3 个币，Bob 和 Carol 也能随时取出自己的那一份。
+在区块链上，支付池的地址跟一个普通的比特币地址没有区别，现在有了 6 个币。但表象之下，Alice、Bob 和 Carol 聪明地使用 Taproot 来保证，他们都各自掌控着支付池中自己的那部分。Alice 在任何时候都能取出地址中的 3 个币，Bob 和 Carol 也能随时取出自己的那一份。
 
 这是因为，要想花费地址中的资金，他们只有两种选择。
 
@@ -73,11 +71,11 @@ tags:
 
 下一次，当 Bob 要发起一笔支付，Alice 和 Carol 合作时，也是从一个支付池中支付，其交易看起来也跟普通的比特币交易一样。在最终的支付池中，Bob 如果单方面退出，将只能拿走 1 个币。这时候区块链专家可能会以为 Alice 又做了一次支付，进一步陷入模糊。（而且，即使这个专家手段高明，知道了这个之地址是 Alice 、Bob 和 Carol 之间的一个支付池，也始终不知道到底是谁发起了最后一笔支付。）
 
-每次 Alice、Bob 或 Carol 要支付时，外人都不可能分辨出地道是谁在支付。
+每次 Alice、Bob 或 Carol 要支付时，外人都不可能分辨出到底是谁在支付。
 
 支付池不仅允许支付。如果 Alice 想要增加自己在池中的 “余额”，她也可以做到。Alice、Bob 和 Carol 将合作将当前的 5 个币转移到一个新的 Taproot 地址中，并且，在同一笔交易中，Alice 将从自己控制的某个地址发送额外的 1 个币到这个地址中。新的 Taproot 地址将依旧有 6 个币，其中 3 个属于 Alice，这也会在她的单方面退出条款中反映出来。
 
-同样地，我们也可以让新的用户加入这个支付池，如果 Alice、Bob 和 Carol 都同意 Dave 加入，那么他们三个可以跟 Dave 一起创建一笔交易，将原有的支付池中的资金已经 Dave 新注入的资金一起发送到一个新的支付池。这个支付池是为 Dave 参与而设计的 —— 而且 Dave 也可以随时退出。
+同样地，我们也可以让新的用户加入这个支付池，如果 Alice、Bob 和 Carol 都同意 Dave 加入，那么他们三个可以跟 Dave 一起创建一笔交易，将原有的支付池中的资金以及 Dave 新注入的资金一起发送到一个新的支付池。这个支付池是为 Dave 参与而设计的 —— 而且 Dave 也可以随时退出。
 
 此外，支付池中的参与者也可以相互支付。例如，假如 Alice 要给 Bob 支付 1 个币，他们三人可以将池中的资金发送到一个新的支付池，在这个支付池中，Alice 的余额将比先前少 1 个，而 Bob 的余额会比原来多 1 个。这笔交易在比特币链上也跟普通交易一样，区块链专家将完全不知道是谁给谁支付了，也不知道支付了多少。（其实 Dave 也可以用类似的方式，也就是接收内部人支付的方式加入支付池。）
 
