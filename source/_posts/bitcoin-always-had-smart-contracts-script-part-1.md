@@ -5,7 +5,6 @@ date: '2022/02/25 10:35:19'
 cover: '../images/bitcoin-always-had-smart-contracts-script-part-1/-2JCBVA.png'
 excerpt: '了解脚本如何工作，也是理解 Taproot 升级的意义的关键'
 tags:
-- 入门系列
 - 比特币
 ---
 

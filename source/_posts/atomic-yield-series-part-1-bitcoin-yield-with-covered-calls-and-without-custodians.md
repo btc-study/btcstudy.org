@@ -5,7 +5,7 @@ date: '2022/03/21 15:54:32'
 cover: '../images/atomic-yield-series-part-1-bitcoin-yield-with-covered-calls-and-without-custodians/on-1x-1.png'
 excerpt: '结合 DLC 和有担保看涨期权，让你无需托管即可获得比特币利息'
 tags:
-- Discreet Log Contract
+- Discreet-Log-Contract
 ---
 
 

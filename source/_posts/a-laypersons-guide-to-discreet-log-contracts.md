@@ -5,7 +5,7 @@ date: '2022/03/09 17:15:09'
 cover: '../images/a-laypersons-guide-to-discreet-log-contracts/ration-.png'
 excerpt: '谨慎日志合约使比特币的去中心化金融成为可能。它保护了用户的隐私性以及金融自我主权。本文是一份不带技术细节的指南。'
 tags:
-- Discreet Log Contract
+- Discreet-Log-Contract
 ---
 
 

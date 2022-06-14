@@ -5,7 +5,7 @@ date: '2022/03/18 11:46:59'
 cover: '../images/dlc-oracle-failure-cases/800x450.png'
 excerpt: '了解这些故障场景对于理解 DLC 断言机需要何种信任来说至关重要'
 tags:
-- Discreet Log Contract
+- Discreet-Log-Contract
 ---
 
 

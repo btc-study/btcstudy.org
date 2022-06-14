@@ -8,7 +8,7 @@ categories:
 - 闪电网络
 tags:
 - 闪电网络
-- taproot
+- Taproot
 ---
 
 
