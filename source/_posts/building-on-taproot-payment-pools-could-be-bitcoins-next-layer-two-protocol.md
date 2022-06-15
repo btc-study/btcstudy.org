@@ -5,7 +5,7 @@ date: '2022/06/10 15:56:00'
 cover: '../images/building-on-taproot-payment-pools-could-be-bitcoins-next-layer-two-protocol/rotocol.png'
 excerpt: '支付池可以让一群比特币用户共享一个 UTXO'
 tags:
-- Payment Pool
+- Payment-pool
 - Layer-2
 ---
 
