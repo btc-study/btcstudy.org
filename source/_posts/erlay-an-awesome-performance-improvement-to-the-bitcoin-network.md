@@ -28,7 +28,7 @@ Erlay 将通过减少网络参与者之间不必要的通信，帮助比特币�
 
 感谢 [Gleb Naumenko](https://github.com/naumenkogs)、[Pieter Wuille](https://github.com/sipa)、[Gregory Maxwell](https://github.com/gmaxwell)、[Sasha Fedorova](https://github.com/fedorova) 和 [Ivan Beschastnikh](https://github.com/bestchai) [提出了](https://arxiv.org/pdf/1905.10518.pdf)这个令人赞叹的升级。
 
-我第一次直到这个想法是在 [Bitcoin Optech 周报](https://bitcoinops.org/en/newsletters/2019/06/05/)（#49）（也非常推荐大家关注他们）。非常感谢周报的作者们让懂一些技术的读者了解 Erlay。希望我可以解释变得更简单，为剩下的读者服务。
+我第一次知道这个想法是在 [Bitcoin Optech 周报](https://bitcoinops.org/en/newsletters/2019/06/05/)（#49）（也非常推荐大家关注他们）。非常感谢周报的作者们让懂一些技术的读者了解 Erlay。希望我可以解释变得更简单，为剩下的读者服务。
 
 ## 当前，交易是如何在网络中广播的？
 
