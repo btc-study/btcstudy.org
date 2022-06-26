@@ -25,9 +25,9 @@ CTV 是一种通用的智能合约操作码，具有完整的枚举能力，没�
 
 本质上，CTV 只是让你选出一笔具体的交易作为下一笔可以发生的交易。网络仅仅检查花费交易的哈希值是否跟脚本中的 CTV 哈希值一致。
 
-虽然这听起来功能非常有限，它可以用来跟模板元变成系统（比如 [Sapio](https://rubin.io/bitcoin/2021/12/05/advent-8/learn.sapio-lang.org)）创建出复杂的程序。
+虽然这听起来功能非常有限，它可以用来跟模板元编程系统（比如 [Sapio](https://rubin.io/bitcoin/2021/12/05/advent-8/learn.sapio-lang.org)）创建出复杂的程序。
 
-而且，功能有限不是个问题，是一个特性。CTV 被有意设计成能够跟整个比特币社区快速达成技术共识的样子，因为简单、安全的限制条款（covenant）系统不会出现更复杂的限制条款系统可能带有的问题。不过，自它出现一来，一些人希望开发更灵活的限制条款，而这需要更多时间来开发并给用户带来实际的好处。
+而且，功能有限不是个问题，是一个特性。CTV 被有意设计成能够跟整个比特币社区快速达成技术共识的样子，因为简单、安全的限制条款（covenant）系统不会出现更复杂的限制条款系统可能带有的问题。不过，自它出现以来，一些人希望开发更灵活的限制条款，而这需要更多时间来开发才能给用户带来实际的好处。
 
 CTV 也被设计成能跟未来可能添加的其它操作码（比如 CSFS、OP_AMOUNT 和 OP_CAT）一起工作，所以，假设未来有更多特性被添加到比特币中，它也不会过时，反而会变得更加有用。
 
@@ -40,7 +40,7 @@ CTV 目前是一个得到了充分审核的 BIP，正在等待来自社区的更
 1. [Optech](https://bitcoinops.org/en/newsletters/2019/05/29/#proposed-transaction-output-commitments)
 2. [utxos.org](https://utxos.org/)
 3. [模板，Elstoo，限制条款，我的天！](https://rubin.io/blog/2021/07/02/covenants/)
-4. [Shinobi 对通用限制条款的担忧](https://medium.com/block-digest-mempool/my-worries-about-too-generalized-covenants-5eff33affbb6)
+4. [Shinobi 对通用限制条款的担忧](https://medium.com/block-digest-mempool/my-worries-about-too-generalized-covenants-5eff33affbb6)（[中文译本](https://www.btcstudy.org/2022/05/26/my-worries-about-too-generalized-covenants/)）
 
 ## BIP-118 APO AnyPrevout
 
@@ -93,7 +93,7 @@ TLUV 是一个还在提议阶段的通用智能合约操作码，它是开放的
 
 甚至是完全退出：
 
-```
+```json
 [{"amt": 9,
   "key": "multi(B,C)",
   "scripts": ["signed(B) with up to 5 coins",
