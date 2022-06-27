@@ -17,7 +17,7 @@ tags:
 >
 > *本文的一个版本最早出版于 [sethforprivacy.com](https://sethforprivacy.com/posts/proposed-bitcoin-privacy-improvements/)。*
 
-[Ragnar Lifthrasir 提问有没有一个清单](https://twitter.com/Ragnarly/status/1531667098522382336)涵盖了提升比特币隐私性的想法和提议，既包括正在开发的、已被放弃的、从未实现的，也要有沉寂无闻的，那么我尝试写写一份。
+[Ragnar Lifthrasir 提问有没有一个清单](https://twitter.com/Ragnarly/status/1531667098522382336)涵盖了提升比特币隐私性的想法和提议，既包括正在开发的、已被放弃的、从未实现的，也要有沉寂无闻的，那么我尝试写一份。
 
 ![image-20220623154333098](../images/list-of-bitcoin-privacy-proposals/image-20220623154333098.png)
 

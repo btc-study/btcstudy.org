@@ -47,7 +47,7 @@ scriptSig: <sig> <pubKey>
 
 不幸的是，因为它基于堆栈的罕见特性和底层特点，Script 是非常难分析和使用的。虽然它从比特币诞生之时就存在，编写和理解 Script 从来不是一件简单的事。这也是为什么上面的案例脚本会这么长，一眼看上去会觉得毫无意义。在编写脚本时，我们会很想知道我们编写的逻辑是否**正确**、**最优**以及**在体积上有效率**（使用更少的[重量](https://en.bitcoin.it/wiki/Weight_units)）。
 
-整个社区都希望有一种简单的替代方法，不必直接使用 Script 但能创建处最优的 Script 代码。这就要讲到 **Miniscript** 了。
+整个社区都希望有一种简单的替代方法，不必直接使用 Script 但能创建出最优的 Script 代码。这就要讲到 **Miniscript** 了。
 
 ## Miniscript
 
@@ -106,7 +106,7 @@ Miniscript 花费条件编译器是用 Rust 写的，在[这个代码库](https:
 
 换句话说，一个描述符 “描述了” 如何通过给定的一个 *花费条件* 创建一个地址的流程。
 
-为了让多签名和复杂的密钥安排处理起来更简单，描述符是高度可插拔的（portable），可以被任何钱包软件用来确定可以从同一个钱包中生成的所有地址的清单。这个特性未所有的比特币应用和软件创建了一个共同的平台。
+为了让多签名和复杂的密钥安排处理起来更简单，描述符是高度可插拔的（portable），可以被任何钱包软件用来确定可以从同一个钱包中生成的所有地址的清单。这个特性为所有的比特币应用和软件创建了一个共同的平台。
 
 描述符的概念是在 2018 年出现的，自那时候开始，许多钱包都支持了描述符。你可以在  ` bitcoin-core ` 的[代码库](https://github.com/bitcoin/bitcoin/blob/master/doc/descriptors.md)中阅读描述符的文档（[中文译本](https://www.btcstudy.org/2022/05/15/support-for-output-descriptors-in-bitcoin-core/)）。
 
@@ -406,7 +406,7 @@ Error: Descriptor(Miniscript(Unexpected("Key too short (<66 char), doesn't match
 sh(wsh(andor(pk(E),older(8640),pk(C))))
 ```
 
-使用上面的奴身上生成公钥和地址，然后充入资金。
+使用上面的描述符生成公钥和地址，然后充入资金。
 
 ```sh
 # 私钥
@@ -525,7 +525,7 @@ Ewallet get_balance
 7. [Miniscripts SBC '19 视频](https://www.youtube.com/watch?v=XM1lzN4Zfks)
 8. [视频·重新思考钱包的架构：原生的描述符钱包](https://www.youtube.com/watch?v=xC25NzIjzog)
 
-衷心感谢我的导师 [Steve Myers](https://twitter.com/notmandatory)，感谢他给我持续的鼓励，并为我解答了这么多异化。非常感谢 [Raj](https://github.com/rajarshimaitra) 审核这篇博客，并给了我许多详细的建议。许多段落都是由他补充的。还要感谢在 ` #miniscript ` IRC 频道中的许多人，他们帮助我编写了 “保留奖金” 花费条件。
+衷心感谢我的导师 [Steve Myers](https://twitter.com/notmandatory)，感谢他给我持续的鼓励，并为我解答了这么多疑惑。非常感谢 [Raj](https://github.com/rajarshimaitra) 审核这篇博客，并给了我许多详细的建议。许多段落都是由他补充的。还要感谢在 ` #miniscript ` IRC 频道中的许多人，他们帮助我编写了 “保留奖金” 花费条件。
 
 这篇博客是在 [Summer of Bitcoin 2021](https://summerofbitcoin.org/) 期间由 [Sandipan Dey](https://twitter.com/@sandipndev) 撰写的。
 
