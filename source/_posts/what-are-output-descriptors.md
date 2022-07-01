@@ -9,6 +9,7 @@ categories:
 tags:
 - 钱包
 - 开发
+- 描述符
 ---
 
 

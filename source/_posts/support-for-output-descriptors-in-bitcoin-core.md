@@ -4,8 +4,8 @@ author: 'achow101'
 date: '2022/05/15 23:44:34'
 cover: ''
 excerpt: '这是一种简单的语言，可以用来描述输出脚本的集合'
-categories:
 tags:
+- 描述符
 ---
 
 
