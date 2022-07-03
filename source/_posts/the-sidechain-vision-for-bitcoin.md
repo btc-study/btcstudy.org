@@ -113,7 +113,7 @@ tags:
 
 19.<a id="note19"> </a>中本聪；2010 年 10 月；[“回帖：BitDNS 和比特币通用化”](https://bitcointalk.org/index.php?topic=1790.msg28696#msg28696) <a href="#jump-19">↩</a>
 
-20.<a id="note20"> </a>Reid Hoffman；2014 年 11 月；“我为什么投资 Blockstream” <a href="#jump-20">↩</a>
+20.<a id="note20"> </a>Reid Hoffman；2014 年 11 月；[“我为什么投资 Blockstream”](https://www.linkedin.com/pulse/20141117154558-1213-the-future-of-the-bitcoin-ecosystem-and-trustless-trust-why-i-invested-in-blockstream) <a href="#jump-20">↩</a>
 
 21.<a id="note21"> </a>Paul Sztorc；2022 年 1 月；[“同行评议（以及 Drivechain 的争议）”](https://www.drivechain.info/peer-review/peer-review-new/) <a href="#jump-21">↩</a>
 
