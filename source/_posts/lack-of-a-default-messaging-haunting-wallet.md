@@ -1,6 +1,6 @@
 ---
 title: '比特币钱包需要通讯和存储解决方案'
-author: 'Leo WalletScrutiny Wandersleb'
+author: 'Leo'
 date: '2022/06/29 22:43:54'
 cover: ''
 excerpt: '通讯和存储方案的缺位困扰着钱包开发者'
