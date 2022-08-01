@@ -5,7 +5,7 @@ date: '2022/04/21 20:38:17'
 cover: '../images/utreexo-compressing-fully-validating-bitcoin-nodes/7agCZA.jpeg'
 excerpt: '在本文中，我们进介绍一种叫做 “Utreexo” 的比特币扩容方案，它可以极大地降低运全验证节点的存储要求。'
 tags:
-- Utreexo
+- utreexo
 ---
 
 
