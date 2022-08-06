@@ -135,7 +135,7 @@ Johnson Lau 曾在一篇[文章](https://lists.linuxfoundation.org/pipermail/bit
 
 所有 UTXO 在被用来花费时都应该是平等的。遗憾的是，目前的情况并非如此，已经出现了追踪与犯罪活动相关的“污点”UTXO 的服务。这种区别对待带来的副作用是，无辜的用户可能会因花费了由“污点”UTXO 转了几手产生的 UTXO 而遭到逮捕。
 
-同质化需要隐私性。隐私性就是外人无法在庞大的用户群中找到任何一笔交易的所有者。问题是，比特币用户的隐私正面临[很多已知威胁](https://github.com/OpenBitcoinPrivacyProject/wallet-ratings/blob/master/report-03/threat model.wiki)。因此，当前的比特币离完全同质化还差得远。
+同质化需要隐私性。隐私性就是外人无法在庞大的用户群中找到任何一笔交易的所有者。问题是，比特币用户的隐私正面临[很多已知威胁](https://github.com/OpenBitcoinPrivacyProject/wallet-ratings/blob/master/report-03/threat%20model.wiki)。因此，当前的比特币离完全同质化还差得远。
 
 ## 向前兼容性
 
