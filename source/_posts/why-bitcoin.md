@@ -12,12 +12,14 @@ tags:
 
 
 > *作者：wiz*
-> 
+>
 > *来源：<https://medium.com/@wiz/why-bitcoin-359ada12629e>*
+>
+> *本文首发于 2019 年 7 月 16 日。*
 
 
 
-本文首发于 2019 年 7 月 16 日
+
 
 ![img](../images/why-bitcoin/mACqxA.jpeg)
 
