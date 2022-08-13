@@ -7,7 +7,7 @@ excerpt: '本文介绍了一个完全去中心化的双向锚定侧链设计。�
 tags:
 - Layer-2
 - utreexo
-- softchain
+- Softchain
 ---
 
 

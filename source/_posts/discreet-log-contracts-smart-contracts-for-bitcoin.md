@@ -5,7 +5,7 @@ date: '2022/08/02 00:04:58'
 cover: ''
 excerpt: '谨慎日志合约让打赌可以在比特币上信任最小化地执行。'
 tags:
-- Discreet Log Contract
+- Discreet-Log-Contract
 ---
 
 

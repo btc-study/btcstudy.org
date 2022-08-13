@@ -5,7 +5,7 @@ date: '2022/08/07 22:43:25'
 cover: ''
 excerpt: '差价合约使他可以持有比特币而不承担比特币价格波动的风险'
 tags:
-- Discreet Log Contract
+- Discreet-Log-Contract
 ---
 
 
