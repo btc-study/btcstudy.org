@@ -1,5 +1,5 @@
 ---
-title: 'OmniBOLT 详细简介（上）'
+title: 'OmniBOLT 详细介绍（上）'
 author: 'OmniBOLT'
 date: '2022/08/09 10:57:52'
 cover: ''
@@ -134,4 +134,4 @@ OmniBOLT 项目：https://github.com/omnilaboratory/obd
 
 OmniLayer 钱包：https://github.com/OmniLayer/omniwallet
 
-OmniJ：https://github.com/OmniLayer/OmniJ
+OmniJ：https://github.com/OmniLayer/OmniJ42

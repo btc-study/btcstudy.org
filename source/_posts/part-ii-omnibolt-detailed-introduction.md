@@ -1,5 +1,5 @@
 ---
-title: 'OmniBOLT 详细简介（下）'
+title: 'OmniBOLT 详细介绍（下）'
 author: 'OmniBOLT'
 date: '2022/08/09 23:47:05'
 cover: ''

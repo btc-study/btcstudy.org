@@ -6,7 +6,7 @@ cover: ''
 excerpt: 'Softchain 跟主链的共识层有更深的联系，因此是把双刃剑'
 tags:
 - 侧链
-- Softchian
+- Softchain
 ---
 
 
