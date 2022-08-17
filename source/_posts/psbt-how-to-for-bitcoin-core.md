@@ -42,7 +42,7 @@ PSBT 是尚未完全签好名的比特币交易的传输格式，它携带有相
 
 - **`converttopsbt` （创建者可用）**是一个效用型 RPC，可以将一笔未签名的原始交易转化成  PSBT 格式。它会忽略存在的签名。
 - **`createpsbt` （创建者可用）**是一个效用型 RPC，可以读取一组输入和输出，并将他们转化成一个不带其它信息的 PSBT。等价于在 ` createrawtransaction ` 之后调用 ` converttopsbt ` 。
-- **`walletcreatefundedpsbt` （创建者、更新者可用）**是一个钱包 RPC，会使用具体的输入和输入创建一个 PSBT。具体来说，对于该钱包已经直到的输入（识别为普通余额或观察余额的），该方法会为 PSBT 加入 UTXO 信息。对于已有 UTXO 信息的输出和输入，会加入钱包知晓的公钥和脚本信息。等价于在运行 `fundrawtransaction` 和 `converttopsbt`之后运行 `createrawtransaction`。
+- **`walletcreatefundedpsbt` （创建者、更新者可用）**是一个钱包 RPC，会使用具体的输入和输出创建一个 PSBT。具体来说，对于该钱包已经直到的输入（识别为普通余额或观察余额的），该方法会为 PSBT 加入 UTXO 信息。对于已有 UTXO 信息的输出和输入，会加入钱包知晓的公钥和脚本信息。等价于在运行 `fundrawtransaction` 和 `converttopsbt`之后运行 `createrawtransaction`。
 - **`walletprocesspsbt` （更新者、签名者、定稿器可用）**是一个钱包 RPC，取一个 PSBT 作为输入，为缺少数据的输入和输出加入 UTXO、公钥和脚本数据，还可以选择签名输入。可以做到的时候，它还会敲定部分签名。
 - **`utxoupdatepsbt` （定稿器可用）**是一个节点 RPC，取一个 PSBT 作为输入，并从 UTXO 集合中获得可用的信息来更新它（仅对 SegWit 输入可用）。
 - **`finalizepsbt` （定稿器、抽取器可用）**是一个效用型 RPC，可以敲定任何部分签名；而且，如果所有的输入都已经敲定，该方法会将结果转化为一笔完整签名的、可以使用 `sendrawtransaction` 在网络中广播的交易。
