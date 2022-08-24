@@ -10,8 +10,10 @@ tags:
 
 
 > *作者：Shinobi*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/technical/federated-sidechains-bitcoin-original>*
+>
+> [前篇中文译本](https://www.btcstudy.org/2022/07/29/drivechains-allow-sidechain-node-miners/)
 
 
 

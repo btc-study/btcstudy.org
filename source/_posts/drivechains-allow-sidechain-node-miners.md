@@ -11,10 +11,10 @@ tags:
 
 
 > *作者：Shinobi*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/technical/drivechains-allow-sidechain-node-miners>*
-
-
+>
+> [前篇中文译本](https://www.btcstudy.org/2022/07/28/softchains-use-cases-and-security-costs/)
 
 这一次我准备分解和讨论 drivechain 是如何工作的；这是一个最早于 2015 年提出的想法。在我们迄今讨论过的所有提议中，drivechain 是最老的，从实现细节和设计上来说也是最具体的（已经由 BIP [300](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) 和 [301](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) 文档化）。Paul Sztorc 是这个概念的发明者，他有几个主要目标，下面是一份不完整的归纳：
 
@@ -50,3 +50,5 @@ Accept 输出是非常简单的：包含了消息头数据和侧链区块的哈�
 以上就是 drivechain 背后的机理了。下一篇文章我们来聊聊联盟侧链，再然后，我们来比较以下所有这些设计的优缺点。
 
 （完）
+
+> [后篇中文译本](https://www.btcstudy.org/2022/08/02/federated-sidechains-bitcoin-original/)

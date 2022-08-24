@@ -84,3 +84,6 @@ Somsen 提出，可以使用 [AnyPrevOut](https://bitcoinops.org/en/topics/sigha
 *本文是一个关于比特币从 2014 年以来的主要侧链设计提议的系列的第一篇。请保持关注。*
 
 （完）
+
+> [后篇中文译本](https://www.btcstudy.org/2022/07/06/spacechains-unlocks-bitcoin-use-cases/)
+

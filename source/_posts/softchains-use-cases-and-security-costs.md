@@ -11,12 +11,12 @@ tags:
 
 
 > *作者：Shinobi*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/technical/softchains-use-cases-and-security-costs>*
+>
+> [前篇中文译本](https://www.btcstudy.org/2022/07/06/spacechains-unlocks-bitcoin-use-cases/)
 
-
-
-本文是研讨不同侧链设计的系列文章之一，这次我们要讲的是 [softchains](https://gist.github.com/RubenSomsen/7ecf7f13dc2496aa7eed8815a02f13d1)。这是 [Ruben Somsen](https://twitter.com/somsenruben) 提出了另一种侧链机制。Softchain 跟我[之前介绍过的 spacechain](https://bitcoinmagazine.com/technical/spacechains-unlocks-bitcoin-use-cases) 非常不同（[中文译本](https://www.btcstudy.org/2022/07/06/spacechains-unlocks-bitcoin-use-cases/)）。要实现一条侧链，它需要对专门构造的 Bitcoin Core 协议专门做一次变更，这意味着它会给比特币全节点施加新的验证成本；它支持双向锚定机制，不需要依赖联盟来托管资金。
+本文是研讨不同侧链设计的系列文章之一，这次我们要讲的是 [softchains](https://gist.github.com/RubenSomsen/7ecf7f13dc2496aa7eed8815a02f13d1)。这是 [Ruben Somsen](https://twitter.com/somsenruben) 提出了另一种侧链机制。Softchain 跟我[之前介绍过的 spacechain](https://bitcoinmagazine.com/technical/spacechains-unlocks-bitcoin-use-cases) 非常不同。要实现一条侧链，它需要对专门构造的 Bitcoin Core 协议专门做一次变更，这意味着它会给比特币全节点施加新的验证成本；它支持双向锚定机制，不需要依赖联盟来托管资金。
 
 ## 基石
 
@@ -47,3 +47,5 @@ Softchain 这个想法基于 Somsen 更早提出的一个叫做 “[PoW 欺诈�
 比起 spacechain，softchain 更深地参与到了主链的共识层，因此也带来了更多风险，但他们允许原生的双向锚定，因此可以给不同的应用场景带来更多可能性。下一篇文章，我会介绍 drivechain，最后给出一些我对侧链的整体想法。
 
 （完）
+
+> [后篇中文译本](https://www.btcstudy.org/2022/07/29/drivechains-allow-sidechain-node-miners/)

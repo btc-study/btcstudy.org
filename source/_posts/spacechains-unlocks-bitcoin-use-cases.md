@@ -11,12 +11,12 @@ tags:
 
 
 > *作者：Shinobi*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/technical/spacechains-unlocks-bitcoin-use-cases>*
+>
+> [前篇中文译本](https://www.btcstudy.org/2022/07/03/how-bitcoin-spacechains-work/)
 
-
-
-在[上一篇文章](https://bitcoinmagazine.com/technical/how-bitcoin-spacechains-work)中（[中文译本](https://www.btcstudy.org/2022/07/03/how-bitcoin-spacechains-work/)），我解释了 spacechain 的特性和工作原理，但还未提到可以拿它来做什么。最终来说，缺乏双向锚定机制会严重限制它能够为比特币用户提供的功能。
+在[上一篇文章](https://bitcoinmagazine.com/technical/how-bitcoin-spacechains-work)中，我解释了 spacechain 的特性和工作原理，但还未提到可以拿它来做什么。最终来说，缺乏双向锚定机制会严重限制它能够为比特币用户提供的功能。
 
 ## 单向旅途
 
@@ -69,3 +69,5 @@ Spacechain 可以为比特币用户提供许多的功能，甚至也能为不使
 所以，无论你认为这里讲的用途是否有价值，只要人们想要部署它们，它们最终就会成为现实。
 
 （完）
+
+> [后篇中文译本](https://www.btcstudy.org/2022/07/28/softchains-use-cases-and-security-costs/)
