@@ -15,9 +15,7 @@ tags:
 > 
 > *来源：<https://river.com/learn/what-is-taro-in-bitcoin/>*
 
-
-
-“Taro” 是一种能够给比特币区块链带来资产、开启新场景的协议。它被认为是可扩展的，有潜力让比特币成为一个容纳多种资产的网络，并且在这个网络上，用户可以使用比特币的可靠性、享受低手续费的即时全球终极结算。
+“Taro” 是一种能够给比特币区块链带来资产、开启新场景的协议。它被认为是可扩展的，有潜力让比特币成为一个能够容纳多种资产的网络，并且在这个网络上，用户可以使用比特币的可靠性、享受低手续费的即时全球终极结算。
 
 Taro 可以将所有的全球外汇交易市场转化成一套可以在任何闪电网络节点上运行的协议。
 
@@ -25,7 +23,9 @@ Taro 可以将所有的全球外汇交易市场转化成一套可以在任何闪
 
 ## 什么是 “Taro”？
 
-“Taro（[Taproot](https://river.com/learn/what-is-taproot/) Asset Representation Overlay，使用 Taproot 的资产表示层）” 是一种还在提议阶段的[协议](https://river.com/learn/terms/p/protocol/)，它让我们可以在比特币区块链上发行电子资产。它既可以发现[同质化](https://river.com/learn/terms/f/fungibility/)的资产（比如[稳定币](https://river.com/learn/what-are-stablecoins/)），也可以发行非同质化的、独一无二的代币（比如 NFT，或者说收藏品）。当前，这样的资产大部分在放在其它区块链上，因为在这些链上更容易实现、交易费用更低或者吞吐量更高，但是 Taro 有望改变这一局面。
+
+“Taro（[Taproot](https://river.com/learn/what-is-taproot/) Asset Representation Overlay，使用 Taproot 的资产表示层）” 是一种还在提议阶段的[协议](https://river.com/learn/terms/p/protocol/)，它让我们可以在比特币区块链上发行电子资产。它既可以用来发行[同质化](https://river.com/learn/terms/f/fungibility/)的资产（比如[稳定币](https://river.com/learn/what-are-stablecoins/)），也可以发行非同质化的、独一无二的代币（比如 NFT，或者说收藏品）。当前，这样的资产大部分在放在其它区块链上，因为在这些链上更容易实现、交易费用更低或者吞吐量更高，但是 Taro 有望改变这一局面。
+
 
 Taro 资产可以通过比特币网络的链上交易来转移。此外，同质化的 Taro 资产也可以（在锁入闪电通道之后）在[闪电网络](https://river.com/learn/what-is-the-lightning-network/)上以更低的手续费、更隐私的方式即时转移。闪电网络预计会成为 Taro 资产转移的主要网络，因为它具有压倒性的实用优势。
 
