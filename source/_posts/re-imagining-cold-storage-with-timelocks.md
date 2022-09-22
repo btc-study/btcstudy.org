@@ -6,12 +6,15 @@ cover: ''
 excerpt: '时间锁和预先签名且删除了私钥的交易是强大的新工具'
 tags:
 - 时间锁
+- covenant
 ---
 
 
 > *作者：Bob McElrath*
-> 
+>
 > *来源：<https://medium.com/@BobMcElrath/re-imagining-cold-storage-with-timelocks-1f293bfe421f>*
+>
+> *原文出版于 2016 年。*
 
 
 

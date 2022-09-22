@@ -5,8 +5,8 @@ date: '2022/07/06 17:19:27'
 cover: ''
 excerpt: 'Spacechain 功能有限，但也有一些有趣的用途'
 tags:
-- 侧链
 - Spacechain
+- Layer-2
 ---
 
 

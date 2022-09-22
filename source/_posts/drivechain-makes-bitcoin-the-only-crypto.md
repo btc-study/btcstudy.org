@@ -1,11 +1,12 @@
 ---
 title: 'Drivechain：以侧链的形式为比特币引入新功能'
-author: 'Nikita Chashchinskii 的观点'
+author: 'Nikita Chashchinskii'
 date: '2022/09/09 10:47:46'
 cover: ''
 excerpt: '增强有用性而无需改变共识'
 tags:
 - Drivechain
+- 侧链
 ---
 
 

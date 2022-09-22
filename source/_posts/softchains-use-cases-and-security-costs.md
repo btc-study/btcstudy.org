@@ -7,6 +7,7 @@ excerpt: 'Softchain 跟主链的共识层有更深的联系，因此是把双刃
 tags:
 - 侧链
 - Softchain
+- 欺诈证明
 ---
 
 

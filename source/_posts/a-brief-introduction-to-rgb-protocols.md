@@ -6,6 +6,7 @@ cover: '../images/a-brief-introduction-to-rgb-protocols/image1.png'
 excerpt: 'RGB 利用比特币区块链作为其状态承诺层，并在链下维护智能合约的代码和数据，借此实现可扩展性'
 tags:
 - RGB
+- 稳定币
 ---
 
 

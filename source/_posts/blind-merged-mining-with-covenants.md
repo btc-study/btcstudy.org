@@ -9,6 +9,7 @@ categories:
 tags:
 - 侧链
 - 合并挖矿
+- Eltoo
 ---
 
 
@@ -65,4 +66,4 @@ tags:
 
 [4] https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-September/016352.html
 
-[5] https://twitter.com/lopp/status/1081558829454802945
+[5] https://twitter.com/lopp/status/1081558829454802945https://www.btcstudy.org/2022/01/27/breaking-down-the-bitcoin-lightning-network-eltoo/

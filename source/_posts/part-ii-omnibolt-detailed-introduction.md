@@ -19,7 +19,7 @@ tags:
 
 ![img](../images/part-ii-omnibolt-detailed-introduction/A8jmxg.jpeg)
 
-为了帮助社区更好地理解 OmniLayer、OmniBOLT、闪电网络和相关的程序，我们写了一篇详细解释它们的文章，而且分成了上下两部分。本文是下班篇。我们将详细解释 OmniBOLT 的核心模块 —— 通道间的原子化互换。
+为了帮助社区更好地理解 OmniLayer、OmniBOLT、闪电网络和相关的程序，我们写了一篇详细解释它们的文章，而且分成了上下两部分。本文是下半篇。我们将详细解释 OmniBOLT 的核心模块 —— 通道间的原子化互换。
 
 ## 5. 通道间的原子化互换
 

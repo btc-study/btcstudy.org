@@ -8,6 +8,9 @@ categories:
 - 比特币主网
 tags:
 - 开发
+- CTV
+- Eltoo
+- covenant
 ---
 
 

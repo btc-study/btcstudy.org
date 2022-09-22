@@ -8,6 +8,7 @@ categories:
 - 比特币主网
 tags:
 - RGB
+- 生态
 ---
 
 
