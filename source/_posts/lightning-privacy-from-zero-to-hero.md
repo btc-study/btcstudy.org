@@ -1,6 +1,6 @@
 ---
 title: '闪电网络隐私性：从局限到超越'
-author: 'lukechilds'
+author: 'Bastien'
 date: '2022/09/29 22:38:54'
 cover: ''
 excerpt: '闪电网络在隐私性方面的缺陷，以及我们准备采用哪些手段来解决它们'
