@@ -29,7 +29,7 @@ tags:
 
 在分析风险时，我们也考虑可以 *规避* 风险的措施（也就是尽可能降低风险发生的概率），以及可以 *缓解* 风险的措施（在风险确实发生时，可以降低其影响）。
 
-本文无意定论隔离见证的好处是否大于其风险、隔离见证是否应该激活；不如说，本文是为了提供背景知识，帮助利息相关方做出充分知情的决定。
+本文无意定论隔离见证的好处是否大于其风险、隔离见证是否应该激活；不如说，本文是为了提供背景知识，帮助利益相关方做出充分知情的决定。
 
 ## 序列化代价
 
@@ -41,7 +41,7 @@ tags:
 
 隔离见证会影响两个方面的序列化：
 
-- 见证数据的承诺会被包含在 coinbase 交易中，使其体积增加 38 ~ 47 字节，约占区块提及限制的 0.005%（详见 [BIP 141 - 承诺的结构](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#commitment-structure)）
+- 见证数据的承诺会被包含在 coinbase 交易中，使其体积增加 38 ~ 47 字节，约占区块体积限制的 0.005%（详见 [BIP 141 - 承诺的结构](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#commitment-structure)）
 - 为包含了隔离见证数据的交易使用了新的序列化方法（详见 [BIP 141](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#Transaction_ID) 或者 [BIP 144](https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki#Serialization)）。为了易于分辨序列化的格式，需要给每笔交易增加 2 字节的开销；为了统计每个输出的见证数据对象，需要给每个输入增加 1 字节的开销。总的来说会给每笔交易增加约 1% 的开销。
 
 在序列化之后，隔离见证数据格式（见 [BIP 141 - witness 程序](https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki#witness-program)）有下列效果：
@@ -72,7 +72,7 @@ tags:
 
 ## 区块验证开销
 
-隔离见证在验证区块时引入了额外的除了，这既是为了检查 witness 默克尔树，也是为了处理 P2SH 编码的隔离见证交易。每一笔交易需要多用 5 次 SHA256 运算，每个 P2SH 编码的 P2WSH 输入需要多用 1 次 SHA256 运算，每个 P2SH 编码的 P2WPKH 输出需要多用一次 HASH160 操作。不过，这就相当于在最多 4 MB 的数据运行 6 次 SHA256 运算，或者约等于总计 24MB 的 SHA256 哈希值；再换算过来，就是在树莓派 v1 小型电脑上需要为每个区块多付出 15 秒的处理时间，而在功能更强的硬件上，只需不到 1/10 秒。
+隔离见证在验证区块时引入了额外的开销，这既是为了检查 witness 默克尔树，也是为了处理 P2SH 编码的隔离见证交易。每一笔交易需要多用 5 次 SHA256 运算，每个 P2SH 编码的 P2WSH 输入需要多用 1 次 SHA256 运算，每个 P2SH 编码的 P2WPKH 输出需要多用一次 HASH160 操作。不过，这就相当于在最多 4 MB 的数据运行 6 次 SHA256 运算，或者约等于总计 24MB 的 SHA256 哈希值；再换算过来，就是在树莓派 v1 小型电脑上需要为每个区块多付出 15 秒的处理时间，而在功能更强的硬件上，只需不到 1/10 秒。
 
 ## 引入 bug 的风险
 
@@ -160,7 +160,7 @@ tags:
 
 ### 规避措施
 
-许多软分叉都已经在比特币上激活（包括 BIP [16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)、[34](https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki)、[65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)、[66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)、[68](https://github.com/bitcoin/bips/blob/master/bip-0068.mediawiki)、[112](https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki) 和 [113](https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki)），而且这种经验已经在位激活软分叉而编写的 [BIP9](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki) 中得到了明文表述。BIP9 所述的流程曾用于部署 CSV 软分叉（BIP 68、112、113），结果是共识规则的快速升级，没有出现故障。
+许多软分叉都已经在比特币上激活（包括 BIP [16](https://github.com/bitcoin/bips/blob/master/bip-0016.mediawiki)、[34](https://github.com/bitcoin/bips/blob/master/bip-0034.mediawiki)、[65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)、[66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)、[68](https://github.com/bitcoin/bips/blob/master/bip-0068.mediawiki)、[112](https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki) 和 [113](https://github.com/bitcoin/bips/blob/master/bip-0113.mediawiki)），而且这种经验已经在为激活软分叉而编写的 [BIP9](https://github.com/bitcoin/bips/blob/master/bip-0009.mediawiki) 中得到了明文表述。BIP9 所述的流程曾用于部署 CSV 软分叉（BIP 68、112、113），结果是共识规则的快速升级，没有出现故障。
 
 隔离见证的设计和 BIP9 部署流程以下列特性避免了上面提到的问题：
 
@@ -240,7 +240,7 @@ UTXO 集膨胀速度的恶化由下列因素得到限制：
 
 如上所述，所有交易全部采用隔离见证特性，将使链上吞吐量翻倍。这给吞吐量带来了显著的一次性提高，无论从短期还是从中期来看都是如此，只不过取决于采用速度而已。此外，通过加入一些特性来支持 layer 2 网络，中期和长期的额外扩容效果也可部分实现。因为修复了 sighash 的平方级膨胀 bug，隔离见证也降低了进一步提高吞吐量的负面影响。
 
-但是，除了一次性的翻倍效果之外，隔离见证并美元提供任何直接的机制来进一步扩大链上交易吞吐量。
+但是，除了一次性的翻倍效果之外，隔离见证并没有提供任何直接的机制来进一步扩大链上交易吞吐量。
 
 这就带来了长期扩容可能被阻止或者推迟的风险：利益相关者可能认为隔离见证已经 “够了”，并且拒绝开发和支持进一步的扩容努力。
 
