@@ -75,7 +75,7 @@ Alice 的节点先检查 Bob 的交易，看看是不是 Bob 的钱包签名了�
 
 Bob 可能会盲目地相信 Alice 的节点，但 Alice 节点的对等节点可不会这样。他们也会遵循同样的步骤检查 Bob 的交易。
 
-你可以想象，在此之后，这些被 Alice 通知的节点还会再次收到关于 Bob 的交易的信息，甚至再听到很多次，因为他们都以不同的方式连接，并不知道谁已经知道了哪些信息。
+你可以想象，在此之后，这些被 Alice 通知的节点还会再次收到关于 Bob 的交易的信心，甚至再听到很多次，因为他们都以不同的方式连接，并不知道谁已经知道了哪些信息。
 
 ![img](../images/erlay-an-awesome-performance-improvement-to-the-bitcoin-network/NzEluLw.png)
 
