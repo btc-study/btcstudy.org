@@ -108,7 +108,7 @@ MuSig 是基于 Schnorr 签名的多签名协议族。我说这是一个家族�
 
 ### BIP118: AnyPrevOut
 
-曾用名 “SIGHASH_NOINPUT”，后来称呼更新为 “SIGHASH_ANYPREVOUT” 和 “SIGHASH_ANYPREVOUTANYSCRIPT”。这个变化[微不足道](https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki#revisions)，但主要的收获在于，当前的 BIP 利用了 [BIP342](https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki) 为 tapscript 安排的升级路径。所以，虽然它在技术上并不依赖于 Taproot，但 Taproot 升级移除了为止设立单独的 segwit 版本的需要。介绍一下背景，在 SegWit 引入之时，它还引入了 16 个版本后。2017 年新启用的、以 “bc1” 为前缀的隔离见证地址属于 segwit v0。而 Taproot 是此后第一个升级，使用 segwit v1 的版本号。
+曾用名 “SIGHASH_NOINPUT”，后来称呼更新为 “SIGHASH_ANYPREVOUT” 和 “SIGHASH_ANYPREVOUTANYSCRIPT”。这个变化[微不足道](https://github.com/ajtowns/bips/blob/bip-anyprevout/bip-0118.mediawiki#revisions)，但主要的收获在于，当前的 BIP 利用了 [BIP342](https://github.com/bitcoin/bips/blob/master/bip-0342.mediawiki) 为 tapscript 安排的升级路径。所以，虽然它在技术上并不依赖于 Taproot，但 Taproot 升级移除了为之设立单独的 segwit 版本的需要。介绍一下背景，在 SegWit 引入之时，它还引入了 16 个版本后。2017 年新启用的、以 “bc1” 为前缀的隔离见证地址属于 segwit v0。而 Taproot 是此后第一个升级，使用 segwit v1 的版本号。
 
 那到底什么是 AnyPrevOut 呢？它是一种签名方式，使用这种方式的签名的对象包含交易的大部分内容但不包含交易的输入。所以它允许一种特殊的花费方法：任何输入，只要满足使用该公钥的脚本，都可以用在交易中；如有必要，还可以切换输入。它使得支付的条件更灵活，提高了效率以及可扩展性，也打开了创新的空间。你可以在[这里](https://anyprevout.xyz/)了解更多。
 
