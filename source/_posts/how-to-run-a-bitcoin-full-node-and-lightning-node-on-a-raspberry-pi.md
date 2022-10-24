@@ -368,6 +368,18 @@ sudo mv /home/pi/lnd-linux-armv7-v0.14.0-beta.rc2/* /usr/bin/
 
 好了，LND 装好了。
 
+> **2022 年 10 月 22 日更新**：
+>
+> 2022 年 10 月 10 日，比特币区块链上出现了一笔体积超大的多签名交易，导致一些版本的 LND 程序宕机，原因是该交易的 witness 数据超过了 btcd 客户端允许的限度，而 LND 复用了这部分代码，因此也宕机了。
+>
+> LND v15.2 之后的版本应该已经修复了这个问题，在这里补上更新 LND 版本的代码，实际上重复上面三条命令，只不过下载的是新版本的 LND（这里是 v.015.3，笔者已亲测有效：
+>
+> ```bash
+> wget https://github.com/lightningnetwork/lnd/releases/download/v0.15.3-beta/lnd-linux-armv7-v0.15.3-beta.tar.gz
+> tar xzf lnd-linux-armv7-v0.14.0-beta.rc2.tar.gz
+> sudo mv /home/pi/lnd-linux-armv7-v0.14.0-beta.rc2/* /usr/bin/
+> ```
+
 ### **配置 LND**
 
 依样画葫芦，打开文件管理器，在 `/home/<你的用户名>` 新建一个文件，命名为 “YYY.conf”（比如 “lnd.conf”），用文本编辑器来编辑它（或者使用命令行 `nano /home/<你的用户名>/lnd.conf`），输入下列内容：
@@ -542,6 +554,12 @@ sudo cp lndconnect /usr/local/bin/lndconnect
 
 关键事实：（1）Zap 钱包没有 arm 架构的版本，所以我们没法在树莓派上直接使用 Zap 钱包，有就不用做上面这些事了；（2）**不要尝试在 Windows 上使用桌面版 Zap 钱包连接你的闪电节点，桌面版的软件有逻辑问题，会陷入死循环，不可能真正用得上**！
 
+> 2022 年 10 月 22 日更新：
+>
+> Zap v0.7.6 beta 的桌面版已证实不再有这种陷入死循环的逻辑问题，所以下面的教程对桌面版的 Zap 将同样有用。
+>
+> 但是 Zap 似乎已经不再更新，开发人员开启了一个新的项目。请在网络上搜索他们的新闻，决定要不要使用更新的软件。
+
 开搞！
 
 - 在手机上下载 Zap 钱包：<https://www.zaphq.io/download>
@@ -610,7 +628,7 @@ gpg --verify SHA256SUMS.asc
 
 第一步是获得软件压缩包的哈希值。你可以把得到的哈希值，与 SHA256SUMS.asc 中提供的哈希值相比对。
 
-第二部是加载开发者的公钥。第三步是验证签名。你应该会看到这样的信息：
+第二步是加载开发者的公钥。第三步是验证签名。你应该会看到这样的信息：
 
 ```bash
 gpg: 签名建立于 2021年05月02日 星期日 03时33分58秒 CST
