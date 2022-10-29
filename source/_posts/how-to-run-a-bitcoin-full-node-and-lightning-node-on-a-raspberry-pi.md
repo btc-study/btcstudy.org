@@ -5,10 +5,10 @@ date: '2021/11/08 14:41:55'
 cover: '../images/how-to-run-a-bitcoin-full-node-and-lightning-node-on-a-raspberry-pi/raspberr4b.jpg'
 excerpt: '全流程的教程'
 tags:
-- 开发
+- 实践
 ---
 
-
+> *作者：Anony*
 
 近日，笔者在一台树莓派小电脑上跑起了比特币全节点和闪电网络节点。由于笔者的计算机知识比较有限，这个过程可谓坎坷。也正因此，觉得自己的经历对大部分没有深入的计算机知识、但又希望以经济实惠的方法跑起节点的朋友来说，是有意义的。所以我准备把这个过程的一些经验总结出来分享给大家。
 
