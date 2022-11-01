@@ -372,13 +372,17 @@ sudo mv /home/pi/lnd-linux-armv7-v0.14.0-beta.rc2/* /usr/bin/
 >
 > 2022 年 10 月 10 日，比特币区块链上出现了一笔体积超大的多签名交易，导致一些版本的 LND 程序宕机，原因是该交易的 witness 数据超过了 btcd 客户端允许的限度，而 LND 复用了这部分代码，因此也宕机了。
 >
-> LND v15.2 之后的版本应该已经修复了这个问题，在这里补上更新 LND 版本的代码，实际上重复上面三条命令，只不过下载的是新版本的 LND（这里是 v.015.3，笔者已亲测有效：
+> LND v0.15.2 之后的版本应该修复了这个问题，在这里补上更新 LND 版本的代码，实际上重复上面三条命令，只不过下载的是新版本的 LND（这里是 v.015.3，笔者已亲测有效：
 >
 > ```bash
 > wget https://github.com/lightningnetwork/lnd/releases/download/v0.15.3-beta/lnd-linux-armv7-v0.15.3-beta.tar.gz
 > tar xzf lnd-linux-armv7-v0.14.0-beta.rc2.tar.gz
 > sudo mv /home/pi/lnd-linux-armv7-v0.14.0-beta.rc2/* /usr/bin/
 > ```
+>
+> **2022 年 11 月 1 日更新**：
+>
+> btcd 客户端再次因为[主网上出现其无法解析的交易](https://github.com/btcsuite/btcd/issues/1906)而崩溃。请运行 LND 的读者立即将 LND 升级到 v0.15.4 及以上的版本，避免因客户端宕机而导致损失。
 
 ### **配置 LND**
 
