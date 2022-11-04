@@ -65,7 +65,7 @@ tags:
 
 ![img](../images/aggregate-threshold-multisig-and-multisignatures/Zc_LyuBdDzp)
 
-许多签名方案都因为签名聚合技术而著称，比如 Schnorr 签名，基于格的签名（lattice-based）和基于配对的签名（pairing-based）。讲到基于配对的签名，我们要重点指出 BLS 方案（由 Boneh et al. 提出），已经被 [Dfinity](https://medium.com/dfinity/the-internet-computer-for-geeks-a-new-dfinity-white-paper-ecb075b2d525) 和 [Algorand](https://www.algorand.com/technology/white-papers) 等区块链实际使用。不过，这些协议签名的都是 *同一条消息*，可以应该把它们当作是多签名的案例，而不是聚合签名方案的合适案例。
+许多签名方案都因为签名聚合技术而著称，比如 Schnorr 签名，基于格的签名（lattice-based）和基于配对的签名（pairing-based）。讲到基于配对的签名，我们要重点指出 BLS 方案（由 Boneh et al. 提出），已经被 [Dfinity](https://medium.com/dfinity/the-internet-computer-for-geeks-a-new-dfinity-white-paper-ecb075b2d525) 和 [Algorand](https://www.algorand.com/technology/white-papers) 等区块链实际使用。不过，这些协议签名的都是 *同一条消息*，所以应该把它们当作是多签名的案例，而不是聚合签名方案的合适案例。
 
 最后，依然需要指出的是，大部分的这些方案都要求特定的签名顺序，但也有方案不再有这方面的要求（见 Lu et al. 的论文）。
 
