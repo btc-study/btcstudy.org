@@ -10,8 +10,10 @@ tags:
 
 
 > *作者：Tim Ruffing*
-> 
+>
 > *来源：<https://btctranscripts.com/tabconf/2022/2022-10-14-roast/>*
+>
+> *本文为作者在 TABConf 2022 上的演讲的记录稿。记录者为 Bryan Bishop。*
 
 
 
