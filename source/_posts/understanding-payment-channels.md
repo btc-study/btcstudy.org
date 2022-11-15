@@ -139,7 +139,7 @@ OP_2 <pubK A> <pubK B> OP_2 OP_CHECKMULTISIG
 
 支付通道是链下可扩展性解决方案的构成部分，但是仅靠它们的力量远远不够，因为它们要求用户在与任何对手方交易时必须开启通道（并锁定流动性）。为了解决这个问题，闪电网络又引入了基于哈希锁的密码学技术，让不同的支付通道可以相互通信，形成一个网络（此处过度简单化了，具体可以参考[这篇文档](http://lightning.network/docs/)）。
 
-全球还有很多团队和开发者正在探索提高比特币付款可扩展性的解决方案，例如，有助于重新平衡支付通道的[支付通道工厂](https://www.tik.ee.ethz.ch/file/a20a865ce40d40c8f942cf206a7cba96/Scalable_Funding_Of_Blockchain_Micropayment_Networks (1).pdf)、缩小链上结算交易体积的 [Schnorr 签名方案](https://bitcoinmagazine.com/articles/the-power-of-schnorr-the-signature-algorithm-to-increase-bitcoin-s-scale-and-privacy-1460642496/)和 [MAST 脚本](https://github.com/bitcoin/bips/blob/master/bip-0114.mediawiki)，还有其它很多绝妙的提议。
+全球还有很多团队和开发者正在探索提高比特币付款可扩展性的解决方案，例如，有助于重新平衡支付通道的<a href='https://www.tik.ee.ethz.ch/file/a20a865ce40d40c8f942cf206a7cba96/Scalable_Funding_Of_Blockchain_Micropayment_Networks (1).pdf'>支付通道工厂</a>、缩小链上结算交易体积的 [Schnorr 签名方案](https://bitcoinmagazine.com/articles/the-power-of-schnorr-the-signature-algorithm-to-increase-bitcoin-s-scale-and-privacy-1460642496/)和 [MAST 脚本](https://github.com/bitcoin/bips/blob/master/bip-0114.mediawiki)，还有其它很多绝妙的提议。
 
 扩大比特币的吞吐量并非易事，目前可用于改进基础设施的资金又有限。比特币可能需要一段时间才能与主流的中心化解决方案竞争。但是，放眼未来，比特币还将走过一个又一个世纪。为了比特币的健康发展，一切等待都是值得的。
 
