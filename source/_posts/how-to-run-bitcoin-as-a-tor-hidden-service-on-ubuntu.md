@@ -65,7 +65,7 @@ username@host:~$ sudo vim /usr/share/tor/tor-service-defaults-torrc
 
 确保配置文件里有下面几行（不管放在哪个位置都行）：
 
-```text
+```
 ControlPort 9051
 CookieAuthentication 1
 CookieAuthFileGroupReadable 1
@@ -112,7 +112,7 @@ username@host:~$ tail -f ~/.bitcoin/debug.log | grep tor
 
 你应该会看到这样的输出：
 
-```text
+```
 2016–08–18 20:36:10 torcontrol thread start
 2016–08–18 20:36:10 tor: Successfully connected!
 2016–08–18 20:36:10 tor: Connected to Tor version 0.2.8.6
@@ -130,7 +130,7 @@ username@host:~$ tail -f ~/.bitcoin/debug.log | grep tor
 
 如果你看到这个错误：
 
-```text
+```
 2016-08-18 19:51:48 tor: Add onion failed with unrecognized command (You probably need to upgrade Tor)
 ```
 
@@ -138,7 +138,7 @@ username@host:~$ tail -f ~/.bitcoin/debug.log | grep tor
 
 如果你看到这个错误：
 
-```text
+```
 2016–08–18 20:01:28 tor: Error connecting to Tor control socket
 2016–08–18 20:01:28 tor: Not connected to Tor control port 127.0.0.1:9051, trying to reconnect
 ```
