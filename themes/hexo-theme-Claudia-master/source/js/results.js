@@ -85,9 +85,7 @@
     }
   }
 
-  // get deploy version, cache request
-  var v = document.getElementById('version').innerText;
-  fetch('/content.json?v=' + v)
+  fetch('/content.json')
     .then(function(response) {
       return response.json();
     })
