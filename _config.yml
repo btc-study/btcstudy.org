@@ -127,7 +127,7 @@ jsonContent:
     author: true
     avatar: true
     date: true
-    content: true
+    content: false
     cover: true
     path: true
 

@@ -16,11 +16,12 @@
   }
 
   var getCoverImg = function(post) {
-    var coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/);
-    let imgUrl = coverImgElement ? coverImgElement[1] : "/images/BITCOIN.png";
-    if (post.cover) imgUrl = post.cover;
+    // modify by gyx, remove content. decrease content.json size.
+    // var coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/);
+    // if (post.cover) imgUrl = post.cover;
+    var imgUrl = post.cover || "/images/BITCOIN.png";
     if (!/^\//.test(imgUrl)) imgUrl = '/' + imgUrl;
-    imgUrl = imgUrl.replace(/^(\/)?\.\./, '')
+    imgUrl = imgUrl.replace(/^(\/)?\.\./, '');
     return imgUrl;
   }
 
