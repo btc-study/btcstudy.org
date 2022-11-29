@@ -59,7 +59,7 @@ tags:
 
 ![img](../images/merged-mining-part-i-by-sergio-demian-lerner/o_black.png)
 
-如今有许多论文[分析](http://www.wcse.org/WCSE_2018/W072.pdf)了中本聪共识的合并挖矿，既有[肯定意见](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/)，也有[批评意见](https://eprint.iacr.org/2017/791.pdf)。不过，现在所有的研究都关注合并挖矿对去中心化的实际影响，但依然缺乏严谨的方法。学术研究还没有停留在 Namecoin 的合并挖矿机制，但这种机制已经优化了许多。2018 年 [Rootstock 侧链](http://rootstock.io/)的推出使研究重新活跃起来，使人们发现了更安全的合并挖矿协议，比如[可以感知分叉的变种](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP110.md)。其中一些优化已经由 Rootstock 在连续几次网络升级中实现。但是，新的理论研究依然分散在网文和 RSKIP（Rootstock 升级提议）中，需要更好的归档。新的合并挖矿协议可以抵抗一些已知的攻击（我们会在后续的文章中详细讨论）。举个例子，人们通常认为合并挖矿的侧链在合并挖矿的哈希率较低（低于主链哈希率的 10%）时无法抵御重复花费攻击，但是一些新的协议是可以做到的（在稍有区别的安全性和活性假设之下）。
+如今有许多论文[分析](http://www.wcse.org/WCSE_2018/W072.pdf)了中本聪共识的合并挖矿，既有[肯定意见](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/)，也有[批评意见](https://eprint.iacr.org/2017/791.pdf)。不过，现在所有的研究都关注合并挖矿对去中心化的实际影响，但依然缺乏严谨的方法。学术研究还停留在 Namecoin 的合并挖矿机制，但这种机制已经优化了许多。2018 年 [Rootstock 侧链](http://rootstock.io/)的推出使研究重新活跃起来，使人们发现了更安全的合并挖矿协议，比如[可以感知分叉的变种](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP110.md)。其中一些优化已经由 Rootstock 在连续几次网络升级中实现。但是，新的理论研究依然分散在网文和 RSKIP（Rootstock 升级提议）中，需要更好的归档。新的合并挖矿协议可以抵抗一些已知的攻击（我们会在后续的文章中详细讨论）。举个例子，人们通常认为合并挖矿的侧链在合并挖矿的哈希率较低（低于主链哈希率的 10%）时无法抵御重复花费攻击，但是一些新的协议是可以做到的（在稍有区别的安全性和活性假设之下）。
 
 ## Namecoin 的合并挖矿设计
 
