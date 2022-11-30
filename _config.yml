@@ -158,14 +158,3 @@ minify:
   html: true
 
 processon: https://www.processon.com/embed/61cac8cc1e08534776ea0505
-
-# offline config passed to sw-precache.
-service_worker:
-  maximumFileSizeToCacheInBytes: 10485760
-  staticFileGlobs:
-  - public/js/**/*.js
-  - public/style/**/*.css
-  - public/images/**/*.{png,jpg,gif}
-  - public/content.json
-  stripPrefix: public
-  verbose: true
