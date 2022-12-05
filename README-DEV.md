@@ -32,3 +32,10 @@ mathjax: true
 - tags: 文章标签
   空格用中划线('-')代替
 - mathjax: 是否开启 LaTeX 格式
+
+
+## 运行
+
+```bash
+hexo s
+```
