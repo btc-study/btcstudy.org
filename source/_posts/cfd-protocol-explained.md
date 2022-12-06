@@ -93,7 +93,8 @@ DLC 输出是一个简单的  `2-of-2` 多签名输出，一个公钥 `A` 来自
 
 ![img](../images/cfd-protocol-explained/ual_cfd.jpg)
 
- -永续的差价合约-
+<p style="text-align:center">- 永续的差价合约 -</p>
+
 
 ### 延期
 
