@@ -52,9 +52,7 @@ tags:
 
 **硬件钱包如何生成助记词？**
 
-硬件钱包首先生成一个种子，然后将其映射到[一个包含 2048 个单词的单词表](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt)上得到助记词。硬件钱包利用[多种方法](https://bitcointalk.org/index.php?topic=5317199.0)来实现随机性，例如，随机数生成器（RNG）。很多硬件钱包都内置了一个独立的微处理器（叫作[安全元件](https://unchained.com/blog/bitcoin-what-is-a-secure-element/)），RNG 固件就在安全元件上运行。有些
-
-钱包则将内外部资源结合起来生成熵，最常见的一个例子就是[掷骰子](https://coldcard.com/docs/verifying-dice-roll-math)。
+硬件钱包首先生成一个种子，然后将其映射到[一个包含 2048 个单词的单词表](https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt)上得到助记词。硬件钱包利用[多种方法](https://bitcointalk.org/index.php?topic=5317199.0)来实现随机性，例如，随机数生成器（RNG）。很多硬件钱包都内置了一个独立的微处理器（叫作[安全元件](https://unchained.com/blog/bitcoin-what-is-a-secure-element/)），RNG 固件就在安全元件上运行。有些钱包则将内外部资源结合起来生成熵，最常见的一个例子就是[掷骰子](https://coldcard.com/docs/verifying-dice-roll-math)。
 
 ### 存储种子、助记词和私钥
 
@@ -122,7 +120,7 @@ tags:
 
 - 硬件钱包虽然适用于冷存储，却未必是大量交易（例如，高频交易或购买咖啡）的最佳选择。
 
-- 硬件钱包可以抵御多种形式的恶意软件，但是有一些恶意软件专门针对硬件钱包（即，[clipper](https://unchained.com/blog/21-ways-lose-bitcoin/#:~:text=and bitcoin wallets-,Clipper,-which changes a) 恶意软件）。
+- 硬件钱包可以抵御多种形式的恶意软件，但是有一些恶意软件专门针对硬件钱包（即，<a href="https://unchained.com/blog/21-ways-lose-bitcoin/#:~:text=and%20bitcoin%20wallets-,Clipper,-which%20changes%20a">clipper</a> 恶意软件）。
 
 - 硬件钱包有购买成本，通常是 75 至 150 美元。相比之下，很多软件钱包不会产生任何成本。
 
