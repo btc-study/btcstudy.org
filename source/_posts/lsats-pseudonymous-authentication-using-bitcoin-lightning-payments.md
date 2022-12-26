@@ -31,7 +31,7 @@ tags:
 
 现在的身份验证实现有两个显著的缺点。其一，它们依赖于第三方来存储敏感数据。这些信息经常遭到窃取或泄露，让用户处于风险之中。其二，用户的真实身份常常被身份验证关联起来。将你的真实身份绑定到第三方的身份验证服务（比如 Google 和 Facebook），会暴露你在使用什么服务、使用的频率如何。
 
-在 2019 年，Tierion 开始开发这些问题的解决方案。我们推出了 [Boltwall](https://medium.com/tierion/boltwall-middleware-for-lightning-payments-authorization-e3a1dbb54a4c)，一种用于部署闪电网络付费服务得中间件。Boltwall 的初版使用了一种不记名的凭证，叫做 “[macaroons](http://hackingdistributed.com/2014/05/16/macaroons-are-better-than-cookies/)”（直译为 “马卡龙”），是关联到闪电网络发票的。请求会基于发票是否得到支付而得到许可。
+在 2019 年，Tierion 开始开发这些问题的解决方案。我们推出了 [Boltwall](https://medium.com/tierion/boltwall-middleware-for-lightning-payments-authorization-e3a1dbb54a4c)，一种用于部署闪电网络付费服务的中间件。Boltwall 的初版使用了一种不记名的凭证，叫做 “[macaroons](http://hackingdistributed.com/2014/05/16/macaroons-are-better-than-cookies/)”（直译为 “马卡龙”），是关联到闪电网络发票的。请求会基于发票是否得到支付而得到许可。
 
 几个月后，Lightning Labs 的 CTO [Olaoluwa Osuntokun‏](https://twitter.com/roasbeef) 提出了他称为 “闪电网络服务身份认证 Token” 的提议。虽然 Boltwall 是独立开发的，[LSAT 演讲](https://docs.google.com/presentation/d/1QSm8tQs35-ZGf7a7a2pvFlSduH3mzvMgQaf-06Jjaow/edit#slide=id.p)中描述的动机非常契合我们的目标：将闪电支付用于身份验证，使身份验证不依赖于个人和隐私信息。
 
@@ -85,7 +85,7 @@ Blotwall 支持比特币闪电网络付费和使用 LSAT 的身份验证。用�
 
 **NOW-BOLTWALL**
 
-[now-boltwall](https://github.com/tierion/now-boltwall) 是一种命令行工具，帮助你简单地部署一个在线的、启用 Bolwall 的服务端，连接到一个运行中的 lnd 实例。它提供了工具来帮助你检索和设置你的 lnd 连接证书、设置你的 Boltwall、甚至可以快速连接到一个 [BTCPay 服务端](https://btcpayserver.org/)。服务端使用 [Zeit's Now](https://zeit.co/home) 部署，这是一种免服务端的部署框架，有大量的免费套餐。完整的文件见[此处](https://github.com/tierion/now-boltwall)。
+[now-boltwall](https://github.com/tierion/now-boltwall) 是一种命令行工具，帮助你简单地部署一个在线的、启用 Boltwall 的服务端，连接到一个运行中的 lnd 实例。它提供了工具来帮助你检索和设置你的 lnd 连接证书、设置你的 Boltwall、甚至可以快速连接到一个 [BTCPay 服务端](https://btcpayserver.org/)。服务端使用 [Zeit's Now](https://zeit.co/home) 部署，这是一种免服务端的部署框架，有大量的免费套餐。完整的文件见[此处](https://github.com/tierion/now-boltwall)。
 
 **LSAT-JS**
 
