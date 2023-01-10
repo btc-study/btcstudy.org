@@ -38,7 +38,7 @@ tags:
 
 ## 在链下转移
 
-怀着优化这种设计的目的，RGB 协议提出了一种更可扩展、更加隐私、更面向未来的解决方案，其基石是 [Peter Todd 在 2017 年](https://petertodd.org/2017/scalable-single-use-seal-asset-transfer) 提出的客户端验证（client-side validation）和一次性密封（single-use-seals）的概念。
+怀着优化这种设计的目的，RGB 协议提出了一种更可扩展、更加隐私、更面向未来的解决方案，其基石是 [Peter Todd 在 2017 年](https://petertodd.org/2017/scalable-single-use-seal-asset-transfer) 提出的客户端验证（client-side validation）和一次性密封条（single-use-seals）的概念。
 
 核心的理念是，仅在必要的时候才使用比特币区块链，也就是利用工作量证明和网络的去中心化来实现重复花费保护和审查抗性。所有的代币转移的验证工作都从全局共识层中移除、放在链下，仅由接收支付的一方的客户端来验证。
 
