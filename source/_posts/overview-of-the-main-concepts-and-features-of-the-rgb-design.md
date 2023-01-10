@@ -2,7 +2,7 @@
 title: 'RGB 协议的设计'
 author: 'Federico Tenga'
 date: '2023/01/10 16:34:40'
-cover: ''
+cover: '../images/overview-of-the-main-concepts-and-features-of-the-rgb-design/single-use-seals.png'
 excerpt: 'RGB 设计的主要概念和特性概述'
 tags:
 - RGB
@@ -19,7 +19,7 @@ tags:
 
 实体的 “一次性密封” 是一种带有唯一编码的塑料带，通常用于检测存储和运输过程中的篡改。举个例子，当你在一个运输集装箱的门上锁好一个一次性密封条之后，如果你在再次开门的时候，发现印着自己预期中的号码的密封条完好无损，那么你就可以确信在运输期间没有人打开过这个集装箱（假设制造一个一模一样的密封条是足够困难的）。
 
-![single-use-seals](../images/overview-of-the-main-concepts-and-features-of-the-rgb-design/single-use-seals.webp)
+![single-use-seals](../images/overview-of-the-main-concepts-and-features-of-the-rgb-design/single-use-seals.png)
 
 类似地，使用电子的一次性密封条（最早由 [Peter Todd 在 2016 年](https://petertodd.org/2016/state-machine-consensus-building-blocks)提出），你可以对一条消息锁上一个电子密封条，确保这条消息只能被使用一次。举个例子，假设这条消息是某块土地的所有权证书，要是没有一次性密封系统，我可以对许多人展示这个证书，并说服每一个人我对这块土地有充分的权利，然后一地多卖。在证书上应用一次性密封条，我们可以将打开密封条的操作定义成卖出土地的必要步骤，因此，卖方就没有办法把同一块土地卖给多个人；一旦 TA 尝试这么做，第二个买方就会注意到这块土地已经卖出了，因为电子密封条已经打开过了。
 
@@ -47,7 +47,7 @@ RGB 协议使用上述的 “基于比特币的一次性密封条” 模式，�
 
 在 RGB 中，没有全局网络这样的、所有的交易都在其中传播的东西，因此也无法创建等价于比特币 UTXO 集的东西。这意味着，在接收一笔支付时，一个 RGB 客户端将不仅需要验证交易的最新状态是有效的，还必须对以往所有的状态转化作同样的验证，一路追溯到发行合约的创始状态。
 
-![RGB-validation](../images/overview-of-the-main-concepts-and-features-of-the-rgb-design/RGB-validation.webp)
+![RGB-validation](../images/overview-of-the-main-concepts-and-features-of-the-rgb-design/RGB-validation.png)
 
 与此同时，这也意味着，与比特币及任何其它全局共识系统不同，在 RGB 协议中，**一个客户端不需要知道、也不需要验证全局中发生的所有交易**，因为它只需要知道跟自己的钱包相关的交易即可。因此，每个客户端需要验证的数据量都更小，整个系统因此更加可扩展。
 
