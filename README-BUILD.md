@@ -32,6 +32,21 @@ cdn:
 
 ## 部署
 
+更新 2023年01月12日14:35:23
+
+部署方式调整，取消 travis-ci 自动构建，改为手动构建。
+
+步骤：
+
+1. 编写文章
+2. 运行命令，生成静态文件
+```bash
+$ hexo g
+```
+3. 提交代码，部署完成
+
+====== 分割线 =====
+
 [仓库地址](https://github.com/btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute)
 
 [travis-ci 自动化构建脚本](https://app.travis-ci.com/github/btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute)
