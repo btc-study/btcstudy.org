@@ -5,7 +5,7 @@ date: '2022/12/07 22:47:05'
 cover: ''
 excerpt: 'Jeremy Rubin 和 Andrew Poelstra 在 TABConf 2021 的对话'
 tags:
-- Covenant
+- covenant
 - CTV
 ---
 
