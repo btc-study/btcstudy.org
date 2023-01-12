@@ -23,7 +23,7 @@ pretty_urls:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: docs
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
@@ -106,7 +106,10 @@ theme: hexo-theme-Claudia-master
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-#deploy:
+# deploy:
+#   type: git
+#   repo: git@github.com:btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute.git
+#   branch: main
 
 # set categories visible on home page
 home:
