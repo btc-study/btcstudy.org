@@ -1,1 +1,99 @@
-!function(){var s,t,e,r,n;if("/search/"===window.location.pathname)t="w",e=new RegExp("(^|&)"+t+"=([^&]*)(&|$)","i"),(s=null!=(e=window.location.search.substr(1).match(e))?decodeURIComponent(e[2]):"currency"===t?"ETH":"")?(r=function(t){t=t.cover||"/images/BITCOIN.png";return t=(t=/^\//.test(t)?t:"/"+t).replace(/^(\/)?\.\./,"")},n=function(t){function e(t){return t.replace(a,'<span class="keywords">'+s+"</span>")}var n="",a=new RegExp(s,"g");return t.forEach(function(t){n+='<li><a href="/'+t.path+'"><div class="cover" style="background-image: url(//res.btcstudy.org/btcstudy'+r(t)+')"></div><div class="post-data"><h3>'+e(t.title)+"</h3><p>"+e(t.text.substr(0,90))+'...</p><div class="post-author-data"><img src="'+(t.avatar||"/images/default_avatar.png")+'" alt="avatar" /><span>'+t.author+"</span><time>"+t.date+"</time></div></div></a></li>"}),n},fetch("/content.json").then(function(t){return t.json()}).then(function(t){var e;e=[],(t.posts||[]).forEach(function(t){(t.title.includes(s)||t.text.includes(s))&&e.push(t)}),e.length?(document.getElementById("key").innerText="“"+s+"”",document.getElementById("result-length").innerText=e.length+" 篇文章",document.getElementById("result-list").innerHTML="<ul>"+n(e)+"</ul>",$("#no-data").addClass("hidden")):$("#no-data").removeClass("hidden")})):window.location.href="/"}();
+(function(){
+
+  var getQueryParams = function(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) {
+      return decodeURIComponent(r[2]);
+    }
+    return name === 'currency' ? 'ETH' : '';
+  }
+
+  if (window.location.pathname !== '/search/') { return }
+  var searchKey = getQueryParams('w');
+  if (!searchKey) {
+    return window.location.href = '/';
+  }
+
+  var getCoverImg = function(post) {
+    // modify by gyx, remove content. decrease content.json size.
+    // var coverImgElement = post.content.match(/<img[^>]+src="?([^"\s]+)".*?>/);
+    // if (post.cover) imgUrl = post.cover;
+    var imgUrl = post.cover || "/images/BITCOIN.png";
+    if (!/^\//.test(imgUrl)) imgUrl = '/' + imgUrl;
+    imgUrl = imgUrl.replace(/^(\/)?\.\./, '');
+    return imgUrl;
+  }
+
+  var renderItem = function(results) {
+    var dom = '';
+    var reg = new RegExp(searchKey, 'g');
+
+    var formatStr = function(str) {
+      return str.replace(reg, '<span class="keywords">' + searchKey + '</span>');
+    }
+
+    var cdn = '//res.btcstudy.org/btcstudy';
+
+    results.forEach(function(post) {
+      dom += (
+        '<li>'+
+          '<a href="/'+ post.path +'">'+
+            '<div class="cover" style="background-image: url(' + cdn + getCoverImg(post) +')">'+
+              // '<img src="' + getCoverImg(post) + '" alt="" />'+
+            '</div>'+
+            '<div class="post-data">'+
+              '<h3>' + formatStr(post.title) +'</h3>'+
+              '<p>' + formatStr(post.text.substr(0, 90)) + '...</p>'+
+              '<div class="post-author-data">'+
+                '<img src="' + (post.avatar || "/images/default_avatar.png") + '" alt="avatar" />'+
+                '<span>' + post.author + '</span>'+
+                '<time>' + post.date + '</time>'+
+              '</div>'+
+            '</div>'+
+          '</a>'+
+        '</li>'
+      )
+    });
+    return dom;
+  }
+
+  var getResult = function(data) {
+    var results = [];
+
+    (data.posts || []).forEach(function(post) {
+      if (
+        post.title.includes(searchKey) ||
+        post.text.includes(searchKey)
+      ) {
+        results.push(post)
+      }
+    });
+    // console.log(searchKey);
+    if (results.length) {
+      var titleEl = document.getElementById('key');
+      titleEl.innerText = "“" + searchKey + "”";
+
+      var subtitleEl = document.getElementById('result-length');
+      subtitleEl.innerText = results.length + ' 篇文章';
+
+      var containerEl = document.getElementById('result-list');
+      containerEl.innerHTML = '<ul>'+ renderItem(results) +'</ul>';
+      $('#no-data').addClass('hidden');
+    } else {
+      $('#no-data').removeClass('hidden');
+    }
+  }
+
+  // get deploy version, cache request
+  // var v = document.getElementById('version').innerText;
+  // fetch('/content.json?v=' + v)
+  fetch('/content.json')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(myJson) {
+      getResult(myJson);
+    });
+
+})();

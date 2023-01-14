@@ -1,1 +1,5 @@
-$(function(){$(".post-item-card").click(function(t){window.location.href=$(this).attr("post-path")})});
+$(function() {
+  $('.post-item-card').click(function(e) {
+    window.location.href = $(this).attr('post-path');
+  });
+})

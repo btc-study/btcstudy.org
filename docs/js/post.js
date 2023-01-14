@@ -1,1 +1,205 @@
-var $posts={scroller:function(){function e(){return this.callbacks=[],this}return e.prototype.bindScrollEvent=function(){var t=this;window.addEventListener("scroll",function(e){var o=window.pageYOffset;setTimeout(function(){var s={event:e,beforeOffsetY:o};t.callbacks.forEach(function(e){e(s)})},150)})},e},showTopic:function(e){var s=document.body.clientWidth<=768?document.getElementById("postTopicMobile"):document.getElementById("postTopic"),o=document.getElementById("postTitle"),t=document.getElementById("mobile-header-logo"),i=document.getElementById("header-menu"),l=document.getElementById("header"),c=document.getElementById("mobile-header"),d=document.getElementById("postTopicMobile"),n=o.getBoundingClientRect(),o=o.offsetTop+n.height;window.pageYOffset>o?(o=0<(n=e&&e.beforeOffsetY)-window.pageYOffset,s.classList.remove("is-hidden-topic-bar"),s.classList.remove("hidden"),i.classList.add("hidden-menu"),t.classList.add("hidden-menu"),c.classList.add("header-shadow"),l.classList.add("header-shadow"),s.classList.add("immediately-show"),n-window.pageYOffset==0?(s.classList.remove("is-switch-post-title"),s.classList.remove("is-show-post-title"),s.classList.contains("is-show-scrollToTop-tips")?(s.classList.remove("is-show-scrollToTop-tips"),s.classList.add("is-flash-scrollToTop-tips")):d.classList.remove("hidden")):o&&window.pageYOffset>2*window.innerHeight&&(s.classList.remove("immediately-show"),s.classList.remove("is-show-post-title"),s.classList.remove("is-switch-post-title"),s.classList.remove("is-flash-scrollToTop-tips"),s.classList.add("is-show-scrollToTop-tips"),s.classList.add("immediately-show"),d.classList.remove("hidden"))):(s.classList.remove("is-flash-scrollToTop-tips"),s.classList.remove("is-show-scrollToTop-tips"),s.classList.remove("is-switch-post-title"),s.classList.remove("is-show-post-title"),s.classList.remove("immediately-show"),s.classList.add("is-hidden-topic-bar"),s.classList.add("hidden"),i.classList.remove("hidden-menu"),t.classList.remove("hidden-menu"),c.classList.remove("header-shadow"),l.classList.remove("header-shadow"),d.classList.add("hidden"))},catalogueHighlight:function(){var d,n=document.querySelectorAll(".toc a");return 0!==n.length&&(d=document.querySelector(".toc"),function(){for(var s=[],e="is-active",o=(n.forEach(function(e){e.href&&(e=decodeURI(e.href).split("#")[1],s.push(document.getElementById(e)))}),null),t=window.pageYOffset,i=0;i<s.length;i++){var l,c=s[i];c.offsetTop>t+5||((!o||c.offsetTop+10>=o.offsetTop-10)&&(o=c),(c=document.querySelector(".toc ."+e))&&c.classList.remove(e),c='.toc a[href="#'+encodeURI(o.id)+'"]',(c=document.querySelector(c)).classList.add(e),l=d.getBoundingClientRect().height,c.offsetTop>=l-10?d.scrollTo({top:c.offsetTop+100-l}):d.scrollTo({top:0}))}})},smoothScrollToTop:function(){var e=window.pageYOffset||document.body.scrollTop||document.documentElement.scrollTop;1<e?(window.requestAnimationFrame($posts.smoothScrollToTop),scrollTo(0,Math.floor(.85*e))):scrollTo(0,0)},mounted:function(){var e=new(this.scroller()),s=this.catalogueHighlight();s&&e.callbacks.push(s),e.callbacks.push(this.showTopic),e.bindScrollEvent(),$claudia.fadeInImage(document.querySelectorAll(".post-content img")),document.getElementById("postTopicMobile").addEventListener("click",this.smoothScrollToTop)}};$posts.mounted();
+var $posts = {
+    scroller: function () {
+        function Scroller() {
+            this.callbacks = []
+            return this
+        }
+        Scroller.prototype.bindScrollEvent = function () {
+            var _that = this
+
+            window.addEventListener('scroll', function (event) {
+                var wait = false
+                var beforeOffsetY = window.pageYOffset
+
+                if (wait) return
+                wait = true
+
+                setTimeout(function () {
+                    var params = {
+                        event: event,
+                        beforeOffsetY: beforeOffsetY,
+                    }
+                    _that.callbacks.forEach(function (func) { func(params) })
+
+                    wait = false
+                }, 150)
+            })
+        }
+
+        return Scroller
+    },
+    showTopic: function (evt) {
+        var topicEl = document.body.clientWidth <= 768 ? document.getElementById('postTopicMobile') : document.getElementById('postTopic')
+        var postTitle = document.getElementById('postTitle')
+        var headerLogo = document.getElementById('mobile-header-logo');
+        var menuEl = document.getElementById('header-menu');
+        var headerEl = document.getElementById('header');
+        var mobileHeaderEl = document.getElementById('mobile-header');
+        var postTopicMobileEl = document.getElementById('postTopicMobile');
+
+        var postTitleCoordinate = postTitle.getBoundingClientRect()
+        var threshold = postTitle.offsetTop + postTitleCoordinate.height;
+
+        // show title
+        if (window.pageYOffset > threshold) {
+            var beforeOffsetY = evt && evt.beforeOffsetY
+            var isScrollToTop = beforeOffsetY - window.pageYOffset > 0
+
+            topicEl.classList.remove('is-hidden-topic-bar')
+            topicEl.classList.remove('hidden')
+
+            menuEl.classList.add('hidden-menu')
+            headerLogo.classList.add('hidden-menu');
+            mobileHeaderEl.classList.add('header-shadow');
+            headerEl.classList.add('header-shadow');
+            topicEl.classList.add('immediately-show');
+
+            if (beforeOffsetY - window.pageYOffset === 0) {
+                topicEl.classList.remove('is-switch-post-title')
+                topicEl.classList.remove('is-show-post-title')
+                // topicEl.classList.remove('immediately-show')
+
+                if (topicEl.classList.contains('is-show-scrollToTop-tips')) {
+                    topicEl.classList.remove('is-show-scrollToTop-tips')
+                    topicEl.classList.add('is-flash-scrollToTop-tips')
+                }
+                else {
+                    // topicEl.classList.add('immediately-show')
+                    postTopicMobileEl.classList.remove('hidden');
+                }
+            }
+            // scroll to up👆
+            else if (isScrollToTop) {
+                // show scroll to top tips
+                if (window.pageYOffset > window.innerHeight * 2) {
+                    topicEl.classList.remove('immediately-show')
+                    topicEl.classList.remove('is-show-post-title')
+                    topicEl.classList.remove('is-switch-post-title')
+                    topicEl.classList.remove('is-flash-scrollToTop-tips')
+
+                    topicEl.classList.add('is-show-scrollToTop-tips')
+                    topicEl.classList.add('immediately-show')
+
+                    postTopicMobileEl.classList.remove('hidden');
+                }
+                // show post title
+                // else {
+                //     topicEl.classList.remove('immediately-show')
+                //     topicEl.classList.remove('is-show-post-title')
+                //     topicEl.classList.remove('is-show-scrollToTop-tips')
+                //     topicEl.classList.remove('is-flash-scrollToTop-tips')
+                //
+                //     topicEl.classList.add('is-switch-post-title')
+                // }
+            }
+            // scroll to down👇
+            // else if (beforeOffsetY - window.pageYOffset !== 0) {
+            //     topicEl.classList.remove('immediately-show')
+            //     topicEl.classList.remove('is-switch-post-title')
+            //     topicEl.classList.remove('is-show-scrollToTop-tips')
+            //     topicEl.classList.remove('is-flash-scrollToTop-tips')
+            //     topicEl.classList.add('is-show-post-title')
+            // }
+        }
+        else {
+            // hidden all
+            topicEl.classList.remove('is-flash-scrollToTop-tips')
+            topicEl.classList.remove('is-show-scrollToTop-tips')
+            topicEl.classList.remove('is-switch-post-title')
+            topicEl.classList.remove('is-show-post-title')
+            topicEl.classList.remove('immediately-show')
+
+            topicEl.classList.add('is-hidden-topic-bar')
+            topicEl.classList.add('hidden')
+
+            menuEl.classList.remove('hidden-menu');
+            headerLogo.classList.remove('hidden-menu');
+            mobileHeaderEl.classList.remove('header-shadow');
+            headerEl.classList.remove('header-shadow');
+
+            postTopicMobileEl.classList.add('hidden')
+        }
+    },
+    catalogueHighlight: function () {
+        var directory = document.querySelectorAll('.toc a')
+        if (directory.length === 0) {
+            return false
+        }
+
+        var tocContainer = document.querySelector('.toc')
+        return function () {
+            var contentTocList = []
+            var activeClassName = 'is-active'
+
+            directory.forEach(function (link) {
+                if (!link.href) return
+                var id = decodeURI(link.href).split('#')[1]
+                contentTocList.push(document.getElementById(id))
+            })
+            var spacing = 10
+            var activeTopicEl = null
+            var scrollTop = window.pageYOffset
+            for (var i = 0; i < contentTocList.length; i++) {
+                var currentTopic = contentTocList[i]
+
+                if (currentTopic.offsetTop > scrollTop + spacing / 2) {
+                    // jump to next loop
+                    continue
+                }
+
+                if (!activeTopicEl) {
+                    activeTopicEl = currentTopic
+                } else if (currentTopic.offsetTop + spacing >= activeTopicEl.offsetTop - spacing) {
+                    activeTopicEl = currentTopic
+                }
+
+                var beforeActiveEl = document.querySelector('.toc' + ' .' + activeClassName)
+                beforeActiveEl && beforeActiveEl.classList.remove(activeClassName)
+
+                var selectTarget = '.toc a[href="#' + encodeURI(activeTopicEl.id) + '"]'
+                var direc = document.querySelector(selectTarget)
+                direc.classList.add(activeClassName)
+
+                var tocContainerHeight = tocContainer.getBoundingClientRect().height
+                if (direc.offsetTop >= tocContainerHeight - spacing) {
+                    tocContainer.scrollTo({
+                        // top: direc.offsetTop - spacing,
+                        top: direc.offsetTop + 100 - tocContainerHeight,
+                    })
+                }
+                else {
+                    tocContainer.scrollTo({ top: 0 })
+                }
+            }
+        }
+    },
+    smoothScrollToTop: function() {
+        var Y_TopValve = (window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop);
+        if (Y_TopValve > 1) {
+            window.requestAnimationFrame($posts.smoothScrollToTop);
+            scrollTo(0, Math.floor(Y_TopValve * 0.85));
+        } else {
+            scrollTo(0, 0);
+        }
+    },
+    mounted: function () {
+        // hljs && hljs.initHighlighting()
+
+        var Scroller = this.scroller()
+        var scrollerInstance = new Scroller()
+
+        var catalogueHighlight = this.catalogueHighlight()
+        catalogueHighlight && scrollerInstance.callbacks.push(catalogueHighlight)
+
+        scrollerInstance.callbacks.push(this.showTopic)
+
+        scrollerInstance.bindScrollEvent()
+
+        $claudia.fadeInImage(document.querySelectorAll('.post-content img'))
+
+        // document.getElementById('postTopic').addEventListener('click', this.smoothScrollToTop)
+        document.getElementById('postTopicMobile').addEventListener('click', this.smoothScrollToTop)
+    }
+}
+
+$posts.mounted()
