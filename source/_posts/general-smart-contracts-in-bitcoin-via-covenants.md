@@ -5,7 +5,7 @@ date: '2023/02/03 22:05:13'
 cover: ''
 excerpt: '区块链的 Layer 1 无需运行复杂的程序来实现任意复杂程度的智能合约'
 tags:
-- Covenant
+- covenant
 ---
 
 

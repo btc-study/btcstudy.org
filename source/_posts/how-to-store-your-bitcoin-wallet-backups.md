@@ -5,7 +5,6 @@ date: '2022/06/17 16:36:54'
 cover: '../images/how-to-store-your-bitcoin-wallet-backups/CbIx-A.jpeg'
 excerpt: '长期保管比特币钱包备份的小技巧'
 tags:
-- 钱包
 - 入门系列
 ---
 

@@ -2,144 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.btcstudy.org/2022/12/22/how-lightning-address-works/</loc>
+    <loc>https://www.btcstudy.org/2023/02/07/pinning-attacks-and-its-mitigations/</loc>
     
-    <lastmod>2023-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/02/03/general-smart-contracts-in-bitcoin-via-covenants/</loc>
-    
-    <lastmod>2023-02-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/01/31/what-is-a-bitcoin-address/</loc>
-    
-    <lastmod>2023-01-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/01/30/utxo-accumulators-and-utreexo/</loc>
-    
-    <lastmod>2023-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/21/utreexo-compressing-fully-validating-bitcoin-nodes/</loc>
-    
-    <lastmod>2023-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/01/10/overview-of-the-main-concepts-and-features-of-the-rgb-design/</loc>
-    
-    <lastmod>2023-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/01/12/statechain-lightning-combined-in-bitcoin/</loc>
-    
-    <lastmod>2023-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/18/navigating-bitcoin-coinjoin/</loc>
-    
-    <lastmod>2023-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/07/jeremy-rubin-andrew-poelstra-covenants-tabf-2021/</loc>
-    
-    <lastmod>2023-01-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/01/a-brief-introduction-to-rgb-protocols/</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/24/understanding-rgb-protocol/</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/01/07/a-scalable-drop-in-replacement-for-merkle-trees/</loc>
-    
-    <lastmod>2023-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/29/schnorr-applications-musig/</loc>
-    
-    <lastmod>2023-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2023/01/04/the-architecture-behind-eclair/</loc>
-    
-    <lastmod>2023-01-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/31/bitcoin-optech-newsletter-2022-year-in-review-special/</loc>
-    
-    <lastmod>2022-12-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/23/lsats-pseudonymous-authentication-using-bitcoin-lightning-payments/</loc>
-    
-    <lastmod>2022-12-26</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -148,1330 +13,7 @@
   <url>
     <loc>https://www.btcstudy.org/2022/12/19/what-is-bitcoin-hardware-wallet-by-unchained-capital/</loc>
     
-    <lastmod>2022-12-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/10/bitcoin-core-24-0-released-what-is-new/</loc>
-    
-    <lastmod>2022-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/09/a-guide-for-bitcoin-multi-sig-wallets-by-mi-zeng/</loc>
-    
-    <lastmod>2022-12-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/08/bolt-12-will-it-ever-be-as-private-as-cash/</loc>
-    
-    <lastmod>2022-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/06/everything-you-need-to-know-about-passphrases/</loc>
-    
-    <lastmod>2022-12-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/04/cfd-protocol-explained/</loc>
-    
-    <lastmod>2022-12-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/02/dlc-on-lightning-by-thibaut-le-guilly/</loc>
-    
-    <lastmod>2022-12-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/22/scaling-dlc-discreet-log-contracts-channels-and-integration-in-the-lightning-network/</loc>
-    
-    <lastmod>2022-12-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/12/01/from-miniscript-to-simplicity/</loc>
-    
-    <lastmod>2022-12-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/30/lightning-authentication-lnurl-auth/</loc>
-    
-    <lastmod>2022-11-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/24/merged-mining-part-i-by-sergio-demian-lerner/</loc>
-    
-    <lastmod>2022-11-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/27/rgb-magic-client-contracts-on-bitcoin/</loc>
-    
-    <lastmod>2022-11-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/28/bitcoin-maximalism-is-cypherpunk-ethic/</loc>
-    
-    <lastmod>2022-11-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/25/properties-of-money-and-full-rbf/</loc>
-    
-    <lastmod>2022-11-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/23/bitcoin-paper-errata-and-details/</loc>
-    
-    <lastmod>2022-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/22/lsat-authentication-and-payments-for-the-lightning-native-web/</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/21/on-mempool-policy-consistency-by-suhas-daftuar/</loc>
-    
-    <lastmod>2022-11-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/20/the-long-history-and-disputed-desirability-of-alternative-bitcoin-implementations/</loc>
-    
-    <lastmod>2022-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/16/miniscript-composable-analyzable-and-smarter-bitcoin-script/</loc>
-    
-    <lastmod>2022-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/11/how-to-run-bitcoin-as-a-tor-hidden-service-on-ubuntu/</loc>
-    
-    <lastmod>2022-11-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/08/andrew-poelstra-miniscript-tabconf-2021/</loc>
-    
-    <lastmod>2022-11-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/15/rbf-debate-is-incentives-and-choice/</loc>
-    
-    <lastmod>2022-11-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/03/full-rbf-in-bitcoin-core/</loc>
-    
-    <lastmod>2022-11-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/14/understanding-payment-channels/</loc>
-    
-    <lastmod>2022-11-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/13/bolt-12-is-a-sleeping-giant/</loc>
-    
-    <lastmod>2022-11-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/10/counterparty-vs-rgb-vs-taro/</loc>
-    
-    <lastmod>2022-11-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/09/oncoming-discussions-of-full-rbf-by-zhao/</loc>
-    
-    <lastmod>2022-11-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/07/braidpool-in-tabconf-2022/</loc>
-    
-    <lastmod>2022-11-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/11/05/robust-asynchronous-schnorr-threshold-signature-tabconf-2022/</loc>
-    
-    <lastmod>2022-11-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/30/misconceptions-about-segwit-vbytes/</loc>
-    
-    <lastmod>2022-11-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/09/betterhash-decentralizing-bitcoin-mining-with-new-hashing-protocols/</loc>
-    
-    <lastmod>2022-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/14/aggregate-threshold-multisig-and-multisignatures/</loc>
-    
-    <lastmod>2022-11-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/08/how-to-run-a-bitcoin-full-node-and-lightning-node-on-a-raspberry-pi/</loc>
-    
-    <lastmod>2022-11-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/31/multi-sig-vs-mpc-which-is-more-secure/</loc>
-    
-    <lastmod>2022-10-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/12/setting-up-electrum-personal-server-and-electrum-wallet-working-with-bitcoin-core/</loc>
-    
-    <lastmod>2022-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/23/a-gentle-introduction-to-bitcoin-core-development/</loc>
-    
-    <lastmod>2022-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/28/onboarding-to-bitcoin-core/</loc>
-    
-    <lastmod>2022-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/28/securing-lightning-nodes/</loc>
-    
-    <lastmod>2022-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/26/automatic-market-maker-model-amm-the-omnibolt-solution/</loc>
-    
-    <lastmod>2022-10-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/25/learning-from-the-lnd-bug-on-lightning/</loc>
-    
-    <lastmod>2022-10-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/24/how-to-securely-install-bitcoin/</loc>
-    
-    <lastmod>2022-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/25/op-return-and-the-future-of-bitcoin/</loc>
-    
-    <lastmod>2022-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/20/on-various-non-interactive-payments/</loc>
-    
-    <lastmod>2022-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/24/list-of-bitcoin-privacy-proposals/</loc>
-    
-    <lastmod>2022-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/18/exploring-liquid-sidechain/</loc>
-    
-    <lastmod>2022-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/17/a-validation-cost-metric-for-bitcoin/</loc>
-    
-    <lastmod>2022-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/15/bitcoin-address-formats-and-performance-comparison/</loc>
-    
-    <lastmod>2022-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/30/bitcoin-after-taproot/</loc>
-    
-    <lastmod>2022-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/12/defining-and-discussing-bitcoin-security/</loc>
-    
-    <lastmod>2022-10-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/10/bls-and-announcement-free-dlcs/</loc>
-    
-    <lastmod>2022-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/11/spookchains-drivechain-analog-with-trusted-setup-and-apo/</loc>
-    
-    <lastmod>2022-10-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/09/trustless-address-server/</loc>
-    
-    <lastmod>2022-10-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/05/segregated-witness-costs-and-risks/</loc>
-    
-    <lastmod>2022-10-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/10/08/segregated-witness-benefits/</loc>
-    
-    <lastmod>2022-10-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/21/erlay-an-awesome-performance-improvement-to-the-bitcoin-network/</loc>
-    
-    <lastmod>2022-10-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/02/has-bitcoin-ever-hard-forked/</loc>
-    
-    <lastmod>2022-10-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/29/lightning-privacy-from-zero-to-hero/</loc>
-    
-    <lastmod>2022-10-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/28/lightning-pool-a-technical-deep-dive/</loc>
-    
-    <lastmod>2022-10-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/27/lifecycle-of-a-bitecoin-transaction/</loc>
-    
-    <lastmod>2022-10-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/29/how-does-a-bitcoin-transaction-actually-work/</loc>
-    
-    <lastmod>2022-10-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/24/script-a-mini-programming-language-by-Greg-Walker/</loc>
-    
-    <lastmod>2022-09-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/04/why-bitcoin/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/16/what-is-taro-in-bitcoin-by-river-financial/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/22/what-are-hosted-channels/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/28/softchains-use-cases-and-security-costs/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/06/spacechains-unlocks-bitcoin-use-cases/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/29/six-differences-between-liquid-and-lightning/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/10/soft-chains-sidechains-as-a-soft-fork-via-proof-of-work-fraud-proofs/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/06/schnorr-applications-batch-verification/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/17/payment-points-part-4-selling-signatures/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/22/re-imagining-cold-storage-with-timelocks/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/16/payment-points-part-3-escrow-contracts/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/10/payment-points-part-2-stuckless-payments/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/27/payment-points-part-1-replacing-HTLC/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/24/overview-of-bitcoin-sidechain-tradeoffs/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/09/part-ii-omnibolt-detailed-introduction/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/26/my-worries-about-too-generalized-covenants/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/17/introduction-to-fee-bumping-by-Bitcoin-Optech/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/09/how-schnorr-signatures-may-improve-bitcoin/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/05/how-many-bitcoin-are-there/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/10/how-is-the-21-million-bitcoin-cap-defined-and-enforced/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/08/how-bitcoin-taro-protocol-works/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/09/drivechain-makes-bitcoin-the-only-crypto/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/19/covenants-ctv-bitcoin-custody/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/25/contracting-primitives-and-upgrades-to-bitcoin/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/16/bitcoin-sidechains/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/04/blind-merged-mining-with-covenants/</loc>
-    
-    <lastmod>2022-09-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/19/announcing-rapid-gossip-sync/</loc>
-    
-    <lastmod>2022-09-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/15/introducing-lightning-rod/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/14/a-bitcoiners-guide-to-proof-of-stake/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/13/what-does-op-ctv-mean-for-me/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/08/on-the-programmability-of-bitcoin-protocol/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/09/05/a-complete-history-of-bitcoins-consensus-forks/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/31/coin-selection-part-1/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/31/preventing-channel-jamming/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/18/an-introduction-to-bitcoin-for-your-families/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/27/a-protocol-for-having-block-confirmations-in-the-future/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/26/lightning-payment-channels-a-flavor-for-every-palette/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/25/what-are-turbo-channels/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/05/what-are-the-key-properties-of-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/21/overview-of-soft-wallets-and-hard-wallets-signers/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/07/how-to-back-up-a-seed-phrase/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/03/how-bitcoin-spacechains-work/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/29/drivechains-allow-sidechain-node-miners/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/02/federated-sidechains-bitcoin-original/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/29/bitcoins-security-model-a-deep-dive/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/01/bitcoin-and-the-rise-of-the-cypherpunks/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/26/signature-hash-flags-by-ochekiye/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/28/delegated-signatures-in-bitcoin-within-existing-rules-no-fork-required/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/22/bitcoin-governance-by-pierre-rochard/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/19/what-are-ptlc/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/17/synthetic-stablecoins-on-the-lightning-network/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/15/psbt-how-to-for-bitcoin-core/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/17/blinded-two-party-ecdsa-signing/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/15/what-are-partially-signed-bitcoin-transactions-psbts/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/09/part-i-omnibolt-detailed-introduction/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/07/settlement-of-dlcfd/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/02/discreet-log-contracts-smart-contracts-for-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/08/08/anchor-outputs/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/23/there-is-no-such-thing-as-a-lightning-wallet/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/21/how-fedimint-scales-bitcoin-custody/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/28/21-ways-lose-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/26/an-introduction-to-bitcoin-core-fee-estimation/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/19/the-words-we-use-in-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/20/map-of-the-bitcoin-network/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/18/dapps-or-only-bitcoin-transactions-the-2014-debate/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/15/bip-324-a-message-transport-protocol-that-could-protect-bitcoin-peers/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/14/silent-payments-make-bitcoin-more-private/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/11/lightning-at-the-end-of-the-tunnel-overcoming-bitcoins-ux-challenges/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/07/taproot-demonstration-by-bitmex-research/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/27/breaking-down-the-bitcoin-lightning-network-eltoo/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/01/the-sidechain-vision-for-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/07/04/bolt12-lnurl-and-bitcoin-lightning/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/29/lack-of-a-default-messaging-haunting-wallet/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/10/21-million-bitcoins-to-rule-all-sidechains-the-perpetual-one-way-peg/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/10/what-are-output-descriptors/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/11/taproot-descriptors/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/15/support-for-output-descriptors-in-bitcoin-core/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/07/miniscript-bitcoin-scripting/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/29/snicker-how-alice-and-bob-can-mix-bitcoin-with-no-interaction/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/27/reusable-taproot-addresses/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/28/graftroot-how-delegating-signatures-allows-near-infinite-spending-variations/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/26/hidden-power-of-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/16/proof-of-stake-is-not-objective/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/23/thoughts-on-cross-input-signature-aggregation-for-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/29/taproot-coinjoins-and-crossinput-signature/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/21/bitcoin-optech-newsletter-204/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1480,421 +22,7 @@
   <url>
     <loc>https://www.btcstudy.org/2022/06/17/how-to-store-your-bitcoin-wallet-backups/</loc>
     
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/15/coinpool-exploring-generic-payment-pools-for-fun-and-privacy/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/14/rebalancing-in-the-lightning-network-circular-payments-fee-management-and-splices/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/10/building-on-taproot-payment-pools-could-be-bitcoins-next-layer-two-protocol/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/17/preparing-for-taproot-11-ln-with-taproot/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/13/part-2-bitcoin-p2tr-transaction-breakdown/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/18/dlc-oracle-failure-cases/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/25/bitcoin-always-had-smart-contracts-script-part-1/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/02/bitcoin-silent-payments-secret-keys/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/21/atomic-yield-series-part-1-bitcoin-yield-with-covered-calls-and-without-custodians/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/09/a-laypersons-guide-to-discreet-log-contracts/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/07/why-doesnt-bitcoin-move-from-proof-of-work-to-proof-of-stake/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/30/myth-myth-barter/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/07/how-bitcoin-should-be-upgraded-in-the-future/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/20/the-battle-for-p2sh-the-untold-story-of-the-first-bitcoin-war/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/06/designing-a-foolproof-script-upgrading-mechanism/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/01/why-the-bitcoin-lightning-network-doesnt-work/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/06/02/what-is-a-bitcoin-node/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/27/roast-robust-asynchronous-schnorr-threshold/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/23/exploring-bip119-and-changes-made-to-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/24/bitcoin-and-lightning-nodes-port-forwarding-faq/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/18/what-is-multi-signature-wallet-and-recommend-choices/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/21/introducing-phoenix/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/16/light-client-part-i-bloom-filters/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/18/introducing-multiplexer-incoming-payment-fail-over-for-lightning/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/11/bitcoin-multisig-2-of-3-vs-3-of-5/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/09/lightning-for-life-how-lightning-can-and-will-integrate-with-the-web/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/07/bitcoins-consensus-is-a-pyramid/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/25/randomness-signature-scripts-and-transaction-malleability/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/05/05/locks-money-and-large-societies/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/28/do-coinjoins-really-require-equal-transaction-amounts-for-privacy-part-one-cashfusion/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/09/bitcoin-signature-types-sighash/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/27/peerswap-a-p2p-btc-ln-balancing-protocol/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/25/knapsack-mixing/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/21/mercury-wallet-review/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/18/how-neutrino-works-by-Suredbits/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/16/three-camps-of-the-bitcoin-community/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/15/standardizing-bitcoin-proof-of-reserves/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/14/mercury-statechain-protocol-sepcification/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/07/neutrino-privacy-preserving-light-wallet-protocol/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/15/neutrino-what-is-it-and-why-we-need-it/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/22/a-quick-and-dirty-explanation/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/13/improving-privacy-using-pay-to-endpoint/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/12/simplicity-high-assurance-smart-contracting/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/11/howtoearnayieldonbitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/07/announing-Taro-a-new-protocol-for-multi-asset-bitcoin-and-lightning/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/06/bitcoin-peer-to-peer-networking-improvement-proposals/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1903,322 +31,16 @@
   <url>
     <loc>https://www.btcstudy.org/2022/04/04/connecting-your-wallet-to-a-full-node/</loc>
     
-    <lastmod>2022-09-17</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2022/04/02/lightning-is-a-liquidity-network/</loc>
+    <loc>https://www.btcstudy.org/2022/05/07/how-to-back-up-a-seed-phrase/</loc>
     
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/04/01/LNP-BP-a-gentle-introduction/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/30/what-is-tapscript-and-how-will-it-benefit-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/29/outsourcing-route-computation-with-trampoline-payments/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/15/lightning-network-in-depth-part-1-payment-channels/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/24/current-state-of-lightning-network-privacy/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/25/the-complete-guide-to-bitcoin-fees/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/28/inflation-and-deflation-by-Ludwig-von-Mises/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/19/updating-the-balance-of-a-payment-channel/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/04/magic-internet-money/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/23/on-meme-world-and-bitcoin-by-Gigi/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/13/lightning-wallet-architecture/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/01/en-eltoo-next-lightning/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/31/bitcoins-time-locks/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/07/an-overview-of-lightning-network-implementations/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/20/a-failure-to-understand-pow-is-a-failure-to-understand-bitcoin/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/16/pow-a-pictorial-essay/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/12/understanding-bitcoin-privacy-with-oxt-part-4/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/14/mpps-wumbo-channels-optimizing-liquidity-on-the-lightning-network/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/27/understanding-bitcoin-privacy-with-oxt-part-3/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/04/how-the-lighting-network-could-improve-encrypted-messaging/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/09/on-lightning-messaging-apps-emerge-as-growing-use-case/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/03/03/bitcoins-hierarchy-of-needs/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/23/meditations-on-fraud-proofs/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/19/a-primer-on-blockchain-storage-economics/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/21/pow-cheapest/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/18/schnorr-musig2-by-popeller/</loc>
-    
-    <lastmod>2022-09-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/12/what-is-the-math-behind-elliptic-curve-cryptography/</loc>
-    
-    <lastmod>2022-02-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/09/privacy-fungibility-anonymity/</loc>
-    
-    <lastmod>2022-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/07/what-is-bitcoin-checktemplateverify/</loc>
-    
-    <lastmod>2022-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/02/08/focus-on-bitcoin/</loc>
-    
-    <lastmod>2022-02-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/24/modern-merge-mining/</loc>
-    
-    <lastmod>2022-01-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/17/progress-towards-utreexo-goals/</loc>
-    
-    <lastmod>2022-01-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/23/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/</loc>
-    
-    <lastmod>2022-01-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/14/technical-series-what-is-keysend/</loc>
-    
-    <lastmod>2022-01-14</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2227,403 +49,61 @@
   <url>
     <loc>https://www.btcstudy.org/2022/01/12/a-comprehensive-bitcoin-coinjoin-guide/</loc>
     
-    <lastmod>2022-01-12</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2022/01/10/tumblebit-vs-coinjoin/</loc>
+    <loc>https://www.btcstudy.org/2021/10/18/what-is-multi-signature-wallet-and-recommend-choices/</loc>
     
-    <lastmod>2022-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2022/01/07/understanding-lightning-invoices/</loc>
-    
-    <lastmod>2022-01-07</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2022/01/04/bitcoin-optech-2021-year-in-review/</loc>
+    <loc>https://www.btcstudy.org/2022/07/23/there-is-no-such-thing-as-a-lightning-wallet/</loc>
     
-    <lastmod>2022-01-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/maps/index.html</loc>
-    
-    <lastmod>2022-01-04</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2021/12/30/evaluating-the-security-and-trustability-of-hardware-wallets/</loc>
+    <loc>https://www.btcstudy.org/2022/12/09/a-guide-for-bitcoin-multi-sig-wallets-by-mi-zeng/</loc>
     
-    <lastmod>2021-12-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/29/bitcoin-is-time/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2021/10/26/bitcoin-is-an-idea-by-Gigi/</loc>
+    <loc>https://www.btcstudy.org/2023/01/30/utxo-accumulators-and-utreexo/</loc>
     
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/04/the-anatomy-of-proof-of-work/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2021/09/10/how-cryptography-redefines-private-property/</loc>
+    <loc>https://www.btcstudy.org/2023/02/03/general-smart-contracts-in-bitcoin-via-covenants/</loc>
     
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/02/proof-of-stake-the-wrong-engineering-mindset/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2021/09/10/proof-of-stake-private-keys-attacks-and-unforgeable-costliness-the-unsung-hero/</loc>
+    <loc>https://www.btcstudy.org/2022/07/04/blind-merged-mining-with-covenants/</loc>
     
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/23/on-stake-and-consensus-by-Andrew-Poelstra/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/18/bitcoin-and-the-dunbar-limit/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/25/discreet-log-contracts-invisible-smart-contracts-on-the-bitcoin-blockchain/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/27/design-goals-bitcoin-predecessors/</loc>
-    
-    <lastmod>2021-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/15/understanding-bitcoin-privacy-with-oxt-part-2/</loc>
-    
-    <lastmod>2021-12-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/16/bitcoins-academic-pedigree-modified-edition/</loc>
-    
-    <lastmod>2021-12-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/23/taproot-v2-how-will-the-latest-bitcoin-upgrade-evolve-in-the-future/</loc>
-    
-    <lastmod>2021-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/22/bitcoin-privacy-and-tainting-coinjoins-and-coinswaps-meet-statechains/</loc>
-    
-    <lastmod>2021-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/14/lightning-faq-by-Brand/</loc>
-    
-    <lastmod>2021-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/20/how-does-bitcoin-work-by-learn-me-a-bitcoin/</loc>
-    
-    <lastmod>2021-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/13/understanding-bitcoin-privacy-with-oxt-part-1/</loc>
-    
-    <lastmod>2021-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/21/the-privacy-benefits-of-taproot/</loc>
-    
-    <lastmod>2021-12-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/14/bitcoin-the-most-innovative/</loc>
-    
-    <lastmod>2021-12-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/10/not-your-keys-not-your-coins-is-not-enough/</loc>
-    
-    <lastmod>2021-12-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/06/a-look-at-innovation-in-bitcoins-technology-stack/</loc>
-    
-    <lastmod>2021-12-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/13/schnorr-applications-blind-signatures/</loc>
-    
-    <lastmod>2021-12-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/09/schnorr-applications-frost/</loc>
-    
-    <lastmod>2021-12-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/12/statechains-non-custodial-off-chain-bitcoin-transfer/</loc>
-    
-    <lastmod>2021-12-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/08/schnorr-applications-threshold-signatures/</loc>
-    
-    <lastmod>2021-12-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/</loc>
-    
-    <lastmod>2021-12-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/07/the-tao-of-bitcoin-development/</loc>
-    
-    <lastmod>2021-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/01/why-is-bitcoin-development-so-conservativ/</loc>
-    
-    <lastmod>2021-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/04/dont-fear-the-reaper/</loc>
-    
-    <lastmod>2021-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/10/trusted-third-parties/</loc>
-    
-    <lastmod>2021-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/29/soft-fork-activation-by-optech/</loc>
-    
-    <lastmod>2021-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/04/bitcoin-past-and-future/</loc>
-    
-    <lastmod>2021-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/06/eli5-utreexo-a-scaling-solution/</loc>
-    
-    <lastmod>2021-12-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/23/utreexo-homepage-from-mit-media-lab/</loc>
-    
-    <lastmod>2021-12-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/26/fiat-society-time-preference-and-bitcoin/</loc>
-    
-    <lastmod>2021-12-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/12/02/proof-of-stake-will-not-save-us/</loc>
-    
-    <lastmod>2021-12-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/30/the-many-faces-of-bitcoin/</loc>
-    
-    <lastmod>2021-12-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/23/bitcoin-and-me-by-Hal-Finney/</loc>
-    
-    <lastmod>2021-12-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/24/schnorr-security-part-2-from-id-to-signature/</loc>
-    
-    <lastmod>2021-12-01</lastmod>
+    <lastmod>2023-02-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2632,448 +112,16 @@
   <url>
     <loc>https://www.btcstudy.org/2021/11/22/schnorr-security-part-1-schnorr-id-protocol/</loc>
     
-    <lastmod>2021-11-28</lastmod>
+    <lastmod>2023-02-06</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.btcstudy.org/2021/10/27/money-blockchains-and-social-scalability-echo-edition/</loc>
+    <loc>https://www.btcstudy.org/maps/index.html</loc>
     
-    <lastmod>2021-11-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/02/the-taproot-upgrade-explainer-from-Suredbits/</loc>
-    
-    <lastmod>2021-11-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/11/snarks-and-the-future-of-blockchains/</loc>
-    
-    <lastmod>2021-11-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/07/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/</loc>
-    
-    <lastmod>2021-11-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/11/10/drivechain-introduction-by-fiatjaf/</loc>
-    
-    <lastmod>2021-11-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/29/my-favorite-quotes-from-the-bitcoin-standard/</loc>
-    
-    <lastmod>2021-10-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/28/money-creation-in-central-bank-based-fiat-money-systems/</loc>
-    
-    <lastmod>2021-10-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/27/blockchains-and-the-evolution-of-mechanical-time-new-editon/</loc>
-    
-    <lastmod>2021-10-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/27/taproot-is-more-important-than-your-imageine/</loc>
-    
-    <lastmod>2021-10-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/15/lightning-network-enables-unicast-transactions-in-bitcoin-lightning-is-bitcoins-tcp-ip-stack/</loc>
-    
-    <lastmod>2021-10-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/24/bitcoins-scaling-approach-vs-altcoin-ethereums/</loc>
-    
-    <lastmod>2021-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/23/what-types-of-mnemonic-seeds-are-used-in-bitcoin/</loc>
-    
-    <lastmod>2021-10-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/20/bitcoin-is-the-great-definancialization/</loc>
-    
-    <lastmod>2021-10-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/09/make-micro-payments-in-a-flash-the-power-of-lngate/</loc>
-    
-    <lastmod>2021-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/17/bitcoin-development-mental-models/</loc>
-    
-    <lastmod>2021-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/16/a-not-too-technical-overview-of-this-bitcoin-thing/</loc>
-    
-    <lastmod>2021-10-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/16/explaining-proof-of-work-as-a-decentralized-clock-echo-version/</loc>
-    
-    <lastmod>2021-10-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/09/statechains-sending-keys-not-coins-to-scale-bitcoin-off-chain/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/02/the-genesis-files-how-hal-finneys-quest-for-digital-cash-led-to-rpow-and-more/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-how-david-chaums-ecash-spawned-cypherpunk-dream/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin/</loc>
-    
-    <lastmod>2021-10-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/04/understand-bitcoin-public-and-private-keys-encode-and-extend/</loc>
-    
-    <lastmod>2021-10-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/09/bitcoin-transactions-the-form-and-its-meanings/</loc>
-    
-    <lastmod>2021-10-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/09/how-taproot-will-benefit-hardware-wallets/</loc>
-    
-    <lastmod>2021-10-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/25/bitcoins-utxo-model-by-river-finance/</loc>
-    
-    <lastmod>2021-10-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/07/bitcoin-addresses-and-how-to-use-them/</loc>
-    
-    <lastmod>2021-10-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/10/07/multisig-and-split-backups-two-ways-to-make-your-bitcoin-more-secure/</loc>
-    
-    <lastmod>2021-10-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/29/bitcoin-taproot-a-technical-explanation/</loc>
-    
-    <lastmod>2021-10-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/29/the-incomplete-history-of-bitcoin-development/</loc>
-    
-    <lastmod>2021-09-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/index.html</loc>
-    
-    <lastmod>2021-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/mempool/index.html</loc>
-    
-    <lastmod>2021-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/archives/index.html</loc>
-    
-    <lastmod>2021-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/15/a-crash-course-in-lightning-app-development/</loc>
-    
-    <lastmod>2021-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/23/explain-like-im-not-a-developer-taproot-privacy/</loc>
-    
-    <lastmod>2021-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/24/what-is-p2p-networking-by-Haseeb-Qureshi/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-creating-the-network/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/01/the-inbound-capacity-problem-in-the-lightning-network/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/07/segwit-and-its-legacy-taproot-uasfs-and-lightning/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/27/segregated-witness-for-dummies/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/23/on-the-origins-of-money-by-Carl-Menger/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2021/09/15/lightning-network-in-depth-part-2-htlc-and-payment-routing/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/08/23/information-theory-of-money-by-Dan-Held/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/03/history-lightning-brainstorm-beta/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/2020/09/01/a-closer-look-at-submarine-swaps-in-the-lightning-network/</loc>
-    
-    <lastmod>2021-09-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tag/index.html</loc>
-    
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3082,7 +130,34 @@
   <url>
     <loc>https://www.btcstudy.org/search/index.html</loc>
     
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/mempool/index.html</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tag/index.html</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/index.html</loc>
+    
+    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3091,7 +166,7 @@
   <url>
     <loc>https://www.btcstudy.org/category/index.html</loc>
     
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3100,7 +175,34 @@
   <url>
     <loc>https://www.btcstudy.org/categories/index.html</loc>
     
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/archives/index.html</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/01/why-the-bitcoin-lightning-network-doesnt-work/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/01/why-is-bitcoin-development-so-conservativ/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3109,7 +211,2914 @@
   <url>
     <loc>https://www.btcstudy.org/about/index.html</loc>
     
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/16/what-is-taro-in-bitcoin-by-river-financial/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/12/what-is-the-math-behind-elliptic-curve-cryptography/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/23/what-types-of-mnemonic-seeds-are-used-in-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/04/why-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/07/why-doesnt-bitcoin-move-from-proof-of-work-to-proof-of-stake/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/02/what-is-a-bitcoin-node/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/07/what-is-bitcoin-checktemplateverify/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/24/what-is-p2p-networking-by-Haseeb-Qureshi/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/30/what-is-tapscript-and-how-will-it-benefit-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/25/what-are-turbo-channels/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/05/what-are-the-key-properties-of-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/13/what-does-op-ctv-mean-for-me/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2023/01/31/what-is-a-bitcoin-address/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/07/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/10/what-are-output-descriptors/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/22/what-are-hosted-channels/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/15/what-are-partially-signed-bitcoin-transactions-psbts/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/19/what-are-ptlc/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-creating-the-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/19/updating-the-balance-of-a-payment-channel/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/21/utreexo-compressing-fully-validating-bitcoin-nodes/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/23/utreexo-homepage-from-mit-media-lab/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/27/understanding-bitcoin-privacy-with-oxt-part-3/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/12/understanding-bitcoin-privacy-with-oxt-part-4/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/14/understanding-payment-channels/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/24/understanding-rgb-protocol/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/23/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/07/understanding-lightning-invoices/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/04/understand-bitcoin-public-and-private-keys-encode-and-extend/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/10/tumblebit-vs-coinjoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/13/understanding-bitcoin-privacy-with-oxt-part-1/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/15/understanding-bitcoin-privacy-with-oxt-part-2/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/23/thoughts-on-cross-input-signature-aggregation-for-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/16/three-camps-of-the-bitcoin-community/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/19/the-words-we-use-in-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/09/trustless-address-server/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/10/trusted-third-parties/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/01/the-sidechain-vision-for-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/02/the-taproot-upgrade-explainer-from-Suredbits/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/07/the-tao-of-bitcoin-development/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/30/the-many-faces-of-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/21/the-privacy-benefits-of-taproot/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/23/the-origins-of-money-by-nick-szabo/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/01/the-inbound-capacity-problem-in-the-lightning-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/29/the-incomplete-history-of-bitcoin-development/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/20/the-long-history-and-disputed-desirability-of-alternative-bitcoin-implementations/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2023/01/04/the-architecture-behind-eclair/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/20/the-battle-for-p2sh-the-untold-story-of-the-first-bitcoin-war/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/25/the-complete-guide-to-bitcoin-fees/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/02/the-genesis-files-how-hal-finneys-quest-for-digital-cash-led-to-rpow-and-more/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/07/taproot-demonstration-by-bitmex-research/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/11/taproot-descriptors/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/27/taproot-is-more-important-than-your-imageine/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/23/taproot-v2-how-will-the-latest-bitcoin-upgrade-evolve-in-the-future/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/14/technical-series-what-is-keysend/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/04/the-anatomy-of-proof-of-work/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/12/statechains-non-custodial-off-chain-bitcoin-transfer/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/09/statechains-sending-keys-not-coins-to-scale-bitcoin-off-chain/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/15/support-for-output-descriptors-in-bitcoin-core/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/17/synthetic-stablecoins-on-the-lightning-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/29/taproot-coinjoins-and-crossinput-signature/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/28/softchains-use-cases-and-security-costs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/06/spacechains-unlocks-bitcoin-use-cases/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/15/standardizing-bitcoin-proof-of-reserves/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2023/01/12/statechain-lightning-combined-in-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/11/spookchains-drivechain-analog-with-trusted-setup-and-apo/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/11/snarks-and-the-future-of-blockchains/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/29/snicker-how-alice-and-bob-can-mix-bitcoin-with-no-interaction/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/10/soft-chains-sidechains-as-a-soft-fork-via-proof-of-work-fraud-proofs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/29/soft-fork-activation-by-optech/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/07/settlement-of-dlcfd/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/26/signature-hash-flags-by-ochekiye/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/14/silent-payments-make-bitcoin-more-private/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/12/simplicity-high-assurance-smart-contracting/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/29/six-differences-between-liquid-and-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/08/segregated-witness-benefits/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/05/segregated-witness-costs-and-risks/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/27/segregated-witness-for-dummies/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/07/segwit-and-its-legacy-taproot-uasfs-and-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/12/setting-up-electrum-personal-server-and-electrum-wallet-working-with-bitcoin-core/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/18/schnorr-musig2-by-popeller/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/24/schnorr-security-part-2-from-id-to-signature/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/24/script-a-mini-programming-language-by-Greg-Walker/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/28/securing-lightning-nodes/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/29/schnorr-applications-musig/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/02/schnorr-applications-scriptless-scripts/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/08/schnorr-applications-threshold-signatures/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/13/schnorr-applications-blind-signatures/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/09/schnorr-applications-frost/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/06/schnorr-applications-batch-verification/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/22/scaling-dlc-discreet-log-contracts-channels-and-integration-in-the-lightning-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/14/rebalancing-in-the-lightning-network-circular-payments-fee-management-and-splices/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/27/reusable-taproot-addresses/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/27/rgb-magic-client-contracts-on-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/27/roast-robust-asynchronous-schnorr-threshold/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/05/robust-asynchronous-schnorr-threshold-signature-tabconf-2022/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/02/proof-of-stake-the-wrong-engineering-mindset/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/02/proof-of-stake-will-not-save-us/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/25/properties-of-money-and-full-rbf/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/15/psbt-how-to-for-bitcoin-core/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/25/randomness-signature-scripts-and-transaction-malleability/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/15/rbf-debate-is-incentives-and-choice/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/22/re-imagining-cold-storage-with-timelocks/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/31/preventing-channel-jamming/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/09/privacy-fungibility-anonymity/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/17/progress-towards-utreexo-goals/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/16/proof-of-stake-is-not-objective/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/10/proof-of-stake-private-keys-attacks-and-unforgeable-costliness-the-unsung-hero/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/16/pow-a-pictorial-essay/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/17/preparing-for-taproot-11-ln-with-taproot/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/21/pow-cheapest/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/09/part-ii-omnibolt-detailed-introduction/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/27/payment-points-part-1-replacing-HTLC/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/10/payment-points-part-2-stuckless-payments/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/16/payment-points-part-3-escrow-contracts/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/17/payment-points-part-4-selling-signatures/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/27/peerswap-a-p2p-btc-ln-balancing-protocol/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2023/01/10/overview-of-the-main-concepts-and-features-of-the-rgb-design/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/09/part-i-omnibolt-detailed-introduction/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/13/part-2-bitcoin-p2tr-transaction-breakdown/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/29/outsourcing-route-computation-with-trampoline-payments/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/24/overview-of-bitcoin-sidechain-tradeoffs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/21/overview-of-soft-wallets-and-hard-wallets-signers/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/09/oncoming-discussions-of-full-rbf-by-zhao/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/25/op-return-and-the-future-of-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/23/on-the-origins-of-money-by-Carl-Menger/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/20/on-various-non-interactive-payments/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/28/onboarding-to-bitcoin-core/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/08/on-the-programmability-of-bitcoin-protocol/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/21/on-mempool-policy-consistency-by-suhas-daftuar/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/23/on-stake-and-consensus-by-Andrew-Poelstra/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/15/neutrino-what-is-it-and-why-we-need-it/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/10/not-your-keys-not-your-coins-is-not-enough/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/09/on-lightning-messaging-apps-emerge-as-growing-use-case/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/23/on-meme-world-and-bitcoin-by-Gigi/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/07/neutrino-privacy-preserving-light-wallet-protocol/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/30/myth-myth-barter/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/18/navigating-bitcoin-coinjoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/31/multi-sig-vs-mpc-which-is-more-secure/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/07/multisig-and-split-backups-two-ways-to-make-your-bitcoin-more-secure/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/29/my-favorite-quotes-from-the-bitcoin-standard/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/26/my-worries-about-too-generalized-covenants/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/14/mpps-wumbo-channels-optimizing-liquidity-on-the-lightning-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/28/money-creation-in-central-bank-based-fiat-money-systems/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/07/miniscript-bitcoin-scripting/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/16/miniscript-composable-analyzable-and-smarter-bitcoin-script/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/30/misconceptions-about-segwit-vbytes/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/24/modern-merge-mining/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/27/money-blockchains-and-social-scalability-echo-edition/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/14/mercury-statechain-protocol-sepcification/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/21/mercury-wallet-review/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/24/merged-mining-part-i-by-sergio-demian-lerner/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/04/magic-internet-money/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/09/make-micro-payments-in-a-flash-the-power-of-lngate/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/20/map-of-the-bitcoin-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/23/meditations-on-fraud-proofs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/22/lsat-authentication-and-payments-for-the-lightning-native-web/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/23/lsats-pseudonymous-authentication-using-bitcoin-lightning-payments/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/28/lightning-pool-a-technical-deep-dive/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/13/lightning-wallet-architecture/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/29/lightning-privacy-from-zero-to-hero/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/24/list-of-bitcoin-privacy-proposals/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/05/locks-money-and-large-societies/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/15/lightning-network-enables-unicast-transactions-in-bitcoin-lightning-is-bitcoins-tcp-ip-stack/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/15/lightning-network-in-depth-part-2-htlc-and-payment-routing/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/15/lightning-network-in-depth-part-1-payment-channels/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/26/lightning-payment-channels-a-flavor-for-every-palette/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/30/lightning-authentication-lnurl-auth/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/14/lightning-faq-by-Brand/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/09/lightning-for-life-how-lightning-can-and-will-integrate-with-the-web/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/02/lightning-is-a-liquidity-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/11/lightning-at-the-end-of-the-tunnel-overcoming-bitcoins-ux-challenges/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/16/light-client-part-i-bloom-filters/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/29/lack-of-a-default-messaging-haunting-wallet/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/27/lifecycle-of-a-bitecoin-transaction/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/25/learning-from-the-lnd-bug-on-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/25/knapsack-mixing/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/07/jeremy-rubin-andrew-poelstra-covenants-tabf-2021/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/20/introduction-to-schnorr-signatures-by-suredbits/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/21/introducing-phoenix/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/17/introduction-to-fee-bumping-by-Bitcoin-Optech/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/18/introducing-multiplexer-incoming-payment-fail-over-for-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/15/introducing-lightning-rod/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/28/inflation-and-deflation-by-Ludwig-von-Mises/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/23/information-theory-of-money-by-Dan-Held/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/13/improving-privacy-using-pay-to-endpoint/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/11/howtoearnayieldonbitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/24/how-to-securely-install-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/11/how-to-run-bitcoin-as-a-tor-hidden-service-on-ubuntu/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/04/how-the-lighting-network-could-improve-encrypted-messaging/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/08/how-to-run-a-bitcoin-full-node-and-lightning-node-on-a-raspberry-pi/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/05/how-many-bitcoin-are-there/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/18/how-neutrino-works-by-Suredbits/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/09/how-schnorr-signatures-may-improve-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/09/how-taproot-will-benefit-hardware-wallets/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/21/how-fedimint-scales-bitcoin-custody/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/10/how-is-the-21-million-bitcoin-cap-defined-and-enforced/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/22/how-lightning-address-works/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/10/how-cryptography-redefines-private-property/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/29/how-does-a-bitcoin-transaction-actually-work/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/20/how-does-bitcoin-work-by-learn-me-a-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/07/how-bitcoin-should-be-upgraded-in-the-future/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/03/how-bitcoin-spacechains-work/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/08/how-bitcoin-taro-protocol-works/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/03/history-lightning-brainstorm-beta/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/26/hidden-power-of-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/28/graftroot-how-delegating-signatures-allows-near-infinite-spending-variations/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/02/has-bitcoin-ever-hard-forked/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-if-bitcoin-had-first-draft-wei-dais-b-money-was-it/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-bit-gold-szabo-was-inches-away-inventing-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-hashcash-or-how-adam-back-designed-bitcoins-motor-block/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/02/genesis-files-how-david-chaums-ecash-spawned-cypherpunk-dream/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/02/federated-sidechains-bitcoin-original/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/26/fiat-society-time-preference-and-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/08/focus-on-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/01/from-miniscript-to-simplicity/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/03/full-rbf-in-bitcoin-core/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/16/explaining-proof-of-work-as-a-decentralized-clock-echo-version/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/23/exploring-bip119-and-changes-made-to-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/18/exploring-liquid-sidechain/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/30/evaluating-the-security-and-trustability-of-hardware-wallets/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/21/erlay-an-awesome-performance-improvement-to-the-bitcoin-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/06/everything-you-need-to-know-about-passphrases/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/23/explain-like-im-not-a-developer-taproot-privacy/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/09/drivechain-makes-bitcoin-the-only-crypto/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/29/drivechains-allow-sidechain-node-miners/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/06/eli5-utreexo-a-scaling-solution/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/01/en-eltoo-next-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/10/drivechain-introduction-by-fiatjaf/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/28/do-coinjoins-really-require-equal-transaction-amounts-for-privacy-part-one-cashfusion/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/04/dont-fear-the-reaper/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/02/dlc-on-lightning-by-thibaut-le-guilly/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/18/dlc-oracle-failure-cases/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/28/delegated-signatures-in-bitcoin-within-existing-rules-no-fork-required/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/12/defining-and-discussing-bitcoin-security/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/06/designing-a-foolproof-script-upgrading-mechanism/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/27/design-goals-bitcoin-predecessors/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/25/discreet-log-contracts-invisible-smart-contracts-on-the-bitcoin-blockchain/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/02/discreet-log-contracts-smart-contracts-for-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/24/current-state-of-lightning-network-privacy/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/18/dapps-or-only-bitcoin-transactions-the-2014-debate/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/19/covenants-ctv-bitcoin-custody/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/10/counterparty-vs-rgb-vs-taro/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/25/contracting-primitives-and-upgrades-to-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/04/cfd-protocol-explained/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/31/coin-selection-part-1/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/15/coinpool-exploring-generic-payment-pools-for-fun-and-privacy/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/04/bolt12-lnurl-and-bitcoin-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/07/braidpool-in-tabconf-2022/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/27/breaking-down-the-bitcoin-lightning-network-eltoo/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/10/building-on-taproot-payment-pools-could-be-bitcoins-next-layer-two-protocol/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/08/bolt-12-will-it-ever-be-as-private-as-cash/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/13/bolt-12-is-a-sleeping-giant/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/10/bls-and-announcement-free-dlcs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/08/25/bitcoins-utxo-model-by-river-finance/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/17/blinded-two-party-ecdsa-signing/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/27/blockchains-and-the-evolution-of-mechanical-time-new-editon/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/16/bitcoins-academic-pedigree-modified-edition/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/07/bitcoins-consensus-is-a-pyramid/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/03/bitcoins-hierarchy-of-needs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/24/bitcoins-scaling-approach-vs-altcoin-ethereums/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/29/bitcoins-security-model-a-deep-dive/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/31/bitcoins-time-locks/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/14/bitcoin-the-most-innovative/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/09/bitcoin-transactions-the-form-and-its-meanings/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/29/bitcoin-taproot-a-technical-explanation/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/09/bitcoin-signature-types-sighash/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/16/bitcoin-sidechains/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/02/bitcoin-silent-payments-secret-keys/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/23/bitcoin-paper-errata-and-details/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/04/bitcoin-past-and-future/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/06/bitcoin-peer-to-peer-networking-improvement-proposals/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/22/bitcoin-privacy-and-tainting-coinjoins-and-coinswaps-meet-statechains/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/31/bitcoin-optech-newsletter-2022-year-in-review-special/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/21/bitcoin-optech-newsletter-204/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/01/04/bitcoin-optech-2021-year-in-review/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/28/bitcoin-maximalism-is-cypherpunk-ethic/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/11/bitcoin-multisig-2-of-3-vs-3-of-5/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/20/bitcoin-is-the-great-definancialization/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/29/bitcoin-is-time/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/01/bitcoin-and-the-rise-of-the-cypherpunks/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/12/10/bitcoin-core-24-0-released-what-is-new/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/17/bitcoin-development-mental-models/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/22/bitcoin-governance-by-pierre-rochard/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/26/bitcoin-is-an-idea-by-Gigi/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/30/bitcoin-after-taproot/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/25/bitcoin-always-had-smart-contracts-script-part-1/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/23/bitcoin-and-me-by-Hal-Finney/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/24/bitcoin-and-lightning-nodes-port-forwarding-faq/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/18/bitcoin-and-the-dunbar-limit/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/15/bitcoin-address-formats-and-performance-comparison/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/07/bitcoin-addresses-and-how-to-use-them/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/21/atomic-yield-series-part-1-bitcoin-yield-with-covered-calls-and-without-custodians/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/26/automatic-market-maker-model-amm-the-omnibolt-solution/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/06/09/betterhash-decentralizing-bitcoin-mining-with-new-hashing-protocols/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/15/bip-324-a-message-transport-protocol-that-could-protect-bitcoin-peers/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/19/announcing-rapid-gossip-sync/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/07/announing-Taro-a-new-protocol-for-multi-asset-bitcoin-and-lightning/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/11/08/andrew-poelstra-miniscript-tabconf-2021/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/05/18/an-introduction-to-bitcoin-for-your-families/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/08/anchor-outputs/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/07/an-overview-of-lightning-network-implementations/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2023/01/07/a-scalable-drop-in-replacement-for-merkle-trees/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/10/17/a-validation-cost-metric-for-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/14/aggregate-threshold-multisig-and-multisignatures/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/26/an-introduction-to-bitcoin-core-fee-estimation/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/02/19/a-primer-on-blockchain-storage-economics/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/08/27/a-protocol-for-having-block-confirmations-in-the-future/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/22/a-quick-and-dirty-explanation/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/03/09/a-laypersons-guide-to-discreet-log-contracts/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/06/a-look-at-innovation-in-bitcoins-technology-stack/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/16/a-not-too-technical-overview-of-this-bitcoin-thing/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/23/a-gentle-introduction-to-bitcoin-core-development/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/10/20/a-failure-to-understand-pow-is-a-failure-to-understand-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/05/a-complete-history-of-bitcoins-consensus-forks/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/09/15/a-crash-course-in-lightning-app-development/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2020/09/01/a-closer-look-at-submarine-swaps-in-the-lightning-network/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/12/01/a-brief-introduction-to-rgb-protocols/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/09/14/a-bitcoiners-guide-to-proof-of-stake/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2021/11/10/21-million-bitcoins-to-rule-all-sidechains-the-perpetual-one-way-peg/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/07/28/21-ways-lose-bitcoin/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/2022/04/01/LNP-BP-a-gentle-introduction/</loc>
+    
+    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3118,7 +3127,7 @@
   <url>
     <loc>https://www.btcstudy.org/404.html</loc>
     
-    <lastmod>2021-09-08</lastmod>
+    <lastmod>2023-02-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -3127,7 +3136,7 @@
 
   <url>
     <loc>https://www.btcstudy.org/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -3135,448 +3144,441 @@
   
   <url>
     <loc>https://www.btcstudy.org/tags/Layer-2/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Spacechain/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E7%94%9F%E6%80%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/PoW/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/RGB/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E9%97%AA%E7%94%B5%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/RGB/</loc>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/%E7%A8%B3%E5%AE%9A%E5%B8%81/</loc>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E6%AF%94%E7%89%B9%E5%B8%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E6%96%87%E5%8C%96/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/CoinJoin/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E9%9A%90%E7%A7%81%E6%80%A7/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/%E9%92%B1%E5%8C%85/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Gigi/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E8%B4%A1%E7%8C%AE/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E5%AE%9E%E8%B7%B5/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Discreet-Log-Contract/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E4%BE%A7%E9%93%BE/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E7%B4%AF%E5%8A%A0%E5%99%A8/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E8%B4%A7%E5%B8%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E4%BA%A4%E6%98%93%E6%B1%A0/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Miniscript/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Taro/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/%E7%9F%BF%E6%B1%A0/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/OmniBOLT/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/%E7%9F%BF%E6%B1%A0/</loc>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E7%82%B9%E5%AF%B9%E7%82%B9%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/%E9%92%B1%E5%8C%85/</loc>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Taproot/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E5%AF%86%E7%A0%81%E6%9C%8B%E5%85%8B/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/Jameson-Lopp/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Hugo-Nguyen/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/Jameson-Lopp/</loc>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E9%9A%94%E7%A6%BB%E8%A7%81%E8%AF%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Statechain/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/CoinSwap/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/SIGHASH/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E9%9D%99%E9%BB%98%E6%94%AF%E4%BB%98/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E5%90%88%E5%B9%B6%E6%8C%96%E7%9F%BF/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Eltoo/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.btcstudy.org/tags/convenant/</loc>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Payment-pool/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/CTV/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/covenant/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Nic-Carter/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Drivechain/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/utreexo/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E6%AF%94%E7%89%B9%E5%B8%81%E5%89%8D%E4%BC%A0/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Graftroot/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E6%8F%8F%E8%BF%B0%E7%AC%A6/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Fedimint/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/LNURL/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Neutrino/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Dan-Held/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Nostr/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/LSAT/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E6%AC%BA%E8%AF%88%E8%AF%81%E6%98%8E/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Nick-Szabo/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/PTLC/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/PSBT/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/%E6%97%B6%E9%97%B4%E9%94%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/CISA/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/SNICKER/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/tags/Softchain/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/Utreexo/</loc>
-    <lastmod>2023-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.btcstudy.org/tags/Covenant/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -3585,28 +3587,28 @@
   
   <url>
     <loc>https://www.btcstudy.org/categories/%E6%AF%94%E7%89%B9%E5%B8%81%E4%B8%BB%E7%BD%91/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/categories/%E9%97%AA%E7%94%B5%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/categories/%E6%AF%94%E7%89%B9%E5%B8%81/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.btcstudy.org/categories/%E8%B4%A7%E5%B8%81%E7%90%86%E5%BF%B5/</loc>
-    <lastmod>2023-02-03</lastmod>
+    <lastmod>2023-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

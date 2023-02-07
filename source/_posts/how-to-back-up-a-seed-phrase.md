@@ -5,7 +5,7 @@ date: '2022/05/07 15:00:32'
 cover: '../images/how-to-back-up-a-seed-phrase/ecovery.jpg'
 excerpt: '助记词的备份方法有千千万。几乎每种都有缺陷。'
 tags:
-- 钱包
+- 实践
 - Jameson-Lopp
 ---
 

@@ -7,7 +7,6 @@ excerpt: 'CoinJoin 是什么？如何手动 CoinJoin？'
 tags:
 - CoinJoin
 - 隐私性
-- 钱包
 ---
 
 

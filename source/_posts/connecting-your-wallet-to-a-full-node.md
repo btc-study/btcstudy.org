@@ -5,7 +5,7 @@ date: '2022/04/04 10:32:25'
 cover: '../images/connecting-your-wallet-to-a-full-node/pEw6evQ.png'
 excerpt: '连接到你自己的节点就能完全防止你的数据被发送至第三方节点运营者'
 tags:
-- 钱包
+- 实践
 ---
 
 

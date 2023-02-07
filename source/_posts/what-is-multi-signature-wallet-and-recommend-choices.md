@@ -5,7 +5,6 @@ date: '2021/10/18 19:09:09'
 cover: '../images/what-is-multi-signature-wallet-and-recommend-choices/age-200.png'
 excerpt: '多签名钱包的概念，其工作原理，并介绍了几种支持多签名钱包的软件'
 tags:
-- 钱包
 - 入门系列
 ---
 
