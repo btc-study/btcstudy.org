@@ -8,6 +8,7 @@ categories:
 - 闪电网络
 tags:
 - 闪电网络
+- 通道管理
 ---
 
 > *作者：Florencia Ravenna*
