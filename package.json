@@ -15,6 +15,7 @@
     "hexo": "^5.0.0",
     "hexo-cdnify": "^1.1.0",
     "hexo-clean-css": "^2.0.0",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
