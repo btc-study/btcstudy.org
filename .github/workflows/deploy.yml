@@ -19,17 +19,27 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Setup Hexo
+      - name: Cache NPM Dependencies
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache-
+
+      - name: Setup Repo
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
         run:
           mkdir -p ~/.ssh/
           echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "guyunxiang32@gmail.com"
           git config --global user.name "guyunxiang"
+
+      - name: Setup Hexo
+        run:
           npm install hexo-cli -g
           npm install
 
