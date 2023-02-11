@@ -31,13 +31,10 @@ jobs:
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
         run:
-          mkdir -p -m 0700 ~/.ssh/
-        run: 
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-        run: 
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-        run: 
+          mkdir -p /home/runner/.ssh/
+          echo "$ACTION_DEPLOY_KEY" > /home/runner/.ssh/id_rsa
+          chmod 600 /home/runner/.ssh/id_rsa
+          ssh-keyscan github.com >> /home/runner/.ssh/known_hosts
           git config --global user.email "guyunxiang32@gmail.com"
           git config --global user.name "guyunxiang"
 
