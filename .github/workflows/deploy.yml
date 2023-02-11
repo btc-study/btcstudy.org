@@ -30,7 +30,7 @@ jobs:
       - name: Setup Repo
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_KEY }}
-        run:
+        run: |
           mkdir -p /home/runner/.ssh/
           echo "$ACTION_DEPLOY_KEY" > /home/runner/.ssh/id_rsa
           chmod 600 /home/runner/.ssh/id_rsa
@@ -39,11 +39,11 @@ jobs:
           git config --global user.name "guyunxiang"
 
       - name: Setup Hexo
-        run:
+        run: |
           npm install hexo-cli -g
           npm install
 
       - name: Deploy
-        run:
+        run: |
           hexo clean
           hexo generate
