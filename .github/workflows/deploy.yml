@@ -40,10 +40,9 @@ jobs:
 
       - name: Setup Hexo
         run: |
-          npm install hexo-cli -g
           npm install
 
       - name: Deploy
         run: |
-          hexo clean
-          hexo generate
+          npx hexo clean
+          npx hexo deploy
