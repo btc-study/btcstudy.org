@@ -1,5 +1,4 @@
 include methods
-- var v = new Date().getTime()
 
 article.post-container.is-flex.is-flex-direction-column.is-justify-content-center.section.container.is-max-widescreen.p-2
         //- - console.log(page.posts);
@@ -118,4 +117,4 @@ block append script
         }, 150))
         
 block script
-    script(src= url_for("/js/post-card.js?v=" + v))    
+    script(src= url_for("/js/post-card.js?v=" + config.version))    

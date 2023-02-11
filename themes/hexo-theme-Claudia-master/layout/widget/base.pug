@@ -5,7 +5,7 @@
 - if (is_category()) pageTitle = _p('category') + ': ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- var v = new Date().getTime()
+- var v = config.version
 
 doctype html
 //- html(lang=config.language class= `appearance-${ appearance }`)
@@ -18,12 +18,12 @@ html(lang=config.language)
     meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1")
       
     link(rel="icon" href= url_for(theme.favicon))
-    link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + v))
-    //- link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/bulma.css?v=' + v))
-    link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/iconfont.css?v=' + v))
-    link(rel="stylesheet" href= url_for('/style/base.css?v=' + v))
-    link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + v))
-    link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + v))
+    link(rel="stylesheet" href= url_for('/style/common/bulma.css?v=' + config.version))
+    //- link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/bulma.css?v=' + config.version))
+    link(rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href= url_for('/style/common/iconfont.css?v=' + config.version))
+    link(rel="stylesheet" href= url_for('/style/base.css?v=' + config.version))
+    link(rel="stylesheet" href= url_for('/style/common/helper.css?v=' + config.version))
+    link(rel="stylesheet" href= url_for('/style/themes/animation.css?v=' + config.version))
     
     script.
       function ready() {
@@ -66,7 +66,7 @@ html(lang=config.language)
         }
       }
       document.addEventListener("DOMContentLoaded", ready);
-    script(src= url_for("/js/common.js?v=" + v))
+    script(src= url_for("/js/common.js?v=" + config.version))
     script(src= url_for("/js/libs/zepto.min.js"))
     block head
 
@@ -85,8 +85,8 @@ html(lang=config.language)
       //-   - var author = (theme.user && theme.user.name) || config.author || ''
       //-   span= ' ' + author + ' ' + new Date().getFullYear()
     //- script(src= url_for("/js/search.js"))
-    script(async src= url_for("/js/buttons.js?v=" + v))
-    script(async src= url_for("/js/index.js?v=" + v))
+    script(async src= url_for("/js/buttons.js?v=" + config.version))
+    script(async src= url_for("/js/index.js?v=" + config.version))
     script(async src= url_for("https://www.googletagmanager.com/gtag/js?id=G-JVCJ9XXG1Z"))
     script.
       window.dataLayer = window.dataLayer || [];

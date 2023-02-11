@@ -1,8 +1,7 @@
 extends widget/base
 block append head
-    - var v = new Date().getTime()
-    link(rel='stylesheet', href= url_for('/style/post.css?v=' + v))
-    link(rel='stylesheet', href= url_for('/style/themes/highlight.css?v=' + v))
+    link(rel='stylesheet', href= url_for('/style/post.css?v=' + config.version))
+    link(rel='stylesheet', href= url_for('/style/themes/highlight.css?v=' + config.version))
 
 block topic
     div#postTopic.is-full-height.hidden
@@ -45,8 +44,8 @@ block content
     
     if page.mathjax
         include widget/mathjax.pug
-    script(src= url_for("/js/post.js?v=" + v))
-    script(src= url_for("/js/highlight.min.js?v=" + v))
+    script(src= url_for("/js/post.js?v=" + config.version))
+    script(src= url_for("/js/highlight.min.js?v=" + config.version))
     script.
         var containerEl = document.querySelector('.post-container');
         var postFontSize = localStorage.getItem('post-font-size') || '16';

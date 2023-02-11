@@ -1,8 +1,7 @@
 extends widget/base
 
 block append head
-    - var v = new Date().getTime()
-    link(rel='stylesheet', href= url_for("/style/maps.css?v=" + v))
+    link(rel='stylesheet', href= url_for("/style/maps.css?v=" + config.version))
     
 block content
     main.aside-card-container.archives-widget.p-2(class= is_archive() && 'is-in-archive-page')

@@ -1,8 +1,7 @@
 extends widget/base
 
 block append head
-    - var v = new Date().getTime()
-    link(rel='stylesheet', href= url_for('/style/404.css?v=' + v))
+    link(rel='stylesheet', href= url_for('/style/404.css?v=' + config.version))
 
 block content
     main.container-404

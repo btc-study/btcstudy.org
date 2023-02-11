@@ -1,8 +1,7 @@
 extends widget/base
 
 block append head
-    - var v = new Date().getTime()
-    link(rel='stylesheet', href= url_for("/style/mempool.css?v=" + v))
+    link(rel='stylesheet', href= url_for("/style/mempool.css?v=" + config.version))
     
 block content
     main.aside-card-container.archives-widget.p-2(class= is_archive() && 'is-in-archive-page')
@@ -23,4 +22,4 @@ block content
             //-             a(href= url_for(post.path))
             //-                 i.iconfont.icon-icon_into
 
-    script(src= url_for("/js/mempool.js?v=" + v))
+    script(src= url_for("/js/mempool.js?v=" + config.version))

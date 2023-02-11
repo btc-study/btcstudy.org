@@ -4,7 +4,6 @@
 - if (is_current('/tags')) { current = 'Tag' }
 - if (is_current('/maps')) { current = "Maps" }
 - if (is_current('/mempool')) { current = "Mempool" }
-- var v = new Date().getTime()
 
 header#header.header-widget.is-hidden-mobile.is-flex.is-flex-shrink-0.is-align-items-center.is-justify-content-center
     div.is-flex.header-widget-container.is-flex-shrink-0.is-align-items-center
@@ -76,7 +75,7 @@ div.mobile-slide-menu
 
 div.search-mask.hidden
 
-    script(src= url_for("/js/header.js?v=" + v))  
+    script(src= url_for("/js/header.js?v=" + config.version))  
 
     //- div.menu-wrap
         //- if theme.menu

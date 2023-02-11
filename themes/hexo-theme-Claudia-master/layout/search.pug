@@ -1,8 +1,7 @@
 extends widget/base
 
 block append head
-    - var v = new Date().getTime()
-    link(rel='stylesheet', href= url_for('/style/search.css?v=' + v))
+    link(rel='stylesheet', href= url_for('/style/search.css?v=' + config.version))
 
 block content
     main.result-container.p-2
@@ -16,4 +15,4 @@ block content
             h1= '没有找到'
             p= '请尝试搜索其他关键字'
 
-    script(src= url_for('/js/results.js?v=' + v))
+    script(src= url_for('/js/results.js?v=' + config.version))

@@ -1,8 +1,7 @@
 extends widget/base
 
 block append head
-    - var v = new Date().getTime()
-    link(rel='stylesheet', href= url_for("/style/widget-post-list.css?v=" + v))
+    link(rel='stylesheet', href= url_for("/style/widget-post-list.css?v=" + config.version))
 
 //- block topic
 //-     span= `${ _p('archive') } · ${ page.year || __('all') }`

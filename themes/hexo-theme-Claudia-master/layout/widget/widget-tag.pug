@@ -1,8 +1,7 @@
 include methods
-- var v = new Date().getTime()
 
 block append head
-    link(rel='stylesheet', href= url_for("/style/widget-tag.css?v=" + v))
+    link(rel='stylesheet', href= url_for("/style/widget-tag.css?v=" + config.version))
 
 main.tag-container.p-2
     - var list = [];
@@ -60,4 +59,4 @@ block append script
         }, 150))
 
 block script
-    script(src= url_for("/js/post-card.js?v=" + v))  
+    script(src= url_for("/js/post-card.js?v=" + config.version))  
