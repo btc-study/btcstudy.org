@@ -40,9 +40,11 @@ jobs:
 
       - name: Setup Hexo
         run: |
+          rm package-lock.json
+          npm install hexo-cli -g
           npm install
 
       - name: Deploy
         run: |
-          npx hexo clean
-          npx hexo deploy
+          hexo clean
+          hexo deploy
