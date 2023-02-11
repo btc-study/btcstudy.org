@@ -21,33 +21,31 @@
   }
 }
 
-$base-width: calc(100% / 24);
-
 @for $i from 1 through 24 {
-  .xs-#{$i} { width: #{$base-width} * $i; }
+  .xs-#{$i} { width: calc(100% / 24 * $i); }
 }
 
 @media screen and (min-width: 32rem) {
   @for $i from 1 through 24 {
-    .sm-#{$i} { width: #{$base-width} * $i; }
+    .sm-#{$i} { width: calc(100% / 24 * $i); }
   }
 }
 
 @media screen and (min-width: 48rem) {
   @for $i from 1 through 24 {
-    .md-#{$i} { width: #{$base-width} * $i; }
+    .md-#{$i} { width: calc(100% / 24 * $i); }
   }
 }
 
 @media screen and (min-width: 64rem) {
   @for $i from 1 through 24 {
-    .lg-#{$i} { width: #{$base-width} * $i; }
+    .lg-#{$i} { width: calc(100% / 24 * $i); }
   }
 }
 
 @media screen and (min-width: 80rem) {
   @for $i from 1 through 24 {
-    .xl-#{$i} { width: #{$base-width} * $i; }
+    .xl-#{$i} { width: calc(100% / 24 * $i); }
   }
 }
 
