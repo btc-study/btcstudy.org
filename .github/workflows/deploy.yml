@@ -9,13 +9,11 @@ jobs:
     runs-on: ubuntu-latest
   
   steps:
-    - name: Checkout source
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
       with:
         ref: main
 
-    - name: Setup Node.js
-      uses: action/setup-node@v3
+    - uses: action/setup-node@v3
       with:
         node-version: '12'
 
