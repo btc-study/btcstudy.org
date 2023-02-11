@@ -106,10 +106,10 @@ theme: hexo-theme-Claudia-master
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: git
-#   repo: git@github.com:btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute.git
-#   branch: main
+deploy:
+  type: git
+  repo: git@github.com:btc-study/Bitcoin-ideas-Chinese-based-on-Nakamoto-Institute.git
+  branch: gh-pages
 
 # set categories visible on home page
 home:
