@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .xs {max-width: 32rem;} /* 512px (Extra-Small) */
 
 .sm {max-width: 48rem;} /* 768px (Small) */
@@ -22,30 +24,30 @@
 }
 
 @for $i from 1 through 24 {
-  .xs-#{$i} { width: calc(100% / 24 * $i); }
+  .xs-#{$i} { width: math.div(100%, 24) * $i; }
 }
 
 @media screen and (min-width: 32rem) {
   @for $i from 1 through 24 {
-    .sm-#{$i} { width: calc(100% / 24 * $i); }
+    .sm-#{$i} { width: math.div(100%, 24) * $i; }
   }
 }
 
 @media screen and (min-width: 48rem) {
   @for $i from 1 through 24 {
-    .md-#{$i} { width: calc(100% / 24 * $i); }
+    .md-#{$i} { width: math.div(100%, 24) * $i; }
   }
 }
 
 @media screen and (min-width: 64rem) {
   @for $i from 1 through 24 {
-    .lg-#{$i} { width: calc(100% / 24 * $i); }
+    .lg-#{$i} { width: math.div(100%, 24)* $i; }
   }
 }
 
 @media screen and (min-width: 80rem) {
   @for $i from 1 through 24 {
-    .xl-#{$i} { width: calc(100% / 24 * $i); }
+    .xl-#{$i} { width: math.div(100%, 24)* $i; }
   }
 }
 
