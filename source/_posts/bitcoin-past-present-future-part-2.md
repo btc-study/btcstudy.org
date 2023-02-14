@@ -1,9 +1,9 @@
 ---
-title: '比特币的过去，现在和未来：Part-2'
+title: '比特币的过去，现在和未来（二）：中本聪其人'
 author: 'musclesatz'
 date: '2023/02/13 23:15:57'
 cover: ''
-excerpt: '中本聪其人'
+excerpt: '超然和清白'
 categories:
 - 比特币主网
 tags:
