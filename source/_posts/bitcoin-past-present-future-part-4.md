@@ -320,3 +320,4 @@ Blockchainlab 中的裂痕变得不可弥补，而祖科也不再尝试维持派
 
 （未完）
 
+> 续篇见[此处](https://www.btcstudy.org/2023/02/18/bitcoin-past-present-future-part-5/)。
