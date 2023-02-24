@@ -81,13 +81,13 @@ tags:
 
 尽管需要付出代价，但是一些初创项目仍具有很好的前景。Bitrefill 的 [Thor Turbo](https://www.bitrefill.com/thor-lightning-network-channels?hl=en) 通道就是其中一例，让用户可以使用手中的密码学货币立即开始体验闪电网络。Zap 钱包的[“Olympus”服务](https://medium.com/@JimmyMow/announcing-olympus-lightning-enabled-fiat-ramps-by-zap-1f5349a96ee9)就包含了零配置支付通道。这项服务可以让用户使用法币购买比特币，让用户即刻享受秒级比特币花费体验。
 
-## 托管式支付通道
+## 管家通道
 
-[Bitcoin Lightning Wallet](https://lightning-wallet.com/) 的 Anton Kumaigorodski 也有一个关于如何解决延迟问题的构想：托管式支付通道。他的想法是将用户的资金保存在托管方的服务器上，并使用一个[基于闪电网络的元账本](https://github.com/btcontract/hosted-channels-rfc)追踪这些资金。
+[Bitcoin Lightning Wallet](https://lightning-wallet.com/) 的 Anton Kumaigorodski 也有一个关于如何解决延迟问题的构想：管家通道（hosted channels）。他的想法是将用户的资金保存在托管方的服务器上，并使用一个[基于闪电网络的元账本](https://github.com/btcontract/hosted-channels-rfc)追踪这些资金。
 
 现有的基于闪电网络的托管方案利用一个或少数节点管理用户的资金，不再为每位用户运行单独的支付通道。这类托管方案会维护一个内部私密账本，用来记录每位用户在何时拥有多少资金。因此，用户无需等待支付通道被广播上链。最终得到是一个由托管方组成的去中心化网络，每个网络都为其用户运行一个中心化子网络。
 
-但是，Anton 写道：“当前这代闪电网络托管方史无前例地降低了隐私性，【引入了】信任假设，基本上毁了闪电网络的所有闪光点。”[我完全同意他的看法。](https://medium.com/breez-technology/bitcoin-is-peer-to-peer-or-it-is-nothing-3ec724c1c0e)
+但是，Anton 写道：“当前这代闪电网络托管方案史无前例地降低了隐私性，【引入了】信任假设，基本上毁了闪电网络的所有闪光点。”[我完全同意他的看法。](https://medium.com/breez-technology/bitcoin-is-peer-to-peer-or-it-is-nothing-3ec724c1c0e)
 
 Anton 的创新之处在于，元账本如同[一个由闪电网络支付通道组成的网络](https://github.com/btcontract/hosted-channels-rfc)，具体来说：
 
@@ -100,7 +100,7 @@ Anton 的解决方案没有试图改进点对点网络，而是另辟蹊径解�
 <p style="text-align:center">- 正如 Lenin 所说：“信任虽好，犹不如控制。”（来源：<a href="https://www.spangdahlem.af.mil/News/Photos/igphoto/2000613903/">Alexander R. Ray</a>） -</p>
 
 
-这是个好消息。托管式支付通道非常重视托管方的作用，针对“[看守由谁监督（quis custodiet ipsos custodes）](https://en.m.wikipedia.org/wiki/Quis_custodiet_ipsos_custodes%3F)”这一关键问题给出了自己的答案，即，让用户可以通过元账本监督他们的托管方。元账本是现有托管模式基础上的一种改进吗？答案是肯定的。
+这是个好消息。管家通道非常重视托管方的作用，针对 “[谁来监管托管方（quis custodiet ipsos custodes）](https://en.m.wikipedia.org/wiki/Quis_custodiet_ipsos_custodes%3F)” 这一关键问题给出了自己的答案，即，让用户可以通过元账本监督他们的托管方。元账本是现有托管模式基础上的一种改进吗？答案是肯定的。
 
 ### 代价
 
