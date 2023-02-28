@@ -3,6 +3,12 @@ if (debugSNS || theme.social.twitter)
     a(title="twitter" target="_blank" rel="noopener nofollow" href=`//twitter.com/${theme.social.twitter}`)
         //- i.iconfont.icon-twitter
         = 'Twitter'
+
+// Nostr
+if (debugSNS || theme.social.nostr)
+    a(title="nostr" target="_blank" rel="noopener nofollow" href=`https://iris.to/${theme.social.nostr}`)
+        = 'Nostr'
+
 // Github
 if (debugSNS || theme.social.github)
     a(title="github" target="_blank" rel="noopener nofollow" href=`//github.com/${theme.social.github}`)
