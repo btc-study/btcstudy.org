@@ -30,10 +30,11 @@ social:
   # rss:
   telegram: btcstudyorg
   # zhihu:
-  twitter: btcstudy
+  # twitter: btcstudy
   # facebook: /
   # linkedin:
   # instagram: /
+  nostr: npub1g2qs0ca5kpwlrcfug2em4jelmh65clk3yccwjxrs6hvdpd9qj80q022j4m
 
 user:
   name: BTC study
