@@ -74,3 +74,6 @@ tags:
 ## 脚注
 
 1.<a id="note1"> </a>只有 coinbase 交易不必引用以前的交易，它可以接收挖矿奖励。 <a href="#jump-1">↩</a>
+
+> 续篇见[此处](https://www.btcstudy.org/2023/02/28/lightning-privacy-research-routing-analysis/)。
+
