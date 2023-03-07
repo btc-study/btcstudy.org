@@ -119,7 +119,7 @@ tags:
 
 再说回链上隐私。8 月 2 日，`CoinJoin` 实现之间的战争开始了。CoinJoin 就是多方为同一笔交易提供输入；一开始，中本聪在他的白皮书里说，当一笔交易有多个输入时，很明显这些输入都属于同一个人，这是链上隐私的局限性 —— 有些线索必然暴露；但实际上，几年以后，格里高利·麦克斯韦尔在 bitcointalk 论坛上写了一篇帖子，指出交易的输入并不必然来自同一个人。你需要做的只是实现一个足够好的钱包（让多个人为同一笔交易提供输入）。格里高利，theymos（德默斯）和其他人提供了 15 BTC 作为奖金，悬赏开发这样的钱包，但这个原型迟迟没有出现，直到 nopara 推出了 [zerolink](https://github.com/nopara73/ZeroLink)，它采用了 David Chaum（大卫·乔姆）最初的 e-cash 的理念，并放在 CoinJoin 的语境中，从而让协调员失明；就像在 e-cash 中，协调员靠着盲签名，在不知道自己签名了什么东西的情况下防止了重复花费，CoinJoin 的协调员也失明了。CoinJoin 在 Wasabi 钱包、Whirpool 钱包和 Samorai 钱包中都实现了。
 
-8 月 2 日，`Dojo` 推出，这是一种 Bitcoin Core 的从属应用，跟 Bitcoin Core 一起运行，用来跟 Samourai 钱包 `沟通`。Dojo 是必要的，因为在此之前，在使用 Samourai 和 Whirpool 之时，CoinJoin 期间的服务器是通过大卫·乔姆密码学致盲的，但 Samorai 是一种手机钱包，而且所有的公钥都需要进入和退出 Coinjoin。这种批评因为 Dojo 的推出而部分得到缓解，因为，如果少数用户使用了 Dojo，而许多用户 “正常” 使用 Samourai，结果就是，如果一个使用 Dojo 的人跟许多使用 Samourai 的人进入了一笔 CoinJoin 交易，那么你的公钥是哪个将一目了然，因为只有你的哪一个是不可追踪的，别人的都是可以追踪的。
+8 月 2 日，`Dojo` 推出，这是一种 Bitcoin Core 的从属应用，跟 Bitcoin Core 一起运行，用来跟 Samourai 钱包 `沟通`。Dojo 是必要的，因为在此之前，在使用 Samourai 和 Whirpool 之时，CoinJoin 期间的服务器是通过大卫·乔姆密码学致盲的，但 Samorai 是一种手机钱包，而且所有的公钥都需要进入和退出 Coinjoin。这种批评因为 Dojo 的推出而部分得到缓解，因为，如果少数用户使用了 Dojo，而许多用户 “正常” 使用 Samourai，结果就是，如果一个使用 Dojo 的人跟许多使用 Samourai 的人进入了一笔 CoinJoin 交易，那么你的公钥是哪个将一目了然，因为只有你的那一个是不可追踪的，别人的都是可以追踪的。
 
 这件事具有历史意义，因为随着 Dojo 的推出，Luke Dashjr（卢克·达实）和格里高利·麦克斯韦尔的批评开始了，他们警告这个实现不好，建议不要使用。其他许多开发者加入了进来，随之而来的是一场没有边际的、无关技术的 文化/道德 战争。
 
