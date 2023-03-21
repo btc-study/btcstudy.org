@@ -3,7 +3,7 @@ title: '何以我们应该关注 RGB？'
 author: 'Olga Ukolova'
 date: '2023/03/20 15:49:15'
 cover: '../images/what-is-rgb-and-why-should-i-care/A-du-Behera-scaled.jpg'
-excerpt: ''
+excerpt: '像 RGB 这样的技术，是少数我们可以用来保护我们的自我主权和自由的工具'
 categories:
 - 比特币主网
 tags:
@@ -12,14 +12,14 @@ tags:
 
 
 > *作者：Olga Ukolova*
-> 
+>
 > *来源：<https://www.ukolova.ch/bitcoin-and-rgb/what-is-rgb-and-why-should-i-care>*
+>
+> *本文曾以乌克兰语，在 Bitcoin Magazine UA 网站出版：https://bitcoinmagazine.ua/technologies/1678169018-shcho-take-rgb-i-chomu-mene-tse-mae-hvilyuvati*
 
 
 
-本文曾以乌克兰语，在 Bitcoin Magazine UA 网站出版：https://bitcoinmagazine.ua/technologies/1678169018-shcho-take-rgb-i-chomu-mene-tse-mae-hvilyuvati
-
-“智能合约（smart contract）” 一词在今天已经有很多种含义了，因为人们认为是 Vitalik Buterin 在推出以太坊的时候才把它带到这个世界。实际上，早在 1990 年代初，**Nick Szabo** 就提出了这个概念，并定义为 “一组以电子信息形式作出的承诺，包括让各方得以履行这些承诺的协议”。但问题由此而来：*智能合约是仅存在于信息世界的东西码，还是说不止于此呢？*
+“智能合约（smart contract）” 一词在今天已经有很多种含义了，因为人们认为是 Vitalik Buterin 在推出以太坊的时候才把它带到这个世界。实际上，早在 1990 年代初，**Nick Szabo** 就提出了这个概念，并定义为 “一组以电子信息形式作出的承诺，包括让各方得以履行这些承诺的协议”。但问题由此而来：*智能合约是仅存在于信息世界的东西吗，还是说不止于此呢？*
 
 实际上，还有另一种理解这个词语背后的含义的办法，就是分析现实世界中，我们周围的一切是怎么运转的、人们之间是如何达成协定的。我们设想两个互不相识的人、有意愿跟对方沟通、达成约定、交换商品与服务、并相信这些约定会得到履行，就能发现几个问题。
 
@@ -45,9 +45,9 @@ tags:
 
 **迄今为止，世界上唯一一种能够满足上述所有属性的技术，就是 RGB**。
 
-RGB 是一种可扩展的、机密的智能合约系统，可以被视作开发在比特币上的 layer 2 以及/或者 layer 3 技术，并且，最重要的是，截至本文撰写的时间 —— 也是唯一一种能够搭配闪电网络的解决方案。RGB 利用了比特币和闪电网络的最强之处，同时将它们的功能扩展到令人惊讶的程度。RGB 给予了我们将许多不同类型的所有权（对一个合约顶一下的不同资产的所有权）从合约的状态（条件、合约的现状）、证据及演化中分离出来的能力；这样的所有权包括拥有、使用、专访、修改和转让的权利，等等。因此，我们可以说，RGB 合约定义了一种 事件-结果型算法（event-consequence algorithm）：“如果这个事件发生，那么后果就是这个”，以及每一步都需要遵循特定验证规则的义务。我们自然会问：*这是怎么做到的呢？*
+RGB 是一种可扩展的、机密的智能合约系统，可以被视作开发在比特币上的 layer 2 以及/或者 layer 3 技术，并且，最重要的是，截至本文撰写的时间 —— 也是唯一一种能够搭配闪电网络的解决方案。RGB 利用了比特币和闪电网络的最强之处，同时将它们的功能扩展到令人惊讶的程度。RGB 给予了我们将许多不同类型的所有权（对一个合约定义下的不同资产的所有权）从合约的状态（条件、合约的现状）、证据及演化中分离出来的能力；这样的所有权包括拥有、使用、专访、修改和转让的权利，等等。因此，我们可以说，RGB 合约定义了一种 事件-结果型算法（event-consequence algorithm）：“如果这个事件发生，那么后果就是这个”，以及每一步都需要遵循特定验证规则的义务。我们自然会问：*这是怎么做到的呢？*
 
-拥抱 Peter Todd 在几年前提出的 “[客户端验证](https://scalingbitcoin.org/milan2016/presentations/D2 - A - Peter Todd.pdf)” 以及 “[一次性密封条](https://petertodd.org/2016/commitments-and-single-use-seals)” 的概念、加入 bulletproof 这样的零知识证明元件、让所有的活动都能跟闪电网络兼容，RGB 不仅让参与者可以创建复杂的约定，同时还能保证他们的隐私、让交易能以闪电交易的速度发生，并提供了完整的所有权和管理的工具。而且所有的这些，既不需要用到新的区块链，也不需要在比特币上执行分叉，更不会污染 L1 时间链（所有的合约数据都永远保存在链下）而且不需要设立协议层l的 token 来让这一切运行起来。
+拥抱 Peter Todd 在几年前提出的 “[客户端验证](https://scalingbitcoin.org/milan2016/presentations/D2 - A - Peter Todd.pdf)” 以及 “[一次性密封条](https://petertodd.org/2016/commitments-and-single-use-seals)” 的概念、加入 bulletproof 这样的零知识证明元件、让所有的活动都能跟闪电网络兼容，RGB 不仅让参与者可以创建复杂的约定，同时还能保证他们的隐私、让交易能以闪电交易的速度发生，并提供了完整的所有权和管理的工具。而且所有的这些，既不需要用到新的区块链，也不需要在比特币上执行分叉，更不会污染 L1 时间链（所有的合约数据都永远保存在链下）而且不需要设立协议层的 token 来让这一切运行起来。
 
  你可能会问，我们如何让这一切成为现实呢？
 
@@ -77,14 +77,14 @@ RGB 的故事可以追溯到 2016 年，那时候 Giacomo Zucco 希望利用 Pet
 
 好消息是，我们已经可以使用它了。2021 年，出现了第一批 RGB beta 软件和拓荒者，比如 [**Pandora Prime**](https://www.pandoraprime.ch/) 公司推出的第一款面向用户的产品：[**MyCitadel wallet**](http://mycitadel.io/)、RGBex 浏览器以及 [**Bitcoin Pro**](https://github.com/pandora-prime/bitcoin-pro) 资产发行工具，它们推动了 RGB 的采用。为了尽快让协议稳定下来，[**2022 年 6 月 13 日**](https://youtu.be/VmB5SaaaABI)，RGB 推出了第一个版本的 “共识级别” 的代码库，给予人们更强的信心：协议可以工作了，不会再有剧烈的变更，可以在上面开发自己的业务和解决方案了。随着这个版本的发布，RGB 协议在 2022 年获得了行业的许多参与者的关注，他们接受了 Randora 的倡议，并也开始围绕 RGB 开发自己的产品：从稳定币到艺术收藏品，再到 DAO、继承制度和教育证书。
 
-![2023-02-02 dev call.001](../images/what-is-rgb-and-why-should-i-care/2023-02-02 dev call.001.jpeg)
+![2023-02-02 dev call.001](../images/what-is-rgb-and-why-should-i-care/2023-02-02-dev-call.jpeg)
 
 <p style="text-align:center">- 宣布推出 v0.10 的开发者会议的记录，来自 LNP/BP 标准协会的 YouTube 频道：https://www.youtube.com/watch?v=VmB5SaaaABI  -</p>
 
 
 ## 总结
 
-我们非常相信，隐私型、可编程性、不记名产权、安全性和可扩展性，是把比特币带向未来的核心驱动力。RGB 最终给了用户解决许多问题（不仅仅是金融交互问题）的机会，我们提供了工具，让每一个人都能在我们周围的密码朋克世界中成长并保护自己拥有的东西。随着个体日益暴露在社会的管控之中，我们每一个人都日益经历更多的监视和管控，没完没了，像 RGB 这样的技术，是少数我父母可以用来保护我们的自我主权和自由的工具。
+我们非常相信，隐私型、可编程性、不记名产权、安全性和可扩展性，是把比特币带向未来的核心驱动力。RGB 最终给了用户解决许多问题（不仅仅是金融交互问题）的机会，我们提供了工具，让每一个人都能在我们周围的密码朋克世界中成长并保护自己拥有的东西。随着个体日益暴露在社会的管控之中，我们每一个人都日益经历更多的监视和管控，没完没了，像 RGB 这样的技术，是少数我们可以用来保护我们的自我主权和自由的工具。
 
 如果比特币是一种 “fuck you” 货币，RGB 就是一种 “fuck you” 智能合约。
 
