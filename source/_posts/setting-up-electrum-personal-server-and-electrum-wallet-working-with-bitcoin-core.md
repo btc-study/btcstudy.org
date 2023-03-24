@@ -25,7 +25,7 @@ Electrum 钱包是比特币世界最著名（可能也是最老牌）的桌面�
 
 不过，既然我们要当一个硬核的比特币爱好者，那当然要使用自己的节点。因为使用自己的节点可以更好地保证隐私性，你可以直接把交易发送到网络中，不需要假手他人；当你在区块链上扫描地址，也不会因为借用了别人的节点而被发现你可能在使用哪些地址。
 
-也正因此，我们要学习安装 EPS。因为 Electrum 钱包无法直接跟 Bitcoin Core 通信，它需要借助 EPS。也就是说，实际上，Electrum 钱包是跟 EPS 通信，而 EPS 跟 Bitcoin Core 通信，实现完整的功能。
+也正因此，我们要学习安装 EPS。因为 Electrum 钱包无法直接跟 Bitcoin Core 通信，它需要借助 EPS。也就是说，实际上，**Electrum 钱包是跟 EPS 通信，而 EPS 跟 Bitcoin Core 通信，实现完整的功能**。
 
 运行 EPS 也有额外的一些好处：它不仅可以作为 Electrum 钱包的后端，也可以作为 [Blue Wallet 手机钱包](https://bluewallet.io/)、[Trezor 硬件钱包套件 Trezor Suite](https://www.btcstudy.org/2022/04/04/connecting-your-wallet-to-a-full-node/) 的后端，它也是最流行的个人钱包服务后端。
 
@@ -94,7 +94,7 @@ bitcoin-cli createwallet <任意名称> true
 
 接下来我们编辑  ` coinfig.ini `  文件。可以直接在文档管理器中以图形界面打开。编辑的要点如下：
 
-- 文件里面包括注释的内容用很多，看起来可能很烦人。但如果你不需要配置相应的参数，就保持原样不要动它。**请不要删去方括号（`  []`）框起来的部分！**
+- 文件里面包括注释的内容很多，看起来可能很烦人。但如果你不需要配置相应的参数，就保持原样不要动它。**请不要删去方括号（`  []`）框起来的部分！**
 - 我们需要配置的部分有： ` [master-public-keys] ` 、 ` [bitcoin-rpc] ` 、 ` [electrum-server] ` 。
 - 在 ` [master-public-keys] ` 部分， ` #any_name_works ` 下面一行，输入你在 Electrum 钱包中得到的主公钥： ` <随便什么名字> = <你的主公钥> ` 
   - 如果你有多个主公钥，可以分行输入，使用不同的名字就互不影响
@@ -122,6 +122,43 @@ electrum-personal-server /home/<你的用户名>/electrum-personal-server-eps-v0
 ```
 
 理论上，EPS 现在能够正常启动了，你将能够在命令行窗口内看到 EPS 的启动信息和捐赠地址。
+
+> **2023 年 3 月 24 日重要补充：**
+>
+> 从 2023 年 3 月开始，如果你依然使用 0.2.4 及以前的 EPS，你的 Electrum 钱包将无法与之建立正常的网络连接，因此下文所谓的绿点将不会出现。这是因为 EPS 需要使用 SSL 证书，而软件包中自带的证书已经在 3 月 12 日过期。因此，你需要参考[这份 Issue](https://github.com/chris-belcher/electrum-personal-server/issues/286) 来更新 SSL 证书。简述如下：
+>
+> 第一步：移动到证书相关的目录，备份老的证书并在目标文件夹内删除老证书：
+>
+> ```
+> cd electrum-personal-server-eps-v0.2.4/electrumpersonalserver/certs
+> cp -r ../certs ../certs_backup
+> rm cert.*
+> ```
+>
+> 第二步：生成自签名的证书：
+>
+> ```
+> openssl genrsa -des3 -passout pass:<password> -out server.pass.key 2048
+> openssl rsa -passin pass:<password> -in server.pass.key -out cert.key
+> rm server.pass.key
+> openssl req -new -key cert.key -out cert.csr
+> openssl x509 -req -days 1825 -in cert.csr -signkey cert.key -out cert.crt
+> openssl x509 -enddate -in cert.crt
+> ```
+>
+> 第一行指令是在生成私钥。**注意，这里的口令（password）必须长于 4 位，短于 1300 位**。
+>
+> 第二行是生成公钥。后面是移除私钥、生成证书请求以及签名证书。注意，在生成证书请求时，它可能要求你填入地区、组织名、用户名一类的信息，并无特别大的意义，但似乎不应一个都不填。最后一行是为证书添加 5 年的使用时间。
+>
+> 第三步：回退到 EPS 软件的目录（在我们这里就是 `electrum-personal-server-eps-v0.2.4`）然后运行：
+>
+> ```
+> pip3 install --user .
+> ```
+> 这表示重装软件。
+>
+> 完成上述步骤之后，重新启动 EPS，就能保证连接顺利了。你可能需要手动杀死原来的 EPS 进程，才能重启成功。
+
 
 现在，我们启动 Electrum 钱包，在钱包的主界面，你可以看到右下角出现绿色小点，左下角显示你的余额：
 
