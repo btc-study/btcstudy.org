@@ -54,7 +54,7 @@ tags:
 
 在电视或广告牌广告之类的场景中，生成一个新的收款地址并不可行，[隐身地址](https://github.com/genjix/bips/blob/master/bip-stealth.mediawiki)可能是一种解决方案。隐身地址的思路是在 Alice 公布其公钥后，想要向 Alice 付款的人需要获得该信息，生成并“支付给”一个新的公钥，而这个公钥的对应私钥只能由 Alice 生成。我们可以利用 [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) 协议来实现隐身地址。
 
-假设 Alice 的密钥对是 **A=aG**，其中 **G** 是一条[椭圆曲线](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)上的基点，Bob 首先需要生成一个临时密钥对 **B=bG**。通过 [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) 协议，Alice 和 Bob 之间共享的秘密值是 **secret=bA=aB=abG**。然后，Bob 付款至根据 **A+H(secret)G** 生成的新地址，其中 **H** 是一个密码哈希函数。由于只有 Alice 知道 **a+H(secret)**，只有她能够花费新地址上的资金。
+假设 Alice 的密钥对是 **A=aG**，其中 **G** 是一条[椭圆曲线](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)上的基点，Bob 首先需要生成一个临时密钥对 **B=bG**。通过 [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) 协议，Alice 和 Bob 之间共享的秘密值是 **secret=bA=aB=abG**。然后，Bob 付款至根据 **A+H(secret)G** 生成的新地址，其中 **H** 是一个密码哈希函数。由于只有 Alice 知道 <strong>a+H(secret)</strong>，只有她能够花费新地址上的资金。
 
 实际上，正如比特币开发者 Peter Todd [所言](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2014-January/004020.html)，Bob 需要通过额外创建一笔带有  **OP_RETURN** 输出的交易，将临时公钥 B 告知 Alice，以便 Alice 获得共享秘密值。但是，[Peter 随后又表示](https://www.reddit.com/r/Bitcoin/comments/5xm9bt/what_happened_to_stealth_addresses/dejcjmw)，由于 **OP_RETURN** 最后被改成仅能容纳 40 字节的数据，提出隐身地址的 BIP（BIP 63）未能发布。总的来说，隐身地址在比特币生态中采用率不高。[DarkWallet](https://www.darkwallet.is/) 似乎支持[隐身地址](https://github.com/darkwallet/darkwallet/blob/4c51dacacb8541305f1442ef7fa1628eb7c19a79/src/js/util/stealth.js)，但是该项目很少有人维护了。另外，[Monero](https://www.getmonero.org/) 和 [TokenPay](https://www.tokenpay.com/) 引入了一个[更加有趣的隐身地址版本](https://src.getmonero.org/resources/moneropedia/stealthaddress.html)，利用[双密钥隐身地址协议](https://medium.com/tokenpay/tokenpay-utilizes-dual-key-stealth-addresses-for-complete-anonymity-c5ae682ce879)将查看密钥和花费密钥分离。这可以用来让第三方查看交易历史，同时又不让他们有能力花费资金。
 
@@ -70,7 +70,7 @@ tags:
 
 ### 挑选款项（Coin Control）
 
-如果同一个交易花费了两个输出，这两个输出通常为同一个人所有（除非是 [CoinJoin](https://bitcointalk.org/index.php?topic=279249.0) 之类的交易）。如果恰好其中一个输出被污染了，人们会认为另一个输出也被污染了。通过 [Core Control](https://bitcoin.stackexchange.com/questions/37486/what-does-bitcoin-cores-coin-control-features-do-and-how-do-i-use-it) 功能，用户可以选择使用哪个输出组合来创建交易，这会降低输出被意外污染的可能性。
+如果同一个交易花费了两个输出，这两个输出通常为同一个人所有（除非是 [CoinJoin](https://bitcointalk.org/index.php?topic=279249.0) 之类的交易）。如果恰好其中一个输出被污染了，人们会认为另一个输出也被污染了。通过 [Coin Control](https://bitcoin.stackexchange.com/questions/37486/what-does-bitcoin-cores-coin-control-features-do-and-how-do-i-use-it) 功能，用户可以选择使用哪个输出组合来创建交易，这会降低输出被意外污染的可能性。
 
 很多钱包都支持 Coin Control 功能，包括 [Bitcoin Core 钱包](https://github.com/bitcoin/bitcoin/tree/master/src/wallet)。
 

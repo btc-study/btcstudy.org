@@ -154,3 +154,4 @@ or_b(pk(key_1),s:pk(key_2))
 
 在下一篇文章中，我们会使用 Go 语言编写一个真正成熟的 Miniscript  解析器和正确性分析器。他将能够从任意的 Miniscript 表达式中创建比特币收账地址。敬请期待！
 
+> 续篇见[此处](https://www.btcstudy.org/2023/03/29/understanding-bitcoin-miniscript-part-3/)。
