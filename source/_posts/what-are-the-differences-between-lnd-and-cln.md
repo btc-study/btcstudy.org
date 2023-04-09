@@ -1,6 +1,6 @@
 ---
 title: 'LND 闪电客户端与 CLN 客户端有何区别？'
-author: 'Bitcoin Lightning Network'
+author: 'BLN'
 date: '2023/03/27 14:35:40'
 cover: ''
 excerpt: '取舍各有不同'
