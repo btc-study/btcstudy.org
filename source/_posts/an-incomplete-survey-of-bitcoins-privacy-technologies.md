@@ -164,14 +164,14 @@ TumbleBit 目前已整合到 [Stratis](https://stratisplatform.com/) 的 [Breeze
 假设 **G** 和 **H** 是两条[椭圆曲线](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)上的[生成点](https://bitcoin.stackexchange.com/questions/29904/what-exactly-is-generator-g-in-bitcoins-elliptical-curve-algorithm)，**v** 是交易额**，r** 是一个随机数。然后 `r*G + v*H` 是交易额 **v** 的佩德森承诺。**r** 被称为结合因子，本质上是一个大随机数。假设 *v = v1 + v2*，且 **v1** 和 **v2** 对应的佩德森承诺分别是
 
 ```
-r1*G + v1*H
-r2*G + v2*H
+r1 * G + v1 * H
+r2 * G + v2 * H
 ```
 
 只要 *r = r1 + r2*，则 **v** 的佩德森承诺减去 **v1** 和 **v2** 的佩德森承诺之和为 0。
 
 ```
-(r*G + v*H) - (r1*G + v1*H + r2*G + v2*H) == 0
+(r * G + v * H) - (r1 * G + v1 * H + r2 * G + v2 * H) == 0
 ```
 
 因此，从算术的角度来看，交易额的佩德森承诺可以用来代替类似比特币的系统中的交易额。事实上，[Element](https://elementsproject.org/features/confidential-transactions) 项目正是这么做的。
@@ -181,7 +181,7 @@ r2*G + v2*H
 最后需要解决的问题是，如果
 
 ```
-r1*G + v1*H
+r1 * G + v1 * H
 ```
 
 是一个交易输出额，接收方如何知晓交易额 **v1** 和结合因子 **r1**？在 [Element](https://elementsproject.org/features/confidential-transactions) 中，这是通过经典的 [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) 密钥交换来实现的。在 [Element](https://elementsproject.org/features/confidential-transactions) 中，交易的输出额实际上包含的不仅是佩德森承诺，还有来自发送方的范围证明和 [ECDH](https://en.wikipedia.org/wiki/Elliptic-curve_Diffie–Hellman) 临时公钥。有了这些，接收方能够与发送方生成共享密钥，用于揭露 **v1** 和 **r1**。如果你想了解更多详情，可以查看 [Pieter Wuille](https://twitter.com/pwuille?lang=en) 的[文章](https://bitcoin.stackexchange.com/questions/48064/sending-confidential-transaction-amount-to-the-receiver)。
@@ -195,8 +195,8 @@ r1*G + v1*H
 假设
 
 ```
-ri*G + vi*H
-ro*G + vo*H
+ri * G + vi * H
+ro * G + vo * H
 ```
 
 分别是输入额 **v1** 和输出额 **v2** 的佩德森承诺。如果 *v1 = v2，*则两个承诺相减得到 *(ro-ri)\*G*，即，一个有效的公钥。只要发送方和接收方共同生成一个签名来证明他们知道 *(ro-ri)*，则交易被视为有效，代币的所有权发生转移。这种证明所有权的能力实现了 [cut-through](https://github.com/mimblewimble/grin/blob/master/doc/intro.md#cut-through)，进一步增强了 MimbleWimble 的隐私性和可扩展性。
@@ -264,7 +264,7 @@ OP_EndIf
 
 ![taproot](../images/an-incomplete-survey-of-bitcoins-privacy-technologies/taproot.png)
 
-Taproot 节点包含 `K + H(K||C)*G` 的值，可以通过以下两种方式花费：
+Taproot 节点包含 `K + H(K||C) * G` 的值，可以通过以下两种方式花费：
 
 - 如果选择了共识分支，只需由 `k + H(K||C)` （其中 **k** 指的是 **K** 的私钥）签署的签名即可。
 
