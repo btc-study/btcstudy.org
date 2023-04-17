@@ -214,15 +214,15 @@ Bitcoin Core 开发者 Gloria Zhao [绘制](https://bitcoincore.reviews/22363)�
 
 | Output Type | scriptPubKey | scriptSig | redeem script | witness   |
 | ------| ------ | -----------| ------ | ------- |
-| P2PK | <pubkey> OP_CHECKSIG   | <signature>   |    |       |
-| P2PKH | OP_DUPOP_HASH160 <pubKeyHash> OP_EQUALVERIFYOP_CHECKSIG | <signature> <public key>      |     |         |
-| P2SH   | OP_HASH160 <scriptHash> OP_EQUAL    | <data pushes> <redeem script> | **(arbitrary)** |       |
-| P2WPKH | 0 <pubKeyHash>   |     |    | <signature> <public key> |
-| P2WSH | 0 <witnessScriptHash>    |       |     | <data pushes> **<witness script>** |
-| P2SH-P2WPKH | OP_HASH160 <redeemScriptHash> OP_EQUAL  | <redeem script>  | 0 <pubKeyHash> | <signature> <public key>              |
-| P2SH-P2WSH | OP_HASH160 <redeemScriptHash> OP_EQUAL | <redeem script> | 0 <scriptHash> | <data pushes> **<witness script>** |
-| P2TR (key path) | 1 <public key>  |    |   | <signature> |
-| P2TR (script path) | 1 <public key> |    |    | <data pushes> **<script> <control block>** |
+| P2PK | \<pubkey> OP_CHECKSIG  | \<signature>  |    |       |
+| P2PKH | OP_DUPOP_HASH160 \<pubKeyHash> OP_EQUALVERIFYOP_CHECKSIG | \<signature> \<public key>    |     |         |
+| P2SH   | OP_HASH160 \<scriptHash> OP_EQUAL   | \<data pushes> \<redeem script> | **(arbitrary)** |       |
+| P2WPKH | 0 \<pubKeyHash>  |     |    | \<signature> \<public key> |
+| P2WSH | 0 \<witnessScriptHash>   |       |     | \<data pushes> **\<witness script>** |
+| P2SH-P2WPKH | OP_HASH160 \<redeemScriptHash> OP_EQUAL | \<redeem script> | 0 \<pubKeyHash> | \<signature> \<public key>            |
+| P2SH-P2WSH | OP_HASH160 \<redeemScriptHash> OP_EQUAL | \<redeem script> | 0 \<scriptHash> | \<data pushes> **\<witness script>** |
+| P2TR (key path) | 1 \<public key> |    |   | \<signature> |
+| P2TR (script path) | 1 \<public key> |    |    | \<data pushes> **\<script> \<control block>** |
 
 **注意**：上表不涉及派生路径。如果你使用的是基于 BIP32 的分层确定性钱包，可能还需要备份派生路径。
 
