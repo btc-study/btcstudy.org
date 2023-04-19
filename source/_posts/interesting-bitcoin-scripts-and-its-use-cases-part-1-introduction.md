@@ -102,16 +102,16 @@ P2WPKH（隔离见证下的公钥哈希值输出）的锁定脚本：`0 <B 公�
 
 1.<a id="note1"> </a>https://www.btcstudy.org/2022/09/07/on-the-programmability-of-bitcoin-protocol/ <a href="#jump-1">↩</a>
 
-2.<a id="note2"> </a>https://www.btcstudy.org/2022/07/19/the-words-we-use-in-bitcoin/ <a href="#jump-2">↩</a>
+2.<a id="note2"> </a>https://www.btcstudy.org/2022/07/19/the-words-we-use-in-bitcoin/#%E5%9C%B0%E5%9D%80%EF%BC%88address%EF%BC%89 <a href="#jump-2">↩</a>
 
-3.<a id="note3"> </a>https://www.btcstudy.org/2023/03/16/understanding-bitcoin-miniscript-part-1/ <a href="#jump-3">↩</a>
+3.<a id="note3"> </a>https://www.btcstudy.org/2023/03/16/understanding-bitcoin-miniscript-part-1/#Bitcoin-Script-%E7%9A%84%E6%9E%81%E7%AE%80%E9%80%9A%E8%AF%86%E8%AF%BE <a href="#jump-3">↩</a>
 
 4.<a id="note4"> </a>https://www.btcstudy.org/2021/09/29/bitcoin-taproot-a-technical-explanation/#Pay-to-ScriptHash-P2SH <a href="#jump-4">↩</a>
 
-5.<a id="note5"> </a>https://www.btcstudy.org/2022/10/07/segregated-witness-benefits/ <a href="#jump-5">↩</a>
+5.<a id="note5"> </a>https://www.btcstudy.org/2022/10/07/segregated-witness-benefits/#%E4%BF%AE%E5%A4%8D%E7%86%94%E8%9E%8D%E6%80%A7%E9%97%AE%E9%A2%98 <a href="#jump-5">↩</a>
 
 6.<a id="note6"> </a>https://www.btcstudy.org/2022/09/24/script-a-mini-programming-language-by-Greg-Walker/ <a href="#jump-6">↩</a>
 
 7.<a id="note7"> </a>https://en.bitcoin.it/wiki/Script <a href="#jump-7">↩</a>
 
-8.<a id="note8"> </a>https://www.btcstudy.org/2023/03/22/understanding-bitcoin-miniscript-part-2/ <a href="#jump-8">↩</a>
+8.<a id="note8"> </a>https://www.btcstudy.org/2023/03/22/understanding-bitcoin-miniscript-part-2/#%E4%BB%80%E4%B9%88%E6%98%AF-%E2%80%9CMiniscript%E2%80%9D%EF%BC%9F <a href="#jump-8">↩</a>
