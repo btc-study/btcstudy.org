@@ -58,7 +58,7 @@ tags:
 >    这样做有许多好处：一是缩减使用复杂脚本的 UTXO 的体积，其脚本公钥字段不再携带完整的脚本，而只余脚本的哈希值；二是经济负担的转移 <sup><a href="#note4" id="jump-4">4</a></sup>，比特币交易的手续费是按交易的体积支付的，原本，支付方需要为使用复杂脚本的接收方支付额外的手续费，现在，因为赎回脚本仅在相关资金被花费时才会完整暴露，额外的交易手续费将由使用者（原来的接收方）自己承担；最后，它还有一些隐私性上的好处：在资金被实际被花费之前，区块链的观察者无法知道其实际解锁条件。
 >
 > 2. 隔离见证升级
->    隔离见证升级以前，交易的输入的脚本签名字段负责携带数据，以求通过其所引用的输出的脚本公钥所表示的解锁条件。但是，人们发现这样的设计会导致第三方可以改动脚本签名的内容而不使交易失效，但因为计算交易索引值（txid）时也包括了脚本签名，所以这样会使 txid 改变。这个问题被称为 “熔融性（malleability）” 问题。它会让 txid 变成一种不可依赖的跟踪交易的方法， 进而多方参与的合约协议也很难安全 <sup><a href="#note5" id="jump-5">5</a></sup>。
+>    隔离见证升级以前，交易的输入的脚本签名字段负责携带数据，以求通过其所引用的输出的脚本公钥所表示的解锁条件。但是，人们发现这样的设计会导致第三方可以改动脚本签名的内容而不使交易失效，但因为计算交易索引值（txid）时也包括了脚本签名字段，所以这样会使 txid 改变。这个问题被称为 “熔融性（malleability）” 问题。它会让 txid 变成一种不可依赖的跟踪交易的方法， 进而多方参与的合约协议也很难安全 <sup><a href="#note5" id="jump-5">5</a></sup>。
 >
 >    隔离见证的创新在于，它将原本放在脚本签名中的内容放在交易之外的一个专门的地方，称作 “witness”。输入的脚本签名字段不再有内容，也就不再能被改动而不影响交易的有效性。这就修复了这里所说的熔融性的问题。
 >
@@ -78,13 +78,13 @@ tags:
 
 P2PKH 的锁定脚本是这样的：`OP_DUP OP_HASH160 <A 公钥的哈希值> OP_EQUALVERIFY OP_CHECKSIG`；需要为之提供的脚本签名是这样的：`<A 公钥的签名> <A 公钥>`。
 
-P2WPKH（隔离见证下的公钥哈希值输出）的锁定脚本：`0 <B 公钥的哈希值>`；需要为之提供的 witness 是这样的：`<A 公钥的签名> <A 公钥>`。
+P2WPKH（隔离见证下的公钥哈希值输出）的锁定脚本：`0 <B 公钥的哈希值>`；需要为之提供的 witness 是这样的：`<B 公钥的签名> <B 公钥>`。
 
 ## Miniscript 与 Policy 语言
 
 在上面的脚本示例中，我们直接使用了比特币共识规则中可用的操作码 <sup><a href="#note7" id="jump-7">7</a></sup> 来编写代码；这种编写方法可以称为 “Bitcoin Script 语言”。
 
-但在本系列的后续文章中，除了提供这样的 Script 代码，我们还会提供另一种编程语言 Miniscript 的代码。虽然 Script 代码才是比特币网络上可以执行的脚本，但实际上，这样的脚本是非常难以编写和分析的 <sup><a href="#note3" id="jump-3">3</a></sup>。正是因此，人们才提出了 Miniscript 语言：它实际上是 Script 语言的一个子集，但是具有结构化的表现形式，因此更容易分析和组合。它代表着比特币开发者驯服工具上的努力，也代表着开发比特币脚本的新实践，值得具有雄心和知识的读者的关注。 
+但在本系列的后续文章中，除了提供这样的 Script 代码，我们还会提供另一种编程语言 Miniscript 的代码。虽然 Script 代码才是比特币网络上可以执行的脚本，但实际上，这样的脚本是非常难以编写和分析的 <sup><a href="#note3" id="jump-31">3</a></sup>。正是因此，人们才提出了 Miniscript 语言：它实际上是 Script 语言的一个子集，但是具有结构化的表现形式，因此更容易分析和组合。它代表着比特币开发者驯服工具上的努力，也代表着开发比特币脚本的新实践，值得具有雄心和知识的读者的关注。 
 
 更重要的是，Miniscript 的作者在开发它的同时还提出了另一种语言：Policy 语言，这是一种将 UTXO 的花费条件表示成可以直接阅读的代码的语言。也就是说，它的用法是，我们先将解锁条件表达成 Policy 代码，然后用编译器将它译为 Miniscript 代码，最后将 Miniscript 代码翻译成 Script 代码（可以在比特币网络上直接执行的脚本）。这是因为，Miniscript 的主要用意是让代码变得可分析、可组合，确保生成的 Script 的正确性是其首要设计目的；而在这种设计目的之下，就很难兼顾让代码变得可读、易于编写的目的 <sup><a href="#note8" id="jump-8">8</a></sup>。因此，我们将大量的工作交给编译器，而让这两种独立的语言各司其职。
 
@@ -104,7 +104,7 @@ P2WPKH（隔离见证下的公钥哈希值输出）的锁定脚本：`0 <B 公�
 
 2.<a id="note2"> </a>https://www.btcstudy.org/2022/07/19/the-words-we-use-in-bitcoin/#%E5%9C%B0%E5%9D%80%EF%BC%88address%EF%BC%89 <a href="#jump-2">↩</a>
 
-3.<a id="note3"> </a>https://www.btcstudy.org/2023/03/16/understanding-bitcoin-miniscript-part-1/#Bitcoin-Script-%E7%9A%84%E6%9E%81%E7%AE%80%E9%80%9A%E8%AF%86%E8%AF%BE <a href="#jump-3">↩</a>
+3.<a id="note3"> </a>https://www.btcstudy.org/2023/03/16/understanding-bitcoin-miniscript-part-1/#Bitcoin-Script-%E7%9A%84%E6%9E%81%E7%AE%80%E9%80%9A%E8%AF%86%E8%AF%BE <a href="#jump-3">↩</a> <a href="#jump-31">↩</a>
 
 4.<a id="note4"> </a>https://www.btcstudy.org/2021/09/29/bitcoin-taproot-a-technical-explanation/#Pay-to-ScriptHash-P2SH <a href="#jump-4">↩</a>
 
@@ -115,3 +115,5 @@ P2WPKH（隔离见证下的公钥哈希值输出）的锁定脚本：`0 <B 公�
 7.<a id="note7"> </a>https://en.bitcoin.it/wiki/Script <a href="#jump-7">↩</a>
 
 8.<a id="note8"> </a>https://www.btcstudy.org/2023/03/22/understanding-bitcoin-miniscript-part-2/#%E4%BB%80%E4%B9%88%E6%98%AF-%E2%80%9CMiniscript%E2%80%9D%EF%BC%9F <a href="#jump-8">↩</a>
+
+> [后篇](https://www.btcstudy.org/2023/04/19/interesting-bitcoin-scripts-and-its-use-cases-part-2-multisig/)
