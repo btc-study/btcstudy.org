@@ -11,7 +11,7 @@ tags:
 
 > *作者：Anony*
 > 
-> *前篇文章[见此处](interesting-bitcoin-scripts-and-its-use-cases-part-1-introduction)。*
+> *前篇文章[见此处](https://www.btcstudy.org/2023/04/18/interesting-bitcoin-scripts-and-its-use-cases-part-1-introduction/)。*
 
 在本系列的上一篇文章中，我们介绍了比特币系统的基本概念。本章，我们正式进入最常被使用的比特币复杂脚本模块：多签名。
 
@@ -158,3 +158,5 @@ multi(2,Alice,Bob,Carol)
 8.<a id="note8"> </a>https://www.btcstudy.org/2022/10/18/exploring-liquid-sidechain/ <a href="#jump-8">↩</a>
 
 9.<a id="note9"> </a>https://keys.casa/ <a href="#jump-9">↩</a>
+
+> *续篇见[此处](https://www.btcstudy.org/2023/04/21/interesting-bitcoin-scripts-and-its-use-cases-part-3-time-locks/)。*

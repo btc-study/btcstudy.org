@@ -116,4 +116,4 @@ P2WPKH（隔离见证下的公钥哈希值输出）的锁定脚本：`0 <B 公�
 
 8.<a id="note8"> </a>https://www.btcstudy.org/2023/03/22/understanding-bitcoin-miniscript-part-2/#%E4%BB%80%E4%B9%88%E6%98%AF-%E2%80%9CMiniscript%E2%80%9D%EF%BC%9F <a href="#jump-8">↩</a>
 
-> [后篇](https://www.btcstudy.org/2023/04/19/interesting-bitcoin-scripts-and-its-use-cases-part-2-multisig/)
+> *[续篇见此处](https://www.btcstudy.org/2023/04/19/interesting-bitcoin-scripts-and-its-use-cases-part-2-multisig/)*
