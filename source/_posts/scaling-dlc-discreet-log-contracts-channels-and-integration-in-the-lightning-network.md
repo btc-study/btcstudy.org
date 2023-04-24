@@ -54,7 +54,7 @@ DLC 让两方可以使用比特币区块链和信息断言机（oracle）来建�
 
 > *原文地址：<https://medium.com/crypto-garage/scaling-dlc-part2-free-option-problem-with-dlc-ff939311954c>*
 
-在本系列的上一篇文章种，我概要地讲解了 DLC 交易并提到了 DLC 的免费期权问题。在本文中我描述这个问题的细节。如果两方在一个 DLC 通道中执行连续的合约，他们需要 “撤销” 前一个合约的交易，以保证恶意的参与者也不会尝试使用旧状态来关闭通道。我们以图 4 为例，第三轮合约的交易需要在第四轮合约建立前撤销。
+在本系列的上一篇文章中，我概要地讲解了 DLC 交易并提到了 DLC 的免费期权问题。在本文中我描述这个问题的细节。如果两方在一个 DLC 通道中执行连续的合约，他们需要 “撤销” 前一个合约的交易，以保证恶意的参与者也不会尝试使用旧状态来关闭通道。我们以图 4 为例，第三轮合约的交易需要在第四轮合约建立前撤销。
 
 ![img](../images/scaling-dlc-discreet-log-contracts-channels-and-integration-in-the-lightning-network/n5K60ZA.png)
 
