@@ -107,3 +107,5 @@ HTLC 的用途之一。假设 Alice 给了 Bob 一个 HTLC，Bob 也在另一个
 2.<a id="note2"> </a>https://lightning.engineering/loop/ <a href="#jump-2">↩</a>
 
 3.<a id="note3"> </a>https://boltz.exchange/ <a href="#jump-3">↩</a>
+
+> *续篇见[此处](https://www.btcstudy.org/2023/04/24/interesting-bitcoin-scripts-and-its-use-cases-part-5-lightning-channels-and-lightning-network/)*。
