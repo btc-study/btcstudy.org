@@ -161,6 +161,9 @@ minify:
   exclude: ['*.min.*']
   js:
     enable: true
+    sourceMap:
+      enable: false
+      sourceMappingURL: false
     ## 详细配置: https://github.com/terser/terser#minify-options
     options: {}
   css:
