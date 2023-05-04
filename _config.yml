@@ -161,6 +161,9 @@ minify:
   exclude: ['*.min.*']
   js:
     enable: true
+    sourceMap:
+      enable: false
+      sourceMappingURL: false
     ## 详细配置: https://github.com/terser/terser#minify-options
     options: {}
   css:
@@ -206,4 +209,4 @@ minify:
 processon: https://www.processon.com/embed/61cac8cc1e08534776ea0505
 
 # All static resources hash version
-version: 1676171852728
+version: 1682773100887
