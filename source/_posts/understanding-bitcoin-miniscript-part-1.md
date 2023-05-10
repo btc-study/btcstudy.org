@@ -150,5 +150,5 @@ OP_ENDIF
 
 在本系列的下一篇文章中，我们会仔细看看 Miniscript 是什么，它如何能显著地简化 Bitcoin Script、让实践中使用复杂的花费条件成为可能。敬请期待！
 
-（完）
+> 续篇见[此处](https://www.btcstudy.org/2023/03/22/understanding-bitcoin-miniscript-part-2/)。
 
