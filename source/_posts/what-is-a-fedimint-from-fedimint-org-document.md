@@ -15,7 +15,7 @@ tags:
 
 
 
-一个 “Fedimint 实例”（全称为 “Federated Mint”），是一份 [Chaumian eCash](https://fedimint.org/docs/CommonTerms/Blind Signatures) 的实现，带有一个由多位守护者（guardians）组成的、负责托管资金的联盟（而不是单个中心化的实体），并且，它原生支持比特币的闪电网络。
+一个 “Fedimint 实例”（全称为 “Federated Mint”），是一份 <a href="https://fedimint.org/docs/CommonTerms/Blind Signatures">Chaumian eCash</a> 的实现，带有一个由多位守护者（guardians）组成的、负责托管资金的联盟（而不是单个中心化的实体），并且，它原生支持比特币的闪电网络。
 
 Fedimint 的用户体验被设计成类似于托管式的闪电钱包（例如 Wallet of Satoshi），但与之相比，Fedimint 的用户面对托管者（守卫者）可以获得更强的隐私性，并且，它有一套原生的备份机制，可以让用户从联盟处找回资金。
 
