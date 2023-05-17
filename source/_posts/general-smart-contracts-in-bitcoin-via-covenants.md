@@ -140,7 +140,7 @@ Vitalik Buterin 推广了 [*功能逃逸速度*](https://vitalik.ca/general/2019
 
 最后，我们可以构建一个默克尔树（MT）。假设计算需要 *N* 步，则该默克尔树的叶子是各个计算步骤的值 *T = {tr<sub>0</sub>, tr<sub>1</sub>, …, tr<sub>N - 1</sub>}*，默克尔根为 *h<sub>T</sub>*。该默克尔树的高度是 ⌈log N⌉。可以看出，每个内部节点，都承诺了一部分相应于其所在子树的计算踪迹。
 
-假设内部节点的默克尔树承诺通过状态 *st<sub>start</sub>* 和 *st<sub>end</sub>* 得到了进一步成名。*st<sub>start</sub>* 和 *st<sub>end</sub>* 分别指子树最左边叶子里的操作执行之前的状态，以及子树最右边叶子里的操作执行之后的状态。
+假设内部节点的默克尔树承诺通过状态 *st<sub>start</sub>* 和 *st<sub>end</sub>* 得到了进一步声明。*st<sub>start</sub>* 和 *st<sub>end</sub>* 分别指子树最左边叶子里的操作执行之前的状态，以及子树最右边叶子里的操作执行之后的状态。
 
 **二分协议**
 
