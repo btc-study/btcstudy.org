@@ -26,16 +26,19 @@ tags:
 
 在本文中，我会探究基于 Taproot 的闪电通道（下文简称 “Taproot 通道”）的注资交易和承诺交易的结构。如果你错过了我的[上一篇文章](https://ellemouton.com/posts/taproot-prelims)（关于 Taproot 和 MuSgi2）（[中文译本](https://www.btcstudy.org/2023/04/27/taproot-and-musig2-recap-by-elle-mouton/)），可能先读一下它会比较好，可以帮你先了解一下这篇文章需要用到的各种模块。如果你还需要回顾承诺交易的一般结构，请看[这篇文章](https://ellemouton.com/posts/htlc-deep-dive)，我在里面解释了承诺交易的各个输出为什么要有那样的脚本装置。
 
-提醒一下，Taproot 通道依然在设计阶段，所以，在 Roasbeef 的[这份提议](https://github.com/lightning/bolts/pull/995)被合并之前，这篇文章还会继续更改，以跟上人们对提议作出的变更。甚至目前的提议中也还有几个悬而未决的问题，我会尝试在这里说明。
+提醒一下，Taproot 通道依然在设计阶段，所以，在 Roasbeef 的[这份提议](https://github.com/lightning/bolts/pull/995)被合并之前，这篇文章还会继续更改，以跟上人们对提议作出的变更。当前它匹配到了提议的 [e95e7a](https://github.com/lightning/bolts/pull/995/commits/e95e7acbda14e07fa53c1389f952481b822db795) 版本。
 
 如果你以前读过我的文章，你应该已经注意到了，我喜欢画图。这篇文章是变本加厉了。为了帮助理解，这里的图例说明了每一种颜色一般来说代表了什么
 
 ![img](../images/taproot-channel-translations-how-it-works/colour-legend.png)
 
-<p style="text-align:center">- 译者注：绿色代表签名者公钥及其签名；蓝色代表通道对手的公钥和签名；紫色代表两者的局和公钥；粉色代表调整项；黄色代表输出公钥和输出公钥的签名；橙色是 TapTree 上的哈希值；灰色和白色没有特殊的含义 -</p>
-
+<p style="text-align:center">- 译者注：绿色代表己方的公钥及其签名；蓝色代表通道对手的公钥和签名；紫色代表两者的聚合公钥；粉色代表调整项；黄色代表输出公钥和输出公钥的签名；橙色是 TapTree 上的哈希值；灰色和白色没有特殊的含义 -</p>
 
 准备好了吗？跟我来！
+
+## NUMS 点简介
+
+NUMS 是 “nothing-up-my-sleeves（此中无后门）” 的缩写，是一个没有人知道其私钥的公钥，由一个绑定到使用它的语境的字符串派生而来。用在 taproot 通道中的 NUMS 点由字符串 “Lightning Simple Taproot” 使用这个 [NUMS 生成工具](https://github.com/lightninglabs/lightning-node-connect/tree/master/mailbox/numsgen)派生而来。因为没有人知道这个点的私钥，所以它可以用作一个 Taproot 输出的内部公钥，从而取消掉这个输出的密钥花费路径，因为没有人能生成出它的有效签名。
 
 ## 注资交易的输出
 
@@ -63,37 +66,35 @@ tags:
 
 ### `to_local` 输出
 
-`to_local` 输出负责给自己支付通道余额。这个输出必须能够被对手随时撤销、仅能在 `to_self-delay` 个区块后自己才能从中花费。这个撤销密钥也用作这个 Taproot 输出的内部公钥；而带有时间锁的、给自己支付的脚本则放在 TapTree 。
+`to_local` 输出负责给自己支付通道余额。这个输出必须能够被对手随时撤销、仅能在 `to_self-delay` 个区块后自己才能从中花费。如你所见，这些路径都被做成 Taproot 叶子，加到了 Taproot 树上；并且，这个输出还使用了一个公开的 NUMS 点作为内部公钥，这就取消了密钥花费路径。你可能会问，为什么不拿撤销密钥作为内部公钥。这是个好问题，因为事实上，前 Taproot  的通道就是这样做的。但是，你可以从图中看出，撤销脚本不仅包含了撤销公钥，还（奇怪地）包含了  `P_local_delay` 密钥。而且，这个密钥后面并没有跟着  `OP_CHECKSIG`，反而只跟着一个  `OP_DROP`，这就意味着，不需要为这个公钥提供签名。所需的只是这个公钥在脚本中公开。 在撤销路径中公开 `P_local_delay` ，是不能使用撤销公钥作为内部公钥的唯一理由。这样设计的理由会在下文讲解 “己方锚点输出” 的章节得到更清楚的描述。我保证，是一个非常棒的理由 ; )
 
 ![img](../images/taproot-channel-translations-how-it-works/to-local-output.png)
 
-**密钥路径花费**
-
-这个输出的内部公钥就是撤销密钥，因此 *只能* 在跟这笔承诺交易相关的状态被撤销时才能被对手花费（关于撤销操作，更多细节见 [这里](https://ellemouton.com/posts/updating-state) 和 [这里](https://ellemouton.com/posts/revocation)）。因此，如果你自己尝试欺骗对手、发布旧的状态，对手就可以通过密钥路径（同时也是最高效的花费路径）拿走这个输出中的资金。
-
-![img](../images/taproot-channel-translations-how-it-works/to-local-key-path.png)
-
-（译者注：这个撤销密钥是通过双方提供的公钥构造出来的，所以在己方提供秘密值（私钥）之后，对手方就能构造出整个密钥背后的私钥；也只有对手方能构造出来，己方是无法构造出来的，因为不知道对手的秘密值。）
-
 **脚本路径花费**
 
-如果这笔承诺交易最终被广播道了链上，并且是诚实的、强制关闭通道的行为，那么对手就不能通过撤销密钥来花费。在这种条件下，这个输出是可以被己方通过脚本路径来花费的（在得到 `to_self_delay` 个区块的确认之后）。下图展示了花费这个路径所需的见证脚本：
+因为内部公钥是一个 NUMS 点，所以只能通过密钥路径来花费这个输出。
 
-![img](../images/taproot-channel-translations-how-it-works/to-local-script-spend.png)
+- 撤销路径
 
-这包含了一个对 `local_delayed` 脚本有效的见证数据，也就是来自己方的公钥 `P_local_delayed` 的一个有效签名。这个脚本自身也必须被公开，而且最后，控制块也必须展现出来。在这个案例中，控制块只包含 `to_local` 输出的输出公钥的奇偶位校验以及内部公钥。注意，这里的控制块不需要包含证据，因为这棵 Taproot 脚本树上只有一个脚本，意思是脚本数的根植可以从 `local_delayed` 脚本直接计算出来。
+如果这笔承诺交易最终被广播到了链上，而且它所代表的状态已经被撤销了，那么对方将可以通过撤销路径取走所有的资金。所需的见证脚本如下：
+
+![img](../images/taproot-channel-translations-how-it-works/to-local-revocation-script.png)
+
+- `To-local delay` 路径
+
+如果这笔承诺交易最终被广播到了链上，并且是诚实的、强制关闭通道的行为，那么对手就不能通过撤销路径来花费。在这种条件下，这个输出是可以被己方通过 `to_local delay` 脚本路径来花费的（在得到 `to_self_delay` 个区块的确认之后）。下图展示了花费这个路径所需的见证脚本：
+
+![to-local-delay-script-path](../images/taproot-channel-translations-how-it-works/to-local-delay-script-path.png)
+
+这包含了一个对 `local_delay` 脚本有效的见证数据，也就是来自己方的公钥 `P_local_delayed` 的一个有效签名。这个脚本自身也必须被公开，而且最后，控制块也必须展现出来。在这个案例中，控制块包含 `to_local` 输出的输出公钥的奇偶位校验以及内部公钥（NUMS 点），还有  `to-local delay` 脚本被包含在这棵树上的证据。
 
 ### `to_remote` 输出
 
-这个输出给远程方支付通道的余额。因为在所有锚点通道中，任何非锚点的输出都需要至少长达 1 个区块的 CSV（相对时间锁），这样才能保证不打破 [CPFP carve out](https://bitcoinops.org/en/topics/cpfp-carve-out/) 规则。因此，远程方也只能在这个输出获得 1 个区块的确认之后才能花费这笔资金。这种要求只能通过一个脚本来实现，所以这个输出也要用到 Taproot 脚本树。
+这个输出给对手方支付通道的余额。因为在所有锚点通道中，任何非锚点的输出都需要至少长达 1 个区块的 CSV（相对时间锁），这样才能保证不打破 [CPFP carve out](https://bitcoinops.org/en/topics/cpfp-carve-out/) 规则。因此，对手方也只能在这个输出获得 1 个区块的确认之后才能花费这笔资金。这种要求只能通过一个脚本来实现，所以这个输出也要用到 Taproot 脚本树。
 
 ![img](../images/taproot-channel-translations-how-it-works/to-remote-output.png)
 
-你可能会认为这张图有一个错误：我在前面说过，我们需要在这里执行一个 CSV，但这个脚本中没有 `OP_1` 来表示时间锁的长度。事实上，这不是一个错误，而是一个很酷的脚本编程技巧！如果 `<remotepubkey> OP_CHECKSIG` 检查失败了，那么这个脚本立即就会退出。但是，如果它通过了，它会给堆栈推入一个 `OP_1`，让我们的 CSV 得到时间锁的长度。不过，若是为了清晰好读，这样的技巧可以用更明显的 `OP_1 OP_CHECKSEQUENCEVERIFY` 来替代。
-
-此刻，你可能还关心这个内部公钥。我们只需要为这个输出设置一个花费路径，但不幸的是，这个路径我们只能放到脚本树中。而且，我们还必须设置一个内部公钥，即使我们并不希望任何人能够有用这个密钥路径来花费它。从图中你可以看出，当前的提议使用跟注资交易输出相同的聚合公钥作为 `to_remote` 输出的内部公钥。这里的想法是，如果拿 `P_agg` 作为内部公钥，我们就知道它需要双方的合作才能使用密钥路径，但他们是完全没有理由要这样做的。实际上就是取消了密钥路径。
-
-一些[审核者](https://github.com/lightningnetwork/lnd/pull/7333#discussion_r1082384984)注意到，使用 `P_agg` 作为内部公钥让对手方的资金几乎不可能复原：如果他们弄丢了所有的通道数据、所有的通道备份、只剩下自己的种子词；在传统的通道中，弄丢了通道数据的对手方依然可以扫描区块链、寻找属于他们的 `to_remote` 输出，因为他们知道推导出这些公钥的推导路径；如果在 Taproot 通道中使用 `P_agg` 作为内部公钥，因为对手方自己不可能推导出它，所以也就无法通过扫描区块链来找回自己的资金。之前，有人提议不使用 `P_agg`，而使用一个公开的 “NUMS（此中无后门）” 点（即没有人知晓其私钥的公钥），那么对手方就可以重新获得扫描属于自己的 `to_remote` 输出的能力。
+类似于  `to_local` 输出，这个输出也使用 NUMS 点作为内部公钥，以禁用密钥花费路径。 
 
 **脚本路径花费**
 
@@ -119,7 +120,7 @@ tags:
 
 ![img](../images/taproot-channel-translations-how-it-works/remote-anchor-script-path.png)
 
-注意到什么了吗？如果你是一个第三方，尝试从一些已经过时的锚点输出中得到一些免费的聪，你能复原出这个脚本吗？答案是：可以，但你要知道 `P_remote` 是什么才行！在继续往下读之前，我建议你花点时间来想想为什么你可能知道这个 `P_remote`。它不是在注资交易中表现出来e，也不是在承诺交易中表现出来的。浏览上文的图表，看看你在哪里能找到它。
+注意到什么了吗？如果你是一个第三方，尝试从一些已经过时的锚点输出中得到一些免费的聪，你能复原出这个脚本吗？答案是：可以，但你要知道 `P_remote` 是什么才行！在继续往下读之前，我建议你花点时间来想想为什么你可能知道这个 `P_remote`。它不是在注资交易中表现出来的，也不是在承诺交易中表现出来的。浏览上文的图表，看看你在哪里能找到它。
 
 准备好了吗？没错，只要 `to_remote` 输出被花费了，它就会出现在见证脚本中。这意味着，任何人都能在这个输出得到 16 个区块的确认且 `to_remote` 被花费之后，花费这个锚点输出。
 
@@ -137,13 +138,9 @@ tags:
 
 **脚本路径花费**
 
-就像对手方的锚点输出，想要通过脚本路径来花费它，需要你先揭晓 `P_local_delayed` 公钥。这个公钥会在你使用脚本路径来花费 `to_local` 输出时曝光。
+就像对手方的锚点输出，想要通过脚本路径来花费它，需要你先揭晓 `P_local_delayed` 公钥。这个公钥会在你使用脚本路径来花费 `to_local` 输出时曝光；*而且*，重要的是，通过撤销路径来花费  `to_local` 输出时也会将它曝光！这就是我们不能将撤销公钥作为  `to_local` 输出的内部公钥的全部理由，也是我们要让撤销路径的脚本也曝光 `P_local_delayed` 公钥的理由。从下面这个见证脚本中，我们可以看出为什么知晓 `P_local_delayed` 是人们通过脚本路径来花费这个锚点输出的必要条件。如果这个公钥没有被公开，这个锚点输出就有可能一直悬停在 UTXO 集中，因为第三方不知道如何花费它。
 
 ![img](../images/taproot-channel-translations-how-it-works/local-anchor-script-path.png)
-
-不过，`to_local` 和 `to_remote` 输出有一个非常重要的区别：`to_remote` 只能被脚本路径花费，因此 `P_remote` 一定会在它花费时被公开；而 `to_local` 输出有两种花费路径！理想情况下，它会被脚本路径花费，从而让 `P_local_delayed` 揭晓，这就没有问题；但在糟糕的情况下，`to_local` 会通过撤销密钥来花费，这时候 `P_local_delayed` 就不会公开。这时候，只有这条通道的两个参与者才知道花费这个 local 锚点所需的信息。
-
-人们正在提议的一种替代办法是改变 `to_local` 输出，使得 `P_local_delayed` 被强制公开，无论 `to_local` 怎么花费。这可以通过将密钥路径改成一个 NUMS 点、将撤销路径放进脚本树里面、在撤销脚本中嵌入 `P_local_delayed` 来实现。缺点在于，这会增加 `to_local` 输出的两条路径的花费成本。问题在于我们想在多大程度上解决这种非常罕见的情况。
 
 ### 付出 HTLC 的输出
 
@@ -165,7 +162,7 @@ tags:
 
 对方成功揭晓秘密值，可提供下列见证脚本来花费这个输出：
 
-![img](../images/taproot-channel-translations-how-it-works/offerend-htlc-success.png)
+![img](../images/taproot-channel-translations-how-it-works/offered-htlc-success.png)
 
 - 超时回收
 
