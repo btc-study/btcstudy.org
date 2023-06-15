@@ -6,7 +6,7 @@ cover: '../images/neutrino-privacy-preserving-light-wallet-protocol/rotocol.jpg'
 excerpt: '有了 Neutrino，钱包开发者将能够创建完全自我包含而且不需要信任某一个服务端的钱包'
 tags:
 - 开发
-- Neutrino
+- BIP158
 ---
 
 
