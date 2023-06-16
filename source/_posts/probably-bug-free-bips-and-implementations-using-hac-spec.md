@@ -10,12 +10,10 @@ tags:
 
 
 > *作者：Jonas Nick*
-> 
+>
 > *来源：<https://btctranscripts.com/tabconf/2022/2022-10-14-hac-spec/>*
-
-
-
-本文为 Jonas Nick 在 TABConf 2022 大会上的演讲，由 Bryan Bishop 转写为文字稿。
+>
+> *本文为 Jonas Nick 在 TABConf 2022 大会上的演讲，由 Bryan Bishop 转写为文字稿。*
 
 ## 引言
 
