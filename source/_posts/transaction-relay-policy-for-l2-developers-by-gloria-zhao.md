@@ -17,7 +17,7 @@ tags:
 >
 > *本文为 Gloria Zhao 在 Adopting Bitcoin 2021 大会上的演讲，由 Michael Folkson 转写为文字稿。*
 >
-> 演讲文档：[github.com/glozow/bitcoin-notes](https://github.com/glozow/bitcoin-notes/blob/master/Tx Relay Policy for L2 Devs - Adopting Bitcoin 2021.pdf)
+> 演讲文档：<a href="https://github.com/glozow/bitcoin-notes/blob/master/Tx Relay Policy for L2 Devs - Adopting Bitcoin 2021.pdf">github.com/glozow/bitcoin-notes</a>
 >
 > 演讲视频：https://www.youtube.com/watch?v=fbWSQvJjKFs
 
