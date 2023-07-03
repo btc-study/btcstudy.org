@@ -14,7 +14,11 @@ tags:
 >
 > *来源：<https://bitcoinops.org/zh/newsletters/2023/05/24/>*
 >
-> *本文为 Gloria Zhao 在 Optech Newsletter 上编写的 “交易池” 系列周刊的第二篇。该系列从点对点网络、交易转发和交易打包选择入手，介绍了比特币网络的运行。*
+> *译者：[Primitives Lane](https://github.com/PrimitivesLane)*
+>
+> *本文为 Gloria Zhao 在 Optech Newsletter 上编写的 “交易池” 系列周刊的第二篇。*
+>
+> *[前篇见此处](https://www.btcstudy.org/2023/06/25/waiting-for-confirmation-part-1-why-we-need-mempools/)*
 
 
 
