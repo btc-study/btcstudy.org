@@ -222,4 +222,4 @@ MAST 不仅继承了 P2SH 的良好特性，还进一步发扬光大，提高了
 
 11.<a id="note11"> </a>https://www.btcstudy.org/2021/09/07/what-is-a-bitcoin-merklized-abstract-syntax-tree-mast/ <a href="#jump-11">↩</a>
 
-> *续篇见[此处](https://www.btcstudy.org/2023/04/23/interesting-bitcoin-scripts-and-its-use-cases-part-4-hash-locks/)*。
+> *续篇见[此处](https://www.btcstudy.org/2023/04/23/interesting-bitcoin-scripts-and-its-use-cases-part-4-hash-locks/)。*
