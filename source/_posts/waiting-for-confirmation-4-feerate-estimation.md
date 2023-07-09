@@ -41,3 +41,5 @@ tags:
 费用估计是一个多方面且困难的问题。糟糕的费用估计可能会超付费用（也即浪费资金）、增加比特币在支付方面的摩擦，并导致 L2 用户因错过一个时间锁定的 UTXO 的备用花费路径而损失资金。良好的费用估计可以让用户清楚而准确地向矿工传达交易的紧急程度，而 [CPFP](https://bitcoinops.org/en/topics/cpfp/) 和 [RBF](https://bitcoinops.org/en/topics/replace-by-fee/) 允许用户在初始估计不足时更新出价。与良好设计的费用估计工具和[钱包](https://bitcoinops.org/zh/newsletters/2023/05/31/#等待确认3竞价区块空间)相结合的激励兼容的交易池策略，使用户能够参与高效的公共拍卖以获取区块空间。
 
 费用估算器通常不会返回低于 1sat/vB 的任何值，无论时间范围有多长，待确认的交易有多少。许多人认为 1sat/vB 是事实上的最低费率。这是因为在比特币网络中，网络上的大多数节点（包括矿工）[从不接受](https://bitcoinops.org/en/topics/default-minimum-transaction-relay-feerates/)低于该费率的任何交易，无论他们的交易池有多空。下周的文章将探讨这种节点策略以及利用费率在交易中继中的另一个动机：防止资源耗尽。
+
+> *[后篇见此处](https://www.btcstudy.org/2023/07/04/waiting-for-confirmation-4-feerate-estimation/)。*
