@@ -174,7 +174,7 @@ Blocktank LSP 为多种类型的商家和用户提供了解决方。
 
 这种工具是少见的开源工具之一，而且即可以通过网站小工具使用，也可以通过 API 使用，完全使用商家的不同需要。
 
-[**Cequals By Block**](https://cequals.xyz/ by Block)
+<strong><a href="https://cequals.xyz/">Cequals By Block</a></strong>
 
 通过提供流动性、服务和基础设施来简化闪电网络生态系统，让每个人都能从更快、更低成本的支付中获益。
 
