@@ -6,6 +6,7 @@ cover: ''
 excerpt: '朝向可验证性，见证数据加密方案的演化'
 tags:
 - Discreet-Log-Contract
+mathjax: true
 ---
 
 
@@ -77,7 +78,7 @@ Bob 虽然不知道 $s_{Azure}$ ，但可以创建出 Alice 可以验证的一�
 
 在标准的 Schnorr 签名中，Bob 会计算线性组合的系数，这需要将交易的内容跟 nonce 点相结合、哈希它们，最后用自己的私钥乘以这个哈希值，最后加上 $r_{Bob}$ 。他会分享这个结果，以及 $R_{Bob}$ ，任何人都可以验证这个结果就是 $R_{Bob} + hash(B||R_{Bob}||T_x) * B$ 背后的私钥。即，签名是一个点和一个标量所组成的一对数据：
 
-$$(R_{Bob} + hash(B||R_{Bob}||T_x) * b)$$
+$$(R_{Bob}, r_{Bob} + hash(B||R_{Bob}||T_x) * b)$$
 
 但是，Bob 不希望自己的签名直接就是有效的。在上面这个步骤之前，Bob 先给自己的 nonce 公钥加上 $S_{Azure}$ ，然后再执行相同的计算（不会修改 nonce 秘密值哦）。
 
