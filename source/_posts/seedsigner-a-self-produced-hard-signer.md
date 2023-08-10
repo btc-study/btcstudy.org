@@ -108,8 +108,7 @@ Primary key fingerprint: 4673 9B74 B56A D88F 14B0  882E C7EF 7090 0726 0119
 
 ```
 Algorithm       Hash                                                                   Path
-<p style="text-align:center">- --------       ----                                                                   --- -</p>
-
+------- -------------- ------
 SHA256          750F406C133D17994EB58544AAD82B20F1478C8663AF303E45B2D9C49C4E9825       *********
 ```
 
