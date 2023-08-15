@@ -240,7 +240,7 @@ DLC 的可验证见证数据加密方案的一个最大胆的提议是 Lloyd Fou
 
   $$= pairing(S_{Olivia}, U')$$
 
-![img](https://blog.lnmarkets.com/content/images/2023/07/Llyod_DLC-3.png)
+![img](../images/deep-dive-into-oracle-based-conditional-payments-lnmarkets/Llyod_DLC-3.png)
 
 -断言机使用 BLS 签名的 ObC 支付的建立和结算。注意，在设置的时候，参与方只需要断言机的公钥。抽取出的对数 (r, t) 取决于参与协议的双方沟通出来的安全性-
 
