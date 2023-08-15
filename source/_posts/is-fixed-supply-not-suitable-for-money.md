@@ -8,7 +8,7 @@ categories:
 - 货币理念
 tags:
 - 货币
-mathjax:true
+mathjax: true
 ---
 
 
