@@ -114,7 +114,7 @@ Pool 是一种新的间歇性的（discrete-interval）、非托管的、密封�
 
 ### 对账户和通道规模的限制
 
-在 alpha 版本中，账户的规模限制在 10 BTC。当我们对它的信心变得更重组之后，这个限制会提高，最终移除，就像 lnd 的 [Wumbo 通道限制](https://lightning.engineering/posts/2020-08-20-lnd-v0.11/)一样。
+在 alpha 版本中，账户的规模限制在 10 BTC。当我们对它的信心变得更充足之后，这个限制会提高，最终移除，就像 lnd 的 [Wumbo 通道限制](https://lightning.engineering/posts/2020-08-20-lnd-v0.11/)一样。
 
 ### 统一的持续期
 
