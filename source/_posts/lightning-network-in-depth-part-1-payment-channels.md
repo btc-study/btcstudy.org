@@ -178,4 +178,4 @@ Output 1 <5 bitcoin>:
 - [Lightning network whitepaper](https://lightning.network/lightning-network-paper.pdf)
 - [Lightning network in depth, part 2: HTLC and payment routing](https://medium.com/softblocks/lightning-network-in-depth-part-2-htlc-and-payment-routing-db46aea445a8)
 
-（完）
+> *续篇见[此处](https://www.btcstudy.org/2021/09/15/lightning-network-in-depth-part-2-htlc-and-payment-routing/)。*

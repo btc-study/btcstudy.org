@@ -11,8 +11,10 @@ tags:
 ---
 
 > *作者：Magomed Aliev*
-> 
+>
 > *来源：<https://medium.com/softblocks/lightning-network-in-depth-part-2-htlc-and-payment-routing-db46aea445a8>*
+>
+> *前篇见[此处](hhttps://www.btcstudy.org/2021/09/15/lightning-network-in-depth-part-1-payment-channels/)。*
 
 
 

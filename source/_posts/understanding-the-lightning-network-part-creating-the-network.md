@@ -11,8 +11,10 @@ tags:
 ---
 
 > *作者：Aaron Van Wirdum*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-creating-the-network-1465326903>*
+>
+> *前篇见[此处](https://www.btcstudy.org/2020/08/23/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/)。*
 
   
 
@@ -71,6 +73,5 @@ tags:
 
 最后还有一个问题需要解决：要保证闪电网络的可用性，所有这些必须在链下完成。具体是如何实现的将在本系列第三篇文章中揭晓。
 
-
-（完）
+> *续篇见[此处](https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/)。*
 

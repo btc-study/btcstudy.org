@@ -136,6 +136,4 @@ Bob 签名了这笔事务，然后发给了 Alice。
 
 *感谢 Rusty Russell 和 Joseph Poon 的专门反馈。*
 
-
-（完）
-
+>*续篇见[此处](https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-creating-the-network/)。*

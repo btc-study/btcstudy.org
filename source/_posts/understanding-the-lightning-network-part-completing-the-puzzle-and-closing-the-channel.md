@@ -12,8 +12,10 @@ tags:
 ---
 
 > *作者：Aaron Van Wirdum*
-> 
+>
 > *来源：<https://bitcoinmagazine.com/technical/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel-1466178980>*
+>
+> *前篇见[此处](https://www.btcstudy.org/2020/08/24/understanding-the-lightning-network-part-creating-the-network/)。*
 
 
 ![1](../images/understanding-the-lightning-network-part-completing-the-puzzle-and-closing-the-channel/9dce5612c6aa4440a3905ded0d6b89c5.png)
