@@ -8,7 +8,7 @@ categories:
 - 比特币主网
 tags:
 - CTV
-- Eltoo
+- eltoo
 - covenant
 ---
 

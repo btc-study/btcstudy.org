@@ -9,7 +9,7 @@ categories:
 tags:
 - 侧链
 - 合并挖矿
-- Eltoo
+- eltoo
 - covenant
 ---
 

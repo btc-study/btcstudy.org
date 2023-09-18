@@ -1,5 +1,5 @@
 ---
-title: 'Eltoo 详解'
+title: 'eltoo 详解'
 author: 'Brandon Arvanaghi'
 date: '2022/01/27 17:51:34'
 cover: '../images/breaking-down-the-bitcoin-lightning-network-eltoo/Nsl4OZQ.png'
@@ -8,7 +8,7 @@ categories:
 - 闪电网络
 tags:
 - 闪电网络
-- Eltoo
+- eltoo
 ---
 
 

@@ -6,6 +6,7 @@ cover: ''
 excerpt: '要实现 ROAST，你只需要聪明地调用 FROST 协议'
 tags:
 - 密码学
+mathjax: true
 ---
 
 
