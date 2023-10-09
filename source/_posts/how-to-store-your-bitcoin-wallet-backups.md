@@ -89,7 +89,7 @@ SatoshiLabs 还提出了一个新的标准，叫做 Shamir 备份，可以提高
 
 助记词虽然很常用，但保管起来并不容易。Shamir 备份可以让多地保管一个备份变得更容易，并降低你因为失窃或损坏而丢失资金的风险。
 
-Sharmir 备份也叫 “[SLIP39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md)”，是 Trezor Model T 提供的一个特性，你可以用它把一套助记词分成最多 16 个碎片，每个碎片都是一个 20 个单词的词组。你可以同时配置一个阈值，只要手中碎片的数量超过这个阈值，就可以复原私钥。有了这两个选线，你就可以定制自己的方案来适应自己的风险模型。
+Sharmir 备份也叫 “[SLIP39](https://github.com/satoshilabs/slips/blob/master/slip-0039.md)”，是 Trezor Model T 提供的一个特性，你可以用它把一套助记词分成最多 16 个碎片，每个碎片都是一个 20 个单词的词组。你可以同时配置一个阈值，只要手中碎片的数量超过这个阈值，就可以复原私钥。有了这两个选项，你就可以定制自己的方案来适应自己的风险模型。
 
 视频讲解：[什么是 Shamir 备份？](https://youtu.be/cRh-NCvHkzM)
 
@@ -101,7 +101,7 @@ Shrmir 备份有两种常用的形式，一种是 2-of-3，一种是 3-of-5，�
 
 ### Shamir 备份的局限性
 
-Shamir 备份比 BIP39 助记词强大很大，但接受度却不如 BIP39 那么高。这意味着，如果你使用了 Shamir 备份，你将需要另一台 Trezor Model T 或其它支持 Shamir 备份的第三方钱包以备不时之需。
+Shamir 备份比 BIP39 助记词强大很多，但接受度却不如 BIP39 那么高。这意味着，如果你使用了 Shamir 备份，你将需要另一台 Trezor Model T 或其它支持 Shamir 备份的第三方钱包以备不时之需。
 
 Shamir 备份是开源的，也就是说这个标准已经交给了社区，任何人都能使用它，我们相信，对 SLIP39 的支持将逐渐出现。假设 Trezor 停止运营了，也有[开源的工具](https://github.com/trezor/python-shamir-mnemonic)可以恢复钱包。
 
