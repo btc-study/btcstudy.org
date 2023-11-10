@@ -31,11 +31,11 @@ Liquid 上的限制条款可以追溯到第一条 Elements 范式的侧链：[Al
 
 当前，比特币社区正在讨论一大堆可能启用的限制条款提议，包括 SIGHASH_ANYPREVOUT (APO)、OP_TXHASH、CSFS、OP_CAT、OP_TLUV、MATT 操作码 OP_CHECKCONTRACTVERIFY (CCV)、OP_VAULT，还有 OP_CHECKTEMPLATEVERIFY (CTV) 。此外，一种新一代的编程语言 [Simplicity](https://blog.blockstream.com/simplicity-language/)，也可以在底层实现类似于许多限制条款提议的功能，也是比特币的可能道路之一。
 
-关于 VAULT 操作码呀许多讨论，这个操作码是专门创造出来解决比特币用户的便捷保管需求的。这个操作码将允许资金被锁在一个地址中、只允许花费到两个指定的地址：一个是热钱包地址，需要在一个时间锁之后才能进一步移动；另一个是一个冷钱包地址，随时可以直接动用。人们还提出其它的变种方案，但它们都基于先采用 CTV。
+关于 VAULT 操作码有许多讨论，这个操作码是专门创造出来解决比特币用户的便捷保管需求的。这个操作码将允许资金被锁在一个地址中、只允许花费到两个指定的地址：一个是热钱包地址，需要在一个时间锁之后才能进一步移动；另一个是一个冷钱包地址，随时可以直接动用。人们还提出其它的变种方案，但它们都基于先采用 CTV。
 
 CTV 是一种操作码，从堆栈中读取一个哈希值，然后跟花费交易的数据一个确定的子集的哈希值相比对。它的灵活性有望启用许多应用，包括但不限于：拥塞控制（congestion control）、保险柜（vault），以及基本的支付池（payment pools）。
 
-出了操作码，也有人提议用 SigHash 来启用限制条款。最流行的两种提议当属 APO 和 SIGHASH_GROUP。APO 是 SIGHASH_NOINPUT 操作码的一种演化，被广泛认为是实现 [eltoo](https://blockstream.com/eltoo.pdf) 的一个前置条件。eltoo 可以带来的许多提升之一是消除闪电通道中的惩罚机制，这种机制会强迫一方在另一方广播过时的通道状态时使用一些历史数据拿走所有的资金。这将带来一个更加用户友好、效率更高的闪电网络。
+除了操作码，也有人提议用 SigHash 来启用限制条款。最流行的两种提议当属 APO 和 SIGHASH_GROUP。APO 是 SIGHASH_NOINPUT 操作码的一种演化，被广泛认为是实现 [eltoo](https://blockstream.com/eltoo.pdf) 的一个前置条件。eltoo 可以带来的许多提升之一是消除闪电通道中的惩罚机制，这种机制会强迫一方在另一方广播过时的通道状态时使用一些历史数据拿走所有的资金。这将带来一个更加用户友好、效率更高的闪电网络。
 
 ## 使用 Liquid 操作码实现类型功能
 

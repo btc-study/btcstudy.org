@@ -6,16 +6,17 @@ cover: '../images/improving-privacy-using-pay-to-endpoint/20x1080.jpg'
 excerpt: 'P2EP 的基本思路是让支付者和接收者都为交易提供输入'
 tags:
 - 隐私性
+- PayJoin
 ---
 
 
 > *作者：Matthew Haywood*
-> 
+>
 > *来源：<https://blog.blokstream.com/en-improving-privacy-using-pay-to-endpoint/>*
+>
+> *原文出版于 2018 年 8 月 8 日。*
 
 
-
-*原文出版于 2018 年 8 月 8 日。*
 
 ![Improving Privacy Using Pay-to-EndPoint (P2EP)](../images/improving-privacy-using-pay-to-endpoint/20x1080.jpg)
 
