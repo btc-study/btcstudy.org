@@ -6,6 +6,7 @@ cover: ''
 excerpt: '我们有可能不需要图灵完备性就能验证任意的代码执行'
 tags:
 - 开发
+- Simplicity
 ---
 
 
