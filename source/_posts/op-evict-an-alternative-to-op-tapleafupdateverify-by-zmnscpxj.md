@@ -197,6 +197,20 @@ K-of-N 应该仅用在所有 N 个公钥都是你的木偶，而你想要保住�
 
 因为 `OP_EVICT` 总是至少要验证两个签名，所以使用减半聚合算法可以减少至少 32 个重量单位，而且每多一个被逐出的输出，就多一个可以加入到总和中的 `s`。当然，**这一切都依赖于减半聚合真的安全**。
 
+> Jonas Nick 在[回帖](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2022-February/019935.html)中指出：
+>
+> 关于减半聚合的安全性，Chalkias 等人已经在去年给出了一份有说服力的安全性证明：
+>
+> https://eprint.iacr.org/2021/350
+>
+> 此外，减半聚合不可以使用本帖子中的方案，因为这是不安全的。这不影响 Zmn 的结论，而且在最初的减半聚合帖子中就已经指出了：
+>
+> https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014306.html
+>
+> 需要每一个 `s` 值都各自乘以一个不同的、不可预测的值，举例：
+>
+> https://github.com/ElementsProject/cross-input-aggregation/blob/master/slides/2021-Q2-halfagg-impl.org#schnorr-signature-half-aggregation-1
+
 ### 与其他操作码的关系
 
 `OP_CTV` 的功能与本操作码不同，而且无法用作本操作码的直接替代。具体来说，虽然 `OP_CTV` *可以* 承诺一组得到承诺的输出，但如果需要发布某一个预先承诺的输出，剩余的资金会分散到一组 UTXO 中。因此，“复苏” 一个 CoinPool（或者其链下变体）需要花费多个 UTXO，而花费多个 UTXO 是危险的，除非进行专门的设计。（尤其是，如果 UTXO 有不同的签名者集合，一群签名者可以一开始合作复苏一个 CoinPool，然后再另一笔交易中花费自己的 UTXO；一旦这另外的交易得到确认，复苏交易就会作废。）
