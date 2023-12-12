@@ -87,7 +87,7 @@ $$(R_{Bob}, r_{Bob} + hash(B||R_{Bob}||T_x) * b)$$
 <p style="text-align:center">- Bob 在发布 nonce 值之前修改了它，使之成了一个适配器签名 -</p>
 
 
-这里的虚拟验证者（以哈希函数表示），将理解 Bob 会产生一个使用 nonce 值 $R'_{Bob}$ 的签名，并相对应地挑战他。TA 预期 Bob 会揭示一个使用调整后的 nonce 值计算出来的公钥的私钥：
+这里的虚拟验证者（以哈希函数表示），将理解 Bob 会产生一个使用 nonce 值 $R’_{Bob}$ 的签名，并相对应地挑战他。TA 预期 Bob 会揭示一个使用调整后的 nonce 值计算出来的公钥的私钥：
 
 ![img](../images/deep-dive-into-oracle-based-conditional-payments-lnmarkets/challenge_adapt.png)
 
@@ -98,19 +98,19 @@ $$(R_{Bob}, r_{Bob} + hash(B||R_{Bob}||T_x) * b)$$
 
 $$R’_{Bob} = R_{Bob} + S_{Azure}$$
 
-$$s_{Bob} = r_{Bob} + hash(B||R'_{Bob}||T_x) * b)$$
+$$s_{Bob} = r_{Bob} + hash(B||R’_{Bob}||T_x) * b)$$
 
-这是个无效的签名，因为 nonce 秘密值 $r_{Bob}$ 跟哈希函数中的 nonce 公钥 $R'_{Bob} = R_{Bob} + S_{Azure}$ 并不匹配。但是，Alice 可以验证，这种不匹配，正是由于 $S_{Azure}$ 而导致的。实际上，如果我们尝试验证这个签名，我们可以这样计算：
+这是个无效的签名，因为 nonce 秘密值 $r_{Bob}$ 跟哈希函数中的 nonce 公钥 $R’_{Bob} = R_{Bob} + S_{Azure}$ 并不匹配。但是，Alice 可以验证，这种不匹配，正是由于 $S_{Azure}$ 而导致的。实际上，如果我们尝试验证这个签名，我们可以这样计算：
 
 $$s_{Bob}.G$$
 
-$$= r_{Bob}.G + hash(B||R'_{Bob}||T_x) * b.G$$
+$$= r_{Bob}.G + hash(B||R’_{Bob}||T_x) * b.G$$
 
-$$= R_{Bob} + hash(B||R'_{Bob}||T_x) * B)$$
+$$= R_{Bob} + hash(B||R’_{Bob}||T_x) * B)$$
 
-$$= R’_{Bob} + hash(B||R'_{Bob}||T_x) * B) - S_{Azure}$$
+$$= R’_{Bob} + hash(B||R’_{Bob}||T_x) * B) - S_{Azure}$$
 
-Alice 可以验证，添加 $S_{Azure}$ 正是让 nonce 值改变、让签名无效的调整项。对 Alice 来说，这就构成了一个证据：只要她知道私钥 $s_{Azure}$ ，就可以将这个值添加到 Bob 的适配器签名的标量元素  $s'_{Bob-CET_{Azure}}$ 中，使之成为一个有效的签名。有了这个有效的签名，Alice 就可以用来执行对应的 CET（在这里是表示 Azure  胜出的那一笔 CET），从而获得自己的收获。这意味着，只要 Olivia 揭示了 $S_{Azure}$ 背后的私钥， Alice 就可以广播一笔有效的交易、执行跟 Bob 的合约并申领资金。
+Alice 可以验证，添加 $S_{Azure}$ 正是让 nonce 值改变、让签名无效的调整项。对 Alice 来说，这就构成了一个证据：只要她知道私钥 $s_{Azure}$ ，就可以将这个值添加到 Bob 的适配器签名的标量元素  $s’_{Bob-CET_{Azure}}$ 中，使之成为一个有效的签名。有了这个有效的签名，Alice 就可以用来执行对应的 CET（在这里是表示 Azure  胜出的那一笔 CET），从而获得自己的收获。这意味着，只要 Olivia 揭示了 $S_{Azure}$ 背后的私钥， Alice 就可以广播一笔有效的交易、执行跟 Bob 的合约并申领资金。
 
 ![img](../images/deep-dive-into-oracle-based-conditional-payments-lnmarkets/verif_adapt.png)
 
@@ -230,15 +230,15 @@ DLC 的可验证见证数据加密方案的一个最大胆的提议是 Lloyd Fou
 
 - 至此，被交换的公开数据的哈希函数，可以用在任何点上，而验证者必须选择一个随机的数值来代替自己。就像我们在 Schnorr 签名的挑战阶段使用哈希函数来代替 Alice，我们也可以在决定 Bob 要揭示什么数值的时候使用一个哈希值来替代她，从而省去一轮交互。
 
-- 下面的特性表示，用来对称性 加密/解密 Schnorr 签名的调整项的密钥，只需要从一个 nonce 秘密值 $r'$ 或者使用 Olivia 对事件 “Azure” 的 BLS 签名就可以计算出来，然后就可以让 Alice 领取自己的收获：
+- 下面的特性表示，用来对称性 加密/解密 Schnorr 签名的调整项的密钥，只需要从一个 nonce 秘密值 $r’$ 或者使用 Olivia 对事件 “Azure” 的 BLS 签名就可以计算出来，然后就可以让 Alice 领取自己的收获：
 
-  $$r' * pairing(Hash1("Azure"),O)$$
+  $$r’ * pairing(Hash1("Azure"),O)$$
 
-  $$= o * pairing(Hash1("Azure"),r'.G)$$
+  $$= o * pairing(Hash1("Azure"),r’.G)$$
 
-  $$= pairing(o * Hash1("Azure"),U')$$
+  $$= pairing(o * Hash1("Azure"),U’)$$
 
-  $$= pairing(S_{Olivia}, U')$$
+  $$= pairing(S_{Olivia}, U’)$$
 
 ![img](../images/deep-dive-into-oracle-based-conditional-payments-lnmarkets/Llyod_DLC-3.png)
 
