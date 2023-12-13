@@ -1,5 +1,5 @@
 ---
-title: '运行 v07 及更早版本的 Bitcoin Core'
+title: '运行 v0.7 及更早版本的 Bitcoin Core'
 author: 'Jameson Lopp'
 date: '2023/12/12 11:35:12'
 cover: '../images/running-bitcoin-core-v0-7-and-earlier/running-bitcoin.jpg'
@@ -43,9 +43,9 @@ height=124276  work=6613870563198902508
 
 ![img](../images/running-bitcoin-core-v0-7-and-earlier/strange-der-signature.png)
 
-你可以通过下面这篇文章来了解比特币交易签名的历史；要指出的是，如果你尝试使用更新版本的 OpenSSL（1.0.0p / 1.0.1k）来沿着早期链上出现的签名，你会遇到错误，因为 [DER 验证](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-January/007097.html?ref=blog.lopp.net)更加严格而且会拒绝特定类型的编码。
+你可以通过下面这篇文章来了解比特币交易签名的历史；要指出的是，如果你尝试使用更新版本的 OpenSSL（1.0.0p / 1.0.1k）来验证早期链上出现的签名，你会遇到错误，因为 [DER 验证](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2015-January/007097.html?ref=blog.lopp.net)更加严格而且会拒绝特定类型的编码。
 
-[比特币中的签名体积的变化](https://b10c.me/blog/006-evolution-of-the-bitcoin-signature-length/?ref=blog.lopp.net)
+[比特币中的签名体积的变化](https://b10c.me/blog/006-evolution-of-the-bitcoin-signature-length/?ref=blog.lopp.net)（[中文译本](https://www.btcstudy.org/2023/12/12/evolution-of-the-bitcoin-signature-length/)）
 
 解决方法是：要么使用一个更旧版本的 OpenSSL 来构建 Bitcoin Core，要么在开始构建之间[手动应用这个代码补丁](https://github.com/bitcoin/bitcoin/commit/488ed32f2ada1d1dd108fc245d025c4d5f252783?ref=blog.lopp.net)。一开始我有些困惑，因为 [gitian builder](https://github.com/devrandom/gitian-builder?ref=blog.lopp.net) 使用 Ubuntu 10.04 虚拟机作为构建环境，我以为应该是搭配了较老的（兼容）版本的 OpenSSL 的 …… 但是，Andrew Chow 指出，[他们在 2015 年向后移植（backport）了这个 OpenSSL 补丁](https://lists.ubuntu.com/archives/lucid-changes/2015-January/014490.html?ref=blog.lopp.net)。
 
