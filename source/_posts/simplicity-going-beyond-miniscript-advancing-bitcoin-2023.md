@@ -11,8 +11,10 @@ tags:
 
 
 > *作者：Christian Lewe*
-> 
-> *来源：<https://btctranscripts.com/advancing-bitcoin/2022/simplicity-going-beyond-miniscript-by-christian-lewe-at-advancing-bitcoin-conference-in-london-2023/>*
+>
+> *来源：<https://btctranscripts.com/advancing-bitcoin/2023/simplicity-going-beyond-miniscript/>*
+>
+> 本文为 Christian Lewe 在 Advancing Bitcoin 2023 大会上的演讲，由参与 BTC transcript Review 项目的 aphilg 将录音转写成文字稿。
 
 
 
