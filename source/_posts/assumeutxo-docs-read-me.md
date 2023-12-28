@@ -18,7 +18,7 @@ tags:
 
 > [Bitcoin Core #27596](https://github.com/bitcoin/bitcoin/issues/27596) 完成了 [assumeutxo](https://bitcoinops.org/en/topics/assumeutxo/) 项目的第一阶段，包括了同时使用一个假定有效（assumedvalid）的链状态快照和在后台进行完整验证同步所必需的所有余下变更。它通过 RPC（`loadtxoutset`）使 UTXO 快照可加载，并在链参数（chainparams）中添加了 `assumeutxo` 参数。
 >
-> 尽管该功能集在[激活](https://github.com/bitcoin/bitcoin/issues/28553)前在主链上都不可用，但这个合并标志着到达了多年努力的顶点。该项目[在 2018 年提出](https://btctranscripts.com/bitcoin-core-dev-tech/2018-03/2018-03-07-priorities/#:~:text="Assume UTXO")并[在 2019 年正式确定](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-April/016825.html)，将显著改善首次接入网络的新的全节点的用户体验。后续合并包括 [Bitcoin Core #28590](https://github.com/bitcoin/bitcoin/issues/28590)、[#28562](https://github.com/bitcoin/bitcoin/issues/28562)和[#28589](https://github.com/bitcoin/bitcoin/issues/28589)。
+> 尽管该功能集在[激活](https://github.com/bitcoin/bitcoin/issues/28553)前在主链上都不可用，但这个合并标志着到达了多年努力的顶点。该项目<a href='https://btctranscripts.com/bitcoin-core-dev-tech/2018-03/2018-03-07-priorities/#:~:text="Assume UTXO"'>在 2018 年提出</a>并[在 2019 年正式确定](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2019-April/016825.html)，将显著改善首次接入网络的新的全节点的用户体验。后续合并包括 [Bitcoin Core #28590](https://github.com/bitcoin/bitcoin/issues/28590)、[#28562](https://github.com/bitcoin/bitcoin/issues/28562)和[#28589](https://github.com/bitcoin/bitcoin/issues/28589)。
 >
 > —— [Optech Newsletter #272](https://bitcoinops.org/zh/newsletters/2023/10/11/#bitcoin-core-27596)
 
@@ -157,7 +157,7 @@ assumevalid/assumeutxo 数值的无遮掩特性，实际上让用户的参与更
 
 没错，因为我们要维护两个完全独立的 UTXO 集，以支持后台 IBD（这会同时使用快照假定有效的链条以及快照基础高度后的链条），我们必须拥有一个额外的 `CCoinsView*` 层级。这意味着要在硬盘上临时保存一个额外的 `chainsate`（leveldb）目录，而且需要根据每个 `-dbcache` 分割内存、分配给需要放在内存内的 UTXO 缓存。
 
-我不认为这是一个很大的问题，因为这基本上意味着（在当前来说）额外的 3.2GB 的存储空间。我们可以按照大约 80/20 的比例给 后台 IBD 所用的 `CCoinsViewCache` vs. 假定有效的 `chainActive` 分配指定的 `-dbcache` 内存，因为可调节大小的 dacache 仅在 IBD 期间才提供了重大的性能好处。
+我不认为这是一个很大的问题，因为这基本上意味着（在当前来说）额外的 3.2GB 的存储空间。我们可以按照大约 80/20 的比例给 后台 IBD 所用的 `CCoinsViewCache` vs. 假定有效的 `chainActive` 分配指定的 `-dbcache` 内存，因为较大的 dacache 仅在 IBD 期间才提供了重大的性能好处。
 
 ### 我们还应该运行后台验证同步吗？如果我们接受了 assumeutxo 的安然模式，为什么还要执行后台 IBD？IBD 不是一个长期的扩展问题吗？道理在哪？
 
@@ -175,4 +175,97 @@ Assumeutxo 是一项性能优化。如果我们移除 IBD 模式、换成它，�
 
 未来，可以想象我们可以使用一个节点本地的[滚动 UTXO 集哈希值](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014337.html)以让特定高度的 UTXO 哈希值随时可用。但是，滚动的 UTXO 集哈希值跟 assuemeutxo 承诺方案是不兼容的，因为后者涉及到分块快照（下文有述），并且因此最终的 assumeutxo 值可能必须是 `(rolling_set_hash, split_snapshot_chunks_merkle_root)` 这样的元组。
 
-（未完）
+## 快照的存储与分发
+
+### 快照如何分发？
+
+最终，用户将通过对等节点网络来获得 UTXO 快照。但在这个状态实现之前，用户需要从其他人或者 CDN 那里说得 UTXO 快照，然后用硬编码的 assumeutxo 哈希值来验证它（见下文的 “如何分步部署？”）。
+
+因为快照的体积是非常大的，而且因为恶意的对等节点可能会谎称自己提供的一个大文件是一个有效的快照，所以我们需要分块存储及传输。应该做到容易验证每一块。
+
+粗糙地说，分切的一种办法是将快照平均分成 *n* 块。我们可以用每一块的哈希值构造一棵默克尔树，然后将树的根植作为嵌入源代码的 `assumeutxo` 承诺数值。每一个对等节点都会选择随机的数值对 *k* 求模（这里 k <= n），以确定自己要复杂存储哪一部分数据块。在初始化的时候，想要获得快照的对等节点将需要找出 *k* 个不同的对等节点，每一个对等节点都提供快照数据的独特一 “段”，从而获得全部 *n* 个数据块。
+
+### 这听起来很棒，也简单，但我打赌某个地方还有问题。
+
+没错。这种方法的问题在于：
+
+- 找到能够提供所有 *k* 段数据的节点集合是不便利的，而且
+- 这开启了一个微小的 DoS 界面 —— 为了阻止初始化，攻击者只需针对提供某一段数据的所有节点。
+
+相应的，我们可以使用[纠删编码](http://web.eecs.utk.edu/~plank/plank/classes/cs560/560/notes/Erasure/2004-ICL.pdf)，生成 *n+m* 个数据块（其中 *m* 就是额外编码的数据块的数量），并让冷启动的节点才对等节点处检索任意 *n + 𝛼* 个不同数据块；这里的 *𝛼* 的大小取决于我们所用的具体的编码方案。每一个节点都依然只存储和提供快照全部分块的子集。
+
+### 一个节点要存储多少套快照？
+
+为了保证运行旧版本软件的邻居，一个节点只存储最新的快照是不够的。具体要存储多少套可以讨论，但我认为，为两套历史快照以及最新的一套快照存储一些数据，是合理的。
+
+对于每一套快照，每个节点都只需存储一部分数据（大概是 1/8 左右），取决于我们为纠删编码方案选择的具体参数。
+
+一个参考，当前的一套 UTXO 快照大概是 3.2 GB。如果我们不做任何改进、快照保持这个规模，那么预计一个节点要存储 1.2GB（= 1/8 * 3 套快照 * 3.2GB/每套快照）的快照数据（假定需要 8 个对等节点来使用快照冷启动，并且每个节点都存储 3 套快照）。
+
+### 对于刚刚发布的新的 assumeutxo 值，相应的快照如何获得？
+
+好问题，我还没有想得很清楚。可以假设，我们可以（比如说）让代码每 6 个月生成一套快照。为了能在运行时生成快照而不影响正常过的操作（比如新区块的响应），我们可能必须重构 “从状态到磁盘” 的刷新，使之变成异步的。
+
+Sjors 指出，我们可以基于区块高度，周期性地生成快照，这可能会派上传输给对等节点以外的用场：
+
+> 如果按固定的区块间隔生成，这些快照可以【马上】派上用场，即便（其承诺）还没有进入新发行的软件。它可以用于本地备份，从区块以及 chainstate 的数据中恢复。每个节点都可以用简单的 text 文件来存储哈希值。对于剪枝节点来说，重新编制索引可以通过回顾快照来实现，而不必再一路回溯到创世区块。类似地，这在一个节点需要撤销剪枝以扫描旧钱包的使用也是有用的。
+
+## 其它方法
+
+### 使用 UTXO 快照就必须存储和发送这些快照，为什么不让 Bitcoin 直接以 SPV 模式（例如使用 [BIP 157](https://github.com/bitcoin/bips/blob/master/bip-0157.mediawiki)），然后在后台 IBD 呢？
+
+这是一个吸引人的想法，但在实践中有一些缺点。
+
+首先，实现 assumeutxo 方法比起在 Bitcoin Core 中开发一个 SPV 模式，所需的代码要少得多。当前，Bitcoin Core 并没有任何作为 SPV 客户端的代码，而且许多子系统也都假设了一个 chainstate 的持久存在（即一个 `CChain` 区块链对象以及对 UTXO 集的视图）。
+
+也许有些让人意外，但 assumeutxo 方法让我们可以复用大量 Bitcoin Core 中已经存在的代码。它的实现相当于一系列的重构（即使没有 assumeutxo，本来也是要做的，会让编写测试变得更加容易），再加上少量新的小块逻辑，以处理在初始化和网络通信期间多个 chainstate 并存的问题。
+
+需要使用大量的新代码（比如 [Reed-Solomon 纠删编码](http://web.eecs.utk.edu/~plank/plank/classes/cs560/560/notes/Erasure/2004-ICL.pdf)）来分割快照以存储和对等传输，但这类代码可以容易地放在系统的外围，而构筑 SPV 模式的代码则必须对软件的 “核心” 作不计其数的修改。
+
+更多新代码就意味着更大的工程量和审核工作，而且最终会有更多风险。而且，使用 SPV 模式，也意味着在完整的链被下载和验证之前，节点无法对新进入的区块作全面的验证。
+
+### 那为什么不使用一些不要求改变 Bitcoin Core 代码的方式呢？比如说，让某人提供 PGP 签名的数据集，然后你可以通过（比如说）btcpayserver 的 [FastSync](https://github.com/btcpayserver/btcpayserver-docker/tree/master/contrib/FastSync) 来下载？
+
+通过 Bitcoin Core 软件以外的方式来分发这类数据在实践中有一系列的缺点。如果个人和团体被鼓励下载一定程度上未经软件本身验证的 chainstate 数据，会引入许多安全风险。用户将不仅需要信任 bitcoind，还需要信任数据的提供方。除了软件本身以外，这些数据的提供方也需要挑剔。
+
+此外，现有的方案，比如 FastSync，使用 PGP 来见证他们所提供的数据的有效性。这个签名常常被忽略，而且说服用户可靠地验证它们不是个容易的事。
+
+Assumeutxo 或者类似方案的用户应该是 *默认安全的*，而且最终来说，用户不应该需要采取额外的步骤，才能从这样的优化中收益（同时保持安全性）。
+
+## 计划
+
+### 好的，assumeutxo 听起来很棒。怎么部署呢？
+
+1. 实现让多个 chainstate 能够同时使用所必需的变更。（[见 PR](https://github.com/bitcoin/bitcoin/pull/15606)）
+2. 通过 `dumptxoutset` 和 `loadtxoutset` 实现 UTXO 快照的创建和使用，以及一个硬编码的 `assumeutxo` 哈希值。（[见 PR](https://github.com/bitcoin/bitcoin/pull/15606)）
+3. 留出实践，让精通技术的终端用户可以通过 RPC 手动测试快照的用法。
+4. 研究高效的快照存储和分发方案。
+5. 实现并部署最终确定的 P2P 快照分发机制。
+6. 等待。
+7. 考虑支持 UTXO 集哈希值的共识变更是否有意义。
+
+### 如果我想帮忙，接下来我应该做什么？
+
+在[这里](https://github.com/bitcoin/bitcoin/pull/15606)审核代码。因为变更的规模较大，一部分代码可能会被分割，大家会感谢你的投入。
+
+### assumeutxo 如何跟[累加器](https://eprint.iacr.org/2018/1188)、[UHS](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2018-May/015967.html) 以及 [utreexo](https://www.youtube.com/watch?v=edRun-6ubCc) 一起工作（如果它们会到来的话）？
+
+如果其它更节约空间的 UTXO 集表示方式可用，它们会跟 assumeutxo 相得益彰。容易想象 assumeutxo 的值变成 utreexo 森林的默克尔根值，或者一个累加器数值。UTXO 快照将缩减成几千字节，而不是几 GB。后台 IBD 也依然会很有用，因为我们将依然希望在后台执行完全验证。
+
+## 实现问题
+
+### 应该如何在 假定有效的状态 和 后台状态 的验证之间分配内存（`-dbcache`）呢？
+
+来自 Sjors：
+
+> 我认为，应该分配绝大部分内存给快照状态，使之追上链顶端。因为快照可能代表的是 6 个月以前的链状态。一旦追上，就刷新并分配绝大部分内存给后台验证（从创世区块同步到快照基础区块）。如果节点在此期间重启，那就同步区块头，如果落后超过 24 小时，那就再次分配大部分资源以追上链顶端，否则分配大部分资源以追上快照基础区块。
+>
+> 在最初的版本中，至少我们需要确保两个 UTXO 集对内存的用量不超过 `-dbcache + -maxpool`。
+
+此时，实现草稿会在后台验证与顶端追赶之间按 [70/30](https://github.com/bitcoin/bitcoin/pull/15606/commits/83f13a754372579cd13a45a2052fd4e42ed24632#diff-c865a8939105e6350a50af02766291b7R1476) 的比例分配内存。
+
+### 为什么用通过 RPC 来加载快照？不应该是一条启动命令吗？
+
+将快照加载作为启动参数，的确可以简化许多东西（比如链状态数据结构的管理），但如果我们最终要走向可以通过 P2P 网络来传输快照，我们就需要准备好让快照能在启动之后加载的逻辑。我认为，我们应该在将这个特性作为默认配置之前确保充分测试，因此，`loadtxoutset` 似乎是在 RPC 阶段应该使用的方法。
+
+（完）
