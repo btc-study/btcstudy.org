@@ -5,7 +5,7 @@ date: '2023/05/10 22:46:45'
 cover: ''
 excerpt: '将资金转化为不记名票据的联盟'
 tags:
-- Fedimint
+- Ecash
 ---
 
 

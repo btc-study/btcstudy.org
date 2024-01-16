@@ -5,7 +5,7 @@ date: '2023/08/17 15:27:34'
 cover: ''
 excerpt: '它接受比特币并使用盲签名系统来发行 e-cash token'
 tags:
-- Cashu
+- Ecash
 ---
 
 

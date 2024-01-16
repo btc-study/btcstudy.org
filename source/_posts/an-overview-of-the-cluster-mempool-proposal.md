@@ -6,6 +6,7 @@ cover: ''
 excerpt: '可以可以在线性时间内计算一个已经线性化的族群的分家'
 tags:
 - 交易池
+mathjax: true
 ---
 
 
