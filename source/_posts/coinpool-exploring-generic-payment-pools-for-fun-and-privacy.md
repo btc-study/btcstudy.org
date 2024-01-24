@@ -6,7 +6,7 @@ cover: '../images/coinpool-exploring-generic-payment-pools-for-fun-and-privacy/i
 excerpt: '资金池构造能否作为比特币的 TLS、加强链上和链上的隐私性'
 tags:
 - Layer-2
-- Payment-pool
+- joinpool
 ---
 
 
@@ -96,7 +96,7 @@ CoinPool 的操作可以分成三种：创建、更新和取款。
 
 ## 交易树图解
 
-我们图解了一棵有 3 个叶子的 CoinPool 交易树。我们是由了一个显然的优化措施：如果只剩下了 2 个叶子，最后一笔交易就无需承诺一棵新的树 <sup><a href="#note5" id="jump-5">5</a></sup>。
+我们图解了一棵有 3 个叶子的 CoinPool 交易树。我们是用了一个显然的优化措施：如果只剩下了 2 个叶子，最后一笔交易就无需承诺一棵新的树 <sup><a href="#note5" id="jump-5">5</a></sup>。
 
 ![image-20220615152424326](../images/coinpool-exploring-generic-payment-pools-for-fun-and-privacy/image-20220615152424326.png)
 

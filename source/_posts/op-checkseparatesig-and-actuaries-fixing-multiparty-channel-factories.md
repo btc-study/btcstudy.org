@@ -6,7 +6,7 @@ cover: ''
 excerpt: '使用一种可能比 CTV 更简单的操作码，Actuaries 可以免信任地解决每个人都需要在线以更新通道工厂的问题'
 tags:
 - covenant
-- Payment-pool
+- joinpool
 ---
 
 
