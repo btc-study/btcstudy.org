@@ -68,13 +68,13 @@ mathjax: true
 
 为了展示一些具体的激励兼容问题，我们来看看这个例子：A 和 B 已经在交易池中了，而 A' 是跟 A 冲突的交易。
 
-![](../images/an-overview-of-the-cluster-mempool-proposal/2.png)
+![](../images/an-overview-of-the-cluster-mempool-proposal/2.PNG)
 
 在这里，交易 B 的祖先费率是 50 聪/vB，而交易 A' 只支付 3 聪/vB。虽然在 BIP125 规则下，我们将把 A' 评估对 [A, b] 的一笔成果的替代，因为它比 A 支付了更高的手续费（3 聪/vB vs. 1 聪/vB），也比 A+B 整体支付了更高的手续费（30000 聪 vs. 10000 聪）。
 
 没有采纳激励兼容的替代交易的情形也可能发生。考虑这个例子：A 和 B 已经在交易池中，而 B' 是 B 的潜在替代交易：
 
-![](../images/an-overview-of-the-cluster-mempool-proposal/3.png)
+![](../images/an-overview-of-the-cluster-mempool-proposal/3.PNG)
 
 B' 无法替代 B，因为在 BIP125 规则之下，它所支付的手续费率比 B 更低，但是，B' 的祖先费率是 25 聪/vB，而 B 的祖先费率仅仅不到 2 聪/vB ！
 
@@ -90,13 +90,13 @@ B' 无法替代 B，因为在 BIP125 规则之下，它所支付的手续费率�
 
 这个问题的答案是：需要更新跟这笔新交易相关的每一笔交易的挖矿分数，不论是父交易还是子交易。考虑这个例子（感谢 @sipa）：
 
-![](../images/an-overview-of-the-cluster-mempool-proposal/4.png)
+![](../images/an-overview-of-the-cluster-mempool-proposal/4.PNG)
 
 使用一些计算，我们可以看出，交易 B 有最高的祖先费率，是 73 聪/vB。一旦它和交易 A 被选入下一个区块，交易 D 就将有最高的祖先费率，是 72 聪/vB 。顺序是交易 D、交易 F、交易 F、交易 J 和交易 L。
 
 如果一笔新的交易 M 到达：
 
-![](../images/an-overview-of-the-cluster-mempool-proposal/5.png)
+![](../images/an-overview-of-the-cluster-mempool-proposal/5.PNG)
 
 那么，祖先费率就完全反过来了！祖先费率最高的交易变成了 M（80聪/vB），然后是 L（79聪/vB，一旦交易 K 被选入的话）、然后是 J、H、F、D 以及 B，跟交易 M 到达之前完全相反。
 
@@ -130,11 +130,11 @@ B' 无法替代 B，因为在 BIP125 规则之下，它所支付的手续费率�
 
 首先要问的是，“激励兼容” 应该意味着什么。要考虑这个问题，先看看这个例子，交易池的起始状态是这些交易（假定所有的交易都是 100 vB 的体积）：
 
-![](../images/an-overview-of-the-cluster-mempool-proposal/6.png)
+![](../images/an-overview-of-the-cluster-mempool-proposal/6.PNG)
 
 然后，考虑一笔潜在的替换交易 C'，它跟交易 C 冲突，而且将产生这样的交易池：
 
-![](../images/an-overview-of-the-cluster-mempool-proposal/7.png)
+![](../images/an-overview-of-the-cluster-mempool-proposal/7.PNG)
 
 我们如何知道要不要接纳交易 C' 呢？使用 BIP125 的规则，我们可能会说，应该拒绝 C'，因为它带来了一个新的未确认的父交易；或者，我们可能会说，这个未确认父交易规则很傻，因为我们只是使用另一笔 手续费/体积 都相同的父交易来替代一笔父交易，而交易 C' 比 C 支付了严格更高的手续费和手续费率，所以我们显然应该接纳它。
 

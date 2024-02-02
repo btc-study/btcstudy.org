@@ -6,6 +6,7 @@ cover: ''
 excerpt: '另类的 ecash 协议'
 tags:
 - 密码学
+- Ecash
 ---
 
 
