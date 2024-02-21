@@ -12,14 +12,14 @@ tags:
 
 
 > *作者：Max Hillebrand*
-> 
+>
 > *来源：<https://lightningprivacy.com/en/blinded-trampoline>*
+>
+> *本文为多位作者的合作作品。作者详见[此页](https://github.com/BitcoinDevShop/lightning-privacy-research)。*
+>
+> *本文为《闪电网络隐私性研究》系列的第四篇，前篇见[此处](https://www.btcstudy.org/2023/03/01/lightning-privacy-research-channel-coinjoins/)。*
 
 
-
-*本文为多位作者的合作作品。作者详见[此页](https://github.com/BitcoinDevShop/lightning-privacy-research)。*
-
-*本文为《闪电网络隐私性研究》系列的第四篇，前篇见[此处](https://www.btcstudy.org/2023/03/01/lightning-privacy-research-channel-coinjoins/)。*
 
 ## 问题描述
 

@@ -121,9 +121,12 @@ tags:
 
 （未完）
 
+> *[续篇见此处](https://www.btcstudy.org/2024/02/07/lightning-network-technology-improvement-and-users-experience-part-2/#Taproot-%E4%B8%8E%E9%97%AA%E7%94%B5%E7%BD%91%E7%BB%9C%E7%9A%84%E6%94%B9%E8%BF%9B)*
+
 ## 脚注
 
 
 1.<a id="note1"> </a>https://www.btcstudy.org/2020/08/23/understanding-the-lightning-network-part-building-a-bidirectional-payment-channel/ <a href="#jump-1">↩</a>
 
 2.<a id="note2"> </a>https://medium.com/breez-technology/understanding-lightning-network-using-an-abacus-daad8dc4cf4b <a href="#jump-2">↩</a>
+
