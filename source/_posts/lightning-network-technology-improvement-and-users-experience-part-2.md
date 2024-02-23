@@ -145,11 +145,13 @@ RB1 = SB * SHA256(SB|P1A) + P1A * SHA256(P1A|SB)
 
 更有趣的是，HTLC 还可以将多个通道内发生的支付 “粘合” 在一起：给定在每一条通道内，都使用相同的哈希值来构造 HTLC，那么，这些支付只会一起成功，或者一起失败。
 
-假设 Alice 要通过 Bob、Carol 给 Daniel 支付，那么，Alice 先向 Daniel 请求一个哈希值，然后让每一条通道都给出相同的 HTLC：
+假设 Alice 要通过 Bob、Carol 给 Daniel 支付，那么，Alice 先向 Daniel 请求一个哈希值，然后让每一条通道都创建一个使用相同哈希值的 HTLC：
 
 ```
 Alice -- HTLC --> Bob -- HTLC --> Carol -- HTLC --> Daniel
 ```
+
+每一个中间节点（Bob、Carol）都会在自己的一条通道中收到一个 HTLC，并需要在自己的另一条通道中给出一个 HTLC，而两者面额的差值，就是支付成功时该节点可以获得的转发费收入。
 
 当 Daniel 获得 Carol 给出的 HTLC 之后，就揭晓原像，从而领取 HTLC 的资金；每一条通道都发生相同的事情，原像便一路回传交给 Alice：
 
