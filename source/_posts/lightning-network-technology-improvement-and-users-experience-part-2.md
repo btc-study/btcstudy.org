@@ -1,6 +1,6 @@
 ---
 title: '闪电网络：技术与用户体验（二）：通道与支付'
-author: 'Annoy'
+author: 'Anony'
 date: '2024/02/08 01:45:08'
 cover: ''
 excerpt: '闪电通道是如何构造的、它有什么样的改进空间'
@@ -243,6 +243,8 @@ Eltoo 的更详细介绍可见此文 <sup><a href="#note13" id="jump-13">13</a><
 本文覆盖了一般的闪电网络概述的内容，但是，它依然未全面展现闪电网络的 “网络” 特性 —— 没错，HTLC 可以将多条通道内的支付 “粘合” 在一起，但问题是，发送者根据什么信息，找出这样的路径？这些节点，依据什么指令，开始向通道对手提供 HTLC？这些问题，我们将在下一篇解答。它们的答案，也将真正体现 “网络” 的特性，并越过一般的闪电网络概述止步之处。
 
 （未完）
+
+> *[续篇见此处](https://www.btcstudy.org/2024/02/23/lightning-network-technology-improvement-and-users-experience-part-3/)*
 
 ## 脚注
 
