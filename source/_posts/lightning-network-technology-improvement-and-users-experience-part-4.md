@@ -108,9 +108,9 @@ LNURL 是一套多特性的协议，除了上述特性（称为 “LNURL-Pay”�
 
 在使用洋葱消息之后，节点就可以直接转发消息，转发消息的节点也无需再记忆跟这些消息相关的信息。这也是上述 `reply_path` 的由来 —— 响应 Offer 的一方规划好从自身出发、触达 Offer 方然后再触达自身的环状路径，并将后半段路径放在 `reply_path` 中告诉 Offer 方。
 
-在 2023 年 8 月 <sup><a href="#note11" id="jump-11">11</a></sup>，“洋葱消息” 合并进入了 BOLT7，这意味着以后所有的闪电节点客户端都会实现这种特性。而洋葱消息也会使用我们在[上一篇文章](https://www.btcstudy.org/2024/02/23/lightning-network-technology-improvement-and-users-experience-part-3/#%E8%B7%AF%E5%BE%84%E7%9B%B2%E5%8C%96)中介绍的 “盲化路径”。这也意味着，原本在原理上不依赖于盲化路径的 BOLT12，如今在实现中，变成了需要盲化路径作为前置技术。但这也意味着，出示 Offer 的接收方将默认具有更好的隐私性。
+在 2023 年 8 月 <sup><a href="#note11" id="jump-11">11</a></sup>，“洋葱消息” 合并进入了 BOLT7，这意味着以后所有的闪电节点客户端都会实现这种特性。而洋葱消息也会使用我们在[上一篇文章](https://www.btcstudy.org/2024/02/23/lightning-network-technology-improvement-and-users-experience-part-3/#%E8%B7%AF%E5%BE%84%E7%9B%B2%E5%8C%96)中介绍的 “盲化路径”。原本在原理上，BOLT12 是不依赖于盲化路径的，但如今在实现中，变成了需要盲化路径作为前置技术。不过，这也意味着，出示 Offer 的接收方将默认具有更好的隐私性。
 
-BOLT12 尚未合并到 BOLT 中，但这个想法得到了大多数开发者的支持。关于 BOLT12 的特性，这个页面提供了基本的介绍 <sup><a href="#note12" id="jump-12">12</a></sup>。至于其提出和变革，Optech 的主题界面提供非常详尽的参考  <sup><a href="#note13" id="jump-13">13</a></sup>。
+BOLT12 尚未合并到 BOLT 中，但这个想法得到了大多数开发者的支持。关于 BOLT12 的特性，这个页面提供了基本的介绍 <sup><a href="#note12" id="jump-12">12</a></sup>。至于其起源和变革，Optech 的主题界面提供非常详尽的参考  <sup><a href="#note13" id="jump-13">13</a></sup>。
 
 相比于 LNURL，BOLT12 最大的特点是，它可以在闪电网络协议内实现，而不需要依赖于其它网络协议和通讯方式。这有它的好处，但是，它也意味着要使用闪电网络中的资源。如今，因为洋葱消息的采用，其开销被进一步降低。我们有理由期望，BOLT12 会给我们带来用户体验的变革。届时，自主保管的钱包，也能提供收款码、付款码这样当前专属于（支持 LNURL 的）托管钱包的体验。
 
