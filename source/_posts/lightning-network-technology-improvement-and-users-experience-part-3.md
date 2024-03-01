@@ -13,7 +13,7 @@ tags:
 
 > *作者：Annoy*
 > 
-> [*前篇见此处*](https://www.btcstudy.org/2024/02/07/lightning-network-technology-improvement-and-users-experience-part-2/#LN-Penalty-%E5%8F%8A%E5%85%B6%E6%94%B9%E8%BF%9B)
+> [*前篇见此处*](https://www.btcstudy.org/2024/02/07/lightning-network-technology-improvement-and-users-experience-part-2/)
 
 在上一篇文章中，我们了解了如何借助比特币的脚本和交易特性，实现双方可以无限次更新状态的共有资金（“通道”）；并在此基础上实现可以获得收据的 “支付”。与链上支付相比，这种基于通道的支付具有低手续费、确认速度快的特点，因此扩大了比特币的吞吐量（“可扩展性”）。
 
@@ -204,6 +204,8 @@ a.G + b.G = (a + b).G = A + B
 闪电网络的发票本身是一次性的，它包含了一次支付的哈希值及其面额，在支付成功或者超时之后就会作废。这意味着，如果仅有发票这个工具，接收者将无法提供一个可重复使用的收款码。那么，我们该怎么解决这个问题呢？
 
 （未完）
+
+> *[续篇见此处](https://www.btcstudy.org/2024/02/27/lightning-network-technology-improvement-and-users-experience-part-4/)*
 
 ## 脚注
 
