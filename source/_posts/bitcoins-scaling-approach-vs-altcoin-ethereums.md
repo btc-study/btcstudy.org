@@ -7,7 +7,7 @@ excerpt: '把抗性和去中性化看得比资本效率和用户友好更重'
 categories:
 - 比特币主网
 tags:
-- Layer-2
+- 文化
 ---
 
 

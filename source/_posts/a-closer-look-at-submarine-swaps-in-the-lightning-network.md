@@ -7,8 +7,7 @@ excerpt: '把资金从链上支付到链下，反之亦可'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
-- 通道管理
+- 潜水艇互换
 ---
 
 > *作者：Florencia Ravenna*
@@ -88,7 +87,7 @@ tags:
 有关闪电网络，这里还有一些阅读材料：
 
 - [Rebalancing: The Key to the Lightning Network](https://blog.muun.com/rebalancing-in-the-lightning-network/)
-- [Rebalancing in the Lightning Network: Circular Payments, Fee Management and Splices](https://blog.muun.com/rebalancing-strategies-overview/)
+- [Rebalancing in the Lightning Network: Circular Payments, Fee Management and Splices](https://blog.muun.com/rebalancing-strategies-overview/)（[中文译本](https://www.btcstudy.org/2022/06/14/rebalancing-in-the-lightning-network-circular-payments-fee-management-and-splices/)）
 - [How Splices Impact Lightning Network Fees](https://blog.muun.com/fees-proportional-to-the-amount/)
 - [The Inbound Capacity Problem in the Lightning Network](https://blog.muun.com/the-inbound-capacity-problem-in-the-lightning-network/)（[中文译本](https://ethfans.org/posts/the-inbound-capacity-problem-in-the-lightning-network)）
 

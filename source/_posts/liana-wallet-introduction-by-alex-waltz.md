@@ -6,6 +6,9 @@ cover: ''
 excerpt: 'Miniscript、时间锁、多路径'
 tags:
 - 钱包
+- Miniscript
+- 描述符niscript
+- 描述符
 ---
 
 

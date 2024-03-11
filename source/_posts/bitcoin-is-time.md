@@ -7,7 +7,6 @@ excerpt: '对于时间结构来说，最重要的两个组成部分是：因果�
 categories:
 - 比特币主网
 tags:
-- 比特币
 - PoW
 - Gigi
 ---

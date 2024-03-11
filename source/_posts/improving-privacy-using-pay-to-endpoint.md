@@ -5,7 +5,6 @@ date: '2022/04/13 12:21:55'
 cover: '../images/improving-privacy-using-pay-to-endpoint/20x1080.jpg'
 excerpt: 'P2EP 的基本思路是让支付者和接收者都为交易提供输入'
 tags:
-- 隐私性
 - PayJoin
 ---
 

@@ -7,7 +7,6 @@ excerpt: '从闪电网络发票出发'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - LNURL
 ---
 

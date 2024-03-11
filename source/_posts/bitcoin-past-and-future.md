@@ -5,7 +5,6 @@ date: '2021/10/04 23:41:02'
 cover: '../images/bitcoin-past-and-future/XTK1mxw.png'
 excerpt: '这篇文章尝试列举所谓的 “小区块派” 和 “大区块派”在贯穿比特币过去的著名辩论中的立场'
 tags:
-- 比特币
 - 隔离见证
 - 文化
 ---

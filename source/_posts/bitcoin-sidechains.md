@@ -6,7 +6,6 @@ cover: '../images/bitcoin-sidechains/-ZNFmg.jpeg'
 excerpt: '侧链的定义探究'
 tags:
 - 侧链
-- 生态
 ---
 
 

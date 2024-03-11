@@ -7,8 +7,8 @@ excerpt: '让闪电通道也变得可以混合'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
-- 通道管理
+- 通道拼接
+- CoinJoin
 ---
 
 

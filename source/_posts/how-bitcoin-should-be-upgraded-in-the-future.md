@@ -7,8 +7,7 @@ excerpt: '我认为今后所有新功能都要通过 UASF 部署'
 categories:
 - 比特币主网
 tags:
-- 比特币
-- 文化
+- 软分叉
 ---
 
 

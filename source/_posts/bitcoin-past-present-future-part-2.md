@@ -7,7 +7,6 @@ excerpt: '超然和清白'
 categories:
 - 比特币主网
 tags:
-- 比特币
 - 密码朋克
 ---
 

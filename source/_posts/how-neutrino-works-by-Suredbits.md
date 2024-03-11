@@ -7,7 +7,7 @@ excerpt: 'Neutrino 节点所用的数据结构及其工作原理'
 categories:
 - 比特币主网
 tags:
-- BIP158
+- 区块过滤器
 ---
 
 

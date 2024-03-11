@@ -5,8 +5,7 @@ date: '2021/12/14 15:53:06'
 cover: '../images/bitcoin-the-most-innovative/feNwC-Q.png'
 excerpt: '这种分层的方法让比特币变得极为宝贵、并为之带来全新用途'
 tags:
-- 比特币
-- 生态
+- 文化
 ---
 
 

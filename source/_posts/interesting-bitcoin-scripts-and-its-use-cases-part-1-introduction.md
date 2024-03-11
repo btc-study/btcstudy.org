@@ -6,6 +6,8 @@ cover: ''
 excerpt: '比特币交易、输出、脚本的基本概念'
 tags:
 - 开发
+- 比特币脚本
+- Miniscript
 ---
 
 

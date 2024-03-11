@@ -5,7 +5,7 @@ date: '2022/03/22 20:07:36'
 cover: '../images/a-quick-and-dirty-explanation/image-20220322183638103.png'
 excerpt: '我们用比特币指代的所有事物都相互关联，形成回环。每个部分都会影响整体'
 tags:
-- 入门系列
+- 比特币
 - Gigi
 ---
 

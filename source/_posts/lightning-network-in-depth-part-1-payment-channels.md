@@ -7,7 +7,7 @@ excerpt: '免信任、可长期开启的支付通道是如何实现的？'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- 通道构造
 ---
 
 > *作者：Magomed Aliev*

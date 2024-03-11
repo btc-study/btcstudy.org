@@ -5,7 +5,6 @@ date: '2021/11/10 12:48:20'
 cover: ''
 excerpt: '一种新的比特币侧链构想'
 tags:
-- Layer-2
 - Drivechain
 ---
 

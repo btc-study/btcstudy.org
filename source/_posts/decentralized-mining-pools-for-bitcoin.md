@@ -5,7 +5,7 @@ date: '2023/12/05 15:35:33'
 cover: ''
 excerpt: '最大的未解问题是报酬分发的授权'
 tags:
-- 挖矿
+- 矿池
 mathjax: true
 ---
 

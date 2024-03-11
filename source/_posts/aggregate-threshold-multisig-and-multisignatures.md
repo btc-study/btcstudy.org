@@ -6,7 +6,6 @@ cover: '../images/aggregate-threshold-multisig-and-multisignatures/esVmJg.jpeg'
 excerpt: '我们研究的不同技术各有优缺点'
 tags:
 - 密码学
-- 开发
 ---
 
 

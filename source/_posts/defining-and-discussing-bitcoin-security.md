@@ -7,7 +7,7 @@ excerpt: '每个 UTXO 都有自己的安全性级别，还可以从签名和时�
 categories:
 - 比特币主网
 tags:
-- 比特币
+- UTXO
 ---
 
 

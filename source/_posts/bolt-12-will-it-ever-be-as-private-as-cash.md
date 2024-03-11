@@ -7,7 +7,6 @@ excerpt: '它能够提供媲美现金的隐私性吗？'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - BOLT12
 ---
 

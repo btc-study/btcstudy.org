@@ -8,16 +8,15 @@ categories:
 - 比特币主网
 tags:
 - 钱包
+- 描述符
 ---
 
 
 > *作者：DARIO SNEIDERMANIS*
-> 
+>
 > *来源：<https://blog.muun.com/designing-a-foolproof-script-upgrading-mechanism/>*
-
-
-
-原文出版于 2021 年 11 月12 日。
+>
+> *原文出版于 2021 年 11 月12 日。*
 
 ![Designing a foolproof script upgrading mechanism](../images/designing-a-foolproof-script-upgrading-mechanism/cover_A.png)
 

@@ -7,7 +7,6 @@ excerpt: '比特币的交易有多种签名方式'
 categories:
 - 比特币主网
 tags:
-- 比特币
 - SIGHASH
 ---
 

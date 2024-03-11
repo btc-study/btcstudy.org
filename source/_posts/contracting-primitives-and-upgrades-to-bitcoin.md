@@ -7,7 +7,6 @@ excerpt: '为比特币提议的构造智能合约的元件'
 categories:
 - 比特币主网
 tags:
-- 开发
 - CTV
 - eltoo
 - covenant

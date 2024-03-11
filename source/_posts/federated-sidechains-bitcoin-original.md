@@ -6,6 +6,7 @@ cover: ''
 excerpt: '联盟侧链利用密钥管理来提供安全性，做出超过比特币主链的功能'
 categories:
 tags:
+- 联盟侧链
 ---
 
 

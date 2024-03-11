@@ -7,7 +7,7 @@ excerpt: '布隆过滤器与 SPV 轻节点'
 categories:
 - 比特币主网
 tags:
-- 开发
+- 轻客户端
 ---
 
 

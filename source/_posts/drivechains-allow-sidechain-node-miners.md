@@ -6,7 +6,6 @@ cover: ''
 excerpt: 'drivechain 是如何工作的'
 tags:
 - Drivechain
-- 侧链
 ---
 
 

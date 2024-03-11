@@ -5,7 +5,6 @@ date: '2022/05/11 17:35:42'
 cover: '../images/bitcoin-multisig-2-of-3-vs-3-of-5/220224_multisig_principles_diagram_2000x1000px.png'
 excerpt: '安全性总跟取舍有关'
 tags:
-- 钱包
 - 入门系列
 ---
 

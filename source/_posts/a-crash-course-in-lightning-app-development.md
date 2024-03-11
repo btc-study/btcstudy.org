@@ -7,7 +7,7 @@ excerpt: '如果你想要入门闪电网络编程，又不在乎所谓正确、�
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- 开发
 ---
 
 > *作者：Michael Rhee*

@@ -7,7 +7,6 @@ excerpt: 'Offer 允许反复收账和发账'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - BOLT12
 ---
 

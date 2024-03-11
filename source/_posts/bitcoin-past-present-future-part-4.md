@@ -7,8 +7,8 @@ excerpt: '比特币的成人礼'
 categories:
 - 比特币主网
 tags:
-- 比特币
 - 隔离见证
+- 文化
 ---
 
 

@@ -7,7 +7,6 @@ excerpt: '身份验证私钥根据网站 URL 生成，因此不同网站使用�
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - LNURL
 ---
 

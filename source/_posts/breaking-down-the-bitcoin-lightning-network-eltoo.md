@@ -7,7 +7,6 @@ excerpt: '双向状态通道可以很复杂，但是 eltoo 提供了一个简单
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - eltoo
 ---
 

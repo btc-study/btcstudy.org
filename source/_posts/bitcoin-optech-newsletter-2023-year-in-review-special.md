@@ -7,8 +7,8 @@ excerpt: '又度过了不可思议的一年'
 categories:
 - 比特币主网
 tags:
-- 比特币
-- 开发
+- covenant
+- 通道拼接
 ---
 
 

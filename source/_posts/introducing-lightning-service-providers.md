@@ -7,7 +7,7 @@ excerpt: 'LSP 跟 ISP 在词语上的相似性并不是偶然'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- LSP
 ---
 
 

@@ -7,7 +7,6 @@ excerpt: '交易包转发 BIP 的讨论以及闪电网络的进步方向。'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - 开发
 ---
 

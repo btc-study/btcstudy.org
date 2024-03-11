@@ -8,7 +8,7 @@ categories:
 - 比特币主网
 tags:
 - Taproot
-- 比特币
+- 隐私性
 ---
 
 > *作者：Braiins*
@@ -138,7 +138,7 @@ Taproot 引入了一种新的地址类型 P2TR（Pay-to-Taproot），可以轻�
 
 如果 Taproot 被激活，那么从增强隐私性的角度来看，让 Taproot 得到广泛采用是很重要的。另一种可能是，P2TR 地址最终成为区块链分析者用来追踪 UTXO 的启发式方法。
 
-隐私性只会变得越来越重要性。正如 Andreas Antonopolous 所言：“独裁主义和自由体制之间没有中间地带。”
+隐私性只会变得越来越重要。正如 Andreas Antonopolous 所言：“独裁主义和自由体制之间没有中间地带。”
 
 ![](../images/explain-like-im-not-a-developer-taproot-privacy/08edff7771614d9f904fd33bc4db6669.png)
 

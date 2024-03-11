@@ -6,6 +6,7 @@ cover: '../images/dapps-or-only-bitcoin-transactions-the-2014-debate/024x587.png
 excerpt: '对比特币交易数据的另类用途的负面评价，极大地推动了 Dapp 的开发者迁移到像以太坊这样的系统上'
 tags:
 - 文化
+- 链外合约系统
 ---
 
 

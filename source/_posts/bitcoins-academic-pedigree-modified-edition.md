@@ -5,7 +5,7 @@ date: '2021/12/16 16:57:19'
 cover: '../images/bitcoins-academic-pedigree-modified-edition/2d2979e.png'
 excerpt: '通过对比特币概念的溯源，我们可以专注于中本聪在洞察力上的真正飞跃'
 tags:
-- 比特币
+- PoW
 ---
 
 

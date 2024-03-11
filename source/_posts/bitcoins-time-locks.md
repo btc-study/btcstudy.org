@@ -7,7 +7,7 @@ excerpt: '时间锁让用户可以用基于时间的条件来指定交易（tran
 categories:
 - 比特币主网
 tags:
-- 比特币
+- 时间锁
 ---
 
 

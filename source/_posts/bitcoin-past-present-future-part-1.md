@@ -7,8 +7,6 @@ excerpt: '往事并不如烟'
 categories:
 - 比特币主网
 tags:
-- 比特币
-- PoW
 - 密码朋克
 ---
 

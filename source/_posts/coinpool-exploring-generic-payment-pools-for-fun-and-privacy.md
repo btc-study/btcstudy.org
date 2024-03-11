@@ -5,7 +5,6 @@ date: '2022/06/15 19:55:44'
 cover: '../images/coinpool-exploring-generic-payment-pools-for-fun-and-privacy/image-20220615152424326.png'
 excerpt: '资金池构造能否作为比特币的 TLS、加强链上和链上的隐私性'
 tags:
-- Layer-2
 - joinpool
 ---
 

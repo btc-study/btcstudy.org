@@ -7,7 +7,6 @@ excerpt: 'BetterHash 所禁用的矿池缺陷介绍'
 categories:
 - 比特币主网
 tags:
-- 比特币
 - 矿池
 ---
 

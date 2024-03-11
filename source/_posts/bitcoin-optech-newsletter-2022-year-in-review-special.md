@@ -7,7 +7,9 @@ excerpt: '年终总结系列的续篇'
 categories:
 - 比特币主网
 tags:
-- 比特币
+- 交易池
+- covenant
+- 闪电网络
 ---
 
 

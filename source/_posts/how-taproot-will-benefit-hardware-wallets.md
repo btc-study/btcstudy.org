@@ -7,7 +7,6 @@ excerpt: 'Taproot 将带来更高效和更快的交易，会让网络更易用�
 categories:
 - 比特币主网
 tags:
-- 比特币
 - Taproot
 ---
 

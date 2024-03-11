@@ -6,7 +6,6 @@ cover: '../images/building-on-taproot-payment-pools-could-be-bitcoins-next-layer
 excerpt: '支付池可以让一群比特币用户共享一个 UTXO'
 tags:
 - joinpool
-- Layer-2
 ---
 
 

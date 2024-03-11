@@ -7,7 +7,8 @@ excerpt: '小小收款码有玄机'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- LNURL
+- BOLT12OLT12
 ---
 
 

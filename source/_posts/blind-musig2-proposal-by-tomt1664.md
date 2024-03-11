@@ -5,7 +5,6 @@ date: '2023/09/21 17:31:59'
 cover: ''
 excerpt: '改造 Musig2 以适应 Statechain'
 tags:
-- Statechain
 - 密码学
 ---
 

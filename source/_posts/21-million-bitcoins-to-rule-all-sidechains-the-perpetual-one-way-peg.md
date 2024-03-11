@@ -5,7 +5,6 @@ date: '2021/11/10 12:44:08'
 cover: '../images/21-million-bitcoins-to-rule-all-sidechains-the-perpetual-one-way-peg/JcZ1A8QYsoL'
 excerpt: '可以实验新技术，又无需发行新的投机资产'
 tags:
-- Layer-2
 - Spacechain
 ---
 

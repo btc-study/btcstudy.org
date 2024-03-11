@@ -7,7 +7,6 @@ excerpt: '从 P2SH 开始，介绍 Taproot 的升级含义'
 categories:
 - 比特币主网
 tags:
-- 比特币
 - Taproot
 ---
 

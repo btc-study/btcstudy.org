@@ -9,6 +9,9 @@ categories:
 tags:
 - 比特币
 - Jameson-Lopp
+- PoW
+- 点对点网络
+- 软分叉
 ---
 
 > *作者：Jameson Lopp*

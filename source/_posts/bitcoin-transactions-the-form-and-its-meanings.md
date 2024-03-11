@@ -5,8 +5,8 @@ date: '2021/10/09 17:48:44'
 cover: '../images/bitcoin-transactions-the-form-and-its-meanings/9KR12NWm7O.png'
 excerpt: '解释比特币交易的形式和工作原理'
 tags:
-- 比特币
 - 入门系列
+- UTXO
 ---
 
 

@@ -5,7 +5,6 @@ date: '2022/04/21 11:04:38'
 cover: '../images/mercury-wallet-review/-Review.png'
 excerpt: 'Mercury 钱包可以让用户即时发送和互换比特币，而且无需支付任何交易费'
 tags:
-- 钱包
 - Statechain
 ---
 

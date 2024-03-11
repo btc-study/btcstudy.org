@@ -5,7 +5,7 @@ date: '2022/03/04 23:11:02'
 cover: '../images/how-the-lighting-network-could-improve-encrypted-messaging/privacy.jpg'
 excerpt: '闪电网络原生的即时通讯协议可以提供更私密、更安全的加密通讯。但用户会切换过来吗？'
 tags:
-- 闪电网络
+- 洋葱消息
 ---
 
 

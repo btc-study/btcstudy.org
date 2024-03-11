@@ -6,7 +6,6 @@ cover: ''
 excerpt: '它可以直接表示你想表达的花费条件'
 tags:
 - Miniscript
-- 开发
 ---
 
 

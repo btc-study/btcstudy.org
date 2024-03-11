@@ -7,7 +7,6 @@ excerpt: '在闪电通道中嵌入 DLC 通道'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - Discreet-Log-Contract
 ---
 

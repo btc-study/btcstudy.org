@@ -7,8 +7,6 @@ excerpt: 'eltoo 的目标不是替代整个闪电网络技术栈，而是对原�
 categories:
 - 闪电网络
 tags:
-- 闪电网络
-- Layer-2
 - eltoo
 ---
 

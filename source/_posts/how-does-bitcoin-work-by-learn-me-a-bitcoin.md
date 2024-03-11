@@ -6,7 +6,6 @@ cover: '../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/bitcoin.png'
 excerpt: '使用它，你可以跟任何人互相支付，而且不需要任何权威机构给你们登记账户，也不需要权威机构来处理你们的支付'
 tags:
 - 比特币
-- 入门系列
 - Greg-Walker
 ---
 
@@ -83,7 +82,7 @@ tags:
 
 简单来说，节点会从交易池中手机交易，放到一个叫做 “[**区块**](https://learnmeabitcoin.com/beginners/blocks)” 的 “容器”（数据结构）中，然后使用电脑的运算能力、尝试把这个包含交易的区块添加到区块链上。
 
-![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/_mining.png)
+![img](../images/how-does-bitcoin-work-by-learn-me-a-bitcoin/mining.png)
 
 那使用运算能力来干什么呢？要想把这个区块添加到区块链上，你要把这个包含交易的区块作为输入来执行一类叫做 “[**哈希函数**](https://learnmeabitcoin.com/technical/hash-function)” 的程序。哈希函数基本上就是一种微型计算机程序，它可以接收任何数据并将收到的数据打乱、混淆成一个完全随机（但独一无二）的数字（译者注：这里的 “独一无二” 是指，在理想状态下，一个输出值只对应着一个输入值，即只有某一个输出才能产生某一个输出，或者说找出两个输入能产生同一个输出的概率是极低的）。
 

@@ -7,7 +7,7 @@ excerpt: '连锁支付在闪电网络中是如何实现的？'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- 通道构造
 ---
 
 > *作者：Magomed Aliev*

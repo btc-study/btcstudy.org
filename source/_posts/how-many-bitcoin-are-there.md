@@ -6,7 +6,6 @@ cover: '../images/how-many-bitcoin-are-there/2205109_inflation_rate_graphic_1920
 excerpt: '比特币供应表并非因为软件如此规定而可信'
 tags:
 - 比特币
-- 入门系列
 ---
 
 

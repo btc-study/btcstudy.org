@@ -7,7 +7,7 @@ excerpt: 'BMM 是一种让其它区块链将挖矿工作外包给比特币区块
 categories:
 - 比特币主网
 tags:
-- 侧链
+- Spacechain
 - 合并挖矿
 - eltoo
 - covenant

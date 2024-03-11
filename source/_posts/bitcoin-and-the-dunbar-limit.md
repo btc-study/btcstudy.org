@@ -5,8 +5,8 @@ date: '2021/12/18 23:50:57'
 cover: '../images/bitcoin-and-the-dunbar-limit/E_5jpy_.png'
 excerpt: '比特币将在很多方面大幅提高我们的合作效率'
 tags:
-- 比特币
 - Hugo-Nguyen
+- 货币
 ---
 
 

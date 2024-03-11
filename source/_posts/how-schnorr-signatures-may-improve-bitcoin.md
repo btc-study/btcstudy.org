@@ -9,7 +9,6 @@ categories:
 tags:
 - 密码学
 - Taproot
-- 开发
 mathjax: true
 ---
 

@@ -7,7 +7,6 @@ excerpt: '解决一款钱包只能用一个 LSP 的问题'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - LSP
 ---
 

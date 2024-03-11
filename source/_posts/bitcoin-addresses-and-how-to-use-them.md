@@ -7,9 +7,8 @@ excerpt: '如何生成一个有效的地址？如何收发交易？'
 categories:
 - 比特币主网
 tags:
-- 比特币
-- 钱包
 - 入门系列
+- 钱包
 ---
 
 > *作者：SatoshiLabs*

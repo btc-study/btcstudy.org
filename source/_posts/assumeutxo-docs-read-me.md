@@ -5,7 +5,7 @@ date: '2023/12/27 17:37:49'
 cover: ''
 excerpt: ''
 tags:
-- IBD
+- AssumeUTXO
 ---
 
 
