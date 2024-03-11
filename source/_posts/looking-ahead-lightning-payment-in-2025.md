@@ -9,7 +9,6 @@ categories:
 tags:
 - 通道拼接
 - BOLT12
-- LSPLT12
 - LSP
 ---
 

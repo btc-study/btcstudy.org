@@ -7,7 +7,7 @@ excerpt: '比较 taproot 与隔离见证 v0 的经济性'
 categories:
 - 比特币主网
 tags:
-- 隔离见证
+- 密码学
 - Taproot
 ---
 

@@ -7,8 +7,9 @@ excerpt: '在边界之外，是不可能实现的东西，但在边界之内，�
 categories:
 - 比特币主网
 tags:
-- 比特币
 - 开发
+- 比特币脚本
+- Discreet-Log-Contract
 ---
 
 

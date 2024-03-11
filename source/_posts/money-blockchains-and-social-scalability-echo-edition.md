@@ -8,7 +8,6 @@ categories:
 - 货币理念
 tags:
 - Nick-Szabo
-- 比特币
 - 货币
 ---
 

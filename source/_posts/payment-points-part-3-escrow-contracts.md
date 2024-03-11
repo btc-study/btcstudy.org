@@ -7,7 +7,6 @@ excerpt: '闪电网络上的托管合约'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - PTLC
 ---
 

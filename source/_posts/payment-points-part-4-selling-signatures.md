@@ -7,7 +7,6 @@ excerpt: '免信任的签名销售'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - PTLC
 ---
 

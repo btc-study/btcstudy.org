@@ -5,7 +5,7 @@ date: '2022/04/15 11:57:14'
 cover: '../images/neutrino-what-is-it-and-why-we-need-it/200x675.jpg'
 excerpt: 'Neutrino 是什么？跟以前的全节点有何区别？'
 tags:
-- BIP158
+- 轻客户端
 ---
 
 

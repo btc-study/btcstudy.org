@@ -8,7 +8,7 @@ categories:
 - 闪电网络
 tags:
 - LNURL
-- BOLT12OLT12
+- BOLT12
 ---
 
 

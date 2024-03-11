@@ -7,7 +7,6 @@ excerpt: '不会卡住的闪电网络支付'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - PTLC
 ---
 

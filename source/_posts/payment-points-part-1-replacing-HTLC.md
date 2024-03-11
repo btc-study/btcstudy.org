@@ -7,7 +7,6 @@ excerpt: '使用点和标量，我们可以隐去支付交易间的关联，同�
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - PTLC
 ---
 
