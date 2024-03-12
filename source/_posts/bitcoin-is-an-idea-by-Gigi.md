@@ -5,7 +5,6 @@ date: '2021/10/26 15:48:56'
 cover: '../images/bitcoin-is-an-idea-by-Gigi/history.png'
 excerpt: '真正无可阻挡的是比特币这种思想本身'
 tags:
-- 比特币
 - 密码朋克
 - Gigi
 ---
