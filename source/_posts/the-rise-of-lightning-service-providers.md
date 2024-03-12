@@ -7,7 +7,7 @@ excerpt: '何以需要 LSP 以及 LSP 的未来'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- LSP
 ---
 
 

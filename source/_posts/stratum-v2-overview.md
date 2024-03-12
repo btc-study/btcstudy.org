@@ -5,7 +5,7 @@ date: '2023/11/30 18:16:41'
 cover: ''
 excerpt: 'Stratum V2 协议套件由 4 个协议组成'
 tags:
-- 挖矿
+- 矿池
 ---
 
 

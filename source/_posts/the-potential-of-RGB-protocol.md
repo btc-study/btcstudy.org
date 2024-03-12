@@ -6,6 +6,7 @@ cover: ''
 excerpt: 'RGB 的优点，以及尚待探究的领域'
 tags:
 - RGB
+- 链外合约系统
 ---
 
 

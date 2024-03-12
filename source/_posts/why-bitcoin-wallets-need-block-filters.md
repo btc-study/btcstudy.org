@@ -8,7 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 钱包
-- BIP158
+- 区块过滤器
 ---
 
 

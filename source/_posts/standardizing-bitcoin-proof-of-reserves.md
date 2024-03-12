@@ -5,7 +5,7 @@ date: '2022/04/15 21:32:49'
 cover: '../images/standardizing-bitcoin-proof-of-reserves/20x1080.jpg'
 excerpt: '创建一个能够为区块链行业提供最佳标准保证金证明实践的解决方案'
 tags:
-- 生态
+- 联盟侧链
 ---
 
 

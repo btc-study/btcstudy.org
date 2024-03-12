@@ -5,8 +5,6 @@ date: '2022/02/10 17:52:54'
 cover: ''
 excerpt: '本文介绍了一个完全去中心化的双向锚定侧链设计。这种新型侧链需要通过软分叉激活'
 tags:
-- Layer-2
-- utreexo
 - Softchain
 - 欺诈证明
 ---

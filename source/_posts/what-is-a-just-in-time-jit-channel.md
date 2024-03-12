@@ -7,7 +7,7 @@ excerpt: '在闪电支付到达时才创建通道'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- JIT-通道
 ---
 
 

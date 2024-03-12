@@ -5,7 +5,6 @@ date: '2022/08/19 12:34:42'
 cover: ''
 excerpt: '什么是 PTLC？为何它能取代 HTLC？'
 tags:
-- 闪电网络
 - PTLC
 ---
 

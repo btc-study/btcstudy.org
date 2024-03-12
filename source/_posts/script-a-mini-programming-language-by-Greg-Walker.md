@@ -7,9 +7,9 @@ excerpt: 'Script 是比特币所用的一种微型编程语言，为输出提供
 categories:
 - 比特币主网
 tags:
-- 比特币
-- 开发
+- 比特币脚本
 - Greg-Walker
+- 开发
 ---
 
 

@@ -7,8 +7,8 @@ excerpt: 'Taproot 通道的承诺交易的结构'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - Taproot
+- 通道构造
 ---
 
 

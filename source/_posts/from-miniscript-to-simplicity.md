@@ -5,7 +5,7 @@ date: '2022/12/01 10:23:16'
 cover: ''
 excerpt: '树形结构是未来的发展方向'
 tags:
-- Miniscript
+- Simplicity
 - 开发
 ---
 

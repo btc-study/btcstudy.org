@@ -7,8 +7,7 @@ excerpt: '分层通道之于通道容量，如同闪电网络之于比特币'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
-- 通道管理
+- joinpool
 ---
 
 

@@ -6,6 +6,8 @@ cover: ''
 excerpt: 'LSP 可以在到期之后自己扫走链上的 UTXO'
 tags:
 - covenant
+- CTV
+- 通道工厂
 ---
 
 

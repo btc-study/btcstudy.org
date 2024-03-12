@@ -7,7 +7,7 @@ excerpt: '将铭文完全放在链下'
 categories:
 - 比特币主网
 tags:
-- 生态
+- 链外合约系统
 ---
 
 

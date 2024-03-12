@@ -7,7 +7,7 @@ excerpt: 'Lightning SDK 拉动需求，LSP 负责供应'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- LSP
 ---
 
 

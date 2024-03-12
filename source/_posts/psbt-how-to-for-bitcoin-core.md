@@ -6,7 +6,6 @@ cover: ''
 excerpt: 'PSBT 是尚未完全签好名的比特币交易的传输格式'
 tags:
 - PSBT
-- 开发
 ---
 
 

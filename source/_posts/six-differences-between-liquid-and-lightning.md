@@ -5,9 +5,8 @@ date: '2022/08/29 14:32:13'
 cover: '../images/six-differences-between-liquid-and-lightning/080px-1.png'
 excerpt: '比较比特币的两大 Layer-2 协议'
 tags:
-- 闪电网络
-- 侧链
-- 入门系列
+- 联盟侧链
+- 闪电网络入门
 ---
 
 

@@ -5,7 +5,6 @@ date: '2023/01/12 11:19:57'
 cover: ''
 excerpt: '在一笔 statechain 资金上建立一条闪电通道'
 tags:
-- 闪电网络
 - Statechain
 ---
 

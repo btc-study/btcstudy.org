@@ -7,7 +7,6 @@ excerpt: '闪电网络让我们可以将支付转移到链下，但没有做到�
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - covenant
 ---
 

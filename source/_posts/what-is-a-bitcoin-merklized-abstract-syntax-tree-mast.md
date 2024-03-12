@@ -7,7 +7,6 @@ excerpt: '默克尔化抽象语法树是一项为比特币提议的升级，可�
 categories:
 - 比特币主网
 tags:
-- 比特币
 - Taproot
 ---
 

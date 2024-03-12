@@ -7,8 +7,8 @@ excerpt: '作为一次学习的经历，SegWit 告诉了我们很多关于比特
 categories:
 - 比特币主网
 tags:
-- 比特币
 - 隔离见证
+- 文化
 ---
 
 > *作者：SatoshiLabs*

@@ -7,7 +7,7 @@ excerpt: '让脚本树覆盖一组计算的每一个步骤'
 categories:
 - 比特币主网
 tags:
-- 开发
+- BitVM
 ---
 
 

@@ -7,8 +7,7 @@ excerpt: '使用跟 LSP 的合约接收链上资金'
 categories:
 - 闪电网络
 tags:
-- 开发
-- 通道管理
+- LSP
 ---
 
 

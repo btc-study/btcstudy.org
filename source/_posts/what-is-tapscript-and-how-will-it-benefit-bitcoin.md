@@ -6,6 +6,7 @@ cover: '../images/what-is-tapscript-and-how-will-it-benefit-bitcoin/2d-LDhg.png'
 excerpt: '验证 taproot 脚本，支持添加操作码来增强比特币的智能合约功能，还更改了一些针对资源要求的限制'
 categories:
 tags:
+- Taproot
 ---
 
 

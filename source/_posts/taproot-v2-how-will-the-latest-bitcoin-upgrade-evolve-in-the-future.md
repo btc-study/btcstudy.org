@@ -7,7 +7,8 @@ excerpt: 'Taproot 已经让比特币变得更美好了。但之后呢？'
 categories:
 - 比特币主网
 tags:
-- 生态
+- CISA
+- eltoo
 ---
 
 

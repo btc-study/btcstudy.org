@@ -5,7 +5,7 @@ date: '2021/10/23 11:20:22'
 cover: '../images/what-types-of-mnemonic-seeds-are-used-in-bitcoin/bitcoin.jpg'
 excerpt: '助记词存在的意义是什么？不同类型的助记词之间有何区别？'
 tags:
-- 钱包
+- 入门系列
 ---
 
 

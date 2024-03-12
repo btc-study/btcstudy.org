@@ -7,6 +7,7 @@ excerpt: 'Script 操作码的 失败/成功 有不同的含义，所以脚本难
 categories:
 - 比特币主网
 tags:
+- 比特币脚本
 - Miniscript
 ---
 

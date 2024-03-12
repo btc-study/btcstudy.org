@@ -5,9 +5,7 @@ date: '2022/07/28 16:34:25'
 cover: ''
 excerpt: 'Softchain 跟主链的共识层有更深的联系，因此是把双刃剑'
 tags:
-- 侧链
 - Softchain
-- 欺诈证明
 ---
 
 

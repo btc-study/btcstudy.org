@@ -5,7 +5,7 @@ date: '2023/02/11 11:10:22'
 cover: ''
 excerpt: 'Shamir 私钥分割方案可能会让客户暴露在更多风险之中'
 tags:
-- 钱包
+- Shamir 备份
 ---
 
 

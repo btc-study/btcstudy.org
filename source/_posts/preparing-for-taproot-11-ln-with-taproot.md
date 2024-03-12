@@ -7,7 +7,7 @@ excerpt: '在这篇文章中，我们将介绍 taproot 支持 LN 实现的两个
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- 通道构造
 - Taproot
 ---
 

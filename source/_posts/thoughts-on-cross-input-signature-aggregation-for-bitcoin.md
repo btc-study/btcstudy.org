@@ -7,7 +7,6 @@ excerpt: '可供运用的技术和集成的路径'
 categories:
 - 比特币主网
 tags:
-- 比特币
 - 密码学
 - CISA
 ---

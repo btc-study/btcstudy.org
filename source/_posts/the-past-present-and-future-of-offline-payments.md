@@ -7,7 +7,8 @@ excerpt: '我们已在昨天的未来'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- LNURL
+- 异步支付
 ---
 
 

@@ -5,7 +5,6 @@ date: '2021/10/09 12:00:40'
 cover: '../images/statechains-sending-keys-not-coins-to-scale-bitcoin-off-chain/echains.jpg'
 excerpt: 'Statechain 是一种新的二层协议，颠覆了比特币交易的概念。'
 tags:
-- Layer-2
 - Statechain
 ---
 

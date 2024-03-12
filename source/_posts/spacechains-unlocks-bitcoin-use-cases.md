@@ -6,7 +6,6 @@ cover: ''
 excerpt: 'Spacechain 功能有限，但也有一些有趣的用途'
 tags:
 - Spacechain
-- Layer-2
 ---
 
 

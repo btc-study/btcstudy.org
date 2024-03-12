@@ -7,7 +7,6 @@ excerpt: 'SNICKER 可以让用户在不进行交互的情况下完成比特币�
 categories:
 - 比特币主网
 tags:
-- 隐私性
 - SNICKER
 ---
 

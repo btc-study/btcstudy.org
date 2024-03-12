@@ -7,7 +7,7 @@ excerpt: '本文将从技术角度简要介绍 Taproot 的升级内容，并以�
 categories:
 - 比特币主网
 tags:
-- 比特币
+- 比特币脚本
 - Taproot
 ---
 

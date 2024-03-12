@@ -7,7 +7,6 @@ excerpt: '使用同一个软分叉集体引进的方式，使得这些 BIP 所�
 categories:
 - 比特币主网
 tags:
-- 比特币
 - Taproot
 mathjax: true
 ---

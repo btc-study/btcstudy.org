@@ -7,7 +7,7 @@ excerpt: '在遇到暂缓兑付发票时，支付的接收方不会立即释放�
 categories:
 - 闪电网络
 tags:
-- 闪电网络
+- Hold-Invoice
 ---
 
 

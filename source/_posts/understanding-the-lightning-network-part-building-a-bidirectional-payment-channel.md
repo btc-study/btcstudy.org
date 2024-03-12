@@ -7,8 +7,7 @@ excerpt: "列举必要的模块并展示这些模块如何能组合起来创建 
 categories:
 - 闪电网络
 tags:
-- 比特币
-- 闪电网络
+- 通道构造
 ---
 
 > *作者：Aaron Van Wirdum*

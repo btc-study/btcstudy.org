@@ -5,7 +5,6 @@ date: '2020/08/24 09:58:25'
 cover: '../images/what-is-p2p-networking-by-Haseeb-Qureshi/47cdfdbbfd5c48f3b901aaf3537dc3d6.png'
 excerpt: '我们将在本文探讨比特币的网络模型，以及它是如何实现它的两大主要目标的：去中心化和抗审查'
 tags:
-- 比特币
 - 点对点网络
 ---
 

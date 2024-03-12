@@ -7,7 +7,6 @@ excerpt: '学习如何辨别、解码和创建闪电网络发票'
 categories:
 - 闪电网络
 tags:
-- 闪电网络
 - LNURL
 ---
 
