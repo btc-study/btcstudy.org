@@ -5,7 +5,7 @@ date: '2023/03/14 11:57:49'
 cover: ''
 excerpt: '在 Jade 身上，可以看到 Blockstream 团队对安全与开源的独特思考'
 tags:
-- 实践
+- 产品
 ---
 
 

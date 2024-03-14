@@ -6,16 +6,20 @@ cover: ''
 excerpt: 'Phoenix 是非托管型闪电网络钱包，提供媲美传统比特币钱包的优质用户体验'
 tags:
 - LSP
+- 零确认通道
+- 产品
 ---
 
 
 > *作者：ACINQ*
-> 
+>
 > *来源：<https://medium.com/@ACINQ/introducing-phoenix-5c5cc76c7f9e>*
+>
+> *原文首发于 2019 年 12 月 13 日*
 
 
 
-原文首发于 2019 年 12 月 13 日
+
 
 今天，第二代移动端闪电网络钱包 Phoenix 正式上线。
 

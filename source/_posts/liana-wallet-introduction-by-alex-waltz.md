@@ -5,8 +5,7 @@ date: '2023/05/24 11:37:27'
 cover: ''
 excerpt: 'Miniscript、时间锁、多路径'
 tags:
-- 钱包
-- Miniscript
+- 产品
 - 描述符
 ---
 

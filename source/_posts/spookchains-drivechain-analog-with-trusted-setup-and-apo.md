@@ -7,6 +7,7 @@ excerpt: '我认为这些关于活性和诚实性的假设只是不同的 “复
 tags:
 - covenant
 - Drivechain
+- eltoo
 ---
 
 
