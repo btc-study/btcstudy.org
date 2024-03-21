@@ -19,14 +19,13 @@ tags:
 
 为什么你应该在节点上运行比特币隐藏服务（Bitcoin hidden service）？
 
-- 这会提升其他通过 Tor 网络来匿名化行动的比特币用户的隐私性。具体来说，这是对许多 “网络监控者” 攻击的对抗措施（这些攻击可在 Open Bitcoin Privacy 项目的[威胁模型](https://github.com/OpenBitcoinPrivacyProject/wallet-ratings/blob/master/report-02/threat model.wiki)页面了解）。
-- 这使你自己的节点对 Sybil 攻击和网络分隔更加健壮。
+- 这会提升其他通过 Tor 网络来匿名化行动的比特币用户的隐私性。具体来说，这是对许多 “网络监控者” 攻击的对抗措施（这些攻击可在 Open Bitcoin Privacy 项目的<a href="https://github.com/OpenBitcoinPrivacyProject/wallet-ratings/blob/master/report-02/threat model.wiki">威胁模型</a>页面了解）。
+- 这使你自己的节点对女巫攻击和网络分隔更加健壮。
 - 运行它不需要更多的计算资源，只需要一次性的配置成本。
 
 ![img](../images/how-to-run-bitcoin-as-a-tor-hidden-service-on-ubuntu/xbxlRvg.png)
 
 <p style="text-align:center">- 只有 2.6% 的可触达节点正在运行 Tor 隐藏服务。数据来自 https://bitnodes.21.co -</p>
-
 
 [这里有一份文档](https://github.com/bitcoin/bitcoin/blob/master/doc/tor.md)，已经列出了你可以将比特币节点配置成使用 Tor 网络的几种方法；出于本指南的目的，我们专注于第三个选项：“自动监听 Tor 网络”。
 
@@ -47,8 +46,12 @@ username@host:~$ sudo vim /etc/apt/sources.list
 
 为这个文件写入这两行文字，并保存下来：
 
+```
 deb http://deb.torproject.org/torproject.org <codename> main
 deb-src http://deb.torproject.org/torproject.org <codename> main
+```
+
+
 
 ```sh
 username@host:~$ gpg --keyserver keys.gnupg.net --recv 886DDD89
@@ -134,7 +137,7 @@ username@host:~$ tail -f ~/.bitcoin/debug.log | grep tor
 2016-08-18 19:51:48 tor: Add onion failed with unrecognized command (You probably need to upgrade Tor)
 ```
 
-那说明你没有正确配置 Tor 的代码库（译者注：安装的来源出了问题），而且意外地从 Ubuntu 的过时仓库中安然了 Tor。你需要使用 “sudo apt-get remove tor”，然后在重新安装前重新配置代码库。
+那说明你没有正确配置 Tor 的代码库（译者注：安装的来源出了问题），而且意外地从 Ubuntu 的过时仓库中安装了 Tor。你需要使用 “sudo apt-get remove tor”，然后在重新安装前重新配置代码库。
 
 如果你看到这个错误：
 

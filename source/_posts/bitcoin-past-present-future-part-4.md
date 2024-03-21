@@ -284,7 +284,7 @@ Blockchainlab 中的裂痕变得不可弥补，而祖科也不再尝试维持派
 
 ### 纽约协定和 Bitcoin Cash
 
-2017 年 5 月 22 日，Consensus（共识）大会（就是嘉文被巴特林嘲笑的那个会议）的另一次会议举行；在会议上，组织者 Coindesk 宣布他们已经解决了可扩展性争议。他们宣布，他们已经让所有的比特币大公司形成了合意：接受硬分叉形式的隔离见证。这个一致意见被称为 “[纽约协定](https://en.bitcoinwiki.org/wiki/New_York_Agreement#:~:text=The agreement intended to put,then doubling the block size)”。在接下来的两天里，大约 50 个创业公司似乎表示支持这个决定，其中包括 Blockstream、Lightning Labs 这样的公司。荒谬的是，这其中有一些纯粹小区块主义的公司；实际上，这样的公司多到许多人公开否认这条新闻，因为他们从未签名，也没有接受这样的共识。不久之后真相大白，一个 Coindesk 的员工没有询问任何人就直接通报这些创业公司的会员身份。50 个公司中大概有 20 个是错的，他们根本没有同意纽约协定。
+2017 年 5 月 22 日，Consensus（共识）大会（就是嘉文被巴特林嘲笑的那个会议）的另一次会议举行；在会议上，组织者 Coindesk 宣布他们已经解决了可扩展性争议。他们宣布，他们已经让所有的比特币大公司形成了合意：接受硬分叉形式的隔离见证。这个一致意见被称为 “<a href="https://en.bitcoinwiki.org/wiki/New_York_Agreement#:~:text=The agreement intended to put,then doubling the block size">纽约协定</a>”。在接下来的两天里，大约 50 个创业公司似乎表示支持这个决定，其中包括 Blockstream、Lightning Labs 这样的公司。荒谬的是，这其中有一些纯粹小区块主义的公司；实际上，这样的公司多到许多人公开否认这条新闻，因为他们从未签名，也没有接受这样的共识。不久之后真相大白，一个 Coindesk 的员工没有询问任何人就直接通报这些创业公司的会员身份。50 个公司中大概有 20 个是错的，他们根本没有同意纽约协定。
 
 既是开发者也是矿工的 James Hilliard（詹姆斯·西利亚德）通过 *BIP 91 – Reduced threshold Segwit MASF（减低强制激活隔离见证的门槛）*给所有支持隔离见证硬分叉的人喊话：“你也想要隔离见证，我也想要隔离见证。是用（吴忌寒不喜欢的）软分叉来实现，还是用硬分叉实现、让它通过，这就是争议的核心。”
 
