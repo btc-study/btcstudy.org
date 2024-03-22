@@ -9,7 +9,7 @@ categories:
 tags:
 - Taproot
 - 开发
-- 密码学
+- MuSig2
 ---
 
 

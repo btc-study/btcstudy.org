@@ -7,8 +7,7 @@ excerpt: 'Schnorr 签名背后的直觉'
 categories:
 - 比特币主网
 tags:
-- 密码学
-- Taproot
+- Schnorr-签名
 mathjax: true
 ---
 

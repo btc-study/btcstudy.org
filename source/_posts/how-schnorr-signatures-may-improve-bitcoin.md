@@ -8,7 +8,7 @@ categories:
 - 比特币主网
 tags:
 - 密码学
-- Taproot
+- Schnorr-签名
 mathjax: true
 ---
 

@@ -7,7 +7,7 @@ excerpt: '选择性 RBF 和全面 RBF 的优缺点'
 categories:
 - 比特币主网
 tags:
-- 交易池
+- 全面-RBF
 ---
 
 

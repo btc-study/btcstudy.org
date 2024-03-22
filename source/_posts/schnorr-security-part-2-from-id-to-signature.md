@@ -6,6 +6,7 @@ cover: '../images/schnorr-security-part-2-from-id-to-signature/800x450.png'
 excerpt: '会将身份证明方案转化为一套签名方案，并论证我们的转换的结果会是一个正确的签名协议'
 tags:
 - 密码学
+- Schnorr-签名
 ---
 
 

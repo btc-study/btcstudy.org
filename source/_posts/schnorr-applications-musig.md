@@ -5,7 +5,7 @@ date: '2021/11/29 16:01:17'
 cover: '../images/schnorr-applications-musig/security_flat_logo_orange.png'
 excerpt: 'Schnorr 的一种多签名协议'
 tags:
-- 密码学
+- Schnorr-签名
 mathjax: true
 ---
 

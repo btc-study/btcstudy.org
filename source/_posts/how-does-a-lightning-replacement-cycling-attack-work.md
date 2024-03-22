@@ -7,7 +7,7 @@ excerpt: '交易池作为 Layer 2 协议的接口'
 categories:
 - 闪电网络
 tags:
-- 交易池
+- 尽责披露
 ---
 
 

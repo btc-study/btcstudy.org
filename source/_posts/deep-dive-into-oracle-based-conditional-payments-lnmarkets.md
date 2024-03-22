@@ -6,7 +6,6 @@ cover: ''
 excerpt: '朝向可验证性，见证数据加密方案的演化'
 tags:
 - Discreet-Log-Contract
-- 密码学
 mathjax: true
 ---
 

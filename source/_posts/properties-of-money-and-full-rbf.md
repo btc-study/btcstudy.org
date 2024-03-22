@@ -7,7 +7,7 @@ excerpt: '是优化还是交换？'
 categories:
 - 比特币主网
 tags:
-- 交易池
+- 全面-RBF
 - 货币
 ---
 

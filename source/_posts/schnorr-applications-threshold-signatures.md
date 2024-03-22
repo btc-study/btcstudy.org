@@ -5,7 +5,7 @@ date: '2021/12/08 15:22:42'
 cover: '../images/schnorr-applications-musig/security_flat_logo_orange.png'
 excerpt: '门限签名的用途以及两种构造 Schnorr 门限签名的方法'
 tags:
-- 密码学
+- Schnorr-签名
 ---
 
 

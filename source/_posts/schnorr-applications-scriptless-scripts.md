@@ -7,7 +7,7 @@ excerpt: '隐形脚本是一种合约，但由实际上并不包含任何代码�
 categories:
 - 比特币主网
 tags:
-- 密码学
+- Schnorr-签名
 - 开发
 - PTLC
 mathjax: true

@@ -7,7 +7,7 @@ excerpt: '可以一次性验证许多签名，并且比一个一个验证它们�
 categories:
 - 比特币主网
 tags:
-- 密码学
+- Schnorr-签名
 - CISA
 mathjax: true
 ---

@@ -7,7 +7,7 @@ excerpt: 'BitGo 实现 MuSig2 的经历'
 categories:
 - 比特币主网
 tags:
-- 密码学
+- MuSig2
 - 开发
 ---
 

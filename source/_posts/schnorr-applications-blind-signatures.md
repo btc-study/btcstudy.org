@@ -5,7 +5,7 @@ date: '2021/12/13 14:10:13'
 cover: '../images/schnorr-applications-blind-signatures/bitsmap.png'
 excerpt: '除了必要的信息、对其它信息一无所知的服务器'
 tags:
-- 密码学
+- Schnorr-签名
 mathjax: true
 ---
 

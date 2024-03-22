@@ -5,7 +5,7 @@ date: '2022/01/18 18:59:09'
 cover: '../images/schnorr-musig2-by-popeller/sign.png'
 excerpt: '近年来，最有前景的 Schnorr 多签名协议就是 MuSig2'
 tags:
-- 密码学
+- MuSig2
 mathjax: true
 ---
 

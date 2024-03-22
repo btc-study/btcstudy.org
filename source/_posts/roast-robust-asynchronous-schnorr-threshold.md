@@ -5,7 +5,7 @@ date: '2022/05/27 15:17:03'
 cover: '../images/roast-robust-asynchronous-schnorr-threshold/CZK9f_g.png'
 excerpt: '只要诚实签名者的数量达到阈值，就一定能获得有效的签名'
 tags:
-- 密码学
+- ROAST
 ---
 
 

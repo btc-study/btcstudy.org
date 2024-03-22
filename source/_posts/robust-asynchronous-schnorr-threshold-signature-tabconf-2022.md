@@ -5,7 +5,7 @@ date: '2022/11/05 01:02:20'
 cover: ''
 excerpt: '要实现 ROAST，你只需要聪明地调用 FROST 协议'
 tags:
-- 密码学
+- ROAST
 mathjax: true
 ---
 
