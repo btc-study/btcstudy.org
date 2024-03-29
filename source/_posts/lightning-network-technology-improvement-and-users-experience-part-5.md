@@ -140,6 +140,8 @@ Lightning Pool 的技术详述可见他们的论文 <sup><a href="#note7" id="ju
 
 （未完）
 
+> *[续篇见此处](https://www.btcstudy.org/2024/03/04/lightning-network-technology-improvement-and-users-experience-part-6/)*
+
 ## 脚注
 
 1.<a id="note1"> </a>https://bitcoinops.org/zh/newsletters/2024/02/07/#txid-segwit <a href="#jump-1">↩</a>

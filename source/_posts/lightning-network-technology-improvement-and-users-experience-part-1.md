@@ -120,7 +120,7 @@ tags:
 
 （未完）
 
-> *[续篇见此处](https://www.btcstudy.org/2024/02/07/lightning-network-technology-improvement-and-users-experience-part-2/#Taproot-%E4%B8%8E%E9%97%AA%E7%94%B5%E7%BD%91%E7%BB%9C%E7%9A%84%E6%94%B9%E8%BF%9B)*
+> *[续篇见此处](https://www.btcstudy.org/2024/02/07/lightning-network-technology-improvement-and-users-experience-part-2/)*
 
 ## 脚注
 
