@@ -6,6 +6,7 @@ cover: ''
 excerpt: '将花费自 MuSig 钱包的 PSBT 的签名流程补充完整'
 tags:
 - MuSig2
+mathjax: true
 ---
 
 
