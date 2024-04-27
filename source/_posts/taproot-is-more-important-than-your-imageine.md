@@ -1,6 +1,6 @@
 ---
 title: '打浦路（Taproot）比你想的宽'
-author: 'Anony'
+author: '阿剑'
 date: '2021/10/27 12:23:34'
 cover: '../images/how-taproot-will-benefit-hardware-wallets/a4f439b91d004371960f738cf0bbe116.png'
 excerpt: '本文将从技术角度简要介绍 Taproot 的升级内容，并以此体现比特币的发展方向'
@@ -12,7 +12,7 @@ tags:
 ---
 
 
-> *作者：Anony*
+> *作者：阿剑*
 
 
 
