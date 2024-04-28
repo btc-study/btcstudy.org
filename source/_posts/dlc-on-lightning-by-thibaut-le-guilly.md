@@ -68,7 +68,7 @@ DLC 乍看起来可能跟闪电通道很像，但是它并不使用从注资交�
 
 ![img](../images/dlc-on-lightning-by-thibaut-le-guilly/rinQigX8y2T.png)
 
-<p style="text-align:center">- 链上 CDL 的交易结构 -</p>
+<p style="text-align:center">- 链上 DLC 的交易结构 -</p>
 
 
 ### DLC 通道
@@ -94,7 +94,7 @@ DLC 乍看起来可能跟闪电通道很像，但是它并不使用从注资交�
 
 我们已经解释完了所有的基本模块，现在我们来看看如何在闪电通道中嵌入一个 DLC 通道。
 
-第一种明显的思路是在闪电通道的承诺交易中增加一个输出，以形成一个 DLC 通道。然而，这就意味着，每一次我们更新承诺交易的时候，DLC 的所有适配器签名都要重新计算（以及重新验证），这对于拥有大量可能结果的合约来说是非常昂贵的（这个问题可以靠 SIGHASH_NOINPUT 以及类型的升级修复）。为避免这一点，我们引入了一种 “*分割交易*”。它会花费注资交易的输出并形成两个输出：一个用于闪电通道，一个用于 DLC（可以通过增加输入来同时开启多个 DLC 通道、同时执行多个合约）。为了能够将通道恢复成 “标准” 的闪电通道，，我们使用[跟 DLC 通道同样的、基于适配器签名的机制](https://docs.google.com/document/d/1SndejwtOQC93BieINox2Gg5HtnUgFcLTVQODL8MP5Z4/edit#heading=h.niw3p88jfsaz)，让分割交易变成可撤销的。
+第一种明显的思路是在闪电通道的承诺交易中增加一个输出，以形成一个 DLC 通道。然而，这就意味着，每一次我们更新承诺交易的时候，DLC 的所有适配器签名都要重新计算（以及重新验证），这对于拥有大量可能结果的合约来说是非常昂贵的（这个问题可以靠 SIGHASH_NOINPUT 以及类型的升级修复）。为避免这一点，我们引入了一种 “*分割交易*”。它会花费注资交易的输出并形成两个输出：一个用于闪电通道，一个用于 DLC（可以通过增加输入来同时开启多个 DLC 通道、同时执行多个合约）。为了能够将通道恢复成 “标准” 的闪电通道，我们使用[跟 DLC 通道同样的、基于适配器签名的机制](https://docs.google.com/document/d/1SndejwtOQC93BieINox2Gg5HtnUgFcLTVQODL8MP5Z4/edit#heading=h.niw3p88jfsaz)，让分割交易变成可撤销的。
 
 不过，这样一来闪电通道又会出问题。为了让一方能够到欺诈的另一方（广播已被撤销的分割交易）作出反应，分割交易需要带有时间锁以阻止立即花费。但是，[闪电网络的规范已经用到了承诺交易的 nLockTime 和 nSequence 字段](https://github.com/lightning/bolts/blob/master/03-transactions.md#commitment-transaction)，以指定承诺号。为了解决这个问题，我们在分割交易与闪电通道承诺交易之间插入了一个 *粘合交易*，以实施一个相对时间锁（感谢 Matt Corallo 提出了这个简单的解决方案）。注意，这实际上是一个工程问题，可以通过为承诺交易使用不同的规范来解决（但这将需要闪电网络实现加入更多变更以支持它）。
 
