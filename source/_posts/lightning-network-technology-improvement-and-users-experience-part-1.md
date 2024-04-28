@@ -1,6 +1,6 @@
 ---
 title: '闪电网络：技术与用户体验（一）：用户体验的基本元素'
-author: 'Annoy'
+author: 'Anony'
 date: '2024/01/25 19:04:38'
 cover: ''
 excerpt: '将用户体验与技术和设计关联起来'
