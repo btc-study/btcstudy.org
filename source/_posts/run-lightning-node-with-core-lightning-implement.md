@@ -125,6 +125,10 @@ Core Lightning 的说明书的 [Installation](https://www.btcstudy.org/2021/11/0
 lightningd --network=bitcoin --log-level=debug
 ```
 
+> **2024 年 5 月 7 日更新**：
+>
+> 此处 `log-level` 标签的作用是指定日志的详尽程度，一共分为：io、debug、info、unusual、broken 五个等级，详尽程度依次递减。`debug` 较为详尽，并不适合日常运行；日常运行可以使用 `info` 模式。
+
 你会在屏幕上看到程序打印出许多信息，表示一个闪电节点已经启动。请确保你的 Bitcoin Core（`bitcoind`）在运行，否则这条命令可能失败。
 
 接下来，我们要尝试配置 Core Lightning 的两个部分：`lightningd`（Core Lightning 闪电节点后台）以及 `lighting-cli`（Core Lightning 闪电节点命令行控制工具）。
@@ -145,12 +149,16 @@ bitcoin-rpcpassword=<你在 bitcoin core 的配置文件中指明的 rpc 口令>
 
 lightning-dir=<你用来存储闪电节点资料的位置> # 默认为 `<你的用户名>/.lightning`
 
-log-level=debug #可选
+log-level=info #可选
 ```
 
 第一行告诉 lightningd，它将运行在比特币主网上。而后续两行跟 rpc 相关的信息，则是告诉它， 为了跟 Bitcoin Core 通信，它要使用什么样的用户名和口令；这两行必须与 Bitcoin Core 配置文件中的一致，否则它就无法使用 Bitcoin Core 了。`lightning-dir` 以及 `log-level` 都是可选项。
 
 其余配置选项可见上述说明书。
+
+> **2024 年 5 月 7 日更新**：
+>
+> 可在配置文件中用专门的一行 `daemon` 表示使用后台模式运行，同时使用专门一行 `log-file=<日志存储位置>` 来指定日志应当输出到哪里。如此就可以避免在命令行窗口中打印日志（这会造成内存负担），也不会因为命令行窗口关闭而导致节点停止运行。日志的详见程度参见上一节。
 
 在配置文件内写入配置内容后，尝试运行 lightningd。如果你的配置文件就放在默认位置，那么你只需：
 
