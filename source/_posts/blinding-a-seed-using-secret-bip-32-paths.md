@@ -204,7 +204,7 @@ print(p2wsh_sortedmulti_obj)
 
 你可以在 [Caravan](https://unchained-capital.github.io/caravan/) 中使用[这个钱包配置文件](https://github.com/mflaxman/blind-xpub/blob/main/bitcoin-1-of-2-P2WSH-testing.json)生成观察地址（这个配置文件是从上面生成的输出描述符中推导出来的）：
 
-![image](../images/blinding-a-seed-using-secret-bip-32-paths/eceive_address.png)
+![image](../images/blinding-a-seed-using-secret-bip-32-paths/caravan_receive_address.png)
 
 **Sparrow 验证**
 
