@@ -53,6 +53,12 @@ tags:
 
 下文将介绍不使用这样的套件、自己手动安装的流程。
 
+> **2024 年 6 月 18 日更新**：
+>
+> 以下安装及运行技巧适合绝大部分基于 Linux 的系统（如 Ubuntu，Debian）。
+>
+> 从便利及稳定性的角度看，树莓派 4/Raspberry OS 已经不是最优的选择。
+
 ## 背景及方法
 
 笔者将使用命令行工具，在自己的树莓派 4 电脑上安装 Core Lightning 客户端，并使用 RTL（Ride The Lightning）作为控制这个节点的前端。
@@ -118,6 +124,14 @@ Core Lightning 的说明书的 [Installation](https://www.btcstudy.org/2021/11/0
    这里值得注意的是：（1）笔者没能成功运行第三条命令（带有 “requirements.txt” 的那条），但并不妨碍后续的成功编译。这条命令的意思是根据这个 `.txt` 文档的内容安装依赖，但所安装的都是 python 语言的库，并不是 C 语言（Core Lightning 的编程语言）的库。
 
    （2）在这个过程中，笔者遇到的最常导致过程中断的问题是执行文件的 `权限不够`，解决方法是先运行：`chmod +x <目录>/*`，表示给某个目录下的所有文件添加执行权限；然后继续执行被中断的命令。
+   
+   > **2024 年 6 月 18 日更新**：
+   >
+   > 上述第三条命令实际上是为插件 clnrest 安装依赖的 python 软件。clnrest 的功能是为 lightingd 暴露一个 REST 接口，缺失这个功能不会影响 lightningd 的正常运行。
+   >
+   > 不过，下文所介绍的 RTL 软件从 v0.15.0 开始转向使用 clnrest 所提供的接口，因此，如果你希望使用新版本的 RTL 软件，就需要保证 clnrest 正常运行，也即需要保证上述第三行命令成功运行。同时，CLN 也需要使用 v23.11 之后的版本。
+   >
+   > 如果你无法成功运行 clnrest，请按照本教程，使用较旧版本的 RTL 软件。
 
 完成了上述所有步骤之后，Core Lightning 就安装好了。尝试运行：
 
@@ -221,6 +235,12 @@ lightning-cli listfunds
 为了使用 RTL，我们要在设备上安装两个软件：[Cl-REST](https://github.com/Ride-The-Lightning/c-lightning-REST) 和 [RTL](https://github.com/Ride-The-Lightning/RTL)。它们的作用和通信架构可见下图：
 
 ![RTL-CLN-Arch-2](../images/run-lightning-node-with-core-lightning-implement/RTL-CLN-Arch-2.png)
+
+> **2024 年 5 月 7 日更新**：
+>
+> 如上所述，RTL 自 v0.15.0 开始，已经转向使用 clnrest 插件与 lightningd 通信（clnrest 就替代了上图中的 CL-REST）。因此，本指南所介绍的技能只适用于 v0.15.0 以前的 RTL 版本。新模式的介绍及安装步骤可见[这个页面](https://github.com/Ride-The-Lightning/RTL/blob/master/.github/docs/Core_lightning_setup.md)。
+>
+> 概要来说，相比下述指南，有差异的的地方在于，用户需要：（1）安装 clnrest 所依赖的 python 软件，确保 clnrest 正确运行（可通过 lightingd 的运行日志来检查，如 clnrest 不能正确运行，日志会表示出来；（2）配置 clnrest 的运行参数（例如所监听的网络端口）（与下述 CL-REST 部分原理相似，只是细节不同）；（3）配置 RTL 使用 CLN 所提供的新的身份验证工具，叫做 rune（代替下文所述的 macaroon 文件）。
 
 ### 安装 Node.js
 
