@@ -4,12 +4,12 @@
 
 # Site
 title: BTC Study
-subtitle: '学习比特币'
-description: '比特币思想的中文集结地'
-keywords: '比特币, 中本聪, 比特币区块链, 闪电网络, 比特币 layer 2, 健全货币, 密码货币, 密码朋克, 学习比特币, BTC, BTC Study, Bitcoin, bitcoin, proof of work'
+subtitle: "学习比特币"
+description: "比特币思想的中文集结地"
+keywords: "比特币, 中本聪, 比特币区块链, 闪电网络, 比特币 layer 2, 健全货币, 密码货币, 密码朋克, 学习比特币, BTC, BTC Study, Bitcoin, bitcoin, proof of work"
 author: btcstudy
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -51,21 +51,21 @@ highlight:
   enable: false
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: true
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
@@ -85,7 +85,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -123,7 +123,7 @@ feed:
 
 jsonContent:
   file: content.json
-  dateFormat: 'YYYY-MM-DD'
+  dateFormat: "YYYY-MM-DD"
   posts:
     title: true
     text: true
@@ -142,23 +142,23 @@ sitemap:
   categories: true
 
 cdn:
-  enable: true
+  enable: false
   base: //res.btcstudy.org/btcstudy/
   tags:
-    'img[src]':
+    "img[src]":
       attribute: src
       callback: >
         function(imgSrc) {
           return imgSrc.replace('//res.btcstudy.org/images', '//res.btcstudy.org/btcstudy/images')
         }
   excludeTags:
-    - 'link'
-    - 'script'
+    - "link"
+    - "script"
 
 ## Hexo-minify Default Config Options
 minify:
   preview: false ## 本地预览时是否压缩
-  exclude: ['*.min.*']
+  exclude: ["*.min.*"]
   js:
     enable: true
     sourceMap:
