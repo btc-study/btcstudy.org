@@ -13,7 +13,7 @@ tags:
 
 > *作者：John Newbery*
 > 
-> *来源：<https://bitcointechtalk.com/an-introduction-to-bitcoin-core-fee-estimation-27920880ad0>*
+> *来源：<https://johnnewbery.com/an-intro-to-bitcoin-core-fee-estimation>*
 
 
 
@@ -58,7 +58,7 @@ tags:
 
 ## Bitcoin Core 如何估计手续费（v0.15 以前）
 
-*注 1：Bitcoin Core 的手续费估计法相当复杂。本文只能简单介绍该手续费估计算法背后的概念，也作出了一些简化。想了解更多细节，请看 Alex Morcos 的《[手续费估计算法的概要讲解](https://gist.github.com/morcos/d3637f015bc4e607e1fd10d8351e9f41)》 ；若想获得全部细节，请看[代码本身](https://gist.github.com/morcos/d3637f015bc4e607e1fd10d8351e9f41)。*
+*注 1：Bitcoin Core 的手续费估计法相当复杂。本文只能简单介绍该手续费估计算法背后的概念，也作出了一些简化。想了解更多细节，请看 Alex Morcos 的《[手续费估计算法的概要讲解](https://gist.github.com/morcos/d3637f015bc4e607e1fd10d8351e9f41)》 ；若想获得全部细节，请看[代码本身](https://github.com/bitcoin/bitcoin/blob/fd29d3df299bd06c0e6bb218863e0c855b3b91af/src/policy/fees.h)。*
 
 *注 2：本文仅介绍 Bitcoin Core v0.14 的手续费估计算法。从 v0.15 开始，这套算法有了许多更改，我会在下一篇文章中讲解。*
 
@@ -122,7 +122,7 @@ Bitcoin Core 的手续费估计算法并不想过度工程。它只记录和报�
 
 更精巧的算法可能会尝试更前瞻一些。但是，算法越复杂，描述其操作和结果就越难，证明该算法可以抗操纵也越难。
 
-有一些情况下，Bitcoin Core 的估计表型不是特别好，尤其是主流手续费市场出现剧烈变动的时候。Bitcoin Core v0.15 的手续费估计算法基于 v0.14 算法的框架，但做了许多优化，使之在剧烈变化的环境和异常事件中更加强健。我会在下一篇博文中介绍这些变更。【编辑：v0.15 的变化在此处可见：https://bitcointechtalk.com/whats-new-in-bitcoin-core-v0-15-part-2-41b6d0493136】
+有一些情况下，Bitcoin Core 的估计表型不是特别好，尤其是主流手续费市场出现剧烈变动的时候。Bitcoin Core v0.15 的手续费估计算法基于 v0.14 算法的框架，但做了许多优化，使之在剧烈变化的环境和异常事件中更加强健。我会在下一篇博文中介绍这些变更。【编辑：v0.15 的变化在此处可见：https://johnnewbery.com/whats-new-in-bitcoin-core-v0.15-pt2 】
 
 感谢 David A. Harding 和 Jimmy Song。
 
