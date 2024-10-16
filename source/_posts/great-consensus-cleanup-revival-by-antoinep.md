@@ -7,7 +7,7 @@ excerpt: '提议一种软分叉来解决长期存在的协议 bug'
 categories:
 - 比特币主网
 tags:
-- 开发
+- Consensus-Cleanup
 ---
 
 
