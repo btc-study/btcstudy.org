@@ -8,6 +8,7 @@ categories:
 - 比特币主网
 tags:
 - Consensus-Cleanup
+mathjax: true
 ---
 
 > *本文上半部分为 David A. Harding 在 Bitcoin Stack Exchange 问答网站上的回复，解释了 “时间扭曲攻击”。时间扭曲攻击是 “共识清理（The Great Consensus Cleanup）” 软分叉提议尝试解决的一种共识层面的弱点。然而，在应用共识清理软分叉的 testnet 4 上，开发者 Zawy 又发现了一种类似的攻击。下半部分为 murch 在 Delving Bitcoin 论坛上对该攻击方式的介绍，以及他推荐的缓解方式。*
