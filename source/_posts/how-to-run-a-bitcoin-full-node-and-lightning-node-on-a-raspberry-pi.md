@@ -83,7 +83,7 @@ tags:
 
 左边的选项选择你要给树莓派安装的系统，中间的按钮选择你要烧录到哪里（它会自动识别你的 micro SD 卡），最右边的按钮是启动。
 
-在选择操作系统时，可以选择置顶的 “Raspberry Pi OS (32-bit)”，也可以选择 “Raspberry Pi OS (other)” 或 “Other general purpose OS” 中的其它选项。笔者自己选择的是 “Raspberry Pi OS (other)” 中的 “**Raspberry Pi OS Full (32-bit)**”，它会预装一些软件。如果想跟本教程保持完全一致，可以选择这个系统。如果你想安装 64 位的系统，到 “Other general purpose OS” 中选择 Ubuntu (64-bit)。
+在选择操作系统时，可以选择置顶的 “Raspberry Pi OS (32-bit)”，也可以选择 “Raspberry Pi OS (other)” 或 “Other general purpose OS” 中的其它选项。笔者自己选择的是 “Raspberry Pi OS (other)” 中的 “<strong>Raspberry Pi OS Full (32-bit)</strong>”，它会预装一些软件。如果想跟本教程保持完全一致，可以选择这个系统。如果你想安装 64 位的系统，到 “Other general purpose OS” 中选择 Ubuntu (64-bit)。
 
 然后是等待软件自动下载镜像并写入 micro SD 卡。成功后即可从电脑上拔下 micro SD 卡，插入到树莓派的插口中（位于树莓派的背面，是网线接口的反方向）。
 

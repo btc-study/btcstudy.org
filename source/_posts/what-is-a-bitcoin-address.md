@@ -145,9 +145,9 @@ Bech32 就是为了避免出现如此极端的巧合而设计的。另外，Bech
 
 问题是，尽管 P2PKH 被广泛采用，其中有 500 万至 1000 万比特币的公钥已经公开。具有讽刺意味的是，鉴于如此多比特币容易遭到量子黑客窃取，试图以此保护剩余的比特币已经意义不大。即使你的比特币因为使用了 P2PKH 二不会被盗，也免不了因价格崩盘而变得一文不值。
 
-物理学家 S[tepan Snigirev](https://www.whatbitcoindid.com/podcast/the-quantum-threat-to-bitcoin-with-quantum-physicist-dr-stepan-snigirev) 和数学家 [Andrew Poelstra](https://www.whatbitcoindid.com/podcast/andrew-poelstra-on-schnorr-taproot-graft-root-coming-to-bitcoin) 在两集题为《比特币做了什么》的播客中解释了量子攻击在短期内造成毁灭性后果的可能性以及可行的应对措施。
+物理学家 [Stepan Snigirev](https://www.whatbitcoindid.com/podcast/the-quantum-threat-to-bitcoin-with-quantum-physicist-dr-stepan-snigirev) 和数学家 [Andrew Poelstra](https://www.whatbitcoindid.com/podcast/andrew-poelstra-on-schnorr-taproot-graft-root-coming-to-bitcoin) 在两集题为《比特币做了什么》的播客中解释了量子攻击在短期内造成毁灭性后果的可能性以及可行的应对措施。
 
-区块空间现在变得非常稀缺，因此无需将公钥哈希存储在宝贵的区块空间内可以帮助用户节省费用。这就是为什么在新的 Taproot 软分叉中（见本书的第四部分），比特币地址又成了 P2PK <sup><a href="#note10" id="jump-10">10</a></sup>。请注意使用 Taproot 地址不具有强制性，因此如果你不认同上述推理，你可以选择不使用 Taproot。
+区块空间现在变得非常稀缺，因此无需将公钥哈希存储在宝贵的区块空间内可以帮助用户节省费用。这就是为什么在新的 Taproot 软分叉中（见本书的第四部分），比特币地址又成了 P2PK <sup><a href="#note10" id="jump-10">10</a></sup>。请注意，使用 Taproot 地址不具有强制性，因此如果你不认同上述推理，你可以选择不使用 Taproot。
 
 ## 脚注
 
@@ -165,7 +165,7 @@ Bech32 就是为了避免出现如此极端的巧合而设计的。另外，Bech
 
 7.<a id="note7"> </a>bech32 由 BIP173 提出。  <a href="#jump-7">↩</a>
 
-8.<a id="note8"> </a>早期的以太坊钱包不使用错误检测，因为它们的地址标准缺少校验和。虽然 EIP55 在 2016 年引入了校验和，但不是所有钱包都执行错误检测。即使到了 2017 年末，仍有人[因输错地址而丢失以太币](https://bitcointalk.org/index.php?topic=2161699.0)。 <a href="#jump-8">↩</a>
+8.<a id="note8"> </a>早期的以太坊钱包不使用错误检测，因为它们的地址标准缺少校验和。虽然 EIP55 在 2016 年引入了校验和，但不是所有钱包都执行错误检测。直到 2017 年末，仍有人[因输错地址而丢失以太币](https://bitcointalk.org/index.php?topic=2161699.0)。 <a href="#jump-8">↩</a>
 
 9.<a id="note9"> </a>bech32m 由 BIP 350 提出。 <a href="#jump-9">↩</a>
 

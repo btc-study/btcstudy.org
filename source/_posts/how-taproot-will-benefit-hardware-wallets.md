@@ -24,7 +24,7 @@ tags:
 
 尽管许多人在期待 Taproot 带来如理论上那般美好的隐私性和可扩展性提升，也有一些人担心它会步 Segwit 第一个实现的后尘，在软分叉激活后两年时间，接受度才堪堪突破 50%。
 
-本文的目的不是比较 Taproot 的好处和缺点。许多有志于此的博客，都已经把主要的意见解释得很深入了，比如[这篇来自 SlushPool 运营者 Braiins 的平易近人的文章](https://braiins.com/blog/explain-like-im-not-a-developer-taproot-privacy)（[中文译本](https://ethfans.org/posts/explain-like-im-not-a-developer-taproot-privacy)）。我们考虑的点相当单一，就是 Taproot 升级对硬件钱包来说到底意味着什么，以及如果 Taproot 能在 11 月成功激活的话，可以期待出现什么有意思的事。
+本文的目的不是比较 Taproot 的好处和缺点。许多有志于此的博客，都已经把主要的意见解释得很深入了，比如[这篇来自 SlushPool 运营者 Braiins 的平易近人的文章](https://braiins.com/blog/explain-like-im-not-a-developer-taproot-privacy)（[中文译本](https://www.btcstudy.org/2021/09/23/explain-like-im-not-a-developer-taproot-privacy/)）。我们考虑的点相当单一，就是 Taproot 升级对硬件钱包来说到底意味着什么，以及如果 Taproot 能在 11 月成功激活的话，可以期待出现什么有意思的事。
 
 ## Taproot 契合了比特币的保守主义
 
