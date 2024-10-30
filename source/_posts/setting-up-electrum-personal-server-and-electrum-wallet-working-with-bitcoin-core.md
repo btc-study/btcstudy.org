@@ -19,10 +19,6 @@ tags:
 
 本指南的操作目标是将 EPS 与比特币节点安装在同一设备（比如树莓派或专门的节点设备）上，而将 Electrum 钱包安装在另一台设备（假设是 Windows 系统的个人电脑）上。第五章专门解释了如何用 “SSH 隧道” 在两台设备间通信。
 
-本指南考虑过的另一种 设备-软件 组合是：将比特币节点放在树莓派上，而将 EPS 和 Electrum 钱包一起放在另一台设备中。如果两台设备总在同一网络内部使用，将不再需要使用第五章所述的技巧。附录 2 提供了必要的信息。
-
-从最终效果以及实现难度来看，两种组合的差别并不大。文章的主要内容对这两种组合的搭建也都是有用的。
-
 ## 一. 为什么要使用 Electrum 钱包和 EPS？
 
 总的来说，我们使用 Electrum 钱包是为了**它的功能性，以及它的用户体验**。
@@ -359,59 +355,5 @@ source ./bin/activate
 
 1. 在安装 EPS 时，安装命令 `pip3 install --user .` 需要改成 `pip3 install .`。
 2. 此后，每当你尝试重新运行 EPS，都需要先激活虚拟环境 `source ~/py311/bin/activate`，然后再运行 EPS ：`electrum-personal-server config.ini`
-
-## 附录 2. 设备-软件 组合
-
-本指南一直假设读者有这样的设备安排：一台独立的设备（比如树莓派），安装 Linux 操作系统，用于运行比特币节点（比如 Bitcoin Core 软件）；一台个人电脑，安装 Windows 操作系统，用于使用更面向普通用户（而非开发者）、也不需要全时运行的软件。
-
-在这种假设之下，本指南的主体指导读者将 EPS 放在独立设备上、将 Electrum 钱包放在个人电脑上。
-
-但是，的确可能存在别的组合，例如：全部装在 Linux 操作系统下；或，全部装在 Windows 系统下。
-
-出于许多理由，笔者依然认为，使用一台独立的低功耗设备来运行比特币节点，是有意义的。因此，本指南额外关注另一种组合：将 Bitcoin Core 放在独立设备上，但让 EPS 和 Electrum 钱包在个人电脑上运行。
-
-这种组合有一些好处，也有一些缺点：
-
-- 假设个人电脑与独立设备总是在同一内网中运行，就不再需要使用第五章所述的 SSH 隧道。因为，EPS 在内网中访问 Bitcoin Core 时，不再需要 SSH。
-  - 但如果两者并不总在同一内网中，则依然需要使用 SSH 隧道，来解决 EPS 与 Bitcoin Core 的通信问题。
-- 缺点是，EPS 难以做到全时运行。在需要使用时才重新打开，可能面临等待。
-  - 本指南的主体并没有给出让 EPS 全时运行的方法。只是，当 EPS 和 Bitcoin Core 在同一台全时运行的设备上工作时，原理上，这是可以做到的：你需要懂得如何[编写并运行 Linux 服务](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)。但如果 EPS 本身运行在一个不太可能全时工作的设备上，在原理上也就做不到了。
-  - 不过，EPS 的运行本身还是挺快的。如果不需要重新扫描区块链，这等待不会太久。
-
-以下是你可能需要了解的技能，它们都跟在 Windows 系统中安装和配置 EPS 有关，请在阅读下文后跳转到相应的章节继续：
-
-### 在 Winows 系统中安装 pyenv-win
-
-Python 3.12 版本无法运行 EPS 。请通过 pyenv-win 为你的 Windows 系统安装其它版本的 python。
-
-在 Windows 系统中打开 “Powershell” 命令行窗口，运行以下命令，安装 pyenv-win：
-
-```
-Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
-```
-
-然后你便可以继续安装[不同版本的 python 语言](#安装-Python-3.11.10)（跳转到附录 1）。在需要下载 EPS 时请回到此处。
-
-### 下载 Windows 版本的 EPS
-
-请在 [EPS 的下载页面](https://github.com/chris-belcher/electrum-personal-server/releases)下载适合 Windows 操作系统的安装文件，例如 `electrum-personal-server-windows-release-v0.2.4.zip`。
-
-`.zip` 是一种压缩文件，将其中的内容解压到你指定的目录之后，你就得到了 EPS 的代码文件夹。
-
-请继续为 EPS 生成[自签名证书](#自签名证书)。在需要编写 EPS 的 `config.ini` 时回到此处。
-
-### 配置 EPS 与 Bitcoin Core 的通信
-
-在编写 EPS 的配置文件 `config.ini` 时，由于 EPS 和 Bitcoin Core 位于不同设备上，需要在 `[bitcoin-rpc]` 下面，令：
-
-```
-host = <你的运行 Bitcoin Core 的设备，比如树莓派，在内网中的网络地址，例如 192.168.1.105>
-```
-
-其余配置请继续参照[本指南主体的描述](#安装并配置 EPS)。
-
-### Electrum 钱包与 EPS 的通信
-
-由于两者位于同一设备上，在 Electrum 钱包中只需将服务器地址设为 `127.0.0.1：50002`，便可直接与 EPS 连接，不再需要额外配置。
 
 （完）
