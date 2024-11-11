@@ -512,7 +512,7 @@ L在多个用户间共享 UTXO 的 L2，先天让这些问题变得更加难搞�
 
 9.<a id="note9"> </a>出版证明问题的一个例子，我们会在后面讨论。 <a href="#jump-9">↩</a>
 
-10.<a id="note10"> </a>[\[Lightning-dev] 使用层级式通道，在链下调整闪电通道的大小](https://lists.linuxfoundation.org/pipermail/lightning-dev/2023-March/003886.html)，jlspc，2023 年 3 月 18 日([中文译本](https://www.btcstudy.org/2023/04/17/resizing-lightning-channels-off-chain-with-hierarchical-channels/))。亦见 [GitHub](https://github.com/JohnLaw2/ln-hierarchical-channels)。 <a href="#jump-10">↩</a>
+10.<a id="note10"> </a>[【Lightning-dev】 使用层级式通道，在链下调整闪电通道的大小](https://lists.linuxfoundation.org/pipermail/lightning-dev/2023-March/003886.html)，jlspc，2023 年 3 月 18 日([中文译本](https://www.btcstudy.org/2023/04/17/resizing-lightning-channels-off-chain-with-hierarchical-channels/))。亦见 [GitHub](https://github.com/JohnLaw2/ln-hierarchical-channels)。 <a href="#jump-10">↩</a>
 
 11.<a id="note11"> </a>在交易的输入和输出都因为某些约束而被固定的罕见场合中，RBF 可能比暗箱手续费支付、手续费资助等等方案更低效，它们可以让交易的体积更小。 <a href="#jump-11">↩</a>
 
@@ -522,9 +522,9 @@ L在多个用户间共享 UTXO 的 L2，先天让这些问题变得更加难搞�
 
 14.<a id="note14"> </a>虽然权威来源是 Antoine Riard 的[论文](https://github.com/ariard/mempool-research/blob/2023-10-replacement-paper/replacement-cycling.pdf),我强烈建议阅读 [monoautical](https://twitter.com/mononautical) 的[介绍替代交易循环攻击的推特](https://twitter.com/mononautical/status/1715736832950825224)，那是一个容易理解的解释。 <a href="#jump-14">↩</a>
 
-15.<a id="note15"> </a>[\[bitcoin-dev] Altruistic Rebroadcasting - A Partial Replacement Cycling Mitigation](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-December/022188.html),Peter Todd,2023 年 12 月 9 日。 <a href="#jump-15">↩</a>
+15.<a id="note15"> </a>[【bitcoin-dev】 Altruistic Rebroadcasting - A Partial Replacement Cycling Mitigation](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-December/022188.html),Peter Todd,2023 年 12 月 9 日。 <a href="#jump-15">↩</a>
 
-16.<a id="note16"> </a>[\[bitcoin-dev] OP_Expire and Coinbase-Like Behavior: Making HTLCs Safer by Letting Transactions Expire Safely](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-November/022108.html)，Peter Todd，2023 年 11 月 2 日。 <a href="#jump-16">↩</a>
+16.<a id="note16"> </a>[【bitcoin-dev】 OP_Expire and Coinbase-Like Behavior: Making HTLCs Safer by Letting Transactions Expire Safely](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2023-November/022108.html)，Peter Todd，2023 年 11 月 2 日。 <a href="#jump-16">↩</a>
 
 17.<a id="note17"> </a>Coinbase 交易是跟它所在的区块绑定的。中本聪让这些输出不可花费，直到它们累计获得 [100 个区块确认](https://github.com/bitcoin/bitcoin/blob/v27.1/src/validation.cpp#L377)。中本聪也[在 bitcointalk 中](https://bitcointalk.org/index.php?topic=1786.msg22119#msg22119)讨论过完全相同的问题，并解释了为什么一种 `OP_BLOCKNUMBER` 操作码可能是危险的。 <a href="#jump-17">↩</a>
 

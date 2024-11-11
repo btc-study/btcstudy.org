@@ -189,7 +189,7 @@ Gossip 2.0 取消了旧的通道更新消息中中时间戳字段，代之以区
 
 ## 对支付分发的根本限制
 
-然后，我们的一个会议讨论了一些关于闪电网络 寻路/路由 的最新研究。主要话题是一项 演示/讨论，关于一些尝试理解在支付通道网络中分发支付的根本限制的新研究【[13](https://github.com/renepickhardt/Lightning-Network-Limitations/blob/305db330c96dc751f0615d9abb096b12b8a6191f/Limits of two party channels/paper/a mathematical theory of payment channel networks.pdf)】。
+然后，我们的一个会议讨论了一些关于闪电网络 寻路/路由 的最新研究。主要话题是一项 演示/讨论，关于一些尝试理解在支付通道网络中分发支付的根本限制的新研究【<a href="https://github.com/renepickhardt/Lightning-Network-Limitations/blob/305db330c96dc751f0615d9abb096b12b8a6191f/Limits of two party channels/paper/a mathematical theory of payment channel networks.pdf">13</a>】。
 
 概要地说，这份研究将网络拓扑图建模位一系列的 边 和 顶点，每一条边都具有 3 种属性：本地端的余额、远端的余额，还有总的容量。给定一个样本拓扑图，我们可以确定一笔支付是否能送达：是否存在一系列的成对的余额修改，能够给予 “接收方” 所需的余额结束状态。该研究并不运行常规的基于贪婪的寻路算法，而是在全局上看待一笔支付的可行性。注意，这种方法自然捕捉到了支付期间强制再平衡的能力，可以让原本无法满足的支付流得以运行。
 
