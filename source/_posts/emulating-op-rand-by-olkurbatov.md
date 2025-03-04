@@ -32,17 +32,17 @@ mathjax: true
 
 ## 预备知识
 
-$\mathbb{G}$ 是一个阶数为素数 $p$ 的循环群，$G \in \mathbb{G} $ 是该群的生成元。
+$\mathbb{G}$ 是一个阶数为素数 $p$ 的循环群，$G \in \mathbb{G}$ 是该群的生成元。
 
-$a \in \mathbb{F}_p$ 是一个标量值，而 $A \in \mathbb{G} $ 是一个属于该群的元素。
+$a \in \mathbb{F}_p$ 是一个标量值，而 $A \in \mathbb{G}$ 是一个属于该群的元素。
 
 $\mathsf{hash}_p(m) \rightarrow h\in \mathbb{F}_p$ 是密码学哈希函数，取任意的消息 $m$ 为输入，返回域元素 $h$ 。
 
 $\mathsf{hash}_{160}(P) \rightarrow \mathsf{addr}\in \mathcal{A}$ 是一个函数，对公钥作连续的 SHA-256 和 Ripemd160 运算，输出一个有效的比特币地址。
 
-我们为如下关系定义证据 $\pi$：$\mathcal{R} = \{(w;x) \in \mathcal{W} \times \mathcal{X}: \phi_1(w,x), \phi_2(w,x) , \dots, \phi_m(w,x)\}$，其中 $w$ 是一个见证数据，而 $x$ 是一个公开数据，而 $\phi_1(w,x), \phi_2(w,x) , \dots, \phi_m(w,x)$ 是一组必须同时证明的关系。
+我们为如下关系定义证据 $\pi$：$\mathcal{R} = \lbrace(w;x) \in \mathcal{W} \times \mathcal{X}: \phi_1(w,x), \phi_2(w,x) , \dots, \phi_m(w,x)\rbrace$，其中 $w$ 是一个见证数据，而 $x$ 是一个公开数据，而 $\phi_1(w,x), \phi_2(w,x) , \dots, \phi_m(w,x)$ 是一组必须同时证明的关系。
 
-我们定义具有 $n$ 个输入和 $m$ 个输出的一笔比特币交易为 $\mathsf{TX}\{(\mathsf{id, i, proof})^{(n)};(\mathsf{a BTC, cond})^{(m)}\}$，其中 $\mathsf{id}$ 是前序交易的哈希值，$i$ 是输出的索引号，$\mathsf{proof}$ 是花费交易所需的一组数据；$a$ 是输出中的资金数量，$\mathsf{cond}$ 是脚本公钥条件。例如，P2PKH 输入需要 $\mathsf{proof} \leftarrow \langle \mathsf{PK}, \sigma\rangle$ 和 $\mathsf{cond}\leftarrow \langle$ OP_DUP, OP_HASH160, $\mathsf{addr}$, OP_EQUALVERIFY, OP_CHECKSIG $\rangle$ 。在使用 P2PKH 时，我们将简化上述条件记号为简单的 $\mathsf{addr}$ 。
+我们定义具有 $n$ 个输入和 $m$ 个输出的一笔比特币交易为 $\mathsf{TX}\lbrace (\mathsf{id, i, proof})^{(n)};(\mathsf{a BTC, cond})^{(m)}\rbrace$，其中 $\mathsf{id}$ 是前序交易的哈希值，$i$ 是输出的索引号，$\mathsf{proof}$ 是花费交易所需的一组数据；$a$ 是输出中的资金数量，$\mathsf{cond}$ 是脚本公钥条件。例如，P2PKH 输入需要 $\mathsf{proof} \leftarrow \langle \mathsf{PK}, \sigma\rangle$ 和 $\mathsf{cond}\leftarrow \langle$ OP_DUP, OP_HASH160, $\mathsf{addr}$, OP_EQUALVERIFY, OP_CHECKSIG $\rangle$ 。在使用 P2PKH 时，我们将简化上述条件记号为简单的 $\mathsf{addr}$ 。
 
 ## 椭圆曲线点限制条款
 
@@ -61,7 +61,7 @@ sk_a \leftarrow \mathbb{F}_b
 $$
 
 $$
-P_a = sk_a G $
+P_a = sk_a G
 $$
 
 $$
@@ -76,19 +76,19 @@ $$
 并为以下关系生成一个证据 $\pi_c$：
 
 $$
-\mathcal{R}_c = \lbrace P_a;\mathsf{addr}_a,C,G:\mathsf{hash}_{160} (P_a) \rightarrow \mathsf{addr}_a \and \mathsf{hash}_{p} (P_a).G \rightarrow C\rbrace
+\mathcal{R} _{c} = \lbrace P _{a} ;\mathsf{addr} _{a}, C, G:\mathsf{hash} _{160} (P_a) \rightarrow \mathsf{addr} _a \and \mathsf{hash} _{p} (P_a).G \rightarrow C \rbrace
 $$
 
 2. Bob 收到证据 $\pi_c$ 之后，取出 $C$ 并计算：
 
 $$
-\mathsf{addr}_b = \mathsf{hash}_{160} (P_b + C)
+\mathsf{addr} _b = \mathsf{hash} _{160} (P_b + C)
 $$
 
 3. Bob 创建一笔交易并发送给 Alice：
 
 $$
-\mathsf{TX}_1\{(\mathsf{prev}_A, i_A, -), (\mathsf{prev}_B, i_B, \sigma_B(\mathsf{TX}_1));(1BTC, \mathsf{addr}_a),(1BTC, \mathsf{addr}_b)\}
+\mathsf{TX}_1\lbrace (\mathsf{prev}_A, i_A, -), (\mathsf{prev}_B, i_B, \sigma_B(\mathsf{TX}_1));(1BTC, \mathsf{addr}_a),(1BTC, \mathsf{addr}_b)\rbrace
 $$
 
 4. Alice 也签名这笔交易，并广播到网络中：
@@ -100,13 +100,13 @@ $$
 如果 Alice 想要花费自己的输出，她就需要创建这样一笔交易，并公开一个公钥 $P_a$ 及其签名：
 
 $$
-\mathsf{TX}_2 \lbrace (\mathsf{TX}_1,1, \langle P_a, \sigma_{P_a} (\mathsf{TX}_2) \rangle);(1 BTC, \mathsf{addr}_{a'}) \rbrace $
+\mathsf{TX}_2 \lbrace (\mathsf{TX} _1,1, \langle P _a, \sigma_{P_a} (\mathsf{TX} _2) \rangle);(1 BTC, \mathsf{addr} _{a'}) \rbrace $
 $$
 
 在该交易公开的时候，Bob 可以抽取出 $P_a$ 并复原 $\mathsf{hash}_p(P_a)$ 的值。然后，第二个输出的私钥就可以计算出来：$sk = \mathsf{hash}_p(P_a) + sk_b$（只有 Bob 知道 $sk_b$），而且 Bob 可以构造出关联着公钥 $P_b + C$ 及其地址的签名。
 
 $$
-\mathsf{TX}_3 \lbrace (\mathsf{TX}_1,2, \langle P_b + C, \sigma_{P_b + C}(\mathsf{TX}_3) \rangle);(1 BTC, \mathsf{addr}_{b'}) \rbrace
+\mathsf{TX}_3 \lbrace (\mathsf{TX} _1,2, \langle P _b + C, \sigma_{P_b + C}(\mathsf{TX} _3) \rangle);(1 BTC, \mathsf{addr} _{b'}) \rbrace
 $$
 
 （译者注：考察这里的上下文，Alice 给 Bob 的证据是一种 “零知识证据”，Bob 只知道 Alice 拥有这样一个值，但并不能从证据中知道这个值是什么。）
@@ -127,7 +127,7 @@ $$
 8. $\mathcal{A}$ 创建一个证据 $\pi_r$，证明其中一个三级证据会跟 $P_{\mathcal{A}}$ 相结合，然后发送给 $\mathcal{C}$。此外，该证据也表明了对 $P_{\mathcal{A}}$ 的离散对数的知识。
 9. $\mathcal{C}$ 验证证据 $\pi_r$，如果该证据有效，就发布 $R_{\mathcal{C}}$
 10. $\mathcal{A}$ 计算 $A_x = R_{\mathcal{C}}-P_{\mathcal{C}}$
-11. 如果 $\mathsf{hash}(A_x)\cdot G = H_y$，$\mathcal{A}$ 就胜出。否则 Alice 输。
+11. 如果 $\mathsf{hash}(A_x)\cdot G = H_y$，$\mathcal{A}$ 就胜出。否则 $\mathcal{A}$ 输。
 
 ## Thimbles 游戏作为一个例子
 
