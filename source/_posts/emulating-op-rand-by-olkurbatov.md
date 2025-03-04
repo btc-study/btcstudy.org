@@ -56,22 +56,34 @@ $\mathsf{hash}_{160}(P) \rightarrow \mathsf{addr}\in \mathcal{A}$ 是一个函�
 
 1. Alice 生成：
 
-$ sk_a \leftarrow \mathbb{F}_b $
+$$
+sk_a \leftarrow \mathbb{F}_b
+$$
 
-$ P_a = sk_a G $
+$$
+P_a = sk_a G $
+$$
 
-$ addr_a = \mathsf{hash}_{160}(P_a) $
+$$
+addr_a = \mathsf{hash}_{160}(P_a)
+$$
 
-$ C = \mathsf{hash}_{p}(P_a).G $
+$$
+C = \mathsf{hash}_{p}(P_a).G
+$$
 
 
 并为以下关系生成一个证据 $\pi_c$：
 
-$ \mathcal{R}_c = \{P_a;\mathsf{addr}_a,C,G:\mathsf{hash}_{160}(P_a) \rightarrow \mathsf{addr}_a \and \mathsf{hash}_{p}(P_a).G \rightarrow C\} $
+$$
+\mathcal{R}_c = \lbrace P_a;\mathsf{addr}_a,C,G:\mathsf{hash}_{160} (P_a) \rightarrow \mathsf{addr}_a \and \mathsf{hash}_{p} (P_a).G \rightarrow C\rbrace
+$$
 
 2. Bob 收到证据 $\pi_c$ 之后，取出 $C$ 并计算：
 
-$ \mathsf{addr}_b = \mathsf{hash}_{160}(P_b + C) $
+$$
+\mathsf{addr}_b = \mathsf{hash}_{160} (P_b + C)
+$$
 
 3. Bob 创建一笔交易并发送给 Alice：
 
@@ -87,11 +99,15 @@ $$
 
 如果 Alice 想要花费自己的输出，她就需要创建这样一笔交易，并公开一个公钥 $P_a$ 及其签名：
 
-$ \mathsf{TX}_2\{(\mathsf{TX}_1,1, \langle P_a, \sigma_{P_a}(\mathsf{TX}_2) \rangle);(1 BTC, \mathsf{addr}_{a'})\} $
+$$
+\mathsf{TX}_2 \lbrace (\mathsf{TX}_1,1, \langle P_a, \sigma_{P_a} (\mathsf{TX}_2) \rangle);(1 BTC, \mathsf{addr}_{a'}) \rbrace $
+$$
 
 在该交易公开的时候，Bob 可以抽取出 $P_a$ 并复原 $\mathsf{hash}_p(P_a)$ 的值。然后，第二个输出的私钥就可以计算出来：$sk = \mathsf{hash}_p(P_a) + sk_b$（只有 Bob 知道 $sk_b$），而且 Bob 可以构造出关联着公钥 $P_b + C$ 及其地址的签名。
 
-$ \mathsf{TX}_3\{(\mathsf{TX}_1,2, \langle P_b + C, \sigma_{P_b + C}(\mathsf{TX}_3) \rangle);(1 BTC, \mathsf{addr}_{b'})\} $
+$$
+\mathsf{TX}_3 \lbrace (\mathsf{TX}_1,2, \langle P_b + C, \sigma_{P_b + C}(\mathsf{TX}_3) \rangle);(1 BTC, \mathsf{addr}_{b'}) \rbrace
+$$
 
 （译者注：考察这里的上下文，Alice 给 Bob 的证据是一种 “零知识证据”，Bob 只知道 Alice 拥有这样一个值，但并不能从证据中知道这个值是什么。）
 
