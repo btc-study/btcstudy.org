@@ -76,7 +76,7 @@ $$
 并为以下关系生成一个证据 $\pi_c$：
 
 $$
-\mathcal{R} _{c} = \lbrace P _{a} ;\mathsf{addr} _{a}, C, G:\mathsf{hash} _{160} (P_a) \rightarrow \mathsf{addr} _a \and \mathsf{hash} _{p} (P_a).G \rightarrow C \rbrace
+\mathcal{R} _{c} = \lbrace P _{a} ;\mathsf{addr} _{a}, C, G:\mathsf{hash} _{160} (P_a) \rightarrow \mathsf{addr} _a \land \mathsf{hash} _{p} (P_a).G \rightarrow C \rbrace
 $$
 
 2. Bob 收到证据 $\pi_c$ 之后，取出 $C$ 并计算：
@@ -100,13 +100,13 @@ $$
 如果 Alice 想要花费自己的输出，她就需要创建这样一笔交易，并公开一个公钥 $P_a$ 及其签名：
 
 $$
-\mathsf{TX}_2 \lbrace (\mathsf{TX} _1,1, \langle P _a, \sigma_{P_a} (\mathsf{TX} _2) \rangle);(1 BTC, \mathsf{addr} _{a'}) \rbrace $
+\mathsf{TX} _2 \lbrace (\mathsf{TX} _1, 1, \langle P _a, \sigma _{P _a} (\mathsf{TX} _2) \rangle);(1 BTC, \mathsf{addr} _{a'}) \rbrace
 $$
 
 在该交易公开的时候，Bob 可以抽取出 $P_a$ 并复原 $\mathsf{hash}_p(P_a)$ 的值。然后，第二个输出的私钥就可以计算出来：$sk = \mathsf{hash}_p(P_a) + sk_b$（只有 Bob 知道 $sk_b$），而且 Bob 可以构造出关联着公钥 $P_b + C$ 及其地址的签名。
 
 $$
-\mathsf{TX}_3 \lbrace (\mathsf{TX} _1,2, \langle P _b + C, \sigma_{P_b + C}(\mathsf{TX} _3) \rangle);(1 BTC, \mathsf{addr} _{b'}) \rbrace
+\mathsf{TX}_3 \lbrace (\mathsf{TX} _1,2, \langle P _b + C, \sigma _{P _b + C}(\mathsf{TX} _3) \rangle);(1 BTC, \mathsf{addr} _{b'}) \rbrace
 $$
 
 （译者注：考察这里的上下文，Alice 给 Bob 的证据是一种 “零知识证据”，Bob 只知道 Alice 拥有这样一个值，但并不能从证据中知道这个值是什么。）
