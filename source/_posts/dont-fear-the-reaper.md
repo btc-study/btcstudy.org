@@ -9,7 +9,6 @@ categories:
 tags:
 - 比特币
 - 货币
-- Nic Carter
 ---
 
 > *作者：Nic Carter*

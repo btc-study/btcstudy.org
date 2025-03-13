@@ -6,7 +6,7 @@ cover: '../images/multisig-and-split-backups-two-ways-to-make-your-bitcoin-more-
 excerpt: '即使你丢失了一把密钥或一个密钥份额（取决于你采用的是哪种系统），你依然可以获取你的密码学货币'
 tags:
 - 多签名钱包
-- Shamir 备份
+- Shamir-备份
 ---
 
 

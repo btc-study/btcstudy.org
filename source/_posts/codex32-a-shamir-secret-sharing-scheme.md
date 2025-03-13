@@ -5,7 +5,7 @@ date: '2023/09/11 11:49:07'
 cover: ''
 excerpt: '为什么要有手算的系统呢'
 tags:
-- Shamir 备份
+- Shamir-备份
 ---
 
 
