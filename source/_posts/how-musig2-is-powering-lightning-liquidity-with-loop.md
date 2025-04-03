@@ -17,7 +17,7 @@ tags:
 
 
 
-本文会解释我们如何使用 “[MuSig2](https://bitcoinops.org/en/topics/musig/)”（Schnorr 电子签名算法的聚合公钥协议）来加强 [Lightning Loop](https://docs.lightning.engineering/lightning-network-tools/loop) —— 我们的非托管潜水艇互换服务。潜水艇互换让用户可以交换链上的比特币与闪电网络中的比特币（反之亦可），办就是哈希时间锁合约（HTLCs），它保证了原子性、消除了对手方风险。
+本文会解释我们如何使用 “[MuSig2](https://bitcoinops.org/en/topics/musig/)”（Schnorr 电子签名算法的聚合公钥协议）来加强 [Lightning Loop](https://docs.lightning.engineering/lightning-network-tools/loop) —— 我们的非托管潜水艇互换服务。潜水艇互换让用户可以交换链上的比特币与闪电网络中的比特币（反之亦可），办法就是哈希时间锁合约（HTLCs），它保证了原子性、消除了对手方风险。
 
 我们也很高兴分享我们在 Loop In上的技术进步，用户现在可以将链上比特币直接发送到一条闪电通道中以补充出账容量、用于 Lightning Loop。[最近的一版更新](https://github.com/lightninglabs/loop/releases/tag/v0.29.0-beta)让 Loop In 的用户可以利用 MuSig2， 在互换的链下部分执行之前，提前在链上为 Loop In 互换注资。从终端用户的角度看，这减少了用户体验的复杂性，而且可以锁定可能的较低成本，而且支持重试，所以是增强了 Loop In 的功能性。
 

@@ -156,7 +156,7 @@ SHA256          750F406C133D17994EB58544AAD82B20F1478C8663AF303E45B2D9C49C4E9825
   - 绘制完成之后，SeedSigner 本身会有一个 “Confirm SeedQR” 功能，用摄像头帮你确认你的绘制无误。
 - 如果你使用桌面端的软件搭配 SeedSigner 一起使用，那么你可能要配备一个稍微好一点的摄像头：该摄像头需要能扫描 SeedSigner 屏幕所显示的二维码，以获得公钥、SeedSigner 签好名的消息。摄像头的分辨率并不需要很高，1080 就足够了，重要的是具备**自动对焦**功能。
 
-> 所以，使用 SeedSigner 这样的 Air-gapped 设备的方式是：
+> 所以，使用 SeedSigner 这样的<a id="air-gapped"> </a>Air-gapped 设备的方式是：
 >
 > - 选择一款合适的软件钱包。比如 Sparrow 钱包。
 > - 让 SeedSigner 显示种子词的公钥（XPUB），并在软件钱包中使用摄像头扫描 SeedSigner 的屏幕，获得公钥。得到了公钥之后，就意味着你可以在软件钱包中生成收款地址了（也意味着你可以将这个公钥用在多签名保管装置中了）。
