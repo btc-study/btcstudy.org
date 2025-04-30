@@ -95,6 +95,8 @@ Phoenix 综合了我们在这两篇里提到的许多技术，持之以恒地打
 
 最终，用户也会知道，世界上有且只有一种比特币，它每一天都会比昨天更容易在网络中穿梭。
 
+> *[续篇见此处](https://www.btcstudy.org/2024/03/04/lightning-network-technology-improvement-and-users-experience-part-7/)*
+
 ## 脚注
 
 1.<a id="note1"> </a>https://www.btcstudy.org/2023/03/01/lightning-privacy-research-channel-coinjoins/ <a href="#jump-1">↩</a>
