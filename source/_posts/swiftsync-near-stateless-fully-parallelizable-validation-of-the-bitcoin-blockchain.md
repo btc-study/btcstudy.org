@@ -37,11 +37,11 @@ SwiftSync 完全改变了这种模式，并且*不会* 改变安全假设。不�
 
 对于链上的每一个输出，我们需要一个提示来表明这个输出到区块链顶端是否依然未被花费，但一个提示只需要一个比特（[压缩之后小于 100 MB](https://delvingbitcoin.org/t/ibd-booster-speeding-up-ibd-with-pre-generated-hints-poc/1562/4)）。
 
-如果提示是不正确的，验证就会失败（这是一个 DoS 界面），这样的提示应该来自一个可靠的来源（里不然，你的全节点软件的二进制文件） <sup><a href="#note1" id="jump-1">[1]</a></sup>。
+如果提示是不正确的，验证就会失败（这是一个 DoS 界面），这样的提示应该来自一个可靠的来源（例如，你的全节点软件的二进制文件） <sup><a href="#note1" id="jump-1">[1]</a></sup>。
 
 我们将依赖于 “[assumevalid](https://bitcoincore.org/en/2017/03/08/release-0.14.0/#assumed-valid-blocks)” 以跳过特定的检查。这并非必需的，但这样可以得到一个更优雅、更节约带宽的协议。[assumeavlid 的具体后果](https://gist.github.com/RubenSomsen/a61a37d14182ccd78760e477c78133cd#regarding-assumevalid)、[非 assumevalid 的版本](https://gist.github.com/RubenSomsen/a61a37d14182ccd78760e477c78133cd#without-assumevalid)以及 [SwiftSync 跟 “assumeutxo” 的关系](https://gist.github.com/RubenSomsen/a61a37d14182ccd78760e477c78133cd#relating-this-to-assumeutxo)，我们会在后文解释。
 
-我们以顺序独立（完全可并行）的方式来处理所有的输入和输出。我们唯一要求的状态是一个 32 字节场的[哈希聚合值](https://gist.github.com/RubenSomsen/a61a37d14182ccd78760e477c78133cd#regarding-the-hash-aggregate)（不需要使用内存，也没有硬盘的随机读写）。本协议的行贿能随着可用的 CPU 和带宽而线性扩展。
+我们以顺序独立（完全可并行）的方式来处理所有的输入和输出。我们唯一要求的状态是一个 32 字节长的[哈希聚合值](https://gist.github.com/RubenSomsen/a61a37d14182ccd78760e477c78133cd#regarding-the-hash-aggregate)（不需要使用内存，也没有硬盘的随机读写）。本协议的性能随着可用的 CPU 和带宽而线性扩展。
 
 对于每一个输出：
 
@@ -134,7 +134,7 @@ UTXO 集中的一个完整条目包含以下数据：
 
 在 BIP30 激活以前，出现过两个重复输出，相同的 coinbase 交易输出被创建了两次。第二个输出就覆盖了第一个，实际上让第一个输出无法花费。这些实例在 BIP30 中被当作例外。更多信息可以在[这里](https://blog.bitmex.com/bitcoins-duplicate-transactions/)找到。
 
-SwiftSync 没有 UTXO 集的概念，所以我们无法跟踪一个输出是否已经存在。幸运的是，可以设计出另一种方法，给我们相同的结果。我们可以直接保存一个包含了每一笔 coinbase 交易 id 的换从，从而检查它们的唯一性。这只需要占用 227931 * 32 字节 ~= 7MB 的内存，而且我们还可以进一步优化它，甚至让它变成无状态的，只要我们想 <sup><a href="#note11" id="jump-11">[11]</a></sup>。它不仅等价于 BIP30，也是我们今天的做法的更快速的直接替换。
+SwiftSync 没有 UTXO 集的概念，所以我们无法跟踪一个输出是否已经存在。幸运的是，可以设计出另一种方法，给我们相同的结果。我们可以直接保存一个包含了每一笔 coinbase 交易 id 的缓存，从而检查它们的唯一性。这只需要占用 227931 * 32 字节 ~= 7MB 的内存，而且我们还可以进一步优化它，甚至让它变成无状态的，只要我们想 <sup><a href="#note11" id="jump-11">[11]</a></sup>。它不仅等价于 BIP30，也是我们今天的做法的更快速的直接替换。
 
 还有一种理论上存在的场景，就是一次狂暴的重组，回滚到 2013 年，导致 BIP34 永不激活、BIP30 永久持续。与其解决这个若有若无的情形，更实用的解决方案是（如果发生了这种事，就）直接返回非 SwiftSync 验证。
 
