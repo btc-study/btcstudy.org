@@ -35,36 +35,15 @@ tags:
 
 其中一种方法称作 “手续费替换（Replace-by-fee）”，其原理是使用原交易的部分或全部输入来发起一笔新交易，并让新交易（替代交易）携带比原交易更高的手续费，从而吸引矿工打包替代交易。如下图所示（留意数额）：
 
-```mermaid
-graph LR
-	U1(UTXO #0, 500 sats) --> T0[Tx #0]
-	T0 -.-> P0(Payment #0, 300 sats)
-	T0 -.-> C0(Change #0, 150 sats)
-	T0 -.-> F0{{Fee #0, 50 sats}}
-	
-	U1 --> T1[Tx #1]
-	T1 -.-> P1(Payment #1, 300 sats)
-	T1 -.-> C1(Change #1, 100 sats)
-	T1 -.-> F1{{Fee #1, 100 sats}}
-```
+![RBF](../images/lightning-network-technology-improvement-and-users-experience-part-7/RBF.svg)
 
 你也可以认为，Tx #1 是在尝试重复花费 UTXO #0，两笔交易是在 “赛跑”。但因为 Tx #1 给出了更高的手续费，显然矿工会更喜欢这笔交易。这就起到了我们所说的 “追加手续费”、吸引矿工优先打包交易的效果。
 
 ### CPFP
 
-另一种方法是，使用原交易的输出发起新交易，并让新交易携带较高的手续费，从而，矿工如果想要打包新交易，就必须打包原交易（换句话说，旧交易和新交易将作为一个整体 —— “交易包” —— 与交易池内的其它交易竞争）；这就叫 “子为父偿（CPFP）”。如下图所示：
+另一种方法是，使用原交易的输出发起新交易，并让新交易携带较高的手续费，从而，矿工如果想要打包新交易，就必须打包原交易（换句话说，旧交易和新交易将作为一个整体 —— “交易包” —— 与交易池内的其它交易竞争）；这就叫 “子为父偿（CPFP）”。如下图所示
 
-```mermaid
-graph LR
-	U1(UTXO #0, 500 sats) --> T0[Tx #0]
-	T0 -.-> P0(Payment #0, 300 sats)
-	T0 -.-> C0(Change #0, 150 sats)
-	T0 -.-> F0{{Fee #0, 50 sats}}
-	
-	C0 --> T1[Tx #1]
-	T1 -.-> C1(Change #1, 50 sats)
-	T1 -.-> F1{{Fee #1, 100 sats}}
-```
+![RBF](../images/lightning-network-technology-improvement-and-users-experience-part-7/CPFP.svg)
 
 与 RBF 相比，CPFP 有个缺点：新交易需要占用额外的区块空间（也就意味着新交易所携带的部分手续费将用来让自身得到确认，而不是为原交易追加），而 RBF 则基本上不需要。这意味着在两种方法都能使用的场合，RBF 的效率更高、经济性更好。
 
@@ -72,16 +51,7 @@ graph LR
 
 ## 早期设计（Legacy Channels）
 
-```mermaid
-graph LR
-	Channel(The Chennel, 2-of-2 Multi-sig) --> TC1[Commit #1]
-	TC1 -.-> TR(To Remote)
-	TC1 -.-> TC(To Local)
-	TC1 -.-> OH(An Offered HTLC)
-	TC1 -.-> RH(A Received HTLC)
-	OH --> HT[HTLC-Timeout tx]
-	RH --> HS[HTLC-Success tx]
-```
+![RBF](../images/lightning-network-technology-improvement-and-users-experience-part-7/Legacy-LN.svg)
 
 上图展示了对通道的一个参与者来说，与一个通道状态有关的交易：Offered HTLC 和 Received HTLC 分别代表着这个参与向对方提供的 HTLC 以及从对方收到的 HTLC，为一致地适用基于惩罚的闪电通道安全规则（LN-Penalty），这两类输出都必须得到预签名的交易（并在交易的输出中放置惩罚分支，在上图中没有画出） <sup><a href="#note2" id="jump-2">[2]</a></sup>。上图所概述的两类交易（承诺交易、HTLC 相关交易）都必须考虑手续费支付和追加的问题。
 
