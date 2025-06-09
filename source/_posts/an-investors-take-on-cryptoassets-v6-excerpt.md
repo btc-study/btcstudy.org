@@ -4,7 +4,7 @@ author: 'John Pfeffer'
 date: '2025/04/11 17:03:28'
 excerpt: '价值存储功能可能比支付功能要重要得多'
 categories:
-- 货币理论
+- 货币理念
 tags:
 - 货币
 ---
