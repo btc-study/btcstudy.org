@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="829px" viewBox="0 0 1200 829" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>R1-R2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="R1-R2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="1200" height="829"></rect>
+        <g id="Group-6" transform="translate(366.000000, 90.000000)">
+            <g id="A" transform="translate(425.000000, 271.000000)" fill="#000000" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="64" font-weight="bold">
+                <text id="Letter-left-Copy">
+                    <tspan x="0" y="62">B</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(69.000000, 0.000000)">
+                <g id="Group-Copy" transform="translate(181.500000, 26.500000) scale(-1, 1) rotate(-180.000000) translate(-181.500000, -26.500000) translate(161.000000, 0.000000)" fill="#4A90E2" font-family="HelveticaNeue-Thin, Helvetica Neue" font-weight="300">
+                    <text id="Letter-left-Copy" transform="translate(13.000000, 29.000000) scale(1, -1) translate(-13.000000, -29.000000) " font-size="40">
+                        <tspan x="9.09494702e-13" y="44">R</tspan>
+                    </text>
+                    <text id="Letter-left-Copy-2" transform="translate(35.000000, 11.500000) scale(1, -1) translate(-35.000000, -11.500000) " font-size="20">
+                        <tspan x="29" y="19">1</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" transform="translate(176.000000, 105.500000) scale(1, -1) translate(-176.000000, -105.500000) translate(0.000000, 64.000000)" fill-rule="nonzero" stroke="#4A90E2">
+                    <path d="M350.407593,83 C307.908443,33.4059366 244.93492,2 174.654232,2 C105.199433,2 42.4734793,33.0673992 0,81.6544189" id="Oval-2-Copy" stroke-dasharray="8,10" transform="translate(175.203796, 42.500000) rotate(-180.000000) translate(-175.203796, -42.500000) "></path>
+                    <g id="Group-2" transform="translate(339.988573, 12.008037) rotate(8.000000) translate(-339.988573, -12.008037) translate(329.488573, 1.508037)">
+                        <polyline id="Path-2" points="9.09494702e-13 9.12911178 20.015572 0 16.0876848 20.9751502"></polyline>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-4" transform="translate(69.000000, 499.000000)">
+                <g id="Group-Copy-2" transform="translate(179.500000, 118.500000) scale(-1, 1) rotate(-180.000000) translate(-179.500000, -118.500000) translate(159.000000, 92.000000)" fill="#2474CD" font-family="HelveticaNeue-Thin, Helvetica Neue" font-weight="300">
+                    <text id="Letter-left-Copy" transform="translate(13.000000, 29.000000) scale(1, -1) translate(-13.000000, -29.000000) " font-size="40">
+                        <tspan x="9.09494702e-13" y="44">R</tspan>
+                    </text>
+                    <text id="Letter-left-Copy-2" transform="translate(35.000000, 11.500000) scale(1, -1) translate(-35.000000, -11.500000) " font-size="20">
+                        <tspan x="29" y="19">2</tspan>
+                    </text>
+                </g>
+                <g id="Group-3" fill-rule="nonzero" stroke="#4A90E2">
+                    <path d="M350.407593,83 C307.908443,33.4059366 244.93492,2 174.654232,2 C105.199433,2 42.4734793,33.0673992 0,81.6544189" id="Oval-2-Copy" stroke-dasharray="8,10" transform="translate(175.203796, 42.500000) rotate(-180.000000) translate(-175.203796, -42.500000) "></path>
+                    <g id="Group-2" transform="translate(339.988573, 12.008037) rotate(8.000000) translate(-339.988573, -12.008037) translate(329.488573, 1.508037)">
+                        <polyline id="Path-2" points="9.09494702e-13 9.12911178 20.015572 0 16.0876848 20.9751502"></polyline>
+                    </g>
+                </g>
+            </g>
+            <circle id="Oval-3-Copy-3" fill="#FFFFFF" fill-rule="nonzero" cx="239" cy="520" r="29"></circle>
+            <circle id="Oval-3-Copy-7" fill="#FFFFFF" fill-rule="nonzero" cx="29" cy="309" r="29"></circle>
+            <g id="Group-5" transform="translate(79.000000, 148.000000)" fill-rule="nonzero" stroke="#2474CD" stroke-linecap="square" stroke-width="4">
+                <path d="M0.44140625,149.226562 L132.550781,0.50390625" id="Line"></path>
+                <path d="M200.441406,149.226562 L332.550781,0.50390625" id="Line" transform="translate(266.496094, 74.865234) scale(-1, 1) translate(-266.496094, -74.865234) "></path>
+            </g>
+            <g id="Group-5-Copy" transform="translate(245.500000, 406.000000) rotate(-181.000000) translate(-245.500000, -406.000000) translate(79.000000, 331.000000)" fill-rule="nonzero" stroke="#2474CD" stroke-linecap="square" stroke-width="4">
+                <path d="M0.44140625,149.226562 L132.550781,0.50390625" id="Line"></path>
+                <path d="M200.441406,149.226562 L332.550781,0.50390625" id="Line" transform="translate(266.496094, 74.865234) scale(-1, 1) translate(-266.496094, -74.865234) "></path>
+            </g>
+            <circle id="Oval-3-Copy-2" fill="#FFFFFF" fill-rule="nonzero" cx="243" cy="111" r="29"></circle>
+            <g id="A" transform="translate(221.000000, 73.000000)" fill="#000000" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="64" font-weight="bold">
+                <text id="Letter-left-Copy">
+                    <tspan x="0" y="62">C</tspan>
+                </text>
+            </g>
+            <g id="A" transform="translate(224.000000, 473.000000)" fill="#000000" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="64" font-weight="bold">
+                <text id="Letter-left-Copy">
+                    <tspan x="0" y="62">F</tspan>
+                </text>
+            </g>
+            <g id="A" transform="translate(19.000000, 271.000000)" fill="#000000" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="64" font-weight="bold">
+                <text id="Letter-left-Copy">
+                    <tspan x="0" y="62">A</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
