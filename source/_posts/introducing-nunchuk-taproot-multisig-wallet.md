@@ -5,7 +5,7 @@ date: '2025/05/27 11:37:01'
 cover: ''
 excerpt: ' MuSig2 如何能实现 M-of-N 签名呢？'
 tags:
-- 多签名
+- 产品
 ---
 
 
