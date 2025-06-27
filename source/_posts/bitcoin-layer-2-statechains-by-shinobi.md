@@ -15,7 +15,7 @@ tags:
 
 
 
-“[Statechain](https://github.com/RubenSomsen/rubensomsen.github.io/blob/master/img/statechains.pdf)” 是一个原创的二层协议，最初由 Ruben Somsen 在 2018 年提出；初版提议依赖于 “eltoo（或者说 LN Symmetry）”提议。在 2021 年，CommerceBlock 团队开发除了初版提议的一个变种：“Mercury”。2024 年，最初的 Mercury 又迭代了一个版本，成为 “Mercury Layer”。
+“[Statechain](https://github.com/RubenSomsen/rubensomsen.github.io/blob/master/img/statechains.pdf)” 是一个原创的二层协议，最初由 Ruben Somsen 在 2018 年提出；初版提议依赖于 “eltoo（或者说 LN Symmetry）”提议。在 2021 年，CommerceBlock 团队开发出了初版提议的一个变种：“Mercury”。2024 年，最初的 Mercury 又迭代了一个版本，成为 “Mercury Layer”。
 
 Statechain 提议讲起来要比其它系统（比如 [Ark](https://bitcoinmagazine.com/technical/bitcoin-layer-2-ark)（[中文译本](https://www.btcstudy.org/2025/06/10/bitcoin-layer-2-ark-by-shinobi/)） 或闪电通道）要复杂，因为从初版提议的设计到两个已经实现的变种，再到曾被零散提议的设计，它允许的变异范围很大。
 
@@ -49,13 +49,13 @@ Statechain 的持有者必须信任协调服务商永不会跟前任所有权人
 
 首先是签名。用户之间不再传递临时私钥。相反，Mercury 使用一种多方计算（MPC）协议，使得用户和协调员可以合作生成一个私钥，但各自都只有该私钥的一部分，没有哪一方知道完整的私钥。这个私钥就用来签名预签名交易。这个 MPC 协议还允许现任所有权人和协调员与第三方（转账的接收者）参与第二轮协议，让协调员和第三方能生成 *另一份* 碎片但得到相同的私钥。在 Mercury 和 Mercury Layer 协议中，在完成一次转账之后，诚实的协调员需要删除对应于上一任所有权人的密钥材料。只要这么做了，协调员就不再能够跟前任所有权人合作签名，因为协调员手上仅剩的碎片与任何一个前任所有权人的碎片都不匹配，无法生成正确的私钥。这是比原始提议更强的安全性保证，只要协调员诚实的话。
 
-Mercury 和 Mercury Layer 的预签名交易无法使用 LN Symmetry（还没有软分叉添加这个功能）。因此，CommerceBlock 选择了使用递减的时间锁。最早一位所有权人的预签名交易使用了 nLocktime 字段，也即绝对时间锁，在足够远的未来才能动用。随着每一次转账发生，后续一位用户获得这个 Statechain，其获得的预签名交易的绝对时间锁就比前一任所有权人的短出一个预定义的长度（可以更快动用）。这就保证了前任所有权人甚至没法抢先在链上提交预签名交易（最新的所有权人的预签名交易总是最快能够广播的），但这也意味着，到了某个时间点，最新的所有权人就 *必须* 在链上关闭自己的 Statechian，否则上一任所有权人就有机可乘。
+Mercury 和 Mercury Layer 的预签名交易无法使用 LN Symmetry（还没有软分叉添加这个功能）。因此，CommerceBlock 选择了使用递减的时间锁。最早一位所有权人的预签名交易使用了 nLocktime 字段，也即绝对时间锁，在足够远的未来才能动用。随着每一次转账发生，后续一位用户获得这个 Statechain，其获得的预签名交易的绝对时间锁就比前一任所有权人的短出一个预定义的长度（可以更快动用）。这就保证了前任所有权人甚至没法抢先在链上提交预签名交易（最新的所有权人的预签名交易总是最快能够广播的），但这也意味着，到了某个时间点，最新的所有权人就 *必须* 在链上关闭自己的 Statechain，否则上一任所有权人就有机可乘。
 
 Mercury 与 Mercury Layer 的主要区别在于交易签名的方式。在 Mercury 中，协调员服务商可以看到当前用户提议的转账，能够验证和签名。而在 Mercury Layer 中，由于使用了盲签名协议，协调员无法看到他们签名的交易的任何细节。因此，服务商必须使用匿名记录以及当前所有权人的一个特殊授权密钥来跟踪各个 Statechain，以保证只会签名有效的转账。
 
 ## 与其它方案的协同
 
-Statechain 可以跟基于预签名交易的其它 Layer 2 方案协同工作。举个例子，初版提议的一部分提议结合 statechian 和闪电通道。因为两者都使用预签名交易，所以可以在一个 Statechain 中封装一条闪电通道。这只要求当前所有权人的单方退出密钥是一个多签名，并创建预签名交易将其 Statechain 花到一条闪电通道中。这让闪电通道可以完全在链下开启和关闭。
+Statechain 可以跟基于预签名交易的其它 Layer 2 方案协同工作。举个例子，初版提议的一部分提议结合 statechain 和闪电通道。因为两者都使用预签名交易，所以可以在一个 Statechain 中封装一条闪电通道。这只要求当前所有权人的单方退出密钥是一个多签名，并创建预签名交易将其 Statechain 花到一条闪电通道中。这让闪电通道可以完全在链下开启和关闭。
 
 类似地，可以在一个 Ark 轮次的一个 vUTXO 中封装一条 Statechain。这只需要构建对 statechain 必要的、花费该 vUTXO 输出的预签名交易。
 
