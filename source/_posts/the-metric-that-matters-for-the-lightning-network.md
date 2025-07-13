@@ -30,10 +30,10 @@ tags:
 最大流量指标在电信、物流等行业里已经使用了数十年。它已经被用来解决这些行业的问题：
 
 - 电信网络：最大流量指标帮助高效分配带宽，保证数据可以平滑地穿过互联网。
-- 供应链：企业们使用最大流量算法来优化商品在他们的全球分发网络中的移动，以减少延迟、尽可能提高小庄。
+- 供应链：企业们使用最大流量算法来优化商品在他们的全球分发网络中的移动，以减少延迟、尽可能提高效率。
 - 物流系统：城市应用最大流量概念来管理交通，通过优化路口之间的流量，确保车辆会顺利经过道路网络。
 
-这些案例展示了最大流量概念如何在复杂系统 —— 资源需要快速且高效地通过的系统 —— 中提高效率。现在，[来自 René Pickhardt 的最新数据科学研究](https://github.com/renepickhardt/Lightning-Network-Limitations/blob/paper/Limits of two party channels/paper/a mathematical theory of payment channel networks.pdf)，讨论闪电支付成功率，也将这一概念应用到闪电网络上。紧跟最大流量概念，可以帮助我们保证比特币会在用户间平滑流动，即使网络自身在扩大。
+这些案例展示了最大流量概念如何在复杂系统 —— 资源需要快速且高效地通过的系统 —— 中提高效率。现在，<a href="https://github.com/renepickhardt/Lightning-Network-Limitations/blob/paper/Limits of two party channels/paper/a mathematical theory of payment channel networks.pdf">来自 René Pickhardt 的最新数据科学研究</a>，讨论闪电支付成功率，也将这一概念应用到闪电网络上。紧跟最大流量概念，可以帮助我们保证比特币会在用户间平滑流动，即使网络自身在扩大。
 
 最大流量概念不是要度量真实的价值流动，而是要理解支付通过闪电网络的可行概率。在关注最大流量时，我们会对闪电网络的真实健康度形成更准确的理解。它不是单纯统计通道和容量，而是展示支付成功的概率，让节点营运者可以改善自己的流动性分布并提高网络的整体性能。
 
