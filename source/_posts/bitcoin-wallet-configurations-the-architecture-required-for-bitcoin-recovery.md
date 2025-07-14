@@ -15,9 +15,9 @@ tags:
 
 
 
-![Wallet Configurations](../images/bitcoin-wallet-configurations-the-architecture-required-for-bitcoin-recovery/Wallet Configurations.png)
+![Wallet Configurations](../images/bitcoin-wallet-configurations-the-architecture-required-for-bitcoin-recovery/Wallet_Configurations.png)
 
-要想自己控制你的比特币，你必须保管持有这些资金的[密钥](https://unchained.com/blog/what-is-a-bitcoin-key/)、消除你对第三方密钥的以来。但这还不够 —— 同样重要的是，确保你不会依赖于你的钱包 *应用*。
+要想自己控制你的比特币，你必须保管持有这些资金的[密钥](https://unchained.com/blog/what-is-a-bitcoin-key/)、消除你对第三方密钥的依赖。但这还不够 —— 同样重要的是，确保你不会依赖于你的钱包 *应用*。
 
 钱包应用就是你观察自己的比特币余额、构造交易的地方。它通常是你的电脑或手机上的一个程序。如果这个应用宕机了，或者遇到了故障，那你可能需要使用另一个应用来重获对你的钱包（资金）的控制权。这需要导入你的 *钱包配置*（有些时候会被称为 “ *钱包描述符* ”）。如果不知道（或者说不掌握）钱包配置的信息，你当前的钱包应用就会变成你自主保管装置中的一个单点故障。
 
@@ -103,7 +103,7 @@ tags:
 
 ### 所有的拓展公钥
 
-多签名名的一个极为重要但没有得到充分理解的侧面是，知道**所有的拓展公钥**是使用资金的前提。通常人们会以为，如果自己使用的是一个 2-of-3 多签名钱包，那么只要有其中两个主私钥（种子词），就有了足以触及自己钱包中的资金的一切；这是不正确的。还需要来自每一个主私钥的拓展公钥。
+多签名的一个极为重要但没有得到充分理解的侧面是，知道**所有的拓展公钥**是使用资金的前提。通常人们会以为，如果自己使用的是一个 2-of-3 多签名钱包，那么只要有其中两个主私钥（种子词），就有了足以触及自己钱包中的资金的一切；这是不正确的。还需要来自每一个主私钥的拓展公钥。
 
 这就意味着需要以下三者之一：
 
