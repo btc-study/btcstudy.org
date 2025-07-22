@@ -18,7 +18,7 @@ tags:
 
 ![musigfrostheader](../images/musig2-and-frost-explaining-multisignature-schemes-on-taproot/musigfrostheader.png)
 
-2021 年 11 月，[Taproot 升级](https://blog.bitbox.swiss/en/taproot-planting-the-seeds-for-bitcoin-applications/)在比特币上通过[软分叉](https://blog.bitbox.swiss/en/soft-fork-or-hard-fork-what-is-the-difference/)激活，给比特币交易带来了一些新的特性，以及相对更高效的 Schnorr 签名。虽然采用率在一开始增加得比较缓慢，当前，Taproot 形式的交易输出已经占据了[所有比特币未花费交易输出的 20%](https://transactionfee.info/charts/inputs-types-by-count/)，而且更多应用开始使用 Taproot 的更高级的特性。当然。BitBoxApp 和 BitBox02 [从 2022 年](https://blog.bitbox.swiss/en/bitbox-01-2022-maighels-update/)开始就支持 发送资金到 Tpaorot 地址以及用 Taproot 地址来收取资金。
+2021 年 11 月，[Taproot 升级](https://blog.bitbox.swiss/en/taproot-planting-the-seeds-for-bitcoin-applications/)在比特币上通过[软分叉](https://blog.bitbox.swiss/en/soft-fork-or-hard-fork-what-is-the-difference/)激活，给比特币交易带来了一些新的特性，以及相对更高效的 Schnorr 签名。虽然采用率在一开始增加得比较缓慢，当前，Taproot 形式的交易输出已经占据了[所有比特币未花费交易输出的 20%](https://transactionfee.info/charts/inputs-types-by-count/)，而且更多应用开始使用 Taproot 的更高级的特性。当然。BitBoxApp 和 BitBox02 [从 2022 年](https://blog.bitbox.swiss/en/bitbox-01-2022-maighels-update/)开始就支持 发送资金到 Taproot 地址以及用 Taproot 地址来收取资金。
 
 在本文中，我们将在新的多签名方案（比如 [MuSig2](https://eprint.iacr.org/2020/1261.pdf) 和 [FROST](https://eprint.iacr.org/2020/852.pdf)）上展望未来；这些方案将让[多签名钱包](https://blog.bitbox.swiss/en/what-are-multisig-wallets-everything-you-need-to-know/)从 Taproot 钱包的增强的隐私性和经济性中获益。为了理解它们的工作原理，以及上述好处从何而来，我们要简单了解比特币的脚本和 Taproot，然后再申述了解这些签名方案。
 
@@ -40,7 +40,7 @@ tags:
 
 **密钥路径**
 
-默认的，或者说 “更推荐” 的使用 Taproot 地址的方式是密钥路径；就其自身而已，非常容易理解：Taproot 脚本包含了一个公钥，只需一个签名就可以从中花费。如果在花费一个 Tarpoot 输出时，你什么都没提供，只提供了一个签名，那就是密钥路径花费。比如说，从 BitBoxApp 所创建的 Taproot 地址中花费时，每一笔普遍交易都是密钥路径花费。
+默认的，或者说 “更推荐” 的使用 Taproot 地址的方式是密钥路径；就其自身而已，非常容易理解：Taproot 脚本包含了一个公钥，只需一个签名就可以从中花费。如果在花费一个 Taproot 输出时，你什么都没提供，只提供了一个签名，那就是密钥路径花费。比如说，从 BitBoxApp 所创建的 Taproot 地址中花费时，每一笔普遍交易都是密钥路径花费。
 
 ![taproot-key-path](../images/musig2-and-frost-explaining-multisignature-schemes-on-taproot/taproot-key-path.png)
 
@@ -60,7 +60,7 @@ Taproot 厉害的地方在于我们可以**全都要**！Taproot 脚本**既**�
 
 ### 签名聚合
 
-Taproot 脚本所使用的电子签名方案是 “Schnorr 签名”，它有一种有趣属性叫做 “linerity”，因为着其签名结果是**易于相加的**，可以把来自多个签名者的电子签名 “聚合” 为单个签名。
+Taproot 脚本所使用的电子签名方案是 “Schnorr 签名”，它有一种有趣属性叫做 “linearity”，意味着其签名结果是**易于相加的**，可以把来自多个签名者的电子签名 “聚合” 为单个签名。
 
 基于这个原理，比特币专家和密码学们得出了一种优雅的多重签名方案。MuSig2 使用密钥聚合和签名聚合来启用 **n-of-n 多签名钱包**（例如，下图就展示了 4-of-4 多签名钱包），而且不需要在比特币网络中揭晓关于聚合前公钥和聚合前签名的任何信息。
 
@@ -74,11 +74,11 @@ Taproot 脚本所使用的电子签名方案是 “Schnorr 签名”，它有一
 
 MuSig 的第一个版本要求三轮交互，而且出于安全理由，必须稍微调整，这也是为什么现在较为著名的是其后继者 “MuSig2”，该算法只要求两轮交互。当然，这很是给用户带来了复杂性，虽然隐私性和交易体积好处可能足以说服许多用户克服这些不便之处。
 
-n-of-n 设施的另一个局限性在于，它无法直接形成阈值机制（例如，2-of-3），而这是大多数多签名钱包用户想要的东西 —— 这能帮他们对抗私钥丢失事件。为了加入这种安全冗余，就需要额外的脚本路径、形成不同密钥的 “后备组合”。这可以在实质上产生与之机制，但也需要更加复杂的脚本和设置。但你可能猜到了，我们还未穷尽所有可能性。
+n-of-n 设施的另一个局限性在于，它无法直接形成阈值机制（例如，2-of-3），而这是大多数多签名钱包用户想要的东西 —— 这能帮他们对抗私钥丢失事件。为了加入这种安全冗余，就需要额外的脚本路径、形成不同密钥的 “后备组合”。这可以在实质上产生阈值机制，但也需要更加复杂的脚本和设置。但你可能猜到了，我们还未穷尽所有可能性。
 
 ## FROST
 
-“灵活且最优轮次的 Schnorr 门限签名” 协议，缩写为 “FROST”，是另一个类似于 MuSig2 的多签名协议，至少从创建和聚合签名的角度看。不妥，它使用了不同的密钥生成方式，从而**支持阈值机制**。
+“灵活且最优轮次的 Schnorr 门限签名” 协议，缩写为 “FROST”，是另一个类似于 MuSig2 的多签名协议，至少从创建和聚合签名的角度看。但是，它使用了不同的密钥生成方式，从而**支持阈值机制**。
 
 为了安全地使用阈值机制，让（比如说） 4 个预定公钥中的任何 2 个的签名都可以聚合成有效的签名，有两种创建公钥碎片的选择：（1）由一个受信任的参与者来生成和发放公钥，这是一种较为简单的方案，但显然需要签名器之间相互信任；（2）让签名参与者通过一个交互流程来生成密钥，这通常叫做 “[分布式密钥生成](https://en.wikipedia.org/wiki/Distributed_key_generation)（DKG）”，需要在签名器之间有安全的通信通道。
 
@@ -90,6 +90,6 @@ n-of-n 设施的另一个局限性在于，它无法直接形成阈值机制（�
 
 如果你不是单独地思考这些概念，而是想象它们的组合方式（以及跟其它机制的组合），你会发现可能性几乎是无穷无尽。用户能够微调子集的设置，例如加入时间锁和复原路径，就像 [BitBox02 搭配 Liana Wallet 已经能做到的那样](https://blog.bitbox.swiss/en/exploring-bitcoin-miniscript-with-liana-and-the-bitbox02/)，从而能够组合它们、并从我们已经学到的高级方案中受益。闪电网络这样的扩容方案，也可以利用 MuSig 这样的方案，让通道管理更加高效、更加隐私。
 
-MuSig2 和 FROST 的好处基本上会随着钱包设置的复杂度以及签名器的数量而上升，这让它们对财务管理有复杂要求的大企业非常有吸引力。但即便是对个人用户，也可以节约手续费、获得更好的隐私性。两者都还处在非常早的阶段，但 Taproot 以及它的好处是长期存在的，所以像 MuSig2 和 FROST 这样的签名方案的采用以及用户体验最终也会提上来。我们将继续关注这些开发工作，看看是否能让 BitBpx 用户从中受益！
+MuSig2 和 FROST 的好处基本上会随着钱包设置的复杂度以及签名器的数量而上升，这让它们对财务管理有复杂要求的大企业非常有吸引力。但即便是对个人用户，也可以节约手续费、获得更好的隐私性。两者都还处在非常早的阶段，但 Taproot 以及它的好处是长期存在的，所以像 MuSig2 和 FROST 这样的签名方案的采用以及用户体验最终也会提上来。我们将继续关注这些开发工作，看看是否能让 BitBox 用户从中受益！
 
 （完）
