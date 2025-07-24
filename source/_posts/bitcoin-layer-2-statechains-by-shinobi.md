@@ -1,5 +1,5 @@
 ---
-title: 'Bitcoin Layer 2 之 Statechain'
+title: '比特币 Layer 2 之 Statechain'
 author: 'Shinobi'
 date: '2025/06/22 02:16:36'
 cover: ''
