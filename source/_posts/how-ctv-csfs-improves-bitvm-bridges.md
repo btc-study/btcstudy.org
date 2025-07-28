@@ -6,6 +6,7 @@ excerpt: '迈向信任最小化、实用的比特币互操作性的重大一步'
 categories:
 tags:
 - BitVM
+- CTV
 ---
 
 

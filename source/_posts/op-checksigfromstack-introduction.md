@@ -5,7 +5,7 @@ date: '2025/03/20 16:11:18'
 cover: ''
 excerpt: '这种操作码可以检查对任意消息的签名'
 tags:
-- Covenant
+- CSFS
 ---
 
 
