@@ -1,7 +1,7 @@
 ---
 title: 'Bitcoin Optech：2021 比特币技术进展年度回顾'
 author: 'Bitcoin Optech'
-date: '2022/1/04 13:15:48'
+date: '2022/01/04 13:15:48'
 cover: '../images/bitcoin-optech-2021-year-in-review/2020-12-ln-jamming-attacks.png'
 excerpt: '我们在本通讯中省略了所有的名字，以表明发展比特币是一个团队的努力'
 categories:
