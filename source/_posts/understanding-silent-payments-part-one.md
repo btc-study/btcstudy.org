@@ -6,6 +6,7 @@ cover: ''
 excerpt: '静默支付消除了管理多个地址的需要，同时还能保护隐私性'
 tags:
 - 静默支付
+mathjax: true
 ---
 
 
