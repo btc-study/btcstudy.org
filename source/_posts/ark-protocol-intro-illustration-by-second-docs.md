@@ -106,11 +106,11 @@ Ark 是一套乐观主义的协议。在常规情况下，用户要从 Ark 实�
 
 ## 支付
 
-Ark 用户之间的支付可以随时发生，使用一种称作 “[arkoor](https://docs.second.tech/ark-protocol/payments/)（Ark out-of-round）” 的方法。这是在 Ark 内实现用户对用户支付的唯一方法。在一笔 arkoor 支付中，接收者获得一个直接来自发送者在交易树的叶子的[新的支付型 VTXO](https://docs.second.tech/ark-protocol/vtxo/#spend-vtxos) 。
+Ark 用户之间的支付可以随时发生，使用一种称作 “[arkoor](https://docs.second.tech/ark-protocol/payments/)（Ark out-of-round）” 的方法。这是在 Ark 内实现用户对用户支付的唯一方法。在一笔 arkoor 支付中，接收者获得一个直接来自发送者在交易树的叶子的[新的支出型 VTXO](https://docs.second.tech/ark-protocol/vtxo/#spend-vtxos) 。
 
 ![A spend VTXO chained from a board VTXO](../images/ark-protocol-intro-illustration-by-second-docs/spend-vtxo-from-board.svg)
 
-<p style="text-align:center">- 来自一个入门型 VTXO 的支付型（arkoor） VTXO -</p>
+<p style="text-align:center">- 来自一个入门型 VTXO 的支出型（arkoor） VTXO -</p>
 
 
 支付由 Ark 服务商和发送者使用类似于 statechain 的方法共同签名。Arkoor 方法提供了两项关键好处：
