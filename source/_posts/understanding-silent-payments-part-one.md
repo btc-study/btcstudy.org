@@ -185,3 +185,4 @@ $P = B_{spend} +  hash(input_{hash} \times S) \times G$
 
 在下一篇文章中，我们将了解静默支付如何改变了硬件签名器的角色，以及为了安全地支持静默支付 ，硬件签名器要做哪些事情。
 
+> *[续篇见此处](https://www.btcstudy.org/2025/08/12/understanding-silent-payments-part-two/)*
