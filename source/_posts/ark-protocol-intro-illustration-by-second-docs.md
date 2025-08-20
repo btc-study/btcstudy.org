@@ -15,7 +15,7 @@ tags:
 
 
 
-Ark 协议是比特币网络上的一个二层协议。它提供了简单的入门程序、便宜且可预测的手续费、即时支付功能、闪电网络互操作性，同时保留了你对自己的比特币的完全控制。
+Ark 协议是比特币网络上的一个二层协议。它提供了简单的入场程序、便宜且可预测的手续费、即时支付功能、闪电网络互操作性，同时保留了你对自己的比特币的完全控制。
 
 Ark 在当前的比特币协议上就能实现，无需新的操作码、无需变更共识规则。
 
@@ -27,7 +27,7 @@ Ark 协议围绕着一个称作 “ *Ark 服务商* ”的角色运行。用户�
 
 ## 基于 VTXO 的扩容
 
-Ark 引入了一种新的，基于 “虚拟 UTXO（[VTXO](https://docs.second.tech/ark-protocol/vtxo/)）” 的扩容模式。一个 VTXO 是一连串链下的、预签名的交易；持有该 VTXO 的用户可以随时将这串交易广播出去、在链上索取自己的比特币，这可以应对紧急情形。在常规情况下，这些链下的交易不会被广播到比特币网络中，用户会在自己的 Ark 服务商的合作下 *退出* Ark 协议。
+Ark 引入了一种新的，基于 “虚拟 UTXO（[VTXO](https://docs.second.tech/ark-protocol/vtxo/)）” 的扩容模式。一个 VTXO 是一连串链下的、预签名的交易；持有该 VTXO 的用户可以随时将这串交易广播出去、在链上索取自己的比特币，这可以应对紧急情形。在常规情况下，这些链下的交易不会被广播到比特币网络中，用户会在自己的 Ark 服务商的合作下 *离开* Ark 协议。
 
 虽然 VTXO 的实际结构不是我们这里说起来的那么简单，但它确实基于 UTXO 模型，而且在大部分情况下，其执行功能的方式与 UTXO 一模一样 —— 能在 UTXO 上做的事情，在 VTXO 上都能做。
 
@@ -49,7 +49,7 @@ Ark 服务商会周期性[启动和协调](https://docs.second.tech/ark-protocol
 
 ## 交易树
 
-在一个回合中，Ark 服务商和用户一起[构造一棵交易树](https://docs.second.tech/ark-protocol/vtxo/#transaction-trees)。交易树的每一个 *叶子*（也就是一笔 *退出交易*）由一个用户控制，并且对应于一个 VTXO 。 
+在一个回合中，Ark 服务商和用户一起[构造一棵交易树](https://docs.second.tech/ark-protocol/vtxo/#transaction-trees)。交易树的每一个 *叶子*（也就是一笔 *离场交易*）由一个用户控制，并且对应于一个 VTXO 。 
 
 交易树的 *树根* 会被广播到网络中、得到区块链的确认；该交易称作 “ *回合交易* ”。一旦一笔回合交易得到确认，对应交易树上的每个用户都获得了可验证的保证：他们可以单方面取回自己的比特币。
 
@@ -77,7 +77,7 @@ Ark 服务商必须为多种操作准备好流动性，用户刷新 VTXO 是最�
 
 [Ark 的手续费结构](https://docs.second.tech/ark-protocol/fees/)（尚未得到定义）需要反映出：越新的 VTXO，其刷新成本就越高；越临近过期的 VTXO，刷新成本就越低。
 
-其它依赖于流动性的操作包括用户退出和用户发起闪电支付。Ark 用户之间的转账不需要流动性 —— 这样的资金转移是 *外在于回合运行的*。
+其它依赖于流动性的操作包括用户离场和用户发起闪电支付。Ark 用户之间的转账不需要流动性 —— 这样的资金转移是 *外在于回合运行的*。
 
 ![Diagram of how Ark liquidity works](../images/ark-protocol-intro-illustration-by-second-docs/liquidity-refresh-abridged.svg)
 
@@ -90,11 +90,11 @@ Ark 服务商必须为多种操作准备好流动性，用户刷新 VTXO 是最�
 
 重要的是，新用户不是一定要经历这样的程序。他们设置好钱包之后，马上就可以接收 VTXO（没错，从其它已经拥有 VTXO 那里）。
 
-## 用户退出
+## 用户离场
 
-Ark 是一套乐观主义的协议。在常规情况下，用户要从 Ark 实例中取回比特币时，[使用退出流程，而非单方面取款流程](https://docs.second.tech/ark-protocol/exit/)；单方取款流程是为意外情形准备的。
+Ark 是一套乐观主义的协议。在常规情况下，用户要从 Ark 实例中取回比特币时，[使用离场流程，而非单方面取款流程](https://docs.second.tech/ark-protocol/exit/)；单方取款流程是为意外情形准备的。
 
-要退出的时候，用户会参加一个回合，但不会刷新自己的 VTXO，而是[放弃自己的 VTXO](https://docs.second.tech/ark-protocol/forfeits-connectors/)、换取一个交给 TA 所选定的地址的链上输出。跟 Ark 协议中的许多流程一样，退出操作是原子化的，Ark 服务商和用户都不会暴露在对手方风险中。
+要离场的时候，用户会参加一个回合，但不会刷新自己的 VTXO，而是[放弃自己的 VTXO](https://docs.second.tech/ark-protocol/forfeits-connectors/)、换取一个交给 TA 所选定的地址的链上输出。跟 Ark 协议中的许多流程一样，离场操作是原子化的，Ark 服务商和用户都不会暴露在对手方风险中。
 
 ## 单方退出
 
@@ -110,7 +110,7 @@ Ark 用户之间的支付可以随时发生，使用一种称作 “[arkoor](htt
 
 ![A spend VTXO chained from a board VTXO](../images/ark-protocol-intro-illustration-by-second-docs/spend-vtxo-from-board.svg)
 
-<p style="text-align:center">- 来自一个入门型 VTXO 的支出型（arkoor） VTXO -</p>
+<p style="text-align:center">- 来自一个入场型 VTXO 的支出型（arkoor） VTXO -</p>
 
 
 支付由 Ark 服务商和发送者使用类似于 statechain 的方法共同签名。Arkoor 方法提供了两项关键好处：
