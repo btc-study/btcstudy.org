@@ -11,7 +11,7 @@ tags:
 
 > *作者：Adan Jonas*
 >
-> *来源：<https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2024/choosing-a-career-in-bitcoin-open-source-development#the-people-of-bitcoin>*
+> *来源：<https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2024/choosing-a-career-in-bitcoin-open-source-development>*
 >
 > *原文为 Adam Jonas 在 MIT Bitcoin Expo 2024 大会上的演讲转录稿，由 aassoiants 通过 btctranscripts.com 转录。*
 
