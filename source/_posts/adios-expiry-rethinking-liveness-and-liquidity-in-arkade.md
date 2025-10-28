@@ -37,7 +37,7 @@ tags:
 
 ![delegation-compare](../images/adios-expiry-rethinking-liveness-and-liquidity-in-arkade/delegation-compare.png)
 
-关键的图谱是启用了一种流动和模块化的信任模式。用户可以从完全单方控制模式迁移为实用的代理后备模式，并且，这种后备模式是容易用轻量级的基础设施来管理的。所有东西都是通过应用层的逻辑和智能客户端的动作来实现的，不需要协议作任何变更。就像 Arkade 已经允许用户基于自己的需要、在预先定义的速度和[比特币的终局性](https://docs.arkadeos.com/learn/security/transaction-finality?ref=blog.arklabs.xyz)之间作出选择，委托只是将这种机制延申到了 VTXO 的生命周期中。
+关键的突破是启用了一种流动和模块化的信任模式。用户可以从完全单方控制模式迁移为实用的代理后备模式，并且，这种后备模式是容易用轻量级的基础设施来管理的。所有东西都是通过应用层的逻辑和智能客户端的动作来实现的，不需要协议作任何变更。就像 Arkade 已经允许用户基于自己的需要、在预先定义的速度和[比特币的终局性](https://docs.arkadeos.com/learn/security/transaction-finality?ref=blog.arklabs.xyz)之间作出选择，委托只是将这种机制延申到了 VTXO 的生命周期中。
 
 委托也创造了天然的经济激励兼容性：代理员凭借可靠的服务来赚取手续费，这能够激励高质量的基础设施出现、配合多种多样的信任模式，从 “熟人老张” 到专用的服务供应商。
 
@@ -66,11 +66,11 @@ Aakade Intents 使用 [BIP322](https://github.com/bitcoin/bips/blob/master/bip-0
 2. **Intent 预授权**：你创建并签名一条 Intent 消息，指明你希望发生的操作（简化例子）：
 
    ![Intent](../images/adios-expiry-rethinking-liveness-and-liquidity-in-arkade/Intent.png)
-
-你使用 A + S 路径来签名这条 Intent 消息、证明所有权并指明希望放弃哪个 VTXO、创建一个什么样的新 VTXO 。你也可以提供一条使用 A + B + S 委托路径和 SIGHASH_ALL|ANYONECANPAY 模式来签名的弃权交易。
-
-这种特殊的签名类型允许你的代理员额外添加连接器输入，但不会允许别人改动你指定的输出。你将弃权交易输出的数额设置为你的 VTXO 的输出数额加上连接器数额。你的代理员会收到你的完整的 Intent 消息以及残缺的弃权交易 —— 这两者，代理员都无法改变，只能在你允许的时间内提交给服务商。
-
+   
+   你使用 A + S 路径来签名这条 Intent 消息、证明所有权并指明希望放弃哪个 VTXO、创建一个什么样的新 VTXO 。你也可以提供一条使用 A + B + S 委托路径和 SIGHASH_ALL|ANYONECANPAY 模式来签名的弃权交易。
+   
+   这种特殊的签名类型允许你的代理员额外添加连接器输入，但不会允许别人改动你指定的输出。你将弃权交易输出的数额设置为你的 VTXO 的输出数额加上连接器数额。你的代理员会收到你的完整的 Intent 消息以及残缺的弃权交易 —— 这两者，代理员都无法改变，只能在你允许的时间内提交给服务商。
+   
 3. **协作执行**：当刷新时间到来时，你的代理员会提交你预签名的 Intent 给 Arkade 运营者，并代表你加入刷新队伍。运营者会从用你的 Intent 来验证刷新时机、所有权证据和输出说明。你的代理员会收到来自运营者的一个连接器输入、将它放到你的弃权输出中，然后用 SIGHASH_ALL 模式签名、再提交给运营者。
 
    你的代理员也会参与交易树签名、提供一个用于批处理协作的公钥。一切都会原子化解决：你的旧 VTXO 会被花费掉、你的新 VTXO 会被创建出来，就像你的 Intent 所指定的那样，你的代理员会赚到手续费，而运营者协调整个批量更新流程。
