@@ -13,7 +13,7 @@ tags:
 > 
 > *来源：<https://tropicsquare.com/blogs/hardware-security-understanding-the-differences-between-a-secure-element-tpm-hsm-and-a-tee>*
 
-
+> 编者注：在硬件签名器中，安全芯片通常被用于存储种子词和执行签名操作，是极为重要的部分。但是，常见的安全芯片产品通常是闭源的，且伴有保密协议。撰写此文的 “ Tropic Sequare ” 公司所推出的 “ TROPIC01 ” 可能是迄今（2025 年 11 月）唯一一款开源的安全芯片。
 
 *本文为 “[安全芯片](https://www.tropicsquare.com/blogs/what-is-a-secure-element-and-why-should-you-care)与开源架构硬件安全性” 三部曲的第二篇。*
 
