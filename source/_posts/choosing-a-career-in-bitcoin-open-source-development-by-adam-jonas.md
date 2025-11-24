@@ -1,6 +1,6 @@
 ---
 title: '以比特币开源开发为职业'
-author: 'Adan Jonas'
+author: 'Adam Jonas'
 date: '2025/08/21 18:47:48'
 cover: ''
 excerpt: '比特币不是重构，它是重写'
@@ -9,7 +9,7 @@ tags:
 ---
 
 
-> *作者：Adan Jonas*
+> *作者：Adam Jonas*
 >
 > *来源：<https://btctranscripts.com/mit-bitcoin-expo/mit-bitcoin-expo-2024/choosing-a-career-in-bitcoin-open-source-development>*
 >
@@ -91,7 +91,7 @@ tags:
 
 还有 Hebasto 。在 2018 年，Hebasto 开始在晚上和周末为 Bitcoin Core 贡献代码，其余时间，他是乌克兰一所大学的 IT 工程师。他贡献了许多代码和大量评审意见，最后成为了 Bitcoin Core 的全职开发。当他的国家遭到入侵的时候，他已经花了好几年时间来开发这种能让他把毕生积蓄以无人知晓的方式送过边境的技术，而许多人还在为访问自己的银行账户而苦苦挣扎。因为 Hebasto ，比特币变得更好了。
 
-还有 Ishaana 。Ishaana 从 15 岁开始开发 Bitcoin Core 。她的思想远远超过了她的经验。她自学了编程，并开始专注于 Bitcoin Core 的钱包模块。几年过去了，她已经成为了这个项目最有浅井的贡献者之一。不是因为她在软件领域有多么丰富的经验，甚至与年龄无关，仅仅因为她好奇、谦虚而且自律。开源不是你的名片，它跟你能做的贡献有关。比特币也因为 Ishaana 而变得更好了。
+还有 Ishaana 。Ishaana 从 15 岁开始开发 Bitcoin Core 。她的思想远远超过了她的经验。她自学了编程，并开始专注于 Bitcoin Core 的钱包模块。几年过去了，她已经成为了这个项目最年轻的贡献者之一。不是因为她在软件领域有多么丰富的经验，甚至与年龄无关，仅仅因为她好奇、谦虚而且自律。开源不是你的名片，它跟你能做的贡献有关。比特币也因为 Ishaana 而变得更好了。
 
 ## 来自招聘者的广告
 
