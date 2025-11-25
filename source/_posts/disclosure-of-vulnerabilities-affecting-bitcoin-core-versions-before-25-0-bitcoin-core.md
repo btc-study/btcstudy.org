@@ -12,18 +12,18 @@ tags:
 
 
 > *作者：Bitcoin Core*
-> 
+>
 > *来源：<https://bitcoincore.org/en/security-advisories/>*
+>
+> *本文汇集了已经披露的影响 25.1 以前版本 Bitcoin Core 软件的漏洞。*
+>
+> *自 [2024 年 7 月](https://mailing-list.bitcoindevs.xyz/bitcoindev/rALfxJ5b5hyubGwdVW3F4jtugxnXRvc-tjD_qwW7z73rd5j7lXGNdEHWikmSdmNG3vkSOIwEryZzOZr_DgmVDDmt9qsX0gpRAcpY9CfwSk4=@protonmail.com/T/#u)以来，Bitcoin Core 项目改变了影响旧版本的漏洞的披露策略。如今，已披露的漏洞在[此页面](https://bitcoincore.org/en/security-advisories/)集中呈现。*
+>
+> *影响 0.21.0 以前版本的 Bitcoin Core 软件的漏洞可见[此处](https://www.btcstudy.org/2024/08/15/disclosure-of-vulnerabilities-affecting-bitcoin-core-versions-before-0210-0-21-0-bitcoin-core/)。*
+>
+> *为便于读者检查自己所用软件的安全性，将漏洞按照修复它们的版本号排列。*
 
 
-
-本文汇集了已经披露的影响 25.1 以前版本 Bitcoin Core 软件的漏洞。
-
-自 [2024 年 7 月](https://mailing-list.bitcoindevs.xyz/bitcoindev/rALfxJ5b5hyubGwdVW3F4jtugxnXRvc-tjD_qwW7z73rd5j7lXGNdEHWikmSdmNG3vkSOIwEryZzOZr_DgmVDDmt9qsX0gpRAcpY9CfwSk4=@protonmail.com/T/#u)以来，Bitcoin Core 项目改变了影响旧版本的漏洞的披露策略。如今，已披露的漏洞在[此页面](https://bitcoincore.org/en/security-advisories/)集中呈现。
-
-影响 0.21.0 以前版本的 Bitcoin Core 软件的漏洞可见[此处](https://www.btcstudy.org/2024/08/15/disclosure-of-vulnerabilities-affecting-bitcoin-core-versions-before-0210-0-21-0-bitcoin-core/)。
-
-为便于读者检查自己所用软件的安全性，将漏洞按照修复它们的版本号排列。
 
 ## CVE-2024-52922：因对等节点拖延导致区块传播停滞
 
