@@ -9,7 +9,7 @@ tags:
 ---
 
 
-> *作者：bitcoindevphilosophy*
+> *作者：Kalle Rosenbaum & Linnéa Rosenbaum*
 >
 > *来源：<https://bitcoindevphilosophy.com/#trustlessness>*
 >
