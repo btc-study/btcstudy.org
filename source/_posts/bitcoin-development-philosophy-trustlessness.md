@@ -118,3 +118,4 @@ David Harding 曾经[在 bitcoin.org 网站上撰文](https://bitcoin.org/en/bit
 
 没有免信任性，我们就没有去中心化，因为信任不可避免会涉及一些权威中心点。你可以在一个免信任的系统上开发出一个需要信任的系统，但反过来不行 —— 不可能在一个需要信任的系统上开发出免信任的系统。
 
+> *[续篇见此处](https://www.btcstudy.org/2025/12/09/bitcoin-development-philosophy-privacy/)*
