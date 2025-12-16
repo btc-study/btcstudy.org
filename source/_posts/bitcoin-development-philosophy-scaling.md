@@ -1,6 +1,6 @@
 ---
-title: 'bitcoindevphilosophy'
-author: '《比特币开发哲学》：扩容'
+title: '《比特币开发哲学》：扩容'
+author: 'bitcoindevphilosophy'
 date: '2025/12/16 16:25:56'
 cover: ''
 excerpt: '提高比特币的可用吞吐量，而不牺牲其抗审查性'
