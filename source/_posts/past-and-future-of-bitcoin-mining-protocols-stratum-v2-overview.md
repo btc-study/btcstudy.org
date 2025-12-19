@@ -1,5 +1,5 @@
 ---
-title: '比特币挖矿协议的过去与未来：Stravum V2 简介'
+title: '比特币挖矿协议的过去与未来：Stratum V2 简介'
 author: 'Braiins'
 date: '2025/08/26 12:31:26'
 cover: ''
