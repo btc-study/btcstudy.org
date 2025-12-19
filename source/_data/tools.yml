@@ -1,0 +1,12 @@
+- title: "工具1"
+  path: "/2025/12/15/bitcoin-development-philosophy-opensource/"
+  description: "描述，暂不使用"  # 内容无影响
+  external: false  # 区分是否为外部链接，是的话用新标签页打开
+- title: "工具2"
+  path: "/2025/12/11/bitcoin-development-philosophy-upgrading/"
+  description: ""
+  external: false
+- title: "外部链接3"
+  path: "https://www.google.com"
+  description: "Google"
+  external: true
