@@ -1,0 +1,22 @@
+extends widget/base
+
+block append head
+    link(rel='stylesheet', href= url_for("/style/widget-post-list.css?v=" + config.version))
+    link(rel='stylesheet', href= url_for("/style/widget-archives.css?v=" + config.version))
+
+block content
+    main.aside-card-container.archives-widget.p-2(class= 'is-in-archive-page')
+        header.mb-2
+                h1= _p('tools')
+                p
+                    span= (site.data.tools && site.data.tools.length) || 0
+                    span= ' 篇文章'
+        section.post-list
+            ul
+                if site.data.tools
+                    each post in site.data.tools
+                        li
+                            a(href= post.path target= post.external ? '_blank' : '_self')
+                                b= post.title
+                                div
+                                i.iconfont.icon-icon_into

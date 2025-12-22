@@ -106,3 +106,5 @@ dist
 
 db.json
 yarn.lock
+
+.idea/
