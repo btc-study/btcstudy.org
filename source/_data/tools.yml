@@ -2,7 +2,7 @@
   path: "https://bitcoin-custody-playground.vercel.app/"
   description: "self-custody"  # 内容无影响
   external: true  # 区分是否为外部链接
-- title: "BIP39 种子词与地址工具"
+- title: "BIP39 种子词与地址演示工具"
   path: "https://iancoleman.io/bip39/"
   description: "self-custody"
   external: true
