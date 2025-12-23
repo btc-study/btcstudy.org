@@ -8,5 +8,9 @@
   external: true
 - title: "Optech 交易体积计算器"
   path: "https://bitcoinops.org/en/tools/calc-size/"
-  description: "Google"
+  description: "Optech calculator"
+  external: true
+- title: "比特币网络分叉观察器"
+  path: "https://fork.observer/"
+  description: "fork observer"
   external: true
