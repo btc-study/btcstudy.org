@@ -1,5 +1,5 @@
 - title: "比特币自主保管模拟器"
-  path: "https://bitcoin-custody-playground.vercel.app/"
+  path: "https://hodl.1satpod.org/"
   description: "self-custody"  # 内容无影响
   external: true  # 区分是否为外部链接
 - title: "BIP39 种子词与地址演示工具"
