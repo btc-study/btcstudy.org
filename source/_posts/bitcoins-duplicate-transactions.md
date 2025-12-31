@@ -7,7 +7,7 @@ excerpt: '虽然现在与重合交易有关的风险是很小的，但它依然�
 categories:
 - 比特币主网
 tags:
-- 重合交易
+- Consensus-Cleanup
 - 软分叉
 ---
 
