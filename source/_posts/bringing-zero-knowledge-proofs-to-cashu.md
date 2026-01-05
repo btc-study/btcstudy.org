@@ -5,7 +5,7 @@ date: '2025/12/02 11:32:20'
 cover: ''
 excerpt: 'Cairo 花费条件允许将任意 Cairo 程序的有效执行设定为花费条件'
 tags:
-- Cashu
+- Ecash
 ---
 
 

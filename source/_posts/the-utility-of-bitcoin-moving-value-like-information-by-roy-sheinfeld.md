@@ -5,7 +5,7 @@ date: '2025/10/16 18:19:22'
 cover: '../images/the-utility-of-bitcoin-moving-value-like-information-by-roy-sheinfeld/move-value-like-information.webp'
 excerpt: '互联网杰解放了信息，比特币解放了价值'
 tags:
-- 文化
+- 比特币
 ---
 
 

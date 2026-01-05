@@ -7,7 +7,7 @@ excerpt: '验证对花费交易的 lamport 签名'
 categories:
 - 比特币主网
 tags:
-- 密码学
+- 比特币脚本
 ---
 
 

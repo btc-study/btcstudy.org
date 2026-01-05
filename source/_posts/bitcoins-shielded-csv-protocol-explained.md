@@ -5,7 +5,7 @@ date: '2025/06/13 00:44:55'
 cover: ''
 excerpt: 'CSV 将交易验证的负担从网络的每一个全节点处转移给各个交易的接收者'
 tags:
-- shielded-csv
+- Shielded-CSV
 ---
 
 

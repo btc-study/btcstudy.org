@@ -3,9 +3,9 @@ title: '中本聪如何推理比特币：用健全货币解决重复花费'
 author: 'UNCHAINED'
 date: '2024/07/26 00:36:21'
 cover: ''
-excerpt: ''
-categories:
+excerpt: '比特币可以认为是 Dai 的 b-money 项目的一个修改版，消除了创建货币自由的版本'
 tags:
+- 比特币
 ---
 
 

@@ -5,7 +5,7 @@ date: '2021/09/10 14:00:13'
 cover: '../images/how-cryptography-redefines-private-property/7e040125799d4cf7984edaca27f0f89e.jpg'
 excerpt: '私钥及其控制的比特币是事实上的私有财产，而非法律上的。'
 tags:
-- 密码学
+- 文化
 - Hugo-Nguyen
 ---
 

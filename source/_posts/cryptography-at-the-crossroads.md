@@ -4,9 +4,8 @@ author: 'Eric Blair'
 date: '2024/07/02 16:18:40'
 cover: ''
 excerpt: '探讨了密码学工作和道德责任与政治行动主义的交叉点'
-categories:
-- 密码朋克
 tags:
+- 密码朋克
 ---
 
 

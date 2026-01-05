@@ -5,7 +5,8 @@ date: '2025/12/15 16:35:44'
 cover: '../images/bitcoin-development-philosophy-opensource/opensource-banner.jpg'
 excerpt: '比特币是是用开源软件打造出来的'
 tags:
-- 文化
+- 比特币开发哲学
+- 贡献
 ---
 
 

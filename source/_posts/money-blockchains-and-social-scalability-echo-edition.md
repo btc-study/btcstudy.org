@@ -1,5 +1,5 @@
 ---
-title: 'Nick Szabo：货币，区块链与社会可扩展性'
+title: '货币，区块链与社会可扩展性'
 author: 'Nick Szabo'
 date: '2021/10/27 14:46:29'
 cover: '../images/money-blockchains-and-social-scalability-echo-edition/for-title.jpg'

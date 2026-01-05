@@ -6,7 +6,7 @@ cover: ''
 excerpt: '建立在 Taproot 上的多签名方案何以能够提供隐私性并降低手续费'
 tags:
 - MuSig2
-- ROAST
+- FROST
 ---
 
 

@@ -5,6 +5,7 @@ date: '2025/12/11 19:07:44'
 cover: '../images/bitcoin-development-philosophy-upgrading/upgrading-banner.jpg'
 excerpt: '保持和谐，也即维持共识，实际上是比特币开发过程中最大的挑战之一'
 tags:
+- 比特币开发哲学
 - 软分叉
 ---
 

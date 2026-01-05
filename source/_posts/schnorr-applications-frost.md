@@ -5,7 +5,7 @@ date: '2021/12/09 17:52:12'
 cover: '../images/schnorr-applications-batch-verification/g_logo2.png'
 excerpt: '本文会用非常技术化的语言讲解 FROST'
 tags:
-- ROAST
+- FROST
 mathjax: true
 ---
 

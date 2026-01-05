@@ -5,8 +5,8 @@ date: '2023/06/13 18:28:08'
 cover: ''
 excerpt: '交互式多签名方案并不适合所有应用场景'
 tags:
-- Taproot
-- 密码学
+- Schnorr-签名
+- 签名器
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'utreexo：比特币状态的一种动态累加器'
+title: 'Utreexo：比特币状态的一种动态累加器'
 author: 'Thaddeus Dryja'
 date: '2021/11/23 14:30:22'
 cover: ''

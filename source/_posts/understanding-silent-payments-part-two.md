@@ -4,8 +4,8 @@ author: 'benma & Sebastian'
 date: '2025/08/12 11:37:45'
 cover: ''
 excerpt: '硬件签名器在背后做了什么以安全地支持静默支付*'
-categories:
 tags:
+- 签名器
 ---
 
 

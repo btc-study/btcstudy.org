@@ -8,7 +8,6 @@ categories:
 - 闪电网络
 tags:
 - 产品
-- 描述符
 - Taproot
 ---
 

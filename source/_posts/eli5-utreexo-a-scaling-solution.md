@@ -1,5 +1,5 @@
 ---
-title: 'utreexo：一种扩容方案'
+title: 'Utreexo：一种扩容方案'
 author: 'Calvin Kim'
 date: '2021/12/06 10:56:21'
 cover: '../images/eli5-utreexo-a-scaling-solution/KTGSj0Q.png'
