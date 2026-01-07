@@ -99,7 +99,7 @@ Lamport 的论文出版的几个月后，斯坦福大学数学系的 Robert Wint
 
 ## 其它 OTS
 
-今天的博客到这里就结束了！但还有很多一次性签名方案，如果你有兴趣，这里有一个列表，其中有一些超越了一次性签名，因为它们可以少量复用。所以，我们可以称之为 “少量签名方案（FTS）”：
+今天的博客到这里就结束了！但还有很多一次性签名方案，如果你有兴趣，这里有一个列表，其中有一些超越了一次性签名，因为它们可以少量复用。所以，我们可以称之为 “少量次数签名方案（FTS）”：
 
 - 1994, [The Bleichenbacher-Maurer OTS](ftp://ftp.inf.ethz.ch/pub/crypto/publications/BleMau94.pdf)
 - 2001, [The BiBa OTS](http://www.netsec.ethz.ch/publications/papers/biba.pdf)
