@@ -10,10 +10,10 @@ tags:
 
 
 > *作者：David Wong*
-> 
+>
 > *来源：<https://cryptologie.net/posts/hash-based-signatures-part-iii-many-times-signatures/>*
-
-
+>
+> [*前篇见此处*](https://www.btcstudy.org/2026/01/06/hash-based-signatures-part-ii-few-times-signatures/)
 
 在本系列前面的文章中，我们已经了一次性签名（OTS）以及少量次数签名（FTS）。现在，是时候看看如何基于哈希函数获得实用的签名方案了 —— 可以使用同一私钥多次签名的方案，最好是想签多少次就能签多少次。
 
@@ -55,4 +55,6 @@ tags:
 感谢这种技术，我们不需要所有的 OTS 公钥，就能验证主公钥。这样既节约空间，又节约计算量。
 
 就是这样，这就是默克尔签名方案的简单概念。这是一种基于哈希函数的多次签名方案。
+
+
 

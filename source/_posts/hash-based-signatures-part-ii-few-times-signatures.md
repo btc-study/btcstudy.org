@@ -6,6 +6,7 @@ cover: ''
 excerpt: '我们的话题是 HORS'
 tags:
 - 哈希签名
+mathjax: true
 ---
 
 
@@ -68,3 +69,4 @@ HORS 是 “Biba”（“Bins and Balls”） 的升级，由 Reyzin 父子出�
 
 [本系列第三篇在这里](https://cryptologie.net/article/308/hash-based-signatures-part-iii-many-times-signatures/)
 
+> [*续篇见此处*](https://www.btcstudy.org/2026/01/07/hash-based-signatures-part-iii-many-times-signatures/)

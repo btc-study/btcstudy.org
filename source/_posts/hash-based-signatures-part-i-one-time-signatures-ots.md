@@ -14,8 +14,6 @@ mathjax: true
 > 
 > *来源：<https://www.cryptologie.net/posts/hash-based-signatures-part-i-one-time-signatures-ots/>*
 
-
-
 ## Lamport 签名
 
 1979 年 10 月 18 日，Leslie Lamport [出版](http://research.microsoft.com/en-us/um/people/lamport/pubs/dig-sig.pdf)了他发明的**一次性签名**。
@@ -110,4 +108,6 @@ Lamport 的论文出版的几个月后，斯坦福大学数学系的 Robert Wint
 
 又：感谢 [Andreas Hulsing 的评论](https://huelsing.wordpress.com/)
 
-[续篇见此处](http://cryptologie.net/article/307/hash-based-signatures-part-ii-few-times-signatures/)
+[本系列的第二篇在此](http://cryptologie.net/article/307/hash-based-signatures-part-ii-few-times-signatures/)
+
+> [*续篇见此处*](https://www.btcstudy.org/2026/01/06/hash-based-signatures-part-ii-few-times-signatures/)
