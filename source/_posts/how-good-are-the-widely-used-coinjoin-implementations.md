@@ -6,6 +6,7 @@ cover: ''
 excerpt: '对 coinjoin 的特性、其防止的攻击以及当前两大 coinjoin 实现能否防范真实世界的去匿名化攻击，作一番安全分析'
 tags:
 - CoinJoin
+mathjax: true
 ---
 
 

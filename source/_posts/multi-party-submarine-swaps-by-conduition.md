@@ -6,6 +6,7 @@ cover: ''
 excerpt: '从单一接单者协议转变成多接单者协议'
 tags:
 - 潜水艇互换
+mathjax: true
 ---
 
 
