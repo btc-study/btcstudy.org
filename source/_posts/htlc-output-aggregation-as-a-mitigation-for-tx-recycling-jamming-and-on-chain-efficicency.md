@@ -7,7 +7,7 @@ excerpt: '聚合 HTLC 输出，作为一种缓解交易替代循环、通道阻�
 categories:
 - 闪电网络
 tags:
-- covenant
+- CCV
 ---
 
 

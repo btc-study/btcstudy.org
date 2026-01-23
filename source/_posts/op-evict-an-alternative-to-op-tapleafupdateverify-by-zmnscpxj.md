@@ -5,7 +5,7 @@ date: '2023/11/28 17:24:08'
 cover: ''
 excerpt: '通过避免使用树结构来回避 O(log N) 次揭晓'
 tags:
-- covenant
+- TLUV
 ---
 
 

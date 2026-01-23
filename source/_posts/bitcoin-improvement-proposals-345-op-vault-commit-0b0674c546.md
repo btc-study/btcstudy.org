@@ -7,7 +7,7 @@ excerpt: 'tapleaf 更新语义 + 基于输出的授权，可以用来实现保�
 categories:
 - 比特币主网
 tags:
-- covenant
+- TLUV
 ---
 
 

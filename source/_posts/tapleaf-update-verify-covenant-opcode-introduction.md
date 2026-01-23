@@ -5,7 +5,7 @@ date: '2023/06/29 17:13:44'
 cover: ''
 excerpt: '用改变 taproot 树的办法来 “更新” 一个 UTXO'
 tags:
-- covenant
+- TLUV
 ---
 
 

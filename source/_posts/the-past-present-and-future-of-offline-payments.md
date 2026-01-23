@@ -18,7 +18,7 @@ tags:
 
 
 
-对闪电网络，爱之深者责之切。[我](https://medium.com/breez-technology/lightning-at-the-end-of-the-tunnel-overcoming-bitcoins-ux-challenges-5738171c759e)和 Ben Carman 都如此。在[最近一篇 Stacker 帖子](https://stacker.news/items/379225)（[中文译本](https://www.btcstudy.org/2024/01/12/rethinking-lightning-by-benthecarman/)）中，Ben 将流动性和离线支付列为闪电网络最影响用户体验、阻碍自主保管的方面。这似乎只是另一种 “未来怎么不像我们想的那样” 的抱怨。我们承诺会作出会飞的汽车，但我们只得到了互联网奇迹。[一切都很神奇，但没有人觉得开心](https://youtu.be/PdFB7q89_3U?t=18)。
+对闪电网络，爱之深者责之切。[我](https://medium.com/breez-technology/lightning-at-the-end-of-the-tunnel-overcoming-bitcoins-ux-challenges-5738171c759e)和 Ben Carman 都如此。在[最近一篇 Stacker 帖子](https://stacker.news/items/379225)（[中文译本](https://www.btcstudy.org/2024/01/12/rethinking-lightning-by-benthecarman/)）中，Ben 将流动性和离线支付列为闪电网络最影响用户体验、阻碍自主保管的方面。这似乎只是另一种 “未来怎么不像我们想的那样” 的抱怨。我们承诺会做出会飞的汽车，但我们只得到了互联网奇迹。[一切都很神奇，但没有人觉得开心](https://youtu.be/PdFB7q89_3U?t=18)。
 
 但是，看得更仔细一些，Ben 其实说对了一些东西。我一直在讨论闪电网络的用户体验，好几年了，也包括离线支付的困难。我甚至[在 2019 年](https://medium.com/breez-technology/introducing-lightning-rod-2e0a40d3e44a)就为离线支付问题提出了一个解决方案（我下文会解释为什么我们从未实现它）。
 
@@ -55,7 +55,7 @@ tags:
 
 第一种是 “[LNURL-Withdraw](https://github.com/lnurl/luds/blob/luds/03.md)”。接收者可以扫描一个 QR 码或者输入一个 URL、指示自己的 app 请求来自一个发送者的资金。举个例子，希望从某个交易所取出资金的用户可以随时 “拉取” 自己的资金，而不是让交易所 “推送” 给自己（他们可能不在线）。
 
-这种办法由两个重大缺点。第一，它要求发送者拥有一个节点，运行在一个持续在线的服务端上，所以对非托管的移动客户端和网页客户端来说，是不合适的。其次，“拉取” 模式仅在一种非常具体的情形中才有用 —— 你知道自己有钱可取。举个例子，它很难用在自发的打赏中。
+这种办法有两个重大缺点。第一，它要求发送者拥有一个节点，运行在一个持续在线的服务端上，所以对非托管的移动客户端和网页客户端来说，是不合适的。其次，“拉取” 模式仅在一种非常具体的情形中才有用 —— 你知道自己有钱可取。举个例子，它很难用在自发的打赏中。
 
 ### Breez SDK 方法：利用移动端的通知
 
@@ -77,7 +77,7 @@ LSP 可以通过拦截 HTLC，适时地分解支付流，这就消除了同时�
 
 这种模式并不会牺牲网络在整体上的流动性，因为唯一会被冻住流动性的节点就只有发送者自己的 LSP，这也是用户实际上希望的。（译者注：一定程度上，本就使用 LSP 的发送者，因为可能经常不在线，而且只有跟 LSP 一条通道，本身就无法为网络的整体流动性作贡献。）
 
-虽然听起来很简单，但这种办法需要更多的技术投入才能理想工作：静态发票、[洋葱消息](https://lightningdevkit.org/blog/onion-messages-demystified/)、盲化路由、[蹦床支付](https://thebitcoinmanual.com/articles/btc-trampoline-payments/)，还有 [PTLC](https://bitcoinops.org/en/topics/ptlc/)。它是复杂的，但希望深入了解的读者可以看看[我在 Honeybadger 2023 上的演讲](https://youtu.be/ZsPqVqX5VJc?t=14164)。虽然一些闪电实现已经支持其中一些特性，但要让整个网络都采用它们需要时间，而采用率决定了互通性。
+虽然听起来很简单，但这种办法需要更多的技术投入才能有好的效果：静态发票、[洋葱消息](https://lightningdevkit.org/blog/onion-messages-demystified/)、盲化路由、[蹦床支付](https://thebitcoinmanual.com/articles/btc-trampoline-payments/)，还有 [PTLC](https://bitcoinops.org/en/topics/ptlc/)。它是复杂的，但希望深入了解的读者可以看看[我在 Honeybadger 2023 上的演讲](https://youtu.be/ZsPqVqX5VJc?t=14164)。虽然一些闪电实现已经支持其中一些特性，但要让整个网络都采用它们需要时间，而采用率决定了互通性。
 
 ![Async-payment](../images/the-past-present-and-future-of-offline-payments/Async-payment.png)
 
