@@ -87,7 +87,7 @@ update-stack:
 
 ## CTV-CSFS 委托解决方案
 
-现在来看看我们得出的新的解决方案：将更新交易和结算交易的哈希值通过签名它们的密钥捆绑在一起。 众所周知，CSFS 在委托上十分有用，所以我们最初委托给一个 rekay：
+现在来看看我们得出的新的解决方案：将更新交易和结算交易的哈希值通过签名它们的密钥捆绑在一起。 众所周知，CSFS 在委托上十分有用，所以我们最初委托给一个 rekey：
 
 ```
 script(n):
@@ -135,33 +135,33 @@ stack(n):
 
 // 然后，检查 k_i 签名了 k_{i+1}
     // 堆栈: DATASIGS + <k5> <s5> <k4> <s4> <k3> <s3> <k2> <s2> <k1>
-    // 异堆栈（altstack）: <k1>
+    // 旁堆栈（altstack）: <k1>
 
         3DUP ROT SWAP CSFSV 2DROP DUP TOALT
 
     // 堆栈k: DATASIGS + <k5> <s5> <k4> <s4> <k3> <s3> <k2>
-    // 异堆栈: <k1> <k2>
+    // 旁堆栈: <k1> <k2>
 
         3DUP ROT SWAP CSFSV 2DROP DUP TOALT
 
     // 堆栈: DATASIGS + <k5> <s5> <k4> <s4> <k3>
-    // 异堆栈: <k1> <k2> <k3>
+    // 旁堆栈: <k1> <k2> <k3>
 
         3DUP ROT SWAP CSFSV 2DROP DUP TOALT
 
     // 堆栈: DATASIGS + <k5> <s5> <k4>
-    // 异堆栈: <k1> <k2> <k3> <k4>
+    // 旁堆栈: <k1> <k2> <k3> <k4>
 
         3DUP ROT SWAP CSFSV 2DROP
 
     // 堆栈: <sd1> <d1> <sd2> <d2> <sd3> <d3> <sd4> <d4> <sd5> <d5> <k5>
-    // 异堆栈: <k1> <k2> <k3> <k4>
+    // 旁堆栈: <k1> <k2> <k3> <k4>
 
 
         FROMALT FROMALT FROMALT FROMALT
 
     // 堆栈: <sd1> <d1> <sd2> <d2> <sd3> <d3> <sd4> <d4> <sd5> <d5> <k5> <k4> <k3> <k2> <k1>
-    // 异堆栈:
+    // 旁堆栈:
 
 // 现在，检查对每一个变量的签名
 
@@ -192,7 +192,7 @@ stack(n):
 
 // 现在，检查不相等，以证明没有哪个公钥被用作了数据:
     // 堆栈: <sd1> <d1> <sd2> <d2> <sd3> <d3> <sd4> <d4> <sd5> <d5> <k5> <k4> <k3> <k2> <k1>
-    // 异堆栈:
+    // 旁堆栈:
 
     // 不需要检查 k1 != d0，因为没有 d0
 
@@ -219,7 +219,7 @@ stack(n):
 
 
 // 堆栈: <sd1> <d1> <sd2> <d2> <sd3> <d3> <sd4> <d4> <sd5> <d5> <k5> <k4> <k3> <k2> <k1>
-// 异堆栈:
+// 旁堆栈:
 
 2DROP 2DROP DROP
 TOALT DROP
@@ -229,7 +229,7 @@ TOALT DROP
 TOALT DROP
 
 // 堆栈:
-// 异堆栈: <d5> <d4> <d3> <d2> <d1>
+// 旁堆栈: <d5> <d4> <d3> <d2> <d1>
 
 // 接下来，就随你做什么了
 ```
