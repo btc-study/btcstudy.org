@@ -6,7 +6,6 @@ cover: ''
 excerpt: '本文介绍了一种创建链下的 “谨慎日志合约” 并且无需任何链上交易就可以延长合约的比特币交易范式'
 tags:
 - Discreet-Log-Contract
-mathjax: true
 ---
 
 

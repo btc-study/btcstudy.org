@@ -7,6 +7,7 @@ excerpt: '本文要介绍一种使用 Chaumian Ecash 来承诺一次条件式支
 tags:
 - Ecash
 - Discreet-Log-Contract
+mathjax: true
 ---
 
 
