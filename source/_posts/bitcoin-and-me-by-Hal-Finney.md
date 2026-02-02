@@ -6,6 +6,7 @@ cover: ''
 excerpt: '我一直热爱着密码学，爱它的神秘莫测、似是而非'
 tags:
 - 密码朋克
+- Hal-Finney
 ---
 
 
