@@ -4,7 +4,31 @@ block append head
 main.tags-container.p-2
     ul
         - var list = {};
-        each tag in site.tags.toArray()
+
+        // 从 source/_data/tags.yml 读取预览页标签顺序
+        - var tagsData = site.data.tags || {};
+        - var previewOrder = tagsData.preview_order || [];
+
+        - var allTags = site.tags.toArray();
+
+        // 根据 preview_order 把指定标签按顺序置顶
+        - var pinnedTags = [];
+        - previewOrder.forEach(function(name) {
+        -   allTags.forEach(function(t) {
+        -     if (t.name === name && pinnedTags.indexOf(t) === -1) {
+        -       pinnedTags.push(t);
+        -     }
+        -   });
+        - });
+
+        // 剩余标签 = allTags - pinnedTags（按名称排序后的顺序）
+        - var restTags = allTags.filter(function(t) {
+        -   return previewOrder.indexOf(t.name) === -1;
+        - });
+
+        - var orderedTags = pinnedTags.concat(restTags);
+
+        each tag in orderedTags
             - list[tag.name] = [];
             each post in site.posts.sort('date', -1).toArray()
                 each postTag in post.tags.toArray()
