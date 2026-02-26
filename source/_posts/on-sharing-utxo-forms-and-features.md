@@ -166,7 +166,7 @@ Jeremy Rubin 根据其使用场景，将这种构造命名为 “拥堵控制（
 
 但是，eltoo 需要我们以软分叉激活 SIGHASH_ANYPREVOUT，所以这种机制，当前是不可用的。
 
-2022 年，John Law 提出了另一种叫做 “可调整惩罚协议（Tunable-Panelty Protocol）” <sup><a href="#note10" id="jump-10">[10]</a></sup> 的链下更新机制。
+2023 年，John Law 提出了另一种叫做 “可调整惩罚协议（Tunable-Panelty Protocol）” <sup><a href="#note10" id="jump-10">[10]</a></sup> 的链下更新机制。
 
 ![Tunable-Panelty](../images/on-sharing-utxo-forms-and-features/Tunable-Panelty.svg)
 

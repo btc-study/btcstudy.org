@@ -11,7 +11,7 @@ tags:
 ---
 
 
-> *作者：Annoy*
+> *作者：Anony*
 >
 > [*前篇见此处*](https://www.btcstudy.org/2024/01/25/lightning-network-technology-improvement-and-users-experience-part-1/)
 
