@@ -13,7 +13,7 @@ tags:
 > 
 > *来源：<https://www.unchained.com/blog/wrench-attacks>*
 
-![Wrench Attacks](../images/wrench-attacks-a-closer-look-at-prevalence-and-prevention/Wrench Attacks.png)
+![Wrench Attacks](../images/wrench-attacks-a-closer-look-at-prevalence-and-prevention/tittle.png)
 
 比特币与黄金相似，是一种不记名的资产，个体可以直接持有它。如果你决定这样做 —— 取得比特币的真正所有权，那么透彻地考虑所有潜在的攻击风险就成了审慎安全性的重要部分。
 
