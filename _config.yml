@@ -208,5 +208,7 @@ minify:
 
 processon: https://www.processon.com/embed/61cac8cc1e08534776ea0505
 
+disableNunjucks: true
+
 # All static resources hash version
 version: 1682773100887
