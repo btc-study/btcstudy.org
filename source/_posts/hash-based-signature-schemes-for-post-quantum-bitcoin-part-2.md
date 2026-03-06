@@ -14,7 +14,7 @@ mathjax: true
 >
 > *来源：<https://conduition.io/cryptography/quantum-hbs/>*
 >
-> *[前篇见此处](https://www.btcstudy.org/2026/03/02/hash-based-signature-schemes-for-post-quantum-bitcoin-part-/)*
+> *[前篇见此处](https://www.btcstudy.org/2026/03/02/hash-based-signature-schemes-for-post-quantum-bitcoin-part-/)：比特币面临的量子计算威胁*
 
 ## Lamport 签名
 
@@ -32,7 +32,7 @@ $$ p_1 \leftarrow \{0, 1\}^n $$
 
 我们可以把这种方法推广到签名任意长度为 $m$ 比特的消息，只需生成更多原像即可 —— 为每一个比特生成一对原像。因此，我们的私钥就是：
 
-$$ (p_0, p_1) : p_i \leftarrow \left\{\left\{0, 1\right\}^n\right\}^m $$
+$$ (p_0, p_1) : p_i \leftarrow \{ \{ 0, 1\} ^n \} ^m $$
 
 其中，每一个 $p_i$ 都是一个包含了 $m$ 个随机原像 $\{p_{(i, 1)}, p_{(i, 2)}, ... p_{(i, m)}\}$ 的数组。
 
@@ -159,7 +159,7 @@ $$
 
 现在，我们已经准备好生成密钥了。我们先随机采集出 $\ell$ 个原像，每个的长度都是 $n$ 。
 
-$$ p = \{p_1 ... p_\ell\} \leftarrow \left\{\left\{0, 1\right\}^n\right\}^\ell $$
+$$ p = \{p_1 ... p_\ell\} \leftarrow  \{  \{ 0, 1 \} ^n \} ^\ell $$
 
 为了计算 Winternitz 公钥 $P$，我们对每一个原像接连作 $w-1 = 2^t - 1$ 次哈希运算。即：
 
