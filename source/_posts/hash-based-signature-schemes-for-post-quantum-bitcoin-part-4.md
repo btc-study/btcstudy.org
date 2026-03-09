@@ -6,6 +6,7 @@ cover: ''
 excerpt: '改变比特币的共识规则'
 tags:
 - 量子抗性
+mathjax: true
 ---
 
 

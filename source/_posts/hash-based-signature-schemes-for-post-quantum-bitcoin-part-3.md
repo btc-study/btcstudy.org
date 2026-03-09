@@ -347,4 +347,6 @@ SPHINCS 是非常强大的，而且有很多优势。无需记忆的签名使它
 
 不过，SPHINCS 的缺点在于巨大的签名体积。即使是最小的 SPHINCS 签名，同样使用 128 比特的安全性，体积也会是 FORS 签名的两倍，是 BIP340 Schnorr 签名体积的 100 倍不止。
 
+> *[续篇见此处](https://www.btcstudy.org/2026/03/09/hash-based-signature-schemes-for-post-quantum-bitcoin-part-4/)：比特币量子抗性升级路径*
+
 （未完）
