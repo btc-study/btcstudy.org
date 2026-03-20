@@ -27,13 +27,13 @@ tags:
 
 如果你研究或实践过比特币的自主保管，你可能很熟悉 “[种子词](https://unchained.com/blog/what-is-a-bitcoin-seed-phrase/)” 的概念。简单回顾一下，种子词就是一组用来创建（和重建）一个主[私钥](https://unchained.com/blog/what-is-a-bitcoin-key/)的单词。然后，这个主私钥可以用来控制几乎无数的[地址](https://unchained.com/blog/what-is-a-bitcoin-address/)和[钱包](https://unchained.com/blog/your-bitcoin-isnt-in-your-wallet/)。
 
-你可能会认为，只要你保存了种子词（加上可选使用的 “密语（passphrases）”），你就拥有了找回比特币的全部信息。但是，这种信念是否为真，取决于一些特定的假设。为了保证你的钱包可以毫无困难地复原出来，你可能需要跟踪种子词之外的信息，例如你使用的 “[密钥派生路径](https://unchained.com/blog/bitcoin-derivation-paths/)” 和 “[脚本类型](https://unchained.com/blog/bitcoin-address-types-compared/)”。[多签名钱包](https://unchained.com/features/what-is-multisig)还需要额外的关于阈值和所有相关密钥的背景信息。
+你可能会认为，只要你保存了种子词（加上可选使用的 “密语（passphrases）”），你就拥有了找回比特币的全部信息。但是，这种想法对不对，取决于一些特定的假设。为了保证你的钱包可以毫无困难地复原出来，你可能需要跟踪种子词之外的信息，例如你使用的 “[密钥派生路径](https://unchained.com/blog/bitcoin-derivation-paths/)” 和 “[脚本类型](https://unchained.com/blog/bitcoin-address-types-compared/)”。[多签名钱包](https://unchained.com/features/what-is-multisig)还需要额外的关于阈值和所有相关密钥的背景信息。
 
 钱包配置是种子词之外复原钱包所必需的（或有用的）信息的全集。你可以认为种子词是重建钱包的基础，而钱包配置是建筑的架构蓝图。蓝图的具体元素及其重要性，会被因为钱包的类型（单签名 vs. 多签名）而略有不同。
 
 ## 单签名配置
 
-如我们在《[比特币钱包剖析](https://unchained.com/blog/bitcoin-wallet-anatomy/)》一文中所述，单签名钱包是使用一个拓展公钥（“xpub”）构造出来的；而这个拓展公钥又是从一个主私钥（种子词）生成出来的。这一个拓展公钥可以容易地派生出用在这个钱包的所有地址中的普通公钥。
+如我们在《[比特币钱包剖析](https://unchained.com/blog/bitcoin-wallet-anatomy/)》一文中所述，单签名钱包是使用一个扩展公钥（“xpub”）构造出来的；而这个扩展公钥又是从一个主私钥（种子词）生成出来的。这一个扩展公钥可以容易地派生出用在这个钱包的所有地址中的普通公钥。
 
 ![singlesig-deri](../images/bitcoin-wallet-configurations-the-architecture-required-for-bitcoin-recovery/singlesig-deri.png)
 
@@ -46,11 +46,11 @@ tags:
 
 主密钥拥有一个 *指纹*，是 8 位的十六进制字符（比如：d26a3f72）。这个指纹不会暴露任何能够用来花费资金的敏感信息，但可以用作具体主密钥的唯一标识符。虽然它并不是钱包复原所必需的信息，但如果你需要处理多个主私钥，指纹就是非常有用的提醒，可以用来确定跟一个钱包相关的主密钥。
 
-### 拓展公钥
+### 扩展公钥
 
-拓展公钥（xpub）是计算地址所必需的；有了地址，才能显示和监控钱包的余额、收取新支付。在钱包配置中包含拓展公钥，将使上述操作（计算地址、收取支付）无需种子词和任何私钥就能完成。这创造了一种更安全的环境，如果钱包的主人并不急于将这些钱转出钱包 —— 转出资金就需要由种子词产生的私钥。
+扩展公钥（xpub）是计算地址所必需的；有了地址，才能显示和监控钱包的余额、收取新支付。在钱包配置中包含扩展公钥，将使上述操作（计算地址、收取支付）无需种子词和任何私钥就能完成。这创造了一种更安全的环境，如果钱包的主人并不急于将这些钱转出钱包 —— 转出资金就需要由种子词产生的私钥。
 
-如果已经有了种子词，那么不需要预先处理拓展公钥，可以使用 “派生路径”，从种子词中计算出拓展公钥。
+如果已经有了种子词，那么不需要预先处理扩展公钥，可以使用 “派生路径”，从种子词中计算出扩展公钥。
 
 ### 派生路径
 
@@ -82,7 +82,7 @@ tags:
 
 ## 多签名配置
 
-理解了单签名签名是如何构造的，多签名钱包的配置也变得更容易理解。如我们在《[比特币钱包剖析](https://unchained.com/blog/bitcoin-wallet-anatomy/)》一文中所述，多签名钱包为每一个参与其中的主私钥（种子词）使用了一个拓展公钥。比如说，在一个 2-of-3 多签名钱包中就有 3 个拓展公钥，而在一个 3-of-5 多签名钱包中就有 5 个拓展公钥。多签名钱包中的每一个地址，都是使用来自各拓展公钥的一个普通公钥集体建构出来的，而且这些普通公钥会根据 [BIP67](https://github.com/bitcoin/bips/blob/master/bip-0067.mediawiki) 标准的要求、按照[字典顺序](https://en.wikipedia.org/wiki/Lexicographic_order)排列。在 Unchained 钱包应用中，我们建议使用[编织模型](https://unchained.com/features/the-braid-model)来理解这一切。
+理解了单签名签名是如何构造的，多签名钱包的配置也变得更容易理解。如我们在《[比特币钱包剖析](https://unchained.com/blog/bitcoin-wallet-anatomy/)》一文中所述，多签名钱包为每一个参与其中的主私钥（种子词）使用了一个扩展公钥。比如说，在一个 2-of-3 多签名钱包中就有 3 个扩展公钥，而在一个 3-of-5 多签名钱包中就有 5 个扩展公钥。多签名钱包中的每一个地址，都是使用来自各扩展公钥的一个普通公钥集体建构出来的，而且这些普通公钥会根据 [BIP67](https://github.com/bitcoin/bips/blob/master/bip-0067.mediawiki) 标准的要求、按照[字典顺序](https://en.wikipedia.org/wiki/Lexicographic_order)排列。在 Unchained 钱包应用中，我们建议使用[编织模型](https://unchained.com/features/the-braid-model)来理解这一切。
 
 ![multisig-deri](../images/bitcoin-wallet-configurations-the-architecture-required-for-bitcoin-recovery/multisig-deri.png)
 
@@ -101,9 +101,9 @@ tags:
 
 绝大部分多签名钱包的主人都熟悉要使用的密钥门限要求，比如 2-of-3 和 3-of-5 。这个门限要求在根本上定义了钱包中的资金要如何解锁。虽然易于记忆，它也是多签名钱包配置中的一个必要部分。即使我们知道 3 个 xpub 形成了一个多签名钱包，那也有不同的门限可能性：1-of-3、2-of-3、3-of-3 。门限要求不同，产生出来的钱包（地址）也会完全不同。
 
-### 所有的拓展公钥
+### 所有的扩展公钥
 
-多签名的一个极为重要但没有得到充分理解的侧面是，知道**所有的拓展公钥**是使用资金的前提。通常人们会以为，如果自己使用的是一个 2-of-3 多签名钱包，那么只要有其中两个主私钥（种子词），就有了足以触及自己钱包中的资金的一切；这是不正确的。还需要来自每一个主私钥的拓展公钥。
+多签名的一个极为重要但没有得到充分理解的侧面是，知道**所有的扩展公钥**是使用资金的前提。通常人们会以为，如果自己使用的是一个 2-of-3 多签名钱包，那么只要有其中两个主私钥（种子词），就有了足以触及自己钱包中的资金的一切；这是不正确的。还需要来自每一个主私钥的扩展公钥。
 
 这就意味着需要以下三者之一：
 
@@ -115,15 +115,15 @@ tags:
 
 如前面单签名钱包配置部分所述，[派生路径](https://unchained.com/blog/bitcoin-derivation-paths/)是让你可以从一个主私钥生成特定 xpub 的信息，极为重要。对多签名钱包中的每一个 xpub 也都如此。
 
-多签名钱包中的拓展公钥的派生路径也许能够猜测出来 —— 假设创建该钱包的时候遵循了常用标准的话，但只要有一个拓展公钥的派生路径猜错了，就会在取出资金的道路上遇到障碍。这意味着，如果缺乏钱包配置，多签名钱包的用户在复原钱包的时候会更容易遇到障碍和困惑。再说一次，[walletsrecovery.org](http://walletsrecovery.org/) 是一个非常有用的资源网站，可以帮助你寻找不同钱包应用所用的派生路径。
+多签名钱包中的扩展公钥的派生路径也许能够猜测出来 —— 假设创建该钱包的时候遵循了常用标准的话，但只要有一个扩展公钥的派生路径猜错了，就会在取出资金的道路上遇到障碍。这意味着，如果缺乏钱包配置，多签名钱包的用户在复原钱包的时候会更容易遇到障碍和困惑。再说一次，[walletsrecovery.org](http://walletsrecovery.org/) 是一个非常有用的资源网站，可以帮助你寻找不同钱包应用所用的派生路径。
 
 ### 脚本类型
 
 多签名钱包可能使用这四种[脚本类型](https://unchained.com/blog/bitcoin-address-types-compared/)：P2SH、P2SH-P2WSH、P2WSH，还有 P2TR 。
 
 - 如果钱包地址以数字 “3” 开头，那么可能是 P2SH 或 P2SH-P2WSH 类型
-  - P2SH 多签名钱包的拓展公钥派生路径可能以 `m/45'/ `开头。
-  - P2SH-P2WSH 多签名钱包的拓展公钥派生路径可能以 `m/48'/` 开头，并包含额外的一层路径为 `1'`，如 [BIP48](https://github.com/bitcoin/bips/blob/master/bip-0048.mediawiki) 所定义的。
+  - P2SH 多签名钱包的扩展公钥派生路径可能以 `m/45'/ `开头。
+  - P2SH-P2WSH 多签名钱包的扩展公钥派生路径可能以 `m/48'/` 开头，并包含额外的一层路径为 `1'`，如 [BIP48](https://github.com/bitcoin/bips/blob/master/bip-0048.mediawiki) 所定义的。
 - 如果钱包地址以字符 “bc1q” 开头，那么就是 P2WSH 类型，派生路径可能以 `m/48'/` 开头，并包含额外的一层路径为 `2'`，如 BIP48 所述。
 - 如果钱包地址以字符 “bc1p” 开头，那么就是 P2TR 类型，派生路径可能以 `m/86'/` 开头。
 
