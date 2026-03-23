@@ -9,7 +9,7 @@ categories:
 tags:
 - 开发
 - LNURL
-- LSAT
+- L402
 ---
 
 
