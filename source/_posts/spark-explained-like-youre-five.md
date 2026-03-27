@@ -1,5 +1,5 @@
 ---
-title: '用拼图解释 Ark'
+title: '用拼图解释 Spark'
 author: 'Roy Sheinfeld'
 date: '2026/01/20 18:20:02'
 cover: ''
