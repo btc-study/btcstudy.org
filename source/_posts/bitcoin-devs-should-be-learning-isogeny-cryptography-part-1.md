@@ -74,7 +74,7 @@ $$\varphi: E_0 \to E_{\mathrm{pk}}$$
 
 1. 每个同源都有一个 *核*（kernel），即某个有限的点集合，同源将其映射到余域（codomain）（输出曲线）上的无穷远点。同源几乎可以被其核唯一标识，而核本身通常可以用一个 *核生成点* 高效表示。
 
-   > 校对注：设有函数 f(X) ，则 X 的取值范围被称为 “定义域（domain）”；已知 f(X) 的值会落在集合 Y 内，则称 Y 为该函数的 “余域（codomain）”。数学教学往往在 $f(X) \rarr Y$ 时将 Y 称为 “值域”，但两个概念其实并不相等：值域是小于等于余域的。 
+   > 校对注：设有函数 f(X) ，则 X 的取值范围被称为 “定义域（domain）”；已知 f(X) 的值会落在集合 Y 内，则称 Y 为该函数的 “余域（codomain）”。数学教学往往在 $f(X) \rightarrow Y$ 时将 Y 称为 “值域”，但两个概念其实并不相等：值域是小于等于余域的。 
 
 2. 每个同源 $\varphi: E_1 \to E_2$ 都有一个 *对偶* $\hat{\varphi}: E_2 \to E_1$（用小帽子表示），你可以将其视为一种逆，尽管并不完全如此。$\hat{\varphi}$ 可以仅通过 $\varphi$ 高效计算。
 
@@ -149,7 +149,7 @@ SQIsign 通过在签名算法中添加几个额外步骤来修复我们之前设
 - 对公钥曲线 $E_{\text{pk}}$、承诺 $E_{\text{com}}$ 和消息 $m$ 进行哈希，生成一个伪随机的 *挑战* 同源 $\phi_{\text{chl}}: E_{\text{pk}} \to E_{\text{chl}}$，将公钥映射到一条任意的挑战曲线 $E_{\text{chl}}$
 - 利用对 $\text{End}(E_{\text{pk}})$ 和 $\phi_{\text{chl}}$ 的知识，计算挑战曲线的自同态环 $\text{End}(E_{\text{chl}})$
 - **利用对 $\text{End}(E_0)$ 和 $\phi_{\text{com}}$ 的知识，计算承诺曲线的自同态环 $\text{End}(E_{\text{com}})$**
-- 利用对 $\text{End}(\boldsymbol{E}_{\text{com}})$ 和 $\text{End}(E_{\text{chl}})$ 的知识，计算一个 *响应* 同源 $\phi_{\text{rsp}}: \boldsymbol{E}_{\text{com}} \to E_{\text{chl}}$
+- 利用对 $\text{End} \lbrace \boldsymbol{E}_{\text{com}} \rbrace $ 和 $\text{End} \lbrace E_{\text{chl}} \rbrace$ 的知识，计算一个 *响应* 同源 $\phi_{\text{rsp}}: \boldsymbol{E}_{\text{com}} \to E_{\text{chl}}$
 - 签名即为 $\phi_{\text{rsp}}$。验证者重新计算 $\phi_{\text{chl}}: E_{\text{pk}} \to E_{\text{chl}}$ 并检查 $\phi_{\text{rsp}}$ 确实是从 $\boldsymbol{E}_{\text{com}} \to E_{\text{chl}}$ 的同源
 
 ![](../images/bitcoin-devs-should-be-learning-isogeny-cryptography-part-1/sqisign.svg)
