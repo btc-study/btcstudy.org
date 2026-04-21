@@ -149,7 +149,7 @@ SQIsign 通过在签名算法中添加几个额外步骤来修复我们之前设
 - 对公钥曲线 $E_{\text{pk}}$、承诺 $E_{\text{com}}$ 和消息 $m$ 进行哈希，生成一个伪随机的 *挑战* 同源 $\phi_{\text{chl}}: E_{\text{pk}} \to E_{\text{chl}}$，将公钥映射到一条任意的挑战曲线 $E_{\text{chl}}$
 - 利用对 $\text{End}(E_{\text{pk}})$ 和 $\phi_{\text{chl}}$ 的知识，计算挑战曲线的自同态环 $\text{End}(E_{\text{chl}})$
 - **利用对 $\text{End}(E_0)$ 和 $\phi_{\text{com}}$ 的知识，计算承诺曲线的自同态环 $\text{End}(E_{\text{com}})$**
-- 利用对 $\text{End} \lbrace \boldsymbol{E}_{\text{com}} \rbrace $ 和 $\text{End} \lbrace E_{\text{chl}} \rbrace$ 的知识，计算一个 *响应* 同源 $\phi_{\text{rsp}}: \boldsymbol{E}_{\text{com}} \to E_{\text{chl}}$
+- 利用对 $\text{End} ( E_{com} ) $ 和 $\text{End} ( E_{chl} )$ 的知识，计算一个 *响应* 同源 $\phi_{\text{rsp}}: E_{com} \rightarrow E_{chl}$
 - 签名即为 $\phi_{\text{rsp}}$。验证者重新计算 $\phi_{\text{chl}}: E_{\text{pk}} \to E_{\text{chl}}$ 并检查 $\phi_{\text{rsp}}$ 确实是从 $\boldsymbol{E}_{\text{com}} \to E_{\text{chl}}$ 的同源
 
 ![](../images/bitcoin-devs-should-be-learning-isogeny-cryptography-part-1/sqisign.svg)
