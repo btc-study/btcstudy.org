@@ -6,7 +6,7 @@ cover: '../images/BITCOIN.png'
 excerpt: ''
 categories:
 tags:
-- 同源密码
+- 同源密码学
 mathjax: true
 ---
 
