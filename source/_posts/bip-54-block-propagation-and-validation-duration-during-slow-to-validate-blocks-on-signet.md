@@ -6,6 +6,7 @@ cover: ''
 excerpt: '远远不是可能构造出来的最难验证区块'
 tags:
 - Consensus-Cleanup
+mathjax: true
 ---
 
 
