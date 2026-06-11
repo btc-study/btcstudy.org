@@ -73,7 +73,7 @@ Blockstream 已经形成了一份对此种密码学的集中研究，见《[*为
 
 ## 格签名如何工作：带有向量的 Schnorr
 
-只要你能理解比特币上的 Schnorr 签名，你就 50% 理解了一部分格签名，比如 [*Dilithium*](https://eprint.iacr.org/2017/633.pdf?ref=blog.blockstream.com) 。这种最主流的格签名设计使用了一种技术，我们戏称为 “带有向量的 Schnorr 方案”。
+只要你能理解比特币上的 Schnorr 签名，你就 50% 理解了一部分格签名，比如 [*Dilithium*](https://eprint.iacr.org/2017/633.pdf?ref=blog.blockstream.com) 。这种最主流的格签名设计使用了一种技术，我们戏称为 “使用向量的 Schnorr 方案”。
 
 在传统的 Schnorr 签名中，使用私钥 `x` 的签名流程是这样的：
 
@@ -92,7 +92,7 @@ Blockstream 已经形成了一份对此种密码学的集中研究，见《[*为
 
 ![High-level explanation of a rejection sampling procedure. The “naive” protocol produces the signature shown by the solid line, whose geometry leaks information about the distribution’s shift. Rejection sampling ensures that this offset is absent from the resultant output distribution.](../images/schnorr-but-with-vectors-lattice-based-signatures-explained/63f621dabf6.png)
 
-为了解决这个问题，格密码学使用了一种聪明的技巧，叫做 “**带抛弃的 Fiat-Shamir 变换**”（也叫 “拒绝采样（rejection sampling）”。
+为了解决这个问题，格密码学使用了一种聪明的技巧，叫做 “**带中止的 Fiat-Shamir 变换**”（也叫 “拒绝采样（rejection sampling）”。
 
 这个想法非常简单：在签名人生成签名 `z` 之后，他们先检查加上私钥后是否使这个值发生重大偏移。如果这个签名看起来 “有偏倚（biased）”、有可能泄露私钥（如上图所示），他们就丢弃这个签名、用一个新的随机数再次尝试（生成签名）。这个过程会重复多次，直到最终的签名能够完美遮掩这个私钥（如上图的虚线所示）。
 
