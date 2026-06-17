@@ -47,17 +47,16 @@ mathjax: true
 先介绍一下我们的研究对象。我们定义 $m$ 维的 “格（lattice）” $\Lambda \subseteq \mathbb{R}^d$ 为一组独立的线性向量 $\mathbf{b}_1,\dots,\mathbf{b}_m$ 在 $\mathbb{R}^d$ （d 维实数空间）上的所有整数线性组合（其中 $m\leq d$），也即：
 
 $$
-\begin{equation*}
-    \Lambda \triangleq \left\{ \sum_{i=1}^m \lambda_i\mathbf{b}_i: \lambda_1,\dots,\lambda_m \in \mathbb{Z} \right\}.
-\end{equation*}
+\Lambda \triangleq \left\lbrace \sum_ {i=1}^m \lambda_ i\mathbf{b}_ i: \lambda_ 1,\dots,\lambda_ m \in \mathbb{Z} \right\rbrace.
 $$
+
 为了更直观地理解这个东西，这里给出一个具体的例子：下图是一个二维（$m=d=2$）的格。
 
 ![Lattice example](../images/schnorr-but-with-vectors-lattice-based-signatures-explained-full-research-post/BybTTV82Wg.png)
 
 *<strong>图 1</strong>.一个二维格的例子，它由向量 $b_1 = (3, 1)$ 和 $b_2 = (2, 3)$ 张成。得到的格 $\Lambda$ 是一组蓝色的点。*
 
-我第一次读到这个定义时，忍不住怀疑 “这么直截了当的定义，能搞出什么有用的东西呢？”但是，在密码学家们注意到格是许多计算困难问题的根域以前，格就已经被证明在数学上是有用的，至少可以追溯到 18 世纪。事实上，格是自然而然出现在许多领域的，比如数论（number theory）和球堆积（sphere packings）问题（两者都或多或少与基于格的和基于编码的密码学有关）。
+我第一次读到这个定义时，忍不住怀疑 “这么直截了当的定义，能搞出什么有用的东西呢？” 但是，在密码学家们注意到格是许多计算困难问题的根域以前，格就已经被证明在数学上是有用的，至少可以追溯到 18 世纪。事实上，格是自然而然出现在许多领域的，比如数论（number theory）和球堆积（sphere packings）问题（两者都或多或少与基于格的和基于编码的密码学有关）。
 
 > 注：
 >
@@ -69,7 +68,7 @@ $$
 
 在本文中，我们只会介绍其中一种假设。
 
-**（近似的）最短向量问题（$\gamma$-SVP）**。目标是找出格 $\Lambda$ 上的一个 “非常短” 的向量。我们可以（相对容易地）证明 $\Lambda$ 包含这个 *最短的* 向量（即，存在 $\mathbf{u} \in \Lambda$ 使得 $\|\mathbf{u}\|=\min_{\mathbf{v} \in \Lambda}\|\mathbf{v}\|$，其长度我们记作 $\lambda_1(\Lambda)$ ，但是，找出这样一个向量，被认为甚至对量子计算机也是一个难题。我们把这个问题称为 “**SVP**” 。
+**（近似的）最短向量问题（$\gamma$-SVP）**。目标是找出格 $\Lambda$ 上的一个 “非常短” 的向量。我们可以（相对容易地）证明 $\Lambda$ 包含这个 *最短的* 向量（即，存在 $\mathbf{u} \in \Lambda$ 使得 $\Vert\mathbf{u}\Vert=\min_{\mathbf{v} \in \Lambda}\Vert\mathbf{v}\Vert$，其长度我们记作 $\lambda_1(\Lambda)$ ，但是，找出这样一个向量，被认为甚至对量子计算机也是一个难题。我们把这个问题称为 “**SVP**” 。
 
 然而，想要基于这个 “裸” **SVP** 开发出实用的协议，几乎是不可能的。于是我们放宽要求：假设我们接受其范数值小于 $\gamma\lambda_1(\Lambda)$ 的向量，只需因子 $\gamma>1$ 。可以证明，这样一个修改过的问题，对哪怕是较大的因子也依然足够难，比如 $\gamma=\mathsf{poly}(\sqrt{d})$ 。这个修改后的问题，我们称为 “$\gamma$-**SVP**”。（译者注：“范数（[norm](https://en.wikipedia.org/wiki/Norm_(mathematics))）” 是将向量空间内的向量映射成实数的函数。或者说，每种范数都对应着一种定义向量长度的方式，可以将范数值理解成长度。）
 
@@ -83,16 +82,17 @@ $$
 
 虽然可以直接基于格假设来构造密码系统（比如说，*Hawk* 就是这样做的），但一般来说，我们使用另一种假设（它可以规约为格假设）。最著名的例子是 “*短整数解*（*SIS*）” 和 “*带错误学习*（*LWE*）”。出于本文的目的，我们只讲前者。
 
-假设有线性方程 $\mathbf{Ax}=0$，其中 $\mathbf{A} \in \mathbb{Z}_q^{n \times m}$ （$A$ 是一个 $n \times m$ 的整数矩阵）。求出这个等式的解，是容易的（例如，通过 “高斯消元法（Gaussian elimination）”）。但是，假设我们还要求解 $\mathbf{x} \in \mathbb{Z}^m$ 是 “短的”，即 $\|\mathbf{x}\|_{\infty} < \beta$ （其中 $\|\mathbf{x}\|_{\infty} := \min_{i \in [m]}|x_i|$ ，是 $\mathbf{x}$ 的 $\ell^{\infty}$ 范数值），且 $\beta \ll q$ ，这就成了短整数解问题的一个实例，记作 $\mathsf{SIS}_{q,n,m,\beta}$ ；并且，在精心挑选的 $q,n,m,\beta$ 之下，它甚至对量子计算机也非常非常难。
+假设有线性方程 $\mathbf{Ax}=0$，其中 $ \mathbf{A} \in \mathbb{Z}_ q^{n \times m} $ （$A$ 是一个 $n \times m$ 的整数矩阵）。求出这个等式的解，是容易的（例如，通过 “高斯消元法（Gaussian elimination）”）。但是，假设我们还要求解 $\mathbf{x} \in \mathbb{Z}^m$ 是 “短的”，即 $\Vert\mathbf{x}\Vert_ {\infty} < \beta$ （其中 $\Vert\mathbf{x}\Vert_ {\infty} := \min_ {i \in \lbrack m \rbrack} \vert x_ i \vert$ ，是 $\mathbf{x}$ 的 $\ell^{\infty}$ 范数值），且 $\beta \ll q$ ，这就成了短整数解问题的一个实例，记作 $\mathsf{SIS}_ {q,n,m,\beta}$ ；并且，在精心挑选的 $q,n,m,\beta$ 之下，它甚至对量子计算机也非常非常难。
 
 (译者注：不知为何，作者在这里使用的 $\ell^{\infty}$ 范数的定义似乎与常见定义不同，常见定义是取元素的最大值，从而短整数解的要求是向量在任一维度上的值都小于 $\beta$ 。)
 
 *习题 1.* 证明只要 $m>\frac{n\log q}{\log(1+\beta)}$ ， $\mathsf{SIS}_{q,n,m,\beta}$ 就存在解。
 
 此外，我们用 $S_{\eta}$ 来表示 “短” 向量的集合，也即：
+
 $$
 \begin{equation*}
-    S_{\eta} := \{\mathbf{x} \in \mathbb{Z}^n: \|\mathbf{x}\|_{\infty} \leq \eta\}.
+    S_{\eta} := \lbrace\mathbf{x} \in \mathbb{Z}^n: \Vert\mathbf{x}\Vert_{\infty} \leq \eta\rbrace.
 \end{equation*}
 $$
 
@@ -101,7 +101,7 @@ $$
 这一假设的一个重要微调是考虑同一等式的非齐次版本（non-homogeneous version）：$\mathbf{Ax}=\mathbf{t}$ 。这个修改允许我们考虑决定性假设，而不是搜索假设。具体来说，我们引入 “*非其次短整数解*（**ISIS**）” 假设，声称区分下面两种分布 $D_0$ 和 $D_1$ 是计算难题：
 
 - $D_0$：从 $\mathbb{Z}_q^{n \times m} \times \mathbb{Z}_q^n$ 中随机选出一个样本
-- $D_1$：随机采样 $A \gets_R \mathbb{Z}_q^{n \times m}$ ，采样一个短的向量 $\mathbf{s} \in \mathbb{Z}^m$（即 $\|\mathbf{s}\|_{\infty} < \delta$ ），计算 $\mathbf{t} \gets \mathbf{As}$ ，然后输出元组 $(\mathbf{A}, \mathbf{t})$ 。
+- $D_1$：随机采样 $A \gets_R \mathbb{Z}_ q^{n \times m}$ ，采样一个短的向量 $\mathbf{s} \in \mathbb{Z}^m$（即 $\Vert\mathbf{s}\Vert_ {\infty} < \delta$ ），计算 $\mathbf{t} \gets \mathbf{As}$ ，然后输出元组 $(\mathbf{A}, \mathbf{t})$ 。
 
 我们可以证明，当背后的 $\beta$ 和 $\delta$ 有适当的关联时，**ISIS** 等价于 **SIS** 。这个假设允许我们开发出以下密钥生成方法：
 
@@ -116,7 +116,7 @@ $$
 
 $$
 \begin{equation*}
-    \Lambda_A^{\perp} = \{\mathbf{z} \in \mathbb{Z}^m: \mathbf{Az} = 0 \; (\text{mod} \; q)\}.
+    \Lambda_A^{\perp} = \lbrace\mathbf{z} \in \mathbb{Z}^m: \mathbf{Az} = 0 \; (\text{mod} \; q)\rbrace.
 \end{equation*}
 $$
 *洞见*：求解 $\mathsf{SIS}_{q,n,m,\beta}$ 等价于求解恰当 $\gamma$ 下的 $\gamma$-**SVP** 。这从 $\Lambda_A^{\perp}$ 的定义中就能看出来：这个格中的任何一个向量，都是 $\mathbf{A}\mathbf{x}=0$ 的解；如果我们从想求解这个格的 **SVP**，本质上就是在寻找这个等式的短整数解，这正好就是 **SIS** 的要求。
@@ -137,7 +137,7 @@ $$
 
 - $\mathsf{KeyGen}(1^{\lambda}) \to (\mathsf{pk}, \mathsf{sk})$ ：生成密钥对；
 - $\mathsf{Sign}(\mathsf{sk},\mu) \to \mathsf{sig}$ ：使用私钥 **sk** 签名消息 $\mu$ ，从而产生签名 **sig** ；
-- $\mathsf{Verify}(\mathsf{pk},\mu,\mathsf{sig}) \to \{0,1\}$ ：基于公钥 **pk** 和消息 $\mu$ ，验证签名 **sig**  。
+- $\mathsf{Verify}(\mathsf{pk},\mu,\mathsf{sig}) \to \lbrace0,1\rbrace$ ：基于公钥 **pk** 和消息 $\mu$ ，验证签名 **sig**  。
 
 Schnorr 签名可以说是离散对数假设之上的最优雅、高效和简单的签名方案，现在已经在比特币上得到积极应用。不过，我们最好还是从 *Schnorr 身份鉴别协议* 开始。具体来说，假设一个 **q** 阶的群 $\mathbb{G}$ ，是由 $g \in \mathbb{G}$ 生成的；然后，为了证明签名人知道对应于公钥 $h \in \mathbb{G}$（其中 $g^{\alpha}=h$）的私钥 $\alpha$ ，他参与如下的交互式协议：
 
@@ -180,21 +180,21 @@ $$
 
 ### 尝试 #2：缩小一切
 
-注意，“尝试 #1” 是不安全的，因为我们很容易就可以伪造 **z** ，并且很容易就能从 **r** 中找回 **a** 。因为它们只是这些线性方程所对应的系统的 *随意* 的解。如我们在 **SIS** 假设中看到的，我们要让 **z** 和 **r** 都 “短”，才能修复这个协议的可靠性。所以这次尝试我们就以此为目标。我们将从一些 *短* 分布 $\chi^m$ 中随机采样 **r**（设想在 $\mathbb{Z}_q$ 上有一些概率分布 $\chi$ ，从中采样出来的一个值的 $\ell^{\infty}$ 范数值会限制在较小的 $\varepsilon \in \mathbb{Z}_{>0}$ 内）。让 **z**（以及 $\mathbf{r}+\mathbf{Se}$ ）变短会更难一些：虽然现在 **r** 已经是短的了，我们还要保证 **Se** 也是短的。结果是，因为 **S** 已经是小的值，我们需要保证 **e** 既是短的，**e** 的可能取值集合 *又* 足够大。具体来说，我们将从集合 $B_{\kappa}$ 中采样：
+注意，“尝试 #1” 是不安全的，因为我们很容易就可以伪造 **z** ，并且很容易就能从 **r** 中找回 **a** 。因为它们只是这些线性方程所对应的系统的 *随意* 的解。如我们在 **SIS** 假设中看到的，我们要让 **z** 和 **r** 都 “短”，才能修复这个协议的可靠性。所以这次尝试我们就以此为目标。我们将从一些 *短* 分布 $\chi^m$ 中随机采样 **r**（设想在 $\mathbb{Z}_ q$ 上有一些概率分布 $\chi$ ，从中采样出来的一个值的 $\ell^{\infty}$ 范数值会限制在较小的 $\varepsilon \in \mathbb{Z}_ {>0}$ 内）。让 **z**（以及 $\mathbf{r}+\mathbf{Se}$ ）变短会更难一些：虽然现在 **r** 已经是短的了，我们还要保证 **Se** 也是短的。结果是，因为 **S** 已经是小的值，我们需要保证 **e** 既是短的，**e** 的可能取值集合 *又* 足够大。具体来说，我们将从集合 $B_ {\kappa}$ 中采样：
 $$
 \begin{equation*}
-    B_{\kappa} := \{\mathbf{x} \in \mathbb{Z}_q^k: x_i \in \{0,\pm 1\} \; \text{且非零的 $x_i$ 的数量是 $\kappa$}\}.
+    B_{\kappa} := \lbrace \mathbf{x} \in \mathbb{Z}_q^k: x_i \in \lbrace 0,\pm 1 \rbrace \; \text{且非零的 $x_i$ 的数量是 $\kappa$}\rbrace .
 \end{equation*}
 $$
 诚实地说，这个集合完全是凭空出现的（就像基于格的密码学中的许多东西一样）。使用这个集合的理由大概是这样的：
 
 - 我们希望挑战值的集合足够大；这个集合符合这个条件（见下文的 *习题 3* ）；
-- 我们希望这个挑战值集合中的元素都足够小；显然这个也符合，因为对于每一个 $\mathbf{e} \in B_{\kappa}$ ，都有 $\|\mathbf{e}\|_{\infty}=1$ ；
+- 我们希望这个挑战值集合中的元素都足够小；显然这个也符合，因为对于每一个 $\mathbf{e} \in B_{\kappa}$ ，都有 $\Vert\mathbf{e}\Vert_{\infty}=1$ ；
 - 最好，我们希望哈希成 $B_{\kappa}$ 的实现尽可能简单：这个也成立，因为 $B_{\kappa}$ 中的元素可以视为一种三元字符串（ternary string）。
 
-*习题 3.* 证明挑战值集合 $B_{\kappa}$ 的两种属性：（a）$\#B_{\kappa}=2^{\kappa}\binom{k}{\kappa}$ （即，这个集合非常大）；（b）对于任意的 $\mathbf{S} \in S_{\eta}^{m \times k}$ ，我们有 $\|\mathbf{Se}\|_{2} \leq \eta\kappa\sqrt{m}$ ，其中 $\|\cdot\|_2$ 表示标准的欧几里得范数（即，对于要进入 **z** 的计算的 **Se** 的范数值，我们有很好的边界）。
+*习题 3.* 证明挑战值集合 $B_{\kappa}$ 的两种属性：（a）$\# B_ {\kappa}=2^{\kappa} \binom{k}{\kappa}$ （即，这个集合非常大）；（b）对于任意的 $\mathbf{S} \in S_ {\eta}^{m \times k}$ ，我们有 $\Vert \mathbf{Se} \Vert _ {2} \leq \eta \kappa \sqrt{m}$ ，其中 $\Vert \cdot \Vert _ 2$ 表示标准的欧几里得范数（即，对于要进入 **z** 的计算的 **Se** 的范数值，我们有很好的边界）。
 
-现在，因为 **e** 和 **r** 都是短的，所以 **z** 也是短的。因此，为了防止敌手发送较大的的 **e** 和 **r**，我们需要检查 $\|\mathbf{z}\|_2$ 足够小（即，小于某个阈值 $\tau$ ；你可以理解为 $\tau:=\max_{\mathbf{e} \in B_{\kappa}}\|\mathbf{Se}\|_2 + \mathbb{E}_{\mathbf{r} \sim \chi^m}[\|\mathbf{r}\|_2]$ ，但这跟我们当前这个层面的讨论无关）。
+现在，因为 **e** 和 **r** 都是短的，所以 **z** 也是短的。因此，为了防止敌手发送较大的的 **e** 和 **r**，我们需要检查 $\Vert \mathbf{z} \Vert _ 2$ 足够小（即，小于某个阈值 $\tau$ ；你可以理解为 $\tau:=\max_ {\mathbf{e} \in B_ {\kappa}} \Vert \mathbf{Se} \Vert_ 2 + \mathbb{E}_ {\mathbf{r} \sim \chi^m} \lbrack \Vert\mathbf{r}\Vert_ 2 \rbrack$ ，但这跟我们当前这个层面的讨论无关）。
 
 有了这些修改，我们的第二次尝试是这样的：
 
@@ -227,19 +227,21 @@ $$
 
 ### 离散高斯分布
 
-如果你觉得挑战值空间 $B_{\kappa}$ 的选择是随意的，那么我要说，这才是我开始学习基于格的电子签名时真正觉得 *完全* 随意的东西。引入在格 $\Lambda \subseteq \mathbb{R}^m$ 上的**高斯分布** $\Lambda \subseteq \mathbb{R}^m$ ，其宽度参数（标准差）为 $\sigma \in \mathbb{R}_{>0}$ ，平均值为  $\mathbf{v} \in \mathbb{R}^m$ ，如下：
+如果你觉得挑战值空间 $B_{\kappa}$ 的选择是随意的，那么我要说，这才是我开始学习基于格的电子签名时真正觉得 *完全* 随意的东西。引入在格 $\Lambda \subseteq \mathbb{R}^m$ 上的**高斯分布** $D_{\sigma,\mathbf{v},\Lambda}^m$ ，其宽度参数（标准差）为 $\sigma \in \mathbb{R}_ {>0}$ ，平均值为  $\mathbf{v} \in \mathbb{R}^m$ ，如下：
+
 $$
 \begin{equation*}
-    D_{\mathbf{v},\sigma,\Lambda}^m(\mathbf{z}) := \rho_{\mathbf{v},\sigma}^m(\mathbf{z})/\rho_{\mathbf{v},\sigma}^m(\Lambda) \; \text{其中} \; \rho_{\mathbf{v},\sigma}^m(\mathbf{z}) := \exp(-\|\mathbf{z}-\mathbf{v}\|_2^2/2\sigma^2).
+    D_ {\mathbf{v},\sigma,\Lambda}^m(\mathbf{z}) := \rho_ {\mathbf{v},\sigma}^m(\mathbf{z})/\rho_ {\mathbf{v},\sigma}^m(\Lambda) \; \text{其中} \; \rho_ {\mathbf{v},\sigma}^m(\mathbf{z}) := \exp(-\Vert \mathbf{z}-\mathbf{v} \Vert_ 2^2/2\sigma^2).
 \end{equation*}
 $$
+
 （译者注：“高斯分布” 即 “正态分布”。）
 
 这里，我们要滥用记号，用 $\rho_{\sigma}^m(\Omega)=\sum_{\mathbf{w} \in \Omega}\rho_{\sigma}^m(\mathbf{w})$ 来表示一个离散集合 $\Omega \subseteq \mathbb{R}^m$ 上的分布。我们在索引中省略了 $\Lambda$ 和 $\mathbf{v}$ ，当它们分别是 $\Lambda=\mathbb{Z}^m$ 和 $\mathbf{v}=0$ 的时候。
 
-想必这个定义需要一些解释。这里的关键想法是，我们想让在格 $\Lambda$ 上的每一个点 **z** 出现的概率与 $\exp(-\|\mathbf{z}-\mathbf{v}\|_2^2/2\sigma^2)$ 成比例。为了将它变成一种有效的概率分布，我们需要将所有的概率除以一个归一化常数（normalization constant）$\sum_{\mathbf{w} \in \Lambda}\exp(-\|\mathbf{w}-\mathbf{v}\|_2^2/2\sigma^2)$ 。
+想必这个定义需要一些解释。这里的关键想法是，我们想让在格 $\Lambda$ 上的每一个点 **z** 出现的概率与 $\exp(- \Vert \mathbf{z}-\mathbf{v} \Vert_ 2^2/2\sigma^2)$ 成比例。为了将它变成一种有效的概率分布，我们需要将所有的概率除以一个归一化常数（normalization constant）$\sum_ {\mathbf{w} \in \Lambda}\exp(- \Vert \mathbf{w}-\mathbf{v} \Vert_ 2^2/2\sigma^2)$ 。
 
-原理上，之所以得名 “*离散* 高斯分布”，正是因为它与连续的高斯分布非常相似（它们的密度为 $e^{-\|\mathbf{z}-\mathbf{v}\|^2/2\sigma^2}/\int_{\mathbb{R}^m}e^{-\|\mathbf{z}-\mathbf{v}\|^2/2\sigma^2}\text{d}\mathbf{z}$ ；在连续分布中，分母中的积分是容易计算的）。此外，如果你看过这种分布的形状，那马上就会认出这是标准的多元高斯分布：
+原理上，之所以得名 “*离散* 高斯分布”，正是因为它与连续的高斯分布非常相似（它们的密度为 $e^{-\Vert \mathbf{z}-\mathbf{v} \Vert^2/2\sigma^2}/\int_{\mathbb{R}^m}e^{-\Vert \mathbf{z}-\mathbf{v} \Vert^2/2\sigma^2}\text{d}\mathbf{z}$ ；在连续分布中，分母中的积分是容易计算的）。此外，如果你看过这种分布的形状，那马上就会认出这是标准的多元高斯分布：
 
 ![image](../images/schnorr-but-with-vectors-lattice-based-signatures-explained-full-research-post/rJIVgfonWl.png)
 
@@ -254,15 +256,17 @@ $$
 **属性（A）**（*从 $D_{\sigma}^m$ 中采样出短向量的概率是压倒性高的* ）。对于任何 $\beta>1$ ，都有：
 $$
 \begin{equation*}
-    \text{Pr}[\|\mathbf{z}\|_2>\beta\sigma\sqrt{m} \; | \; \mathbf{z} \gets_R D_{\sigma}^m] < \beta^me^{m(1-\beta^2)/2}.
+    \text{Pr} \lbrack \Vert \mathbf{z} \Vert_2 > \beta \sigma \sqrt{m} \; \vert \; \mathbf{z} \gets_ R D_ {\sigma}^m \rbrack < \beta^me^{m(1-\beta^2)/2}.
 \end{equation*}
 $$
-**属性（B）**（*中心高斯分布和非中心高斯分布的比值几乎总是有界的* ）对于任何 $\mathbf{v} \in \mathbb{Z}^m$ ，只要 $\sigma=\alpha\|\mathbf{v}\|$ ，就有：
+
+**属性（B）**（*中心高斯分布和非中心高斯分布的比值几乎总是有界的* ）对于任何 $\mathbf{v} \in \mathbb{Z}^m$ ，只要 $\sigma=\alpha \Vert \mathbf{v} \Vert$ ，就有：
 $$
 \begin{equation*}
-    \text{Pr}[D_{\sigma}^m(\mathbf{z})/D_{\mathbf{v},\sigma}^m(\mathbf{z}) < e^{12/\alpha+1/(2\alpha^2)} \; | \; \mathbf{z} \gets_R D_{\sigma}^m] > 1 - 2^{-100}.
+    \text{Pr} \lbrack D_ {\sigma}^m(\mathbf{z})/D_ {\mathbf{v},\sigma}^m(\mathbf{z}) < e^{12/\alpha+1/(2\alpha^2)} \; \vert \; \mathbf{z} \gets_ R D_ {\sigma}^m \rbrack > 1 - 2^{-100}.
 \end{equation*}
 $$
+
 这两种属性的证明都要用到大量数学。见，例如 [Lyubashevsky 的原创论文](https://eprint.iacr.org/2011/537.pdf)第四章。我们将进一步用 $M_{\alpha}$ 来表示这个 “魔法” 常量 $e^{12/\alpha+1/(2\alpha^2)}$ 。
 
 *习题 4.* 假设 $\alpha>1$ ，问 $M_{\alpha}$ 的可能范围？
@@ -295,7 +299,7 @@ $$
 1. 我们的 “目标” 分布 $f$ 是无偏的（unbiased）离散高斯分布 $D_{\sigma}^m$ ；
 2. 我们的 “真实” 分布 $g$ 是有偏的高斯分布 $D_{\mathbf{Se},\sigma}^m$  。
 
-我们能不能应用这个引理？*属性（B）* 正是关键所在：我们有一个魔法常量 $M_{\alpha}$ 使得 $D_{\sigma}^m(\mathbf{z}) \leq M_{\alpha}D_{\mathbf{Se},\sigma}^m$ 以压倒性的概率成立！（而且，我们容易可以从 $\|\mathbf{Se}\|_2 \leq \eta\kappa\sqrt{m}$ 这个事实中确认 $\alpha$ ：见 *习题 3* ）。
+我们能不能应用这个引理？*属性（B）* 正是关键所在：我们有一个魔法常量 $M_{\alpha}$ 使得 $D_{\sigma}^m(\mathbf{z}) \leq M_{\alpha}D_{\mathbf{Se},\sigma}^m$ 以压倒性的概率成立！（而且，我们容易可以从 $\Vert\mathbf{Se}\Vert_2 \leq \eta\kappa\sqrt{m}$ 这个事实中确认 $\alpha$ ：见 *习题 3* ）。
 
 > 警告
 >
@@ -337,7 +341,7 @@ $$
 
 坦白说，前述方案是非常低效的。在原版论文提出的参数下，签名的体积是 19.9KB ，而公钥的体积是 128KB 。不过，上面展示的想法在许多方面都可以优化。尤其是：
 
-- 几乎所有签名都不使用 $\mathbb{Z}_q$ ，而是使用环 $\mathcal{R}_q := \mathbb{Z}_q[X]/(X^d+1)$ ，其中 $d$ 是 2 的幂。这个环之所以高效的理由就超出本文的范围了。
+- 几乎所有签名都不使用 $\mathbb{Z}_q$ ，而是使用环 $\mathcal{R}_q := \mathbb{Z}_q \lbrack X \rbrack/(X^d+1)$ ，其中 $d$ 是 2 的幂。这个环之所以高效的理由就超出本文的范围了。
 
 - 可以选择不同于离散高斯分布的另一种分布。比如说 [BLISS 签名方案](https://eprint.iacr.org/2013/383.pdf)提出双峰高斯分布，其它方面则几乎原样照搬上述构造。得到的签名体积是 5.6KB ，公钥体积是 7KB 。不幸的是，这套方案被证明在[侧信道攻击](https://eprint.iacr.org/2017/505.pdf)下不安全
 
