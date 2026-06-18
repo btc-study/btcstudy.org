@@ -76,7 +76,7 @@ $$
 
 ![image](../images/schnorr-but-with-vectors-lattice-based-signatures-explained-full-research-post/S1h296E6bx.png)
 
-*<strong>图 2.</strong> 解释 $\gamma$-**SVP** 。假设格 $\Lambda'$ 是由向量 $\mathbf{b}_1=(3,8)$ 和 $\mathbf{b}_2=(4,6)$ 张成的（顺带说一句，它是在上文的 图 1 中定义的格 $\Lambda$ 的子格。它的两个最短向量是 $\mathbf{u}=(-1,2)$ 和 $-\mathbf{u}$ ，两个向量的长度都是 $\lambda_1(\Lambda')=\sqrt{5}$ 。在这个近似版本的 $\gamma$-**SVP** 中， $\gamma$ 约等于 **2.61**，只需要找出长度短于 $\sqrt{34}$ 的向量就可以了（在图中以紫色的圆圈标注了其范围）。比如说，$\mathbf{u}'=(2,-4)$ 的长度是 $\sqrt{20}$ ，是这个近似 **SVP** 的解，但不是标准 **SVP** 的解。*
+*<strong>图 2.</strong> 解释 $\gamma$-**SVP** 。假设格 $\Lambda'$ 是由向量 $\mathbf{b}_ 1=(3,8)$ 和 $\mathbf{b}_ 2=(4,6)$ 张成的（顺带说一句，它是在上文的 图 1 中定义的格 $\Lambda$ 的子格。它的两个最短向量是 $\mathbf{u}=(-1,2)$ 和 $-\mathbf{u}$ ，两个向量的长度都是 $\lambda_ 1(\Lambda')=\sqrt{5}$ 。在这个近似版本的 $\gamma$-**SVP** 中， $\gamma$ 约等于 **2.61**，只需要找出长度短于 $\sqrt{34}$ 的向量就可以了（在图中以紫色的圆圈标注了其范围）。比如说，$\mathbf{u}'=(2,-4)$ 的长度是 $\sqrt{20}$ ，是这个近似 **SVP** 的解，但不是标准 **SVP** 的解。*
 
 ### 短整数解
 
@@ -116,7 +116,7 @@ $$
 
 $$
 \begin{equation*}
-    \Lambda_A^{\perp} = \lbrace\mathbf{z} \in \mathbb{Z}^m: \mathbf{Az} = 0 \; (\text{mod} \; q)\rbrace.
+    \Lambda_A^{\perp} = \lbrace\mathbf{z} \in \mathbb{Z}^m: \mathbf{Az} = 0 \ (\text{mod} \ q)\rbrace.
 \end{equation*}
 $$
 *洞见*：求解 $\mathsf{SIS}_{q,n,m,\beta}$ 等价于求解恰当 $\gamma$ 下的 $\gamma$-**SVP** 。这从 $\Lambda_A^{\perp}$ 的定义中就能看出来：这个格中的任何一个向量，都是 $\mathbf{A}\mathbf{x}=0$ 的解；如果我们从想求解这个格的 **SVP**，本质上就是在寻找这个等式的短整数解，这正好就是 **SIS** 的要求。
@@ -183,7 +183,7 @@ $$
 注意，“尝试 #1” 是不安全的，因为我们很容易就可以伪造 **z** ，并且很容易就能从 **r** 中找回 **a** 。因为它们只是这些线性方程所对应的系统的 *随意* 的解。如我们在 **SIS** 假设中看到的，我们要让 **z** 和 **r** 都 “短”，才能修复这个协议的可靠性。所以这次尝试我们就以此为目标。我们将从一些 *短* 分布 $\chi^m$ 中随机采样 **r**（设想在 $\mathbb{Z}_ q$ 上有一些概率分布 $\chi$ ，从中采样出来的一个值的 $\ell^{\infty}$ 范数值会限制在较小的 $\varepsilon \in \mathbb{Z}_ {>0}$ 内）。让 **z**（以及 $\mathbf{r}+\mathbf{Se}$ ）变短会更难一些：虽然现在 **r** 已经是短的了，我们还要保证 **Se** 也是短的。结果是，因为 **S** 已经是小的值，我们需要保证 **e** 既是短的，**e** 的可能取值集合 *又* 足够大。具体来说，我们将从集合 $B_ {\kappa}$ 中采样：
 $$
 \begin{equation*}
-    B_{\kappa} := \lbrace \mathbf{x} \in \mathbb{Z}_q^k: x_i \in \lbrace 0,\pm 1 \rbrace \; \text{且非零的 $x_i$ 的数量是 $\kappa$}\rbrace .
+    B_{\kappa} := \lbrace \mathbf{x} \in \mathbb{Z}_q^k: x_i \in \lbrace 0,\pm 1 \rbrace \ \text{且非零的 $x_i$ 的数量是 $\kappa$}\rbrace .
 \end{equation*}
 $$
 诚实地说，这个集合完全是凭空出现的（就像基于格的密码学中的许多东西一样）。使用这个集合的理由大概是这样的：
@@ -192,7 +192,7 @@ $$
 - 我们希望这个挑战值集合中的元素都足够小；显然这个也符合，因为对于每一个 $\mathbf{e} \in B_{\kappa}$ ，都有 $\Vert\mathbf{e}\Vert_{\infty}=1$ ；
 - 最好，我们希望哈希成 $B_{\kappa}$ 的实现尽可能简单：这个也成立，因为 $B_{\kappa}$ 中的元素可以视为一种三元字符串（ternary string）。
 
-*习题 3.* 证明挑战值集合 $B_{\kappa}$ 的两种属性：（a）$\# B_ {\kappa}=2^{\kappa} \binom{k}{\kappa}$ （即，这个集合非常大）；（b）对于任意的 $\mathbf{S} \in S_ {\eta}^{m \times k}$ ，我们有 $\Vert \mathbf{Se} \Vert _ {2} \leq \eta \kappa \sqrt{m}$ ，其中 $\Vert \cdot \Vert _ 2$ 表示标准的欧几里得范数（即，对于要进入 **z** 的计算的 **Se** 的范数值，我们有很好的边界）。
+*习题 3.* 证明挑战值集合 $B_{\kappa}$ 的两种属性：（a）$B_ {\kappa}=2^{\kappa} \binom{k}{\kappa}$ （即，这个集合非常大）；（b）对于任意的 $\mathbf{S} \in S_ {\eta}^{m \times k}$ ，我们有 $\Vert \mathbf{Se} \Vert _ {2} \leq \eta \kappa \sqrt{m}$ ，其中 $\Vert \cdot \Vert _ 2$ 表示标准的欧几里得范数（即，对于要进入 **z** 的计算的 **Se** 的范数值，我们有很好的边界）。
 
 现在，因为 **e** 和 **r** 都是短的，所以 **z** 也是短的。因此，为了防止敌手发送较大的的 **e** 和 **r**，我们需要检查 $\Vert \mathbf{z} \Vert _ 2$ 足够小（即，小于某个阈值 $\tau$ ；你可以理解为 $\tau:=\max_ {\mathbf{e} \in B_ {\kappa}} \Vert \mathbf{Se} \Vert_ 2 + \mathbb{E}_ {\mathbf{r} \sim \chi^m} \lbrack \Vert\mathbf{r}\Vert_ 2 \rbrack$ ，但这跟我们当前这个层面的讨论无关）。
 
@@ -231,7 +231,7 @@ $$
 
 $$
 \begin{equation*}
-    D_ {\mathbf{v},\sigma,\Lambda}^m(\mathbf{z}) := \rho_ {\mathbf{v},\sigma}^m(\mathbf{z})/\rho_ {\mathbf{v},\sigma}^m(\Lambda) \; \text{其中} \; \rho_ {\mathbf{v},\sigma}^m(\mathbf{z}) := \exp(-\Vert \mathbf{z}-\mathbf{v} \Vert_ 2^2/2\sigma^2).
+    D_ {\mathbf{v},\sigma,\Lambda}^m(\mathbf{z}) := \rho_ {\mathbf{v},\sigma}^m(\mathbf{z})/\rho_ {\mathbf{v},\sigma}^m(\Lambda) \ \text{其中} \ \rho_ {\mathbf{v},\sigma}^m(\mathbf{z}) := \exp(-\Vert \mathbf{z}-\mathbf{v} \Vert_ 2^2/2\sigma^2).
 \end{equation*}
 $$
 
@@ -256,14 +256,14 @@ $$
 **属性（A）**（*从 $D_{\sigma}^m$ 中采样出短向量的概率是压倒性高的* ）。对于任何 $\beta>1$ ，都有：
 $$
 \begin{equation*}
-    \text{Pr} \lbrack \Vert \mathbf{z} \Vert_2 > \beta \sigma \sqrt{m} \; \vert \; \mathbf{z} \gets_ R D_ {\sigma}^m \rbrack < \beta^me^{m(1-\beta^2)/2}.
+    \text{Pr} \lbrack \Vert \mathbf{z} \Vert_2 > \beta \sigma \sqrt{m} \ \vert \ \mathbf{z} \gets_ R D_ {\sigma}^m \rbrack < \beta^me^{m(1-\beta^2)/2}.
 \end{equation*}
 $$
 
 **属性（B）**（*中心高斯分布和非中心高斯分布的比值几乎总是有界的* ）对于任何 $\mathbf{v} \in \mathbb{Z}^m$ ，只要 $\sigma=\alpha \Vert \mathbf{v} \Vert$ ，就有：
 $$
 \begin{equation*}
-    \text{Pr} \lbrack D_ {\sigma}^m(\mathbf{z})/D_ {\mathbf{v},\sigma}^m(\mathbf{z}) < e^{12/\alpha+1/(2\alpha^2)} \; \vert \; \mathbf{z} \gets_ R D_ {\sigma}^m \rbrack > 1 - 2^{-100}.
+    \text{Pr} \lbrack D_ {\sigma}^m(\mathbf{z})/D_ {\mathbf{v},\sigma}^m(\mathbf{z}) < e^{12/\alpha+1/(2\alpha^2)} \ \vert \ \mathbf{z} \gets_ R D_ {\sigma}^m \rbrack > 1 - 2^{-100}.
 \end{equation*}
 $$
 
@@ -341,7 +341,7 @@ $$
 
 坦白说，前述方案是非常低效的。在原版论文提出的参数下，签名的体积是 19.9KB ，而公钥的体积是 128KB 。不过，上面展示的想法在许多方面都可以优化。尤其是：
 
-- 几乎所有签名都不使用 $\mathbb{Z}_q$ ，而是使用环 $\mathcal{R}_q := \mathbb{Z}_q \lbrack X \rbrack/(X^d+1)$ ，其中 $d$ 是 2 的幂。这个环之所以高效的理由就超出本文的范围了。
+- 几乎所有签名都不使用 $\mathbb{Z}_q$ ，而是使用环 $\mathbf{R}_q := \mathbb{Z}_q \lbrack X \rbrack/(X^d+1)$ ，其中 $d$ 是 2 的幂。这个环之所以高效的理由就超出本文的范围了。
 
 - 可以选择不同于离散高斯分布的另一种分布。比如说 [BLISS 签名方案](https://eprint.iacr.org/2013/383.pdf)提出双峰高斯分布，其它方面则几乎原样照搬上述构造。得到的签名体积是 5.6KB ，公钥体积是 7KB 。不幸的是，这套方案被证明在[侧信道攻击](https://eprint.iacr.org/2017/505.pdf)下不安全
 
