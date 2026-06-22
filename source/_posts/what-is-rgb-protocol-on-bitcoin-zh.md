@@ -12,11 +12,13 @@ tags:
 >
 > *来源：<https://rgb.info/what-is-rgb-protocol-on-bitcoin-technical-guide/>*
 >
+> *译者：MariJJhodl*
+>
 > *本文是对 Federico Tenga 2022 年原文的更新版本，包含 RGB v0.11.1 的最新数据与技术细节。原文请参阅：[理解 RGB 协议](https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059)。*
 
 *免责声明：出于教育目的，本文简化了部分概念，同时，为避免术语过于繁杂，某些用词可能与正式技术规范有所出入。*
 
-近年来，对在比特币和闪电网络上发行数字资产的兴趣越来越强，但大多数方案都需要做出与比特币原则不符的妥协：链上数据膨胀、隐私丧失，或要求信任的联合系统。[比特币上的 RGB 协议](https://rgb.info)走了一条不同的路。
+近年来，人们对在比特币和闪电网络上发行数字资产的兴趣日益高涨，但大多数方案都需要做出与比特币原则不符的妥协：链上数据膨胀、丧失隐私，或依赖于需要引入新的信任假设的联盟化系统。比特币上的 RGB 协议走了一条不同的路。
 
 **比特币上的 RGB 协议**是一个开源协议，用于在比特币和闪电网络上原生地发行和转移电子资产，并且无需使用侧链、无需改变比特币基础层。**所有资产数据保持私密且存储于链外**，而比特币仅被用作承诺层，用于提供防篡改的锚定。
 
@@ -26,6 +28,8 @@ tags:
     
 - 资产数据保持私密且存储于链外；仅有一个小型密码学承诺被锚定到比特币
     
+- 自 2025 年 7 月起已进入生产就绪状态（v0.11.1）；Tether 已宣布 USDt 将在 RGB 上发行
+
 - 官方资源：[rgb.info](https://rgb.info) · 技术文档：[docs.rgb.info](https://docs.rgb.info)
     
 
@@ -52,6 +56,7 @@ tags:
 9. 比特币上的 RGB 协议与 Taproot Assets、Liquid 和以太坊相比如何？
     
 10. 如何开始在比特币上的 RGB 协议上构建应用？
+    
     
 
 ---
@@ -80,7 +85,7 @@ tags:
 
 ## 比特币上的 RGB 协议是如何工作的？客户端验证
 
-比特币上的 RGB 协议通过 “[客户端验证](https://docs.rgb.info/distributed-computing-concepts/client-side-validation)” 运作：转移双方私下地验证资产数据，而比特币区块链仅接收一个小型密码学承诺。
+比特币上的 RGB 协议通过 "[客户端验证](https://docs.rgb.info/distributed-computing-concepts/client-side-validation)" 运作：转移双方私下地验证资产数据，而比特币区块链仅接收一个小型密码学承诺。
 
 其核心理念是让比特币区块链做它最擅长的事，也就是提供基于工作量证明的终局性和抗审查的结算。**资产所有权记录、合约规则和转移历史均可在链外由直接有关的各方处理**。区块链只需知道某件事已经发生，无需知道具体发生了什么。
 
@@ -102,42 +107,42 @@ RGB 协议的设计同时解决了上述三个问题：
 
 ## RGB 如何防止双花？一次性密封条
 
-比特币上的 RGB 协议通过 “[一次性密封条](https://docs.rgb.info/distributed-computing-concepts/single-use-seals)” 防止双花：每一项 RGB 资产都绑定到一个比特币 UTXO，授权该资产的转移需要花费该 UTXO，这就使得**不可能重复花费 RGB 资产**，除非能够重复花费它所绑定的比特币 UTXO 。
+比特币上的 RGB 协议通过 "[一次性密封条](https://docs.rgb.info/distributed-computing-concepts/single-use-seals)" 防止双花：每一项 RGB 资产都绑定到一个比特币 UTXO，授权该资产的转移需要花费该 UTXO，这就使得**不可能重复花费 RGB 资产**，除非能够重复花费它所绑定的比特币 UTXO 。
 
 一次性密封条是 [Peter Todd 提出](https://petertodd.org/2017/scalable-single-use-seal-asset-transfer)的一种密码学原语。其正式定义为：
 
-> “承诺（promise）将在未来提交（commit）一条尚不确定的消息并且只提交一次，使得 “提交” 这件事对特定受众的所有成员都确定无疑。”
+"一种承诺在未来某个时刻提交一条尚未知晓的消息的承诺，且只能提交一次，以使承诺的事实对特定受众的所有成员显而易见。"
 
-一次性密封条在 RGB 中的实现意味着，**每项 RGB 资产都绑定到一个特定的比特币 UTXO**（[未花费的交易输出](https://docs.rgb.info/annexes/glossary)）。要转移这项资产，发送方必须在比特币交易中花费该 UTXO。花费 UTXO 即 “关闭” 密封条，并授权一次[状态转换](https://docs.rgb.info/rgb-state-and-operations/state-transitions)。
+在 RGB 中的实现意味着，每个 RGB 资产都绑定到一个特定的比特币 [UTXO](https://docs.rgb.info/annexes/glossary)（未花费的交易输出）。要转移资产，发送方必须在比特币交易中花费该 UTXO。花费 UTXO 即"关闭"密封条，并授权一次[状态转换](https://docs.rgb.info/rgb-state-and-operations/state-transitions)。
 
-比特币自身的工作量证明确保了**一个 UTXO 只能被花费一次**。因此，尽管比特币对绑定在其上的 RGB 资产一无所知，但它仍然保证了密封条只能被关闭一次。为了双花 RGB 资产，你需要双花它背后的比特币 UTXO —— 而整个比特币网络会立即拒绝这样的尝试。
+比特币自身的工作量证明确保了一个 UTXO 只能被花费一次。因此，尽管比特币对绑定在其上的 RGB 资产一无所知，但它仍然保证了密封条只能被关闭一次。为了双花 RGB 资产，你需要双花底层比特币 UTXO——而整个比特币网络会立即拒绝这样的尝试。
 
-比特币区块链充当**每次 RGB 状态转换的不可篡改的锚点**，却完全不存储任何 RGB 数据。
+比特币区块链充当每次 RGB 状态转换的不可篡改锚点，却完全不存储任何 RGB 数据。
 
 ---
 
 ## RGB 转移的完整步骤是什么？
 
-一次 RGB 资产转移由五个步骤组成：发送方准备一个包含完整资产历史的寄售包（consignment），通过链外渠道发送给接收方，接收方在本地进行验证；发送方随后广播一笔携带小型密码学承诺的比特币交易。
+一次 RGB 转移由五个步骤组成：发送方准备一个包含完整资产历史的寄售包，通过链外渠道发送给接收方，接收方在本地进行验证；发送方随后广播一笔携带小型密码学承诺的比特币交易。
 
-1. **寄售包**。发送方准备一个[转让寄售包](https://docs.rgb.info/annexes/contract-transfers)，即一个数据包，包含该资产从最初的发行到当前转移的完整状态转换历史，以及一笔未签名的见证交易。接收方独立验证所有权所需的一切信息都包含其中，无需信任任何第三方。
+1. 寄售包。 发送方准备一个[转让寄售包](https://docs.rgb.info/annexes/contract-transfers)，即一个数据包，包含该资产从最初的发行到当前转移的完整状态转换历史，以及一笔未签名的见证交易。接收方独立验证所有权所需的一切信息都包含其中，无需信任任何第三方。
 
-2. **链外传输**。 寄售包通过链外渠道发送，通常经由一个 RGB 代理服务器，但该协议同样支持电子邮件、即时通讯应用、二维码或 Nostr 中继。这样，资产数据永远不会接触比特币区块链。
+2. 链外传输。 寄售包通过链外渠道发送，通常经由 RGB 代理服务器，但该协议同样支持电子邮件、即时通讯应用、二维码或 Nostr 中继。这样，资产数据永远不会接触比特币区块链。
 
-3. **接收方验证**。 接收方在本地验证寄售包。他们检查完整的状态转换系列，验证每一次转换都锚定在真实的比特币交易上，并确认密封条被正确关闭。
+3. 接收方验证。 接收方在本地验证寄售包。他们检查完整的状态转换系列，验证每一次转换都锚定在真实的比特币交易上，并确认密封条被正确关闭。
 
-4. **比特币承诺**。 关闭密封条的比特币交易包含一个[确定性比特币承诺（DBC）](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc)，用以下两种方式之一编码：
+4. 比特币承诺。 关闭密封条的比特币交易包含一个[确定性比特币承诺（DBC）](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc)，用以下两种方式之一编码：
 
-- [**Opret**](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc/opret)：一个 34 字节的承诺（OP_RETURN + OP_PUSHBYTE_32 + 32 字节 MPC 哈希），放置在交易的第一个 OP_RETURN 输出中；
+- [Opret](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc/opret)：一个 34 字节的承诺（OP_RETURN + OP_PUSHBYTE_32 + 32 字节 MPC 哈希），放置在交易第一个 OP_RETURN 输出中；
     
-- [**Tapret**](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc/tapret)：一个 64 字节的承诺，嵌入 Taproot 交易的脚本路径花费中。
+- [Tapret](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc/tapret)：一个 64 字节的承诺，嵌入 Taproot 交易的脚本路径花费中。
     
 
 在这两种情况下，区块链上均不包含任何资产数据。
 
-5. **状态转换捆绑包**。同一合约的多个状态转换可以归入一个[状态转换捆绑包](https://docs.rgb.info/rgb-state-and-operations/state-transitions)，放在一笔比特币交易中，这就允许多笔转移共享同一个链上承诺。这一特性是推动可扩展性的关键一步。
+5. 状态转换捆绑包。 在一样笔比特币交易中同一合约的多个状态转换被归入一个[状态转换捆绑包](https://docs.rgb.info/rgb-state-and-operations/state-transitions)，允许多笔转移共享同一个链上承诺。这一特性真可以推动扩展性。
 
-接收资产的 UTXO 在链上与其他任何比特币 UTXO 无法区分。见证交易仅包含一个体积很小的密码学哈希值，而不含任何资产数据，也不含收款地址。链上观察者无法得知哪个 UTXO 当前持有该资产。这一特性对收款方隐私具有直接影响，我们将在下一段中细说。
+接收资产的 UTXO 在链上与其他任何比特币 UTXO 无法区分。见证交易仅包含一个小型 密码学哈希值, 而不含任何资产数据，也不含收款地址。链上观察者无法得知哪个 UTXO 当前持有该资产。这一特性对收款方隐私具有直接影响，我们将在下一段中进行探讨。
 
 ![RGB 资产传送示意图](../images/what-is-rgb-protocol-on-bitcoin-zh/img4-teleport-circles-zh.png)
 
@@ -145,27 +150,27 @@ RGB 协议的设计同时解决了上述三个问题：
 
 ## 比特币上的 RGB 协议如何保护接收方隐私？
 
-比特币上的 RGB 协议通过 “[盲化密封条](https://docs.rgb.info/rgb-state-and-operations/state-transitions)” 保护接收方隐私：接收方提供其 UTXO 的密码学承诺，而非 UTXO 本身，因此发送方永远无法得知哪个输出持有已转移的资产。
+比特币上的 RGB 协议通过盲化[密封条](https://docs.rgb.info/rgb-state-and-operations/state-transitions)保护接收方隐私：接收方提供其 UTXO 的密码学承诺，而非 UTXO 本身，因此发送方永远无法得知哪个输出持有已转移的资产。
 
-当 Bob 想要接收一个 RGB 资产时，他不会向 Alice 发送自己的确切 UTXO。相反，他提供一个盲化密封条，即**对其 UTXO 的密码学承诺**，该承诺向 Alice 隐藏了实际的输出。Alice 将这个盲化密封条嵌入她构建的状态转换中。
+当 Bob 想要接收一个 RGB 资产时，他不会向 Alice 发送自己的确切 UTXO。相反，他提供一个盲化密封条，即对其 UTXO 的密码学承诺，该承诺向 Alice 隐藏了实际的输出。Alice 将这个盲化密封条嵌入她构建的状态转换中。
 
-其结果是，RGB 代币可以在 UTXO 之间 “传送”，而不在比特币交易图中**留下任何可见的痕迹**。Alice 无法确定她刚刚发送的资产由哪个 UTXO 持有。即使她监控区块链，也无法将 RGB 承诺与 Bob 的具体代币关联起来。
+其结果是，RGB 代币可以在 UTXO 之间"传送"，而不在比特币交易图中留下任何可见的痕迹。Alice 无法确定她刚刚发送的资产由哪个 UTXO 持有。即使她监控区块链，也无法将 RGB 承诺与 Bob 的具体代币关联起来。
 
-当 Bob 随后将资产转移给 Carol 时，他必须向 Carol 展示自己的密封条，因为她需要验证有关的转让历史。因此，最近一次转移的隐私性是最强的，越是历史久远的转移隐私性就越差。这是一个经过深思熟虑的折中：在**转移时点提供隐私**，同时为接收方保留**可验证的审计证据**。
+当 Bob 随后将资产转移给 Carol 时，他必须向 Carol 展示自己的密封条，因为她需要验证有关的转让历史。因此，隐私在最近一次转移时最强。在转让历史很长的时候, 早期转移的隐私性逐渐降低。这是一个经过深思熟虑的折中：在转移时点提供隐私，同时为接收方保留可验证的审计证据。
 
 ---
 
 ## RGB 资产如何在闪电网络上工作？
 
-RGB 资产[天然可以在闪电网络上流转](https://docs.rgb.info/rgb-over-lightning-network/lightning-network-compatibility)：资产可以与聪一起存放在支付通道中、一样地即时转移，从而继承**闪电通道的全部安全保证**，包括即时结算和每次转移无需链上确认。
+RGB 资产在[闪电网络](https://docs.rgb.info/rgb-over-lightning-network/lightning-network-compatibility)上原生运作：资产可以与聪一起存放在支付通道中，并即时转移，同时继承闪电网络的全部安全保证，包括即时结算和每次转移无需链上确认。
 
-开启一个 RGB 通道首先需要一笔标准的比特币注资交易，创建 2-of-2 多签 UTXO，与任何闪电通道的操作方式相同。**RGB 资产随后通过 RGB 状态转换分配到该 UTXO**。通道中的聪数量不必与被转移的资产价值价值相当，但也不应该可以忽略不计。聪的数量应足以使惩罚机制在经济上有意义，并保持 HTLC 输出高于比特币的粉尘限额。
+开启一个 RGB 通道首先需要一笔标准的比特币注资交易，创建 2-of-2 多签 UTXO，与任何闪电通道的操作方式相同。RGB 资产随后通过 RGB 状态转换分配到该 UTXO。通道中的聪数量不必与被转移的资产价值相比过大，但也不能可以忽略不计。聪的数量应足以使惩罚机制在经济上有意义，并保持 HTLC 输出高于比特币的粉尘限额。
 
-随着通道更新，**新的承诺交易被创建**，其中包含反映改变后资产余额的 RGB 状态转换。RGB 输入始终是资产在链上分配的原始注资多签，直到通道关闭。
+随着通道更新，新的承诺交易被创建，其中包含反映修订后资产余额的 RGB 状态转换。RGB 输入始终是资产在链上分配的原始注资多签，直到通道关闭。
 
-**为什么每笔 RGB 闪电支付都要移动聪**：
+为什么每笔 RGB 闪电支付也会移动聪：
 
-这一要求根植于闪电网络安全模型的两个具体功能：
+这一要求源于闪电网络安全模型中的两个具体功能：
 
 - 惩罚机制。 如果一方广播旧的通道状态，对方可以使用撤销密钥花费该输出，取走聪和 RGB 资产。通道中的聪余额确保作弊行为带来真实的经济损失，而不仅仅是损失 RGB 代币。  
       
