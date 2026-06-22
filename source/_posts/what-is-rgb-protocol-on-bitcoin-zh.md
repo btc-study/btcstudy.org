@@ -169,10 +169,10 @@ RGB 资产[天然可以在闪电网络上流转](https://docs.rgb.info/rgb-over-
 
 这一要求根植于闪电网络安全模型的两个具体功能：
 
-- 惩罚机制。 如果一方广播旧的通道状态，对方可以使用撤销密钥花费该输出，取走聪和 RGB 资产。通道中的聪余额确保作弊行为带来真实的经济损失，而不仅仅是损失 RGB 代币。  
+- **惩罚机制**。 如果一方广播旧的通道状态，对方可以使用撤销密钥花费该输出，取走聪和 RGB 资产。通道中的聪余额确保作弊行为带来真实的经济损失，而不仅仅是损失 RGB 代币。  
       
     
-- HTLC 要求。 每笔路由支付都需要包含高于比特币粉尘限额的聪的 HTLC 输出。双重转移（聪 + RGB 资产）确保了无论 HTLC 通过原像还是时间锁解决，比特币和 RGB 分配都可以被主张。
+- **HTLC 要求**。 每笔路由支付都需要价值高于比特币粉尘限额的 HTLC 输出。结对转移（聪 + RGB 资产）确保了无论 HTLC 通过原像还是时间锁解决，比特币和 RGB 分配都可以被主张。
 
 ![RGB 闪电网络通道示意图](../images/what-is-rgb-protocol-on-bitcoin-zh/img5-lightning.png)
 
@@ -180,32 +180,32 @@ RGB 资产[天然可以在闪电网络上流转](https://docs.rgb.info/rgb-over-
 
 ## 比特币上的 RGB 协议是否支持智能合约？
 
-支持。比特币上的 RGB 协议通过 [AluVM](https://docs.rgb.info/annexes/glossary)（Algorithmic Logic Unit Virtual Machine）支持可编程合约，这是一种基于寄存器的虚拟机，在参与方的机器上私下执行合约逻辑，而非在全局网络上公开执行。
+支持。比特币上的 RGB 协议通过 "[AluVM](https://docs.rgb.info/annexes/glossary)（Algorithmic Logic Unit Virtual Machine）" **支持可编程的合约**，这是一种基于寄存器的虚拟机，在参与方的机器上私下执行合约逻辑，而非在全局网络上公开执行。
 
-与以太坊的 EVM（每个节点公开执行每个合约）不同，AluVM 在链外运行验证。只有结果（状态转换是否有效）被承诺到比特币。计算过程及其输入完全保持私密。
+与以太坊的 EVM（每个节点公开执行每个合约）不同，**AluVM 在链外运行验证**。只有结果（状态转换是否有效）被承诺到比特币。计算过程及其输入完全保持私密。
 
-AluVM 脚本嵌入在[模式（schema）](https://docs.rgb.info/rgb-contract-implementation/schema)中，并在客户端验证期间执行。模式采用纯声明式方法：它们定义合约的规则和业务逻辑，而这些逻辑不会成为全局状态的一部分，也不会对任何第三方可见。
+AluVM 脚本嵌入在 "[模式（schema）](https://docs.rgb.info/rgb-contract-implementation/schema)" 中，并在客户端验证期间执行。模式采用纯声明式方法：它们定义合约的规则和业务逻辑，而这些逻辑不会成为全局状态的一部分，也不会对任何第三方可见。
 
-因此，RGB 合约可以表达复杂的条件，如转移限制、许可发行和多方授权，而这些逻辑无需公开或由网络执行。
+因此，RGB 合约可以表达复杂的条件，如转账约束、许可发行和多方授权，而这些逻辑**无需公开或由网络执行**。
 
-一种边缘情况： 如果一次状态转换未能通过客户端验证，但对应的比特币交易已经广播，则 UTXO 密封条被关闭而没有分配有效的状态转换。该资产实际上被销毁。使用 [rgb-lib](https://github.com/RGB-Tools/rgb-lib) 的设计良好的钱包会在广播前通过谨慎的交易构建来处理这一问题。
+一种临界情形是：如果一次状态转换未能通过客户端验证，但对应的比特币交易已经广播，则 UTXO 密封条被关闭而没有分配有效的状态转换。那么该资产会被销毁。使用 [rgb-lib](https://github.com/RGB-Tools/rgb-lib) 的设计良好的钱包会在广播前通过谨慎的交易构建来处理这一问题。
 
 ---
 
 ## 在比特币上的 RGB 协议中可以发行什么？
 
-比特币上的 RGB 协议 v0.11.1 支持五种资产类型，称为[模式](https://docs.rgb.info/rgb-contract-implementation/schema)：NIA（Fixed-Supply Fungible）、IFA（Inflatable Fungible Asset）、UDA（Unique Digital Asset）、CFA（Collectible Fungible Asset）和 PFA（Permissioned Fungible Asset）。
+比特币上的 RGB 协议 v0.11.1 **支持五种资产类型**，称为[模式](https://docs.rgb.info/rgb-contract-implementation/schema)：NIA（固定供给量的同质资产）、IFA（可以增发的同质资产）、UDA（非同质资产）、CFA（可收藏的同质资产）和 PFA（需要许可的同质资产）。
 
-模式是声明式模板，编码了合约的完整规则：存在哪些状态、最初的发行结构如何、可能发生哪些转换，以及应用什么 AluVM 验证逻辑。它们编译成 .rgb（二进制）或 .rgba（防护二进制）文件，供钱包集成使用。
+模式是**声明式模板**，编码了**一个合约的完整规则**：存在哪些状态、最初的发行结构如何、可以发生哪些转换，以及应用什么 AluVM 验证逻辑。它们编译成 .rgb（二进制）或 .rgba（防护二进制）文件，供钱包集成使用。
 
-v0.11.1 中的五种[官方支持模式](https://docs.rgb.info/rgb-contract-implementation/schema/supported-schemas)如下：
+v0.11.1 中的五种[正式获得支持的模式](https://docs.rgb.info/rgb-contract-implementation/schema/supported-schemas)如下：
 
-1. **NIA — 非可增发资产（Non-Inflatable Asset）**  
-   供应量硬上限的同质化代币。最初的发行后不能再铸造额外单位。这是将比特币货币模型应用于任何资产的方案。  
+1. **NIA — 不可增发的同质资产（Non-Inflatable Asset）**  
+   带有供应量硬上限的同质化代币。初次发行后就不能再铸造额外单位。这是在资产上应用比特币货币模型的方案。  
    用途：等效于比特币的代币、固定供应量积分、具有固定赎回池的代币化大宗商品、游戏内货币。
 
 2. **IFA — 可增发同质化资产（Inflatable Fungible Asset）**  
-   具有已定义供应上限的同质化代币。支持增发（Inflate，铸造新单位）、销毁（Burn，可证明地减少供应）和链接（Link，一次性操作以连接到后继合约）。  
+   具有定义好的供应量上限的同质化代币。支持增发（Inflate，铸造新单位）、销毁（Burn，可证明地减少供应）和链接（Link，一次性操作以连接到后继合约）。  
    用途：稳定币、按计划排放的奖励代币、凭证计划。
 
 3. **UDA — 唯一数字资产（Unique Digital Asset）**  
@@ -232,7 +232,7 @@ v0.11.1 中的五种[官方支持模式](https://docs.rgb.info/rgb-contract-impl
 |Liquid Network|比特币侧链|机密交易|中|联合多签|生产环境，存在信任假设|
 |以太坊 ERC-20|以太坊|无 - 完全公开|受区块大小限制|独立安全模型|成熟，DeFi 高度采用|
 
-RGB++ 跟比特币上的 RGB 协议不一样。 RGB++ 是由 Nervos/CKB 团队开发的独立协议，运行在 CKB 区块链上。它是一个由不同团队处理的项目，采用不同的架构，与比特币上的 RGB 协议没有任何关联。
+**RGB++ 跟比特币上的 RGB 协议不一样**。 "RGB++" 是由 Nervos/CKB 团队开发的独立协议，运行在 CKB 区块链上。它是一个由不同团队处理的项目，采用不同的架构，与比特币上的 RGB 协议没有任何关联。
 
 ---
 
