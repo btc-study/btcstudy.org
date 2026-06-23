@@ -192,7 +192,7 @@ $$
 - 我们希望这个挑战值集合中的元素都足够小；显然这个也符合，因为对于每一个 $\mathbf{e} \in B_{\kappa}$ ，都有 $\Vert\mathbf{e}\Vert_{\infty}=1$ ；
 - 最好，我们希望哈希成 $B_{\kappa}$ 的实现尽可能简单：这个也成立，因为 $B_{\kappa}$ 中的元素可以视为一种三元字符串（ternary string）。
 
-*习题 3.* 证明挑战值集合 $B_{\kappa}$ 的两种属性：（a）$B_ {\kappa}=2^{\kappa} \binom{k}{\kappa}$ （即，这个集合非常大）；（b）对于任意的 $\mathbf{S} \in S_ {\eta}^{m \times k}$ ，我们有 $\Vert \mathbf{Se} \Vert _ {2} \leq \eta \kappa \sqrt{m}$ ，其中 $\Vert \cdot \Vert _ 2$ 表示标准的欧几里得范数（即，对于要进入 **z** 的计算的 **Se** 的范数值，我们有很好的边界）。
+*习题 3.* 证明挑战值集合 $B_{\kappa}$ 的两种属性：（a）\# $B_ {\kappa}=2^{\kappa} \binom{k}{\kappa}$ （即，这个集合非常大）；（b）对于任意的 $\mathbf{S} \in S_ {\eta}^{m \times k}$ ，我们有 $\Vert \mathbf{Se} \Vert _ {2} \leq \eta \kappa \sqrt{m}$ ，其中 $\Vert \cdot \Vert _ 2$ 表示标准的欧几里得范数（即，对于要进入 **z** 的计算的 **Se** 的范数值，我们有很好的边界）。
 
 现在，因为 **e** 和 **r** 都是短的，所以 **z** 也是短的。因此，为了防止敌手发送较大的的 **e** 和 **r**，我们需要检查 $\Vert \mathbf{z} \Vert _ 2$ 足够小（即，小于某个阈值 $\tau$ ；你可以理解为 $\tau:=\max_ {\mathbf{e} \in B_ {\kappa}} \Vert \mathbf{Se} \Vert_ 2 + \mathbb{E}_ {\mathbf{r} \sim \chi^m} \lbrack \Vert\mathbf{r}\Vert_ 2 \rbrack$ ，但这跟我们当前这个层面的讨论无关）。
 
