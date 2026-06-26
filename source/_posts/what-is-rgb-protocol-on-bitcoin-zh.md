@@ -1,7 +1,7 @@
 ---
 title: '比特币上的 RGB 协议是什么？完整技术指南'
 author: 'Federico Tenga'
-date: '2026/06/16 12:00:00'
+date: '2026/06/26 12:00:00'
 cover: '../images/what-is-rgb-protocol-on-bitcoin-zh/cover.png'
 excerpt: 'RGB 协议是一个开源协议，可在比特币和闪电网络上原生发行和转让数字资产，无需侧链，无需跨链桥。'
 tags:
@@ -25,34 +25,34 @@ tags:
 **简而言之**：
 
 - RGB 在比特币和闪电网络上原生发行并转让数字资产
-    
-- 资产数据保持私密且存储于链外；仅有一个小型密码学承诺被锚定到比特币
-    
+  
+- 资产数据保持私密且存储于链外；仅有一个小型密码学承诺被锚定到比特币区块链
+  
 - 官方资源：[rgb.info](https://rgb.info) · 技术文档：[docs.rgb.info](https://docs.rgb.info)
-    
+  
 
 ---
 
 目录
 
 1. 为什么在比特币上发行资产需要一个单独的协议？
-    
+   
 2. 比特币上的 RGB 协议是如何工作的？客户端验证
-    
+   
 3. RGB 如何防止双花？一次性密封条
-    
+   
 4. RGB 转移的完整步骤是什么样的？
-    
+   
 5. 比特币上的 RGB 协议如何保护接收方隐私？
-    
+   
 6. RGB 资产如何在闪电网络上工作？
-    
+   
 7. 比特币上的 RGB 协议是否支持智能合约？
-    
+   
 8. 在比特币上的 RGB 协议中可以发行什么？
-    
+   
 9. 比特币上的 RGB 协议与 Taproot Assets、Liquid 和以太坊相比如何？
-    
+   
 10. 如何开始在比特币上的 RGB 协议上构建应用？
     
 
@@ -93,10 +93,10 @@ tags:
 RGB 协议的设计同时解决了上述三个问题：
 
 - **链上没有资产数据** → 不造成区块链负担
-    
+  
 - **转移对外部观察者不可见** → 默认具有隐私性
-    
-- **验证在本地运行，并且可以并行化**→ 可扩展至任意规模
+  
+- **验证在本地运行，并且可以并行化** → 可扩展至任意规模
 
 ![链上与链下数据分离示意图](../images/what-is-rgb-protocol-on-bitcoin-zh/img3-on-chain-off-chain-zh.png)
 
@@ -131,11 +131,11 @@ RGB 协议的设计同时解决了上述三个问题：
 4. **比特币承诺**。 关闭密封条的比特币交易包含一个[确定性比特币承诺（DBC）](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc)，用以下两种方式之一编码：
 
 - [**Opret**](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc/opret)：一个 34 字节的承诺（OP_RETURN + OP_PUSHBYTE_32 + 32 字节 MPC 哈希），放置在交易的第一个 OP_RETURN 输出中；
-    
+  
 - [**Tapret**](https://docs.rgb.info/commitment-layer/deterministic-bitcoin-commitments-dbc/tapret)：一个 64 字节的承诺，嵌入 Taproot 交易的脚本路径花费中。
-    
+  
 
-在这两种情况下，区块链上均不包含任何资产数据。
+	在这两种情况下，区块链上均不包含任何资产数据。
 
 5. **状态转换捆绑包**。同一合约的多个状态转换可以归入一个[状态转换捆绑包](https://docs.rgb.info/rgb-state-and-operations/state-transitions)，放在一笔比特币交易中，这就允许多笔转移共享同一个链上承诺。这一特性是推动可扩展性的关键一步。
 
@@ -171,7 +171,7 @@ RGB 资产[天然可以在闪电网络上流转](https://docs.rgb.info/rgb-over-
 
 - **惩罚机制**。 如果一方广播旧的通道状态，对方可以使用撤销密钥花费该输出，取走聪和 RGB 资产。通道中的聪余额确保作弊行为带来真实的经济损失，而不仅仅是损失 RGB 代币。  
       
-    
+  
 - **HTLC 要求**。 每笔路由支付都需要价值高于比特币粉尘限额的 HTLC 输出。结对转移（聪 + RGB 资产）确保了无论 HTLC 通过原像还是时间锁解决，比特币和 RGB 分配都可以被主张。
 
 ![RGB 闪电网络通道示意图](../images/what-is-rgb-protocol-on-bitcoin-zh/img5-lightning.png)
@@ -200,33 +200,42 @@ AluVM 脚本嵌入在 "[模式（schema）](https://docs.rgb.info/rgb-contract-i
 
 v0.11.1 中的五种[正式获得支持的模式](https://docs.rgb.info/rgb-contract-implementation/schema/supported-schemas)如下：
 
-1. **NIA — 不可增发的同质资产（Non-Inflatable Asset）**  
-   带有供应量硬上限的同质化代币。初次发行后就不能再铸造额外单位。这是在资产上应用比特币货币模型的方案。  
-   用途：等效于比特币的代币、固定供应量积分、具有固定赎回池的代币化大宗商品、游戏内货币。
+1. **NIA — 不可增发的同质资产（Non-Inflatable Asset）**
+
+  带有供应量硬上限的同质化代币。初次发行后就不能再铸造额外单位。这是在资产上应用比特币货币模型的方案。
+
+  用途：等效于比特币的代币、固定供应量积分、具有固定赎回池的代币化大宗商品、游戏内货币。
 
 2. **IFA — 可增发同质化资产（Inflatable Fungible Asset）**  
-   具有定义好的供应量上限的同质化代币。支持增发（Inflate，铸造新单位）、销毁（Burn，可证明地减少供应）和链接（Link，一次性操作以连接到后继合约）。  
+
+   具有定义好的供应量上限的同质化代币。支持增发（Inflate，铸造新单位）、销毁（Burn，可证明地减少供应）和链接（Link，一次性操作以连接到后继合约）。
+
    用途：稳定币、按计划排放的奖励代币、凭证计划。
 
-3. **UDA — 唯一数字资产（Unique Digital Asset）**  
-   非同质化资产。每个 UDA 可携带内嵌媒体（最多 64 KiB 二进制数据块）或通过哈希摘要引用的附加文件。转移限于单一目的地。  
+3. **UDA — 唯一数字资产（Unique Digital Asset）**
+
+   非同质化资产。每个 UDA 可携带内嵌媒体（最多 64 KiB 二进制数据块）或通过哈希摘要引用的附加文件。转移限于单一目的地。
+
    用途：数字证书、活动门票、收藏品、可验证凭证。
 
-4. **CFA — 收藏品同质化资产（Collectible Fungible Asset）**  
-   在 NIA 基础上为每次发行增加了一个文章标签，用于识别收藏品系列中的每个批次。  
+4. **CFA — 收藏品同质化资产（Collectible Fungible Asset）**
+
+   在 NIA 基础上为每次发行增加了一个文章标签，用于识别收藏品系列中的每个批次。
+
    用途：限量版艺术品系列、编号版画、体育卡牌收藏、按年份或版次标识的年份批次。
 
-5. **PFA — 许可同质化资产（Permissioned Fungible Asset）**  
-   一种同质化、不可增发的代币，每次转移都必须在交易元数据中包含发行方的明确密码学签名。  
+5. **PFA — 许可同质化资产（Permissioned Fungible Asset）**
+
+   一种同质化、不可增发的代币，每次转移都必须在交易元数据中包含发行方的明确密码学签名。
+
    用途：代币化股权、需要发行方批准的合规稳定币、受合规限制的代币、代币化房地产份额。
 
-## 比特币上的 RGB 协议与 Taproot Assets、Liquid 和以太坊相比如何？ {#comparison}
+## 比特币上的 RGB 协议与 Taproot Assets、Liquid 和以太坊相比如何？
 
 比特币上的 RGB 协议比 Taproot Assets、Liquid 和以太坊 ERC-20 提供更高的隐私性和可扩展性，因为它是唯一通过客户端验证将所有资产数据保持在链外的方案。
 
-|   |   |   |   |   |   |
-|---|---|---|---|---|---|
 |协议|运行平台|隐私性|可扩展性|去中心化|状态|
+|---|---|---|---|---|---|
 |比特币上的 RGB 协议 v0.11.1|比特币 + 闪电网络|高 - 链外，客户端验证|高 - 无区块链膨胀|完整比特币安全性|2025 年 7 月起主网运行|
 |Taproot Assets（Lightning Labs）|比特币 + 闪电网络|部分|中|完整比特币安全性|主网，单一公司|
 |Liquid Network|比特币侧链|机密交易|中|联合多签|生产环境，存在信任假设|
@@ -236,24 +245,22 @@ v0.11.1 中的五种[正式获得支持的模式](https://docs.rgb.info/rgb-cont
 
 ---
 
-## 如何开始在比特币上的 RGB 协议上构建应用？ {#start}
+## 如何开始在比特币上的 RGB 协议上构建应用？
 
-- 概念： [docs.rgb.info](https://docs.rgb.info) ——从[客户端验证](https://docs.rgb.info/distributed-computing-concepts/client-side-validation)和[一次性密封条](https://docs.rgb.info/distributed-computing-concepts/single-use-seals)开始
-    
-- 构建钱包： [github.com/RGB-Tools/rgb-lib](https://github.com/RGB-Tools/rgb-lib) ——Rust 和 Python 绑定
-    
+- 概念： [docs.rgb.info](https://docs.rgb.info) —— 从[客户端验证](https://docs.rgb.info/distributed-computing-concepts/client-side-validation)和[一次性密封条](https://docs.rgb.info/distributed-computing-concepts/single-use-seals)开始
+  
+- 构建钱包： [github.com/RGB-Tools/rgb-lib](https://github.com/RGB-Tools/rgb-lib) —— Rust 和 Python 绑定
+  
 - 运行带 RGB 的闪电节点： [github.com/RGB-Tools/rgb-lightning-node](https://github.com/RGB-Tools/rgb-lightning-node)
-    
-- 在测试网尝试 CLI： [github.com/rgb-protocol/rgb-sandbox](https://github.com/rgb-protocol/rgb-sandbox) ——引导式沙盒环境
-    
+  
+- 在测试网尝试 CLI： [github.com/rgb-protocol/rgb-sandbox](https://github.com/rgb-protocol/rgb-sandbox) —— 引导式沙盒环境
+  
 - 核心协议： [github.com/rgb-protocol](https://github.com/rgb-protocol)
-    
+  
 - 词汇表： [docs.rgb.info/annexes/glossary](https://docs.rgb.info/annexes/glossary)
-    
+  
 
 ---
-
-  
 
 最后更新：2026 年 5 月
 
