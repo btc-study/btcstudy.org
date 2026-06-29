@@ -5,7 +5,7 @@ date: '2026/04/21 16:13:29'
 cover: ''
 excerpt: 'Payjoin 的隐私保护效果，只有在参与者的钱包的指纹都同质化的前提下，才能保存'
 tags:
-- Payjoin
+- PayJoin
 ---
 
 
