@@ -110,3 +110,5 @@ if __name__ == '__main__':
 关于迄今为止发现和公开的问题的完整清单，请看这个项目的 [readme](https://github.com/dergoegge/fuzzamoto#trophies) 的炫耀部分。
 
 本系列的下一篇将介绍围绕非确定性的考虑。
+
+> *[续篇见此处](https://www.btcstudy.org/2026/05/13/fuzzamoto-non-determinism/)*

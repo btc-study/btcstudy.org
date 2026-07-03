@@ -10,10 +10,10 @@ tags:
 
 
 > *作者：NIKLAS GÖGGE*
-> 
+>
 > *来源：<https://brink.dev/blog/2026/04/09/fuzzamoto-non-determinism/>*
-
-
+>
+> *[前篇见此处](https://www.btcstudy.org/2026/02/09/fuzzamoto-introduction-by-niklas-gogge/)*
 
 *本文是关于 [Fuzzamoto](https://github.com/dergoegge/fuzzamoto) 的系列文章的第二篇。Fuzzamoto 是比特币全节点实现的一种模糊测试工具。在本系列[第一篇](https://brink.dev/blog/2026/01/07/fuzzamoto-introduction/)中，我们介绍了 Fuzzamoto 背后的初衷，并概要介绍了其设计和架构（[中文译本](https://www.btcstudy.org/2026/02/09/fuzzamoto-introduction-by-niklas-gogge/)）。在本文中，我们讲深入了解高效模糊测试所面临的最困难的挑战之一：实现确定性的测试执行。*
 
