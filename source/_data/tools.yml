@@ -14,9 +14,9 @@
   path: "https://jlopp.github.io/bitcoin-core-config-generator/"
   description: "configuration generator"
   external: true
-- title: "BDK Miniscript 游乐园"
-  path: "https://bitcoindevkit.org/bdk-cli/playground/playground.html"
-  description: "BDK Miniscript playground"
+- title: "ScriptWise Miniscript 游乐园"
+  path: "https://miniscript.1satpod.org/"
+  description: "ScriptWise Miniscript playground"
   external: true
 - title: "比特币网络分叉观察器"
   path: "https://fork.observer/"
