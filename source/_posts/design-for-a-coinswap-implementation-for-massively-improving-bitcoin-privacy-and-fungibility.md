@@ -1,5 +1,5 @@
 ---
-title: '为提升比特币的隐私性和同质性而设计一种 CoinSwap实现'
+title: '为提升比特币的隐私性和同质性而设计一种 CoinSwap 实现'
 author: 'Chris Belcher'
 date: '2026/07/29 18:40:01'
 cover: ''
