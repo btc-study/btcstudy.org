@@ -1,0 +1,1 @@
+.clip{position:fixed;top:65px;left:-7.5px;width:100vw;height:100vh;z-index:-1}.clip.anim{z-index:101;animation:open .5s ease-in}@keyframes open{0%{clip-path:circle(0% at calc(50% + 238px) -30px)}100%{clip-path:circle(100% at calc(50% + 238px) -30px)}}
