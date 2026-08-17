@@ -42,22 +42,22 @@ tags:
 | 属性                                      | P2TRv2             | P2TRH                         | P2MR                   | P2MR+PKR                      | P2QR                 |
 | :---------------------------------------- | :----------------- | :---------------------------- | :--------------------- | :---------------------------- | :------------------- |
 | **安全性** <sup>1</sup>                   |                    |                               |                        |                               |                      |
-| 存入之后                                  | :red_circle:       | :yellow_heart:                | :yellow_heart:         | :yellow_heart:                | :green_heart:        |
-| 添加 PQC 花费                             | :red_circle:       | :large_orange_diamond:        | :yellow_heart:         | :yellow_heart:                | :green_heart:        |
-| 添加 ECC 花费                             | :red_circle:       | :large_orange_diamond:        | :large_orange_diamond: | :large_orange_diamond:        | :white_large_square: |
+| 存入之后                                  | $A$       | $C$                | $C$         | $C$                | $S$        |
+| 添加 PQC 花费                             | $A$       | $B$        | $C$         | $C$                | $S$        |
+| 添加 ECC 花费                             | $A$       | $B$        | $B$ | $B$        | $D$ |
 | **效率性** <sup>2</sup> （1 ECC + 1 PQC） |                    |                               |                        |                               |                      |
 | ECC 签名花费字节数量                      | 64                 | 64                            | 128                    | 96                            | ∞                    |
 | PQC 开销字节数量                          | 32                 | 32                            | 32                     | 32                            | 0                    |
 | **其它**                                  |                    |                               |                        |                               |                      |
-| 未修改的 BIP-340                          | :white_check_mark: | :negative_squared_cross_mark: | :white_check_mark:     | :negative_squared_cross_mark: | :white_large_square: |
+| 未修改的 BIP-340                          | $\sqrt{}$ | X | $\sqrt{}$ | X | $D$ |
 
 其中：
 
-- :red_circle: ：只有 ECC 禁用或者 CRQC（有密码学意义的量子计算机）不存在，才安全。
-- :large_orange_diamond:：只有结合 (a) 没有地址复用；(b) 没有公钥分享 <sup>3</sup> ；(c) 没有短程 CRQC 存在；且 (d) 长程 CRQC 和哈希率多数之间没有重合；才是安全的。
-- :yellow_heart:：在 (a) 没有地址复用；以及 (b) 没有公钥分享；时也是安全的，无需 (c) 和 (d) 。
-- :green_heart:：​ CRQC 不是威胁
-- :white_large_square:：​无法应用
+- $A$ ：只有 ECC 禁用或者 CRQC（有密码学意义的量子计算机）不存在，才安全。
+- $B$：只有结合 (a) 没有地址复用；(b) 没有公钥分享 <sup>3</sup> ；(c) 没有短程 CRQC 存在；且 (d) 长程 CRQC 和哈希率多数之间没有重合；才是安全的。
+- $C$：在 (a) 没有地址复用；以及 (b) 没有公钥分享；时也是安全的，无需 (c) 和 (d) 。
+- $S$： CRQC 不是威胁
+- $D$：无法应用
 
 <p style="text-align:center">- - -</p>
 
