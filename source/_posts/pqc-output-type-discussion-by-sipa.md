@@ -6,6 +6,7 @@ cover: ''
 excerpt: '介绍我观察到已得到讨论的输出类型，然后再表达我的个人观点'
 tags:
 - 量子抗性
+mathjax: true
 ---
 
 
