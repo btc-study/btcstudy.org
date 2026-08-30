@@ -296,7 +296,7 @@ $264 \div 11 = 24$，正好对应 24 个单词。
    ![](../images/goodbye-random-number-generators-blackboxes-a-guide-for-physically-generating-your-mnemonic-words/lastword2.png)
 4. **输入纸上的记录**：在 Last Word Calculator 页面选择要生成的助记词数量，然后点击 Flip the bits 上方的圆形按钮，点击切换对应的 `0` 或 `1`，输入最后几位物理熵的结果。然后，在下方的单词框里，逐个输入你在纸上查好的前 11/23 个单词（输入框支持单词联想补全），工具会完成 SHA-256 计算，显示出最后一个单词：
 
-![](../images/goodbye-random-number-generators-blackboxes-a-guide-for-physically-generating-your-mnemonic-words/slastword3.png)
+![](../images/goodbye-random-number-generators-blackboxes-a-guide-for-physically-generating-your-mnemonic-words/lastword3.png)
 
 5. **抄写最后一词**：将该单词抄写在记录表的最后一格。不要对网页上的内容进行任何复制操作。
 
