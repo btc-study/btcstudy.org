@@ -74,7 +74,9 @@ SeedSigner （固执地？）拒绝了其他人都已经拥抱的特性。
 
 除了这三支 DIY 团队，[CryptoGuide](https://www.youtube.com/@CryptoGuide) 也带来，他开发了迄今为止[最成功的 SeedSigner 复刻](https://github.com/3rdIteration/seedsigner)。这个复刻给 SeedSigner 加入了 [Satochip](https://satochip.io/) 智能卡片功能。他甚至还开发了自己定制的附加主板来读取卡片。
 
-![An open orange 3D-printed enclosure showing the custom smartcard reader board stacked on a Raspberry Pi Zero.](../images/the-diy-signing-device-revolution-is-just-beginning/custom_shieldsigner2.jpg) ![The assembled orange 3D-printed SeedSigner enclosure held in one hand, with the smartcard slot visible along the bottom edge.](C:\Users\SeeBro\Desktop\btcstuddy-后台\picture\custom_shieldsigner1.jpg)
+![An open orange 3D-printed enclosure showing the custom smartcard reader board stacked on a Raspberry Pi Zero.](../images/the-diy-signing-device-revolution-is-just-beginning/custom_shieldsigner2.jpg) 
+
+![The assembled orange 3D-printed SeedSigner enclosure held in one hand, with the smartcard slot visible along the bottom edge.](../images/the-diy-signing-device-revolution-is-just-beginning/custom_shieldsigner1.jpg)
 
 因为 SeedSigner 没有安全芯片（不能长期存储私钥），许多人都犹豫不前。而 Satochip 智能卡自身就是一个安全芯片，但它没有屏幕来给用户交互。将 Satochip 与 SeedSigner 组合到一起，似乎是天作之合。不过，话说回来，哪怕在这一点上，Specter DIY 也是真正的先驱，因为它多年前就可以自选使用智能卡。
 
