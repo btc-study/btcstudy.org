@@ -6,6 +6,7 @@ cover: ''
 excerpt: '以往在 承诺-揭晓 协议上的工作、它们的缺点以及拟议的缓解措施'
 tags:
 - 密码学
+mathjax: true
 ---
 
 
