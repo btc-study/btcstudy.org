@@ -6,6 +6,7 @@ cover: ''
 excerpt: ''
 tags:
 - Stable-Channel
+mathjax: true
 ---
 
 
