@@ -236,3 +236,4 @@ tags:
 
 跟往常一样，如果你有任何问题、评论或纠正，尽情在评论区留下评论 ：）
 
+> *[后篇见此处](https://www.btcstudy.org/2026/09/07/the-ark-protocol-forfeit-transactions-and-connector-trees-by-elle-mouton/)*

@@ -10,8 +10,10 @@ tags:
 
 
 > *作者：Elle Mouton*
-> 
+>
 > *来源：<https://www.ellemouton.com/posts/ark-oor-transactions/>*
+>
+> *[前篇见此处](https://www.btcstudy.org/2026/09/07/the-ark-protocol-forfeit-transactions-and-connector-trees-by-elle-mouton/)*
 
 
 

@@ -10,8 +10,10 @@ tags:
 
 
 > *作者：Elle Mouton*
-> 
+>
 > *来源：<https://www.ellemouton.com/posts/ark-forfeits-and-connectors/>*
+>
+> *[前篇见此处](https://www.btcstudy.org/2026/09/02/the-ark-protocol-vtxos-and-the-virtual-transaction-tree-by-elle-mouton/)*
 
 
 
@@ -144,3 +146,5 @@ VTXO 持有者可能想采取几种动作，都需要参与 Ark 协议的 “回
 弃权交易和连接器是回合的资金移动背后的机制，不论是你完全离开一个 Ark ，还是仅仅要刷新一个即将到期的 VTXO 。弃权交易是运营者的保险，连接器则让这个保险在新的批次交易得到区块确认之后才会生效。一个依赖，让切换对于两方都变得安全。
 
 本文中的内容都与批次之间的切换有关。下一篇则要讲到，如果不想等待批次交易，你可以在 Ark 中做什么。
+
+> *[后篇见此处](https://www.btcstudy.org/2026/09/14/the-ark-protocol-oor-transactionsn-by-elle-mouton/)*
