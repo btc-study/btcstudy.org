@@ -1,5 +1,14 @@
 (function(){
 
+  var escapeHtml = function(str) {
+    return String(str == null ? '' : str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
   var renderPostList = function(data) {
     var sortByDate = function(a, b) {
       return b.dateSource - a.dateSource;
@@ -14,12 +23,12 @@
         var avatar = item.avatar || "url_for()"
         dom += (
           '<li>'+
-              '<a href="'+ item.url +'" target="_blank">'+
-                '<strong>'+ item.title +'</strong>'+
+              '<a href="'+ escapeHtml(item.url) +'" target="_blank">'+
+                '<strong>'+ escapeHtml(item.title) +'</strong>'+
                 '<div>'+
                   // '<img class="mr-1" src="' + (item.avatar || "/images/default_avatar.png") + '" alt='+ item.author +' />'+
                   // '<span>'+ item.author +'</span>'+
-                  '<time class="has-text-grey" datetime="'+ item.date+'">'+ (item.date || '') +'</time>'+
+                  '<time class="has-text-grey" datetime="'+ escapeHtml(item.date)+'">'+ escapeHtml(item.date || '') +'</time>'+
                 '</div>'+
                 '<i class="iconfont icon-icon_into"></i>'+
               '</a>'+
