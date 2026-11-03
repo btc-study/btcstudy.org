@@ -6,6 +6,7 @@ cover: ''
 excerpt: '恶意签名器攻击的术语'
 tags:
 - 签名器
+mathjax: true
 ---
 
 
@@ -52,3 +53,64 @@ Dark Skippy 跟预定 nonce 攻击不同。在 Dark Skippy 中，攻击者不知
 
 
 请注意，这里说的每一种攻击同时也对 ECDSA 签名有效。
+
+---
+
+## 针对恶意签名器的缓解措施
+
+### 现有的缓解措施
+
+**硬件安全防御措施**
+
+针对恶意签名设备的主要缓解措施是从一开始就防止恶意的固件加载到设备中。但并非所有的签名设备都提供了防止加载恶意固件的安全特性。这样的缓解措施有：
+
+- 多种多样的硬件安全技术，包括 “Secure Boot（安全启动）” 和 “锁定的 JTAG/SWD 界面”。
+- 防止设备被他人拿到（秘密地点、个人保险柜，或者是放在防拆袋里面（比较麻烦））。
+- 可复现且有制造商签名的固件版本。
+- 其它由市场上的设备提供的安全特性。
+
+**基于签名协议的缓解措施**
+
+1. **Anti-exfil（防泄露）协议** —— [secp256k1-zkp 库](https://github.com/BlockstreamResearch/secp256k1-zkp/blob/a7907b1af2a9f5c7d718449852f394d363bacb3b/include/secp256k1_ecdsa_s2c.h#L100)已经实现了一种 [anti-exfil 协议](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2020-March/017667.html) 。它的工作方式是让跟签名设备一起工作的软件钱包安全地向签名添加随机性，从而签名设备无法独自产生签名。这种协议在比特币签名设备中比较少见，因为它会在软件钱包和签名设备之间增加一轮通信轮次，这在 “空气隔离” 的签名流程中是不受欢迎的。
+
+   （译者注：“空气隔离” 指的是签名设备与运行软件钱包的主机之间没有线缆连接，依靠扫码或者 microSD 卡来传递数据。）
+
+   Anti-exfil 目前只支持 ECDSA ，但已经有人尝试为 Schnorr 签名提供类似的功能。
+
+   当前，两款签名器实现了这种策略：
+
+   - [Blockstream Jade](https://blog.blockstream.com/anti-exfil-stopping-key-exfiltration/) —— 在使用 USB 功能连接多种钱包软件时，可以使用 Anti-exfil 签名
+   - [ShiftCrypto 的 BitBox](https://bitbox.swiss/blog/anti-klepto-explained-protection-against-leaking-private-keys/) —— 在跟他们的客户端代码库协同工作时，可以使用 Anti-exfil 签名
+
+   目前，他们都只支持在 ECDSA 上使用，但 Schnorr Anti-exfil 协议已在开发路上。
+
+2. **确定性 Nonce 生成** —— 检查签名设备使用了一个确定性的 nonce 可以防止所有类型的 nonce 隐蔽信道攻击；而许多设备都会遵照 [RFC 6979](https://www.rfc-editor.org/rfc/rfc6979) 生成确定性的签名。
+
+   **然而**，在**每一个签名**上检查确定性 nonce 不仅笨拙（没人会这样做），而且可能带来危险，因为它需要另一款设备也能接触私钥。
+
+   为了验证一台设备正在使用确定性签名，用户必须用另一台独立的设备签名，并检查两个签名是一样的。你还需要保证**每一个签名**都使用了确定性的 nonce，因为恶意的签名器可以时不时泄露信息（例如，每逢 N 笔交易就泄露一次）。
+
+   一种复杂的替代方案是使用 [MuSig-DN 中的 Pruify](https://medium.com/blockstream/musig-dn-schnorr-multisignatures-with-verifiably-deterministic-nonces-27424b5df9d6) 这样的协议，签名要提供一个零知识证据，证明自己使用了确定性的 nonce 。
+
+   许多硬件设备都遵照 RFC6979 来生成确定性的 nonce 。
+
+### 我们的建议
+
+这些建议的主要目标是提出与 PSBT 兼容的方案，从而它们有高概率真正被用上。
+
+1. **Nonce 哈希随机化** ——  已经有[一份初步的提议](https://gist.github.com/moonsettler/d4eb59c62a2b8f104c72603231b73a412)是跟 PSBT 的字段兼容的，而且可以让 Dark Skippy （以及预定 nonce 攻击）完全失效；它采取了 Pieter Wuille 在这篇绝佳的[邮件组帖子](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2020-March/017667.html)中的 *Scheme 2* 的形式。
+
+   请注意，这并不能解决 nonce 研磨攻击，因为攻击者依然可以不断采样最终的 nonce 公开值（使用不同的内部 nonce 秘密值）。
+
+   *2024-08-20 更新：最初我们还想出了另一个点子，但不如社区已经提出的办法好，所以我们替换了它。*
+
+2. **强制 nonce “工作量证明”** —— 为了让 nonce 研磨攻击变得不实用，软件钱包可以要求 nonce 公开值 $R$ 来自一些随机挑战值，比如 $SHA256(k||R)$ ，它的开头有 x 个 0， 其中 $k$ 是由软件钱包 选定的随机数。$k$ 的值甚至可以跟运行 nonce 哈希随机化方案时提供的一模一样。
+
+   强制 nonce 工作量证明显著地摧毁了攻击者研磨 nonce 的能力，因为每一个候选都必须也满足挑战。设想把工作量证明的挑战设置成签一次名要 5 秒钟。那么，为了在 nonce 公开值中嵌入一个比特的秘密数据，签名时间就要倍增，变成 10 秒钟；想要再嵌入另一个比特，就要再花 20 秒钟；以此类推。这让用户有可能注意到攻击，并显著减少可以嵌入的数据数量。
+
+   这种办法有一些缺点，因为不同的设备的计算能力不同，而且需要用户或者协作的软件注意到签名花费了很长时间。不过，哪怕只要求少量的 PoW，也比完全不要求要好。
+
+单靠缓解措施 (1) ，攻击者就只有 nonce 研磨来泄露秘密了。这可以阻止 Dark Skippy 和预定 nonce 攻击，让攻击者只剩 nonce 研磨方法。因此，从我们的角度看，签名泄露就已经不是最大的攻击界面。如果双管齐下，我们有一定的信心：这样的攻击普遍来说不实用、不太可能尝试， 但稍弱的 nonce 研磨攻击依然是有可能的。
+
+
+
