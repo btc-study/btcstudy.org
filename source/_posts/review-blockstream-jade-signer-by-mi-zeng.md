@@ -65,8 +65,8 @@ Air-gapped 意为硬件钱包在与联网设备交互时不通过诸如 USB、�
 
 除了通过 SeedQR 或助记词导入临时钱包外，Jade 开机后还提供了两种解锁方式，分别为连接模式解锁和 [QR-PIN 模式](https://help.blockstream.com/hc/en-us/articles/10731523559193)解锁。通过 QR-PIN 模式解锁或临时钱包的方式可使 Jade 进入完全 Air-gapped 的工作模式。在该模式下，Jade 利用摄像头和二维码实现与联网设备之间的数据传递，完成诸如交易签名、公钥导出，多签钱包导入、收款地址验证等操作。
 
-#### Anti-Exfit
-在交易签名阶段，Jade 引入了一种名为 [Anti-Exfit](https://help.blockstream.com/hc/en-us/articles/9641573399961-What-is-Anti-Exfil-and-how-does-it-work-) 的安全措施。该措施是为了防止被黑的硬件钱包使用被操控的 nonce 值来签名交易，从而造成私钥的泄漏。Anti-Exfit 的大致原理是在生成 nonce 的过程中利用计算机/手机提供的部分随机数据，而不单纯依靠硬件钱包本身来生成 nonce 值。感兴趣的读者可以看[这篇文章](https://blog.blockstream.com/anti-exfil-stopping-key-exfiltration/)。
+#### Anti-Exfil
+在交易签名阶段，Jade 引入了一种名为 [Anti-Exfil](https://help.blockstream.com/hc/en-us/articles/9641573399961-What-is-Anti-Exfil-and-how-does-it-work-) 的安全措施。该措施是为了防止被黑的硬件钱包使用被操控的 nonce 值来签名交易，从而造成私钥的泄漏。Anti-Exfit 的大致原理是在生成 nonce 的过程中利用计算机/手机提供的部分随机数据，而不单纯依靠硬件钱包本身来生成 nonce 值。感兴趣的读者可以看[这篇文章](https://blog.blockstream.com/anti-exfil-stopping-key-exfiltration/)。
 
 目前只有 Jade 和 Bitbox 提供了这类安全功能。但由于执行该功能的过程中需要直接与联网设备通信来保证 nonce 的随机性。因此就当前固件版本的 Jade 而言，Anti-Exfit 和 Air-gapped 不可兼得。
 
