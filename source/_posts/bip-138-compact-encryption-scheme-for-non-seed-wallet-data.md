@@ -7,6 +7,7 @@ excerpt: '本 BIP 为输出脚本描述符、钱包条款以及其它钱包元�
 tags:
 - 描述符
 - BIP
+mathjax: true
 ---
 
 
